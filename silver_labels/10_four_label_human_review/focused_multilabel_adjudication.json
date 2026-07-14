@@ -1,0 +1,840 @@
+[
+  {
+    "row_number": 419,
+    "problem_description": "Divorce. Eviction. Criminal Case.",
+    "original_human_label": {
+      "category": "",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "User lists “Divorce” as a primary issue, indicating they need help dissolving a marriage and related matters. Reviewed as three-model consensus.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "three-model consensus",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Family Law",
+          "subcategory": "General (Divorce/Separation)",
+          "justification": "User lists “Divorce” as a primary issue, indicating they need help dissolving a marriage and related matters.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "Tenant (Residential)",
+          "justification": "They also list “Eviction,” suggesting a landlord-tenant dispute/housing defense; included because it could be separate from divorce.",
+          "confidence": "low"
+        },
+        {
+          "category": "Criminal Law",
+          "subcategory": "Other",
+          "justification": "They also mention a “Criminal Case” but provide no facts to place it in a specific charge category; kept as third due to lack of detail.",
+          "confidence": "low"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Family Law",
+          "subcategory": "General (Divorce/Separation)",
+          "justification": "The user explicitly lists 'Divorce' as one of the legal matters they are facing.",
+          "confidence": "high"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "Tenant (Residential)",
+          "justification": "The user lists 'Eviction', which typically involves residential tenancy disputes.",
+          "confidence": "high"
+        },
+        {
+          "category": "Criminal Law",
+          "subcategory": "Other",
+          "justification": "The user lists a 'Criminal Case', but provides no further details to route it more specifically.",
+          "confidence": "medium"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "Family Law",
+          "subcategory": "General (Divorce/Separation)",
+          "justification": "User lists 'Divorce,' indicating a dissolution of marriage, which is the core family law issue.",
+          "confidence": "high"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "Landlord Residential",
+          "justification": "The eviction suggests a landlord-tenant dispute from the landlord side, but without clarity on whether user is landlord or tenant, this is a plausible area.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Criminal Law",
+          "subcategory": "Misdemeanor",
+          "justification": "A criminal case is listed, but without details; a misdemeanor is the default assumption for an unspecified charge.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "419",
+      "problem_description": "Divorce. Eviction. Criminal Case.",
+      "current_ai_primary": "Family Law / General (Divorce/Separation)",
+      "audit_status": "primary audit",
+      "primary_assessment": "uncertain",
+      "model_primary_assessment": "uncertain",
+      "current_primary_in_label_set": "yes",
+      "multi_label_assessment": "uncertain",
+      "audit_label_1": "Family Law / General (Divorce/Separation)",
+      "audit_label_2": "Real Property / Tenant (Residential)",
+      "audit_justification": "The description lists three topics (divorce, eviction, criminal case) with no facts. Divorce is supported only by the word itself, and eviction is separately requested, so two labels may be appropriate, but the lack of details makes both fit and the need for multi-label classification uncertain."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 121,
+      "reason": "The row lists divorce, eviction, and a criminal case with no facts; both prioritization and the two-label cap require human input.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Family Law",
+        "subcategory": "General (Divorce/Separation)",
+        "rationale": "The row expressly lists divorce.",
+        "confidence": "low",
+        "description": "Covers all aspects of dissolving a marriage or domestic partnership, including division of property and spousal support. This is the main category for issues related to a marital split."
+      },
+      {
+        "category": "Real Property",
+        "subcategory": "Tenant (Residential)",
+        "rationale": "The row expressly lists eviction, provisionally assuming the user is the tenant.",
+        "confidence": "low",
+        "description": "The user is a tenant renting a home or apartment and has a dispute with their landlord. Common issues include the landlord's failure to make repairs, wrongful withholding of a security deposit, or fighting an eviction."
+      },
+      {
+        "category": "Criminal Law",
+        "subcategory": "Other",
+        "rationale": "The row expressly lists a criminal case but gives no charge or procedural posture.",
+        "confidence": "low",
+        "description": "Niche criminal defense areas like medical marijuana defense, computer crimes, search and seizure issues, or habeas corpus petitions."
+      }
+    ],
+    "suggestion_justification": "Three matters are named, but all are low confidence because the text supplies no facts. Human review should verify party role and the criminal charge rather than treating these provisional subcategories as final.",
+    "focused_four_label_review": true
+  },
+  {
+    "row_number": 252,
+    "problem_description": "I need help in processing a divorce or an annulment. My husband and I got married 5/29/2023, in California. I have been living in Portland, since 12/22/2023. He enlisted in the Navy and was in training for several months, in Boston. He says he is in California, now, but I’m not sure if he’s telling the truth. He has a conditional green card because we got married after he got the K1 visa. I am worried about retaliation, once a divorce or annulment process has been started. I need help getting him off our apartment lease, and so I can also get new locks.",
+    "original_human_label": {
+      "category": "Family Law",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The caller expressly seeks a divorce or annulment; military and immigration facts are important context but not the requested legal matter.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "in-context manual review",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Family Law",
+          "subcategory": "Military",
+          "justification": "User seeks divorce/annulment where the spouse is enlisted in the Navy, creating military-specific family law considerations alongside separation logistics.",
+          "confidence": "high"
+        },
+        {
+          "category": "Family Law",
+          "subcategory": "General (Divorce/Separation)",
+          "justification": "Core request is divorce/annulment and related practical issues (lease/locks), but the Navy status makes the military family-law category a better fit.",
+          "confidence": "medium"
+        },
+        {
+          "category": "International Law",
+          "subcategory": "Gen. Immigration/Visas",
+          "justification": "They mention a K-1 visa and conditional green card and fear retaliation, but the primary legal task described is dissolving the marriage rather than filing immigration benefits.",
+          "confidence": "low"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Family Law",
+          "subcategory": "Military",
+          "justification": "The user is seeking a divorce/annulment from a spouse who recently enlisted in the Navy, which introduces specific military family law elements.",
+          "confidence": "high"
+        },
+        {
+          "category": "Family Law",
+          "subcategory": "General (Divorce/Separation)",
+          "justification": "The core issue is processing a divorce or annulment and separating lives, including getting the spouse off the lease.",
+          "confidence": "medium"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "Family Law",
+          "subcategory": "General (Divorce/Separation)",
+          "justification": "The user wants a divorce or annulment from a military spouse, with concerns about retaliation and housing, which is a divorce matter.",
+          "confidence": "high"
+        },
+        {
+          "category": "Family Law",
+          "subcategory": "Military",
+          "justification": "The spouse's Navy service may invoke military divorce rules, but the primary need is still dissolution of marriage.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "252",
+      "problem_description": "I need help in processing a divorce or an annulment. My husband and I got married 5/29/2023, in California. I have been living in Portland, since 12/22/2023. He enlisted in the Navy and was in training for several months, in Boston. He says he is in California, now, but I’m not sure if he’s telling the truth. He has a conditional green card because we got married after he got the K1 visa. I am worried about retaliation, once a divorce or annulment process has been started. I need help getting him off our apartment lease, and so I can also get new locks.",
+      "current_ai_primary": "Family Law / General (Divorce/Separation)",
+      "audit_status": "two labels supported",
+      "primary_assessment": "needs_change",
+      "model_primary_assessment": "needs_change",
+      "current_primary_in_label_set": "no",
+      "multi_label_assessment": "two_labels_supported",
+      "audit_label_1": "Family Law / Military",
+      "audit_label_2": "Real Property / Tenant (Residential)",
+      "audit_justification": "Current label (Family Law / General (Divorce/Separation)) is partly supported by the divorce request, but the spouse’s Navy status makes Family Law / Military a better fit under the taxonomy. A distinct additional issue is removal from a residential lease/locks, supporting a second label."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 97,
+      "reason": "The audit omitted the explicit divorce request and substituted Military plus Tenant; the two-label limit likely distorted the result.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Family Law",
+        "subcategory": "General (Divorce/Separation)",
+        "rationale": "The user expressly asks to process a divorce or annulment.",
+        "confidence": "high",
+        "description": "Covers all aspects of dissolving a marriage or domestic partnership, including division of property and spousal support. This is the main category for issues related to a marital split."
+      },
+      {
+        "category": "Family Law",
+        "subcategory": "Military",
+        "rationale": "The spouse is in the Navy, making military-family-law rules potentially material.",
+        "confidence": "high",
+        "description": "Any family law matter (divorce, custody) where at least one party is a member of the armed forces. This is a specialized area due to federal laws affecting deployment, jurisdiction, and retirement benefits."
+      },
+      {
+        "category": "International Law",
+        "subcategory": "Gen. Immigration/Visas",
+        "rationale": "The K-1 visa and conditional green card are explicit and may be affected by ending the marriage.",
+        "confidence": "medium",
+        "description": "A person needs help legally entering or remaining in the U.S. This includes applying for visas (work, family, travel), green cards (permanent residency), or citizenship (naturalization)."
+      },
+      {
+        "category": "Real Property",
+        "subcategory": "Tenant (Residential)",
+        "rationale": "The user asks to remove the spouse from an apartment lease and change the locks.",
+        "confidence": "high",
+        "description": "The user is a tenant renting a home or apartment and has a dispute with their landlord. Common issues include the landlord's failure to make repairs, wrongful withholding of a security deposit, or fighting an eviction."
+      }
+    ],
+    "suggestion_justification": "Four distinct requested or legally material issues are visible. Immigration remains medium confidence because the text gives immigration facts but does not expressly request an immigration filing or status determination.",
+    "focused_four_label_review": true
+  },
+  {
+    "row_number": 384,
+    "problem_description": "A specific real estate property situation in which we are deciding if it would be more beneficial to transfer ownership a property or put it in a trust. Must be experienced with disabled veterans (for questions related to property taxes and VA construction loan.) Questions would be about property transfer, trusts, tax liability, and possibly the terms of a VA construction loan.",
+    "original_human_label": {
+      "category": "Real Property",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "Wills & Trusts",
+      "subcategory": "Living Trusts",
+      "justification": "The question is whether to transfer property into a trust, a specific living-trust planning decision.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "in-context manual review",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "Living Trusts",
+          "justification": "User is deciding whether to transfer a property or place it into a trust and asks about trust structuring and ownership transfer consequences. That is classic living trust/estate planning decision-making.",
+          "confidence": "high"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "Government Loans (VA,FHA,Etc.)",
+          "justification": "They also want advice related to a VA construction loan tied to the property; this is secondary to the estate planning/transfer question.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "Property Tax",
+          "justification": "Property tax implications (including disabled veteran-related tax concerns) are mentioned, but it is part of a broader transfer/trust planning question rather than a valuation appeal.",
+          "confidence": "low"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "Living Trusts",
+          "justification": "The user is seeking advice on transferring property versus putting it into a trust to manage assets and limit tax liability.",
+          "confidence": "high"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "Government Loans (VA,FHA,Etc.)",
+          "justification": "The user specifically needs an attorney experienced with VA construction loans as part of this property transfer strategy.",
+          "confidence": "medium"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "General (Wills, Trusts, Estates)",
+          "justification": "The user is deciding between transferring ownership or using a trust for estate planning purposes, which falls under general wills and trusts.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Real Property",
+          "subcategory": "General (residential)",
+          "justification": "The situation also involves property transfer and VA construction loan terms, which could be a residential real property matter, though the trust aspect points more to estate planning.",
+          "confidence": "low"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "384",
+      "problem_description": "A specific real estate property situation in which we are deciding if it would be more beneficial to transfer ownership a property or put it in a trust. Must be experienced with disabled veterans (for questions related to property taxes and VA construction loan.) Questions would be about property transfer, trusts, tax liability, and possibly the terms of a VA construction loan.",
+      "current_ai_primary": "Wills & Trusts / Living Trusts",
+      "audit_status": "two labels supported",
+      "primary_assessment": "needs_change",
+      "model_primary_assessment": "needs_change",
+      "current_primary_in_label_set": "no",
+      "multi_label_assessment": "two_labels_supported",
+      "audit_label_1": "Wills & Trusts / General (Wills, Trusts, Estates)",
+      "audit_label_2": "Real Property / Government Loans (VA,FHA,Etc.)",
+      "audit_justification": "This is not specifically about creating a living trust; it’s broader trust/ownership transfer planning, plus a distinct VA construction loan component."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 97,
+      "reason": "Trust/ownership transfer, VA loan, disability-veteran considerations, and tax liability exceed the two-label limit.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Wills & Trusts",
+        "subcategory": "General (Wills, Trusts, Estates)",
+        "rationale": "The user is comparing ownership transfer with placing property in a trust.",
+        "confidence": "medium",
+        "description": "Covers the creation and administration of estate plans. User needs to draft a will, set up a trust, create a power of attorney, or has general questions about how to handle a loved one's estate after they have passed."
+      },
+      {
+        "category": "Real Property",
+        "subcategory": "General (residential)",
+        "rationale": "Transfer of ownership/title to non-commercial property is an express part of the request.",
+        "confidence": "medium",
+        "description": "Any real estate issue involving a person's home or other non-commercial property. Common issues include purchase/sale disputes, title problems, or boundary line disagreements."
+      },
+      {
+        "category": "Real Property",
+        "subcategory": "Government Loans (VA,FHA,Etc.)",
+        "rationale": "The user asks about terms of a VA construction loan.",
+        "confidence": "high",
+        "description": "User is having a dispute related to a home loan that is backed or insured by a government entity like the Federal Housing Administration (FHA) or the Department of Veterans Affairs (VA)."
+      }
+    ],
+    "suggestion_justification": "Three domains are supported. Property Tax is not added: its detailed taxonomy entry concerns assessment-value disputes, while this row asks only general tax-liability questions. Living Trusts may replace general Wills & Trusts if a revocable living trust is confirmed.",
+    "focused_four_label_review": true
+  },
+  {
+    "row_number": 290,
+    "problem_description": "I need your help regarding copyright infringement, harassment, and defamation. A TikTok user took my video without permission, using it to humiliate me for my differing political views. This has caused emotional distress, fear for my career, and ongoing harassment. She made damaging statements to her 62.3k audience, tarnishing my reputation. I disabled saving my videos to protect my likeness but she still used them without consent. I've documented evidence and pursued a DMCA takedown. Can we discuss legal options for damages and action?",
+    "original_human_label": {
+      "category": "Intellectual Property",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "They allege a TikTok user reposted their video without permission and they pursued a DMCA takedown, indicating a copyright infringement dispute. Reviewed as three-model consensus.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "three-model consensus",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Intellectual Property",
+          "subcategory": "Trademark/Copyright",
+          "justification": "They allege a TikTok user reposted their video without permission and they pursued a DMCA takedown, indicating a copyright infringement dispute.",
+          "confidence": "high"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Libel/Slander/Defamation",
+          "justification": "They also claim the user made damaging statements to a large audience harming reputation; included because defamation is separate from copyright.",
+          "confidence": "medium"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Online Harassment/Doxing/Bullying",
+          "justification": "Lower-fit but plausible because they describe ongoing harassment and fear for career stemming from online humiliation, beyond the IP claim.",
+          "confidence": "medium"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Intellectual Property",
+          "subcategory": "Trademark/Copyright",
+          "justification": "The user mentions pursuing a DMCA takedown because someone took their video without permission, which constitutes a copyright infringement claim.",
+          "confidence": "high"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Libel/Slander/Defamation",
+          "justification": "The user explicitly states the person made damaging statements to a large audience that tarnished their reputation, which aligns with defamation.",
+          "confidence": "high"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Online Harassment/Doxing/Bullying",
+          "justification": "The user describes ongoing online harassment and emotional distress caused by a TikTok user's malicious campaign.",
+          "confidence": "high"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "Intellectual Property",
+          "subcategory": "Trademark/Copyright",
+          "justification": "The primary legal hook is unauthorized use of the user's video, resulting in a copyright infringement claim and DMCA takedown. The harassment and defamation are secondary harms, but the core IP issue makes Trademark/Copyright the best match, with potential overlap in General Litigation - Online Harassment/Doxing/Bullying. Ranked second due to the IP focus.",
+          "confidence": "medium"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Online Harassment/Doxing/Bullying",
+          "justification": "The user describes ongoing harassment and humiliation using their own video on TikTok, which fits this harmful online behavior category. Placed second because the immediate legal action taken was a DMCA takedown, signaling an IP-centric approach.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "290",
+      "problem_description": "I need your help regarding copyright infringement, harassment, and defamation. A TikTok user took my video without permission, using it to humiliate me for my differing political views. This has caused emotional distress, fear for my career, and ongoing harassment. She made damaging statements to her 62.3k audience, tarnishing my reputation. I disabled saving my videos to protect my likeness but she still used them without consent. I've documented evidence and pursued a DMCA takedown. Can we discuss legal options for damages and action?",
+      "current_ai_primary": "Intellectual Property / Trademark/Copyright",
+      "audit_status": "two labels supported",
+      "primary_assessment": "needs_change",
+      "model_primary_assessment": "needs_change",
+      "current_primary_in_label_set": "no",
+      "multi_label_assessment": "two_labels_supported",
+      "audit_label_1": "General Litigation / Online Harassment/Doxing/Bullying",
+      "audit_label_2": "General Litigation / Libel/Slander/Defamation",
+      "audit_justification": "Although unauthorized use of video is mentioned with a DMCA takedown, the dominant, well-developed legal issues are online harassment and reputational harm/defamation; two distinct litigation issues are supported, so the IP-only primary should be changed."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 87,
+      "reason": "The row expressly raises copyright, harassment, and defamation; the two-label audit necessarily omitted one substantial issue.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Intellectual Property",
+        "subcategory": "Trademark/Copyright",
+        "rationale": "Unauthorized reuse of an original video and a DMCA takedown are explicit copyright issues.",
+        "confidence": "high",
+        "description": "User needs help protecting a brand name, logo, or slogan (trademark) or an original creative work like a book, song, or photo (copyright). This includes registration and lawsuits for infringement."
+      },
+      {
+        "category": "General Litigation",
+        "subcategory": "Libel/Slander/Defamation",
+        "rationale": "The user alleges damaging published statements that harmed reputation.",
+        "confidence": "high",
+        "description": "A lawsuit over false statements that have harmed a person's reputation. Libel is written/published defamation; slander is spoken. The statement must be a damaging untruth."
+      },
+      {
+        "category": "General Litigation",
+        "subcategory": "Online Harassment/Doxing/Bullying",
+        "rationale": "The TikTok conduct is described as ongoing online harassment causing distress.",
+        "confidence": "high",
+        "description": "A lawsuit over harmful online behavior, such as repeated harassment, publicly posting private information (doxxing) with malicious intent, or a severe campaign of cyberbullying causing emotional distress."
+      }
+    ],
+    "suggestion_justification": "Copyright, defamation, and online harassment are separately pleaded theories; the earlier two-label cap necessarily dropped one.",
+    "focused_four_label_review": true
+  },
+  {
+    "row_number": 421,
+    "problem_description": "My sister has guardianship and power of attorney over our parents and is making me not a beneficiary. She hit me with her car and I want her to pay. I have a parking ticket I disagree with.",
+    "original_human_label": {
+      "category": "",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The clearest direct claim is compensation for being hit by a car; guardianship/beneficiary and parking-ticket issues are secondary.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "in-context manual review",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "Elder Abuse",
+          "justification": "User alleges sister (guardian/POA for parents) is manipulating beneficiary status, suggesting potential financial exploitation/undue influence over elderly parents.",
+          "confidence": "medium"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Personal Injury",
+          "justification": "User says the sister hit them with her car and they want her to pay, which is a civil bodily-injury claim.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Criminal Law",
+          "subcategory": "Traffic Offenses",
+          "justification": "They also dispute a parking ticket; this is a citation/traffic matter, but it is less central than the elder/PI issues.",
+          "confidence": "low"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "Litigation",
+          "justification": "The user is contesting their sister's use of guardianship/POA to alter beneficiaries, which is a dispute over estate control.",
+          "confidence": "high"
+        },
+        {
+          "category": "General Litigation",
+          "subcategory": "Personal Injury",
+          "justification": "The user states the sister hit them with a car and wants compensation for the injury.",
+          "confidence": "high"
+        },
+        {
+          "category": "Criminal Law",
+          "subcategory": "Local Ordinances",
+          "justification": "The user wants to contest a parking ticket, which is typically a localized municipal ordinance violation rather than a moving traffic offense.",
+          "confidence": "medium"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "General Litigation",
+          "subcategory": "Personal Injury",
+          "justification": "User wants sister to pay for hitting them with a car, which is a personal injury claim for damages from a car accident.",
+          "confidence": "high"
+        },
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "Elder Abuse",
+          "justification": "Sister's guardianship/POA over parents and removal of user as beneficiary raises concerns of financial exploitation, potentially elder abuse.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Criminal Law",
+          "subcategory": "Traffic Offenses",
+          "justification": "A disputed parking ticket is a minor traffic offense, fitting the traffic offenses subcategory for non-criminal violations.",
+          "confidence": "high"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "421",
+      "problem_description": "My sister has guardianship and power of attorney over our parents and is making me not a beneficiary. She hit me with her car and I want her to pay. I have a parking ticket I disagree with.",
+      "current_ai_primary": "General Litigation / Personal Injury",
+      "audit_status": "two labels supported",
+      "primary_assessment": "supported",
+      "model_primary_assessment": "needs_change",
+      "current_primary_in_label_set": "yes",
+      "multi_label_assessment": "two_labels_supported",
+      "audit_label_1": "Wills & Trusts / Conservatorship/Guardianship",
+      "audit_label_2": "General Litigation / Personal Injury",
+      "audit_justification": "Current label (personal injury) is only partially supported because the text also raises a separate guardianship/POA-based family/estate control dispute. The parking ticket mention is not developed enough to add a traffic-offense label."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 72,
+      "reason": "Guardianship/beneficiary conflict, car injury, and a parking ticket are three separate issues under a two-label cap.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Wills & Trusts",
+        "subcategory": "Conservatorship/Guardianship",
+        "rationale": "The sister's guardianship and control over the parents are an express subject of the dispute.",
+        "confidence": "medium",
+        "description": "A court proceeding to appoint someone to manage the financial affairs (conservator) or personal/medical care (guardian) of an adult who has become incapacitated and can no longer make their own decisions."
+      },
+      {
+        "category": "Wills & Trusts",
+        "subcategory": "Litigation",
+        "rationale": "The user describes a beneficiary dispute connected to the sister's fiduciary control.",
+        "confidence": "low",
+        "description": "A dispute over a will or trust has erupted into a lawsuit. For example, a disgruntled heir is contesting the validity of a will, or beneficiaries are suing a trustee for mismanaging assets."
+      },
+      {
+        "category": "General Litigation",
+        "subcategory": "Personal Injury",
+        "rationale": "The user seeks payment after being struck by the sister's car.",
+        "confidence": "high",
+        "description": "A lawsuit to recover damages for physical or psychological injury caused by someone else's negligence or wrongful act. The most common examples are car accidents and 'slip and fall' incidents."
+      },
+      {
+        "category": "Criminal Law",
+        "subcategory": "Local Ordinances",
+        "rationale": "The user contests a parking ticket; this is the nearest municipal-citation entry, but the taxonomy has no exact parking-ticket label.",
+        "confidence": "low",
+        "description": "User is charged with violating a specific city or municipal law, rather than a state criminal statute. The offense is often minor and highly localized, like a specific waste management rule."
+      }
+    ],
+    "suggestion_justification": "Four distinct factual matters warrant display for review. The beneficiary and parking-ticket pairs are deliberately low confidence because the detailed taxonomy assumes an erupted will/trust lawsuit and has no exact non-moving parking-citation entry.",
+    "focused_four_label_review": true
+  },
+  {
+    "row_number": 420,
+    "problem_description": "I broke my foot at my job after a customer threw something at me and they fired me. Will I be deported?",
+    "original_human_label": {
+      "category": "",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The caller broke a foot at work; workers-compensation is the direct injury-benefits route, while firing and deportation are secondary questions.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "in-context manual review",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Workers' Comp",
+          "subcategory": "State",
+          "justification": "User broke their foot at work due to a customer incident, which triggers a state workers’ compensation injury claim for medical/wage benefits.",
+          "confidence": "high"
+        },
+        {
+          "category": "Labor & Employment",
+          "subcategory": "Wrongful Discharge",
+          "justification": "They were fired after the workplace injury, raising a potential illegal termination/retaliation angle distinct from the workers’ comp benefit claim.",
+          "confidence": "medium"
+        },
+        {
+          "category": "International Law",
+          "subcategory": "Deportation",
+          "justification": "They ask “Will I be deported?”, implying immigration consequences; however, no removal proceedings are described, so it is secondary and uncertain.",
+          "confidence": "low"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Workers' Comp",
+          "subcategory": "State",
+          "justification": "The user was injured on the job (broken foot) and needs help claiming benefits for the workplace injury.",
+          "confidence": "high"
+        },
+        {
+          "category": "Labor & Employment",
+          "subcategory": "Wrongful Discharge",
+          "justification": "The user was fired after suffering a workplace injury, which may constitute illegal retaliation by the employer.",
+          "confidence": "high"
+        },
+        {
+          "category": "International Law",
+          "subcategory": "Deportation",
+          "justification": "The user explicitly asks if they will be deported, indicating an underlying immigration issue.",
+          "confidence": "high"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "Labor & Employment",
+          "subcategory": "Wrongful Discharge",
+          "justification": "User was fired after a workplace injury (broken foot from customer action), which may be retaliation for a workers' comp claim or protected activity, fitting wrongful termination.",
+          "confidence": "high"
+        },
+        {
+          "category": "Workers' Comp",
+          "subcategory": "State",
+          "justification": "The broken foot occurred at work from a customer's act, making it a potential state workers' compensation claim for medical and wage benefits.",
+          "confidence": "high"
+        },
+        {
+          "category": "International Law",
+          "subcategory": "Deportation",
+          "justification": "User asks 'Will I be deported?', indicating immigration concerns possibly triggered by termination or injury, raising deportation questions.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "420",
+      "problem_description": "I broke my foot at my job after a customer threw something at me and they fired me. Will I be deported?",
+      "current_ai_primary": "Workers' Comp / State",
+      "audit_status": "two labels supported",
+      "primary_assessment": "supported",
+      "model_primary_assessment": "needs_change",
+      "current_primary_in_label_set": "yes",
+      "multi_label_assessment": "two_labels_supported",
+      "audit_label_1": "Workers' Comp / State",
+      "audit_label_2": "International Law / Gen. Immigration/Visas",
+      "audit_justification": "Workers’ comp is supported, but the user also expressly raises deportation risk, which is a distinct immigration issue warranting a second label."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 62,
+      "reason": "Work injury, firing, and deportation are all explicit; the two-label audit omitted the employment-termination issue.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Workers' Comp",
+        "subcategory": "State",
+        "rationale": "A workplace injury and resulting foot fracture are explicit.",
+        "confidence": "high",
+        "description": "An employee of a private company or state/local government was injured on the job and needs help filing a claim for benefits (medical treatment, wage replacement) through the state workers' compensation system."
+      },
+      {
+        "category": "Labor & Employment",
+        "subcategory": "Wrongful Discharge",
+        "rationale": "The user says they were fired after the workplace injury, raising possible retaliatory discharge.",
+        "confidence": "medium",
+        "description": "An employee was fired or forced to quit for an illegal reason, such as retaliation for filing a workers' comp claim, serving on a jury, or refusing to perform an illegal act. This is an exception to the 'at-will' employment doctrine."
+      },
+      {
+        "category": "International Law",
+        "subcategory": "Deportation",
+        "rationale": "The user expressly asks whether they will be deported.",
+        "confidence": "medium",
+        "description": "An immigrant (non-citizen) is facing removal from the U.S. due to a visa violation or criminal conviction. They need legal defense in immigration court to avoid being deported."
+      }
+    ],
+    "suggestion_justification": "The row presents three separate service needs. Deportation is more faithful than general visas, although no removal proceeding is described; wrongful discharge also requires human confirmation of the reason for firing.",
+    "focused_four_label_review": true
+  },
+  {
+    "row_number": 424,
+    "problem_description": "Not getting my vet benefits anymore. Now my nursing licenses is being revoked. My neighbor keeps on playing music really loudly at night. I think I may die soon, I want to write a will.",
+    "original_human_label": {
+      "category": "",
+      "subcategory": ""
+    },
+    "internal_primary_label": {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The caller expressly says they want to write a will; veteran benefits and nursing-licensing issues are separate matters.",
+      "confidence": "reviewed"
+    },
+    "internal_primary_justification": "in-context manual review",
+    "model_outputs": {
+      "gpt52": [
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "General (Wills, Trusts, Estates)",
+          "justification": "User says they may die soon and want to write a will, which is straightforward estate planning. Other issues (VA benefits, nursing license, neighbor noise) are separate matters.",
+          "confidence": "high"
+        },
+        {
+          "category": "Administrative Law",
+          "subcategory": "Military/Veterans",
+          "justification": "They report they are no longer getting veteran benefits, indicating a dispute with the VA over benefits/eligibility. This is distinct from estate planning, which is about creating a will rather than appealing benefit denials.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Administrative Law",
+          "subcategory": "Professional Licensing",
+          "justification": "They state their nursing license is being revoked, which fits occupational license discipline/revocation by a licensing board. This is separate from neighbor nuisance and from VA benefits issues.",
+          "confidence": "medium"
+        }
+      ],
+      "gemini31_pro": [
+        {
+          "category": "Administrative Law",
+          "subcategory": "Military/Veterans",
+          "justification": "The user explicitly states they are no longer receiving their veteran benefits and may need assistance interacting with the VA.",
+          "confidence": "high"
+        },
+        {
+          "category": "Administrative Law",
+          "subcategory": "Professional Licensing",
+          "justification": "The user is facing a potential administrative revocation of their occupational nursing license.",
+          "confidence": "high"
+        },
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "General (Wills, Trusts, Estates)",
+          "justification": "The user expressed a clear desire to draft a will to plan for the end of their life.",
+          "confidence": "high"
+        }
+      ],
+      "deepseek_v4": [
+        {
+          "category": "Administrative Law",
+          "subcategory": "Military/Veterans",
+          "justification": "The cessation of veteran benefits indicates a dispute with the Department of Veterans Affairs over the user's entitlements.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Administrative Law",
+          "subcategory": "Professional Licensing",
+          "justification": "The revocation of a nursing license is a state-level action affecting the right to work in a licensed profession.",
+          "confidence": "medium"
+        },
+        {
+          "category": "Wills & Trusts",
+          "subcategory": "General (Wills, Trusts, Estates)",
+          "justification": "The user expresses a desire to draft a will in anticipation of death, which requires estate planning assistance.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "two_label_audit": {
+      "row_number": "424",
+      "problem_description": "Not getting my vet benefits anymore. Now my nursing licenses is being revoked. My neighbor keeps on playing music really loudly at night. I think I may die soon, I want to write a will.",
+      "current_ai_primary": "Wills & Trusts / General (Wills, Trusts, Estates)",
+      "audit_status": "two labels supported",
+      "primary_assessment": "supported",
+      "model_primary_assessment": "supported",
+      "current_primary_in_label_set": "yes",
+      "multi_label_assessment": "two_labels_supported",
+      "audit_label_1": "Wills & Trusts / General (Wills, Trusts, Estates)",
+      "audit_label_2": "Administrative Law / Professional Licensing",
+      "audit_justification": "Primary label is supported because the user explicitly wants to draft a will. A second distinct issue is also supported: threatened revocation of a nursing license (professional licensing). Other mentions (neighbor loud music; loss of vet benefits) are not framed with enough detail to confidently classify as additional categories here."
+    },
+    "priority": {
+      "tier": "P1 - human decision essential",
+      "score": 62,
+      "reason": "Veterans benefits, professional licensing, neighbor nuisance, and a will are four distinct issues under a two-label cap.",
+      "recommended_action": "Read the full text and relevant detailed-taxonomy entries; record an explicit human decision before using the row as training data."
+    },
+    "suggested_labels": [
+      {
+        "category": "Administrative Law",
+        "subcategory": "Military/Veterans",
+        "rationale": "The user reports losing veterans benefits.",
+        "confidence": "high",
+        "description": "Concerns a veteran's interactions with the Department of Veterans Affairs (VA). The most common issue is a denial of VA healthcare, benefits, or pension. The user will likely mention the 'VA' or 'Veterans Act'."
+      },
+      {
+        "category": "Administrative Law",
+        "subcategory": "Professional Licensing",
+        "rationale": "The user's nursing license is being revoked.",
+        "confidence": "high",
+        "description": "User is facing denial, revocation, or suspension of a state-required occupational license (e.g., for a nurse, plumber, realtor, cab driver). This is about the right to work in a specific profession, not general employment issues. Excludes liquor licenses (Restaurant/OLCC)."
+      },
+      {
+        "category": "General Litigation",
+        "subcategory": "Neighbor Disputes/Nuisance",
+        "rationale": "Repeated loud nighttime music is a classic neighbor-noise nuisance.",
+        "confidence": "high",
+        "description": "Disputes between neighbors over issues like property boundaries, fences, noise, bad smells, or water runoff. The legal claim is often that one neighbor's actions create a 'nuisance' that interferes with the other's enjoyment of their property."
+      },
+      {
+        "category": "Wills & Trusts",
+        "subcategory": "General (Wills, Trusts, Estates)",
+        "rationale": "The user expressly wants to write a will.",
+        "confidence": "high",
+        "description": "Covers the creation and administration of estate plans. User needs to draft a will, set up a trust, create a power of attorney, or has general questions about how to handle a loved one's estate after they have passed."
+      }
+    ],
+    "suggestion_justification": "The text expressly identifies four independent legal-service needs, each matching a detailed taxonomy entry.",
+    "focused_four_label_review": true
+  }
+]
