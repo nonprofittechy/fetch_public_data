@@ -208,5 +208,6 @@ Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fl
 | `6fbc86d` | Persistent taxonomy-aware human review app and Fly-ready deployment artifact |
 | `9760c54` | Correct Fly Dockerfile resolution and restricted remote build context |
 | `7e2daaa` | Independent per-reviewer decisions, concise UI, automatic status, and gold/disagreement exports |
+| `1433ba9` | Validated app-to-repository human gold merge workflow and production E2E record |
 
 Future review or label-changing commits should be appended here and linked to their stage documentation.
