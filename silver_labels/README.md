@@ -3,6 +3,11 @@
 This directory contains the reproducible artifacts for the AI-generated labels
 for `redaction_reviewed_v5_clean.xlsx`.
 
+For the complete chronological record of every model pass, review, audit,
+order-insensitive correction, prioritization step, result, and remaining task,
+use [`REVIEW_AUDIT_TRAIL.md`](REVIEW_AUDIT_TRAIL.md). It is the canonical central
+index; stage READMEs provide supporting detail.
+
 ## Final artifact
 
 [`04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx`](04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx)
@@ -111,7 +116,7 @@ and no use of the supplied credentials. The review procedure was:
    supported match and record the rationale in `final_review.json`.
 5. Revalidate every final reviewed pair against the detailed taxonomy.
 
-There were 353 unanimous rank-1 rows, 72 two-model rank-1 agreements, and 6
+There were 353 unanimous rank-1 rows, 70 two-model rank-1 agreements, and 8
 three-way rank-1 disagreements before review. The review record marks 77 rows
 as `in-context manual review`; the remaining rows retain a documented model
 consensus basis.
@@ -177,9 +182,11 @@ alternative framing.
 The follow-up Azure GPT-5.2 two-label audit is in
 [`08_gpt52_two_label_audit/`](08_gpt52_two_label_audit/). It independently
 audited the final AI primary label while allowing at most two labels per row.
-It found 90 two-label rows, 81 primary-label change candidates, and 12
-uncertain primary assessments. These are fresh single-model audit signals for
-human review, not automatic corrections.
+It found 90 two-label rows. After treating the returned labels as an unordered
+set, it has 39 primary-label change candidates, 12 uncertain primary
+assessments, and a 132-row union review queue. The raw ranked-model assessment
+is preserved separately. These are single-model audit signals for human review,
+not automatic corrections.
 
 The internal prioritization of the order-insensitive review queue is in
 [`09_internal_priority_review/`](09_internal_priority_review/). It ranks the

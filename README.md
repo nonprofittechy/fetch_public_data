@@ -13,3 +13,9 @@ This repository contains the public, cleaned redaction-review workbook and the P
 The original, unredacted question column and intermediate source files are not included.
 
 The Python utilities expect local working inputs and are retained for reproducibility. The `privacy-filter` dependency is intentionally not vendored here because it is an existing public repository.
+
+## Silver-label review record
+
+The complete model-pass, adjudication, human-check, multi-label audit,
+order-insensitive correction, and human-prioritization history is documented in
+[`silver_labels/REVIEW_AUDIT_TRAIL.md`](silver_labels/REVIEW_AUDIT_TRAIL.md).
