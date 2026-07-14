@@ -13,7 +13,7 @@ This is the canonical index of every classification, review, audit, and prioriti
 - Latest human-review queue: 132 rows, prioritized into 52 P1, 14 P2, and 66 P3 rows.
 - The two-label ceiling has been removed from the human workflow. The seven known 3–4 issue rows now have expanded unordered sets: rows 252/421/424 have four candidates and rows 290/384/419/420 have three.
 - The Stage 10 workbook and web app allow the human to assign zero through four exact taxonomy pairs and retain all prior evidence.
-- The Fly.io-ready app persists current reviews and append-only history in SQLite on a mounted volume. Its container, health endpoint, volume permissions, and Fly configuration have been validated locally; no Fly app has been created or deployed.
+- The persistent review app is live at <https://fetch-silver-label-review.fly.dev/> in the Lemma Fly organization. It uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored as Fly secrets.
 - Human adjudication is not yet complete. Audit and priority fields are recommendations; they have not overwritten the Stage 04 primary labels.
 - The original `redaction_reviewed_v5_clean.xlsx` remains unchanged.
 
@@ -151,7 +151,7 @@ The seven rows previously flagged as exceeding the two-label ceiling were read a
 
 These are proposed review sets, not final human labels. The focused instructions, reviewer context, exact rationales, and per-pair confidence are recorded in [`10_four_label_human_review/ADJUDICATION_METHOD.md`](10_four_label_human_review/ADJUDICATION_METHOD.md), `focused_multilabel_adjudication.json`, and [`../build_four_label_review.py`](../build_four_label_review.py).
 
-The new workbook preserves all preceding columns, highlights the focused AI candidates in purple, and supplies four blue human-label slots plus status, notes, reviewer, and timestamp. Its companion [`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and descriptions, saves the latest decision and append-only history to SQLite, and exports CSV/JSON. It is configured for a single Fly Machine with a persistent `/data` volume. Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fly config validate` passed. Deployment was intentionally not performed without production secrets and an explicit cost-bearing app creation decision.
+The new workbook preserves all preceding columns, highlights the focused AI candidates in purple, and supplies four blue human-label slots plus status, notes, reviewer, and timestamp. Its companion [`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and descriptions, saves the latest decision and append-only history to SQLite, and exports CSV/JSON. Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fly config validate` passed. It was deployed on 2026-07-14 at <https://fetch-silver-label-review.fly.dev/> in the `lemma` organization. Production verification confirmed password gating, the 132-case health response, 1/1 passing checks, the attached encrypted volume, and an initialized SQLite database under `/data`.
 
 ## Recommended files now
 
@@ -160,7 +160,7 @@ The new workbook preserves all preceding columns, highlights the focused AI cand
 | Stable one-label silver baseline | [`04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx`](04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx) |
 | Human-checked paper examples | [`05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx`](05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx) |
 | Most current human-review workbook | [`10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx`](10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx) |
-| Browser-based human review | [`../human_review_app/`](../human_review_app/) |
+| Browser-based human review | <https://fetch-silver-label-review.fly.dev/>; source and operations in [`../human_review_app/`](../human_review_app/) |
 | Focused seven-row adjudication | [`10_four_label_human_review/focused_multilabel_adjudication.csv`](10_four_label_human_review/focused_multilabel_adjudication.csv) |
 | P1-only review extract | [`09_internal_priority_review/highest_priority_rows.csv`](09_internal_priority_review/highest_priority_rows.csv) |
 | Full prioritized queue | [`09_internal_priority_review/prioritized_review_queue.csv`](09_internal_priority_review/prioritized_review_queue.csv) |
@@ -201,5 +201,6 @@ The new workbook preserves all preceding columns, highlights the focused AI cand
 | `2093ec8` | Canonical central review/audit trail through Stage 09 |
 | `8e40744` | Seven-row three/four-label adjudication and expanded workbook |
 | `6fbc86d` | Persistent taxonomy-aware human review app and Fly-ready deployment artifact |
+| `9760c54` | Correct Fly Dockerfile resolution and restricted remote build context |
 
 Future review or label-changing commits should be appended here and linked to their stage documentation.

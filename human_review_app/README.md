@@ -4,6 +4,18 @@ This is a deliberately small review interface for the 132-row prioritized silver
 
 The human can choose zero through four exact taxonomy pairs. Candidate order has no meaning. Saved work goes to SQLite, every save is appended to a history table, and current results can be exported as CSV or JSON.
 
+## Live instance
+
+- URL: <https://fetch-silver-label-review.fly.dev/>
+- Fly organization: `lemma` (Lemma)
+- App: `fetch-silver-label-review`
+- Region: `iad`
+- Compute: one `shared-cpu-1x:256MB` Machine with automatic stop/start and zero minimum running Machines
+- Storage: one encrypted 1 GB `review_data` volume mounted at `/data`
+- Deployed and production-verified: 2026-07-14
+
+`REVIEW_PASSWORD` and `SECRET_KEY` are deployed as Fly secrets and are not stored in this repository. The generated reviewer password was handed to the project owner at deployment.
+
 ## Local use
 
 Use a virtual environment from the repository root:
@@ -37,7 +49,7 @@ SQLite plus a Fly volume is a single-machine design. Keep exactly one app Machin
 
 ## Fly.io deployment
 
-The included [`fly.toml`](fly.toml) and [`Dockerfile`](Dockerfile) are ready for a one-Machine deployment in `iad`. This follows Fly's official [Flask deployment guidance](https://fly.io/docs/python/frameworks/flask/), [`fly.toml` mount configuration](https://fly.io/docs/reference/configuration/), and [volume workflow](https://fly.io/docs/volumes/volume-manage/). Before first deployment, choose a globally unique app name by editing `app` in `fly.toml`, then from the repository root run:
+The included [`fly.toml`](fly.toml) and [`Dockerfile`](Dockerfile) reproduce the one-Machine deployment in `iad`. This follows Fly's official [Flask deployment guidance](https://fly.io/docs/python/frameworks/flask/), [`fly.toml` mount configuration](https://fly.io/docs/reference/configuration/), and [volume workflow](https://fly.io/docs/volumes/volume-manage/). For a new app, choose a globally unique name by editing `app` in `fly.toml`, then from the repository root run:
 
 ```bash
 fly apps create fetch-silver-label-review

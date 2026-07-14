@@ -23,4 +23,5 @@ order-insensitive correction, and human-prioritization history is documented in
 The latest review artifact allows up to four unordered labels per row. Use the
 [`silver_labels/10_four_label_human_review/`](silver_labels/10_four_label_human_review/)
 workbook or the persistent, taxonomy-aware
-[`human_review_app/`](human_review_app/) browser interface.
+[`human_review_app/`](human_review_app/) browser interface, deployed at
+<https://fetch-silver-label-review.fly.dev/>.
