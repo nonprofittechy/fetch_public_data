@@ -14,18 +14,17 @@ This stage is a fresh audit of the final AI silver-label dataset using Azure GPT
 
 The exact prompt template is [`prompt_template.txt`](prompt_template.txt), and rendered prompts are in `prompts/`. The raw Azure responses are in `responses/`; normalized checkpointed outputs are in `checkpoint.json`. Runtime metadata, source hashes, model version, batch size, and the resume note are in [`run_metadata.json`](run_metadata.json).
 
-The prompt deliberately supplies the current primary label for audit comparison but tells the model not to accept it automatically. It requires the second label to represent a distinct legal issue or explicitly requested service, not merely a neighboring taxonomy alternative or procedural reframing.
+The prompt deliberately supplies the current primary label for audit comparison but tells the model not to accept it automatically. It requires the second label to represent a distinct legal issue or explicitly requested service, not merely a neighboring taxonomy alternative or procedural reframing. The workbook treats returned labels as an unordered set; the raw ranked model assessment is retained separately for transparency.
 
 ## Results
 
 | Audit result | Rows |
 |---|---:|
-| Current primary supported; one label sufficient | 284 |
-| Current primary supported; two labels supported | 53 |
-| Current primary supported; multi-label assessment uncertain | 1 |
-| Current primary needs change; one label sufficient | 46 |
-| Current primary needs change; two labels supported | 34 |
-| Current primary needs change; multi-label assessment uncertain | 1 |
+| Current primary supported; one label sufficient | 297 |
+| Current primary supported; two labels supported | 81 |
+| Current primary supported; multi-label assessment uncertain | 2 |
+| Current primary needs change; one label sufficient | 33 |
+| Current primary needs change; two labels supported | 6 |
 | Primary assessment uncertain; one label sufficient | 4 |
 | Primary assessment uncertain; two labels supported | 3 |
 | Primary assessment uncertain; multi-label assessment uncertain | 5 |
@@ -33,9 +32,11 @@ The prompt deliberately supplies the current primary label for audit comparison 
 Headline counts:
 
 - 90 rows were assessed as supporting two labels.
-- 81 rows were assessed as needing a different primary label.
+- 39 rows were assessed as needing a different primary label when label order is ignored.
 - 12 rows had an uncertain primary assessment.
-- 146 rows enter the review queue because they need a primary-label decision, have two labels, or are uncertain.
+- 389 rows contain the existing primary somewhere in the unordered audit label set; 42 do not.
+- 46 rows changed assessment when match order was ignored.
+- 132 rows enter the review queue because they need a primary-label decision, have two labels, or are uncertain.
 
 These are outputs from one fresh model audit, not independent-rater agreement. The “needs change” and “uncertain” results are review findings, not automatically applied corrections.
 

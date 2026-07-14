@@ -3,22 +3,36 @@
   "provider": "azure",
   "model": "gpt-5.2",
   "audit_prompt_allows_maximum_labels": 2,
-  "counts_by_primary_and_multi_label_assessment": {
-    "needs_change + one_label_sufficient": 46,
-    "needs_change + two_labels_supported": 34,
-    "needs_change + uncertain": 1,
-    "supported + one_label_sufficient": 284,
-    "supported + two_labels_supported": 53,
-    "supported + uncertain": 1,
+  "counts_by_order_insensitive_primary_and_multi_label_assessment": {
+    "needs_change + one_label_sufficient": 33,
+    "needs_change + two_labels_supported": 6,
+    "supported + one_label_sufficient": 297,
+    "supported + two_labels_supported": 81,
+    "supported + uncertain": 2,
     "uncertain + one_label_sufficient": 4,
     "uncertain + two_labels_supported": 3,
     "uncertain + uncertain": 5
   },
+  "model_ranked_primary_assessment_counts": {
+    "supported": 338,
+    "needs_change": 81,
+    "uncertain": 12
+  },
+  "order_insensitive_primary_assessment_counts": {
+    "supported": 380,
+    "needs_change": 39,
+    "uncertain": 12
+  },
+  "current_primary_membership_in_unordered_audit_label_set": {
+    "in_set": 389,
+    "absent": 42
+  },
+  "rows_changed_by_ignoring_match_order": 46,
   "rows_with_two_labels_supported": 90,
-  "rows_where_current_primary_needs_change": 81,
+  "rows_where_current_primary_needs_change": 39,
   "rows_with_uncertain_primary_assessment": 12,
-  "review_queue_rows": 146,
-  "interpretation": "This is a fresh single-model audit, not independent inter-rater agreement. It reports the model's two-label assessment against the existing final AI primary label; human review remains appropriate for needs_change, uncertain, and two-label rows.",
+  "review_queue_rows": 132,
+  "interpretation": "This is a fresh single-model audit, not independent inter-rater agreement. The human-facing primary assessment is order-insensitive: the existing label is supported if it appears anywhere in the returned one- or two-label set. The raw model-ranked assessment is retained separately.",
   "files": {
     "audit_results": "audit_results.json",
     "audit_summary": "audit_summary.csv",

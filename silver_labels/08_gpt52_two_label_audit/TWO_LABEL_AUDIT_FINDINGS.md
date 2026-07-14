@@ -2,9 +2,9 @@
 
 ## Interpretation
 
-The fresh GPT-5.2 pass supports the multi-label hypothesis. It identified 90 rows where two labels are independently supported by the text, including 53 rows where the existing AI primary was retained and 34 where the existing primary was judged incomplete or incorrect.
+The fresh GPT-5.2 pass supports the multi-label hypothesis. It identified 90 rows where two labels are independently supported by the text, including 81 rows where the existing AI primary is present in the unordered two-label set.
 
-The audit also identified 81 rows where the existing primary should be reconsidered. This is a single-model audit signal, not a replacement for human review. It is especially important to inspect cases where the model changed the primary while also adding a second label.
+When label order is ignored, 389 rows contain the existing primary somewhere in the one- or two-label set, while 42 do not. The order-insensitive audit therefore identifies 39 substantive primary-label change candidates and 12 uncertain rows. The raw model-ranked assessment had 81 “needs change” rows; 46 rows changed assessment when order was normalized. These are single-model audit signals, not a replacement for human review.
 
 ## Representative findings
 
@@ -29,7 +29,7 @@ The audit also identified 81 rows where the existing primary should be reconside
 
 ## What to review first
 
-Start with [`review_queue.json`](review_queue.json) or filter the workbook by `two_label_audit_status`. Prioritize:
+Start with [`review_queue.json`](review_queue.json) or filter the workbook by `two_label_audit_status`. Use `two_label_audit_primary_assessment` for the order-insensitive decision; `two_label_audit_model_primary_assessment` preserves the raw ranked-model decision. Prioritize:
 
 1. `primary_assessment = needs_change` and `multi_label_assessment = two_labels_supported`;
 2. `primary_assessment = needs_change` and one-label output;

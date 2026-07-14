@@ -44,6 +44,15 @@ def label(value: tuple[str, str]) -> str:
     return f"{value[0]} / {value[1]}".strip(" /")
 
 
+def order_insensitive_primary_assessment(current_primary: dict[str, str], audit: dict[str, object]) -> tuple[str, bool]:
+    """Assess the current primary against the unordered returned label set."""
+    current = pair(current_primary)
+    in_set = current in {pair(match) for match in audit["matches"]}
+    if audit["primary_assessment"] == "uncertain":
+        return "uncertain", in_set
+    return ("supported" if in_set else "needs_change"), in_set
+
+
 def build_prompt(taxonomy_text: str, batch: list[tuple[int, str, str]]) -> str:
     records = "\n\n".join(
         f"ROW {row_id}\nCURRENT FINAL AI PRIMARY LABEL: {current_label}\nPROBLEM DESCRIPTION: {description}"
@@ -312,8 +321,8 @@ def add_fill_style(styles_xml: bytes, color: str) -> tuple[bytes, str]:
 
 def write_workbook(source: Path, output: Path, rows: list[dict[str, str]], final_review: dict[str, object], results: dict[int, dict[str, object]]) -> None:
     headers = [
-        "two_label_audit_status", "two_label_audit_primary_assessment", "two_label_audit_multi_label_assessment",
-        "two_label_audit_current_ai_primary",
+        "two_label_audit_status", "two_label_audit_primary_assessment", "two_label_audit_model_primary_assessment",
+        "two_label_audit_multi_label_assessment", "two_label_audit_current_ai_primary", "two_label_audit_current_primary_in_label_set",
         "two_label_audit_category_1", "two_label_audit_subcategory_1", "two_label_audit_justification_1", "two_label_audit_confidence_1",
         "two_label_audit_category_2", "two_label_audit_subcategory_2", "two_label_audit_justification_2", "two_label_audit_confidence_2",
         "two_label_audit_justification", "two_label_audit_model",
@@ -342,9 +351,11 @@ def write_workbook(source: Path, output: Path, rows: list[dict[str, str]], final
         result = results[row_number]
         review = final_review["rows"][str(row_number)]["review"]
         matches = result["matches"]
+        primary_assessment, current_in_set = order_insensitive_primary_assessment(review, result)
         values = [
             "two labels" if result["multi_label_assessment"] == "two_labels_supported" else "one label / uncertain",
-            result["primary_assessment"], result["multi_label_assessment"], label(pair(review)),
+            primary_assessment, result["primary_assessment"], result["multi_label_assessment"], label(pair(review)),
+            "yes" if current_in_set else "no",
         ]
         for index in range(2):
             match = matches[index] if index < len(matches) else {}
@@ -378,7 +389,7 @@ def write_workbook(source: Path, output: Path, rows: list[dict[str, str]], final
 def write_analysis(rows: list[dict[str, str]], final_review: dict[str, object], results: dict[int, dict[str, object]]) -> None:
     summary_fields = [
         "row_number", "problem_description", "current_ai_primary", "audit_status", "primary_assessment",
-        "multi_label_assessment", "audit_label_1", "audit_label_2", "audit_justification",
+        "model_primary_assessment", "current_primary_in_label_set", "multi_label_assessment", "audit_label_1", "audit_label_2", "audit_justification",
     ]
     counts = Counter()
     queue_rows: list[dict[str, str]] = []
@@ -390,44 +401,68 @@ def write_analysis(rows: list[dict[str, str]], final_review: dict[str, object], 
             review = final_review["rows"][str(row_id)]["review"]
             matches = result["matches"]
             current = label(pair(review))
+            primary_assessment, current_in_set = order_insensitive_primary_assessment(review, result)
             audit_labels = [label(pair(match)) for match in matches]
-            status = "two labels supported" if result["multi_label_assessment"] == "two_labels_supported" else "primary audit" 
+            status = "two labels supported" if result["multi_label_assessment"] == "two_labels_supported" else "primary audit"
             audit_row = {
                 "row_number": str(row_id),
                 "problem_description": row["A"],
                 "current_ai_primary": current,
                 "audit_status": status,
-                "primary_assessment": result["primary_assessment"],
+                "primary_assessment": primary_assessment,
+                "model_primary_assessment": result["primary_assessment"],
+                "current_primary_in_label_set": "yes" if current_in_set else "no",
                 "multi_label_assessment": result["multi_label_assessment"],
                 "audit_label_1": audit_labels[0] if audit_labels else "",
                 "audit_label_2": audit_labels[1] if len(audit_labels) > 1 else "",
                 "audit_justification": result["audit_justification"],
             }
             writer.writerow(audit_row)
-            counts[(result["primary_assessment"], result["multi_label_assessment"])] += 1
-            if result["primary_assessment"] != "supported" or result["multi_label_assessment"] == "two_labels_supported":
+            counts[(primary_assessment, result["multi_label_assessment"])] += 1
+            if primary_assessment != "supported" or result["multi_label_assessment"] == "two_labels_supported":
                 queue_rows.append(audit_row)
     full = {str(row_id): {
         "row_number": row_id,
         "problem_description": rows[row_id - 1]["A"],
         "current_ai_primary": final_review["rows"][str(row_id)]["review"],
+        "order_insensitive_primary_assessment": order_insensitive_primary_assessment(
+            final_review["rows"][str(row_id)]["review"], result
+        )[0],
+        "current_primary_in_label_set": order_insensitive_primary_assessment(
+            final_review["rows"][str(row_id)]["review"], result
+        )[1],
         "audit": result,
     } for row_id, result in sorted(results.items())}
     (OUT_DIR / "audit_results.json").write_text(json.dumps(full, ensure_ascii=False, indent=2), encoding="utf-8")
     (OUT_DIR / "review_queue.json").write_text(json.dumps(queue_rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    model_counts = Counter(result["primary_assessment"] for result in results.values())
+    order_insensitive_counts = Counter()
+    label_set_membership = Counter()
+    order_only_rows = 0
+    for row_id, result in results.items():
+        review = final_review["rows"][str(row_id)]["review"]
+        derived, current_in_set = order_insensitive_primary_assessment(review, result)
+        order_insensitive_counts[derived] += 1
+        label_set_membership["in_set" if current_in_set else "absent"] += 1
+        if result["primary_assessment"] != derived and result["primary_assessment"] != "uncertain":
+            order_only_rows += 1
     analysis = {
         "scope": "431 rows from the final AI silver-label dataset",
         "provider": "azure",
         "model": MODEL,
         "audit_prompt_allows_maximum_labels": 2,
-        "counts_by_primary_and_multi_label_assessment": {
+        "counts_by_order_insensitive_primary_and_multi_label_assessment": {
             f"{primary} + {multi}": count for (primary, multi), count in sorted(counts.items())
         },
+        "model_ranked_primary_assessment_counts": dict(model_counts),
+        "order_insensitive_primary_assessment_counts": dict(order_insensitive_counts),
+        "current_primary_membership_in_unordered_audit_label_set": dict(label_set_membership),
+        "rows_changed_by_ignoring_match_order": order_only_rows,
         "rows_with_two_labels_supported": sum(count for (primary, multi), count in counts.items() if multi == "two_labels_supported"),
         "rows_where_current_primary_needs_change": sum(count for (primary, multi), count in counts.items() if primary == "needs_change"),
         "rows_with_uncertain_primary_assessment": sum(count for (primary, multi), count in counts.items() if primary == "uncertain"),
         "review_queue_rows": len(queue_rows),
-        "interpretation": "This is a fresh single-model audit, not independent inter-rater agreement. It reports the model's two-label assessment against the existing final AI primary label; human review remains appropriate for needs_change, uncertain, and two-label rows.",
+        "interpretation": "This is a fresh single-model audit, not independent inter-rater agreement. The human-facing primary assessment is order-insensitive: the existing label is supported if it appears anywhere in the returned one- or two-label set. The raw model-ranked assessment is retained separately.",
         "files": {
             "audit_results": "audit_results.json",
             "audit_summary": "audit_summary.csv",
