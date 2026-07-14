@@ -1,0 +1,12 @@
+paper_failure_mode,cases,usable,initial_category_accuracy_pct,initial_expected_category_is_top_pct,initial_exact_scorable,initial_expected_exact_is_top_pct,question_coverage_pct,final_category_accuracy_when_matched_pct,expected_final_category_added_when_matched_pct,final_expected_category_is_top_when_matched_pct,final_exact_scorable_matched,final_exact_accuracy_when_matched_pct,expected_final_exact_added_when_matched_pct,final_expected_exact_is_top_when_matched_pct
+,1536,1536,93.82,81.97,1371,56.89,80.53,90.95,1.29,82.7,1077,67.41,6.31,38.9
+bankruptcy_collections_role_confusion,264,264,92.05,68.18,264,40.91,44.32,51.28,3.42,32.48,117,17.95,1.71,6.84
+bankruptcy_vs_collections,60,60,53.33,50.0,60,50.0,41.67,100.0,4.0,88.0,25,40.0,28.0,16.0
+criminal_vs_restraining,60,60,20.0,3.33,60,3.33,73.33,47.73,9.09,9.09,44,36.36,6.82,2.27
+criminal_vs_restraining_wrong_stalking_default,180,180,94.44,65.56,180,63.89,77.78,83.57,8.57,25.0,140,70.71,8.57,23.57
+domestic_violence,60,60,100.0,100.0,60,45.0,40.0,100.0,0.0,100.0,24,62.5,0.0,62.5
+domestic_violence_low_question_coverage,270,270,100.0,100.0,270,74.81,76.67,100.0,0.0,100.0,207,23.67,6.76,5.8
+employment_admin,60,60,50.0,50.0,30,0.0,13.33,50.0,0.0,50.0,4,0.0,0.0,0.0
+employment_admin_ignores_hearing_signals,270,270,79.26,64.81,135,30.37,57.41,72.9,1.94,47.1,62,33.87,4.84,0.0
+injury_location,60,60,95.0,91.67,60,88.33,70.0,28.57,14.29,4.76,42,28.57,14.29,4.76
+injury_location_does_not_flip_off_clock,180,180,97.78,87.78,180,62.78,83.33,74.0,0.67,66.0,150,64.0,4.67,34.67

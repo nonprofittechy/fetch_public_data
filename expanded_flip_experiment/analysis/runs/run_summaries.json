@@ -1,0 +1,284 @@
+{
+  "final_run_1_20260714T170440Z": {
+    "total_cases": 1000,
+    "usable_cases": 1000,
+    "provider_errors": 0,
+    "initial_category_accuracy_pct": 90.6,
+    "initial_exact_scorable_cases": 890,
+    "initial_exact_accuracy_pct": 78.43,
+    "initial_expected_category_is_top_pct": 78.1,
+    "initial_expected_exact_is_top_pct": 55.73,
+    "question_coverage_pct": 70.5,
+    "final_category_accuracy_when_matched_pct": 85.25,
+    "expected_final_category_added_when_matched_pct": 2.98,
+    "final_exact_scorable_matched_cases": 621,
+    "final_exact_accuracy_when_matched_pct": 56.52,
+    "expected_final_exact_added_when_matched_pct": 7.09,
+    "final_expected_category_is_top_when_matched_pct": 71.06,
+    "final_expected_exact_is_top_when_matched_pct": 29.15,
+    "classification_changed_when_matched_pct": 12.77,
+    "top_category_changed_when_matched_pct": 4.26,
+    "initially_wrong_matched_count": 62,
+    "rescued_to_expected_category_count": 55,
+    "expected_category_transition_matrix_when_matched": {
+      "initial_present_final_present": 546,
+      "initial_present_final_absent": 97,
+      "initial_absent_final_present": 55,
+      "initial_absent_final_absent": 7
+    },
+    "top_category_transition_matrix_when_matched": {
+      "initial_expected_top_category_final_expected_top_category": 382,
+      "initial_expected_top_category_final_other_top_category": 167,
+      "initial_other_top_category_final_expected_top_category": 119,
+      "initial_other_top_category_final_other_top_category": 37
+    },
+    "paper_style_top_category_outcomes_when_matched": {
+      "initial_expected_final_expected_top_changed": 12,
+      "initial_expected_final_expected_top_unchanged": 370,
+      "initial_expected_final_other_top_changed": 1,
+      "initial_expected_final_other_top_unchanged": 166,
+      "initial_other_final_expected_top_changed": 3,
+      "initial_other_final_expected_top_unchanged": 116,
+      "initial_other_final_other": 37
+    },
+    "historical_paper_outcome_matrix_when_matched": {
+      "initial_correct_final_correct": 546,
+      "neutral_failure_to_flip": 94,
+      "harmed_degraded": 3,
+      "rescued": 55,
+      "initially_wrong_still_wrong": 7
+    },
+    "expected_final_category_set_transition_when_matched": {
+      "absent_initially_present_after": 21,
+      "present_initially_present_after": 580,
+      "present_initially_absent_after": 17,
+      "absent_initially_absent_after": 87
+    },
+    "expected_final_exact_set_transition_when_matched": {
+      "absent_initially_present_after": 44,
+      "present_initially_present_after": 307,
+      "present_initially_absent_after": 41,
+      "absent_initially_absent_after": 229
+    },
+    "intended": {
+      "cases": 1000,
+      "question_coverage_pct": 70.5,
+      "final_category_accuracy_when_matched_pct": 85.25,
+      "final_exact_scorable_matched_cases": 621,
+      "final_exact_accuracy_when_matched_pct": 56.52
+    },
+    "counterfactual": {
+      "cases": 0,
+      "question_coverage_pct": null,
+      "final_category_accuracy_when_matched_pct": null,
+      "final_exact_scorable_matched_cases": 0,
+      "final_exact_accuracy_when_matched_pct": null
+    },
+    "domestic_violence_hidden_fact": {
+      "cases": 85,
+      "question_coverage_pct": 77.65,
+      "explicit_safety_or_abuse_probe_pct": 41.18,
+      "matcher_coverage_among_explicit_probes_pct": 94.29,
+      "final_category_accuracy_when_matched_pct": 92.42,
+      "final_exact_scorable_matched_cases": 66,
+      "final_exact_accuracy_when_matched_pct": 33.33,
+      "top_label_changed_when_matched_pct": 10.61
+    },
+    "operational_log_counts": {
+      "gpt5_failures": 0,
+      "gpt5_timeouts": 0,
+      "gemini_failures": 0,
+      "mistral_rate_limits": 0,
+      "spot_errors": 0,
+      "semantic_merge_timeouts": 0
+    }
+  },
+  "final_run_2_20260714T181957Z": {
+    "total_cases": 1000,
+    "usable_cases": 1000,
+    "provider_errors": 0,
+    "initial_category_accuracy_pct": 89.8,
+    "initial_exact_scorable_cases": 890,
+    "initial_exact_accuracy_pct": 77.19,
+    "initial_expected_category_is_top_pct": 77.4,
+    "initial_expected_exact_is_top_pct": 54.61,
+    "question_coverage_pct": 72.1,
+    "final_category_accuracy_when_matched_pct": 83.77,
+    "expected_final_category_added_when_matched_pct": 1.25,
+    "final_exact_scorable_matched_cases": 632,
+    "final_exact_accuracy_when_matched_pct": 56.01,
+    "expected_final_exact_added_when_matched_pct": 5.38,
+    "final_expected_category_is_top_when_matched_pct": 71.84,
+    "final_expected_exact_is_top_when_matched_pct": 29.27,
+    "classification_changed_when_matched_pct": 15.95,
+    "top_category_changed_when_matched_pct": 5.41,
+    "initially_wrong_matched_count": 69,
+    "rescued_to_expected_category_count": 59,
+    "expected_category_transition_matrix_when_matched": {
+      "initial_present_final_present": 545,
+      "initial_present_final_absent": 107,
+      "initial_absent_final_present": 59,
+      "initial_absent_final_absent": 10
+    },
+    "top_category_transition_matrix_when_matched": {
+      "initial_expected_top_category_final_expected_top_category": 395,
+      "initial_expected_top_category_final_other_top_category": 166,
+      "initial_other_top_category_final_expected_top_category": 123,
+      "initial_other_top_category_final_other_top_category": 37
+    },
+    "paper_style_top_category_outcomes_when_matched": {
+      "initial_expected_final_expected_top_changed": 16,
+      "initial_expected_final_expected_top_unchanged": 379,
+      "initial_expected_final_other_top_changed": 4,
+      "initial_expected_final_other_top_unchanged": 162,
+      "initial_other_final_expected_top_changed": 4,
+      "initial_other_final_expected_top_unchanged": 119,
+      "initial_other_final_other": 37
+    },
+    "historical_paper_outcome_matrix_when_matched": {
+      "initial_correct_final_correct": 545,
+      "neutral_failure_to_flip": 105,
+      "harmed_degraded": 2,
+      "rescued": 59,
+      "initially_wrong_still_wrong": 10
+    },
+    "expected_final_category_set_transition_when_matched": {
+      "absent_initially_present_after": 9,
+      "present_initially_present_after": 595,
+      "present_initially_absent_after": 18,
+      "absent_initially_absent_after": 99
+    },
+    "expected_final_exact_set_transition_when_matched": {
+      "absent_initially_present_after": 34,
+      "present_initially_present_after": 320,
+      "present_initially_absent_after": 35,
+      "absent_initially_absent_after": 243
+    },
+    "intended": {
+      "cases": 1000,
+      "question_coverage_pct": 72.1,
+      "final_category_accuracy_when_matched_pct": 83.77,
+      "final_exact_scorable_matched_cases": 632,
+      "final_exact_accuracy_when_matched_pct": 56.01
+    },
+    "counterfactual": {
+      "cases": 0,
+      "question_coverage_pct": null,
+      "final_category_accuracy_when_matched_pct": null,
+      "final_exact_scorable_matched_cases": 0,
+      "final_exact_accuracy_when_matched_pct": null
+    },
+    "domestic_violence_hidden_fact": {
+      "cases": 85,
+      "question_coverage_pct": 78.82,
+      "explicit_safety_or_abuse_probe_pct": 45.88,
+      "matcher_coverage_among_explicit_probes_pct": 94.87,
+      "final_category_accuracy_when_matched_pct": 92.54,
+      "final_exact_scorable_matched_cases": 67,
+      "final_exact_accuracy_when_matched_pct": 34.33,
+      "top_label_changed_when_matched_pct": 10.45
+    },
+    "operational_log_counts": {
+      "gpt5_failures": 6,
+      "gpt5_timeouts": 6,
+      "gemini_failures": 0,
+      "mistral_rate_limits": 0,
+      "spot_errors": 0,
+      "semantic_merge_timeouts": 0
+    }
+  },
+  "final_run_3_20260714T193500Z": {
+    "total_cases": 1000,
+    "usable_cases": 1000,
+    "provider_errors": 0,
+    "initial_category_accuracy_pct": 90.1,
+    "initial_exact_scorable_cases": 890,
+    "initial_exact_accuracy_pct": 77.08,
+    "initial_expected_category_is_top_pct": 78.2,
+    "initial_expected_exact_is_top_pct": 54.94,
+    "question_coverage_pct": 72.3,
+    "final_category_accuracy_when_matched_pct": 84.92,
+    "expected_final_category_added_when_matched_pct": 2.35,
+    "final_exact_scorable_matched_cases": 639,
+    "final_exact_accuracy_when_matched_pct": 56.34,
+    "expected_final_exact_added_when_matched_pct": 6.89,
+    "final_expected_category_is_top_when_matched_pct": 70.82,
+    "final_expected_exact_is_top_when_matched_pct": 28.17,
+    "classification_changed_when_matched_pct": 18.26,
+    "top_category_changed_when_matched_pct": 5.26,
+    "initially_wrong_matched_count": 68,
+    "rescued_to_expected_category_count": 62,
+    "expected_category_transition_matrix_when_matched": {
+      "initial_present_final_present": 552,
+      "initial_present_final_absent": 103,
+      "initial_absent_final_present": 62,
+      "initial_absent_final_absent": 6
+    },
+    "top_category_transition_matrix_when_matched": {
+      "initial_expected_top_category_final_expected_top_category": 394,
+      "initial_expected_top_category_final_other_top_category": 172,
+      "initial_other_top_category_final_expected_top_category": 118,
+      "initial_other_top_category_final_other_top_category": 39
+    },
+    "paper_style_top_category_outcomes_when_matched": {
+      "initial_expected_final_expected_top_changed": 14,
+      "initial_expected_final_expected_top_unchanged": 380,
+      "initial_expected_final_other_top_changed": 4,
+      "initial_expected_final_other_top_unchanged": 168,
+      "initial_other_final_expected_top_changed": 1,
+      "initial_other_final_expected_top_unchanged": 117,
+      "initial_other_final_other": 39
+    },
+    "historical_paper_outcome_matrix_when_matched": {
+      "initial_correct_final_correct": 552,
+      "neutral_failure_to_flip": 102,
+      "harmed_degraded": 1,
+      "rescued": 62,
+      "initially_wrong_still_wrong": 6
+    },
+    "expected_final_category_set_transition_when_matched": {
+      "absent_initially_present_after": 17,
+      "present_initially_present_after": 597,
+      "present_initially_absent_after": 13,
+      "absent_initially_absent_after": 96
+    },
+    "expected_final_exact_set_transition_when_matched": {
+      "absent_initially_present_after": 44,
+      "present_initially_present_after": 316,
+      "present_initially_absent_after": 26,
+      "absent_initially_absent_after": 253
+    },
+    "intended": {
+      "cases": 1000,
+      "question_coverage_pct": 72.3,
+      "final_category_accuracy_when_matched_pct": 84.92,
+      "final_exact_scorable_matched_cases": 639,
+      "final_exact_accuracy_when_matched_pct": 56.34
+    },
+    "counterfactual": {
+      "cases": 0,
+      "question_coverage_pct": null,
+      "final_category_accuracy_when_matched_pct": null,
+      "final_exact_scorable_matched_cases": 0,
+      "final_exact_accuracy_when_matched_pct": null
+    },
+    "domestic_violence_hidden_fact": {
+      "cases": 85,
+      "question_coverage_pct": 77.65,
+      "explicit_safety_or_abuse_probe_pct": 45.88,
+      "matcher_coverage_among_explicit_probes_pct": 92.31,
+      "final_category_accuracy_when_matched_pct": 89.39,
+      "final_exact_scorable_matched_cases": 66,
+      "final_exact_accuracy_when_matched_pct": 37.88,
+      "top_label_changed_when_matched_pct": 15.15
+    },
+    "operational_log_counts": {
+      "gpt5_failures": 0,
+      "gpt5_timeouts": 0,
+      "gemini_failures": 0,
+      "mistral_rate_limits": 0,
+      "spot_errors": 0,
+      "semantic_merge_timeouts": 0
+    }
+  }
+}
