@@ -2,7 +2,7 @@ app = "fetch-silver-label-review"
 primary_region = "iad"
 
 [build]
-  dockerfile = "human_review_app/Dockerfile"
+  dockerfile = "Dockerfile"
 
 [env]
   REVIEW_DB_PATH = "/data/reviews.sqlite3"

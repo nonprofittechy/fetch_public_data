@@ -1,0 +1,7 @@
+**
+!human_review_app/
+!human_review_app/**
+!silver_labels/
+!silver_labels/10_four_label_human_review/
+!silver_labels/10_four_label_human_review/review_cases.json
+!silver_labels/10_four_label_human_review/taxonomy.json
