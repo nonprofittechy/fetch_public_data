@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 122,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User started a bookkeeping business and wants a lawyer to review/draft client contracts and ensure they are “official.”\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is straightforward small-business contract review/formation support; no distinct second legal issue is developed.\"\n    },\n    {\n      \"row_id\": 123,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Non-Profit\",\n          \"justification\": \"User seeks low-cost help forming a 501(c) nonprofit for a religious organization and wants review/editing of bylaws and state forms.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Nonprofit formation/document review fits squarely; no separate dispute or litigation described.\"\n    },\n    {\n      \"row_id\": 124,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Non-Profit\",\n          \"justification\": \"User requests help and has questions about a nonprofit organization, without additional context.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although sparse, the only stated issue is nonprofit-related assistance.\"\n    },\n    {\n      \"row_id\": 125,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Non-Profit\",\n          \"justification\": \"User is on a local nonprofit board and needs counsel about responding to another company’s lawyer requesting a meeting (governance/organizational legal guidance).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The text centers on a nonprofit board receiving contact from a company lawyer and needing advice; it does not clearly describe the nonprofit as a business facing environmental regulatory compliance (the Business & Corporate/Environment description).\"\n    },\n    {\n      \"row_id\": 126,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"Nonprofit performing group seeks advice on “royalty questions,” which typically concerns copyright/royalty rights for performances/works.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Royalty issues align better with copyright than with the IP/Entertainment label as defined (which is about protecting creative works in entertainment but not necessary here); the closest canonical fit for royalty/copyright questions is Trademark/Copyright.\"\n    },\n    {\n      \"row_id\": 127,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"User seeks a business attorney for cease and desist/demand letters and potential litigation.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Demand/cease-and-desist and anticipated litigation in a business context matches Business & Corporate/Litigation.\"\n    },\n    {\n      \"row_id\": 128,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Creditor)\",\n          \"justification\": \"User sold a business on a sales contract, buyer stopped paying, and user is pursuing foreclosure on the security interest/lien to collect what is owed.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is primarily a creditor remedy/collection via foreclosure of collateral after nonpayment, not a corporate litigation dispute between two businesses as entities needing business-litigation counsel.\"\n    },\n    {\n      \"row_id\": 129,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User is starting a retail business and needs advice on business structure (LLC vs nonprofit) and general setup.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Business and Corporate\",\n          \"justification\": \"User plans to sell imported goods from South Korea and requests someone who knows import/export laws, indicating cross-border business compliance questions.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary is supported for entity formation/structuring; a distinct second issue is explicitly requested: import/export-related legal guidance crossing national borders.\"\n    },\n    {\n      \"row_id\": 130,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Agriculture/Farm\",\n          \"justification\": \"Dispute over a farm lease: a verbal extension of a written lease that the other party won’t honor.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Even though the user mentions contract law, the core dispute is an agricultural land lease/extension—squarely within farm real property issues.\"\n    },\n    {\n      \"row_id\": 131,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User seeks legal aid for corporate practice of medicine contracts relating to business ownership/structure.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is business ownership/contract structuring in a regulated industry; no separate licensing enforcement or malpractice issue is stated.\"\n    },\n    {\n      \"row_id\": 132,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User is starting a consulting business and needs help with licensure/registration setup and agreement review.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Business setup/compliance and contract review are core general business legal services.\"\n    },\n    {\n      \"row_id\": 133,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Sale of Business\",\n          \"justification\": \"User needs review of a Bill of Sale for purchase of a small newspaper business, including indemnification, website/domain ownership, and checking liens/debts.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is directly about the transaction of buying/selling a business and related diligence/contract terms.\"\n    },\n    {\n      \"row_id\": 134,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Marijuana Business\",\n          \"justification\": \"User is a partial owner of an Oregon licensed cannabis business seeking advice on OLCC enforcement/regulatory compliance and potential violations.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Whistleblowers\",\n          \"justification\": \"User explicitly raises “whistleblower considerations,” suggesting concern about retaliation/protections tied to reporting violations.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary matches cannabis/OLCC compliance. A second distinct legal service is requested: whistleblower-related guidance.\"\n    },\n    {\n      \"row_id\": 135,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User formed an LLC with partners and wants legal review of an ownership agreement for a software startup.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"LLC ownership/operating agreement drafting and startup formation are core general business matters.\"\n    },\n    {\n      \"row_id\": 136,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"General Litigation\",\n          \"justification\": \"User describes a “churning” situation by a financial advisor/fiduciary and seeks recovery (implying a dispute/claim against the advisor), not business securities issuance/compliance.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"This reads like an investor/family claim for misconduct by an advisor (potential fraud/breach of fiduciary duty), which is litigation rather than Business & Corporate/Securities (raising money/issuer-side).\"\n    },\n    {\n      \"row_id\": 137,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Securities\",\n          \"justification\": \"User needs review of contracts related to employee stock options and financing structures (forward purchase/prepaid variable forward contracts).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is squarely securities/financial-instrument contract review.\"\n    },\n    {\n      \"row_id\": 138,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Sale of Business\",\n          \"justification\": \"Partners in a small business have internal disputes over partner compensation and management; they want their own lawyer regarding partner rights/structure and potential dispute resolution.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The problem is an intra-owner/partner dispute. The closest fit in the provided taxonomy is Sale of Business because it covers partner departures/buyouts and ownership disputes, whereas “Litigation” is premature and generic here.\"\n    },\n    {\n      \"row_id\": 139,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Restaurant/OLCC\",\n          \"justification\": \"User seeks counsel specializing in restaurant/hospitality small business and mentions consulting/litigation services in that context.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"General (residential)\",\n          \"justification\": \"User additionally requests “investment property/real estate law services,” indicating a separate real-estate legal need.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"Restaurant/hospitality counsel supports the current category, but the real-estate request is also explicit; the property type is not specified (investment could be residential or commercial), making the second label lower confidence.\"\n    },\n    {\n      \"row_id\": 140,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Agriculture/Farm\",\n          \"justification\": \"User needs legal assistance regarding a farm involving agricultural transactions and leases.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Taxation\",\n          \"subcategory\": \"Personal Income\",\n          \"justification\": \"User also explicitly requests tax advice related to the farm transaction.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary is supported due to farm transactions/leases. A second distinct service is requested: tax advice (though details are limited).\"\n    },\n    {\n      \"row_id\": 141,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User needs legal advice for setting up an ownership group for an athletic team (entity/ownership structuring and agreements).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is business organization/ownership structuring, not IP entertainment protection; no copyright/trademark issue is mentioned.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038639,
+  "id": "chatcmpl-E1YEhO8uuvSAdPcJg0Gejtiv359an",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2933,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 197,
+      "engine_ttlt_ms": 41348,
+      "pre_inference_ms": 567,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 949,
+      "service_ttlt_ms": 42133,
+      "total_duration_ms": 41619,
+      "user_visible_ttft_ms": 381
+    },
+    "prompt_tokens": 11408,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 14341
+  }
+}

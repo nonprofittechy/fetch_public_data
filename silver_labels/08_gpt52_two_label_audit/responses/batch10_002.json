@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 212,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Property Damage\",\n          \"justification\": \"User received a $10,000 demand stemming from a car crash while uninsured and wants to investigate/contest the amount and arrange payment; the underlying dispute is civil liability for crash-related damages.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Debt Counseling/Workouts) treats this as negotiating an acknowledged consumer debt, but the described obligation arises from an auto accident damage claim, which is better framed as a civil property-damage/liability matter.\"\n    },\n    {\n      \"row_id\": 213,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Pensions/Benefits/Erisa\",\n          \"justification\": \"Dispute over a disability insurer's alleged overpayment and repayment/collections demand for short-term to long-term disability benefits; this is a benefits-administration/denial-overpayment issue rather than ordinary consumer debt.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current 'General (Debtor)' is not the best fit because the conflict is with a disability benefits plan/insurer over overpayment and collections, aligning more with benefits/ERISA-type disputes.\"\n    },\n    {\n      \"row_id\": 214,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User was served/sued on a past-due credit card debt and needs help answering within 30 days to avoid further consequences.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward consumer debt collection lawsuit against the debtor; current primary is supported.\"\n    },\n    {\n      \"row_id\": 215,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User has been served in a lawsuit for breach of contract seeking $8,000 and wants representation/defense; although they claim the other party breached, the immediate issue is defending a civil claim for money allegedly owed.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current label 'Problems Between Consumers' is for private-sale product disputes; here the user is being sued for breach of contract and needs defense regarding an alleged money obligation, which fits debtor-side civil debt/claim defense better.\"\n    },\n    {\n      \"row_id\": 216,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is on a payment plan with a law office that bought their debt and is dealing with a motion to keep the case pending/dismissal issues related to that debt matter.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"This is about managing an active debt-collection case/proceeding while paying a purchased debt; 'General (Debtor)' is supported.\"\n    },\n    {\n      \"row_id\": 217,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"Judgement Collection\",\n          \"justification\": \"User already has a judgment against a former renter and is garnishing wages; they need instructions to renew the garnishment after 90 days.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"They are enforcing an existing judgment and need garnishment renewal guidance; current primary is supported.\"\n    },\n    {\n      \"row_id\": 218,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"Served with a summons for a past-due credit card debt and needs advice about responding in court.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Classic debtor-side credit card collection lawsuit; current primary is supported.\"\n    },\n    {\n      \"row_id\": 219,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User was served on two collection cases and wants to avoid garnishment and raise defenses like age of the debt/statute of limitations.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is debtor-side defense to collection lawsuits with concern about garnishment; current primary is supported.\"\n    },\n    {\n      \"row_id\": 220,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User is disputing an unemployment overpayment/denial, has had a hearing, and is appealing the Employment Department decision.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct challenge to state unemployment benefit determination and overpayment finding; current primary is supported.\"\n    },\n    {\n      \"row_id\": 221,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User is facing garnishment for a large Oregon unemployment overpayment and is seeking help with hardship/waiver/forgiveness and stopping garnishment tied to the agency process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The garnishment and interest stem from an unemployment overpayment determination and related administrative waiver/hardship process; current primary is supported.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039732,
+  "id": "chatcmpl-E1YWKqvU4PqBGi3L5nznGv6Ckn9p1",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1461,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 62,
+      "engine_ttlt_ms": 17745,
+      "pre_inference_ms": 164,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 292,
+      "service_ttlt_ms": 17996,
+      "total_duration_ms": 17918,
+      "user_visible_ttft_ms": 128
+    },
+    "prompt_tokens": 11285,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 11136
+    },
+    "total_tokens": 12746
+  }
+}

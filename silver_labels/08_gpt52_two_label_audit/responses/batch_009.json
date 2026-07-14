@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 162,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Banking\",\n          \"justification\": \"User seeks legal representation regarding Wells Fargo closing accounts and failing to deliver a remaining balance ($30,000+)—a dispute with a bank over missing funds.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is a consumer dispute with a bank about account closure and missing account balance; no separate debt-collection or litigation posture described.\"\n    },\n    {\n      \"row_id\": 163,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Automobiles/RVs/Mobile Homes\",\n          \"justification\": \"Buyer cannot obtain an auto title from the dealership, preventing resale—vehicle purchase/transaction issue with dealer.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a dealership-related vehicle transaction problem (missing title), fitting the auto consumer category.\"\n    },\n    {\n      \"row_id\": 164,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Automobiles/RVs/Mobile Homes\",\n          \"justification\": \"Alleges the car should not have been sold due to serious unresolved defects and repeated failed repairs, impacting safety and finances.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Complaint centers on a defective vehicle sold to the consumer and repair/warranty representations, which is squarely an auto consumer dispute.\"\n    },\n    {\n      \"row_id\": 165,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Dispute with a general contractor/subcontractor over defective carpet installation in a home renovation and responsibility/payment.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Small Claims Advice\",\n          \"justification\": \"User explicitly asks 'Small claims questions' about withholding payment, lien risk, and who to sue/claim against.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary issue is a contractor workmanship/payment dispute tied to home renovation; user also explicitly seeks small-claims procedural guidance.\"\n    },\n    {\n      \"row_id\": 166,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Automobiles/RVs/Mobile Homes\",\n          \"justification\": \"Online vehicle purchase allegedly misrepresented condition; upon delivery the car had damage and mechanical issues, and seller refuses to refund shipping fee.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Small Claims Advice\",\n          \"justification\": \"User asks whether they have a small claims court case regarding nondisclosure/misrepresentation and the disputed shipping fee.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Facts support an auto-sale misrepresentation dispute; user also explicitly requests small-claims direction.\"\n    },\n    {\n      \"row_id\": 167,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Automobiles/RVs/Mobile Homes\",\n          \"justification\": \"Vehicle purchase dispute involving immediate transmission problems, allegedly invalid extended warranty, and dealer not refunding canceled service contract funds to buyer/credit union.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Central conflict is with the dealer over vehicle defects and warranty/service-contract refund tied to the vehicle purchase.\"\n    },\n    {\n      \"row_id\": 168,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Automobiles/RVs/Mobile Homes\",\n          \"justification\": \"Financed new car purchase where dealership mistakenly sent title; user asks about leverage/compensation connected to the vehicle transaction and lien/title handling.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a dealership/financing/title handling issue arising from a vehicle purchase.\"\n    },\n    {\n      \"row_id\": 169,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Expunction\",\n          \"justification\": \"User explicitly wants two misdemeanor charges from 2018 expunged.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request to clear/seal prior misdemeanor charges fits expunction.\"\n    },\n    {\n      \"row_id\": 170,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Relief From Sex Offender Registration\",\n          \"justification\": \"User seeks help filing documents to obtain relief from sex offender registration.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The requested service is specifically relief from registration.\"\n    },\n    {\n      \"row_id\": 171,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Juvenile Offender\",\n          \"justification\": \"A 12-year-old is accused at school of distributing 'chocolate mushrooms' (likely controlled substance-related), implicating juvenile criminal exposure.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Accused child is under 18; this is a juvenile offense scenario.\"\n    },\n    {\n      \"row_id\": 172,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Relief From Sex Offender Registration\",\n          \"justification\": \"User is facing a court date tied to alleged failure to complete annual sex offender registration; needs representation regarding sex offender registration obligations.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current label 'Criminal Law / Other' is too broad; the problem centers on sex offender registration compliance. While it's not a petition for removal, it is still explicitly about sex offender registration and related court exposure, making that subcategory the closest fit in the provided taxonomy.\"\n    },\n    {\n      \"row_id\": 173,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"DUII/DWS\",\n          \"justification\": \"User reports a major car accident involving DUII, indicating a DUII criminal matter.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text explicitly references DUII in connection with an accident.\"\n    },\n    {\n      \"row_id\": 174,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User seeks help contesting speeding and careless driving citations and asks about dismissal/deferred disposition.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a non-criminal traffic citation defense request (speeding/careless driving) as described in taxonomy.\"\n    },\n    {\n      \"row_id\": 175,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Misdemeanor\",\n          \"justification\": \"User was arrested on Assault IV charges and needs criminal defense counsel for arraignment.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User states they are in the middle of a divorce (though they already have a divorce attorney).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary need is criminal defense for Assault IV; divorce context is also explicitly present but not the primary requested service.\"\n    },\n    {\n      \"row_id\": 176,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Lessor Felony\",\n          \"justification\": \"Listed charges include Theft I, Aggravated Theft I, possession of a stolen vehicle, and negotiating a bad check—serious non-homicide felony charges that are not clearly identified in the taxonomy as Measure 11/major felonies.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current 'Major Felony' label may be overstated based on the examples given for major felonies; the described theft-related felonies fit better under 'Lessor Felony' per taxonomy descriptions, though exact severity classification is not fully determinable from the text alone.\"\n    },\n    {\n      \"row_id\": 177,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Non-Capital Murder\",\n          \"justification\": \"User explicitly states they are facing a second-degree murder charge.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Second-degree murder is directly within non-capital murder scope.\"\n    },\n    {\n      \"row_id\": 178,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Major Felony\",\n          \"justification\": \"User reports distribution/manufacturing of a controlled substance (felony-level drug charge) and needs urgent representation.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Parole/Probation\",\n          \"justification\": \"User also has a probation violation and diversion revocation, which are supervision/violation proceedings.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text supports both a new serious drug charge and separate probation/diversion violation matters.\"\n    },\n    {\n      \"row_id\": 179,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Major Felony\",\n          \"justification\": \"User describes false allegations including rape and that the complainant was a minor, implying very serious felony sex offense exposure requiring criminal defense.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"While no statute is listed, the alleged conduct (rape involving a minor) aligns best with the taxonomy’s most serious felony bucket among available options.\"\n    },\n    {\n      \"row_id\": 180,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User received a citation for illegal use of an electronic device while driving and wants to contest it.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Non-criminal traffic citation contest fits traffic offenses.\"\n    },\n    {\n      \"row_id\": 181,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User wants a lawyer to contest a speeding citation (11–20 mph) and challenge signage and equipment/officer basis.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Clear request to fight a standard moving violation ticket.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039057,
+  "id": "chatcmpl-E1YLRqyGkfRHDjghRlaZrWrYM1A0O",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2839,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 11,
+      "engine_ttft_ms": 134,
+      "engine_ttlt_ms": 31399,
+      "pre_inference_ms": 267,
+      "service_tbt_ms": 11,
+      "service_ttft_ms": 479,
+      "service_ttlt_ms": 31970,
+      "total_duration_ms": 31707,
+      "user_visible_ttft_ms": 212
+    },
+    "prompt_tokens": 12011,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 11904
+    },
+    "total_tokens": 14850
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "choices": [
+    {
+      "content_filter_result": {
+        "error": {
+          "code": "content_filter_error",
+          "message": "The contents are not filtered"
+        }
+      },
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 82,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Military/Veterans\",\n          \"justification\": \"User specifically requests attorneys who handle VA disability claims.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is solely VA disability benefits representation, fitting Administrative Law → Military/Veterans.\"\n    },\n    {\n      \"row_id\": 83,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"User’s professional license was revoked and they need counsel to navigate that revocation and related administrative process.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Civil Rights\",\n          \"justification\": \"User reports suspected discrimination/rights violations tied to the license revocation and resulting public record affecting employment, and mentions a possible civil suit.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary issue is professional license revocation (administrative/licensing). Text also supports a distinct potential discrimination/civil rights claim beyond the licensing appeal.\"\n    },\n    {\n      \"row_id\": 84,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"Dispute with Oregon Board of Licensed Professional Counselors and Therapists; found guilty and wants to request a hearing/contest board handling and sanctions.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a direct challenge to a state professional licensing board’s allegations/sanctions and hearing process.\"\n    },\n    {\n      \"row_id\": 85,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"DMV (Non-Criminal)\",\n          \"justification\": \"DMV notice of impending license suspension for failure to file an accident report and accident while uninsured; user wants appeal/hearing representation.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an administrative DMV license suspension matter (not DUII/criminal).\"\n    },\n    {\n      \"row_id\": 86,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User was denied unemployment and has unpaid weeks; wants to fix the unemployment claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Dispute is with state unemployment benefits decision/payment.\"\n    },\n    {\n      \"row_id\": 87,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"Benefits and back federal pay held up; adjudication/holds and request for lawyer to restore benefits and obtain back pay.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Concerns unemployment benefit holds, eligibility determinations, and back pay owed by the state agency.\"\n    },\n    {\n      \"row_id\": 88,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"System bug prevented weekly claims; denial and upcoming hearing; seeking payment for weeks unemployed.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an unemployment benefits denial/appeal/hearing issue.\"\n    },\n    {\n      \"row_id\": 89,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User seeks attorney for complex Oregon unemployment claims and fears being falsely accused of unemployment fraud within that process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary dispute is within Oregon unemployment administration (multiple employers, decisions, potential fraud allegation in that context).\"\n    },\n    {\n      \"row_id\": 90,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"Unemployment was paid then re-adjudicated and denied; hearing next week regarding eligibility standards.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct unemployment eligibility redetermination and appeal/hearing.\"\n    },\n    {\n      \"row_id\": 91,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"User only states they need someone experienced in administrative hearings without identifying a specific agency/benefit area.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Insufficient facts to place in a specific administrative subcategory; 'Other' is the best supported by the vague request.\"\n    },\n    {\n      \"row_id\": 92,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User references unemployment findings/investigations and wants help responding and potentially fighting the outcome.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue centers on unemployment investigations/findings and contesting the agency outcome.\"\n    },\n    {\n      \"row_id\": 93,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"SSD (Social Security Disability)\",\n          \"justification\": \"User has SSDI benefits terminated due to alleged excess income, faces overpayment demand, and has filed reconsideration.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an SSDI continuation/overpayment dispute with Social Security, fitting SSD category.\"\n    },\n    {\n      \"row_id\": 94,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Social Security/SSI\",\n          \"justification\": \"User states they filed for SSI and were denied and is seeking help appealing despite medical evidence.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"SSD (Social Security Disability)\",\n          \"justification\": \"User also references being denied SSD, indicating a separate (or combined) disability benefits claim/appeal issue beyond SSI alone.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (SSD) is incomplete because the user explicitly filed for SSI and was denied; text also mentions SSD denial, supporting two distinct SSA benefit tracks.\"\n    },\n    {\n      \"row_id\": 95,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"SSD (Social Security Disability)\",\n          \"justification\": \"User is on SSDI and needs advice about working part-time without losing benefits and converting SSDI to retirement SS at age 62.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Matter concerns managing SSDI benefits and potential transition to retirement Social Security; best fit remains SSD.\"\n    },\n    {\n      \"row_id\": 96,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"SSD (Social Security Disability)\",\n          \"justification\": \"Question concerns children receiving Social Security benefits through a parent on SSDI, including backpay handling.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User’s issue is intertwined with a divorce agreement allocating 50% of children’s backpay to the father and asks how to protect benefits within that agreement.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary is SSA/SSDI derivative benefits administration; a distinct additional issue is how the divorce agreement should treat/allocate those benefits.\"\n    },\n    {\n      \"row_id\": 97,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"Individual is in significant debt and seeks legal advice about bankruptcy.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"User is a consumer debtor exploring personal bankruptcy options.\"\n    },\n    {\n      \"row_id\": 98,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User wants to discuss filing bankruptcy as a low-income individual homeowner.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Straightforward personal bankruptcy inquiry.\"\n    },\n    {\n      \"row_id\": 99,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User requests a bankruptcy lawyer without additional business context.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Default to personal bankruptcy based on generic request from an individual.\"\n    },\n    {\n      \"row_id\": 100,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Document Review\",\n          \"justification\": \"User plans to file Chapter 7 with limited funds and wants to ensure forms are completed correctly after credit counseling.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"They are proceeding pro se and want attorney review of bankruptcy paperwork.\"\n    },\n    {\n      \"row_id\": 101,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Pro Se Coaching\",\n          \"justification\": \"User seeks knowledge/advice on potentially filing bankruptcy (guidance rather than stating they need an attorney to file or review completed forms).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Request is for general advice/coaching about bankruptcy process/options.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038563,
+  "id": "chatcmpl-E1YDTr6N7duvgRMy9aHc7A2RqQIwh",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2591,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 118,
+      "engine_ttlt_ms": 35456,
+      "pre_inference_ms": 226,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 431,
+      "service_ttlt_ms": 35764,
+      "total_duration_ms": 35546,
+      "user_visible_ttft_ms": 205
+    },
+    "prompt_tokens": 11915,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 14506
+  }
+}

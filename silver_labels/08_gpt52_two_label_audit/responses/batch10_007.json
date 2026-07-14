@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 262,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"User reports plastic surgery with severe errors and unexpected vision impairment, alleging the surgeon was impaired and they now need corrective surgeries—classic medical negligence claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The dispute is about negligent surgical care causing injury (including vision impairment), fitting medical malpractice. No separate, distinct legal issue is requested beyond malpractice.\"\n    },\n    {\n      \"row_id\": 263,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"Alleges radiologist negligently failed to report a lesion/obstruction on a CTA scan, causing a year delay in treatment and permanent lung damage—failure to diagnose/report is medical malpractice.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a provider-negligence claim based on delayed diagnosis leading to permanent injury; no other legal service is clearly requested.\"\n    },\n    {\n      \"row_id\": 264,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"Claims nurse used inappropriate compression wrap on a diabetic ulcer causing rapid deterioration and near-amputation; seeks to hold nurse/organization accountable for medical negligence.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The harm is tied to alleged negligent wound care by a nurse/medical organization, fitting medical malpractice.\"\n    },\n    {\n      \"row_id\": 265,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Health Law/HIPAA\",\n          \"justification\": \"User complains a healthcare provider emailed sensitive health information via personal Gmail rather than a secure HIPAA-compliant system—privacy/security of medical info (HIPAA-type issue).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is specifically about improper disclosure/handling of protected health information, squarely within Health Law/HIPAA.\"\n    },\n    {\n      \"row_id\": 266,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Personal Injury\",\n          \"justification\": \"Dog bite caused inability to work for months and ongoing nerve damage; user is describing an injury caused by another party’s animal, seeking damages—personal injury claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"While an animal is involved, the core is bodily injury and lost work from a dog bite, best classified as Personal Injury rather than Animal Law under this taxonomy.\"\n    },\n    {\n      \"row_id\": 267,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Actions Against Police\",\n          \"justification\": \"User alleges police wrote a false report, altered their statement, refused follow-up, and violated body-camera policy; wants to pursue action against the police department.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The requested relief is directed at police misconduct/false reporting by officers, fitting Actions Against Police.\"\n    },\n    {\n      \"row_id\": 268,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"User explicitly seeks information on protective orders and to file orders, stating multiple people are stalking them and one person broke into their home—fits request for stalking/protective order.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Libel/Slander/Defamation\",\n          \"justification\": \"User also states they are facing defamation and slander online, indicating a distinct reputational-harm issue separate from obtaining a protective order.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Text supports two distinct issues: (1) seeking protective/stalking orders, and (2) online defamation/slander.\"\n    },\n    {\n      \"row_id\": 269,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"General Litigation\",\n          \"justification\": \"Alleges hospital caseworker/placement misconduct and misrepresentations about coverage leading to inappropriate facility placement and poor treatment/neglect; this is not medical treatment negligence by a provider but a broader civil claim about discharge/placement and alleged improper dealings.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The complaint centers on a caseworker’s placement decisions and alleged misrepresentation/kickback-like arrangement rather than negligent medical care; taxonomy lacks a precise subcategory, so General Litigation fits better than Malpractice-Medical.\"\n    },\n    {\n      \"row_id\": 270,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Dental\",\n          \"justification\": \"User explicitly requests a dental malpractice attorney for a case involving a minor (under 18).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request for dental malpractice representation; minor status does not change the subcategory.\"\n    },\n    {\n      \"row_id\": 271,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"User seeks medical malpractice lawyer alleging prior surgeon left metal shavings in body discovered during later surgery, implying negligent surgical practice and resulting harm.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Alleged retained foreign material from prior surgery is a classic medical malpractice claim; no separate legal issue is requested.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039835,
+  "id": "chatcmpl-E1YXzatOcky8WJsp6fptt9UnnV8Cj",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1501,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 75,
+      "engine_ttlt_ms": 21811,
+      "pre_inference_ms": 158,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 292,
+      "service_ttlt_ms": 22023,
+      "total_duration_ms": 21874,
+      "user_visible_ttft_ms": 134
+    },
+    "prompt_tokens": 11082,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12583
+  }
+}

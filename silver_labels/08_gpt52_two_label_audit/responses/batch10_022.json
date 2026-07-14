@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 412,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Foreclosure\",\n          \"justification\": \"Grandparents’ home was “auctioned off” and user wants to claim any surplus proceeds from the sale, which commonly arises after foreclosure/tax foreclosure auctions rather than from probate administration.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The problem centers on an auction and claiming a surplus from sale proceeds, not on administering the grandparents’ estates through probate (no mention of a will, personal representative, probate court, etc.). Best fit is real-property foreclosure/auction surplus rather than probate.\"\n    },\n    {\n      \"row_id\": 413,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"User wants to file an objection to a will they believe was fraudulently created/executed—i.e., contesting a will.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a direct will-contest scenario (fraudulent will) which squarely fits Wills & Trusts litigation.\"\n    },\n    {\n      \"row_id\": 414,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"User has California conservatorship papers and is trying to register/recognize them in Oregon (foreign conservatorship order; filing copy of foreign judgment).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The described task is recognition/registration of an out-of-state conservatorship/guardianship order—this fits the conservatorship/guardianship category.\"\n    },\n    {\n      \"row_id\": 415,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Probate\",\n          \"justification\": \"Mother died intestate with debts and real property; estate exceeds small-estate/probate limit; user needs help settling and distributing to siblings.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Intestate estate administration with assets over the threshold is classic probate.\"\n    },\n    {\n      \"row_id\": 416,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"General (Wills, Trusts, Estates)\",\n          \"justification\": \"User wants end-of-life planning: make a will and plan how to pass property to children.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is forward-looking estate planning (will/property transfer planning), not probate or litigation.\"\n    },\n    {\n      \"row_id\": 417,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"The issue described is an eviction (reason: hiding from law enforcement).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The text mainly states an eviction context; no details indicate landlord-side representation. ‘Charges filed’ is too vague to classify as a specific criminal subcategory, so a single residential tenant/eviction label is best supported.\"\n    },\n    {\n      \"row_id\": 418,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Lessor Felony\",\n          \"justification\": \"User describes assaulting county workers and then fleeing in a vehicle and hitting people—conduct likely leading to serious felony charges (assault/vehicular assault, hit-and-run), but not enough detail to confirm Measure 11/‘major felony’.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Tort Claims Act\",\n          \"justification\": \"Underlying incident began with the county entering and taking down a tree on the user’s property without consent, suggesting a potential claim against a government entity for wrongful property damage/trespass (subject to Tort Claims Act procedures).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current ‘Major Felony’ label is not clearly supported because no specific Measure 11-type charge is identified. The narrative supports criminal defense for serious charges (better fit: Lessor Felony) and also separately supports a potential civil claim against the county for unauthorized tree removal (government defendant triggers Tort Claims Act).\"\n    },\n    {\n      \"row_id\": 419,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User explicitly states 'Divorce' along with other issues.\",\n          \"confidence\": \"low\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"User explicitly states 'Eviction' as a separate issue.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"The description lists three topics (divorce, eviction, criminal case) with no facts. Divorce is supported only by the word itself, and eviction is separately requested, so two labels may be appropriate, but the lack of details makes both fit and the need for multi-label classification uncertain.\"\n    },\n    {\n      \"row_id\": 420,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User broke their foot at work after a customer threw something; workplace injury seeking workers’ compensation help.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User asks 'Will I be deported?' indicating immigration status concerns triggered by being fired/incident.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Workers’ comp is supported, but the user also expressly raises deportation risk, which is a distinct immigration issue warranting a second label.\"\n    },\n    {\n      \"row_id\": 421,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"Sister has guardianship and power of attorney over parents and is changing beneficiary status—dispute tied to guardianship/POA control over parents’ affairs.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Personal Injury\",\n          \"justification\": \"User says sister 'hit me with her car' and wants her to pay—classic auto/personal injury claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label (personal injury) is only partially supported because the text also raises a separate guardianship/POA-based family/estate control dispute. The parking ticket mention is not developed enough to add a traffic-offense label.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040161,
+  "id": "chatcmpl-E1YdFIHpxPvT8et0yjF94bx6ELJD8",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1769,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 80,
+      "engine_ttlt_ms": 25249,
+      "pre_inference_ms": 250,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 460,
+      "service_ttlt_ms": 25598,
+      "total_duration_ms": 25363,
+      "user_visible_ttft_ms": 210
+    },
+    "prompt_tokens": 10678,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12447
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 282,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User explicitly requests help with “patent filings,” which requires a patent attorney registered with the USPTO.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User also requests “copyright, trademark” filings/registration assistance.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label covers trademark/copyright but misses the distinct patent-filing service expressly requested; two IP labels are supported.\"\n    },\n    {\n      \"row_id\": 283,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User is asking whether a new business name similar to another business (“Willow Third Eye” vs “Sparrow Third Eye”) is permissible and what consequences might be—this is a trademark/business name confusion issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The problem is about potential trademark infringement/confusion from adopting a similar name; employment is mentioned only as context, not a separate legal issue.\"\n    },\n    {\n      \"row_id\": 284,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User wrote an autobiography and asks about copyright registration steps (submitted half, whether to resubmit full book) before approaching agents/publishers.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is squarely about copyright registration/strategy for a book; no distinct second legal issue is clearly requested.\"\n    },\n    {\n      \"row_id\": 285,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User received a settlement demand and threat to sue for “copyright infringement” for using someone else’s picture on a website.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary label fits: a threatened copyright infringement claim and settlement demand.\"\n    },\n    {\n      \"row_id\": 286,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User wants guidance on licensing a “specific song as the background track” for a video, i.e., copyright permissions/synchronization licensing.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a copyright licensing/permission question; current primary is supported.\"\n    },\n    {\n      \"row_id\": 287,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"Non-profit received PicRights notice about images on website and seeks advice on legitimacy and obligations—copyright enforcement/demand issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"A copyright claim/demand letter scenario; current primary is supported.\"\n    },\n    {\n      \"row_id\": 288,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User wants to apply for “a copyright and a trademark” and needs help filling out U.S. government application forms.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is straightforward trademark and copyright registration assistance; one label is sufficient.\"\n    },\n    {\n      \"row_id\": 289,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User received PicRights demand for alleged use of Reuters/AP images and seeks a lawyer for copyright issues, including cross-border considerations.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Core issue is an alleged copyright infringement demand; current primary is supported.\"\n    },\n    {\n      \"row_id\": 290,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Online Harassment/Doxing/Bullying\",\n          \"justification\": \"User describes ongoing TikTok-driven humiliation and harassment causing emotional distress and fear for career, seeking legal options for damages/action.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Libel/Slander/Defamation\",\n          \"justification\": \"User alleges the TikTok user made “damaging statements” to a large audience that “tarnish[ed] my reputation,” which is a defamation claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although unauthorized use of video is mentioned with a DMCA takedown, the dominant, well-developed legal issues are online harassment and reputational harm/defamation; two distinct litigation issues are supported, so the IP-only primary should be changed.\"\n    },\n    {\n      \"row_id\": 291,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"Non-profit received a law-firm notice alleging copyrighted material use and demanding payment; they dispute it and suspect a scam—still a copyright claim/demand evaluation.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Even if suspected scam, the dispute is framed as alleged copyright infringement with a payment demand; current primary is supported.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039878,
+  "id": "chatcmpl-E1YYgxZUcujJGs3CoUgx4GS6Zpd6o",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1472,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 81,
+      "engine_ttlt_ms": 18737,
+      "pre_inference_ms": 238,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 493,
+      "service_ttlt_ms": 19112,
+      "total_duration_ms": 18892,
+      "user_visible_ttft_ms": 255
+    },
+    "prompt_tokens": 10818,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12290
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 252,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Military\",\n          \"justification\": \"User is seeking divorce/annulment and spouse enlisted in the Navy; military status can affect jurisdiction and process.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"User specifically asks for help getting spouse off the apartment lease and changing locks, which are landlord-tenant/housing access issues.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Family Law / General (Divorce/Separation)) is partly supported by the divorce request, but the spouse’s Navy status makes Family Law / Military a better fit under the taxonomy. A distinct additional issue is removal from a residential lease/locks, supporting a second label.\"\n    },\n    {\n      \"row_id\": 253,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"Wants to rework a parenting plan and address visitation due to safety concerns, alleged violence, DHS involvement, and intoxicated driving attempt by the other parent.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The problem is directly about modifying parenting time/custody for children’s safety; no separate distinct legal service is clearly requested beyond custody/visitation changes.\"\n    },\n    {\n      \"row_id\": 254,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Actions Against Police\",\n          \"justification\": \"Alleges police falsified reports, omitted body cam/video and witness statements, and mishandled identifying info, impacting prosecution—seeking a lawyer for police misconduct.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Personal Injury\",\n          \"justification\": \"Describes severe assault with concussion and ongoing medical care; may need civil recovery from attacker in addition to police-misconduct issues.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported because the central complaint is police misconduct/falsified reporting. The text also supports a distinct personal injury claim arising from the assault itself.\"\n    },\n    {\n      \"row_id\": 255,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Civil Matter for Inmates\",\n          \"justification\": \"Seeks civil suit for being held 35 months past lawful term after prison/parole calculation issues; this is a rights-based claim stemming from incarceration/over-detention.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Civil Rights) is plausible, but the taxonomy has a more specific fit: Civil Matter for Inmates covers lawsuits relating to incarceration and constitutional violations like over-detention.\"\n    },\n    {\n      \"row_id\": 256,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Property Damage\",\n          \"justification\": \"Fire originated at neighbor’s property; user has uninsured losses and wants to sue for fire damage.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Insurance (Liability)\",\n          \"justification\": \"User specifically wants to pursue the neighbor’s insurance for losses, implicating a liability insurance claim/dispute context.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Property Damage is supported as the core harm is fire damage to property. The request also specifically targets the neighbor’s insurer, supporting an additional insurance-liability dispute angle.\"\n    },\n    {\n      \"row_id\": 257,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"Alleges negligent/financially motivated medical treatment by a neurologist over years (unnecessary Botox, failure to diagnose/treat hip issue) causing prolonged disability and loss of quality of life.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The user explicitly seeks a medical malpractice attorney and describes substandard medical care causing harm; no distinct second legal issue is requested.\"\n    },\n    {\n      \"row_id\": 258,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"User states a stalking order was filed against them and they need help responding/defending.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is directly supported by the text and is sufficiently specific.\"\n    },\n    {\n      \"row_id\": 259,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Wrongful Death\",\n          \"justification\": \"Mother died after alleged hospital negligence (fall from ER bed, delayed discovery, CPR despite DNR); user seeks to make hospital pay for the death.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"Allegations are fundamentally about substandard hospital/ER care leading to fatal injuries (negligent supervision/fall prevention and treatment decisions).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Wrongful Death is supported because the claim centers on death caused by negligence. A separate, distinct but closely related malpractice theory is explicitly described (hospital incompetence/medical negligence).\"\n    },\n    {\n      \"row_id\": 260,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Tort Claims Act\",\n          \"justification\": \"Wants to pursue the City of Salem for vehicle damage caused by potholes and has already filed claims with the city; this is a claim against a government entity with special procedures/deadlines.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary fits precisely: damages caused by alleged municipal negligence requiring a claim against a city government.\"\n    },\n    {\n      \"row_id\": 261,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"User has a temporary stalking order, upcoming contested hearing, and requests representation as the petitioner to obtain/maintain protections.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Property Damage\",\n          \"justification\": \"Stalker allegedly vandalized workplace by breaking several windows, which is a distinct compensable property-damage issue beyond obtaining the order.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary label is supported by the request for counsel for the stalking order hearing. The described vandalism (broken windows) supports a separate property-damage claim if the user pursues civil recovery.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039807,
+  "id": "chatcmpl-E1YXXwzkbvkZXHYVWBAPVbcrLfyi4",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1757,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 81,
+      "engine_ttlt_ms": 27054,
+      "pre_inference_ms": 95,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 257,
+      "service_ttlt_ms": 27216,
+      "total_duration_ms": 27201,
+      "user_visible_ttft_ms": 162
+    },
+    "prompt_tokens": 11369,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 13126
+  }
+}

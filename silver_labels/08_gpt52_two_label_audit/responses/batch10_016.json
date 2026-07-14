@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 352,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"General\",\n          \"justification\": \"The user broadly requests “worker's rights” and help protecting themself in the workplace, without describing a workplace injury or workers’ comp benefits dispute.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Workers' Comp | State) is not supported because no work injury/claim details are provided—only general workplace rights/protection.\"\n    },\n    {\n      \"row_id\": 353,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"Describes a specific on-the-job injury with need for surgery and wants an attorney to communicate with the workers’ comp administrator/insurer (Alderwick) to move treatment/claim forward.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a classic state workers’ compensation benefits/treatment dispute arising from a workplace injury.\"\n    },\n    {\n      \"row_id\": 354,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"Work injury claim accepted by SAIF, but user reports not being compensated for lost work time and seeks consultation—this is a workers’ comp benefits issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The problem is about wage-loss compensation under an accepted workers’ compensation claim.\"\n    },\n    {\n      \"row_id\": 355,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User is dealing with a Notice of Closure, permanent partial disability rating, restrictions, insurer communications, and a proposed lump-sum settlement to close the claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"All described issues (closure, PPD, settlement, treatment outcomes) are within state workers’ compensation.\"\n    },\n    {\n      \"row_id\": 356,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"User seeks an attorney knowledgeable in workers’ comp laws spanning California and Oregon and wants document review/advice, which is outside a single-state standard claim framing and fits the catch-all workers’ comp category.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Cross-jurisdiction workers’ comp assistance and document review supports Workers' Comp | Other rather than a specific state-only claim.\"\n    },\n    {\n      \"row_id\": 357,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"On-the-job injuries, denial of a second injury/surgery by Alderwick, and request for representation at an Oregon Workers Compensation Board hearing.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Explicit Oregon workers’ comp denial and board hearing representation request squarely fits Workers' Comp | State.\"\n    },\n    {\n      \"row_id\": 358,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User needs help appealing a workers’ comp claim closure/release to work without restrictions, believing the decision is incorrect.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Appeal of closure/return-to-work restrictions is a state workers’ compensation dispute.\"\n    },\n    {\n      \"row_id\": 359,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User states they are involved in a workers’ compensation claim and want advice/guidance; no facts suggest a different legal domain.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although sparse, the user’s issue is explicitly a workers’ comp claim, supporting Workers' Comp | State.\"\n    },\n    {\n      \"row_id\": 360,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User challenges claim closure, denial/restriction of therapy, and alleged underpayment of compensation—core workers’ comp treatment and benefits issues.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Dispute over closure, medical treatment authorization, and wage compensation fits state workers’ compensation.\"\n    },\n    {\n      \"row_id\": 361,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"SAIF denied the workers’ comp claim and the user wants to appeal, seeking an attorney referral.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"A denied SAIF workers’ comp claim with intended appeal is squarely Workers' Comp | State.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040033,
+  "id": "chatcmpl-E1YbB4Hs4CHCXTOq4vRyQTsm0rCVK",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1339,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 92,
+      "engine_ttlt_ms": 16412,
+      "pre_inference_ms": 125,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 286,
+      "service_ttlt_ms": 16599,
+      "total_duration_ms": 16482,
+      "user_visible_ttft_ms": 161
+    },
+    "prompt_tokens": 10814,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12153
+  }
+}

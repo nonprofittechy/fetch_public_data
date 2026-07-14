@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 342,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Document Review/Severance Packages.\",\n          \"justification\": \"User explicitly wants an attorney to review a separation agreement and negotiate severance pay.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"FMLA\",\n          \"justification\": \"User believes termination was due to their FMLA status, indicating a potential FMLA retaliation/interference issue.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported by the direct request to review/negotiate a separation/severance agreement. A second label is supported because the user separately alleges termination tied to FMLA status (distinct statutory claim). Age discrimination is also mentioned but does not require a second label given the two-label limit and the stronger FMLA framing.\"\n    },\n    {\n      \"row_id\": 343,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"FMLA\",\n          \"justification\": \"User says they were made to work despite having provider certification covered under FMLA, which is an FMLA leave/interference issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text is squarely about denial/ignoring FMLA-protected leave; no distinct second legal issue is developed.\"\n    },\n    {\n      \"row_id\": 344,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User alleges wage discrepancies and being switched between salary and hourly “to avoid paying me my overtime,” which is a pay/overtime compliance issue.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Sexual Harrasment\",\n          \"justification\": \"User explicitly reports “sexual harassment” and a hostile work environment by an employer.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"While sexual harassment is mentioned, the description includes a concrete overtime-avoidance/pay-structure allegation that is independently actionable and heavily described. Two labels are supported because wage/overtime violations and sexual harassment are distinct employment issues.\"\n    },\n    {\n      \"row_id\": 345,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User seeks penalty wages for late final paycheck/withholding pay, lack of paystubs, and overtime/payday timing issues—classic wage payment law claims.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary label fits the core dispute (late/withheld wages and statutory penalties). Small claims is mentioned as a venue, but that is procedural rather than a separate legal service category here.\"\n    },\n    {\n      \"row_id\": 346,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User reports employer failed to pay after termination for 18 days, seeks penalties, and unpaid sick pay—wage payment/penalty wage issues.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward unpaid wages/final pay and penalty wage situation; no additional distinct category is necessary.\"\n    },\n    {\n      \"row_id\": 347,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User describes a work-related injury that developed over time, medical treatment/surgeries, light duty, and workplace reporting—fits state workers’ compensation assistance.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core request is legal help for a workplace injury/claim; allegations about supervisor conduct do not create a separate, clearly requested employment retaliation claim in the text.\"\n    },\n    {\n      \"row_id\": 348,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"Problem statement explicitly says it is a work injury/workers’ comp case.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"No other facts suggest a different or additional category.\"\n    },\n    {\n      \"row_id\": 349,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User was injured at work and was on workers’ compensation for 6 months after a slip and fall while working.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"Third Party litigation\",\n          \"justification\": \"User asks about “options…for my personal injury” in addition to workers’ comp, suggesting potential third-party liability arising from a work injury.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Workers’ comp is clearly involved, but the explicit request for personal injury options indicates a distinct potential third-party claim, making the current single 'State' primary incomplete; Third Party litigation should be included.\"\n    },\n    {\n      \"row_id\": 350,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User seeks help with a potential workers’ comp claim for tendonitis from work activities and is unsure which employer/insurer is responsible.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is how to pursue a state workers’ comp claim for an occupational injury amid employer change; no separate non-comp legal issue is requested.\"\n    },\n    {\n      \"row_id\": 351,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User reports multiple workplace injuries at a company affecting daily life and seeks workers’ compensation help.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The facts align with a workers’ compensation injury/benefits matter without an additional distinct legal service request.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040011,
+  "id": "chatcmpl-E1YapejFDRpJRZaYn26WbnDEb0UNX",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1603,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 97,
+      "engine_ttlt_ms": 20902,
+      "pre_inference_ms": 88,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 240,
+      "service_ttlt_ms": 21039,
+      "total_duration_ms": 20961,
+      "user_visible_ttft_ms": 152
+    },
+    "prompt_tokens": 11374,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12977
+  }
+}

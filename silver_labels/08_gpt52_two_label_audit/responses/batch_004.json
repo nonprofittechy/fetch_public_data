@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 62,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Personal Injury\",\n          \"justification\": \"User suffered significant injuries (dog bite, nerve damage) with lost work time and is seeking recovery for those injuries; this is a bodily injury tort claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Animal Law) is less direct; the core issue is a personal injury claim arising from a dog bite with medical harm and wage loss.\"\n    },\n    {\n      \"row_id\": 63,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Insurance (Health/Disability)\",\n          \"justification\": \"They report a short-term disability claim that was initially approved and then denied by the insurance company handling the claim.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"General\",\n          \"justification\": \"They also ask about rights to return to work and issues getting responses/approval from the employer regarding return-to-work status.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Insurance denial fits the current primary label; the problem text also supports a separate employment-rights/return-to-work issue with the employer.\"\n    },\n    {\n      \"row_id\": 64,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Mobile Home (Tenant/Owner)\",\n          \"justification\": \"User owns a manufactured home in a park and disputes park owner actions around buyouts/relocation tied to permitted creek/embankment work affecting homes.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a manufactured home park tenant/owner dispute about buyouts and inability to sell due to park/permitting circumstances; current label is supported.\"\n    },\n    {\n      \"row_id\": 65,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"Beneficiary alleges trustee is withholding the full trust document and self-dealing/misusing trust assets after grandmother’s death, indicating a potential trust dispute.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text supports a contentious trustee/beneficiary dispute likely requiring court enforcement or fiduciary-duty litigation; current primary is supported.\"\n    },\n    {\n      \"row_id\": 66,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User requests an attorney specializing in small business restaurant/hospitality with general consulting and litigation services, without a specific OLCC/liquor licensing issue stated.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"General (Commercial)\",\n          \"justification\": \"They explicitly also need \\\"investment property/realestate law services,\\\" which commonly involves commercial real estate transactions/leases for investment property.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Restaurant/OLCC is not supported because no liquor licensing/OLCC issue is described; the request is general business counsel plus a distinct commercial real estate service need.\"\n    },\n    {\n      \"row_id\": 67,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Misdemeanor\",\n          \"justification\": \"User was arrested on Assault IV charges with an arraignment set, and seeks a criminal defense attorney.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Assault IV is a misdemeanor-level criminal charge; current label is supported.\"\n    },\n    {\n      \"row_id\": 68,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Guardianship(minor)\",\n          \"justification\": \"User wants to become the official guardian of a 13-year-old sister and needs next steps despite parents’ permission.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request is explicitly for legal guardianship of a minor; current label is supported.\"\n    },\n    {\n      \"row_id\": 69,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Personal Injury\",\n          \"justification\": \"User was assaulted, knocked unconscious, has medical records and seeks recourse for injuries caused by the assailant.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Actions Against Police\",\n          \"justification\": \"They allege police wrote a false report, altered their statement, failed to investigate, and want to pursue action against the police department.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary focuses only on police misconduct, but the facts also clearly support a separate underlying personal injury claim for the assault itself.\"\n    },\n    {\n      \"row_id\": 70,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Neighbor Disputes/Nuisance\",\n          \"justification\": \"Ongoing neighbor conflict involving threats, damage to plants/property, fence alterations, and surveillance impacting enjoyment of home.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"Allegations of repeated harassment and threats, including \\\"I’ll never stop watching you,\\\" camera surveillance into windows/yard, and fear for safety support seeking a protective/stalking-type order.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Not just a nuisance/property dispute: the facts include repeated threatening conduct and surveillance consistent with seeking a stalking/protective order.\"\n    },\n    {\n      \"row_id\": 71,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Elder Abuse\",\n          \"justification\": \"Family alleges abuse/stealing from a mother with dementia and there is a sudden replacement of POA with a \\\"friend,\\\" suggesting exploitation/undue influence concerns.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although it also involves POA authority, the central conflict described is accusations and possible financial exploitation/undue influence around an elder with dementia; current label is reasonably supported.\"\n    },\n    {\n      \"row_id\": 72,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Misdemeanor\",\n          \"justification\": \"User is charged with multiple misdemeanor counts (harassment and menacing) and seeks defense asserting innocence.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is straightforward misdemeanor criminal defense; current label is supported.\"\n    },\n    {\n      \"row_id\": 73,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"User wants information and to file protective/restraining orders due to stalking and a reported home break-in by one person.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Libel/Slander/Defamation\",\n          \"justification\": \"They additionally report \\\"defamation and slander online\\\" as a separate issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported, and the text independently supports a defamation claim in addition to seeking protective orders.\"\n    },\n    {\n      \"row_id\": 74,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Tort Claims Act\",\n          \"justification\": \"User seeks a tort claim and lawsuit against a police department for unlawful arrest/detention and beating, indicating a claim against a government entity with tort-claim notice implications.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"While this is police misconduct, the user explicitly requests a tort claim report/claim and lawsuit against the department; Tort Claims Act is the better fit per taxonomy guidance for suits against government entities.\"\n    },\n    {\n      \"row_id\": 75,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"They want advice on filing a utility patent for a unique method.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Request is squarely about utility patent filing; current label is supported.\"\n    },\n    {\n      \"row_id\": 76,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"They ask about patent categories including software patents and strategy for protecting an app.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although broader IP strategy is mentioned, the only specific IP protection type identified is patents/software patents; current label is supported.\"\n    },\n    {\n      \"row_id\": 77,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"They need help with a clinical mental health licensure board application and character/fitness issues after previously surrendering a license.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a classic professional licensing application/eligibility issue with a state board; current label is supported.\"\n    },\n    {\n      \"row_id\": 78,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"DMV (Non-Criminal)\",\n          \"justification\": \"User states an administrative DMV licensure issue without indicating a DUII-related suspension hearing or criminal charge.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Sparse facts, but it points to a non-criminal DMV licensing administrative matter; current label is supported.\"\n    },\n    {\n      \"row_id\": 79,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"They were approved for unemployment benefits but have not been paid and seek help obtaining unpaid benefits.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Dispute is with the state unemployment benefits payment/administration; current label is supported.\"\n    },\n    {\n      \"row_id\": 80,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"Unemployment benefits denial with multiple appeals and an ALJ hearing described.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an unemployment benefits appeal/denial; current label is supported.\"\n    },\n    {\n      \"row_id\": 81,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"They seek representation and advice regarding social worker professional licensure rules/representation (including civil/criminal implications) tied to licensure.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core request is professional licensure counsel for social workers; current label is supported.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038520,
+  "id": "chatcmpl-E1YCmTnlWd1wFFv763FlKQRrBUqD7",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2949,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 96,
+      "engine_ttlt_ms": 40636,
+      "pre_inference_ms": 113,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 302,
+      "service_ttlt_ms": 40830,
+      "total_duration_ms": 40726,
+      "user_visible_ttft_ms": 189
+    },
+    "prompt_tokens": 11903,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 14852
+  }
+}

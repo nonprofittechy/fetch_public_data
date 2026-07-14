@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 22,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User has been sued by a debt buyer (Midland Credit), received a summons, and is asking how to handle settlement/arbitration—this is defending a debt collection lawsuit rather than a voluntary workout.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Debt Counseling/Workouts) is less accurate because the user is already in active litigation (summons, arbitration) and needs defense/strategy for being pursued on the debt.\"\n    },\n    {\n      \"row_id\": 23,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Paternity\",\n          \"justification\": \"User explicitly wants to establish paternity and be added to the child’s birth certificate.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User also requests \\\"full custody\\\" of the child.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Paternity) is supported, but the request for full custody is a distinct additional family-law issue, so two labels are supported.\"\n    },\n    {\n      \"row_id\": 24,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Wrongful Death\",\n          \"justification\": \"Alleges hospital negligence led to mother’s death and wants the hospital to pay for wrongful death.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"Claims ER/hospital incompetence (fall from bed, failure of care, CPR contrary to DNR) causing catastrophic injury and death—medical negligence is central.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Wrongful death is clearly implicated, but the factual basis is medical negligence, supporting an additional malpractice label.\"\n    },\n    {\n      \"row_id\": 25,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User seeks assessment of patentability and guidance on filing a (provisional) patent for an invention/improvement.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text squarely concerns patentability and patent filing strategy; single label sufficient.\"\n    },\n    {\n      \"row_id\": 26,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User asks about legal status and work visas, specifically H1B and E2.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct fit for immigration/visa assistance; no second distinct issue stated.\"\n    },\n    {\n      \"row_id\": 27,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"User mentions possible wrongful termination, which aligns with being fired for an illegal reason.\",\n          \"confidence\": \"low\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Discrimination\",\n          \"justification\": \"User also mentions possible discrimination, implying an adverse action based on protected class, though no details are provided.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"With only a bare statement (“Possible wrongful termination and/or discrimination”), it’s unclear whether one or both are truly supported; both are plausible, but details are insufficient for high confidence.\"\n    },\n    {\n      \"row_id\": 28,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User was injured at work, was on workers’ compensation for 6 months, and describes a workplace slip-and-fall injury.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Personal Injury\",\n          \"justification\": \"User asks about \\\"personal injury\\\" options after a slip-and-fall; a third-party claim may exist but the text does not identify a non-employer tortfeasor.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Workers’ Comp Third Party litigation) is not supported because no third party (someone other than employer/coworker) is identified. Workers’ comp is clearly present; a separate PI inquiry is explicitly requested.\"\n    },\n    {\n      \"row_id\": 29,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Dispute with a roofing contractor: contract to replace roof, took $13,000, did no work, now out of business—classic contractor dispute tied to home improvement.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label is supported; however, user’s core issue is contractor breach/failed performance. No additional distinct legal issue beyond the contractor dispute.\"\n    },\n    {\n      \"row_id\": 30,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Taxation\",\n          \"justification\": \"User owes taxes to Canada from prior work there and wants to dispute/reduce interest and understand limitations—cross-border tax matter.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Directly an international taxation issue involving Canadian tax liability.\"\n    },\n    {\n      \"row_id\": 31,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"User alleges trustee breach of fiduciary duty and asks about statute of limitations for filing a complaint—indicative of a trust dispute heading to legal action.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Elder Abuse\",\n          \"justification\": \"User explicitly flags \\\"possible elder financial abuse\\\" connected to trust administration.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Trustee breach supports Wills & Trusts litigation; mention of elder financial abuse supports a second, distinct estate-related concern.\"\n    },\n    {\n      \"row_id\": 32,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User was approved for unemployment but has not received benefit payments and seeks help with the agency’s nonpayment.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Clear unemployment benefits administration/payment problem; single label sufficient.\"\n    },\n    {\n      \"row_id\": 33,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Business\",\n          \"justification\": \"User is considering bankruptcy for an LLC with debts (SBA/Shopify) after closing and selling assets.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Sale of Business\",\n          \"justification\": \"User needs help unwinding an LLC partnership exit/transfer agreement and dissolving the business properly—partner buyout/exit and dissolution mechanics are central.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Bankruptcy for the business is clearly stated; there is also a distinct corporate need about partnership exit/ownership transfer and dissolution (even though not a typical \\\"sale\\\"), supporting a second label for business-transaction/partner separation.\"\n    },\n    {\n      \"row_id\": 34,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Agriculture/Farm\",\n          \"justification\": \"Dispute over a farm lease (verbal extension of a written lease) that the other party won’t honor—farm land lease issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although user mentions wanting someone with business contract experience, the underlying legal matter is a farm land lease dispute, which fits Real Property Agriculture/Farm.\"\n    },\n    {\n      \"row_id\": 35,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Automobiles/RVs/Mobile Homes\",\n          \"justification\": \"Repeated vehicle defect/repair failures and explicit request to explore Oregon Lemon Law options against dealership/manufacturer.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Vehicle purchase defect and lemon-law style claim squarely fits consumer auto dispute.\"\n    },\n    {\n      \"row_id\": 36,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Juvenile Offender\",\n          \"justification\": \"A 12-year-old is accused of distributing 'chocolate mushrooms' at school—potential juvenile criminal allegations.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Minor accused of unlawful conduct; juvenile offender label fits.\"\n    },\n    {\n      \"row_id\": 37,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"Judgement Collection\",\n          \"justification\": \"User already has a judgment and is garnishing wages but needs to renew the garnishment to keep collecting.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is enforcement/collection of an existing judgment; current label fits exactly.\"\n    },\n    {\n      \"row_id\": 38,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Paternity\",\n          \"justification\": \"User states he is not on the birth certificate and needs legal standing regarding the child.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User seeks help with custody of infant during separation and raises mother’s mental condition as custody-related concern.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Paternity is necessary to establish rights; custody is a distinct additional issue supported by the request.\"\n    },\n    {\n      \"row_id\": 39,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"Alleges radiologist negligence (missed finding) caused delayed treatment and permanent lung damage—medical malpractice claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text clearly alleges provider negligence and resulting injury; malpractice-medical is the best fit.\"\n    },\n    {\n      \"row_id\": 40,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User explicitly requests trademark and copyright filings.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User also explicitly requests patent filings, which require a registered patent attorney.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary includes only Trademark/Copyright, but the user equally requests patent filings; two labels are supported and priority between them is not clear from the text.\"\n    },\n    {\n      \"row_id\": 41,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"ADA (Disability) Act Issues\",\n          \"justification\": \"User seeks advice about ADA violations observed at work in a hospital—employment context and specifically ADA-related.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Whistleblowers label isn’t supported because the user does not state they reported wrongdoing or suffered retaliation. The only concrete issue stated is workplace ADA violations, so ADA employment issues fits better.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038421,
+  "id": "chatcmpl-E1YBBgNAHDXaXaXfpQDAgc7g2hjgC",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 3113,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 18,
+      "engine_ttft_ms": 226,
+      "engine_ttlt_ms": 55287,
+      "pre_inference_ms": 118,
+      "service_tbt_ms": 18,
+      "service_ttft_ms": 421,
+      "service_ttlt_ms": 55474,
+      "total_duration_ms": 55367,
+      "user_visible_ttft_ms": 303
+    },
+    "prompt_tokens": 11856,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 14969
+  }
+}

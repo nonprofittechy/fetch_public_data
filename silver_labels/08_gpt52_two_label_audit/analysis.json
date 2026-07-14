@@ -1,0 +1,27 @@
+{
+  "scope": "431 rows from the final AI silver-label dataset",
+  "provider": "azure",
+  "model": "gpt-5.2",
+  "audit_prompt_allows_maximum_labels": 2,
+  "counts_by_primary_and_multi_label_assessment": {
+    "needs_change + one_label_sufficient": 46,
+    "needs_change + two_labels_supported": 34,
+    "needs_change + uncertain": 1,
+    "supported + one_label_sufficient": 284,
+    "supported + two_labels_supported": 53,
+    "supported + uncertain": 1,
+    "uncertain + one_label_sufficient": 4,
+    "uncertain + two_labels_supported": 3,
+    "uncertain + uncertain": 5
+  },
+  "rows_with_two_labels_supported": 90,
+  "rows_where_current_primary_needs_change": 81,
+  "rows_with_uncertain_primary_assessment": 12,
+  "review_queue_rows": 146,
+  "interpretation": "This is a fresh single-model audit, not independent inter-rater agreement. It reports the model's two-label assessment against the existing final AI primary label; human review remains appropriate for needs_change, uncertain, and two-label rows.",
+  "files": {
+    "audit_results": "audit_results.json",
+    "audit_summary": "audit_summary.csv",
+    "review_queue": "review_queue.json"
+  }
+}

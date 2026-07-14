@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 392,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"User is a residential landlord asking whether they can refuse a tenant application based on number of occupants for a studio unit.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a landlord-side tenant screening/occupancy question in a residential rental context; no distinct additional legal service is requested.\"\n    },\n    {\n      \"row_id\": 393,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Homeowner dispute with contractor over delayed/unfinished renovation work and seeking refund for alleged breach of contract; references CCB and need to file court action.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core issue is a residential construction contract dispute with a contractor (performance, delays, refund), fitting the construction/contractors real property category.\"\n    },\n    {\n      \"row_id\": 394,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Taxation\",\n          \"subcategory\": \"Personal Income\",\n          \"justification\": \"User seeks help reducing large IRS tax liability arising from IRA withdrawals reported on their federal return.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although the withdrawals relate to an internet scam, the requested service is tax representation/relief regarding personal federal income tax owed.\"\n    },\n    {\n      \"row_id\": 395,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Taxation\",\n          \"subcategory\": \"Personal Income\",\n          \"justification\": \"User has longstanding Oregon state back income taxes and wants options such as forgiveness/relief.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a dispute/relief request regarding personal state tax debt, not a general consumer debt collection matter.\"\n    },\n    {\n      \"row_id\": 396,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Taxation\",\n          \"justification\": \"User owes taxes to Canada from past work there and wants to dispute the debt/interest and understand limitations periods.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The tax issue is with a foreign country (Canada), squarely fitting international taxation.\"\n    },\n    {\n      \"row_id\": 397,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Identity Theft\",\n          \"justification\": \"User reports someone previously tried submitting tax documents in their name to steal benefits, indicating fraudulent use of identity.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Taxation\",\n          \"subcategory\": \"Personal Income\",\n          \"justification\": \"User also requests help reviewing/submitting IRS tax forms and correcting already-submitted documents on their tax account.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The narrative centers on fraudulent filings in the user’s name (identity theft), with a secondary but distinct request for tax-form/IRS-account assistance; thus the current single tax label is incomplete.\"\n    },\n    {\n      \"row_id\": 398,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"General (Wills, Trusts, Estates)\",\n          \"justification\": \"User wants to create an estate will for their 80-year-old mother who has none.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is straightforward estate planning (drafting a will).\"\n    },\n    {\n      \"row_id\": 399,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"User seeks advice about a trustee’s breach of fiduciary duty and statute of limitations for filing a complaint—suggesting a trust dispute that may require suit.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Elder Abuse\",\n          \"justification\": \"User explicitly flags possible elder financial abuse connected to the trustee’s conduct.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Trustee breach/fiduciary-duty allegations fit W&T litigation; the text also expressly raises elder financial abuse as a distinct concern.\"\n    },\n    {\n      \"row_id\": 400,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Special Needs/Inc. Cap Trusts\",\n          \"justification\": \"User seeks to set up a special needs trust compliant with SSI rules for a young adult with developmental disabilities and upcoming inheritance/IRA distributions.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is classic special needs trust planning to preserve SSI/Medicaid eligibility.\"\n    },\n    {\n      \"row_id\": 401,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Probate\",\n          \"justification\": \"User is a beneficiary after a relative’s death and is dealing with transferring a retirement/investment account and related forms/expenses, asking whether an attorney is needed.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The issue is post-death administration/claiming assets (even if mainly a beneficiary designation), which aligns better with probate/estate administration than general estate planning (creating documents).\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040118,
+  "id": "chatcmpl-E1YcYLGBAAmVxbdnUv5PixiHZ4It9",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1457,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 88,
+      "engine_ttlt_ms": 18380,
+      "pre_inference_ms": 145,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 307,
+      "service_ttlt_ms": 18597,
+      "total_duration_ms": 18507,
+      "user_visible_ttft_ms": 162
+    },
+    "prompt_tokens": 11124,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12581
+  }
+}

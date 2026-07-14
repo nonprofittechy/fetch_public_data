@@ -1,0 +1,22 @@
+{
+  "provider": "azure",
+  "model": "gpt-5.2",
+  "mode": "two-label-audit",
+  "input_rows_file": "redaction_reviewed_v5_clean.xlsx",
+  "input_rows_sha256": "6dc3c9e2ad686355d1c70cb0865e1046a61353d714e3f7f3c23c07b07156d430",
+  "final_ai_silver_workbook": "silver_labels/05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx",
+  "final_ai_silver_workbook_sha256": "ae75d78e7386dd63e82aa6081c582f90fddfe837ce150c77ad22fefd9ee8dbff",
+  "final_review_json": "silver_labels/04_review/final_review.json",
+  "final_review_json_sha256": "7b4fe142da77fbb631911c1b47bea8f09c4fd2c09e0ff119acf361bf0010f1f6",
+  "taxonomy_file": "../app/data/taxonomy_detailed_descriptions.csv",
+  "taxonomy_snapshot": "taxonomy_snapshot.csv",
+  "taxonomy_sha256": "d24bbde77c1fea70b10f8fb547bf2794e1ddd1afca84514b7c6469d42c1f059d",
+  "taxonomy_rows": 209,
+  "prompt_builder": "run_two_label_gpt52_audit.py:build_prompt",
+  "max_matches_per_row": 2,
+  "batch_size": 10,
+  "resume_note": "The run was resumed after a provider timeout using 10-row batches; earlier checkpointed rows and their original 20-row prompts/responses are retained in this folder.",
+  "keyword_classifier": false,
+  "spot_classifier": false,
+  "credentials": "OPENAI_API_KEY and OPENAI_BASE_URL loaded at runtime; not written to artifacts"
+}

@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 302,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User is developing an app/invention and specifically requests a patent search, novelty assessment, and advice on filing a utility patent (including software/patentability strategy).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The problem is explicitly about obtaining patent protection for a new AI-driven software method and hiring a patent attorney; no separate trademark/copyright issue is requested.\"\n    },\n    {\n      \"row_id\": 303,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User needs assistance resubmitting paperwork to the PTO and obtaining a patent on an invention.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward request for patent prosecution/USPTO filing help.\"\n    },\n    {\n      \"row_id\": 304,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User wants an immigration lawyer to apply for legal status for their husband (general status/adjustment/green card type request).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request is for help obtaining lawful status; no deportation/asylum facts are stated.\"\n    },\n    {\n      \"row_id\": 305,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User needs help recovering U.S. immigration documents for use with Social Security, which is an immigration documentation/status matter.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although Social Security is mentioned, the legal task described is obtaining/recovering immigration documentation rather than appealing an SSA benefit decision.\"\n    },\n    {\n      \"row_id\": 306,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"User is trying to apply for asylum; asylum is treated in this taxonomy as an international/immigration niche topic under Other.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Asylum is explicitly requested; the current primary label is correct category but should be 'supported'—however it is already International Law/Other, so no change is needed. Marking needs_change would be incorrect; thus: the current primary is supported.\"\n    },\n    {\n      \"row_id\": 307,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"User seeks legal help immigrating to Canada (non-U.S. immigration). The taxonomy’s specific immigration subcategory is framed for entering/removing/remaining in the U.S., so this fits best as a general international matter.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Because the request is for Canadian immigration rather than U.S. visas/green cards, International Law/Gen. Immigration/Visas is not a perfect fit; International Law/Other is more supported by the text.\"\n    },\n    {\n      \"row_id\": 308,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User asks about legal status and work visas, specifically H-1B and E-2.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Work visa/status questions squarely fall under general immigration/visas.\"\n    },\n    {\n      \"row_id\": 309,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User needs help preparing an INA 212 waiver of inadmissibility with extreme hardship affidavit/evidence—an immigration application matter.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The described service is immigration waiver preparation, not deportation defense explicitly.\"\n    },\n    {\n      \"row_id\": 310,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User requests an immigration attorney for a VAWA-based case related to abuse and immigration relief.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"VAWA immigration relief is an immigration status/visa matter; fear of losing kids is contextual but no separate custody filing is requested.\"\n    },\n    {\n      \"row_id\": 311,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User entered on a student visa and wants to adjust immigration status (file for status/adjustment).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a direct request for immigration status adjustment assistance.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039921,
+  "id": "chatcmpl-E1YZNwzAnCMTBJL7FMV57krKvSxAS",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1373,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 98,
+      "engine_ttlt_ms": 17688,
+      "pre_inference_ms": 282,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 462,
+      "service_ttlt_ms": 18087,
+      "total_duration_ms": 17882,
+      "user_visible_ttft_ms": 180
+    },
+    "prompt_tokens": 10501,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 11874
+  }
+}

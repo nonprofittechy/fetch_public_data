@@ -173,3 +173,10 @@ shows up to three repeated candidates, the supporting models and justifications,
 and three blank human label slots. The stage README defines the evidence rule
 and the necessary distinction between a separate second issue and a weaker
 alternative framing.
+
+The follow-up Azure GPT-5.2 two-label audit is in
+[`08_gpt52_two_label_audit/`](08_gpt52_two_label_audit/). It independently
+audited the final AI primary label while allowing at most two labels per row.
+It found 90 two-label rows, 81 primary-label change candidates, and 12
+uncertain primary assessments. These are fresh single-model audit signals for
+human review, not automatic corrections.

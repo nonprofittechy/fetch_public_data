@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 242,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Emancipation\",\n          \"justification\": \"User is 16 and explicitly seeking emancipation and options for leaving abusive parents.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The central legal need is emancipation for a minor; DHS involvement is background but the requested service is emancipation help.\"\n    },\n    {\n      \"row_id\": 243,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User is seeking a divorce, needs help completing forms and serving spouse across state lines; spouse refuses to sign.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a dissolution filing/service problem within divorce; no distinct second legal issue beyond divorce procedure.\"\n    },\n    {\n      \"row_id\": 244,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User wants to convert/amend a long-ago legal separation into a divorce.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Amending a separation to a divorce is squarely a divorce/separation matter.\"\n    },\n    {\n      \"row_id\": 245,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Restraining Orders\",\n          \"justification\": \"User describes an abusive spouse and references a restraining order court date and being told to get an attorney.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The immediate legal service sought is representation in restraining order proceedings against a spouse.\"\n    },\n    {\n      \"row_id\": 246,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Juvenile/DHS Issue - SCF (CSD) related\",\n          \"justification\": \"User is in ongoing litigation involving their children with allegations, reports, and court/attorney issues consistent with DHS child welfare involvement.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a child welfare/DHS removal/return dispute rather than a private custody modification.\"\n    },\n    {\n      \"row_id\": 247,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User is seeking modification of parenting time/visitation and describes existing custody orders, mediation, and hearings.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The problem is parenting time modification and supervised visitation conditions—core custody/visitation.\"\n    },\n    {\n      \"row_id\": 248,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"General (State)\",\n          \"justification\": \"User needs correction of a state-issued birth certificate (Idaho) due to incorrect last name impacting passport eligibility.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is contesting/correcting a state vital record (birth certificate), a state administrative issue.\"\n    },\n    {\n      \"row_id\": 249,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Guardianship(minor)\",\n          \"justification\": \"User wants to become the official guardian/custodian of their 13-year-old sister with parental permission.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"They are seeking court-appointed authority to care for a minor—guardianship of a minor.\"\n    },\n    {\n      \"row_id\": 250,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User is separating after a 9-year marriage with children and expects disputes over assets, child support, and spousal support.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The overall matter is marital separation/divorce planning; support and property division are components of divorce rather than distinct separate issues for multi-labeling.\"\n    },\n    {\n      \"row_id\": 251,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User describes marital breakdown, being removed from house title, potential need to separate/divorce, and issues around marital assets and a child.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The legal problem centers on divorce/separation and related property/title and parenting consequences; no separate non-family-law claim is explicitly requested.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039791,
+  "id": "chatcmpl-E1YXHXDCNfLVYe2gVmg5AbLVhAQ4Q",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1299,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 11,
+      "engine_ttft_ms": 97,
+      "engine_ttlt_ms": 14611,
+      "pre_inference_ms": 140,
+      "service_tbt_ms": 11,
+      "service_ttft_ms": 330,
+      "service_ttlt_ms": 14869,
+      "total_duration_ms": 14765,
+      "user_visible_ttft_ms": 190
+    },
+    "prompt_tokens": 11116,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12415
+  }
+}

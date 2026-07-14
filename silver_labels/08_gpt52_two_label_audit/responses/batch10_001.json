@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 202,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User received a circuit court summons for a bank debt and wants to remedy the situation and avoid job impact (risk of judgment/garnishment).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label focuses on negotiating payment terms, but the text centers on being sued/summons and consequences, which fits General (Debtor) best.\"\n    },\n    {\n      \"row_id\": 203,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is being brought to court for failure to pay a bank debt and wants legal advice on how to handle the delinquency.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a debtor being sued/at risk of judgment; General (Debtor) is directly supported.\"\n    },\n    {\n      \"row_id\": 204,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"Debt Counseling/Workouts\",\n          \"justification\": \"Bank sued for non-payment and user explicitly wants to reach an agreement for lower monthly payments due to low salary.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Negotiating repayment terms/workout is the core request, even though a lawsuit exists.\"\n    },\n    {\n      \"row_id\": 205,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Creditor)\",\n          \"justification\": \"User is owed money by a neighbor and wants help drafting/structuring a promissory note to document repayment and interest/fees.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"They are the creditor seeking to formalize/enforce repayment; label is supported.\"\n    },\n    {\n      \"row_id\": 206,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"Collection/Harassment\",\n          \"justification\": \"User reports repeated wage and bank garnishments by a debt collector and raises an issue that the debt is older/off credit report, suggesting improper collection activity and need to challenge collection practices.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"This is not just inability to pay; it’s about aggressive/possibly improper collection (garnishments, age of debt). Collection/Harassment is a better fit than General (Debtor).\"\n    },\n    {\n      \"row_id\": 207,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User received a court summons related to credit card payments (a debt lawsuit).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Being summoned over consumer debt is squarely General (Debtor).\"\n    },\n    {\n      \"row_id\": 208,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"Caption/docket indicates a creditor lawsuit (Capital One) against the individual in county court.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although sparse, the case caption implies the user is a debtor defendant in a collection suit; current label is supported.\"\n    },\n    {\n      \"row_id\": 209,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is being sued by a debt collector and wants to understand legal rights/options in that lawsuit.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a standard debtor defense situation; General (Debtor) fits.\"\n    },\n    {\n      \"row_id\": 210,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User has an ongoing wage garnishment and is struggling with accumulating interest and low credit, seeking options to manage the debt.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Garnishment and inability to pay/escape debt is a classic General (Debtor) issue; no separate veterans-benefits dispute is described.\"\n    },\n    {\n      \"row_id\": 211,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User has a past debt with filing fees, wants to file an answer/motion, set up a payment plan, and avoid garnishment.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Debtor facing potential court judgment/garnishment and needs procedural guidance and payment options; current label is supported.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039384,
+  "id": "chatcmpl-E1YQiB45sakld2zUJ0Ni4nnebb3d7",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1360,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 138,
+      "engine_ttlt_ms": 16145,
+      "pre_inference_ms": 209,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 431,
+      "service_ttlt_ms": 16431,
+      "total_duration_ms": 16230,
+      "user_visible_ttft_ms": 222
+    },
+    "prompt_tokens": 10696,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 10496
+    },
+    "total_tokens": 12056
+  }
+}

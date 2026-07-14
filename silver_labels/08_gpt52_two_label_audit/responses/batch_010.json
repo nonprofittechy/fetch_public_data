@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 182,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Clemency\",\n          \"justification\": \"User explicitly says they are interested in clemency and want help pursuing it.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request is directly about exploring clemency as an option; no other distinct legal issue is described.\"\n    },\n    {\n      \"row_id\": 183,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Major Felony\",\n          \"justification\": \"Arrest for attempted murder is a very serious felony-level charge requiring major felony defense.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Attempted murder fits the taxonomy’s most serious felony-defense bucket.\"\n    },\n    {\n      \"row_id\": 184,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User ran a red light and is being called to court to address the citation/violation.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a standard moving violation (red light). Language preference doesn’t change legal category.\"\n    },\n    {\n      \"row_id\": 185,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"Citation for failure to obey a traffic control device (cones/street closure) is a non-criminal traffic violation they want to contest.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Dispute centers on a traffic citation and alleged improper/unclear traffic control.\"\n    },\n    {\n      \"row_id\": 186,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Misdemeanor\",\n          \"justification\": \"User was charged with the lowest theft level (typically misdemeanor theft) and needs defense guidance.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Expunction\",\n          \"justification\": \"User explicitly says they are trying to get their record expunged/cleared after this incident.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Misdemeanor) is supported for the theft charge, but the user also independently requests expungement help, supporting a second label.\"\n    },\n    {\n      \"row_id\": 187,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User received a speeding ticket and wants advice/strategy to dismiss it.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward traffic citation defense request.\"\n    },\n    {\n      \"row_id\": 188,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Small Claims Advice\",\n          \"justification\": \"User explicitly wants help filing a case in small claims court.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The entire request is small-claims filing help; no underlying dispute facts are provided to classify otherwise.\"\n    },\n    {\n      \"row_id\": 189,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"User reports an outstanding warrant from a 2019 incident and multiple arrests on the warrant; the underlying charge level is not stated.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"A warrant/bench-warrant situation is criminal defense, but the taxonomy lacks a dedicated 'warrants' subcategory and the charge severity is unknown; 'Other' fits better than the current unspecified pairing.\"\n    },\n    {\n      \"row_id\": 190,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Misdemeanor\",\n          \"justification\": \"User has upcoming court for a harassment misdemeanor and asks about diversion and counsel.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary issue is defending a misdemeanor harassment charge (with diversion as part of the criminal case).\"\n    },\n    {\n      \"row_id\": 191,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Relief From Sex Offender Registration\",\n          \"justification\": \"User explicitly wants help getting fiancé removed from sex offender registration to allow cohabitation/housing access.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The requested legal service is removal from the registry; claims of wrongful conviction are background but not a separate, clearly requested appellate service here.\"\n    },\n    {\n      \"row_id\": 192,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"DUII/DWS\",\n          \"justification\": \"User says they are being charged with DUI(s) and reckless endangerment—core issue is DUII criminal charges.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"DUII is expressly identified; additional reckless endangerment does not create a distinct taxonomy label beyond DUII/DWS for routing.\"\n    },\n    {\n      \"row_id\": 193,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Forfeiture\",\n          \"justification\": \"User seeks urgent help to stop imminent ATF forfeiture proceedings for seized firearms.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"User also reports revocation of their Federal Firearms License (FFL), which is a professional/occupational licensing issue with an agency.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Forfeiture is clearly supported; the current single label misses the distinct agency licensing revocation component (FFL).\"\n    },\n    {\n      \"row_id\": 194,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Misdemeanor\",\n          \"justification\": \"User is charged with multiple misdemeanor counts (harassment and menacing) and wants defense.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is misdemeanor criminal defense with factual innocence asserted.\"\n    },\n    {\n      \"row_id\": 195,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Major Felony\",\n          \"justification\": \"Measure 11 assault indicates a very serious felony; user also mentions DUI, fleeing, and giving false information as part of the case.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Measure 11 assault squarely fits the taxonomy’s major felony category; additional charges are encompassed within criminal defense for the same matter.\"\n    },\n    {\n      \"row_id\": 196,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Lessor Felony\",\n          \"justification\": \"Charges include assault and strangulation; strangulation is commonly felony-level and the user describes being booked/custodied, suggesting more than a simple violation/misdemeanor, but exact charge level is not stated.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current label (Misdemeanor) is not well-supported because strangulation is often treated as a felony; however, since the text does not explicitly state felony vs misdemeanor, the best fit is 'Lessor Felony' with medium confidence.\"\n    },\n    {\n      \"row_id\": 197,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"DUII/DWS\",\n          \"justification\": \"User seeks counsel for dad’s second DUI and wants Spanish/bilingual guidance on next steps.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a DUII criminal defense request.\"\n    },\n    {\n      \"row_id\": 198,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Post Conviction/ Appeals\",\n          \"justification\": \"User had a successful PCR (post-conviction relief) and is now being re-charged; they are dealing with post-conviction/appeal-type proceedings stemming from an unconstitutional conviction.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core issue is post-conviction relief/appeals (PCR) and litigation following reversal, not simply 'Major Felony' as a generic charge-severity label.\"\n    },\n    {\n      \"row_id\": 199,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User got a speeding ticket and wants advice/representation to avoid insurance increases.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Standard moving violation defense.\"\n    },\n    {\n      \"row_id\": 200,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User cannot pay credit card debt and has been served with a summons (being sued for the debt).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a debtor being sued on a consumer debt.\"\n    },\n    {\n      \"row_id\": 201,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is being sued by a debt buyer (Midland Credit) and is seeking settlement/arbitration options to resolve the debt lawsuit.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The problem is defending/negotiating resolution of a debt collection lawsuit; arbitration is part of that same debtor dispute.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039091,
+  "id": "chatcmpl-E1YLzPaWY8oKu96EMkiXRnclwQ76K",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2699,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 11,
+      "engine_ttft_ms": 177,
+      "engine_ttlt_ms": 28933,
+      "pre_inference_ms": 158,
+      "service_tbt_ms": 11,
+      "service_ttft_ms": 404,
+      "service_ttlt_ms": 29153,
+      "total_duration_ms": 29013,
+      "user_visible_ttft_ms": 246
+    },
+    "prompt_tokens": 11658,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 14357
+  }
+}

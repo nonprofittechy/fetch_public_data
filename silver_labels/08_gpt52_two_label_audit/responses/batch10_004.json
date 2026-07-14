@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 232,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Adoption/DHS\",\n          \"justification\": \"User states they adopted their 4 nieces and the ex-partner signed adoption paperwork; the dispute is about rights/parenting after an adoption.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"They describe an ongoing court case about the children being forced to see the ex-partner and the children refusing contact.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Child Custody/Visitation) is incomplete because the core status involves an adoption and the ex-partner’s role via adoption paperwork; custody/parenting time is also clearly at issue, so two labels are supported.\"\n    },\n    {\n      \"row_id\": 233,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Support/Modification\",\n          \"justification\": \"Mother is taking father to court asking for more child support.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"Mother also seeks less/modified visiting time; user references safety plan and immediate danger order affecting parenting time.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Child Custody/Visitation) is only part of the issue; the filing explicitly includes increased child support and modified visitation, so two distinct family-law issues are supported.\"\n    },\n    {\n      \"row_id\": 234,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Paternity\",\n          \"justification\": \"User wants to establish paternity and be added to the child’s birth certificate.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User also requests full custody of his son.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Paternity) is supported, but the user separately and explicitly seeks full custody, which supports adding Child Custody/Visitation as a second label.\"\n    },\n    {\n      \"row_id\": 235,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Support/Modification\",\n          \"justification\": \"User has questions about child support amounts, arrears/underpayment since COVID, and medical insurance obligations ordered as part of support.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported; the problem is about child support and related medical support obligations rather than a separate custody dispute.\"\n    },\n    {\n      \"row_id\": 236,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Paternity\",\n          \"justification\": \"User is not on the birth certificate and seeks help regarding legal parent status.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User is seeking help with custody of the 8-month-old, asserting the mother cannot have custody due to mental condition in context of separation.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Paternity) is supported; the text also indicates a distinct custody/parenting-time issue, so two labels are supported.\"\n    },\n    {\n      \"row_id\": 237,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User is trying to divorce, has a minor child and shared home/property, and describes marital breakdown and conflict.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported; custody/property are part of the divorce context and do not require a second label based on the request.\"\n    },\n    {\n      \"row_id\": 238,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Paternity\",\n          \"justification\": \"User seeks to establish paternity and be put on the birth certificate despite the child being born during the marriage.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User requests help filing for full custody and describes current custody situation and safety concerns.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary (Paternity) is supported, but the user also expressly wants full custody and help with custody forms, supporting a second label.\"\n    },\n    {\n      \"row_id\": 239,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Restraining Orders\",\n          \"justification\": \"User is fighting a restraining order filed by the child’s mother and claims it is false.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User states the restraining order is being used to take custody of the child, indicating a custody dispute intertwined with the order.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported; the user also explicitly identifies a custody objective (mother taking custody), which supports a second label.\"\n    },\n    {\n      \"row_id\": 240,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Restraining Orders\",\n          \"justification\": \"User wants a current restraining order (that they obtained) dismissed.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User also wants to start custody and parenting time process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported, and a distinct additional service is requested (initiate custody/parenting time), so two labels are supported.\"\n    },\n    {\n      \"row_id\": 241,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User seeks divorce, has drafted paperwork, needs advice on property division agreement validity and service while spouse is out of country; mentions DV concern within the divorce context.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported; although domestic violence is mentioned, the user’s concrete request is divorce/process/service and property division rather than seeking a restraining order.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039769,
+  "id": "chatcmpl-E1YWvmxVNFxR5KoDbUJG4uTi9UHbb",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1752,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 84,
+      "engine_ttlt_ms": 20331,
+      "pre_inference_ms": 169,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 334,
+      "service_ttlt_ms": 20576,
+      "total_duration_ms": 20417,
+      "user_visible_ttft_ms": 165
+    },
+    "prompt_tokens": 11089,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12841
+  }
+}

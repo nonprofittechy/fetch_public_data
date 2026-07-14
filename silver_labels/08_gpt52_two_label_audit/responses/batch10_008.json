@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 272,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Wrongful Death\",\n          \"justification\": \"User explicitly says \\\"Wrongful death\\\" and wants to discuss their mother’s case, indicating a potential civil wrongful death claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The description directly states wrongful death regarding the mother; no other distinct legal issue is described.\"\n    },\n    {\n      \"row_id\": 273,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"User seeks an attorney specializing in medical/dental malpractice/negligence involving a minor; this fits medical malpractice as a primary routing label.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although dental is mentioned, the request is broadly for medical/dental malpractice; the provided primary label is adequately supported as the best single match.\"\n    },\n    {\n      \"row_id\": 274,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Health Law/HIPAA\",\n          \"justification\": \"A healthcare provider sent another patient’s full medical records and SSN; user alleges a HIPAA violation and filed a complaint.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a classic wrongful disclosure of private medical information scenario (HIPAA/privacy), not malpractice or insurance.\"\n    },\n    {\n      \"row_id\": 275,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"User reports possible medical negligence/malpractice by a hospital with resulting harm (PTSD, memory loss, nearly died).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The alleged wrongdoing is substandard medical care and deception by hospital doctors causing injury—fits medical malpractice.\"\n    },\n    {\n      \"row_id\": 276,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"User wants to bring a medical malpractice complaint against an orthopedic practice and is seeking conflict-free counsel.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core issue is alleged malpractice by a medical provider; difficulty finding counsel does not create a separate legal category.\"\n    },\n    {\n      \"row_id\": 277,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Medical\",\n          \"justification\": \"User alleges multiple providers misdiagnosed and provided incorrect/withheld treatment, resulting in late-stage latent syphilis.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Misdiagnosis and improper treatment by healthcare entities resulting in injury is medical malpractice.\"\n    },\n    {\n      \"row_id\": 278,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Malpractice-Dental\",\n          \"justification\": \"User alleges dentist failed to diagnose/treat a cavity timely causing severe decay/bone loss and is explicitly seeking a dental malpractice lawyer.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The facts involve alleged substandard dental care leading to harm; this squarely fits dental malpractice.\"\n    },\n    {\n      \"row_id\": 279,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Tort Claims Act\",\n          \"justification\": \"User wants to make a \\\"tort report claim\\\" and sue a police department for unlawful arrest/detention and being beaten; the defendant is a government entity, triggering Tort Claims Act procedures/deadlines.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"While the narrative describes police misconduct, the user specifically references filing a tort claim against the North Bend Police Department (a government entity), which is better routed as a Tort Claims Act matter rather than the broader actions-against-police label.\"\n    },\n    {\n      \"row_id\": 280,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"Writer seeks advice on intellectual property and copyright for a book trilogy and related brands/licensing.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Living Trusts\",\n          \"justification\": \"User explicitly asks about creating a \\\"specialty asset trust\\\" to manage brands and licensing opportunities, indicating a trust-creation/asset-management estate-planning component.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"IP/copyright is central, but the user also requests creation of a specialized trust to hold/manage assets, which supports a second, distinct Wills & Trusts label.\"\n    },\n    {\n      \"row_id\": 281,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User is starting a digital publication and wants to protect the publication and contributors’ works from plagiarism while structuring rights ownership (non-exclusive), which is copyright/IP-focused.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The issue is copyright/rights management for a publication and contributors; no separate business-formation request is made.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039858,
+  "id": "chatcmpl-E1YYMH45T4bdDhqAslWniTylIVE4L",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1442,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 87,
+      "engine_ttlt_ms": 18239,
+      "pre_inference_ms": 139,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 300,
+      "service_ttlt_ms": 18439,
+      "total_duration_ms": 18309,
+      "user_visible_ttft_ms": 160
+    },
+    "prompt_tokens": 10770,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12212
+  }
+}

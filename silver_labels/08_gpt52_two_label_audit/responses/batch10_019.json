@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 382,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"Landlord withheld a former tenant’s security deposit for smoke damage/cleaning and wants to ensure compliance and defend threatened suit.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is a landlord-tenant dispute about security deposit deductions after move-out; no separate legal domain is clearly implicated.\"\n    },\n    {\n      \"row_id\": 383,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Tenant received an eviction letter, alleges renters’ rights violations, and is dealing with property management’s refusal to communicate/mediate.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Core problem is residential tenant eviction/rights dispute; no distinct second legal service is requested beyond landlord-tenant help.\"\n    },\n    {\n      \"row_id\": 384,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"General (Wills, Trusts, Estates)\",\n          \"justification\": \"User is deciding whether to transfer property ownership or place it in a trust and asks about trusts and tax liability as part of estate/asset planning.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Government Loans (VA,FHA,Etc.)\",\n          \"justification\": \"They specifically want advice tied to a VA construction loan and related property/loan terms, which is a government-backed home loan issue.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"This is not specifically about creating a living trust; it’s broader trust/ownership transfer planning, plus a distinct VA construction loan component.\"\n    },\n    {\n      \"row_id\": 385,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Tenant seeks advice on breaking a residential lease early and avoiding contractual penalties/suit from landlord.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Pure residential tenant lease-termination issue; no additional separate legal topic is supported.\"\n    },\n    {\n      \"row_id\": 386,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Homeowner dispute with contractor over poor workmanship, incomplete work, and substantial payments already made.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Facts squarely match homeowner-contractor dispute over residential remodel performance and payment.\"\n    },\n    {\n      \"row_id\": 387,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Neighbor Disputes/Nuisance\",\n          \"justification\": \"Conflict with a neighbor involving fence alterations, cameras into yard/windows, chemical spraying, and ongoing interference with use and enjoyment of home.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"Describes repeated harassment/threats and surveillance-like behavior (“I’ll never stop watching you”), suggesting need for a protective order against a non-household member.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The situation supports both a civil neighbor/nuisance dispute and a distinct requestable remedy of a stalking-type protective order based on repeated harassment and monitoring.\"\n    },\n    {\n      \"row_id\": 388,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"General (Commercial)\",\n          \"justification\": \"Co-owners disputing management, leasing, improvements, valuation, and a buyout/sale of commercial property with a tenant business occupying it.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Central issues are commercial real estate co-ownership, leasing, and sale/buyout terms; no distinct second category is clearly required.\"\n    },\n    {\n      \"row_id\": 389,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"Landlord seeks to remove a residential tenant for nonpayment and abuse; prior eviction case dismissed for alleged statutory notice issues.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is landlord-side residential eviction procedure and compliance with ORS notice requirements; abuse context supports eviction but doesn’t add a separate legal domain.\"\n    },\n    {\n      \"row_id\": 390,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Home remodel is delayed; dispute over payment timing, completion, and passing permit inspections; wants leverage to ensure contractor finishes/corrects work.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Core issue is contractor performance/payment and completion to permit/inspection standards, fitting construction/contractor dispute.\"\n    },\n    {\n      \"row_id\": 391,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Contractor misrepresented licensing, caused water damage, and homeowner seeks compensation via bond/repairs—classic contractor dispute tied to home repairs.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Small Claims Advice\",\n          \"justification\": \"User explicitly weighs circuit court vs small claims and asks what route makes sense given damages and the $10K small-claims limit.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary dispute is against a contractor for defective/unauthorized work and damages; additionally, they specifically request guidance on pursuing small claims versus higher court.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040097,
+  "id": "chatcmpl-E1YcDBflTcs3pClUm0pAXPnzgiU7h",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1543,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 69,
+      "engine_ttlt_ms": 19750,
+      "pre_inference_ms": 97,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 279,
+      "service_ttlt_ms": 19925,
+      "total_duration_ms": 19835,
+      "user_visible_ttft_ms": 182
+    },
+    "prompt_tokens": 11298,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12841
+  }
+}

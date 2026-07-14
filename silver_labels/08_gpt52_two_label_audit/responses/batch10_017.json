@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 362,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User has a pending workers’ comp claim for a workplace burn injury and is asking what actions to take and whether changing jobs affects the claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward state workers’ compensation benefits/claim management question; no separate non-workers-comp issue is described.\"\n    },\n    {\n      \"row_id\": 363,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"Workplace injury with an open workers’ comp claim; user wants to discuss settlement before talking to SAIF (workers’ comp insurer).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The dispute and requested service are about settling a workers’ comp claim; no other legal domain is supported.\"\n    },\n    {\n      \"row_id\": 364,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User has a workers’ comp claim against an employer and needs a workers’ comp attorney; communications/accessibility issue relates to representation of the comp claim.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary issue is representation in a state workers’ compensation claim; accessibility preference does not create a separate legal category.\"\n    },\n    {\n      \"row_id\": 365,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Tenant reports landlord refusing to repair serious habitability issues (sewer leak, standing water, mold, rodents) and trying to charge tenant.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Mold Claims\",\n          \"justification\": \"User describes mold caused by standing water/sewer issues in the home, which can support a mold-related damages claim.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Tenant-landlord repair/habitability dispute clearly fits Tenant (Residential). The explicit mention of mold supports a distinct mold-claim litigation angle in addition to routine repair dispute.\"\n    },\n    {\n      \"row_id\": 366,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Residential lease dispute: tenant wants to be released from a signed apartment lease and argues landlord must mitigate damages by trying to re-rent.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a residential tenant lease/termination and mitigation issue; no separate category is better supported.\"\n    },\n    {\n      \"row_id\": 367,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"User was served with an eviction notice alleging months of nonpayment and is seeking urgent legal help to address eviction.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Eviction/nonpayment is squarely a residential landlord-tenant matter; other personal circumstances don’t add another legal issue.\"\n    },\n    {\n      \"row_id\": 368,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Dispute with a roofing contractor who took a $13,000 deposit and did not perform the roof replacement work.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"General Litigation\",\n          \"justification\": \"User wants to file a claim to recover money for nonperformance/breach where small claims limit is too low, implying civil lawsuit for damages.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The core is contractor nonperformance on a home improvement contract (Construction/Contractors). The request to pursue recovery outside small claims supports an additional general civil-litigation need.\"\n    },\n    {\n      \"row_id\": 369,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"User states they are being evicted and need advice; eviction/housing stability is the core legal issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although disability and SSI are mentioned, the legal problem presented is eviction as a residential tenant; no explicit benefits denial/appeal facts are provided.\"\n    },\n    {\n      \"row_id\": 370,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Water Law\",\n          \"justification\": \"User explicitly asks for help figuring out water rights and mentions others’ claimed easement to a water pipe and multiple lines attached to it.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"General (residential)\",\n          \"justification\": \"User alleges they were lied to about what was included in the home purchase, indicating a residential real estate transaction dispute.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Water rights/easement dispute is directly stated and fits Water Law. Separate from that, they describe misrepresentations in the home purchase, supporting an additional residential real estate issue.\"\n    },\n    {\n      \"row_id\": 371,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Civil Rights\",\n          \"justification\": \"User alleges landlord discrimination for having children and for a child’s disability, with threats of eviction—i.e., discrimination in housing based on protected status.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"The dispute is within a residential tenancy, involving alleged retaliatory/hostile violations and threatened eviction by the landlord.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary (Tenant Residential) is partially relevant, but the central claim is housing discrimination (familial status/disability), which aligns more directly with Civil Rights; tenancy context supports a second label.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040050,
+  "id": "chatcmpl-E1YbSB9qVwJAeTqhz7wM7X14FONEv",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1619,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 78,
+      "engine_ttlt_ms": 23195,
+      "pre_inference_ms": 107,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 251,
+      "service_ttlt_ms": 23365,
+      "total_duration_ms": 23271,
+      "user_visible_ttft_ms": 145
+    },
+    "prompt_tokens": 11028,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12647
+  }
+}

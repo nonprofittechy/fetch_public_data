@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 2,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"User needs guidance with a state licensure board (OBPLCT) application and character/fitness review after previously surrendering an Oregon clinical mental health license.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Problem is directly about reapplying for and satisfying requirements of a professional license with a state licensing board.\"\n    },\n    {\n      \"row_id\": 3,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"Individual considering bankruptcy and asking for legal advice about bankruptcy due to personal debt levels.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"User is an individual seeking advice about filing bankruptcy based on personal debt.\"\n    },\n    {\n      \"row_id\": 4,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Creditor)\",\n          \"justification\": \"User is owed money on overdue invoices and wants legal help to get paid.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"This is primarily a creditor-side collection problem (unpaid invoices). Although they mention liens/contracting, the core issue is collecting payment rather than a dispute about construction workmanship.\"\n    },\n    {\n      \"row_id\": 5,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"General\",\n          \"justification\": \"Paid in full for wedding services/venue, venue closed, and business has not refunded or communicated—consumer paid for services not provided.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Clear consumer vs. business dispute over prepaid services and refund.\"\n    },\n    {\n      \"row_id\": 6,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Expunction\",\n          \"justification\": \"User explicitly wants two misdemeanor charges from 2018 expunged.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request to clear/seal criminal record.\"\n    },\n    {\n      \"row_id\": 7,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User cannot pay credit card debt and has been served with a lawsuit summons by the creditor.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Debt nonpayment with legal action/summons fits debtor defense.\"\n    },\n    {\n      \"row_id\": 8,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"Served with petition for custody and parenting time; father seeks parenting time from another state; user needs to respond/appear.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Support/Modification\",\n          \"justification\": \"Petition also includes child support and user is responding to that request as part of the case.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text raises both custody/parenting-time and child-support claims in the filed petition, supporting two distinct family-law subissues.\"\n    },\n    {\n      \"row_id\": 9,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Actions Against Police\",\n          \"justification\": \"User alleges police falsified reports, omitted witness/bodycam evidence, and mishandled case submission to the DA; seeks a lawyer for police misconduct.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary grievance is against police conduct and reporting, aligning with civil action against police/department.\"\n    },\n    {\n      \"row_id\": 10,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"Writer requests advice about intellectual property and copyright for a book trilogy and related brands/licensing.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Living Trusts\",\n          \"justification\": \"User also asks about creating a specialty asset trust to manage brands and licensing opportunities.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"IP/copyright is clearly supported; the trust component appears to be a separate requested service (creating an asset trust), which fits estate-planning tools, though details are limited—hence primary label is not clearly exclusive.\"\n    },\n    {\n      \"row_id\": 11,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"Seeking immigration lawyer to pursue legal status for husband.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Standard immigration/legal status request.\"\n    },\n    {\n      \"row_id\": 12,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User reports employer deleted hours from pay (unpaid wages/timekeeping manipulation).\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"User states they were terminated after complaining about missing/deleted pay hours, suggesting retaliation tied to asserting wage rights.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Wage issue is clear; termination after complaint adds a distinct potential wrongful-discharge/retaliation claim, so two labels are supported and the single primary as given is incomplete.\"\n    },\n    {\n      \"row_id\": 13,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"Workplace injury developed over time; medical treatment/surgeries; seeking lawyer consultation regarding job-related injury and benefits.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Classic state workers’ compensation claim for an on-the-job injury/occupational condition.\"\n    },\n    {\n      \"row_id\": 14,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Tenant reports landlord refusing repairs (sewer leak, standing water, mold/rodents) and trying to shift costs to tenant.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Mold Claims\",\n          \"justification\": \"User specifically describes mold caused by standing water and sewer issues in the home, potentially supporting a mold-damages claim beyond basic repair dispute.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary landlord-tenant repair dispute is clear; explicit mold conditions also support a distinct mold-claim framing if damages/health impacts are pursued.\"\n    },\n    {\n      \"row_id\": 15,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Taxation\",\n          \"subcategory\": \"Personal Income\",\n          \"justification\": \"User has large IRS balance due from IRA withdrawals and seeks help reducing federal tax owed; individual income tax liability dispute/relief request.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an individual federal tax debt/dispute arising from reported income on an IRA withdrawal.\"\n    },\n    {\n      \"row_id\": 16,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"General (Wills, Trusts, Estates)\",\n          \"justification\": \"User wants a will created for their 80-year-old mother who does not have one.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Straightforward estate planning (drafting a will).\"\n    },\n    {\n      \"row_id\": 17,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"DMV (Non-Criminal)\",\n          \"justification\": \"User only states 'administrative law dmv licensure,' indicating a non-criminal DMV licensing/administrative issue but without specifics.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"DMV administrative licensing is the best fit given the minimal text, but the lack of detail makes support uncertain.\"\n    },\n    {\n      \"row_id\": 18,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User wants to discuss filing bankruptcy as a low-income individual who owns a home and has a mortgage.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Individual considering bankruptcy filing.\"\n    },\n    {\n      \"row_id\": 19,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Non-Profit\",\n          \"justification\": \"Seeking help forming and registering a 501(c) nonprofit religious organization; wants review/edits of bylaws and state forms.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Nonprofit formation/document review is directly requested.\"\n    },\n    {\n      \"row_id\": 20,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Vehicle Towing\",\n          \"justification\": \"After accident tow, towing operator demands tow fee and title before releasing personal property from vehicle; user seeks help retrieving belongings.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Dispute with towing company over release of property/fees fits vehicle towing consumer issue.\"\n    },\n    {\n      \"row_id\": 21,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Relief From Sex Offender Registration\",\n          \"justification\": \"User explicitly seeks help filing documents for relief from sex offender registration through the Oregon Psychiatric Security Review Board.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request for sex offender registry relief process.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038380,
+  "id": "chatcmpl-E1YAWGwnxjcRZ9hiFhWXx2Yjtb5CE",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2731,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 249,
+      "engine_ttlt_ms": 37914,
+      "pre_inference_ms": 168,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 491,
+      "service_ttlt_ms": 38165,
+      "total_duration_ms": 38065,
+      "user_visible_ttft_ms": 323
+    },
+    "prompt_tokens": 11857,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 14588
+  }
+}

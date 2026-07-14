@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 102,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User wants help filing personal bankruptcy and is concerned about how it affects a non-spouse co-borrower/shared assets.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is an individual considering bankruptcy and effects on co-borrower; fits Personal bankruptcy. No distinct second legal issue requested.\"\n    },\n    {\n      \"row_id\": 103,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Pro Se Coaching\",\n          \"justification\": \"User is considering bankruptcy, has no money, and specifically requests advice to get through the process (suggesting self-representation guidance).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Request is for guidance through filing with no funds, consistent with pro se coaching rather than a standard retained filing.\"\n    },\n    {\n      \"row_id\": 104,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User seeks an attorney to file bankruptcy but needs pro bono/modest-means due to disability and cost concerns.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Core need is personal bankruptcy filing assistance; financial eligibility/fee concerns don’t change the legal category.\"\n    },\n    {\n      \"row_id\": 105,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User details personal consumer debts, income, savings, and home mortgage and asks about eligibility and options for bankruptcy.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Straightforward individual bankruptcy/options assessment; no additional distinct legal service requested.\"\n    },\n    {\n      \"row_id\": 106,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User has large medical/credit card debt, behind on payments, and seeks advice about filing bankruptcy for relief.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Problem centers on whether/how to file personal bankruptcy due to overwhelming consumer debt.\"\n    },\n    {\n      \"row_id\": 107,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Pro Se Coaching\",\n          \"justification\": \"User anticipates needing to file bankruptcy and asks if it is difficult to file on their own and whether someone can help at reduced fee.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The explicit question is about filing on their own and getting guidance, which matches pro se coaching.\"\n    },\n    {\n      \"row_id\": 108,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User wants to file bankruptcy to deal with multiple debts and stress while on unemployment/housing assistance.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is being sued for an unpaid dental bill and is concerned about service and the lawsuit debt itself.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Bankruptcy is a primary requested remedy, but the active creditor lawsuit is also a distinct, present debt-collection/legal pressure supporting a second label.\"\n    },\n    {\n      \"row_id\": 109,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Business\",\n          \"justification\": \"User seeks guidance on filing bankruptcy in connection with an LLC that has SBA/other business loan debts and no remaining assets.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Sale of Business\",\n          \"justification\": \"User needs help with LLC partnership exit/transfer not completed and wants to dissolve the business properly after a partner buyout agreement.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Text supports both business bankruptcy planning and business dissolution/partner separation mechanics; second label is distinct from bankruptcy.\"\n    },\n    {\n      \"row_id\": 110,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User is considering filing bankruptcy due to unemployment and multiple debts, and asks where to start and if it’s best option.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is being sued by a lender (OneMain) on a charged-off loan and faces collections on other debts.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Bankruptcy is requested, but an ongoing creditor lawsuit/collection posture is also present and distinct.\"\n    },\n    {\n      \"row_id\": 111,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User is being sued by a creditor for ~$2,000 and wants help responding/settling and considering bankruptcy as an option.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Core issue is defending/handling a creditor suit and inability to pay; bankruptcy is mentioned only as one possible approach, so one debtor label is sufficient.\"\n    },\n    {\n      \"row_id\": 112,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User wants to understand bankruptcy given extensive personal and property-related debts and wants to keep rental property and car.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although debts include SBA and rental property, the request is about what bankruptcy would look like for them personally and asset retention; no distinct second service requested.\"\n    },\n    {\n      \"row_id\": 113,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User needs to file bankruptcy due to inability to catch up on rent and car payments after homelessness harmed finances.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request for personal bankruptcy filing; no separate landlord-tenant eviction dispute details provided.\"\n    },\n    {\n      \"row_id\": 114,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User seeks a bankruptcy lawyer due to multiple summons for unpaid credit card debt and wants help selecting/validating an attorney.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Despite the lawyer-vetting aspect, the legal help sought is bankruptcy counsel in response to debt lawsuits.\"\n    },\n    {\n      \"row_id\": 115,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User cannot pay personal loans, has no liquid assets, faces repossession, and wants advice on which bankruptcy chapter fits.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary need is personal bankruptcy advice/filing; repossession is part of the debt context, not a separate requested service.\"\n    },\n    {\n      \"row_id\": 116,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"User seeks advice about liability/protection after ex-husband filed Chapter 7 and how divorce debt allocation interacts with creditors and bankruptcy discharge.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"This is not the user filing personal bankruptcy; it’s a nuanced bankruptcy-related question tied to divorce decree and creditor liability, fitting Bankruptcy/Other better than a standard personal filing category.\"\n    },\n    {\n      \"row_id\": 117,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Personal\",\n          \"justification\": \"User wants an attorney to file Chapter 7 bankruptcy after relationship-related financial harm and overwhelming debts.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although there is a vehicle/title/finance dispute with an ex, the explicit legal service requested is Chapter 7 filing assistance.\"\n    },\n    {\n      \"row_id\": 118,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User with an LLC seeks advice on liability protection, including disclaimers and insurance considerations for their services business.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Business operations risk-management/contracts question; no litigation or specialized regulatory category is indicated.\"\n    },\n    {\n      \"row_id\": 119,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User starting a matchmaking business needs a client contract drafted/reviewed and advice on applicable Oregon rules.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a classic business contract drafting need for a new business.\"\n    },\n    {\n      \"row_id\": 120,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Construction business owner needs help with lien filing related to nonpayment for construction work (contractor lien context).\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Creditor)\",\n          \"justification\": \"User is owed money on overdue invoices and wants help getting paid/collecting amounts due from customers.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary fit is contractor nonpayment and liens; additionally, the user is a creditor seeking collection on unpaid invoices, which is a distinct, supported issue.\"\n    },\n    {\n      \"row_id\": 121,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"Sole proprietor plans to incorporate and wants legal help with entity formation and contracts.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request for business formation/entity structuring and contract advice; label is well-supported.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038600,
+  "id": "chatcmpl-E1YE4I4Tn6ND3nOgdtkcvxYPj3V1L",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2800,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 80,
+      "engine_ttlt_ms": 36832,
+      "pre_inference_ms": 132,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 287,
+      "service_ttlt_ms": 37036,
+      "total_duration_ms": 36912,
+      "user_visible_ttft_ms": 154
+    },
+    "prompt_tokens": 11883,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 14683
+  }
+}

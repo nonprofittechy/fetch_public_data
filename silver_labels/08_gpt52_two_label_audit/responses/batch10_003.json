@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 222,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"User disputes Oregon unemployment overpayment/eligibility determination, missed hearing, and state/IRS tax refund intercept collection.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an unemployment benefits overpayment/appeal and collection issue with the state agency (and tax intercept), fitting Administrative Law—Unemployment.\"\n    },\n    {\n      \"row_id\": 223,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"Debt Counseling/Workouts\",\n          \"justification\": \"User asks how a creditor’s 1099-C (cancellation of debt) affects making voluntary payments/settling the same debt—i.e., negotiating/handling a debt they owe.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The question is about managing/settling an owed debt after issuance of a 1099-C; no litigation, harassment, or bankruptcy is described.\"\n    },\n    {\n      \"row_id\": 224,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Debtor/Creditor\",\n          \"subcategory\": \"General (Debtor)\",\n          \"justification\": \"User cannot pay credit card debt and faces a creditor seeking a judgment; wants advice on consequences of a judgment.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a classic debtor situation involving threatened judgment/collection on consumer debt.\"\n    },\n    {\n      \"row_id\": 225,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User explicitly requests help with child custody and parenting time.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Support/Modification\",\n          \"justification\": \"User also explicitly requests help with child support as a separate family-law issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text lists three issues; custody/parenting time and child support are distinct subcategories, so two labels are supported.\"\n    },\n    {\n      \"row_id\": 226,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"General (Divorce/Separation)\",\n          \"justification\": \"User is seeking a lawyer for a divorce/separation and references receiving divorce paperwork.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary request is divorce representation; custody concerns are vague and not developed enough to require an additional custody label.\"\n    },\n    {\n      \"row_id\": 227,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"Separated parents; user needs a parenting plan and immediate guidance to keep children safe given alleged unsafe behavior and impending out-of-state move.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Despite CPS being mentioned, the user’s legal help request is for parenting plan/custody/visitation decisions, not a direct DHS removal case.\"\n    },\n    {\n      \"row_id\": 228,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User was served a petition for custody and parenting time and needs advice on responding, including interstate parenting-time concerns.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Support/Modification\",\n          \"justification\": \"Petition also includes child support; user needs to respond to that component as well.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Custody/parenting time is central, and child support is explicitly part of the served petition, supporting a second label.\"\n    },\n    {\n      \"row_id\": 229,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User reports loss of parenting time/visitation, interference by ex-spouse, and wants enforcement/change of parenting time.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is parenting time/visitation interference and custody dynamics; no separate support or restraining order request is stated.\"\n    },\n    {\n      \"row_id\": 230,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User is in a custody battle and seeks help presenting their side to the judge to regain custody of their son.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward custody dispute/request to regain custody.\"\n    },\n    {\n      \"row_id\": 231,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Juvenile/DHS Issue - SCF (CSD) related\",\n          \"justification\": \"User states CPS took their child months ago, refuses to return the child, and placed the child with non-relatives—direct DHS/CPS removal/placement issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is explicitly a CPS removal/placement dispute, fitting the DHS juvenile involvement category.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039752,
+  "id": "chatcmpl-E1YWePeSqC2vYS5fK14PFYWT0mbSg",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1447,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 11,
+      "engine_ttft_ms": 186,
+      "engine_ttlt_ms": 16011,
+      "pre_inference_ms": 122,
+      "service_tbt_ms": 11,
+      "service_ttft_ms": 374,
+      "service_ttlt_ms": 16191,
+      "total_duration_ms": 16077,
+      "user_visible_ttft_ms": 252
+    },
+    "prompt_tokens": 11121,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 12568
+  }
+}

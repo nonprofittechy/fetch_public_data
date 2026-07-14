@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 42,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Workers' Comp\",\n          \"subcategory\": \"State\",\n          \"justification\": \"User reports a work-caused repetitive stress injury (tendonitis) from manufacturing work and needs guidance on pursuing a workers’ compensation claim tied to a prior employer.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a classic state workers’ comp claim for a workplace injury/occupational condition; employer sale/transition is incidental to claim handling.\"\n    },\n    {\n      \"row_id\": 43,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"General (residential)\",\n          \"justification\": \"Recently purchased a home and alleges misrepresentations about what was included in the purchase.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Water Law\",\n          \"justification\": \"User explicitly requests help understanding water rights and an alleged easement to a water pipe running through the property.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"General residential real estate fits the purchase dispute, but the water-rights/easement issue is a distinct additional topic squarely within Water Law, so two labels are supported.\"\n    },\n    {\n      \"row_id\": 44,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Special Needs/Inc. Cap Trusts\",\n          \"justification\": \"User asks about creating a special needs trust compliant with SSI rules to protect assets (IRA and probate distributions) for a disabled adult beneficiary.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core request is SSI-compliant special needs trust planning to preserve benefits and protect funds from exploitation.\"\n    },\n    {\n      \"row_id\": 45,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"Unemployment benefits were denied; user has filed appeals and had an ALJ hearing and is awaiting resolution.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an appeal of a state unemployment benefits denial.\"\n    },\n    {\n      \"row_id\": 46,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Bankruptcy\",\n          \"subcategory\": \"Creditors\",\n          \"justification\": \"User is concerned about liability to ex-husband’s creditors after he filed Chapter 7 and wants to protect assets from collection efforts tied to his debts.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Not a niche/complex bankruptcy procedural issue; the user is not filing themselves but is worried about exposure to creditor collection due to another person’s bankruptcy.\"\n    },\n    {\n      \"row_id\": 47,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Marijuana Business\",\n          \"justification\": \"Requests counsel for Oregon cannabis regulatory compliance and OLCC enforcement for a licensed cannabis business owner.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Whistleblowers\",\n          \"justification\": \"User explicitly mentions “whistleblower considerations” regarding potential regulatory violations and protecting themselves during the process.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary cannabis/OLCC compliance is clearly supported; whistleblower protections are also explicitly raised as a distinct legal issue.\"\n    },\n    {\n      \"row_id\": 48,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Banking\",\n          \"justification\": \"Dispute with Wells Fargo over account closure and missing $30,000+ balance/check; seeks legal representation to recover funds.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a consumer dispute with a bank over missing funds after account closure.\"\n    },\n    {\n      \"row_id\": 49,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"DUII/DWS\",\n          \"justification\": \"User reports a major car accident involving DUII, indicating a DUII-related criminal matter.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The only stated legal issue is DUII connected to an accident; no separate DMV hearing/notice is mentioned.\"\n    },\n    {\n      \"row_id\": 50,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Unemployment\",\n          \"justification\": \"Oregon unemployment overpayment determination leading to garnishment; user seeks lawyer to challenge/stop garnishment and address waiver/hardship process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a dispute with the state unemployment agency about overpayment recovery and garnishment.\"\n    },\n    {\n      \"row_id\": 51,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Custody/Visitation\",\n          \"justification\": \"User seeks help obtaining full custody and describes current custody situation amid mother’s untreated mental health and violence concerns.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Paternity\",\n          \"justification\": \"User specifically wants to establish paternity and be added to the birth certificate for the 8-month-old child.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Paternity is explicitly requested, but the user also separately requests full custody forms; custody is a distinct additional family-law issue, so two labels are supported.\"\n    },\n    {\n      \"row_id\": 52,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Health Law/HIPAA\",\n          \"justification\": \"Complaint that a healthcare provider disclosed sensitive health information via unsecured personal Gmail, framed as a HIPAA/privacy issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is directly about improper disclosure/handling of protected health information.\"\n    },\n    {\n      \"row_id\": 53,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User requests a patent search and advice on filing a utility patent for an AI-driven software application.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request is squarely for patent attorney services regarding patentability and filing strategy.\"\n    },\n    {\n      \"row_id\": 54,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Union Issues\",\n          \"justification\": \"User is a union member and reports the union steward is unresponsive and not supporting their complaint, indicating a dispute with/within the union representation process.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Discrimination\",\n          \"justification\": \"User alleges discrimination in hiring and pay by their employer and seeks an employment attorney.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"While discrimination is alleged, the user also presents a distinct problem with union representation (steward unresponsive/failure to pursue grievance), supporting a second label; primary should shift to Union Issues due to the prominent union-related conflict.\"\n    },\n    {\n      \"row_id\": 55,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"Landlord seeking to evict (“convict” likely meaning evict) a residential tenant for 3 months of unpaid rent.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a residential landlord-tenant eviction/nonpayment issue.\"\n    },\n    {\n      \"row_id\": 56,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"User seeks help with guardianship/conservatorship for an aging father and wants to understand legal authority over finances to prevent homelessness.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request goes beyond drafting POA and is about initiating/handling a court guardianship/conservatorship process.\"\n    },\n    {\n      \"row_id\": 57,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"SSD (Social Security Disability)\",\n          \"justification\": \"User is on SSDI and needs advice about working while on SSDI and converting to retirement Social Security at age 62.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This concerns Social Security Disability benefits rules and potential conversion to retirement benefits.\"\n    },\n    {\n      \"row_id\": 58,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"Dispute among small business partners about salary and governance; seeks own counsel for business-structure/partner dispute advice and potential litigation.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an internal business partner dispute and need for business counsel; no specific court filing described yet.\"\n    },\n    {\n      \"row_id\": 59,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"Home renovation dispute with contractor/subcontractor over defective carpet work, withholding payment, and risk of a lien.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Consumer Law\",\n          \"subcategory\": \"Small Claims Advice\",\n          \"justification\": \"User explicitly asks a “Small claims Question” and wants guidance on who to file against and strategy.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary issue is a contractor dispute; the user also explicitly seeks small-claims guidance as a separate requested service.\"\n    },\n    {\n      \"row_id\": 60,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Criminal Law\",\n          \"subcategory\": \"Traffic Offenses\",\n          \"justification\": \"User seeks help contesting speeding and careless driving citations and requests dismissal/deferred disposition.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"These are non-DUI traffic citations (speeding/careless driving).\"\n    },\n    {\n      \"row_id\": 61,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Restraining Orders\",\n          \"justification\": \"User needs help fighting a restraining order filed by the child’s mother (household/partner context) allegedly to remove them from the home and affect custody.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is defense against a family/partner-related restraining order; custody is mentioned as motive but no separate custody service is requested.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784038477,
+  "id": "chatcmpl-E1YC5MbHCAwgUmUHOYGi5rjCJl0OY",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 2904,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 117,
+      "engine_ttlt_ms": 41456,
+      "pre_inference_ms": 99,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 334,
+      "service_ttlt_ms": 41618,
+      "total_duration_ms": 41524,
+      "user_visible_ttft_ms": 235
+    },
+    "prompt_tokens": 12287,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 15191
+  }
+}

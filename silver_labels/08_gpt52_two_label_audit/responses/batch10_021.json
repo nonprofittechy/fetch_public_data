@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 402,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Living Trusts\",\n          \"justification\": \"User wants to “set up a trust” to hold assets (financial assets, real estate) and coordinate wills/beneficiaries to ensure distribution and management—typical revocable living trust planning.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request is specifically for creating a trust as a core estate planning tool to hold assets and reduce management burden; living trust is directly on point.\"\n    },\n    {\n      \"row_id\": 403,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"General (Wills, Trusts, Estates)\",\n          \"justification\": \"User wants to create a transfer-on-death deed and is asking about consequences for heirs selling property; this is estate planning/asset transfer planning, not specifically a living trust.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Problem is about a TOD deed (estate transfer tool) and timing/creditor issues, fitting general estate planning rather than living trusts.\"\n    },\n    {\n      \"row_id\": 404,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Medicare/Medicaid\",\n          \"justification\": \"They received notice Medicaid benefits will end due to asset ownership (house) and need options/appeal guidance—this is a Medicaid eligibility/termination issue.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"Mother and partner have dementia, lack POA authority, refuse to sell, and children state they cannot act; they need legal authority to manage finances/assets—guardianship/conservatorship is implicated.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Medicaid termination is supported, but the user also explicitly describes incapacity and lack of authority to sell/manage the house, creating a distinct guardianship/conservatorship need.\"\n    },\n    {\n      \"row_id\": 405,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Power of Attorney\",\n          \"justification\": \"User explicitly seeks to establish durable power of attorney for parents as part of estate planning.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Direct request to create durable POA; label fits exactly.\"\n    },\n    {\n      \"row_id\": 406,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"User states they have a contested guardianship involving their 20-year-old daughter (adult guardianship).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a guardianship dispute involving an adult child; conservatorship/guardianship is the correct taxonomy entry.\"\n    },\n    {\n      \"row_id\": 407,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"User seeks help with guardianship/conservatorship for an aging father and understanding authority over finances to prevent homelessness.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"They are pursuing legal authority/structure to manage an incapacitated elder’s affairs; this fits conservatorship/guardianship.\"\n    },\n    {\n      \"row_id\": 408,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"Beneficiary alleges trustee withholding the trust document and possible misappropriation/self-dealing; seeks help enforcing rights and fiduciary duties—trust dispute likely requiring legal action.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Core is a conflict over trust administration and trustee misconduct; litigation category is appropriate.\"\n    },\n    {\n      \"row_id\": 409,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Litigation\",\n          \"justification\": \"Successor co-trustees are at impasse over administration/sale of house and alleged fiduciary negligence; user wants legal avenues to proceed—trust dispute likely requiring court involvement.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Disagreement between co-trustees about trust asset management and fiduciary duties is a trust litigation matter.\"\n    },\n    {\n      \"row_id\": 410,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Guardianship(minor)\",\n          \"justification\": \"User seeks guardianship of a great-nephew (a child) due to unstable mother and unknown father.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a request for court-ordered authority over a minor child; the current label fits.\"\n    },\n    {\n      \"row_id\": 411,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Elder Abuse\",\n          \"justification\": \"User describes mother with dementia being influenced by a ‘friend’ to replace POAs and now family is accused of abuse/stealing—suggests exploitation/undue influence and elder-protection concerns.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"Conservatorship/Guardianship\",\n          \"justification\": \"Mother has dementia, refuses needed care, and there’s a dispute over decision-making authority (POA replaced); guardianship/conservatorship may be needed to protect her and manage care/finances.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary label is supported because the facts strongly suggest exploitation/undue influence. A separate, distinct need for guardianship/conservatorship is also supported by dementia, safety concerns, and contested authority.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040138,
+  "id": "chatcmpl-E1Ycs0nh5tm8P3ciLQp6vdF0HEHEA",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1602,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 81,
+      "engine_ttlt_ms": 21407,
+      "pre_inference_ms": 107,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 268,
+      "service_ttlt_ms": 21588,
+      "total_duration_ms": 21489,
+      "user_visible_ttft_ms": 161
+    },
+    "prompt_tokens": 11247,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12849
+  }
+}

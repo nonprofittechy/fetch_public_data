@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 372,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"User is a landlord dealing with a residential tenant breaking a lease early and asks about handling rent and returning the security deposit—core landlord-tenant compliance issues.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary fits: landlord questions about early termination and security deposit/rent are residential landlord issues. No distinct second legal issue stated.\"\n    },\n    {\n      \"row_id\": 373,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Construction/Contractors\",\n          \"justification\": \"User hired a contractor and reports performance/misrepresentation concerns (slow work, no-shows, potential unlicensed electrical work) and wants options—this is a contractor dispute tied to a construction project.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary fits: dispute with a contractor over workmanship/performance and licensing representations. No separate additional category is clearly requested.\"\n    },\n    {\n      \"row_id\": 374,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Mobile Home (Tenant/Owner)\",\n          \"justification\": \"They lived in an RV park/mobile terrace and were given a 24-hour notice to vacate; they allege wrongful eviction and unsafe living conditions by the park operator—fits manufactured home/RV park tenancy dispute.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Property Damage\",\n          \"justification\": \"Their RV was shot multiple times causing physical damage (window and slide-out), suggesting a potential civil claim for property damage against the shooter (and possibly others depending on facts).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported by the wrongful eviction/safety allegations in an RV park setting. A second distinct issue is also described: property damage from the shooting.\"\n    },\n    {\n      \"row_id\": 375,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"User appears to be a landlord seeking to evict a tenant after termination of the rental agreement and serving a notice—eviction procedure for a residential tenancy.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Although the text is unclear/typo-heavy, the core request is landlord-side eviction after termination and notice. No clearly separate second legal issue.\"\n    },\n    {\n      \"row_id\": 376,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"Landlord in Portland wants to evict a tenant for nonpayment of rent for three months—classic residential landlord eviction/nonpayment issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is directly supported: landlord pursuing eviction for nonpayment.\"\n    },\n    {\n      \"row_id\": 377,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Mobile Home (Tenant/Owner)\",\n          \"justification\": \"Resident in a manufactured home park facing buyout/relocation pressures due to creek erosion project; asks for recourse under manufactured home/senior park laws—fits mobile home park tenant/owner dispute.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary fits the described manufactured home park situation and requested advice. No distinct second legal issue (e.g., zoning, condemnation) is clearly framed as a separate dispute.\"\n    },\n    {\n      \"row_id\": 378,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"General (residential)\",\n          \"justification\": \"Issue arises from a recent home purchase and disclosure/inspection problems increasing costs—fits residential real estate transaction dispute.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Civil Rights\",\n          \"justification\": \"User alleges the seller’s agent profiled them based on limited English ('profile me as I don't speak and understand English'), suggesting a potential discrimination claim in a housing-related context.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"Primary label is supported by the post-purchase disclosure/inspection/agent issues. A second label is only weakly supported: profiling allegation could implicate discrimination, but facts are limited.\"\n    },\n    {\n      \"row_id\": 379,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Tenant disputes landlord’s demand for proof of 'professional' window A/C installation and implied consent under the lease—this is a tenant-landlord lease/rights dispute.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Current primary fits: tenant-side conflict over lease terms/landlord demands. No additional distinct legal issue is clearly presented.\"\n    },\n    {\n      \"row_id\": 380,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Tenant (Residential)\",\n          \"justification\": \"Tenant facing eviction for alleged nonpayment raises habitability/repair issues, improper rent increases, and landlord entry without notice—core residential tenant defense/rights issues.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is supported: eviction and multiple tenant-rights issues are central. Employment coercion is mentioned but not developed as a distinct employment-law claim.\"\n    },\n    {\n      \"row_id\": 381,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Real Property\",\n          \"subcategory\": \"Landlord Residential\",\n          \"justification\": \"Landlords have filed a residential eviction complaint/summons for nonpayment and have a first court appearance scheduled—landlord-side eviction process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Current primary is directly supported: landlord pursuing eviction with court timeline. No separate legal issue stated.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040075,
+  "id": "chatcmpl-E1YbrQpan3QTAjN0svN0yNBdhOkay",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1584,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 13,
+      "engine_ttft_ms": 75,
+      "engine_ttlt_ms": 20629,
+      "pre_inference_ms": 145,
+      "service_tbt_ms": 13,
+      "service_ttft_ms": 336,
+      "service_ttlt_ms": 20862,
+      "total_duration_ms": 20754,
+      "user_visible_ttft_ms": 191
+    },
+    "prompt_tokens": 11347,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12931
+  }
+}

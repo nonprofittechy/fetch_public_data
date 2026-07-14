@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 292,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User received a DMCA copyright takedown on Etsy for an allegedly copied 3D model and wants to file a counter-DMCA, which is a copyright dispute.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a copyright enforcement/takedown and counter-notice issue; no separate trademark or contract issue is described.\"\n    },\n    {\n      \"row_id\": 293,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User wants advice on permissible use of photographs they did not take in a training manual—copyright licensing/fair use question.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The only issue presented is lawful reuse of third-party photos, which squarely fits copyright.\"\n    },\n    {\n      \"row_id\": 294,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User explicitly requests help with intellectual property and copyrights as a graphic designer.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"User also says they need help with a contract, indicating a distinct contract/legal agreement need beyond IP rights questions.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Copyright/IP is clearly implicated, and the separate request for contract help supports adding a business contract category.\"\n    },\n    {\n      \"row_id\": 295,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User seeks assessment of patentability and guidance on filing a provisional patent for a product improvement.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is directly about patentability/provisional patent filing, matching the patent subcategory.\"\n    },\n    {\n      \"row_id\": 296,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User wants a patent attorney to patent a dental-caries treatment approach and discusses novelty relative to similar products/patents.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Although they also mention prototype/fulfillment help, the core legal request is patenting the invention.\"\n    },\n    {\n      \"row_id\": 297,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User asks whether they can copy an artist’s art style/process and sell it, and whether they need a licensing/royalty deal—implicates copyright and potential IP infringement/licensing.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The questions are about reproducing another artist’s creative work/style and managing infringement risk, which fits best under copyright/trademark (not enough detail to classify as patent).\"\n    },\n    {\n      \"row_id\": 298,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User is mid-process with a patent application and needs help resubmitting arguments to get the patent allowed.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is prosecution/office-action style patent work, squarely within patent attorney services.\"\n    },\n    {\n      \"row_id\": 299,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User states they have an invention they need to patent.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"General Litigation\",\n          \"justification\": \"User claims 'the courts are interfering' and wants an attorney to stop court interference; the nature of the court action is unclear but suggests a dispute requiring court-related litigation/relief beyond patent filing.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"Patent help is requested, but the dominant issue may be an unspecified court matter; without details, it is unclear whether a second litigation label is truly supported.\"\n    },\n    {\n      \"row_id\": 300,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Trademark/Copyright\",\n          \"justification\": \"User wants to 'lockdown some slogans and designs' for a brand—this is trademark/copyright protection and registration work.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User also requests a patent lawyer, indicating a separate patent-related service interest in addition to trademarking slogans/designs.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary of Patent alone is not best supported because the only specific IP items described are slogans and designs (trademark/copyright). A second patent match is supported by the explicit request for patent counsel.\"\n    },\n    {\n      \"row_id\": 301,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Intellectual Property\",\n          \"subcategory\": \"Patent (Reg Patent Attys Only)\",\n          \"justification\": \"User wants a patent written for an invention (magnetic fitted sheet), i.e., patent drafting/prosecution.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Patent drafting is clear; the references to 'courts monitoring' are too vague to confidently add a separate litigation category.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039898,
+  "id": "chatcmpl-E1YZ0gdVuhXxzHf0dqF08RSfgrrpv",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1546,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 79,
+      "engine_ttlt_ms": 21224,
+      "pre_inference_ms": 87,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 224,
+      "service_ttlt_ms": 21363,
+      "total_duration_ms": 21285,
+      "user_visible_ttft_ms": 137
+    },
+    "prompt_tokens": 10845,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12391
+  }
+}

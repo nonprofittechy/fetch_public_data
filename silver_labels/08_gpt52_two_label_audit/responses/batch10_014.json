@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 332,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Whistleblowers\",\n          \"justification\": \"User says they were fired for telling their boss that coworkers were being negligent at a homeless shelter, i.e., reporting wrongdoing/unsafe conduct and then being terminated.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"ADA (Disability) Act Issues\",\n          \"justification\": \"They mention the boss 'got angry knowing I have dislexia and fired me,' suggesting disability-related discrimination as an additional, distinct issue.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label (Whistleblowers) is plausible but not clearly tied to reporting illegal activity; however the text does assert retaliation for reporting negligence. A second label is supported because the user explicitly ties the termination to dyslexia (a disability), creating a separate ADA-type claim.\"\n    },\n    {\n      \"row_id\": 333,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"They worked long hours for 11 years and state the owner 'didn’t pay salaries' and want help getting unpaid wages.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The text is a straightforward unpaid wages claim. The current primary is supported; no second distinct issue is stated.\"\n    },\n    {\n      \"row_id\": 334,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User wants a letter to recover 3 weeks of accrued PTO after termination; PTO payout dispute is a wage-claim type issue under state wage laws/handbook policies.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary label is supported because the core request is recovery of PTO pay (wages). Although they mention wrongful termination and unemployment, the specific legal service requested is pursuing unpaid PTO, so one label is sufficient.\"\n    },\n    {\n      \"row_id\": 335,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"FMLA\",\n          \"justification\": \"User is on medical leave and is facing obstacles returning to work; they ask about rights related to return-to-work from leave.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Other\",\n          \"justification\": \"They also have a private short-term disability claim that was approved then denied, which is a benefits/STD dispute not squarely covered by the listed employment subcategories except the catch-all 'Other'.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current FMLA label is supported for the job-protected leave/return-to-work component. A second label is supported because the user separately describes a short-term disability claim denial, which is a distinct benefits dispute.\"\n    },\n    {\n      \"row_id\": 336,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"ADA (Disability) Act Issues\",\n          \"justification\": \"They believe they were terminated due to a medical condition and have already filed with BOLI, indicating disability discrimination in employment.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label is supported; the fact pattern is disability-based termination. No other distinct legal issue is requested.\"\n    },\n    {\n      \"row_id\": 337,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"ADA (Disability) Act Issues\",\n          \"justification\": \"User alleges discrimination because of disabilities and retaliation after going to HR, and is pursuing EEOC mediation.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label is supported because the discrimination is specifically tied to disability; retaliation is part of that same workplace discrimination matter and does not require a second label.\"\n    },\n    {\n      \"row_id\": 338,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"They are being laid off/reduced out of a pharmacist job in a way they believe is inconsistent/unfair (hours taken and layoff allegedly not consistent with policy/reason given).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label is supported as an employment termination/layoff dispute. No protected-class discrimination, wage issue, or licensing discipline is stated; it’s primarily about the employer’s layoff decision.\"\n    },\n    {\n      \"row_id\": 339,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"A Physician Assistant asks for legal advice on whether they can practice at a secondary employer without a collaborative agreement/required supervising physician arrangement—i.e., scope-of-practice and licensing/regulatory compliance.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label is supported: this is a professional licensing/regulatory practice question, not an employment contract dispute.\"\n    },\n    {\n      \"row_id\": 340,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"FMLA\",\n          \"justification\": \"They allege discrimination/retaliation upon returning from FMLA leave (not restored to original position) and are pursuing BOLI/EEOC charges.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label is supported because the core complaint is failure to reinstate after FMLA leave and related retaliation. No second distinct legal service is requested.\"\n    },\n    {\n      \"row_id\": 341,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"ADA (Disability) Act Issues\",\n          \"justification\": \"Employer is terminating them after medical emergency, stating no accommodations are available; user is seeking ADA accommodation/leave-related protection.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"FMLA\",\n          \"justification\": \"They explicitly state they 'Exhausted FMLA' and are being terminated because FMLA is over, indicating an intertwined leave-rights issue.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label (ADA) is supported due to accommodation denial and termination linked to medical condition. A second label is also supported because the facts explicitly involve exhaustion of FMLA and termination tied to leave status, which is a distinct FMLA-related aspect.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039985,
+  "id": "chatcmpl-E1YaP1Ed8SAhiWufPyYspobBWZy1r",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1744,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 85,
+      "engine_ttlt_ms": 23815,
+      "pre_inference_ms": 154,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 328,
+      "service_ttlt_ms": 24047,
+      "total_duration_ms": 23902,
+      "user_visible_ttft_ms": 174
+    },
+    "prompt_tokens": 11009,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12753
+  }
+}

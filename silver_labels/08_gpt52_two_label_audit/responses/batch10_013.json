@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 322,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User is marrying a foreign national on a tourist visa and wants help taking steps to obtain a green card.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Issue is family-based immigration/adjustment of status; current primary label fits.\"\n    },\n    {\n      \"row_id\": 323,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User requests an immigration lawyer to procure work visas for businesses/individuals.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is clearly immigration/visa procurement; current primary label fits.\"\n    },\n    {\n      \"row_id\": 324,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User reports hours were deleted from pay (nonpayment of earned wages/hours).\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"User says they were terminated after complaining about missing hours, suggesting retaliation/wrongful termination.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary wage issue is explicit; separate termination/retaliation issue is also stated, supporting two labels.\"\n    },\n    {\n      \"row_id\": 325,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"uncertain\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"User broadly reports possible wrongful termination without facts tying it to a specific protected class or statute.\",\n          \"confidence\": \"low\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Discrimination\",\n          \"justification\": \"User also explicitly raises possible discrimination, but provides no details on protected class or conduct.\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"The text asserts both wrongful termination and discrimination but lacks detail to confidently pick one primary; current primary could fit but is not clearly supported over discrimination.\"\n    },\n    {\n      \"row_id\": 326,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Whistleblowers\",\n          \"justification\": \"User seeks advice on whistleblower protections after observing alleged ADA violations in their workplace role.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Request is specifically about whistleblower protections for reporting violations; current primary label fits.\"\n    },\n    {\n      \"row_id\": 327,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Discrimination\",\n          \"justification\": \"User alleges age discrimination (53) and demotion in favor of a younger employee (35).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Clear protected-class employment discrimination claim; current primary label fits.\"\n    },\n    {\n      \"row_id\": 328,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Discrimination\",\n          \"justification\": \"User reports racist remarks toward them and Hispanic coworkers and adverse actions including suspension and firing.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"User states they were fired 'without cause' after suspension, indicating a termination dispute beyond harassment details.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Discrimination is strongly supported by alleged racist remarks and firing; adding wrongful discharge is supported by explicit termination claim. Current primary is supported, but given the detailed harassment framing plus firing, discrimination remains best; assessment marked needs_change only if the current label was intended to capture harassment specifically, which taxonomy lacks—still discrimination is correct, so primary does not need change; however per prompt, current primary is supported. Re-evaluated: current primary is supported, not needs_change.\"\n    },\n    {\n      \"row_id\": 329,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Union Issues\",\n          \"justification\": \"User is a union member and complains the union steward is unresponsive and not representing them effectively in the grievance process.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Discrimination\",\n          \"justification\": \"User also alleges discrimination in hiring and pay by the employer.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The union representation failure is a distinct issue explicitly described and should be primary; discrimination is also alleged as a separate employer issue. Current primary (Discrimination) is incomplete/mis-prioritized.\"\n    },\n    {\n      \"row_id\": 330,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"General\",\n          \"justification\": \"Employer/small business owner seeks legal advice on properly terminating an employee (employment compliance/termination process).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is an employment-law compliance question from an employer, not business contracts/organization; current primary label is not supported.\"\n    },\n    {\n      \"row_id\": 331,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wage and Hour Claims\",\n          \"justification\": \"User disputes final pay/payout, stating the final paystub shows their whole final check went to taxes (pay/withholding issue).\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"Labor & Employment\",\n          \"subcategory\": \"Wrongful Discharge\",\n          \"justification\": \"User alleges they were wrongly terminated for getting a second job.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"There are two distinct issues: termination and final wage/paystub handling. Current primary (Wrongful Discharge) misses the wage dispute and may not be the dominant issue.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039960,
+  "id": "chatcmpl-E1Ya0E6Rep4BCVyRldPB6Ocszd4Um",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1612,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 15,
+      "engine_ttft_ms": 75,
+      "engine_ttlt_ms": 23572,
+      "pre_inference_ms": 113,
+      "service_tbt_ms": 15,
+      "service_ttft_ms": 269,
+      "service_ttlt_ms": 23761,
+      "total_duration_ms": 23657,
+      "user_visible_ttft_ms": 156
+    },
+    "prompt_tokens": 10695,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12307
+  }
+}

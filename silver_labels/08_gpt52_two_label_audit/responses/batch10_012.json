@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 312,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User has a green card hearing appointment and is concerned about issues that could negatively affect the application—an immigration/adjustment-related matter.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Problem is clearly about pursuing lawful permanent residence (green card) and handling complications in the immigration process; no distinct second legal domain is requested.\"\n    },\n    {\n      \"row_id\": 313,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User requests an immigration lawyer to adjust status from student visa to permanent resident.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a straightforward status adjustment/green card assistance request, fitting general immigration/visas.\"\n    },\n    {\n      \"row_id\": 314,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User is on a student visa and wants to adjust to permanent resident based on marriage; seeking a lawyer for the adjustment process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Text supports only an immigration status adjustment (marriage-based) issue; no separate family-law divorce/custody issue is raised.\"\n    },\n    {\n      \"row_id\": 315,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User seeks an immigration attorney for an undocumented cousin nearing age 18, asking what to do and how to get legal documents/status.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Request concerns options to legalize/obtain immigration documents for an undocumented relative; no other distinct legal category is implicated.\"\n    },\n    {\n      \"row_id\": 316,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User wants to build an EB-5 immigration case, which is a visa/green-card pathway requiring immigration counsel.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Securities\",\n          \"justification\": \"EB-5 involves structuring and documenting an investment; user explicitly requests an attorney specializing in 'professional investment law and processes,' indicating securities/investment compliance concerns beyond pure immigration filing.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Primary immigration label is supported; a second label is supported because the user explicitly requests specialized investment law expertise as part of the EB-5 case.\"\n    },\n    {\n      \"row_id\": 317,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User is on F-1 OPT, recently married to a U.S. citizen, and is initiating adjustment of status/green card application; asks how relocation/separation and OPT expiration affect the process.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"All issues described are immigration/visa-status and adjustment-of-status strategy questions; no separate legal service (e.g., family law) is requested.\"\n    },\n    {\n      \"row_id\": 318,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User seeks information/consultation about applying for a green card for Mexican relatives via their 21-year-old U.S. citizen daughter (family-based immigration).\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is a family-based green card inquiry; no other distinct legal category is supported.\"\n    },\n    {\n      \"row_id\": 319,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User wants an immigration attorney to help their father move to the U.S., noting U.S. citizen children and 'specific challenges'—a visa/green card sponsorship matter.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The text supports only general immigration/visa assistance for a parent; no separate legal dispute is described.\"\n    },\n    {\n      \"row_id\": 320,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User seeks counsel about employment-based immigration (I-140, EB-3) and complications due to the worker’s visa having expired long ago.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"This is clearly an employment-based immigration sponsorship/visa renewal question; no separate business-contract or employment dispute is described.\"\n    },\n    {\n      \"row_id\": 321,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Gen. Immigration/Visas\",\n          \"justification\": \"User (U.S. citizen) seeks advice on whether they can help their partner’s immigration status; mentions having children and wanting to know qualification options.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The request is for immigration status guidance for a partner; no distinct family law action (custody/divorce) is raised.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784039941,
+  "id": "chatcmpl-E1YZhezCeNpVwZiCpe2QGJc9VnnH7",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1469,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 12,
+      "engine_ttft_ms": 669,
+      "engine_ttlt_ms": 18169,
+      "pre_inference_ms": 174,
+      "service_tbt_ms": 12,
+      "service_ttft_ms": 973,
+      "service_ttlt_ms": 18470,
+      "total_duration_ms": 18330,
+      "user_visible_ttft_ms": 799
+    },
+    "prompt_tokens": 10634,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12103
+  }
+}

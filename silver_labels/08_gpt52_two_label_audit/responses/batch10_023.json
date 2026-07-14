@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \"classifications\": [\n    {\n      \"row_id\": 422,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Restraining Orders\",\n          \"justification\": \"User reports an ex-boyfriend repeatedly calling, fear he will hurt them—fits seeking protection from an intimate partner/ex-partner.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"General (State)\",\n          \"justification\": \"User says they were denied a license because their birth certificate was deemed invalid, which is a state-agency document/eligibility denial dispute.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary label is supported by the ex-partner harassment/fear of harm. A second distinct issue is also present: a state-level denial of a license based on alleged invalid birth certificate documentation.\"\n    },\n    {\n      \"row_id\": 423,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"General (Local/Municipal)\",\n          \"justification\": \"Complaint is about City Council cutting funding to an after-school program and wanting to address the council—this is a local government decision/policy issue.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The core actionable legal issue described is a dispute/advocacy about a local municipal decision (program funding). Gas prices are mentioned but not as a specific legal dispute with a regulated utility or agency decision about the user.\"\n    },\n    {\n      \"row_id\": 424,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Wills & Trusts\",\n          \"subcategory\": \"General (Wills, Trusts, Estates)\",\n          \"justification\": \"User states they may die soon and want to write a will—classic estate planning request.\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Professional Licensing\",\n          \"justification\": \"User reports their nursing license is being revoked, which is a dispute over a state-required professional license.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Primary label is supported because the user explicitly wants to draft a will. A second distinct issue is also supported: threatened revocation of a nursing license (professional licensing). Other mentions (neighbor loud music; loss of vet benefits) are not framed with enough detail to confidently classify as additional categories here.\"\n    },\n    {\n      \"row_id\": 425,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Family Law\",\n          \"subcategory\": \"Child Support/Modification\",\n          \"justification\": \"User has an existing child support order post-divorce and seeks an adjustment due to changed income, with interstate residency facts.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"The described need is a child support modification based on income change; no separate distinct legal service is requested beyond that.\"\n    },\n    {\n      \"row_id\": 426,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"two_labels_supported\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Medicare/Medicaid\",\n          \"justification\": \"CareOregon is a Medicaid/OHP-related entity; the user seeks a way to appeal/contest termination impacting Medicaid-covered clients—benefits/program administration context.\",\n          \"confidence\": \"medium\"\n        },\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"General (Contracts, Business, Organization)\",\n          \"justification\": \"A small practice received notice that a payer is terminating their contract without cause; this is fundamentally a business contract dispute affecting operations.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current primary (business general) is plausible, but the user’s focus on appealing a Medicaid-related payer decision (CareOregon) supports routing first to the administrative/Medicaid domain, with a secondary business contract component.\"\n    },\n    {\n      \"row_id\": 427,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Business & Corporate\",\n          \"subcategory\": \"Securities\",\n          \"justification\": \"User asks how to sell stock; this is an investment/securities transaction question (even if simplistic).\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"Securities is the closest fit in the provided taxonomy for stock sale questions, though the prompt is thin and may be more financial-advice than legal; still, the current primary topic alignment is securities.\"\n    },\n    {\n      \"row_id\": 428,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Child Abuse Victims\",\n          \"justification\": \"User states they were raped at age three and that it was covered up; this describes a civil claim for childhood sexual abuse damages.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Despite the user saying they want a malpractice lawyer, the facts presented are about childhood sexual assault and cover-up, not attorney negligence causing case harm; the best-supported category is a civil child abuse victim claim.\"\n    },\n    {\n      \"row_id\": 429,\n      \"primary_assessment\": \"needs_change\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"Administrative Law\",\n          \"subcategory\": \"Student Rights\",\n          \"justification\": \"User reports mental health issues leading to trouble at school; framed as school discipline/rights impact rather than IEP/special education services.\",\n          \"confidence\": \"medium\"\n        }\n      ],\n      \"audit_justification\": \"The current label (special needs education) is not supported because there is no mention of disability accommodations, an IEP, or denial of special education services. The issue is more generally about school trouble connected to mental health, aligning better with student rights.\"\n    },\n    {\n      \"row_id\": 430,\n      \"primary_assessment\": \"uncertain\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"General Litigation\",\n          \"subcategory\": \"Stalking Orders\",\n          \"justification\": \"User alleges being followed everywhere by a car, suggesting a need for a protective order against stalking/harassment (even though details are unclear).\",\n          \"confidence\": \"low\"\n        }\n      ],\n      \"audit_justification\": \"The described facts are vague and include possibly delusional elements, but the only concrete legal-type allegation is being followed; that most closely maps to seeking a stalking order. Not enough information to support an additional distinct category.\"\n    },\n    {\n      \"row_id\": 431,\n      \"primary_assessment\": \"supported\",\n      \"multi_label_assessment\": \"one_label_sufficient\",\n      \"matches\": [\n        {\n          \"category\": \"International Law\",\n          \"subcategory\": \"Deportation\",\n          \"justification\": \"User states uncle is facing deportation due to being caught with guns—removal defense triggered by alleged criminal conduct.\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"audit_justification\": \"Deportation defense is directly stated and is the central issue; no separate additional legal service is explicitly requested.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784040188,
+  "id": "chatcmpl-E1Ydgcli2QBOuJcFwu646PiJq9UFQ",
+  "model": "gpt-5.2-2025-12-11",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1707,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 14,
+      "engine_ttft_ms": 178,
+      "engine_ttlt_ms": 23749,
+      "pre_inference_ms": 127,
+      "service_tbt_ms": 14,
+      "service_ttft_ms": 387,
+      "service_ttlt_ms": 23948,
+      "total_duration_ms": 23844,
+      "user_visible_ttft_ms": 260
+    },
+    "prompt_tokens": 10628,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 9728
+    },
+    "total_tokens": 12335
+  }
+}
