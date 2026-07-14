@@ -180,3 +180,9 @@ audited the final AI primary label while allowing at most two labels per row.
 It found 90 two-label rows, 81 primary-label change candidates, and 12
 uncertain primary assessments. These are fresh single-model audit signals for
 human review, not automatic corrections.
+
+The internal prioritization of the order-insensitive review queue is in
+[`09_internal_priority_review/`](09_internal_priority_review/). It ranks the
+132 queued rows into 52 P1 human-decision rows, 14 P2 confirmation rows, and 66
+P3 quick-confirmation rows. This pass ran in the current Codex/GPT-5 context
+without using external APIs or user credentials, and it does not change labels.
