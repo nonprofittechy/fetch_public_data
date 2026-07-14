@@ -1,0 +1,23 @@
+{
+  "scope": "431 rows from redaction_reviewed_v5_clean.xlsx",
+  "method": "Post-hoc comparison of the three completed independent model passes; no API call, keyword classifier, or SPOT step.",
+  "candidate_definition": "An exact category/subcategory pair is model-supported when it appears in at least two of GPT-5.2, Gemini 3.1 Pro Preview, and DeepSeek v4 top-three candidate lists.",
+  "interpretation_caveat": "Model support identifies rows for human review. It does not by itself prove that alternatives are independently correct: some are neighboring framings of one issue, and some are lower-ranked possibilities. The final multi-label decision should consider whether each label names a separate legal issue supported by the text and detailed taxonomy.",
+  "rows_with_two_or_more_supported_pairs": 156,
+  "assessment_counts": {
+    "three-label candidate": 23,
+    "possible two-label candidate": 81,
+    "two-label candidate": 52
+  },
+  "supported_pair_count_histogram": {
+    "2": 133,
+    "3": 23
+  },
+  "candidate_rows_csv": "multilabel_candidate_rows.csv",
+  "full_evidence_json": "multilabel_candidate_evidence.json",
+  "model_versions": {
+    "gpt52": "GPT-5.2",
+    "gemini31_pro": "Gemini 3.1 Pro Preview",
+    "deepseek_v4": "DeepSeek v4"
+  }
+}
