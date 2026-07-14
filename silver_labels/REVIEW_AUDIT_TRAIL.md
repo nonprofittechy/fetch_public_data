@@ -11,6 +11,9 @@ This is the canonical index of every classification, review, audit, and prioriti
 - Multi-label conclusion: one exclusive label is inadequate for a material subset of rows.
 - Latest two-label audit: 90 rows support two labels; after ignoring order, 39 rows are primary-change candidates and 12 remain uncertain.
 - Latest human-review queue: 132 rows, prioritized into 52 P1, 14 P2, and 66 P3 rows.
+- The two-label ceiling has been removed from the human workflow. The seven known 3–4 issue rows now have expanded unordered sets: rows 252/421/424 have four candidates and rows 290/384/419/420 have three.
+- The Stage 10 workbook and web app allow the human to assign zero through four exact taxonomy pairs and retain all prior evidence.
+- The Fly.io-ready app persists current reviews and append-only history in SQLite on a mounted volume. Its container, health endpoint, volume permissions, and Fly configuration have been validated locally; no Fly app has been created or deployed.
 - Human adjudication is not yet complete. Audit and priority fields are recommendations; they have not overwritten the Stage 04 primary labels.
 - The original `redaction_reviewed_v5_clean.xlsx` remains unchanged.
 
@@ -33,6 +36,7 @@ Keyword and SPOT classification were not used. Credentials were loaded from the 
 | 07 | Broad multi-label evidence audit | Post-hoc comparison of all three models' top-3 candidates; no API | 156 rows with ≥2 exact pairs repeated by ≥2 models | [`07_multilabel_audit/`](07_multilabel_audit/) |
 | 08 | Focused two-label audit | Fresh Azure `gpt-5.2`; current primary supplied for audit; max 2 labels | 90 two-label rows; order-insensitive assessment and 132-row review queue | [`08_gpt52_two_label_audit/`](08_gpt52_two_label_audit/) |
 | 09 | Human-review prioritization | Current Codex/GPT-5 internal context review; no external API | Queue divided into 52 P1, 14 P2, and 66 P3 rows | [`09_internal_priority_review/`](09_internal_priority_review/) |
+| 10 | Cap-free focused adjudication and human interface | Current Codex/GPT-5 context; no external API; deterministic artifact builder | Seven 3–4 issue rows expanded; four human slots; persistent review app | [`10_four_label_human_review/`](10_four_label_human_review/), [`../human_review_app/`](../human_review_app/) |
 
 ## Stages 01–03: independent model passes
 
@@ -131,22 +135,42 @@ Results:
 
 P1 is an attention priority, not a prediction that the label is wrong. The highest-scored rows begin with 27, 325, 419, 17, 299, 213, 28, 252, 384, 128, 172, 196, 307, 430, and 139. See [`09_internal_priority_review/README.md`](09_internal_priority_review/README.md).
 
+## Stage 10: four-label focused review and persistent human interface
+
+The seven rows previously flagged as exceeding the two-label ceiling were read again against the enriched descriptions, all prior model candidates, the Stage 04 primary, the unordered Stage 08 audit, and Stage 09 notes. This was an internal context review with no external API or credential use. Candidate order remains irrelevant.
+
+| Row | Candidate count | Set-level conclusion |
+|---:|---:|---|
+| 252 | 4 | Divorce, military family law, immigration, and residential tenancy; immigration is medium confidence. |
+| 290 | 3 | Copyright, defamation, and online harassment. |
+| 384 | 3 | General trust/estate planning, residential property transfer, and VA loan; Property Tax rejected under its assessment-dispute description. |
+| 419 | 3 | Divorce, tenant eviction, and generic criminal matter, all low confidence because facts and party role are absent. |
+| 420 | 3 | State workers' compensation, possible wrongful discharge, and deportation. |
+| 421 | 4 | Guardianship, possible beneficiary litigation, personal injury, and a parking citation; the beneficiary-litigation and parking mappings are marked as taxonomy-boundary decisions. |
+| 424 | 4 | Veterans benefits, professional licensing, neighbor nuisance, and will drafting. |
+
+These are proposed review sets, not final human labels. The focused instructions, reviewer context, exact rationales, and per-pair confidence are recorded in [`10_four_label_human_review/ADJUDICATION_METHOD.md`](10_four_label_human_review/ADJUDICATION_METHOD.md), `focused_multilabel_adjudication.json`, and [`../build_four_label_review.py`](../build_four_label_review.py).
+
+The new workbook preserves all preceding columns, highlights the focused AI candidates in purple, and supplies four blue human-label slots plus status, notes, reviewer, and timestamp. Its companion [`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and descriptions, saves the latest decision and append-only history to SQLite, and exports CSV/JSON. It is configured for a single Fly Machine with a persistent `/data` volume. Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fly config validate` passed. Deployment was intentionally not performed without production secrets and an explicit cost-bearing app creation decision.
+
 ## Recommended files now
 
 | Purpose | File |
 |---|---|
 | Stable one-label silver baseline | [`04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx`](04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx) |
 | Human-checked paper examples | [`05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx`](05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx) |
-| Most current human-review workbook | [`09_internal_priority_review/redaction_reviewed_v5_clean_ai_silver_prioritized_human_review.xlsx`](09_internal_priority_review/redaction_reviewed_v5_clean_ai_silver_prioritized_human_review.xlsx) |
+| Most current human-review workbook | [`10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx`](10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx) |
+| Browser-based human review | [`../human_review_app/`](../human_review_app/) |
+| Focused seven-row adjudication | [`10_four_label_human_review/focused_multilabel_adjudication.csv`](10_four_label_human_review/focused_multilabel_adjudication.csv) |
 | P1-only review extract | [`09_internal_priority_review/highest_priority_rows.csv`](09_internal_priority_review/highest_priority_rows.csv) |
 | Full prioritized queue | [`09_internal_priority_review/prioritized_review_queue.csv`](09_internal_priority_review/prioritized_review_queue.csv) |
 
 ## What remains
 
-1. Human-review the 52 P1 rows first and fill the existing human label/status/note fields.
+1. Start the Stage 10 app and human-review the 52 P1 rows first, selecting up to four unordered labels and recording status/notes.
 2. Confirm the 14 P2 rows.
-3. Perform a rapid accept/remove check on second labels for the 66 P3 rows.
-4. After human decisions are complete, build a final consolidated label set that permits one, two, or where justified three labels.
+3. Perform a rapid accept/remove check on additional labels for the 66 P3 rows.
+4. Export the persisted human results and build a final consolidated label set that permits one through four labels according to the evidence.
 5. Keep the Stage 04 primary label and all model/audit evidence in the final provenance record rather than silently replacing them.
 
 ## Reproduction scripts
@@ -161,6 +185,7 @@ P1 is an attention priority, not a prediction that the label is wrong. The highe
 | [`../build_multilabel_review_workspace.py`](../build_multilabel_review_workspace.py) | Stage 07 review workbook |
 | [`../run_two_label_gpt52_audit.py`](../run_two_label_gpt52_audit.py) | Stage 08 Azure two-label audit and order-insensitive outputs |
 | [`../prioritize_human_review.py`](../prioritize_human_review.py) | Stage 09 priority queue and workbook |
+| [`../build_four_label_review.py`](../build_four_label_review.py) | Stage 10 expanded sets, four-slot workbook, app seed, and taxonomy snapshot |
 
 ## Commit trail
 
@@ -173,5 +198,8 @@ P1 is an attention priority, not a prediction that the label is wrong. The highe
 | `25a3282` | Azure GPT-5.2 two-label audit |
 | `f6f67a8` | Order-insensitive two-label interpretation |
 | `d6c279e` | Internal prioritization of the human-review queue |
+| `2093ec8` | Canonical central review/audit trail through Stage 09 |
+| `8e40744` | Seven-row three/four-label adjudication and expanded workbook |
+| `6fbc86d` | Persistent taxonomy-aware human review app and Fly-ready deployment artifact |
 
 Future review or label-changing commits should be appended here and linked to their stage documentation.

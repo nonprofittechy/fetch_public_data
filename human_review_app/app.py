@@ -271,7 +271,7 @@ def review(row_number: int) -> Any:
         saved=saved,
         selected=selected[:4],
         taxonomy_by_category=taxonomy_by_category,
-        taxonomy_lookup=json.dumps(TAXONOMY_BY_LABEL, ensure_ascii=False),
+        taxonomy_lookup=TAXONOMY_BY_LABEL,
         previous_row=previous_row,
         next_row=next_row,
     )

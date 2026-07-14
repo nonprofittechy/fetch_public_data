@@ -193,3 +193,5 @@ The internal prioritization of the order-insensitive review queue is in
 132 queued rows into 52 P1 human-decision rows, 14 P2 confirmation rows, and 66
 P3 quick-confirmation rows. This pass ran in the current Codex/GPT-5 context
 without using external APIs or user credentials, and it does not change labels.
+
+The current human workflow is [`10_four_label_human_review/`](10_four_label_human_review/). It removes the arbitrary two-label ceiling, expands the seven known three/four-issue rows, and provides four unordered human-label slots for the entire 132-row queue. Use its workbook or the persistent browser interface in [`../human_review_app/`](../human_review_app/). The app shows all canonical descriptions in context, retains all model/audit evidence, records append-only review history in SQLite, and includes a validated Fly.io deployment configuration.

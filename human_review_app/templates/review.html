@@ -107,6 +107,6 @@
 </section>
 {% endblock %}
 {% block scripts %}
-<script>window.taxonomyLookup = {{ taxonomy_lookup|safe }};</script>
+<script>window.taxonomyLookup = {{ taxonomy_lookup|tojson }};</script>
 <script src="{{ url_for('static', filename='review.js') }}"></script>
 {% endblock %}

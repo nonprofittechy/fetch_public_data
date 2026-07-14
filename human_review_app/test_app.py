@@ -89,6 +89,22 @@ class ReviewAppTest(unittest.TestCase):
         response = self.client.post("/review/252", data={"status": "accepted"})
         self.assertEqual(response.status_code, 400)
 
+    def test_optional_password_login(self) -> None:
+        os.environ["REVIEW_PASSWORD"] = "test-password"
+        try:
+            self.assertEqual(self.client.get("/").status_code, 302)
+            token = self.csrf("/login")
+            wrong = self.client.post("/login", data={"csrf_token": token, "password": "wrong"})
+            self.assertIn(b"Incorrect review password", wrong.data)
+            accepted = self.client.post(
+                "/login",
+                data={"csrf_token": token, "password": "test-password", "next": "/"},
+            )
+            self.assertEqual(accepted.status_code, 302)
+            self.assertEqual(accepted.headers["Location"], "/")
+        finally:
+            os.environ.pop("REVIEW_PASSWORD", None)
+
 
 if __name__ == "__main__":
     unittest.main()

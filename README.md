@@ -19,3 +19,8 @@ The Python utilities expect local working inputs and are retained for reproducib
 The complete model-pass, adjudication, human-check, multi-label audit,
 order-insensitive correction, and human-prioritization history is documented in
 [`silver_labels/REVIEW_AUDIT_TRAIL.md`](silver_labels/REVIEW_AUDIT_TRAIL.md).
+
+The latest review artifact allows up to four unordered labels per row. Use the
+[`silver_labels/10_four_label_human_review/`](silver_labels/10_four_label_human_review/)
+workbook or the persistent, taxonomy-aware
+[`human_review_app/`](human_review_app/) browser interface.

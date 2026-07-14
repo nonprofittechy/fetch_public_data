@@ -29,6 +29,12 @@ These are review candidates, not final human labels. A human may select from zer
 
 The newly re-adjudicated AI cells are purple in the workbook. Human-entry cells are blue. Existing source and audit columns are preserved.
 
+## Human review interface
+
+[`../../human_review_app/`](../../human_review_app/) is the companion audit interface for all 132 queue rows. It exposes all 209 taxonomy pairs in four dropdowns, shows the enriched description under each choice, preloads but does not auto-save the AI suggestions, and keeps prior model/audit evidence visible. Human decisions persist in SQLite with an append-only save history and can be exported to CSV or JSON.
+
+The app includes a tested container and valid Fly.io configuration with `/data` mounted for the database. It was not deployed in this stage: a production deployment should not be created until a shared review password, stable session secret, final app name, and associated Fly cost are intentionally accepted. Exact local and Fly commands are in the app README.
+
 ## Decision rubric
 
 1. Treat the output as an unordered set; candidate position is not a preference or score.
