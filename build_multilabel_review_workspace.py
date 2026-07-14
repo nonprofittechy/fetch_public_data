@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from zipfile import ZIP_DEFLATED, ZipFile
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 from xml.etree import ElementTree as ET
 
 import create_silver_labels as silver
@@ -167,7 +167,9 @@ def main() -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(OUT, "w", ZIP_DEFLATED) as archive:
         for name, data in files.items():
-            archive.writestr(name, data)
+            info = ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = ZIP_DEFLATED
+            archive.writestr(info, data)
     print(f"wrote {OUT}; candidate rows: {len(evidence)}")
     return 0
 
