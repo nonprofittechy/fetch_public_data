@@ -12,7 +12,7 @@
       "justification": "The only stated facts identify possible termination; discrimination is not tied to a protected characteristic.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The only stated facts identify possible termination; discrimination is not tied to a protected characteristic. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -108,7 +108,7 @@
       "justification": "User explicitly alleges wrongful termination, but provides no protected-class facts to anchor a specific discrimination type. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User explicitly alleges wrongful termination, but provides no protected-class facts to anchor a specific discrimination type. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -204,7 +204,7 @@
       "justification": "User lists “Divorce” as a primary issue, indicating they need help dissolving a marriage and related matters. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User lists “Divorce” as a primary issue, indicating they need help dissolving a marriage and related matters. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -325,7 +325,7 @@
       "justification": "User broadly states “administrative law dmv licensure,” indicating a bureaucratic dispute over driving privileges/DMV licensing rather than a criminal DUI/DWS charge. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User broadly states “administrative law dmv licensure,” indicating a bureaucratic dispute over driving privileges/DMV licensing rather than a criminal DUI/DWS charge. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -402,7 +402,7 @@
       "justification": "They identify as an inventor needing to obtain a patent, which points to patent counsel, despite unclear claims about court interference. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They identify as an inventor needing to obtain a patent, which points to patent counsel, despite unclear claims about court interference. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -486,7 +486,7 @@
       "justification": "The immediate issue is an alleged overpayment being sent to collections; the caller is being pursued as a debtor, without enough facts to call the collection abusive.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The immediate issue is an alleged overpayment being sent to collections; the caller is being pursued as a debtor, without enough facts to call the collection abusive. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -587,7 +587,7 @@
       "justification": "User was injured at work and already had workers’ comp, but is asking about personal injury options—suggesting a potential claim against someone other than the employer (third-party) arising from a workplace slip-and-fall. Reviewed as two-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "two-model consensus",
+    "internal_primary_justification": "User was injured at work and already had workers’ comp, but is asking about personal injury options—suggesting a potential claim against someone other than the employer (third-party) arising from a workplace slip-and-fall. Reviewed as two-model consensus. Review basis: two-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -683,7 +683,7 @@
       "justification": "The caller expressly seeks a divorce or annulment; military and immigration facts are important context but not the requested legal matter.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller expressly seeks a divorce or annulment; military and immigration facts are important context but not the requested legal matter. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -799,7 +799,7 @@
       "justification": "The question is whether to transfer property into a trust, a specific living-trust planning decision.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The question is whether to transfer property into a trust, a specific living-trust planning decision. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -908,7 +908,7 @@
       "justification": "A business-sale security is in foreclosure after nonpayment and unanswered notices; this is an enforcement dispute, not a new sale transaction or ordinary real-estate mortgage.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "A business-sale security is in foreclosure after nonpayment and unanswered notices; this is an enforcement dispute, not a new sale transaction or ordinary real-estate mortgage. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -991,7 +991,7 @@
       "justification": "Failure-to-register is a specialized criminal defense issue; the caller is not seeking removal from the registry, so Relief From Sex Offender Registration is not exact.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Failure-to-register is a specialized criminal defense issue; the caller is not seeking removal from the registry, so Relief From Sex Offender Registration is not exact. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1068,7 +1068,7 @@
       "justification": "The caller expressly says the four charges are misdemeanors, even though the alleged conduct includes serious accusations.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller expressly says the four charges are misdemeanors, even though the alleged conduct includes serious accusations. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1157,7 +1157,7 @@
       "justification": "The family wants help navigating immigration to Canada, which is general immigration/visa assistance.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The family wants help navigating immigration to Canada, which is general immigration/visa assistance. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1240,7 +1240,7 @@
       "justification": "A car repeatedly following the caller is the clearest actionable issue and fits a stalking order; the media complaint is secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "A car repeatedly following the caller is the clearest actionable issue and fits a stalking order; the media complaint is secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1317,7 +1317,7 @@
       "justification": "They seek counsel specializing in restaurant/hospitality, which commonly involves regulatory and licensing needs including OLCC-related issues. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They seek counsel specializing in restaurant/hospitality, which commonly involves regulatory and licensing needs including OLCC-related issues. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1413,7 +1413,7 @@
       "justification": "The caller is a construction contractor seeking payment and a construction lien, matching the property-project description.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller is a construction contractor seeking payment and a construction lien, matching the property-project description. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1514,7 +1514,7 @@
       "justification": "The caller is protecting assets from an ex-spouse's Chapter 7 and possible liability under a divorce decree, not collecting a debt owed by the debtor.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller is protecting assets from an ex-spouse's Chapter 7 and possible liability under a divorce decree, not collecting a debt owed by the debtor. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1603,7 +1603,7 @@
       "justification": "The caller already holds POA and asks what that authority permits for the father's finances; guardianship may be a next step.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller already holds POA and asks what that authority permits for the father's finances; guardianship may be a next step. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1686,7 +1686,7 @@
       "justification": "The injury is a dog-bite claim, and the detailed taxonomy treats animal-related disputes as Animal Law even when damages are physical.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The injury is a dog-bite claim, and the detailed taxonomy treats animal-related disputes as Animal Law even when damages are physical. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1769,7 +1769,7 @@
       "justification": "Churning by a financial adviser is an investment/securities dispute and the caller expressly requests a securities lawyer.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Churning by a financial adviser is an investment/securities dispute and the caller expressly requests a securities lawyer. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1852,7 +1852,7 @@
       "justification": "The caller is a consumer suing an auto-repair service over negligent, defective work; the detailed Consumer Law/General description directly covers faulty services.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller is a consumer suing an auto-repair service over negligent, defective work; the detailed Consumer Law/General description directly covers faulty services. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -1935,7 +1935,7 @@
       "justification": "The caller seeks to reduce or restructure a debt after a car accident, specifically asking about payment options.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller seeks to reduce or restructure a debt after a car accident, specifically asking about payment options. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2024,7 +2024,7 @@
       "justification": "The caller wants a civil suit for allegedly unconstitutional extra imprisonment, which is a civil-rights damages claim.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller wants a civil suit for allegedly unconstitutional extra imprisonment, which is a civil-rights damages claim. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2101,7 +2101,7 @@
       "justification": "This is a dog-bite injury; Animal Law is the detailed taxonomy's specific fit, with personal injury as a possible secondary framing.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "This is a dog-bite injury; Animal Law is the detailed taxonomy's specific fit, with personal injury as a possible secondary framing. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2184,7 +2184,7 @@
       "justification": "The text connects mental-health-related behavior to trouble at school; special-needs educational support is the closer detailed description.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The text connects mental-health-related behavior to trouble at school; special-needs educational support is the closer detailed description. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2267,7 +2267,7 @@
       "justification": "They allege a TikTok user reposted their video without permission and they pursued a DMCA takedown, indicating a copyright infringement dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They allege a TikTok user reposted their video without permission and they pursued a DMCA takedown, indicating a copyright infringement dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2382,7 +2382,7 @@
       "justification": "User describes assaulting county workers, fleeing, and hitting people with a vehicle—facts consistent with serious assault/attempted assault and hit-and-run type felony exposure. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User describes assaulting county workers, fleeing, and hitting people with a vehicle—facts consistent with serious assault/attempted assault and hit-and-run type felony exposure. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2472,7 +2472,7 @@
       "justification": "The dispute is primarily with a service provider over defective workmanship and failure to deliver a usable custom product, rather than a dealership vehicle purchase.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The dispute is primarily with a service provider over defective workmanship and failure to deliver a usable custom product, rather than a dealership vehicle purchase. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2555,7 +2555,7 @@
       "justification": "Charges listed include Theft I, Aggravated Theft I, possession of a stolen vehicle, and negotiating a bad check, with no bail—felony-level exposure, including aggravated theft. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Charges listed include Theft I, Aggravated Theft I, possession of a stolen vehicle, and negotiating a bad check, with no bail—felony-level exposure, including aggravated theft. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2638,7 +2638,7 @@
       "justification": "User seeks advice on whistleblower protections after observing what they believe are ADA violations at their workplace (hospital), indicating reporting wrongdoing and potential retaliation concerns. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User seeks advice on whistleblower protections after observing what they believe are ADA violations at their workplace (hospital), indicating reporting wrongdoing and potential retaliation concerns. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2721,7 +2721,7 @@
       "justification": "User alleges unlawful arrest/detention and police beating, seeking a civil suit against a police department for misconduct and injuries. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User alleges unlawful arrest/detention and police beating, seeking a civil suit against a police department for misconduct and injuries. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2804,7 +2804,7 @@
       "justification": "As a nonprofit board member connected to a Superfund site, they were contacted by a company lawyer and suspect an environmental/regulatory matter affecting the organization. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "As a nonprofit board member connected to a Superfund site, they were contacted by a company lawyer and suspect an environmental/regulatory matter affecting the organization. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2887,7 +2887,7 @@
       "justification": "User alleges unlawful arrest/detention and being beaten by a police department and wants to pursue a tort claim/lawsuit against the police. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User alleges unlawful arrest/detention and being beaten by a police department and wants to pursue a tort claim/lawsuit against the police. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -2970,7 +2970,7 @@
       "justification": "They mention workers' compensation and protecting themselves at work, which most directly aligns with a standard workers' comp matter. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They mention workers' compensation and protecting themselves at work, which most directly aligns with a standard workers' comp matter. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3053,7 +3053,7 @@
       "justification": "User is seeking a malpractice lawyer and describes stopping going to court and suffering harm in connection with their legal representation/experience, which aligns with a claim that prior counsel’s conduct caused case-related damage. The resemblance/flyer context suggests reputational/harassment concerns, but the stated legal need is malpractice counsel. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is seeking a malpractice lawyer and describes stopping going to court and suffering harm in connection with their legal representation/experience, which aligns with a claim that prior counsel’s conduct caused case-related damage. The resemblance/flyer context suggests reputational/harassment concerns, but the stated legal need is malpractice counsel. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3142,7 +3142,7 @@
       "justification": "User wants out of a timeshare and reports paying a third-party company for exit services that did nothing; this is a consumer dispute about services and potential refund/contract unwinding. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User wants out of a timeshare and reports paying a third-party company for exit services that did nothing; this is a consumer dispute about services and potential refund/contract unwinding. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3219,7 +3219,7 @@
       "justification": "Business partners have an internal dispute over salary and anticipate needing separate counsel and possible litigation, indicating an escalating business dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Business partners have an internal dispute over salary and anticipate needing separate counsel and possible litigation, indicating an escalating business dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3302,7 +3302,7 @@
       "justification": "Alleges predatory/deceptive car dealership transaction with inflated price and fees on a vehicle purchase/trade-in resulting in unaffordable payments and negative equity; consumer auto sales practices dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Alleges predatory/deceptive car dealership transaction with inflated price and fees on a vehicle purchase/trade-in resulting in unaffordable payments and negative equity; consumer auto sales practices dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3379,7 +3379,7 @@
       "justification": "User alleges negligent discharge/case management at OHSU after a stroke, resulting in inappropriate placement and harm due to misinformation about coverage and records, framed as medical malpractice. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User alleges negligent discharge/case management at OHSU after a stroke, resulting in inappropriate placement and harm due to misinformation about coverage and records, framed as medical malpractice. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3456,7 +3456,7 @@
       "justification": "Grandparents are deceased and the family home was auctioned; user seeks to claim sale surplus, which is typically handled through the estate/probate administration process. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Grandparents are deceased and the family home was auctioned; user seeks to claim sale surplus, which is typically handled through the estate/probate administration process. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3533,7 +3533,7 @@
       "justification": "The initially approved private disability claim was denied; this is the detailed guide's direct example of a private disability-coverage dispute.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The initially approved private disability claim was denied; this is the detailed guide's direct example of a private disability-coverage dispute. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3641,7 +3641,7 @@
       "justification": "The clearest direct claim is compensation for being hit by a car; guardianship/beneficiary and parking-ticket issues are secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The clearest direct claim is compensation for being hit by a car; guardianship/beneficiary and parking-ticket issues are secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3769,7 +3769,7 @@
       "justification": "A provider business is contesting termination of its CareOregon contract; it seeks contract/appeal advice before a lawsuit is identified.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "A provider business is contesting termination of its CareOregon contract; it seeks contract/appeal advice before a lawsuit is identified. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3859,7 +3859,7 @@
       "justification": "The benefits are derivative of a parent's SSDI and the requested lawyer is specifically for Social Security benefits.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The benefits are derivative of a parent's SSDI and the requested lawyer is specifically for Social Security benefits. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -3955,7 +3955,7 @@
       "justification": "The request specifically includes farm leases and transactions involving the farm property; Real Property/Agriculture is the more specific route.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The request specifically includes farm leases and transactions involving the farm property; Real Property/Agriculture is the more specific route. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4057,7 +4057,7 @@
       "justification": "The text describes a workplace slip-and-fall with an existing workers-compensation claim and no identified third-party defendant.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The text describes a workplace slip-and-fall with an existing workers-compensation claim and no identified third-party defendant. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4153,7 +4153,7 @@
       "justification": "The caller broke a foot at work; workers-compensation is the direct injury-benefits route, while firing and deportation are secondary questions.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller broke a foot at work; workers-compensation is the direct injury-benefits route, while firing and deportation are secondary questions. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4274,7 +4274,7 @@
       "justification": "The caller expressly says they want to write a will; veteran benefits and nursing-licensing issues are separate matters.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller expressly says they want to write a will; veteran benefits and nursing-licensing issues are separate matters. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4402,7 +4402,7 @@
       "justification": "Royalty questions concern rights and monetization of performing works; the detailed IP/Entertainment description is more specific than nonprofit organization status.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Royalty questions concern rights and monetization of performing works; the detailed IP/Entertainment description is more specific than nonprofit organization status. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4485,7 +4485,7 @@
       "justification": "Author seeks advice on copyright and protecting brands/licensing arising from a book trilogy, which is core trademark/copyright protection. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Author seeks advice on copyright and protecting brands/licensing arising from a book trilogy, which is core trademark/copyright protection. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4581,7 +4581,7 @@
       "justification": "User requests help with copyright and trademark filings, which fall squarely under trademark/copyright protection and registration. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User requests help with copyright and trademark filings, which fall squarely under trademark/copyright protection and registration. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4677,7 +4677,7 @@
       "justification": "User has an ongoing court case about custody/visitation involving adopted children and an ex-partner, with disputes over forced visitation and domestic abuse history. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User has an ongoing court case about custody/visitation involving adopted children and an ex-partner, with disputes over forced visitation and domestic abuse history. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4767,7 +4767,7 @@
       "justification": "The caller is trying to settle an acknowledged debt and obtain affordable payment terms.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller is trying to settle an acknowledged debt and obtain affordable payment terms. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4850,7 +4850,7 @@
       "justification": "Sex Abuse I is a serious current criminal charge; the prior PCR history does not turn the present request into a post-conviction appeal.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Sex Abuse I is a serious current criminal charge; the prior PCR history does not turn the present request into a post-conviction appeal. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -4933,7 +4933,7 @@
       "justification": "The caller acknowledges the debt, wants to pay, and asks for a workable remedy while keeping employment.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller acknowledges the debt, wants to pay, and asks for a workable remedy while keeping employment. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5016,7 +5016,7 @@
       "justification": "The concrete problem is wage and bank-account garnishment; the text does not establish abusive collection conduct.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The concrete problem is wage and bank-account garnishment; the text does not establish abusive collection conduct. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5099,7 +5099,7 @@
       "justification": "The boat contract is described as a private transaction with a friend's acquaintance, not a dealership or business seller.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The boat contract is described as a private transaction with a friend's acquaintance, not a dealership or business seller. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5182,7 +5182,7 @@
       "justification": "An employer-side consultation about terminating an employee is a business-operation question in this taxonomy, not an employee's discharge claim.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "An employer-side consultation about terminating an employee is a business-operation question in this taxonomy, not an employee's discharge claim. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5259,7 +5259,7 @@
       "justification": "User was arrested on Assault IV charges with warrant and needs criminal representation for arraignment; Assault IV is typically a misdemeanor. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User was arrested on Assault IV charges with warrant and needs criminal representation for arraignment; Assault IV is typically a misdemeanor. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5337,7 +5337,7 @@
       "justification": "They were on medical leave and are having issues returning to work and obtaining responses/approval to return, implicating job-protected leave and reinstatement rights. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They were on medical leave and are having issues returning to work and obtaining responses/approval to return, implicating job-protected leave and reinstatement rights. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5439,7 +5439,7 @@
       "justification": "Recent homebuyer alleges issues after disclosure, agent/seller agent failures, and wants legal advice—fits residential purchase/disclosure/representation dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Recent homebuyer alleges issues after disclosure, agent/seller agent failures, and wants legal advice—fits residential purchase/disclosure/representation dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5523,7 +5523,7 @@
       "justification": "User seeks counsel specializing in restaurant/hospitality, which commonly involves restaurant regulatory and licensing issues (including OLCC) and related operations. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User seeks counsel specializing in restaurant/hospitality, which commonly involves restaurant regulatory and licensing issues (including OLCC) and related operations. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5625,7 +5625,7 @@
       "justification": "Private sale of an RV with a written payment contract; buyer made one payment then disappeared with the RV and owes money/return of RV—this is a dispute between individuals, not a dealership. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Private sale of an RV with a written payment contract; buyer made one payment then disappeared with the RV and owes money/return of RV—this is a dispute between individuals, not a dealership. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5708,7 +5708,7 @@
       "justification": "User is a beneficiary of a deceased relative’s retirement/investment account and needs help with claim forms and handling related expenses, which is estate/beneficiary administration guidance. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is a beneficiary of a deceased relative’s retirement/investment account and needs help with claim forms and handling related expenses, which is estate/beneficiary administration guidance. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5791,7 +5791,7 @@
       "justification": "The requested remedy is construction-lien filing for unpaid contractor invoices, a specific property-project issue.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The requested remedy is construction-lien filing for unpaid contractor invoices, a specific property-project issue. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5887,7 +5887,7 @@
       "justification": "User explicitly requests help with custody and parenting time; child support is related but secondary to parenting-time arrangements. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User explicitly requests help with custody and parenting time; child support is related but secondary to parenting-time arrangements. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -5983,7 +5983,7 @@
       "justification": "The deleted hours are the concrete claim; termination is a secondary possible retaliation issue.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The deleted hours are the concrete claim; termination is a secondary possible retaliation issue. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6079,7 +6079,7 @@
       "justification": "The mother died after the fall, and the caller expressly seeks a wrongful-death remedy; medical malpractice is a possible underlying theory.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The mother died after the fall, and the caller expressly seeks a wrongful-death remedy; medical malpractice is a possible underlying theory. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6175,7 +6175,7 @@
       "justification": "The stated fiduciary-duty breach and limitations question indicate a dispute involving a trustee, not merely general elder planning.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The stated fiduciary-duty breach and limitations question indicate a dispute involving a trustee, not merely general elder planning. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6271,7 +6271,7 @@
       "justification": "The LLC has business debts and is likely filing bankruptcy as an entity; dissolution is related business context.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The LLC has business debts and is likely filing bankruptcy as an entity; dissolution is related business context. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6367,7 +6367,7 @@
       "justification": "Discrimination in hiring and pay is the substantive dispute; union handling is a secondary route or context.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Discrimination in hiring and pay is the substantive dispute; union handling is a secondary route or context. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6463,7 +6463,7 @@
       "justification": "The homeowner disputes defective work and lien risk on a renovation project, rather than seeking generic small-claims coaching.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The homeowner disputes defective work and lien risk on a renovation project, rather than seeking generic small-claims coaching. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6559,7 +6559,7 @@
       "justification": "The ongoing conduct is a broad neighbor/property nuisance dispute; a stalking order is a possible additional remedy.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The ongoing conduct is a broad neighbor/property nuisance dispute; a stalking order is a possible additional remedy. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6667,7 +6667,7 @@
       "justification": "The stated controlled-substance manufacturing/distribution charge is the central immediate criminal charge; probation revocation is secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The stated controlled-substance manufacturing/distribution charge is the central immediate criminal charge; probation revocation is secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6763,7 +6763,7 @@
       "justification": "Safety-plan, CPS, and parenting-time disputes make custody/visitation the central family-law routing issue, with support modification also present.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Safety-plan, CPS, and parenting-time disputes make custody/visitation the central family-law routing issue, with support modification also present. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6877,7 +6877,7 @@
       "justification": "The requested first remedy is dismissal of an existing restraining order; custody is a related second issue.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The requested first remedy is dismissal of an existing restraining order; custody is a related second issue. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -6973,7 +6973,7 @@
       "justification": "Discrimination in hiring and pay is the stated employment injury; union problems are a secondary procedural context.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Discrimination in hiring and pay is the stated employment injury; union problems are a secondary procedural context. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7069,7 +7069,7 @@
       "justification": "The caller specifically needs to determine water rights and an easement to a water pipe; the purchase dispute is secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller specifically needs to determine water rights and an easement to a water pipe; the purchase dispute is secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7159,7 +7159,7 @@
       "justification": "The family rents a space in an RV/mobile-home park and was evicted after a park incident, fitting the specialized park-tenancy label.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The family rents a space in an RV/mobile-home park and was evicted after a park incident, fitting the specialized park-tenancy label. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7255,7 +7255,7 @@
       "justification": "The parents received notice that Medicaid will terminate because of an asset; the detailed guide distinguishes benefit denials/terminations from Medicaid planning.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The parents received notice that Medicaid will terminate because of an asset; the detailed guide distinguishes benefit denials/terminations from Medicaid planning. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7357,7 +7357,7 @@
       "justification": "Repeated unwanted calls and fear of harm from a former intimate partner fit a family-law restraining order; the license issue is secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "Repeated unwanted calls and fear of harm from a former intimate partner fit a family-law restraining order; the license issue is secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7465,7 +7465,7 @@
       "justification": "The writer asks about copyright and IP for books, brands, and licensing; the asset-trust question is secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The writer asks about copyright and IP for books, brands, and licensing; the asset-trust question is secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7567,7 +7567,7 @@
       "justification": "User was served with a petition involving custody/parenting time and needs to respond; child’s preferences and out-of-state parent context are part of parenting-time disputes. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User was served with a petition involving custody/parenting time and needs to respond; child’s preferences and out-of-state parent context are part of parenting-time disputes. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7663,7 +7663,7 @@
       "justification": "User wants to be added to the child’s birth certificate and to establish paternity, which is the core legal mechanism for being recognized as the father. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User wants to be added to the child’s birth certificate and to establish paternity, which is the core legal mechanism for being recognized as the father. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7753,7 +7753,7 @@
       "justification": "User is not on the birth certificate and needs legal steps to establish parental rights for an 8-month-old, which requires establishing paternity. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is not on the birth certificate and needs legal steps to establish parental rights for an 8-month-old, which requires establishing paternity. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7849,7 +7849,7 @@
       "justification": "They recently purchased a home and say they were lied to about what was included, which is a residential purchase dispute (disclosures/contract terms). Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They recently purchased a home and say they were lied to about what was included, which is a residential purchase dispute (disclosures/contract terms). Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -7957,7 +7957,7 @@
       "justification": "They are a part owner of a licensed cannabis business seeking advice on OLCC enforcement/regulatory compliance and liability, which squarely fits marijuana business regulatory counsel. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They are a part owner of a licensed cannabis business seeking advice on OLCC enforcement/regulatory compliance and liability, which squarely fits marijuana business regulatory counsel. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8053,7 +8053,7 @@
       "justification": "User wants to establish paternity and be added to the birth certificate for an 8-month-old, which is a paternity/legal parentage issue. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User wants to establish paternity and be added to the birth certificate for an 8-month-old, which is a paternity/legal parentage issue. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8161,7 +8161,7 @@
       "justification": "User requests help filing protective orders due to stalking and a home break-in by a non-household member, which aligns with stalking order relief. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User requests help filing protective orders due to stalking and a home break-in by a non-household member, which aligns with stalking order relief. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8263,7 +8263,7 @@
       "justification": "User reports their professional license was revoked and wants counsel regarding the revocation and related rights/discrimination concerns, which centers on a state licensing board action affecting their ability to work. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User reports their professional license was revoked and wants counsel regarding the revocation and related rights/discrimination concerns, which centers on a state licensing board action affecting their ability to work. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8359,7 +8359,7 @@
       "justification": "User discusses denial of SSD and related medical disability evidence; although they also mention SSI, the narrative is primarily about disability benefits denial requiring Social Security disability appeals help. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User discusses denial of SSD and related medical disability evidence; although they also mention SSI, the narrative is primarily about disability benefits denial requiring Social Security disability appeals help. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8455,7 +8455,7 @@
       "justification": "User needs to dissolve an LLC and likely file bankruptcy for business debts (SBA/Shopify loans) after the business closed—business entity bankruptcy planning. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User needs to dissolve an LLC and likely file bankruptcy for business debts (SBA/Shopify loans) after the business closed—business entity bankruptcy planning. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8545,7 +8545,7 @@
       "justification": "User seeks refund and claims they were defrauded into signing an abusive contract for business coaching/spiritual services; consumer vs business/service provider dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User seeks refund and claims they were defrauded into signing an abusive contract for business coaching/spiritual services; consumer vs business/service provider dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8635,7 +8635,7 @@
       "justification": "Homeowner dispute with a general contractor/subcontractor over defective carpet installation, responsibility for replacement, withholding payment, and lien risk—classic construction contract/lien scenario. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Homeowner dispute with a general contractor/subcontractor over defective carpet installation, responsibility for replacement, withholding payment, and lien risk—classic construction contract/lien scenario. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8731,7 +8731,7 @@
       "justification": "Online vehicle purchase allegedly misrepresented condition; user returned within money-back window but seller refuses to refund shipping—consumer auto sales dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Online vehicle purchase allegedly misrepresented condition; user returned within money-back window but seller refuses to refund shipping—consumer auto sales dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8827,7 +8827,7 @@
       "justification": "User says they were charged with the “lowest” theft after leaving a store with unpaid items, indicating a low-level theft charge needing criminal defense. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User says they were charged with the “lowest” theft after leaving a store with unpaid items, indicating a low-level theft charge needing criminal defense. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -8923,7 +8923,7 @@
       "justification": "User needs urgent help stopping imminent ATF forfeiture proceedings for seized firearms, which directly fits government seizure/forfeiture recovery. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User needs urgent help stopping imminent ATF forfeiture proceedings for seized firearms, which directly fits government seizure/forfeiture recovery. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9031,7 +9031,7 @@
       "justification": "User wants to be added to the child’s birth certificate and establish legal paternity as a basis for custody rights. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User wants to be added to the child’s birth certificate and establish legal paternity as a basis for custody rights. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9133,7 +9133,7 @@
       "justification": "User is not on the birth certificate and needs to establish legal parentage in connection with seeking custody of an infant. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is not on the birth certificate and needs to establish legal parentage in connection with seeking custody of an infant. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9229,7 +9229,7 @@
       "justification": "User seeks to establish paternity/get added to the birth certificate (despite marriage timing) and needs related court filings; this is central to legal parentage status. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User seeks to establish paternity/get added to the birth certificate (despite marriage timing) and needs related court filings; this is central to legal parentage status. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9343,7 +9343,7 @@
       "justification": "User is defending against a restraining order filed by the child’s mother, alleging it is false and was used to remove them from the home and affect custody. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is defending against a restraining order filed by the child’s mother, alleging it is false and was used to remove them from the home and affect custody. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9433,7 +9433,7 @@
       "justification": "User alleges police falsified reports, omitted bodycam/video, mishandled victim info, and downgraded charges—seeking an aggressive lawyer for misconduct. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User alleges police falsified reports, omitted bodycam/video, mishandled victim info, and downgraded charges—seeking an aggressive lawyer for misconduct. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9529,7 +9529,7 @@
       "justification": "User describes an elderly mother’s death after an ER fall and alleged negligent care and seeks to hold the hospital responsible, which is a wrongful death claim. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User describes an elderly mother’s death after an ER fall and alleged negligent care and seeks to hold the hospital responsible, which is a wrongful death claim. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9625,7 +9625,7 @@
       "justification": "User obtained a temporary stalking order and needs representation at a contested hearing as the petitioner and advice on further action against the stalker. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User obtained a temporary stalking order and needs representation at a contested hearing as the petitioner and advice on further action against the stalker. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9715,7 +9715,7 @@
       "justification": "User seeks information and filing help for protective orders due to being stalked by multiple people (non-household context implied). Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User seeks information and filing help for protective orders due to being stalked by multiple people (non-household context implied). Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9817,7 +9817,7 @@
       "justification": "They want help with copyright and trademark filings, which squarely fits trademark/copyright registration work. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They want help with copyright and trademark filings, which squarely fits trademark/copyright registration work. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9907,7 +9907,7 @@
       "justification": "They are a graphic designer seeking help with intellectual property and copyrights, which fits IP protection/ownership issues. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They are a graphic designer seeking help with intellectual property and copyrights, which fits IP protection/ownership issues. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -9997,7 +9997,7 @@
       "justification": "They want to protect brand slogans and designs for an apparel brand, which is typically trademark (and possibly copyright for design elements). Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They want to protect brand slogans and designs for an apparel brand, which is typically trademark (and possibly copyright for design elements). Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10087,7 +10087,7 @@
       "justification": "They report hours being deleted from their pay (unpaid wages/timekeeping issue) and then termination after complaining, with the primary legal issue being pay violations/retaliation tied to wage complaint. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They report hours being deleted from their pay (unpaid wages/timekeeping issue) and then termination after complaining, with the primary legal issue being pay violations/retaliation tied to wage complaint. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10183,7 +10183,7 @@
       "justification": "They report racist remarks toward them and Hispanic coworkers plus suspension and termination, indicating workplace discrimination/hostile environment tied to race/national origin. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They report racist remarks toward them and Hispanic coworkers plus suspension and termination, indicating workplace discrimination/hostile environment tied to race/national origin. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10285,7 +10285,7 @@
       "justification": "They claim they were let go for getting a second job (potentially unlawful/contract or policy issue) and are challenging the termination rationale. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They claim they were let go for getting a second job (potentially unlawful/contract or policy issue) and are challenging the termination rationale. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10381,7 +10381,7 @@
       "justification": "They say they were fired from a homeless shelter after reporting coworkers’ negligence, indicating retaliation for reporting wrongdoing/safety concerns. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They say they were fired from a homeless shelter after reporting coworkers’ negligence, indicating retaliation for reporting wrongdoing/safety concerns. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10477,7 +10477,7 @@
       "justification": "Employer is terminating them after medical emergency and stating no accommodations available, which squarely raises disability accommodation/interactive process issues. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Employer is terminating them after medical emergency and stating no accommodations available, which squarely raises disability accommodation/interactive process issues. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10579,7 +10579,7 @@
       "justification": "User wants an attorney to review a separation agreement and negotiate severance pay after termination, which squarely fits severance/separation document review and negotiation. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User wants an attorney to review a separation agreement and negotiate severance pay after termination, which squarely fits severance/separation document review and negotiation. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10693,7 +10693,7 @@
       "justification": "They report sexual harassment and a hostile work environment by an employer, which is the core sexual-harassment workplace claim. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They report sexual harassment and a hostile work environment by an employer, which is the core sexual-harassment workplace claim. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10807,7 +10807,7 @@
       "justification": "Tenant reports landlord refusing repairs for sewer leak/standing water, mold, and rodents and attempting to shift costs to tenant—classic habitability/repairs dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Tenant reports landlord refusing repairs for sewer leak/standing water, mold, and rodents and attempting to shift costs to tenant—classic habitability/repairs dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10897,7 +10897,7 @@
       "justification": "Tenant is threatened with eviction after receiving violations and seeks help fighting landlord actions; residential landlord-tenant dispute is central. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Tenant is threatened with eviction after receiving violations and seeks help fighting landlord actions; residential landlord-tenant dispute is central. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -10999,7 +10999,7 @@
       "justification": "User describes severe neighbor conflict involving fence tampering, cameras aimed into their yard/windows, threats, and property damage, seeking relief to enjoy their home safely. This is primarily a neighbor nuisance/harassment dispute affecting property enjoyment. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User describes severe neighbor conflict involving fence tampering, cameras aimed into their yard/windows, threats, and property damage, seeking relief to enjoy their home safely. This is primarily a neighbor nuisance/harassment dispute affecting property enjoyment. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11095,7 +11095,7 @@
       "justification": "User hired a contractor who misrepresented licensing (no plumbing license) and caused flooding/property damage; they are exploring bond claims and court options. The central conflict is defective/unauthorized contractor work tied to home repairs. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User hired a contractor who misrepresented licensing (no plumbing license) and caused flooding/property damage; they are exploring bond claims and court options. The central conflict is defective/unauthorized contractor work tied to home repairs. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11185,7 +11185,7 @@
       "justification": "User needs help reviewing and correcting IRS tax account filings and submitting proper forms to protect SSDI/SSI back pay, indicating an individual tax filing/dispute/compliance matter with the IRS. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User needs help reviewing and correcting IRS tax account filings and submitting proper forms to protect SSDI/SSI back pay, indicating an individual tax filing/dispute/compliance matter with the IRS. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11275,7 +11275,7 @@
       "justification": "User alleges trustee breach of fiduciary duty and asks about statutes of limitation for filing, suggesting a potential lawsuit over trust administration/mismanagement. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User alleges trustee breach of fiduciary duty and asks about statutes of limitation for filing, suggesting a potential lawsuit over trust administration/mismanagement. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11365,7 +11365,7 @@
       "justification": "User is accused of elder abuse/stealing and reports a “friend” replaced their POA while mother has dementia, suggesting potential financial exploitation and undue influence over an impaired elder. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is accused of elder abuse/stealing and reports a “friend” replaced their POA while mother has dementia, suggesting potential financial exploitation and undue influence over an impaired elder. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11461,7 +11461,7 @@
       "justification": "Tenant reports landlord refusing repairs for sewer leaks, standing water, mold, and rodents and trying to blame the tenant for costs—classic residential habitability/repair dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Tenant reports landlord refusing repairs for sewer leaks, standing water, mold, and rodents and trying to blame the tenant for costs—classic residential habitability/repair dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11545,7 +11545,7 @@
       "justification": "User alleges police misconduct (false report, changing statement, refusal to follow body-camera policies) in connection with an assault investigation and wants to pursue the police department. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User alleges police misconduct (false report, changing statement, refusal to follow body-camera policies) in connection with an assault investigation and wants to pursue the police department. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11635,7 +11635,7 @@
       "justification": "User is being sued over an unpaid dental bill and has other debts, and wants to file bankruptcy for relief—consumer personal bankruptcy need. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is being sued over an unpaid dental bill and has other debts, and wants to file bankruptcy for relief—consumer personal bankruptcy need. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11719,7 +11719,7 @@
       "justification": "User is sued on a personal loan, is unemployed, and is considering bankruptcy and needs to know where to start—individual bankruptcy assessment. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is sued on a personal loan, is unemployed, and is considering bankruptcy and needs to know where to start—individual bankruptcy assessment. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11803,7 +11803,7 @@
       "justification": "User is concepting a small business and needs advice on choosing the right entity structure (LLC vs nonprofit) and general setup, which is core business organization work. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User is concepting a small business and needs advice on choosing the right entity structure (LLC vs nonprofit) and general setup, which is core business organization work. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11905,7 +11905,7 @@
       "justification": "Partial owner of a licensed cannabis business needs advice on OLCC regulatory compliance/enforcement and potential violations, squarely within marijuana business regulation. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Partial owner of a licensed cannabis business needs advice on OLCC regulatory compliance/enforcement and potential violations, squarely within marijuana business regulation. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -11989,7 +11989,7 @@
       "justification": "User was served with a petition for custody/parenting time (and support) involving an out-of-state father and wants advice on responding and what to expect. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User was served with a petition for custody/parenting time (and support) involving an out-of-state father and wants advice on responding and what to expect. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -12073,7 +12073,7 @@
       "justification": "User had a fire originating from a neighbor’s property and seeks compensation for uninsured losses, which is a property-damage tort claim. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User had a fire originating from a neighbor’s property and seeks compensation for uninsured losses, which is a property-damage tort claim. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -12169,7 +12169,7 @@
       "justification": "Building an EB-5 case is an employment/investment-based U.S. immigration visa process (immigration attorney needed). Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "Building an EB-5 case is an employment/investment-based U.S. immigration visa process (immigration attorney needed). Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -12259,7 +12259,7 @@
       "justification": "User paid a roofing contractor $13,000 under a contract, contractor did no work and closed—dispute arising from a home improvement/contractor agreement. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User paid a roofing contractor $13,000 under a contract, contractor did no work and closed—dispute arising from a home improvement/contractor agreement. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {

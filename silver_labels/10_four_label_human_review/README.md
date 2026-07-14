@@ -22,6 +22,7 @@ These are review candidates, not final human labels. A human may select from zer
 
 - `redaction_reviewed_v5_clean_four_label_human_review.xlsx` — Stage 09 workbook plus four highlighted AI candidate slots, an overall justification, and four blank blue human-label slots with status, notes, reviewer, and timestamp fields.
 - `review_cases.json` — complete seed data for the 132-row web review queue, including original label, internal primary, three independent model outputs, two-label audit, priority, expanded suggestions, rationales, confidence, and taxonomy descriptions.
+- `taxonomy.json` — normalized 209-pair snapshot used by the web app's dropdowns and validation.
 - `focused_multilabel_adjudication.json` — full structured evidence for the seven focused rows.
 - `focused_multilabel_adjudication.csv` — compact extract of those seven rows.
 - [`../../build_four_label_review.py`](../../build_four_label_review.py) — deterministic builder and the exact row-level adjudications.

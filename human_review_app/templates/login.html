@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Log in · FETCH label review{% endblock %}
+{% block content %}
+<section class="login-card panel">
+  <h1>Human reviewer login</h1>
+  <p>This review site contains redacted legal-help text. Enter the shared review password.</p>
+  <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <input type="hidden" name="next" value="{{ next }}">
+    <label>Password <input type="password" name="password" autocomplete="current-password" required autofocus></label>
+    <button class="primary" type="submit">Log in</button>
+  </form>
+</section>
+{% endblock %}

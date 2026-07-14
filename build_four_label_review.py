@@ -31,6 +31,7 @@ TAXONOMY = Path("../app/data/taxonomy_detailed_descriptions.csv")
 OUT_DIR = Path("silver_labels/10_four_label_human_review")
 OUTPUT_WORKBOOK = OUT_DIR / "redaction_reviewed_v5_clean_four_label_human_review.xlsx"
 CASES_JSON = OUT_DIR / "review_cases.json"
+TAXONOMY_JSON = OUT_DIR / "taxonomy.json"
 FOCUSED_JSON = OUT_DIR / "focused_multilabel_adjudication.json"
 FOCUSED_CSV = OUT_DIR / "focused_multilabel_adjudication.csv"
 
@@ -179,7 +180,9 @@ def build_cases() -> list[dict[str, object]]:
                 "subcategory": source_rows[row_id - 1].get("C", ""),
             },
             "internal_primary_label": final["review"],
-            "internal_primary_justification": final["basis"],
+            "internal_primary_justification": (
+                f"{final['review'].get('justification', '')} Review basis: {final['basis']}."
+            ),
             "model_outputs": model_outputs,
             "two_label_audit": item,
             "priority": {
@@ -300,6 +303,8 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     cases = build_cases()
     CASES_JSON.write_text(json.dumps(cases, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    taxonomy, _ = silver.read_taxonomy(TAXONOMY)
+    TAXONOMY_JSON.write_text(json.dumps(taxonomy, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_focused_outputs(cases)
     write_workbook(cases)
     counts = {row_id: len(item["matches"]) for row_id, item in FOCUSED_ADJUDICATIONS.items()}

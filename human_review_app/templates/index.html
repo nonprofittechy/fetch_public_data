@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-heading">
+  <div>
+    <p class="eyebrow">Human adjudication queue</p>
+    <h1>Review labels as unordered sets of up to four</h1>
+    <p>AI suggestions are evidence, not ground truth. Save only the labels the text and detailed taxonomy support.</p>
+  </div>
+  <div class="metrics">
+    <div><strong>{{ counts.reviewed }}</strong><span>reviewed</span></div>
+    <div><strong>{{ counts.unreviewed }}</strong><span>remaining</span></div>
+    <div><strong>{{ counts.focused }}</strong><span>3–4 issue audit</span></div>
+  </div>
+</section>
+
+<form class="filters panel" method="get">
+  <label>Priority
+    <select name="tier">
+      <option value="">All</option>
+      {% for value in ['P1', 'P2', 'P3'] %}<option value="{{ value }}" {% if tier == value %}selected{% endif %}>{{ value }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>State
+    <select name="state">
+      <option value="">All</option>
+      <option value="unreviewed" {% if state == 'unreviewed' %}selected{% endif %}>Unreviewed</option>
+      <option value="reviewed" {% if state == 'reviewed' %}selected{% endif %}>Reviewed</option>
+    </select>
+  </label>
+  <label class="grow">Row or text <input name="q" value="{{ query }}" placeholder="Search"></label>
+  <button type="submit">Filter</button>
+</form>
+
+<div class="queue">
+  {% for case in cases %}
+  <a class="queue-row {% if case.focused_four_label_review %}focused{% endif %}" href="{{ url_for('review', row_number=case.row_number) }}">
+    <div class="row-meta">
+      <strong>Row {{ case.row_number }}</strong>
+      <span class="badge {{ case.priority.tier[:2]|lower }}">{{ case.priority.tier }}</span>
+      <span class="badge">{{ case.suggested_labels|length }} AI candidate{% if case.suggested_labels|length != 1 %}s{% endif %}</span>
+      {% if case.focused_four_label_review %}<span class="badge attention">focused 3–4 issue audit</span>{% endif %}
+      {% if case.human_review %}<span class="badge complete">{{ case.human_review.status }}</span>{% else %}<span class="badge muted">unreviewed</span>{% endif %}
+    </div>
+    <p>{{ case.problem_description }}</p>
+  </a>
+  {% else %}
+  <div class="empty panel">No cases match these filters.</div>
+  {% endfor %}
+</div>
+{% endblock %}

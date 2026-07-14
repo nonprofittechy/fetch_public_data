@@ -12,7 +12,7 @@
       "justification": "User lists “Divorce” as a primary issue, indicating they need help dissolving a marriage and related matters. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "User lists “Divorce” as a primary issue, indicating they need help dissolving a marriage and related matters. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -133,7 +133,7 @@
       "justification": "The caller expressly seeks a divorce or annulment; military and immigration facts are important context but not the requested legal matter.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller expressly seeks a divorce or annulment; military and immigration facts are important context but not the requested legal matter. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -249,7 +249,7 @@
       "justification": "The question is whether to transfer property into a trust, a specific living-trust planning decision.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The question is whether to transfer property into a trust, a specific living-trust planning decision. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -358,7 +358,7 @@
       "justification": "They allege a TikTok user reposted their video without permission and they pursued a DMCA takedown, indicating a copyright infringement dispute. Reviewed as three-model consensus.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "three-model consensus",
+    "internal_primary_justification": "They allege a TikTok user reposted their video without permission and they pursued a DMCA takedown, indicating a copyright infringement dispute. Reviewed as three-model consensus. Review basis: three-model consensus.",
     "model_outputs": {
       "gpt52": [
         {
@@ -473,7 +473,7 @@
       "justification": "The clearest direct claim is compensation for being hit by a car; guardianship/beneficiary and parking-ticket issues are secondary.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The clearest direct claim is compensation for being hit by a car; guardianship/beneficiary and parking-ticket issues are secondary. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -601,7 +601,7 @@
       "justification": "The caller broke a foot at work; workers-compensation is the direct injury-benefits route, while firing and deportation are secondary questions.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller broke a foot at work; workers-compensation is the direct injury-benefits route, while firing and deportation are secondary questions. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
@@ -722,7 +722,7 @@
       "justification": "The caller expressly says they want to write a will; veteran benefits and nursing-licensing issues are separate matters.",
       "confidence": "reviewed"
     },
-    "internal_primary_justification": "in-context manual review",
+    "internal_primary_justification": "The caller expressly says they want to write a will; veteran benefits and nursing-licensing issues are separate matters. Review basis: in-context manual review.",
     "model_outputs": {
       "gpt52": [
         {
