@@ -20,6 +20,8 @@ Of 431 rows, 156 (36.2%) have at least two distinct exact pairs supported by at 
 
 The extract includes all model-supported alternatives, support counts, rank-1 support, every model that proposed each pair, and the original model justifications. The full JSON also preserves all top-three model candidates and the internal reviewed primary label.
 
+For an interpretation of the result, including clear two- and three-issue examples and cautionary false-multi-label patterns, see [`MULTILABEL_FINDINGS.md`](MULTILABEL_FINDINGS.md).
+
 ## Files
 
 - [`multilabel_candidate_rows.csv`](multilabel_candidate_rows.csv) — review queue, one row per candidate row.
