@@ -10,46 +10,28 @@
 <section class="case-heading panel {% if case.focused_four_label_review %}focused{% endif %}">
   <div class="row-meta">
     <span class="eyebrow">Row {{ case.row_number }}</span>
-    <span class="badge {{ case.priority.tier[:2]|lower }}">{{ case.priority.tier }}</span>
-    {% if case.focused_four_label_review %}<span class="badge attention">focused cap-removal review</span>{% endif %}
+    <span class="badge {{ case.priority.tier[:2]|lower }}">{{ case.priority.tier[:2] }}</span>
+    {% if case.focused_four_label_review %}<span class="badge attention">3–4 issue audit</span>{% endif %}
   </div>
   <h1>{{ case.problem_description }}</h1>
-  <p class="priority-reason"><strong>Why this is prioritized:</strong> {{ case.priority.reason }}</p>
 </section>
 
-<div class="evidence-grid">
-  <section class="panel">
-    <h2>Original human label</h2>
-    <p class="label-pair">{{ case.original_human_label.category }} / {{ case.original_human_label.subcategory }}</p>
-  </section>
-  <section class="panel">
-    <h2>Internal primary</h2>
-    <p class="label-pair">{{ case.internal_primary_label.category }} / {{ case.internal_primary_label.subcategory }}</p>
-    <p>{{ case.internal_primary_justification }}</p>
-  </section>
-</div>
-
-<section class="panel suggestions">
-  <h2>Current AI review candidates <span>unordered</span></h2>
-  <p>{{ case.suggestion_justification }}</p>
-  <div class="suggestion-list">
+<section class="panel compact-recommendation">
+  <h2>AI recommendation <span>unordered</span></h2>
+  <ul>
     {% for candidate in case.suggested_labels %}
-    <article>
-      <div><strong>{{ candidate.category }} / {{ candidate.subcategory }}</strong><span class="confidence {{ candidate.confidence }}">{{ candidate.confidence or 'prior audit' }}</span></div>
-      <p>{{ candidate.rationale }}</p>
-      <details><summary>Canonical description</summary><p>{{ candidate.description }}</p></details>
-    </article>
+    <li><strong>{{ candidate.category }} &gt; {{ candidate.subcategory }}</strong><span class="confidence {{ candidate.confidence }}">{{ candidate.confidence or 'prior audit' }}</span></li>
     {% endfor %}
-  </div>
+  </ul>
 </section>
 
 <form class="panel human-form" method="post" id="review-form">
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
   <div class="form-heading">
     <div><p class="eyebrow">Human decision</p><h2>Select zero to four labels</h2></div>
-    {% if not saved %}<p class="draft-note">AI candidates are prefilled for convenience but remain unsaved until you submit.</p>{% endif %}
+    {% if not saved %}<p class="draft-note">AI labels are prefilled but unsaved.</p>{% endif %}
   </div>
-  <p>Order has no meaning. Leave unused slots blank. Every dropdown contains all 209 exact taxonomy pairs.</p>
+  <p class="concise-help">Order does not matter. Selected taxonomy descriptions appear below each field.</p>
   <div class="label-slots">
     {% for slot in range(1, 5) %}
     <div class="label-slot">
@@ -60,7 +42,7 @@
         <optgroup label="{{ category }}">
           {% for item in items %}
           {% set value = item.category ~ ' / ' ~ item.subcategory %}
-          <option value="{{ value }}" {% if selected[slot - 1] == value %}selected{% endif %}>{{ item.subcategory }}</option>
+          <option value="{{ value }}" {% if selected[slot - 1] == value %}selected{% endif %}>{{ item.category }} &gt; {{ item.subcategory }}</option>
           {% endfor %}
         </optgroup>
         {% endfor %}
@@ -69,42 +51,76 @@
     </div>
     {% endfor %}
   </div>
+
   <div class="review-fields">
-    <label>Status
-      <select name="status" required>
-        {% for value, text in [('needs_review','Needs review'),('accepted','Accepted AI set'),('corrected','Corrected'),('needs_more_info','Needs more information'),('skipped','Skipped')] %}
-        <option value="{{ value }}" {% if (saved and saved.status == value) or (not saved and value == 'needs_review') %}selected{% endif %}>{{ text }}</option>
-        {% endfor %}
-      </select>
+    <label>Reviewer
+      <input name="reviewer" value="{{ saved.reviewer if saved else reviewer }}" maxlength="100" placeholder="Required name or ID">
     </label>
-    <label>Reviewer <input name="reviewer" value="{{ saved.reviewer if saved else '' }}" placeholder="Name or initials"></label>
+    <fieldset class="status-fieldset">
+      <legend>Status</legend>
+      {% for value, text in [
+        ('needs_review','Needs review — save and return later'),
+        ('needs_more_info','Needs more information'),
+        ('skipped','Skipped'),
+        ('accepted','Reviewed — accepted AI recommendation'),
+        ('corrected','Reviewed — corrected AI recommendation')
+      ] %}
+      <label><input type="radio" name="status" value="{{ value }}" {% if saved and saved.status == value %}checked{% endif %}> {{ text }}</label>
+      {% endfor %}
+    </fieldset>
   </div>
-  <label>Human notes
-    <textarea name="notes" rows="4" placeholder="Explain corrections, ambiguity, or missing facts">{{ saved.notes if saved else '' }}</textarea>
+  <label>Notes
+    <textarea name="notes" rows="3" placeholder="Optional correction, ambiguity, or missing-facts note">{{ saved.notes if saved else '' }}</textarea>
   </label>
   <div class="actions">
-    <button class="primary" type="submit" name="save_action" value="stay">Save review</button>
-    <button type="submit" name="save_action" value="next_unreviewed">Save and next unreviewed</button>
-    {% if saved %}<span>Last saved {{ saved.updated_at }}</span>{% endif %}
+    <button type="submit" name="save_action" value="save">Save</button>
+    <button class="primary" type="submit" name="save_action" value="save_review">Save review + next</button>
+    <span>Save requires a selected status. Save review automatically records accepted or corrected by comparing unordered sets.</span>
   </div>
 </form>
 
-<section class="panel prior-passes">
-  <h2>Prior model and audit evidence</h2>
+<details class="panel supporting-evidence">
+  <summary>Supporting evidence and prior passes</summary>
+  <div class="evidence-grid">
+    <section>
+      <h2>Original human label</h2>
+      <p class="label-pair">{{ case.original_human_label.category }} &gt; {{ case.original_human_label.subcategory }}</p>
+    </section>
+    <section>
+      <h2>Internal primary</h2>
+      <p class="label-pair">{{ case.internal_primary_label.category }} &gt; {{ case.internal_primary_label.subcategory }}</p>
+      <p>{{ case.internal_primary_justification }}</p>
+    </section>
+  </div>
+  <p><strong>Priority reason:</strong> {{ case.priority.reason }}</p>
+  <p><strong>Expanded-set justification:</strong> {{ case.suggestion_justification }}</p>
+  {% for candidate in case.suggested_labels %}
+  <details>
+    <summary>{{ candidate.category }} &gt; {{ candidate.subcategory }}</summary>
+    <p>{{ candidate.rationale }}</p><p><strong>Canonical:</strong> {{ candidate.description }}</p>
+  </details>
+  {% endfor %}
   <details>
     <summary>Two-label GPT-5.2 audit</summary>
-    <p><strong>{{ case.two_label_audit.audit_label_1 }}</strong>{% if case.two_label_audit.audit_label_2 %}; <strong>{{ case.two_label_audit.audit_label_2 }}</strong>{% endif %}</p>
+    <p><strong>{{ case.two_label_audit.audit_label_1|replace(' / ', ' > ') }}</strong>{% if case.two_label_audit.audit_label_2 %}; <strong>{{ case.two_label_audit.audit_label_2|replace(' / ', ' > ') }}</strong>{% endif %}</p>
     <p>{{ case.two_label_audit.audit_justification }}</p>
   </details>
   {% for model, matches in case.model_outputs.items() %}
   <details>
     <summary>{{ {'gpt52':'GPT-5.2', 'gemini31_pro':'Gemini 3.1 Pro Preview', 'deepseek_v4':'DeepSeek v4'}[model] }}</summary>
-    <ol>
-      {% for match in matches %}<li><strong>{{ match.category }} / {{ match.subcategory }}</strong> — {{ match.justification }} ({{ match.confidence }})</li>{% endfor %}
-    </ol>
+    <ol>{% for match in matches %}<li><strong>{{ match.category }} &gt; {{ match.subcategory }}</strong> — {{ match.justification }} ({{ match.confidence }})</li>{% endfor %}</ol>
   </details>
   {% endfor %}
-</section>
+  {% if other_reviews %}
+  <details>
+    <summary>Other human reviews ({{ other_reviews|length }})</summary>
+    {% for item in other_reviews %}
+      <p><strong>{{ item.reviewer }}</strong> — {{ item.status|replace('_', ' ') }}:
+      {% for label in item.labels %}{{ label.category }} &gt; {{ label.subcategory }}{% if not loop.last %}; {% endif %}{% endfor %}</p>
+    {% endfor %}
+  </details>
+  {% endif %}
+</details>
 {% endblock %}
 {% block scripts %}
 <script>window.taxonomyLookup = {{ taxonomy_lookup|tojson }};</script>

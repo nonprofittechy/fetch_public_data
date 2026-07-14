@@ -13,6 +13,16 @@
   </div>
 </section>
 
+<form class="reviewer-bar panel" method="post" action="{{ url_for('set_reviewer') }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <input type="hidden" name="next" value="{{ request.full_path }}">
+  <label>Reviewer name or ID
+    <input name="reviewer" value="{{ reviewer }}" maxlength="100" placeholder="Required for independent review records">
+  </label>
+  <button type="submit">{% if reviewer %}Change reviewer{% else %}Start reviewing{% endif %}</button>
+  {% if reviewer %}<span>Queue progress and saved decisions are scoped to <strong>{{ reviewer }}</strong>.</span>{% endif %}
+</form>
+
 <form class="filters panel" method="get">
   <label>Priority
     <select name="tier">
@@ -40,6 +50,7 @@
       <span class="badge">{{ case.suggested_labels|length }} AI candidate{% if case.suggested_labels|length != 1 %}s{% endif %}</span>
       {% if case.focused_four_label_review %}<span class="badge attention">focused 3–4 issue audit</span>{% endif %}
       {% if case.human_review %}<span class="badge complete">{{ case.human_review.status }}</span>{% else %}<span class="badge muted">unreviewed</span>{% endif %}
+      {% if case.reviewer_count %}<span class="badge">{{ case.reviewer_count }} total human review{% if case.reviewer_count != 1 %}s{% endif %}</span>{% endif %}
     </div>
     <p>{{ case.problem_description }}</p>
   </a>
@@ -47,4 +58,11 @@
   <div class="empty panel">No cases match these filters.</div>
   {% endfor %}
 </div>
+
+<section class="export-note panel">
+  <strong>Gold-data exports</strong>
+  <a href="{{ url_for('export_gold_csv') }}">Validated rows (one or more reviewers)</a>
+  <a href="{{ url_for('export_gold_csv', min_reviewers=2) }}">Strict two-reviewer consensus</a>
+  <a href="{{ url_for('export_gold_disagreements_csv') }}">Reviewer disagreements</a>
+</section>
 {% endblock %}
