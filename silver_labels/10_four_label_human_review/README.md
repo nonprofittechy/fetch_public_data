@@ -31,7 +31,7 @@ The newly re-adjudicated AI cells are purple in the workbook. Human-entry cells 
 
 ## Human review interface
 
-[`../../human_review_app/`](../../human_review_app/) is the companion audit interface for all 132 queue rows. It exposes all 209 taxonomy pairs in four dropdowns, shows the enriched description under each choice, preloads but does not auto-save the AI suggestions, and keeps prior model/audit evidence visible. Human decisions persist in SQLite with an append-only save history and can be exported to CSV or JSON.
+[`../../human_review_app/`](../../human_review_app/) is the companion audit interface for all 132 queue rows. It exposes all 209 taxonomy pairs in four dropdowns as `Category > Subcategory`, shows the enriched description under each choice, and preloads but does not auto-save AI suggestions. The default screen is intentionally concise; prior evidence is collapsed. Independent decisions are stored per row and reviewer with append-only history, and deterministic gold/consensus/disagreement exports are available. See [`../../human_review_app/GOLD_DATA_WORKFLOW.md`](../../human_review_app/GOLD_DATA_WORKFLOW.md).
 
 The app includes a tested container and Fly.io configuration with `/data` mounted for the database. It was deployed on 2026-07-14 to the Lemma organization at <https://fetch-silver-label-review.fly.dev/>. The production instance uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored only as Fly secrets. Exact local, deployment, and operational commands are in the app README.
 

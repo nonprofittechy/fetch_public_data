@@ -2,7 +2,7 @@
 
 This is a deliberately small review interface for the 132-row prioritized silver-label queue. It displays the source text, original human label, internal primary, three independent model passes, the GPT-5.2 audit, the current one-to-four-label suggestion set, and the canonical detailed description beside every selected label.
 
-The human can choose zero through four exact taxonomy pairs. Candidate order has no meaning. Saved work goes to SQLite, every save is appended to a history table, and current results can be exported as CSV or JSON.
+The human can choose zero through four exact taxonomy pairs. Candidate order has no meaning. Each person selects a reviewer name/ID, so two humans can independently review the same row without overwriting each other. Saved work goes to SQLite, every save is appended to a history table, and results can be exported as review provenance or validated gold data.
 
 ## Live instance
 
@@ -34,16 +34,39 @@ Run the tests with:
 ```bash
 cd human_review_app
 ../.venv-review/bin/python -m unittest -v test_app.py
+cd ..
+.venv-review/bin/python -m unittest -v test_build_human_validated_gold.py
 ```
+
+## Review interaction
+
+- All labels are displayed as `Category > Subcategory`; the stored value remains the exact canonical pair.
+- A new row has no preselected status radio.
+- `Save` requires the reviewer to select a status. `Needs review` is the draft/pause state.
+- `Save review + next` compares the unordered human set with the AI recommendation and automatically records `accepted` when identical or `corrected` when different.
+- The default screen contains only the problem, compact AI recommendation, selectors, reviewer/status, and notes. Priority analysis, original/internal labels, rationales, model passes, and other-human decisions are collapsed under “Supporting evidence and prior passes.”
 
 ## Persistence and exports
 
 The database path comes from `REVIEW_DB_PATH`. Its two tables are:
 
-- `reviews`: the latest decision for each row;
+- `reviews`: the latest decision for each `(row_number, reviewer_key)`;
 - `review_history`: an append-only snapshot for every successful save.
 
+Reviewer queue progress is session-specific. Reusing the same normalized reviewer ID updates that person's current decision; using a different ID creates an independent decision. See [`GOLD_DATA_WORKFLOW.md`](GOLD_DATA_WORKFLOW.md) for the consensus rule, disagreement handling, gold endpoints, and repository merge command.
+
 The database is local state and is intentionally ignored by git. Use the in-app CSV/JSON exports for portable results. On Fly.io, `/data/reviews.sqlite3` resides on the attached `review_data` volume and survives machine restarts and deployments.
+
+## Production E2E verification
+
+On 2026-07-14 the deployed site was exercised through real HTTPS forms with two isolated browser-cookie sessions:
+
+1. `E2E Persistence Alpha` and `E2E Persistence Beta` independently submitted row 424.
+2. Both were automatically marked `accepted`; strict gold reported `multi_reviewer_consensus`, 2 reviewers, and 4 labels.
+3. The Fly Machine was explicitly stopped and confirmed `stopped`.
+4. An HTTPS request cold-started it; both reviewer records and the same strict-gold row remained on the attached volume.
+5. A separate production form test confirmed no status was preselected, blank-status `Save` was rejected, `Category > Subcategory` was rendered, and a changed set was automatically marked `corrected`.
+6. E2E records and history were deleted afterward. Three pre-existing draft rows were preserved and migrated as `Legacy reviewer`.
 
 SQLite plus a Fly volume is a single-machine design. Keep exactly one app Machine in one region. Fly volumes are not automatically replicated; make periodic snapshots or download exports. If simultaneous high-volume review or multi-region redundancy is later required, move the two tables to managed Postgres.
 
@@ -101,4 +124,4 @@ Regenerate Stage 10 first:
 python build_four_label_review.py
 ```
 
-Then rebuild/redeploy the image. Existing reviews remain keyed by source `row_number`; the deploy does not modify the mounted database.
+Then rebuild/redeploy the image. Existing reviews remain keyed by source `row_number` and normalized reviewer ID; the deploy does not modify the mounted database.

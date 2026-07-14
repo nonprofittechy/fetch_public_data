@@ -25,3 +25,6 @@ The latest review artifact allows up to four unordered labels per row. Use the
 workbook or the persistent, taxonomy-aware
 [`human_review_app/`](human_review_app/) browser interface, deployed at
 <https://fetch-silver-label-review.fly.dev/>.
+
+The handoff from independent human reviews to validated gold data is documented
+in [`human_review_app/GOLD_DATA_WORKFLOW.md`](human_review_app/GOLD_DATA_WORKFLOW.md).

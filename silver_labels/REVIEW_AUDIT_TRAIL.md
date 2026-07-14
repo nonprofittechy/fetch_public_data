@@ -12,7 +12,7 @@ This is the canonical index of every classification, review, audit, and prioriti
 - Latest two-label audit: 90 rows support two labels; after ignoring order, 39 rows are primary-change candidates and 12 remain uncertain.
 - Latest human-review queue: 132 rows, prioritized into 52 P1, 14 P2, and 66 P3 rows.
 - The two-label ceiling has been removed from the human workflow. The seven known 3–4 issue rows now have expanded unordered sets: rows 252/421/424 have four candidates and rows 290/384/419/420 have three.
-- The Stage 10 workbook and web app allow the human to assign zero through four exact taxonomy pairs and retain all prior evidence.
+- The Stage 10 workbook and web app allow the human to assign zero through four exact taxonomy pairs and retain all prior evidence. The app now stores independent decisions per reviewer, displays `Category > Subcategory`, and produces conservative gold and disagreement exports.
 - The persistent review app is live at <https://fetch-silver-label-review.fly.dev/> in the Lemma Fly organization. It uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored as Fly secrets.
 - Human adjudication is not yet complete. Audit and priority fields are recommendations; they have not overwritten the Stage 04 primary labels.
 - The original `redaction_reviewed_v5_clean.xlsx` remains unchanged.
@@ -151,7 +151,11 @@ The seven rows previously flagged as exceeding the two-label ceiling were read a
 
 These are proposed review sets, not final human labels. The focused instructions, reviewer context, exact rationales, and per-pair confidence are recorded in [`10_four_label_human_review/ADJUDICATION_METHOD.md`](10_four_label_human_review/ADJUDICATION_METHOD.md), `focused_multilabel_adjudication.json`, and [`../build_four_label_review.py`](../build_four_label_review.py).
 
-The new workbook preserves all preceding columns, highlights the focused AI candidates in purple, and supplies four blue human-label slots plus status, notes, reviewer, and timestamp. Its companion [`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and descriptions, saves the latest decision and append-only history to SQLite, and exports CSV/JSON. Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fly config validate` passed. It was deployed on 2026-07-14 at <https://fetch-silver-label-review.fly.dev/> in the `lemma` organization. Production verification confirmed password gating, the 132-case health response, 1/1 passing checks, the attached encrypted volume, and an initialized SQLite database under `/data`.
+The new workbook preserves all preceding columns, highlights the focused AI candidates in purple, and supplies four blue human-label slots plus status, notes, reviewer, and timestamp. Its companion [`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and descriptions and saves current decisions by `(row, reviewer)` plus append-only history. Labels display as `Category > Subcategory`; status uses no-default radios; `Save review + next` automatically records accepted versus corrected from an unordered-set comparison; supporting evidence is collapsed to reduce distraction.
+
+Gold generation is deterministic and conservative: completed agreeing sets enter gold, two agreeing humans are marked `multi_reviewer_consensus`, and disagreements are excluded into a separate export. [`../human_review_app/GOLD_DATA_WORKFLOW.md`](../human_review_app/GOLD_DATA_WORKFLOW.md) documents the rule and [`../build_human_validated_gold.py`](../build_human_validated_gold.py) validates/merges an app export back into the source dataset.
+
+Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fly config validate` passed. The app was deployed on 2026-07-14 at <https://fetch-silver-label-review.fly.dev/> in the `lemma` organization. Production E2E used two isolated reviewer sessions on one row, confirmed strict two-reviewer gold consensus, explicitly stopped the Machine, cold-started it through HTTPS, and verified both records and consensus survived on `/data`. It also confirmed the no-default status guard and automatic corrected status. E2E data was removed afterward; three earlier drafts were preserved as `Legacy reviewer`.
 
 ## Recommended files now
 
@@ -167,10 +171,10 @@ The new workbook preserves all preceding columns, highlights the focused AI cand
 
 ## What remains
 
-1. Start the Stage 10 app and human-review the 52 P1 rows first, selecting up to four unordered labels and recording status/notes.
-2. Confirm the 14 P2 rows.
-3. Perform a rapid accept/remove check on additional labels for the 66 P3 rows.
-4. Export the persisted human results and build a final consolidated label set that permits one through four labels according to the evidence.
+1. Have each human choose a distinct reviewer ID and review the 52 P1 rows first.
+2. Confirm the 14 P2 rows and rapidly accept/correct the 66 P3 rows.
+3. Download strict two-reviewer gold and the disagreement export; adjudicate disagreements explicitly.
+4. Run `build_human_validated_gold.py` to validate and merge the app export into a consolidated one-through-four-label gold dataset.
 5. Keep the Stage 04 primary label and all model/audit evidence in the final provenance record rather than silently replacing them.
 
 ## Reproduction scripts
@@ -186,6 +190,7 @@ The new workbook preserves all preceding columns, highlights the focused AI cand
 | [`../run_two_label_gpt52_audit.py`](../run_two_label_gpt52_audit.py) | Stage 08 Azure two-label audit and order-insensitive outputs |
 | [`../prioritize_human_review.py`](../prioritize_human_review.py) | Stage 09 priority queue and workbook |
 | [`../build_four_label_review.py`](../build_four_label_review.py) | Stage 10 expanded sets, four-slot workbook, app seed, and taxonomy snapshot |
+| [`../build_human_validated_gold.py`](../build_human_validated_gold.py) | Validate an app gold export and merge it with the 431-row public source |
 
 ## Commit trail
 
@@ -202,5 +207,6 @@ The new workbook preserves all preceding columns, highlights the focused AI cand
 | `8e40744` | Seven-row three/four-label adjudication and expanded workbook |
 | `6fbc86d` | Persistent taxonomy-aware human review app and Fly-ready deployment artifact |
 | `9760c54` | Correct Fly Dockerfile resolution and restricted remote build context |
+| `7e2daaa` | Independent per-reviewer decisions, concise UI, automatic status, and gold/disagreement exports |
 
 Future review or label-changing commits should be appended here and linked to their stage documentation.
