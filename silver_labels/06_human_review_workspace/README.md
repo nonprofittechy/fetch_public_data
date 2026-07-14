@@ -4,7 +4,7 @@ Use `redaction_reviewed_v5_clean_human_review_workspace.xlsx` for the next revie
 
 The workbook includes the original human label, all ranked outputs from GPT-5.2, Gemini 3.1 Pro Preview, and DeepSeek v4, the internal reviewed label, and blue blank cells for `your_review_category`, `your_review_subcategory`, `your_review_status`, and `your_review_notes`.
 
-The disagreement-only extract is `disagreement_rows.csv`; it includes all ranked candidates and justifications. Machine-readable counts are in `agreement_analysis.json`.
+The disagreement-only extract is `disagreement_rows.csv`; it includes all ranked candidates and justifications. Machine-readable counts are in `agreement_analysis.json`, and the human-readable interpretation is in [`DISAGREEMENT_AND_CONSENSUS.md`](DISAGREEMENT_AND_CONSENSUS.md).
 
 ## Agreement
 

@@ -163,3 +163,13 @@ For the next round of manual review, use
 [`06_human_review_workspace/`](06_human_review_workspace/). It includes all
 ranked model candidates, the internal label, blank blue human-entry fields, the
 four-pass agreement fields, and the 78-row disagreement extract.
+
+For the multi-label question, use
+[`07_multilabel_audit/`](07_multilabel_audit/). That stage found 156 of 431 rows
+where at least two distinct exact taxonomy pairs were proposed by at least two
+of the three independent models. This is a deliberately broad evidence queue,
+not a claim that all 156 rows definitely need multiple labels. Its workbook
+shows up to three repeated candidates, the supporting models and justifications,
+and three blank human label slots. The stage README defines the evidence rule
+and the necessary distinction between a separate second issue and a weaker
+alternative framing.
