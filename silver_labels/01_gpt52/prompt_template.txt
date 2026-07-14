@@ -1,0 +1,2 @@
+The rendered prompt for each batch is saved under prompts/.
+The template is build_prompt() in create_silver_labels.py.

@@ -1,0 +1,88 @@
+{
+  "source_pdf": "interim_not_to_commit/thats_so_fetch.pdf",
+  "source_pdf_location": "Table 3, PDF page 199",
+  "scope": "The nine cases explicitly discussed in the paper's error table; this is not a claim that all 431 rows received an independent human relabeling.",
+  "cases": {
+    "29": {
+      "problem_description": "I have a signed contract with a roofing company to replace my roof, they did not do the roof, but they took $13,000 from me, and have now closed their business. I would like to file something to get my money back, I thought this was a small claims issue, but then I saw the maximum for small claims is $10,000. So, I need an attorney to help me get my money back, I'm not sure what type, maybe a breach of contract lawyer, but again, I do not know. I look forward to speaking with someone. Thank you!",
+      "original_human_category": "Real Property",
+      "original_human_subcategory": "Construction/Contractors",
+      "reviewed_category": "Real Property",
+      "reviewed_subcategory": "Construction/Contractors",
+      "status": "retained",
+      "justification": "The PDF lists Realty > Construction; the existing human label agrees."
+    },
+    "70": {
+      "problem_description": "Ongoing harassment from next door neighbor. I was bear sprayed through a hole he cut in the fence. He harrassed 11 y.o. daughter. My wife believes she was shot at with a pellet gun. Sprayed chemicals to kill plants on my property. Threatened delivery workers with violence. He has cut peepholes in the fence and established cameras pointing into our yard and windows. 3 plus neighbors have similar stories and they have all told me that previous owners have moved because of this neighbor and his aggressive actions. We want to enjoy our home, but he finds joy in making life miserable for us and fearful of our young children’s safety. He has said “I’ll never stop watching you”",
+      "original_human_category": "Real Property",
+      "original_human_subcategory": "Neighbor Disputes/Nuisance",
+      "reviewed_category": "Real Property",
+      "reviewed_subcategory": "Neighbor Disputes/Nuisance",
+      "status": "retained",
+      "justification": "The PDF lists Realty > Neighbor Disputes; the existing human label agrees."
+    },
+    "142": {
+      "problem_description": "I am trying to manage ownership of a dog.\nA previous partner and I have been sharing time with and expenses for a dog, for 3 years. This arrangement has been very challenging and multiple agreements broken. My Ex is not returning my dog to me, refusing my access to the dog and not communicating with me.",
+      "original_human_category": "Consumer Law",
+      "original_human_subcategory": "",
+      "reviewed_category": "Consumer Law",
+      "reviewed_subcategory": "",
+      "status": "retained",
+      "justification": "The PDF lists Consumer; the existing human top-level label agrees."
+    },
+    "147": {
+      "problem_description": "A wedding planner used photos & video of our event to promote her business. My husband and I did not sign or consent to the photo release form included in our service contract. We do not want this business sharing any images from our private wedding. I would like help in sending a \"cease and desist\" letter.",
+      "original_human_category": "Consumer Law",
+      "original_human_subcategory": "",
+      "reviewed_category": "Consumer Law",
+      "reviewed_subcategory": "",
+      "status": "retained",
+      "justification": "The PDF lists Consumer; the existing human top-level label agrees."
+    },
+    "149": {
+      "problem_description": "Lost a trial for a driving motor vehicle while using mobile device, I did not use it, office saw something black in my hands and he assumed its a cell phone, even though I show him my wallet which was next to me. Want to file an appeal. Thank you.",
+      "original_human_category": "Consumer Law",
+      "original_human_subcategory": "",
+      "reviewed_category": "Criminal Law",
+      "reviewed_subcategory": "Post Conviction/ Appeals",
+      "status": "corrected",
+      "justification": "The PDF identifies the Consumer human label as an error. An appeal of a traffic trial is Criminal Law; Post Conviction/ Appeals is the closest detailed subcategory."
+    },
+    "188": {
+      "problem_description": "I would like help with filing a case in small claims court.",
+      "original_human_category": "Criminal Law",
+      "original_human_subcategory": "",
+      "reviewed_category": "Consumer Law",
+      "reviewed_subcategory": "Small Claims Advice",
+      "status": "corrected",
+      "justification": "The PDF identifies the Criminal human label as an error. Filing a small-claims case is Consumer Law / Small Claims Advice."
+    },
+    "212": {
+      "problem_description": "There was a car accident in which I was involved and had no car insurance. My car was destroyed nonfunctional anymore while the other person‘s car remaining without any visible damage. After this I didn’t got any contact with the person from the crash or anything. I couldn’t get hold of my mail due to some housing instability issues I have been going through this months, but today September 10th I received my mail from all this time and saw a letter, explaining I own $10,000 due to the car crash, I am hoping to see what are the options to investigate if this bill can go lower, if any payment plans could be done and I need a lawyer for legal advice.",
+      "original_human_category": "Debtor/Creditor",
+      "original_human_subcategory": "",
+      "reviewed_category": "Debtor/Creditor",
+      "reviewed_subcategory": "",
+      "status": "retained",
+      "justification": "The PDF calls the LLM's personal-injury/property-damage result an LLM error; Debtor/Creditor is the existing human label and matches the payment/debt framing."
+    },
+    "220": {
+      "problem_description": "I received unemployment during the pandemic and the employment department now says they paid me in error. I followed all their instructions and spent hours on hold trying to reach someone when I had questions. I had a hearing and their decision is to deny my claim. I'm appealing that decision and expect another denial. Do I have an recourse beyond that?",
+      "original_human_category": "Debtor/Creditor",
+      "original_human_subcategory": "",
+      "reviewed_category": "Administrative Law",
+      "reviewed_subcategory": "Unemployment",
+      "status": "corrected",
+      "justification": "The PDF identifies the Debtor/Creditor human label as an error. Pandemic unemployment benefit overpayment/appeal is Administrative Law / Unemployment."
+    },
+    "339": {
+      "problem_description": "I am a PA ( Physician Associate/Assistant) I practice in Oregon. I am trying to get legal advise as to weather I can practice at a secondary employer with out a collaborative agreement and with out that employer employing an MD,DO or DMP.",
+      "original_human_category": "Labor & Employment",
+      "original_human_subcategory": "",
+      "reviewed_category": "Administrative Law",
+      "reviewed_subcategory": "Professional Licensing",
+      "status": "corrected",
+      "justification": "The PDF identifies the Labor & Employment human label as an error. The issue is whether a physician assistant may practice under licensing/supervision rules: Administrative Law / Professional Licensing."
+    }
+  }
+}

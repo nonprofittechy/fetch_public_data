@@ -1,0 +1,17 @@
+{
+  "provider": "azure",
+  "model": "deepseek-v4",
+  "input_file": "redaction_reviewed_v5_clean.xlsx",
+  "input_sha256": "6dc3c9e2ad686355d1c70cb0865e1046a61353d714e3f7f3c23c07b07156d430",
+  "taxonomy_file": "../app/data/taxonomy_detailed_descriptions.csv",
+  "taxonomy_snapshot": "taxonomy_snapshot.csv",
+  "taxonomy_sha256": "d24bbde77c1fea70b10f8fb547bf2794e1ddd1afca84514b7c6469d42c1f059d",
+  "taxonomy_rows": 209,
+  "prompt_builder": "create_silver_labels.py:build_prompt",
+  "classification_rules": {
+    "keyword_classifier": false,
+    "spot_classifier": false,
+    "max_matches_per_row": 3,
+    "label_validation": "exact category/subcategory pair from taxonomy snapshot"
+  }
+}

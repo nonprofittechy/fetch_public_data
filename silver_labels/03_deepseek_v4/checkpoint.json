@@ -1,0 +1,4062 @@
+{
+  "2": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "The user is explicitly dealing with the clinical mental health licensure board (OBPLCT) and navigating the character/application process to regain a surrendered license, which is a core professional licensing matter.",
+      "confidence": "high"
+    }
+  ],
+  "3": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The individual is $11,000 in debt and seeking bankruptcy advice, which matches personal bankruptcy for an individual debtor.",
+      "confidence": "high"
+    }
+  ],
+  "4": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user needs help with contracts and lien filing for their sole proprietor construction/cleaning business, which fits core business contract and organization matters.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The need to file property liens suggests a construction payment dispute, but the primary request is for business contracts and lien procedures, making business law the better fit.",
+      "confidence": "low"
+    }
+  ],
+  "5": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "The user paid for a wedding venue service that was not provided and seeks a refund; this is a consumer dispute over an unsatisfactory service from a business.",
+      "confidence": "high"
+    }
+  ],
+  "6": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Expunction",
+      "justification": "The user explicitly wants two misdemeanor charges from 2018 expunged, which is directly the expunction subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "7": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user cannot pay credit card debt and has been served a summons, indicating they are a debtor facing legal collection action.",
+      "confidence": "high"
+    }
+  ],
+  "8": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user was served a petition for custody and parenting time involving the father of her child, which directly concerns custody and visitation.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Support/Modification",
+      "justification": "The petition also involves child support, but the primary issue is custody/parenting time; support is secondary.",
+      "confidence": "medium"
+    }
+  ],
+  "9": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Actions Against Police",
+      "justification": "The user alleges police falsified reports and mishandled their assault case, seeking an aggressive lawyer; this is a civil rights claim against police for misconduct.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The user suffered assault injuries and could file a civil suit against the attacker, but the core complaint is about police misconduct, making Actions Against Police the stronger match.",
+      "confidence": "medium"
+    }
+  ],
+  "10": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The writer has questions about intellectual property and copyright for their book project and spin-off brands, which fits trademark/copyright protection and licensing.",
+      "confidence": "high"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The user also wants to create a specialty asset trust for brand management, touching on estate planning, but the primary need is IP guidance.",
+      "confidence": "low"
+    }
+  ],
+  "11": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "The user needs an immigration lawyer to apply for legal status for her husband, which is a general immigration/visa matter.",
+      "confidence": "high"
+    }
+  ],
+  "12": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "The user alleges hours were deleted from pay and was terminated after complaining; this is a wage and hour dispute under state law.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "Termination after complaining about pay could constitute wrongful discharge in retaliation for asserting wage rights, but the immediate issue is unpaid wages.",
+      "confidence": "medium"
+    }
+  ],
+  "13": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user suffered a work-related injury over time and seeks compensation after surgeries; this is a state workers' compensation claim for on-the-job injury.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "General",
+      "justification": "There may be employment issues regarding supervisor neglect, but the core is a workers' comp injury claim.",
+      "confidence": "low"
+    }
+  ],
+  "14": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a residential tenant with a landlord refusing to fix a sewer leak, mold, and rodents, which is a habitability dispute.",
+      "confidence": "high"
+    }
+  ],
+  "15": [
+    {
+      "category": "Taxation",
+      "subcategory": "Personal Income",
+      "justification": "The individual owes a large federal tax debt due to a scam-related IRA withdrawal and seeks a tax attorney to reduce personal income tax liability.",
+      "confidence": "high"
+    }
+  ],
+  "16": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The user needs an estate will created for their elderly mother, which falls under general wills and estates planning.",
+      "confidence": "high"
+    }
+  ],
+  "17": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "DMV (Non-Criminal)",
+      "justification": "The user specifically mentions 'administrative law dmv licensure,' which directly matches a DMV administrative issue regarding driving privileges or licensing.",
+      "confidence": "high"
+    }
+  ],
+  "18": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The low-income homeowner seeks to discuss filing bankruptcy with no other secured property, indicating a personal bankruptcy filing.",
+      "confidence": "high"
+    }
+  ],
+  "19": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Non-Profit",
+      "justification": "The user wants to form a 501(c)(3) non-profit religious organization and needs document review, which is the non-profit formation category.",
+      "confidence": "high"
+    }
+  ],
+  "20": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Vehicle Towing",
+      "justification": "The user is attempting to retrieve personal property from a towed vehicle and disputes the tow company's fee demand, a classic vehicle towing consumer issue.",
+      "confidence": "high"
+    }
+  ],
+  "21": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Relief From Sex Offender Registration",
+      "justification": "The user explicitly seeks to file for relief from sex offender registration through the Psychiatric Security Review Board, matching this exact subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "22": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is being sued for a debt and wants to settle, which is a core debtor issue. The mention of mandatory arbitration and dealing with a collection law firm confirms they are a debtor facing a lawsuit.",
+      "confidence": "high"
+    }
+  ],
+  "23": [
+    {
+      "category": "Family Law",
+      "subcategory": "Paternity",
+      "justification": "Establishing paternity is explicitly requested, which is the legal process to determine the biological father. The issues of birth certificate and custody are direct consequences of establishing paternity.",
+      "confidence": "high"
+    }
+  ],
+  "24": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Wrongful Death",
+      "justification": "The family seeks compensation for the death of their mother due to alleged hospital negligence, which is a classic wrongful death claim. The mention of 'making the hospital pay for their incompetence and wrongful death' directly aligns with this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The underlying facts describe medical negligence (fall from bed, failure to follow DNR) causing injury and death. A medical malpractice claim would be the foundation of the wrongful death suit, but wrongful death is the more specific and appropriate final action.",
+      "confidence": "medium"
+    }
+  ],
+  "25": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user has an invention idea, conducted a patent search, and seeks guidance on patentability and a provisional patent. This requires a registered patent attorney, matching the subcategory exactly.",
+      "confidence": "high"
+    }
+  ],
+  "26": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "The issue involves legal status and work visas (H1B, E2), which is a core immigration and visa matter. The mention of working visa and legal status points directly to general immigration/visas rather than deportation.",
+      "confidence": "high"
+    }
+  ],
+  "27": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "The phrase 'possible wrongful termination and/or discrimination' directly invokes employment discrimination. The mention of 'discrimination' as a primary issue fits this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "Wrongful termination is also explicitly mentioned, which could fall under wrongful discharge if it was for an illegal reason. However, without more facts, discrimination is the more specific match.",
+      "confidence": "medium"
+    }
+  ],
+  "28": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user was injured at work and received workers' compensation benefits, which is a state-level claim. The query about 'options for my personal injury' suggests they may be exploring a separate personal injury claim, but the primary legal context is the existing workers' comp case.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The user asks about 'personal injury' options, which could imply a third-party claim. However, the facts describe a workplace injury, so workers' comp is the primary category unless there's a liable third party, which is not indicated.",
+      "confidence": "low"
+    }
+  ],
+  "29": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "The dispute is over a faulty service (roofer took money and didn't perform work), which is a consumer vs. business issue. The amount exceeds small claims, so it fits general consumer law.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The issue involves a contractor failing to perform a roofing job, which is a construction dispute. However, the user is a consumer, not a business, so Consumer Law is a better primary match.",
+      "confidence": "medium"
+    }
+  ],
+  "30": [
+    {
+      "category": "International Law",
+      "subcategory": "Taxation",
+      "justification": "The user owes taxes to a foreign country (Canada) from past work and seeks to dispute or reduce them, which is a cross-border tax issue. This falls squarely under International Law - Taxation.",
+      "confidence": "high"
+    }
+  ],
+  "31": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Elder Abuse",
+      "justification": "The user mentions possible elder financial abuse by a trustee, which is a key indicator of elder abuse in the context of trusts. The breach of fiduciary duty by a trustee further supports this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Litigation",
+      "justification": "The query involves a dispute over a trustee's actions and potential legal action, which could fall under trust litigation. However, elder abuse is the more specific and pressing issue.",
+      "confidence": "medium"
+    }
+  ],
+  "32": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user was approved for unemployment benefits but hasn't received payment, which is a dispute with the state agency administering unemployment. The core issue is non-receipt of approved benefits.",
+      "confidence": "high"
+    }
+  ],
+  "33": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user needs to dissolve an LLC partnership and handle the associated business debts and bankruptcy. This involves business organization and dissolution, which is a core function of general business law.",
+      "confidence": "high"
+    },
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Business",
+      "justification": "The business likely needs to file for bankruptcy due to debts. However, the user's primary goal is dissolution and liability separation, making Business & Corporate the better overall fit.",
+      "confidence": "medium"
+    }
+  ],
+  "34": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Agriculture/Farm",
+      "justification": "The issue involves a verbal extension of a written farm lease, which is a business contract matter specific to agriculture. The request for an attorney with farm contract experience aligns with this subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "35": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user purchased a defective car and is exploring lemon law options, which is a classic automobile consumer dispute. The repeated, unfixable issues and dealership interactions fit this subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "36": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Juvenile Offender",
+      "justification": "A 12-year-old accused of distributing a substance at school is a minor charged with a criminal act, which falls under juvenile offender matters. The nature of the accusation (drug-like distribution) suggests a criminal allegation.",
+      "confidence": "high"
+    }
+  ],
+  "37": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "Judgement Collection",
+      "justification": "The user has a judgment from a previous renter and is actively garnishing wages, needing to renew the garnishment. This is a classic post-judgment collection action.",
+      "confidence": "high"
+    }
+  ],
+  "38": [
+    {
+      "category": "Family Law",
+      "subcategory": "Paternity",
+      "justification": "The user is not on the birth certificate and seeks custody of his son, which requires establishing paternity first. The domestic violence case and mother's mental condition are context, but the core legal step is paternity establishment.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user also wants custody, but that is contingent on establishing paternity. Custody is a secondary issue that follows paternity.",
+      "confidence": "medium"
+    }
+  ],
+  "39": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The radiologist's failure to report a visible mass led to delayed treatment and permanent injury, which is a clear case of medical negligence. The extensive medical details and harm described fit medical malpractice perfectly.",
+      "confidence": "high"
+    }
+  ],
+  "40": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user seeks help with copyright and trademark filings, which is the core of this subcategory. Patent filings are also mentioned, but the category fits broadly under IP.",
+      "confidence": "high"
+    },
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "Patent filings are mentioned, which requires a registered patent attorney. However, the request is broader, so trademark/copyright is the better primary match.",
+      "confidence": "medium"
+    }
+  ],
+  "41": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Whistleblowers",
+      "justification": "The user is seeking advice on Oregon whistleblower protections after observing ADA violations at their workplace. This involves reporting employer wrongdoing, which is a whistleblower scenario.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "ADA (Disability) Act Issues",
+      "justification": "The observed violations are of the ADA, which could lead to an ADA claim. However, the user's role is as a reporter, not the discrimination victim, so whistleblower is more aligned with their legal needs.",
+      "confidence": "medium"
+    }
+  ],
+  "42": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user has tendonitis from manufacturing work and needs to file a workers' comp claim, but is unsure which employer is liable. This is a classic state workers' compensation issue for a private employee.",
+      "confidence": "high"
+    }
+  ],
+  "43": [
+    {
+      "category": "Real Property",
+      "subcategory": "General (residential)",
+      "justification": "The user was misled about what was included in a home purchase, raising issues of misrepresentation and breach of contract in a residential real estate transaction.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "Water Law",
+      "justification": "Uncertainty about water rights and an alleged easement for a water pipe suggests a secondary water law issue that may need to be resolved alongside the purchase dispute.",
+      "confidence": "medium"
+    }
+  ],
+  "44": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Special Needs/Inc. Cap Trusts",
+      "justification": "The user explicitly asks about setting up a special needs trust that complies with SSI rules to protect a disabled adult's inheritance from financial abuse.",
+      "confidence": "high"
+    }
+  ],
+  "45": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user has been denied unemployment benefits since December 2023 and has filed multiple appeals, directly matching the unemployment subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "46": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Creditors",
+      "justification": "The user's ex-husband filed Chapter 7 bankruptcy, and she is concerned about being pursued for his debts, making her a creditor in the bankruptcy context.",
+      "confidence": "high"
+    }
+  ],
+  "47": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Marijuana Business",
+      "justification": "The user is a partial owner of a licensed cannabis business seeking advice on OLCC regulatory compliance and potential violations, fitting squarely in this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Whistleblowers",
+      "justification": "Concerns about whistleblower considerations and personal safety suggest a potential employment retaliation issue, though the primary focus is regulatory compliance.",
+      "confidence": "medium"
+    }
+  ],
+  "48": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Banking",
+      "justification": "The user's mother had accounts summarily closed and funds not returned by Wells Fargo, which is a consumer dispute with a bank over missing funds.",
+      "confidence": "high"
+    }
+  ],
+  "49": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "DUII/DWS",
+      "justification": "The user describes a major car accident involving DUII, which is directly a criminal charge for driving under the influence.",
+      "confidence": "high"
+    }
+  ],
+  "50": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user is being garnished by the Oregon Department of Unemployment for an overpayment and needs help challenging the garnishment and hardship denial.",
+      "confidence": "high"
+    }
+  ],
+  "51": [
+    {
+      "category": "Family Law",
+      "subcategory": "Paternity",
+      "justification": "The user needs to establish legal paternity for his child born during marriage but not listed on the birth certificate, a core paternity issue.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "He also needs help filing for full custody, which is a related child custody matter stemming from the mother's mental health issues and violence.",
+      "confidence": "medium"
+    }
+  ],
+  "52": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Health Law/HIPAA",
+      "justification": "A healthcare provider emailed sensitive information via personal Gmail, which is a potential HIPAA violation, directly matching this subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "53": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user explicitly requests a patent attorney to search and advise on patenting an AI-powered financial aid app, a clear patent matter.",
+      "confidence": "high"
+    }
+  ],
+  "54": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "The user faces discrimination in hiring and pay and seeks an employment attorney, though union representation exists but is unresponsive.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Union Issues",
+      "justification": "The union steward's unresponsiveness may indicate a secondary issue of unfair representation, but the core problem is the underlying discrimination.",
+      "confidence": "medium"
+    }
+  ],
+  "55": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a landlord in Portland seeking to evict a tenant for three months of unpaid rent, a classic residential landlord-tenant dispute.",
+      "confidence": "high"
+    }
+  ],
+  "56": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Conservatorship/Guardianship",
+      "justification": "The user has POA for an aging father and needs help with guardianship/conservatorship to manage finances and prevent homelessness, fitting this subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "57": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "SSD (Social Security Disability)",
+      "justification": "The user is on SSDI and wants to explore part-time work without losing benefits, and asks about converting to retirement benefits at age 62, all SSD-related issues.",
+      "confidence": "high"
+    }
+  ],
+  "58": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user is a partner in a small business with internal disputes over salary increases and potential litigation, which fits general business organization and conflict.",
+      "confidence": "high"
+    },
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Litigation",
+      "justification": "Mention of needing a lawyer specializing in 'business formation law and possible litigation' suggests a possible future lawsuit between partners.",
+      "confidence": "medium"
+    }
+  ],
+  "59": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Small Claims Advice",
+      "justification": "The user has a dispute with a contractor over a botched $5K carpet install and seeks advice on withholding payment or filing a claim, typical small claims territory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The underlying dispute is with a general contractor over renovation work, but the user specifically asks about small claims and lien risks.",
+      "confidence": "medium"
+    }
+  ],
+  "60": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user received a speeding ticket (104 in a 70) and a careless driving charge, wanting dismissal or deferred disposition, which is a traffic offense.",
+      "confidence": "high"
+    }
+  ],
+  "61": [
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "The user needs to fight a false restraining order filed by his child's mother to gain custody and remove him from the home, a direct restraining order dispute.",
+      "confidence": "high"
+    }
+  ],
+  "62": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The user describes a dog bite causing nerve damage and inability to work, which is a classic personal injury claim based on another's negligence or strict liability.",
+      "confidence": "high"
+    }
+  ],
+  "63": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "FMLA",
+      "justification": "The user was on medical leave and is being prevented from returning to work, which raises issues under the Family and Medical Leave Act regarding job-protected leave and reinstatement rights.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Insurance (Health/Disability)",
+      "justification": "The short-term disability claim was initially approved and then denied, indicating a dispute with the insurance company over coverage that could be a separate litigation matter.",
+      "confidence": "medium"
+    }
+  ],
+  "64": [
+    {
+      "category": "Real Property",
+      "subcategory": "Mobile Home (Tenant/Owner)",
+      "justification": "The user lives in a manufactured home park, rents the lot, and has a dispute with the park owner over the buyout process and refusal to purchase their home, fitting the mobile home tenant/owner subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "65": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Litigation",
+      "justification": "The user, as a beneficiary, alleges the trustee is withholding information, misappropriating assets, and failing to fulfill her duties, which would require litigation to challenge the trustee's actions or remove her.",
+      "confidence": "high"
+    }
+  ],
+  "66": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Restaurant/OLCC",
+      "justification": "The user explicitly seeks an attorney specializing in small business restaurant and hospitality, which falls under this subcategory for regulatory and licensing matters.",
+      "confidence": "high"
+    }
+  ],
+  "67": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user is charged with Assault IV, which is a misdemeanor offense, and needs a criminal defense attorney for the arraignment.",
+      "confidence": "high"
+    }
+  ],
+  "68": [
+    {
+      "category": "Family Law",
+      "subcategory": "Guardianship(minor)",
+      "justification": "The user wants to become the official guardian of their 13-year-old sister with parental permission, which fits the subcategory for obtaining legal authority over a minor.",
+      "confidence": "high"
+    }
+  ],
+  "69": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Actions Against Police",
+      "justification": "The user wants to sue the police department for writing a false report and misconduct during an assault investigation, which is a civil rights claim against law enforcement.",
+      "confidence": "high"
+    }
+  ],
+  "70": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Stalking Orders",
+      "justification": "The ongoing harassment, surveillance, and threats from a neighbor, including physical harm with bear spray, warrant seeking a stalking protective order as the neighbor is not a household member.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Neighbor Disputes/Nuisance",
+      "justification": "The neighbor's actions, such as cutting peepholes and spraying chemicals, constitute a nuisance and could also be addressed through litigation for damages or injunctive relief.",
+      "confidence": "medium"
+    }
+  ],
+  "71": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Elder Abuse",
+      "justification": "The user is accused of elder abuse and the POA was replaced by a 'friend,' raising concerns about financial exploitation and undue influence over the mother, which is central to elder abuse and contesting the new POA.",
+      "confidence": "high"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Conservatorship/Guardianship",
+      "justification": "If the mother lacks capacity, a conservatorship or guardianship proceeding may be needed to protect her interests, though the immediate issue is the disputed POA and allegations.",
+      "confidence": "medium"
+    }
+  ],
+  "72": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user is charged with four counts of misdemeanor harassment and menacing and claims to have evidence of innocence, requiring criminal defense representation.",
+      "confidence": "high"
+    }
+  ],
+  "73": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Stalking Orders",
+      "justification": "The user is seeking protective orders against multiple stalkers, including one who broke into their home, which fits the stalking protective order subcategory for non-family/household members.",
+      "confidence": "high"
+    }
+  ],
+  "74": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Actions Against Police",
+      "justification": "The user wants to file a tort claim and lawsuit for unlawful arrest and excessive force by police, which falls under civil actions against law enforcement.",
+      "confidence": "high"
+    }
+  ],
+  "75": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user seeks advice on filing a utility patent for a unique method, which requires a specialized registered patent attorney.",
+      "confidence": "high"
+    }
+  ],
+  "76": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user mentions patent categories including software patents and IP protection strategies, indicating a need for a patent attorney.",
+      "confidence": "high"
+    },
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Computer Law & Internet Law",
+      "justification": "Software patents often intersect with computer and internet law, but the primary focus is on patent protection, making this a secondary match.",
+      "confidence": "medium"
+    }
+  ],
+  "77": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "The user needs guidance through the clinical mental health licensure board's character and fitness process after surrendering a license, which is a professional licensing issue.",
+      "confidence": "high"
+    }
+  ],
+  "78": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "DMV (Non-Criminal)",
+      "justification": "The description explicitly states 'administrative law dmv licensure,' fitting non-criminal DMV licensing disputes.",
+      "confidence": "high"
+    }
+  ],
+  "79": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user was approved for unemployment benefits but has not received payment, indicating a dispute with the state's unemployment agency over unpaid benefits.",
+      "confidence": "high"
+    }
+  ],
+  "80": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user has been denied unemployment benefits since December 2023 and has been through an unsuccessful hearing, which is a clear unemployment insurance dispute.",
+      "confidence": "high"
+    }
+  ],
+  "81": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "The user seeks an attorney specializing in professional licensure for social workers, including representation for civil and criminal issues, fitting this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The mention of contracts could involve business formation or contract review, but the core need is licensing representation.",
+      "confidence": "low"
+    }
+  ],
+  "82": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Military/Veterans",
+      "justification": "The user explicitly requests attorneys specializing in VA disability claims, which directly involves a denial or dispute over veterans' benefits administered by the Department of Veterans Affairs.",
+      "confidence": "high"
+    }
+  ],
+  "83": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "The user's professional license was revoked, which is the core issue. They suspect discrimination and violation of rights in the revocation process, which squarely fits a licensing board dispute.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Civil Rights",
+      "justification": "The user explicitly mentions 'discrimination and violation of my rights' preventing employment, which could support a separate civil rights lawsuit. However, the primary issue is the license revocation, so this is secondary.",
+      "confidence": "medium"
+    }
+  ],
+  "84": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "The user is facing sanctions from the Oregon Board of Licensed Professional Counselors and Therapists and wants to contest the findings and request a hearing, directly matching a licensing board disciplinary action.",
+      "confidence": "high"
+    }
+  ],
+  "85": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "DMV (Non-Criminal)",
+      "justification": "The user received a suspension notice for failure to file an accident report and being uninsured; these are administrative actions by the DMV, not criminal DUII charges.",
+      "confidence": "high"
+    }
+  ],
+  "86": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user is trying to resolve a denial of unemployment benefits and understand why they were denied and not paid, which is a direct dispute with the state's unemployment agency.",
+      "confidence": "high"
+    }
+  ],
+  "87": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user's unemployment benefits are on hold again over back pay and they need an attorney to help get benefits and owed payments released, fitting a dispute with the unemployment agency.",
+      "confidence": "high"
+    }
+  ],
+  "88": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user could not request benefits due to a system bug, resulting in no payment and a rejected claim now set for a hearing, which is a classic unemployment appeal scenario.",
+      "confidence": "high"
+    }
+  ],
+  "89": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user needs an attorney for complex unemployment issues involving an administrative decision and potential fraud accusations against the state, directly matching an unemployment dispute.",
+      "confidence": "high"
+    }
+  ],
+  "90": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user's unemployment claim was re-adjudicated and denied, and they have an upcoming hearing needing representation, fitting a typical unemployment appeal dispute.",
+      "confidence": "high"
+    }
+  ],
+  "91": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Other",
+      "justification": "The user only mentions needing someone with experience in administrative hearings without specifying the agency. The catch-all 'Administrative Law | Other' is appropriate for an unspecified administrative hearing need.",
+      "confidence": "low"
+    }
+  ],
+  "92": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user needs help with unemployment findings and an investigation over a matter from years ago, and they want to know how to fight the outcome, which is an unemployment appeal issue.",
+      "confidence": "high"
+    }
+  ],
+  "93": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "SSD (Social Security Disability)",
+      "justification": "The user is receiving SSDI (disability insurance based on work history) and faces termination due to income and an overpayment demand, which is a Social Security Disability dispute.",
+      "confidence": "high"
+    }
+  ],
+  "94": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "SSD (Social Security Disability)",
+      "justification": "The user was denied SSD (Social Security Disability) and mentions denial of SSI independently; the primary mention is SSD denial, which is based on work history, making this the best fit.",
+      "confidence": "high"
+    },
+    {
+      "category": "Administrative Law",
+      "subcategory": "Social Security/SSI",
+      "justification": "The user also mentions filing for SSI and being denied, but the description centers on SSD, so this is a lower-confidence secondary match.",
+      "confidence": "medium"
+    }
+  ],
+  "95": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "SSD (Social Security Disability)",
+      "justification": "The user is currently on SSDI and seeks advice about attempting part-time work without losing benefits and possibly converting to retirement benefits, which is an SSDI-related inquiry.",
+      "confidence": "high"
+    }
+  ],
+  "96": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "SSD (Social Security Disability)",
+      "justification": "The user seeks a lawyer for children's benefits through a parent on SSDI and a divorce agreement affecting backpay, which is a derivative issue of Social Security Disability benefits.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "QDROs",
+      "justification": "The issue involves dividing what appear to be benefits or backpay assets post-divorce. However, it is specifically about Social Security benefits for children, not retirement plan division, making SSD the primary match.",
+      "confidence": "low"
+    }
+  ],
+  "97": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user wants legal advice on bankruptcy relating to personal debt ($11,000), indicating an individual considering filing, which fits personal bankruptcy.",
+      "confidence": "high"
+    }
+  ],
+  "98": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user needs an attorney to discuss filing bankruptcy and mentions being low-income with a home but no other secured property, clearly indicating personal bankruptcy.",
+      "confidence": "high"
+    }
+  ],
+  "99": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user simply requests a bankruptcy lawyer with no other details; the most common and default assumption is personal bankruptcy, absent business indication.",
+      "confidence": "medium"
+    }
+  ],
+  "100": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Document Review",
+      "justification": "The user completed debt counseling and wants to ensure forms are correct when filing Chapter 7 with limited resources, matching a request for document review in a pro se bankruptcy context.",
+      "confidence": "high"
+    },
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "Although the user plans to file Chapter 7 personally, the specific need expressed is help with forms, so Document Review is more precise.",
+      "confidence": "medium"
+    }
+  ],
+  "101": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user seeks knowledge and advice on potentially filing for bankruptcy without indicating a business, defaulting to personal bankruptcy.",
+      "confidence": "high"
+    }
+  ],
+  "102": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user seeks to file bankruptcy as an individual concerned about a co-borrower, which is a personal bankruptcy scenario where shared assets and non-spousal co-borrower issues arise.",
+      "confidence": "high"
+    }
+  ],
+  "103": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user states they are looking to file bankruptcy and have no money, indicating an individual debtor needing relief from personal debts.",
+      "confidence": "high"
+    },
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Pro Se Coaching",
+      "justification": "Since the user mentions needing legal advice but having no money, they may require pro se coaching for navigating bankruptcy on their own, but the primary need is still filing.",
+      "confidence": "low"
+    }
+  ],
+  "104": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user wants to file for bankruptcy, is 100% disabled, and seeks low-cost or pro bono legal representation, typical of an individual debtor filing for personal bankruptcy.",
+      "confidence": "high"
+    }
+  ],
+  "105": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user describes personal debts (credit cards, personal loan) and modest assets, and wants to assess eligibility for bankruptcy filing as an individual.",
+      "confidence": "high"
+    }
+  ],
+  "106": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user faces severe personal financial difficulties with medical and credit card debt and is contemplating personal bankruptcy for relief.",
+      "confidence": "high"
+    }
+  ],
+  "107": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user needs to file bankruptcy due to debts from lost workers' comp and injury, and is inquiring about self-filing or reduced-fee help, all within an individual bankruptcy context.",
+      "confidence": "high"
+    },
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Pro Se Coaching",
+      "justification": "The user asks if it is difficult to file on their own and if help is available for a reduced fee, suggesting potential need for guidance in self-representation.",
+      "confidence": "low"
+    }
+  ],
+  "108": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user wants to file bankruptcy to address personal debts, including an unpaid dental bill, while on unemployment and housing assistance.",
+      "confidence": "high"
+    }
+  ],
+  "109": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Business",
+      "justification": "The user needs to dissolve an LLC partnership and file bankruptcy for the business entity due to business debts (SBA, Shopify) and the business closing, which is a business bankruptcy matter.",
+      "confidence": "high"
+    }
+  ],
+  "110": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user is being sued for a personal loan debt, is unemployed with no major assets, and considers filing personal bankruptcy as the best option.",
+      "confidence": "high"
+    }
+  ],
+  "111": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user is being sued by a creditor for approximately $2,000 and is considering bankruptcy among other options, indicating a personal debt situation.",
+      "confidence": "high"
+    }
+  ],
+  "112": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user has extensive debts including a rental property mortgage, SBA debt, credit cards, and car loan, and wants to explore personal bankruptcy while potentially keeping assets, which fits an individual filing with complex asset considerations.",
+      "confidence": "high"
+    }
+  ],
+  "113": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user needs to file bankruptcy due to being behind on rent, car payment, and other debts after homelessness, a clearly personal financial crisis.",
+      "confidence": "high"
+    }
+  ],
+  "114": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user needs a bankruptcy lawyer to handle multiple credit card debt summonses, indicating they are an individual debtor seeking to file personal bankruptcy.",
+      "confidence": "high"
+    }
+  ],
+  "115": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user has personal loan debt of $18-20k, no liquifiable assets, and believes bankruptcy is the only option, which is a typical personal bankruptcy scenario.",
+      "confidence": "high"
+    }
+  ],
+  "116": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Creditors",
+      "justification": "The user's ex-husband filed Chapter 7 bankruptcy, and she is concerned about being pursued for his debts; she needs to protect her assets as a creditor or co-obligor, making this a creditor-side bankruptcy issue.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The issue stems from a divorce decree's debt division, which touches on family law, but the immediate legal need is navigating the bankruptcy's impact on the creditor's rights.",
+      "confidence": "medium"
+    }
+  ],
+  "117": [
+    {
+      "category": "Bankruptcy",
+      "subcategory": "Personal",
+      "justification": "The user needs to file Chapter 7 bankruptcy as an individual due to debts from a financed truck and maxed-out credit cards, and finds attorneys too expensive.",
+      "confidence": "high"
+    }
+  ],
+  "118": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user runs a personal services LLC and wants to learn about business liability, insurance, and disclaimers—this is about protecting the business entity and general corporate compliance.",
+      "confidence": "high"
+    }
+  ],
+  "119": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user is starting a matchmaking business and needs an attorney to draft client contracts and ensure compliance with Oregon matchmaking laws, which falls under business formation and contract drafting.",
+      "confidence": "high"
+    }
+  ],
+  "120": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user operates a sole proprietorship in construction and cleaning, needs help with contracts and lien filings for unpaid invoices; this involves business contracts and securing payment rights, core business corporate matters.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The filing of liens relates to construction work and non-payment, but the user's focus is on setting up legal processes for the business, not an active dispute with a specific property owner, so business contract advice is more appropriate.",
+      "confidence": "low"
+    }
+  ],
+  "121": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "The user is a sole proprietor software developer seeking to incorporate and needs legal advice on business entity formation and contracts, a classic business organization need.",
+      "confidence": "high"
+    }
+  ],
+  "122": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "User is starting a bookkeeping business and needs a lawyer to review client contracts to ensure they are official, which fits core business contract and startup advice.",
+      "confidence": "high"
+    }
+  ],
+  "123": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Non-Profit",
+      "justification": "User is forming a 501(c)(3) non-profit and needs document review for bylaws and state forms, directly matching non-profit formation requirements.",
+      "confidence": "high"
+    }
+  ],
+  "124": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Non-Profit",
+      "justification": "User has questions and needs help with a non-profit organization, indicating startup or operational legal needs specific to non-profit entities.",
+      "confidence": "high"
+    }
+  ],
+  "125": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Environment",
+      "justification": "Board member of a non-profit involved with a Superfund site was contacted by a company's lawyer; the environmental context and potential regulatory issues suggest a need for an environmental business attorney.",
+      "confidence": "medium"
+    }
+  ],
+  "126": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "Non-profit performing group has royalty questions, which typically involve copyright licensing and intellectual property rights for performances.",
+      "confidence": "high"
+    }
+  ],
+  "127": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Litigation",
+      "justification": "User seeks a business lawyer for demand letters, cease and desist, and potential litigation, indicating a business dispute heading toward court.",
+      "confidence": "high"
+    }
+  ],
+  "128": [
+    {
+      "category": "Real Property",
+      "subcategory": "Foreclosure",
+      "justification": "User wants an attorney to complete foreclosure on a business sale contract after the buyer stopped making payments, which is a real-property-style foreclosure on a secured sales agreement.",
+      "confidence": "high"
+    }
+  ],
+  "129": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "User is concepting a small business, needs advice on LLC vs. non-profit structure, and has questions on tax and import/export laws, which all fit general business formation and operational legal guidance.",
+      "confidence": "high"
+    }
+  ],
+  "130": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Agriculture/Farm",
+      "justification": "Dispute over a verbal extension of a written farm lease involves business contract law specific to agricultural operations, fitting farm business legal issues.",
+      "confidence": "high"
+    }
+  ],
+  "131": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "User seeks legal aid for corporate practice of medicine contracts relating to business ownership, which is a specialized business contract matter not covered by a more specific subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "132": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "Starting a consulting business and needing licensure, registration, and contract review falls squarely under general business formation and contracts.",
+      "confidence": "high"
+    }
+  ],
+  "133": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "Review of a Bill of Sale for a small newspaper business, including indemnification and website access issues, is a business contract review matter.",
+      "confidence": "high"
+    }
+  ],
+  "134": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Marijuana Business",
+      "justification": "Partial owner of a licensed cannabis business needs advice on OLCC regulatory compliance and whistleblower considerations, directly matching marijuana business regulatory issues.",
+      "confidence": "high"
+    }
+  ],
+  "135": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "LLC formed for a SaaS startup needs review of an ownership agreement, which is core business formation and contract work for early-stage companies.",
+      "confidence": "high"
+    }
+  ],
+  "136": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Securities",
+      "justification": "User needs a securities lawyer to recover taxes from churning by a financial advisor, concerning financial instruments and fiduciary misconduct typical of securities issues.",
+      "confidence": "high"
+    }
+  ],
+  "137": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Securities",
+      "justification": "Employee stock options, forward purchase agreements, and prepaid variable forward contracts are complex securities and financial instruments requiring securities law review.",
+      "confidence": "high"
+    }
+  ],
+  "138": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Litigation",
+      "justification": "Business partner dispute over salary increases and potential litigation indicates a business breakup conflict heading to court, needing a litigation-focused business attorney.",
+      "confidence": "high"
+    }
+  ],
+  "139": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Restaurant/OLCC",
+      "justification": "Looking for a small business restaurant and hospitality lawyer, with additional real estate needs, points primarily to restaurant/OLCC business legal issues.",
+      "confidence": "high"
+    }
+  ],
+  "140": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Agriculture/Farm",
+      "justification": "User needs legal assistance with farm transactions, leases, trusts, and tax advice, all falling under agricultural business law.",
+      "confidence": "high"
+    }
+  ],
+  "141": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Entertainment",
+      "justification": "User needs a sports and entertainment lawyer to advise on setting up an ownership group for an athletic team, which falls under entertainment business matters including sports.",
+      "confidence": "high"
+    }
+  ],
+  "142": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Animal Law",
+      "justification": "The dispute centers on ownership and possession of a dog after a breakup, which falls under animal law treating pets as property and resolving custody-like conflicts between former partners.",
+      "confidence": "high"
+    }
+  ],
+  "143": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "The user paid for a wedding venue that closed without providing services or a refund, which is a dispute over a faulty service between a consumer and a business.",
+      "confidence": "high"
+    }
+  ],
+  "144": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Vehicle Towing",
+      "justification": "The user's vehicle was towed after an accident and the towing company is refusing to release personal property without payment, a classic towing dispute under consumer law.",
+      "confidence": "high"
+    }
+  ],
+  "145": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "The user is trying to exit a timeshare agreement and may have been defrauded by a company that took money without results, indicating a consumer dispute over a service.",
+      "confidence": "high"
+    }
+  ],
+  "146": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user describes a persistent unfixable defect in a purchased vehicle, matching a lemon law claim under consumer law for vehicle purchases.",
+      "confidence": "high"
+    }
+  ],
+  "147": [
+    {
+      "category": "General Litigation",
+      "subcategory": "General Torts/Privacy",
+      "justification": "The dispute involves unauthorized use of private photos by a business, which is an invasion of privacy tort, fitting general litigation for privacy violations.",
+      "confidence": "high"
+    }
+  ],
+  "148": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "The user has a dispute with a cell phone provider over refunds and misrepresentations, a consumer issue regarding unsatisfactory service and billing practices.",
+      "confidence": "high"
+    }
+  ],
+  "149": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user lost a trial for a traffic citation (using a mobile device while driving) and wants to appeal, which is a traffic offense matter.",
+      "confidence": "high"
+    }
+  ],
+  "150": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user purchased a vehicle with multiple post-sale problems and disputes over an ineffective warranty, aligning with automobile consumer disputes.",
+      "confidence": "high"
+    }
+  ],
+  "151": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "The user believes they were defrauded by a business coach and seeks refund and legal understanding of contract and defamation, which falls under consumer law for deceptive practices.",
+      "confidence": "high"
+    }
+  ],
+  "152": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "Auto shop negligence in a repair that caused danger and damage is a dispute over faulty service provided by a business to a consumer.",
+      "confidence": "high"
+    }
+  ],
+  "153": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user bought a truck that has had multiple engine failures, fitting a lemon law or vehicle defect claim under consumer law.",
+      "confidence": "high"
+    }
+  ],
+  "154": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The motorcycle is believed to be a lemon and the user seeks to pursue a lemon law claim, directly falling under automobile consumer law.",
+      "confidence": "high"
+    }
+  ],
+  "155": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "A builder was paid to convert a van but delivered a product with massive failures and refuses to resolve the issue, a consumer dispute over a faulty service.",
+      "confidence": "high"
+    }
+  ],
+  "156": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user describes a predatory car sale and financing scheme by a dealership, a classic automobile consumer dispute involving misrepresentation and unfair terms.",
+      "confidence": "high"
+    }
+  ],
+  "157": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Problems Between Consumers",
+      "justification": "The dispute is over a private sale of an RV between two individuals where the buyer stopped paying and took the RV, fitting a consumer-to-consumer sale dispute.",
+      "confidence": "high"
+    }
+  ],
+  "158": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "A solar company damaged the roof during installation, a dispute between a property owner and a contractor over construction work quality and resulting damage.",
+      "confidence": "high"
+    }
+  ],
+  "159": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user purchased a used RV with undisclosed defects and unfixed recalls that rendered it unsafe and unusable, a vehicle purchase dispute under consumer law.",
+      "confidence": "high"
+    }
+  ],
+  "160": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "General",
+      "justification": "A mechanic took money for a repair but never performed the work and is now unreachable, a consumer dispute over a failed service.",
+      "confidence": "high"
+    }
+  ],
+  "161": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user bought a certified pre-owned car that immediately had serious defects leading to financial loss, fitting a vehicle purchase dispute under consumer law.",
+      "confidence": "high"
+    }
+  ],
+  "162": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Banking",
+      "justification": "The user describes a problem with Wells Fargo summarily closing accounts and failing to send a cashier's check for the larger balance of $30,000+, which fits a banking dispute over missing funds.",
+      "confidence": "high"
+    }
+  ],
+  "163": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user purchased a vehicle and the dealership has not provided the title, preventing resale; this is a dispute with a dealer over documentation associated with a vehicle purchase.",
+      "confidence": "high"
+    }
+  ],
+  "164": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user bought a car that has had repeated mechanical issues not fixed by the seller, raising safety concerns—this is a dispute over the condition and safety of a vehicle sold by a dealer.",
+      "confidence": "high"
+    }
+  ],
+  "165": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user hired a general contractor for a home renovation and a subcontracted carpet install was botched; the dispute is with the contractor over responsibility and payment withholding, which is a property owner-contractor conflict.",
+      "confidence": "high"
+    },
+    {
+      "category": "Consumer Law",
+      "subcategory": "Small Claims Advice",
+      "justification": "The amount in dispute is $5K and the user is asking about withholding payment or filing a claim, which may involve small claims strategy, but the core issue is a construction-related dispute.",
+      "confidence": "low"
+    }
+  ],
+  "166": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user bought a car online that was misrepresented (undisclosed damage) and is seeking a refund of the shipping fee; this is a classic vehicle purchase dispute concerning non-disclosure and misrepresentation by the seller.",
+      "confidence": "high"
+    },
+    {
+      "category": "Consumer Law",
+      "subcategory": "Small Claims Advice",
+      "justification": "The user specifically asks if they have a small claims court case regarding the $1,170 shipping fee, suggesting they are considering small claims court for this vehicle-related dispute.",
+      "confidence": "medium"
+    }
+  ],
+  "167": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The user purchased a vehicle with immediate transmission issues, an invalid extended warranty, and an unrefunded warranty cost; the dispute centers on the dealer's failure to fix the vehicle and refund the warranty.",
+      "confidence": "high"
+    }
+  ],
+  "168": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Banking",
+      "justification": "Though the title was mistakenly sent by the dealership, the issue involves the bank's interest as lienholder and the user's rights regarding the title; however, the core is a dealership error related to the financing arrangement, not strictly a banking dispute.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Consumer Law",
+      "subcategory": "Automobiles/RVs/Mobile Homes",
+      "justification": "The vehicle purchase involved a dealership error with the title; this could be seen as a post-sale documentation issue with the dealer, similar to a title delivery problem, but the user is not disputing the vehicle condition.",
+      "confidence": "medium"
+    }
+  ],
+  "169": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Expunction",
+      "justification": "The user explicitly states they have two misdemeanor charges from 2018 that they need expunged, fitting the expunction subcategory perfectly.",
+      "confidence": "high"
+    }
+  ],
+  "170": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Relief From Sex Offender Registration",
+      "justification": "The user needs help filing documents for relief of sex offender registration through the Psychiatric Security Review Board, directly matching the subcategory for relief from sex offender registration.",
+      "confidence": "high"
+    }
+  ],
+  "171": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Juvenile Offender",
+      "justification": "The user's 12-year-old daughter is being accused of distributing chocolate mushrooms at school, which suggests a juvenile offense matter handled in the juvenile justice system.",
+      "confidence": "high"
+    }
+  ],
+  "172": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Relief From Sex Offender Registration",
+      "justification": "The user is facing a charge for allegedly missing annual sex offender registration and has since re-registered; the legal issue pertains to registration compliance and potential defense against the charge, which is related to sex offender registration requirements.",
+      "confidence": "high"
+    }
+  ],
+  "173": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "DUII/DWS",
+      "justification": "The user describes a 'major car accident' followed by 'DUII,' indicating an arrest for driving under the influence, which fits the DUII/DWS subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "174": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user received a speeding ticket and a charge of Careless Driving and wants to contest or seek a deferred disposition; this is a non-criminal moving violation.",
+      "confidence": "high"
+    }
+  ],
+  "175": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user states they were charged with Assault IV (a misdemeanor) and arrested; they need a criminal attorney for this charge, clearly fitting the Misdemeanor subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "176": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Major Felony",
+      "justification": "The charges include Theft I, Aggravated Theft I, and Possession of a Stolen Vehicle, which are serious felonies (likely Measure 11 offenses for Aggravated Theft I); a major felony subcategory is appropriate given the severity.",
+      "confidence": "high"
+    }
+  ],
+  "177": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Non-Capital Murder",
+      "justification": "The user is facing a second-degree murder charge, which fits the Non-Capital Murder subcategory since there is no indication of capital punishment.",
+      "confidence": "high"
+    }
+  ],
+  "178": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Parole/Probation",
+      "justification": "The user mentions a probation violation and diversion revocation, indicating they are on probation and facing consequences; the new drug charges are part of the violation.",
+      "confidence": "high"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Major Felony",
+      "justification": "The distribution/manufacturing of a controlled substance II is a major felony charge, but the immediate need appears to be handling the probation violation.",
+      "confidence": "medium"
+    }
+  ],
+  "179": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Major Felony",
+      "justification": "Allegations of rape and the involvement of a minor suggest a serious felony charge, possibly a major felony or Measure 11 offense; the user needs criminal defense for these severe accusations.",
+      "confidence": "high"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Lessor Felony",
+      "justification": "If the charge is less severe than a Measure 11 offense, it could be a lesser felony, but the context of rape and minor involvement leans toward major felony.",
+      "confidence": "low"
+    }
+  ],
+  "180": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user received a citation for illegal use of an electronic device and wishes to contest it; this is a traffic violation, not a criminal charge.",
+      "confidence": "high"
+    }
+  ],
+  "181": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user wants to contest a speeding ticket (11-20 mph over) based on inadequate signage and questioning the officer/equipment; this is a standard traffic offense dispute.",
+      "confidence": "high"
+    }
+  ],
+  "182": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Clemency",
+      "justification": "The user explicitly mentions 'clemency' and wants to know if it is an option for their situation, directly matching this category for sentence reduction or forgiveness.",
+      "confidence": "high"
+    }
+  ],
+  "183": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Major Felony",
+      "justification": "The user's son was arrested for 'attempting murder', which is a Measure 11 major felony with mandatory minimum sentencing, making this the specific match.",
+      "confidence": "high"
+    }
+  ],
+  "184": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "Running a red light is a traffic violation, and the user has been called to court for it, which fits this non-criminal traffic offense category.",
+      "confidence": "high"
+    }
+  ],
+  "185": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The citation for 'failure to obey a traffic control device' is a traffic violation, and the user wants to contest it, which falls under this category.",
+      "confidence": "high"
+    }
+  ],
+  "186": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user was charged with 'the lowest one of theft', which is a misdemeanor-level offense, and is dealing with the criminal charge and its consequences.",
+      "confidence": "high"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Expunction",
+      "justification": "The user explicitly states they are 'trying to get my record like expunged', which directly matches this category for clearing a criminal record.",
+      "confidence": "medium"
+    }
+  ],
+  "187": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user received a speeding ticket and wants legal advice to dismiss it, which is a standard traffic offense matter.",
+      "confidence": "high"
+    }
+  ],
+  "188": [
+    {
+      "category": "Consumer Law",
+      "subcategory": "Small Claims Advice",
+      "justification": "The user explicitly wants help filing a case in small claims court, which is the exact definition of this category.",
+      "confidence": "high"
+    }
+  ],
+  "189": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Post Conviction/ Appeals",
+      "justification": "The user has an outstanding warrant from a 2019 case and needs help resolving it, indicating a post-conviction issue, though the exact relief sought is unclear.",
+      "confidence": "medium"
+    }
+  ],
+  "190": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user has a court date for a harassment misdemeanor and is seeking a diversion program, which is a defense for a misdemeanor charge.",
+      "confidence": "high"
+    }
+  ],
+  "191": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Relief From Sex Offender Registration",
+      "justification": "The user explicitly wants to get their fiancé off sex offense registration so he can live with them, which is the exact purpose of this category.",
+      "confidence": "high"
+    }
+  ],
+  "192": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "DUII/DWS",
+      "justification": "The user is being charged with two DUIs and reckless endangerment, which are criminal DUII charges, regardless of it being a first offense.",
+      "confidence": "high"
+    }
+  ],
+  "193": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Forfeiture",
+      "justification": "The user needs to stop imminent forfeiture proceedings for firearms initiated by the ATF and also mentions revocation of an FFL, which is a seizure connected to a legal action.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Gun Rights",
+      "justification": "The revocation of the Federal Firearms License and potential loss of firearms suggest a gun rights restoration issue, but the immediate need to halt forfeiture is primary.",
+      "confidence": "low"
+    }
+  ],
+  "194": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user is charged with 4 counts of misdemeanor harassment and menacing and claims false accusations, which is a defense to misdemeanor charges.",
+      "confidence": "high"
+    }
+  ],
+  "195": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Major Felony",
+      "justification": "Measure 11 assault charges are major felonies with mandatory minimums, and combined with DUII and fleeing, this involves the most serious criminal category.",
+      "confidence": "high"
+    }
+  ],
+  "196": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "The user is charged with assault, strangulation, and two other charges after a physical altercation, which are typically misdemeanor-level offenses unless otherwise specified.",
+      "confidence": "high"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Lessor Felony",
+      "justification": "Strangulation can be a felony, so if the charges are elevated, this could be a lessor felony, but the description suggests lower-level offenses.",
+      "confidence": "low"
+    }
+  ],
+  "197": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "DUII/DWS",
+      "justification": "The user's father got his second DUI and needs legal guidance, which is a criminal DUII matter, even with a prior over 10 years ago.",
+      "confidence": "high"
+    }
+  ],
+  "198": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Post Conviction/ Appeals",
+      "justification": "The user states they had a 'successful PCR' (post-conviction relief) and are now being re-charged, which is a post-conviction/appeal issue.",
+      "confidence": "high"
+    }
+  ],
+  "199": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "The user received a speeding ticket and wants to avoid insurance increases, which is a standard traffic violation matter.",
+      "confidence": "high"
+    }
+  ],
+  "200": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user cannot pay credit card debt and received a summons, which is a general debtor issue facing legal collection action.",
+      "confidence": "high"
+    }
+  ],
+  "201": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is being sued for a debt and wants to negotiate a settlement, which falls under general debtor issues dealing with a creditor lawsuit.",
+      "confidence": "high"
+    }
+  ],
+  "202": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is being sued in circuit court for a debt owed to Bank of Oregon and cannot afford to pay immediately. They are seeking to remedy the situation while keeping their job, making them a debtor facing a lawsuit.",
+      "confidence": "high"
+    }
+  ],
+  "203": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is being brought to court for failure to pay a debt to Oregon Savings Bank and seeks legal advice on handling delinquent obligations due to hardships, placing them squarely as a debtor facing collection litigation.",
+      "confidence": "high"
+    }
+  ],
+  "204": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "A bank has filed a lawsuit for non-payment, and the user wants to negotiate a lower monthly payment. They are the debtor being sued and seeking a manageable resolution.",
+      "confidence": "high"
+    }
+  ],
+  "205": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Creditor)",
+      "justification": "The user is owed money by a neighbor and wants to draft a promissory note with proper interest terms, acting as a creditor structuring a lending arrangement.",
+      "confidence": "high"
+    }
+  ],
+  "206": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Oregon Debt Collection is garnishing wages and bank accounts for an old debt, and the user is the debtor experiencing ongoing collection actions despite prior settlement and an expired credit report entry.",
+      "confidence": "high"
+    }
+  ],
+  "207": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Received a summons for credit card payments, which is a classic debtor situation where the user is being sued for unpaid consumer debt.",
+      "confidence": "high"
+    }
+  ],
+  "208": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Capital One NA is suing an individual in Clackamas County, indicating a debt collection lawsuit against the user as the debtor for an unpaid credit card or loan.",
+      "confidence": "high"
+    }
+  ],
+  "209": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Being sued by a debt collector directly matches the General (Debtor) subcategory, where the user is a debtor facing a lawsuit and exploring legal rights.",
+      "confidence": "high"
+    }
+  ],
+  "210": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user has a wage garnishment for a debt owed to Northstar Savings, increased by interest, and is seeking help as a debtor trying to resolve the garnishment and overall debt burden.",
+      "confidence": "high"
+    }
+  ],
+  "211": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user has a past debt and needs to file a motion or answer to avoid garnishment, seeking a payment plan, which is a typical debtor response to a collection lawsuit.",
+      "confidence": "high"
+    }
+  ],
+  "212": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user owes $10,000 from a car accident while uninsured and wants to negotiate a lower amount or payment plan, placing them as a debtor facing a liability claim.",
+      "confidence": "high"
+    }
+  ],
+  "213": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Alderstone Life sent overpayments to collections and the user must repay over $4,000. Although the origin is insurance overpayment, the immediate issue is a debt collection matter, making the user a debtor.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Consumer Law",
+      "subcategory": "Insurance",
+      "justification": "The underlying dispute involves an insurance company's alleged improper handling of disability payments and overpayments, potentially implicating unfair business practices by the insurer.",
+      "confidence": "low"
+    }
+  ],
+  "214": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user was served for a past due credit card bill from Las Vegas and needs to file a motion or answer in court, which is a straightforward debtor defense against a collection lawsuit.",
+      "confidence": "high"
+    }
+  ],
+  "215": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is being sued for breach of contract regarding a boat purchase and wants to counterclaim for money owed, making them a debtor in the lawsuit but also asserting creditor-like claims for recovery.",
+      "confidence": "high"
+    }
+  ],
+  "216": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is on a payment plan with a law office that bought their debt and faces a motion to keep a previously closed case pending, indicating ongoing debt collection litigation against them as the debtor.",
+      "confidence": "high"
+    }
+  ],
+  "217": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "Judgement Collection",
+      "justification": "The user has a judgment against a former renter and is garnishing wages but needs to renew the garnishment, which falls squarely under Judgment Collection procedures.",
+      "confidence": "high"
+    }
+  ],
+  "218": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Served with a summons for a past due credit card from 2021, the user needs to respond to a debt collection lawsuit, a classic General (Debtor) scenario.",
+      "confidence": "high"
+    }
+  ],
+  "219": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user was served for two old credit card debts and wants to avoid garnishment, seeking advice on defending or resolving the collections as the debtor.",
+      "confidence": "high"
+    }
+  ],
+  "220": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user received unemployment benefits during the pandemic, and the employment department is denying their claim and demanding repayment, which is an administrative dispute over unemployment benefits.",
+      "confidence": "high"
+    }
+  ],
+  "221": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user is being garnished by the Oregon Department of Unemployment for an overpayment of over $20,000 and disputes the garnishment and waiver denial, making this a direct administrative law issue with an unemployment agency.",
+      "confidence": "high"
+    }
+  ],
+  "222": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Unemployment",
+      "justification": "The user is disputing a determination that they owe overpaid unemployment benefits and that a hearing resulted in an adverse finding. The core conflict is with the state unemployment agency over the overpayment and resulting collection actions.",
+      "confidence": "high"
+    }
+  ],
+  "223": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "Debt Counseling/Workouts",
+      "justification": "The user wants to understand the legal effect of a 1099-C on voluntary payments to resolve a debt. This involves negotiating or strategizing repayment, which falls under debt counseling and workout planning.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "Alternatively, the question could be a general debtor inquiry about the consequences of a 1099-C, but the focus on making voluntary payments suggests a more proactive debt resolution strategy.",
+      "confidence": "low"
+    }
+  ],
+  "224": [
+    {
+      "category": "Debtor/Creditor",
+      "subcategory": "General (Debtor)",
+      "justification": "The user is facing a potential judgment for credit card debt they cannot pay and wants to understand the consequences. This is a straightforward debtor issue where the individual is being pursued for a debt.",
+      "confidence": "high"
+    }
+  ],
+  "225": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user lists child custody, child support, and parenting time as their issue. These are core family law matters, with the primary need likely being a parenting plan, making this the best match.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Support/Modification",
+      "justification": "Child support is also mentioned, but it is usually secondary to custody and parenting time in a combined request like this.",
+      "confidence": "medium"
+    }
+  ],
+  "226": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user is seeking a lawyer for a divorce case, which involves marital dissolution, and mentions concerns about being 'drew over' regarding their daughter, likely referring to custody as part of the divorce.",
+      "confidence": "high"
+    }
+  ],
+  "227": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user needs help creating a parenting plan due to safety concerns involving the other parent and CPS involvement. The immediate legal need is a custody arrangement that protects the children.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Juvenile/DHS Issue - SCF (CSD) related",
+      "justification": "A counselor is filing a report with CPS, which could lead to DHS involvement, but the user's primary request is for a parenting plan, not defense in a DHS case.",
+      "confidence": "medium"
+    }
+  ],
+  "228": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user has been served with a custody and parenting time petition from the father, who lives out of state. The core issue is the custody and parenting time dispute, which includes child support as a secondary matter.",
+      "confidence": "high"
+    }
+  ],
+  "229": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user has lost all visitation and parenting time and alleges parental alienation by the custodial parent. This is a classic custody/visitation dispute.",
+      "confidence": "high"
+    }
+  ],
+  "230": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user is in a custody battle and wants to present their case to the judge to get their son back. This is a clear custody and visitation dispute.",
+      "confidence": "high"
+    }
+  ],
+  "231": [
+    {
+      "category": "Family Law",
+      "subcategory": "Juvenile/DHS Issue - SCF (CSD) related",
+      "justification": "The user's child was taken and placed with non-relatives, and there is no CPS case yet. The issue is directly related to DHS/CPS intervention and the refusal to return the child.",
+      "confidence": "high"
+    }
+  ],
+  "232": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user is in a custody battle over adopted children with an ex-partner who has a history of domestic abuse. The core issue is custody and the children's refusal to visit.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "There is a history of domestic abuse, which could involve a restraining order, but the primary need is the custody dispute.",
+      "confidence": "medium"
+    }
+  ],
+  "233": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The mother is seeking modified visitation and more child support, while the father has an immediate danger order and safety plan due to CPS findings of negligence. The central issue is custody and visitation.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Support/Modification",
+      "justification": "Child support modification is also requested, but it is secondary to the custody and safety concerns.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Juvenile/DHS Issue - SCF (CSD) related",
+      "justification": "CPS involvement is a factor, but the immediate legal need is the custody and support case between the parents.",
+      "confidence": "low"
+    }
+  ],
+  "234": [
+    {
+      "category": "Family Law",
+      "subcategory": "Paternity",
+      "justification": "The user needs to establish paternity to get on the birth certificate and then pursue full custody. Paternity is the foundational legal step here.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "Full custody is the ultimate goal, but paternity must be established first.",
+      "confidence": "medium"
+    }
+  ],
+  "235": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Support/Modification",
+      "justification": "The user has questions about child support payments, medical insurance responsibilities, and a prior modification. The core issue is enforcement and potential modification of a child support order.",
+      "confidence": "high"
+    }
+  ],
+  "236": [
+    {
+      "category": "Family Law",
+      "subcategory": "Paternity",
+      "justification": "The user is not on the birth certificate and needs to establish paternity for his 8-month-old son, especially given the mother's untreated mental condition and a DV case.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user likely needs custody as well, but the first legal step is paternity establishment.",
+      "confidence": "medium"
+    }
+  ],
+  "237": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user wants to divorce due to infidelity and a toxic relationship, and mentions property division and a child. This is a comprehensive divorce matter.",
+      "confidence": "high"
+    }
+  ],
+  "238": [
+    {
+      "category": "Family Law",
+      "subcategory": "Paternity",
+      "justification": "The user needs to establish paternity to get on the birth certificate, as the mother did not list him, though the child was born in marriage.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "Filing for full custody is also needed, but paternity is the threshold issue.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "The user mentions filing a restraining order due to violence, but the primary request is paternity and custody.",
+      "confidence": "low"
+    }
+  ],
+  "239": [
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "The user is fighting a false restraining order filed by their son's mother, which was used to gain custody. The immediate legal issue is the restraining order.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The restraining order impacts custody, but the primary need is to contest the FAPA order.",
+      "confidence": "medium"
+    }
+  ],
+  "240": [
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "The user wants to dismiss an existing restraining order and then start custody proceedings. The immediate action is the dismissal of the restraining order.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "Custody and parenting time are also sought, but the restraining order is the first legal hurdle.",
+      "confidence": "medium"
+    }
+  ],
+  "241": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user is seeking a divorce, has paperwork drafted, and needs to address property division (house) and concerns about serving a spouse who is abroad. There is also a history of domestic violence, which may impact the proceedings.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "There is a history and future concern of domestic violence, which could necessitate a FAPA order, but the primary request is for the divorce itself.",
+      "confidence": "medium"
+    }
+  ],
+  "242": [
+    {
+      "category": "Family Law",
+      "subcategory": "Emancipation",
+      "justification": "The user is a 16-year-old expressly seeking emancipation from abusive parents, which is the precise legal process for a minor to become legally independent.",
+      "confidence": "high"
+    }
+  ],
+  "243": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user seeks a divorce from a spouse living out-of-state and needs help with filing and serving papers, which falls under the main divorce category.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Document Review",
+      "justification": "The user also needs help filling out divorce forms correctly, which could be a document review service, but the primary need is full divorce representation.",
+      "confidence": "low"
+    }
+  ],
+  "244": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user wants to convert a legal separation into a divorce, which is a standard process within the divorce category.",
+      "confidence": "high"
+    }
+  ],
+  "245": [
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "The user mentions an abusive spouse and a restraining order court date, directly fitting the subcategory for domestic violence protective orders.",
+      "confidence": "high"
+    }
+  ],
+  "246": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user is in litigation over children and alleges false reports and bias, which is a child custody dispute with concerns about fairness and parental fitness.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Juvenile/DHS Issue - SCF (CSD) related",
+      "justification": "Though DHS is not explicitly named, the mention of false reports and removal of children could involve child services, but custody is the core legal issue.",
+      "confidence": "medium"
+    }
+  ],
+  "247": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user is filing for modification of parenting time after 11 years, seeking changes to a custody order, which is a visitation and custody modification matter.",
+      "confidence": "high"
+    }
+  ],
+  "248": [
+    {
+      "category": "Family Law",
+      "subcategory": "Birth Certificate/Name Changes",
+      "justification": "The user needs to correct an error on a birth certificate (wrong last name), which is a legal name correction process.",
+      "confidence": "high"
+    }
+  ],
+  "249": [
+    {
+      "category": "Family Law",
+      "subcategory": "Guardianship(minor)",
+      "justification": "The user wants to gain custody and be official guardian of a minor sibling with parental permission, fitting the guardianship of a minor category.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "Custody could overlap, but the specific request for 'guardian' and non-parental role makes guardianship the primary match.",
+      "confidence": "medium"
+    }
+  ],
+  "250": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user is separating from a spouse with children and anticipates disputes over assets, child support, and spousal support, all core divorce topics.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Child Support/Modification",
+      "justification": "Child support is mentioned specifically, but the broader context is divorce, so this is a secondary potential sub-issue.",
+      "confidence": "low"
+    }
+  ],
+  "251": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user describes a marital breakdown with asset and child issues, clearly seeking a divorce and property resolution.",
+      "confidence": "high"
+    }
+  ],
+  "252": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "The user wants a divorce or annulment from a military spouse, with concerns about retaliation and housing, which is a divorce matter.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Military",
+      "justification": "The spouse's Navy service may invoke military divorce rules, but the primary need is still dissolution of marriage.",
+      "confidence": "medium"
+    }
+  ],
+  "253": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Custody/Visitation",
+      "justification": "The user needs to rework a parenting plan due to safety concerns, including DHS involvement and the father's dangerous behavior, which is a custody/visitation modification.",
+      "confidence": "high"
+    },
+    {
+      "category": "Family Law",
+      "subcategory": "Juvenile/DHS Issue - SCF (CSD) related",
+      "justification": "An open DHS case and child welfare agency involvement are mentioned, but the immediate legal step is custody modification.",
+      "confidence": "low"
+    }
+  ],
+  "254": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Actions Against Police",
+      "justification": "The user alleges police falsified a report and failed to properly investigate an assault, which is a civil claim for police misconduct.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The underlying assault caused injury, but the expressed need is for a lawyer to address police misconduct, not just the tort.",
+      "confidence": "low"
+    }
+  ],
+  "255": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Civil Rights",
+      "justification": "The user wants to sue for extra prison time due to a legal ruling, alleging a violation of rights, which is a civil rights/due process claim against the state.",
+      "confidence": "high"
+    }
+  ],
+  "256": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Property Damage",
+      "justification": "The user suffered uninsured property fire damage originating from a neighbor's property and wants to sue the neighbor's insurance, a property damage claim.",
+      "confidence": "high"
+    }
+  ],
+  "257": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user describes a neurologist's failure to diagnose and unnecessary treatment leading to prolonged disability, stating 'medical malpractice' explicitly.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "While personal injury overlaps, the negligence of a medical professional makes malpractice the precise fit.",
+      "confidence": "low"
+    }
+  ],
+  "258": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Stalking Orders",
+      "justification": "The user has a stalking order filed against them and needs help, which is the defense side of a stalking protective order proceeding.",
+      "confidence": "high"
+    }
+  ],
+  "259": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Wrongful Death",
+      "justification": "The user describes the death of an elderly mother due to a hospital fall and against a DNR, seeking to hold the hospital liable, which is a wrongful death and medical negligence claim.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The hospital's failure to prevent a fall of a wheelchair-bound patient constitutes medical negligence, but the outcome is death, so wrongful death is the overarching cause of action.",
+      "confidence": "medium"
+    }
+  ],
+  "260": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Tort Claims Act",
+      "justification": "The user is pursuing a claim against the city for pothole damage to a vehicle, which is a tort claim against a municipal government entity.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Property Damage",
+      "justification": "The damage is to a vehicle (property), but the defendant is a government, making Tort Claims Act the more specific and appropriate subcategory.",
+      "confidence": "medium"
+    }
+  ],
+  "261": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Stalking Orders",
+      "justification": "The user has a temporary stalking order and a contested hearing, explicitly needing representation for a stalking protective order.",
+      "confidence": "high"
+    }
+  ],
+  "262": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user alleges that a plastic surgeon's performance was extremely poor and caused serious harm, including vision impairment, which is a classic claim of professional negligence by a healthcare provider.",
+      "confidence": "high"
+    }
+  ],
+  "263": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user states a radiologist failed to report a visible mass on a CT scan, delaying necessary surgery and causing permanent lung damage, which directly alleges professional negligence by a medical specialist.",
+      "confidence": "high"
+    }
+  ],
+  "264": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user describes how a nurse's decision to apply a compression wrap to a diabetic foot wound led to severe deterioration and possible amputation, seeking to hold the nurse and organization accountable for medical negligence.",
+      "confidence": "high"
+    }
+  ],
+  "265": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Health Law/HIPAA",
+      "justification": "The core issue is a healthcare provider sending sensitive health information via an unsecured personal Gmail account, which is a classic HIPAA violation involving wrongful disclosure of private medical information.",
+      "confidence": "high"
+    }
+  ],
+  "266": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Animal Law",
+      "justification": "A neighbor's dog bit the user, causing serious injury, nerve damage, and lost work. Animal law covers disputes over injuries caused by animals, and this is a claim for damages from an animal bite.",
+      "confidence": "high"
+    }
+  ],
+  "267": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Actions Against Police",
+      "justification": "The user alleges police wrote a false report, changed their statement, and failed to investigate an assault properly, which is a civil claim for police misconduct such as false reporting and malicious prosecution.",
+      "confidence": "high"
+    }
+  ],
+  "268": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Stalking Orders",
+      "justification": "The user needs protective orders against multiple people who are stalking them, including one who broke into their home; this is a request for a stalking order, which is for protection from non-household members.",
+      "confidence": "medium"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Libel/Slander/Defamation",
+      "justification": "The user also mentions facing defamation and slander online, which is a separate potential claim for false statements harming reputation, though the primary and most immediate need appears to be the protective orders.",
+      "confidence": "medium"
+    }
+  ],
+  "269": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user alleges a hospital caseworker misrepresented coverage and placed a stroke patient in an inadequate facility contrary to medical orders, causing harm. This is a claim of negligence by a healthcare professional.",
+      "confidence": "high"
+    }
+  ],
+  "270": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Dental",
+      "justification": "The user explicitly requests a dental malpractice attorney for a case involving a person under 18, which falls directly under dental professional negligence.",
+      "confidence": "high"
+    }
+  ],
+  "271": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user discovered severe metal shavings left from a previous surgery, indicating a serious surgical error, and is seeking a medical malpractice lawyer.",
+      "confidence": "high"
+    }
+  ],
+  "272": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Wrongful Death",
+      "justification": "The user explicitly mentions 'Wrongful death' and wants to discuss their mother's case, which is a claim that someone's negligence or wrongful act caused a death.",
+      "confidence": "high"
+    }
+  ],
+  "273": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Dental",
+      "justification": "The user seeks an attorney for medical/dental malpractice involving a minor; while 'medical' is mentioned, the inclusion of 'dental' and the specific context suggest dental malpractice is a key concern.",
+      "confidence": "medium"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The request also covers medical malpractice, which could apply if the negligence involved a medical doctor, but the dual mention makes dental the slightly more specific fit.",
+      "confidence": "medium"
+    }
+  ],
+  "274": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Health Law/HIPAA",
+      "justification": "The user received another patient's full medical information including SSN, which is a clear HIPAA violation and wrongful disclosure of protected health information by a healthcare network.",
+      "confidence": "high"
+    }
+  ],
+  "275": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user describes possible medical negligence/malpractice by a hospital that resulted in PTSD, memory loss, and nearly caused death, which is a claim of professional negligence causing serious injury.",
+      "confidence": "high"
+    }
+  ],
+  "276": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "The user explicitly states a medical malpractice complaint against an orthopedic practice and needs a lawyer without conflicts, which is a clear request for representation in a professional negligence case.",
+      "confidence": "high"
+    }
+  ],
+  "277": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Medical",
+      "justification": "Multiple hospitals and a clinic allegedly misdiagnosed, gave wrong treatment, and refused correct treatment, resulting in late-stage syphilis. This is a medical malpractice claim based on multiple negligent acts.",
+      "confidence": "high"
+    }
+  ],
+  "278": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Dental",
+      "justification": "The user claims a dentist failed to diagnose a large cavity over multiple visits, leading to bone loss and likely tooth loss, and explicitly asks for a dental malpractice lawyer.",
+      "confidence": "high"
+    }
+  ],
+  "279": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Actions Against Police",
+      "justification": "The user wants to file a tort claim and lawsuit for unlawful arrest and detention where police beat them up, which is a civil action against police for excessive force and false arrest.",
+      "confidence": "high"
+    }
+  ],
+  "280": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user is a writer with a book trilogy seeking advice on intellectual property, copyright, and managing brands and licensing, which are core trademark and copyright issues.",
+      "confidence": "high"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Special Needs/Inc. Cap Trusts",
+      "justification": "The user also mentions creating a 'specialty asset trust' to manage brands and licensing, which may relate to a trust structure, but the primary legal need is intellectual property protection.",
+      "confidence": "low"
+    }
+  ],
+  "281": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user plans a digital publication, wants to protect the publication and contributors from plagiarism, and seeks an IP/copyright lawyer to retain contributor ownership, which is classic copyright law.",
+      "confidence": "high"
+    }
+  ],
+  "282": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user explicitly wants to file for copyright, trademark, and patent, which is a core IP need. Trademark/Copyright covers registration and protection of brand names and creative works, fitting a request for filings.",
+      "confidence": "high"
+    }
+  ],
+  "283": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The core issue is whether the user can name their new business similarly to a former employer's business without legal consequences, which directly concerns trademark law and potential infringement. The user is asking about naming rights, not an employment contract dispute.",
+      "confidence": "high"
+    }
+  ],
+  "284": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user has completed an autobiography and needs to understand copyright protection before submitting to a publisher, including questions about registration. The issue is protecting the written work, not just reviewing a publishing contract (Business & Corporate - Entertainment/Publishing).",
+      "confidence": "high"
+    }
+  ],
+  "285": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user received a settlement letter and threat to sue for copyright infringement for using someone else's image on a website. The legal issue is defending against a copyright claim, a core IP matter.",
+      "confidence": "high"
+    }
+  ],
+  "286": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user wants to use a specific song in a video and needs to navigate music licensing, which involves the copyright owner's rights. This is a copyright clearance and licensing question, not a business contract drafting issue.",
+      "confidence": "high"
+    }
+  ],
+  "287": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "A non-profit received a copyright infringement notice for images on its website and explicitly wants to consult an IP attorney. The matter is a classic copyright dispute, not a general business or non-profit governance issue.",
+      "confidence": "high"
+    }
+  ],
+  "288": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user wants to apply for a copyright and trademark with the U.S. government and needs help with the application process, which falls directly under IP registration services. No patent is mentioned, so Trademark/Copyright is the best fit.",
+      "confidence": "high"
+    }
+  ],
+  "289": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user received a demand for payment for alleged copyright violation regarding images on a blog and is seeking an Oregon copyright attorney. This is a defense against a copyright claim, a core IP matter.",
+      "confidence": "high"
+    }
+  ],
+  "290": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The primary legal hook is unauthorized use of the user's video, resulting in a copyright infringement claim and DMCA takedown. The harassment and defamation are secondary harms, but the core IP issue makes Trademark/Copyright the best match, with potential overlap in General Litigation - Online Harassment/Doxing/Bullying. Ranked second due to the IP focus.",
+      "confidence": "medium"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Online Harassment/Doxing/Bullying",
+      "justification": "The user describes ongoing harassment and humiliation using their own video on TikTok, which fits this harmful online behavior category. Placed second because the immediate legal action taken was a DMCA takedown, signaling an IP-centric approach.",
+      "confidence": "medium"
+    }
+  ],
+  "291": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "A non-profit received a demand for payment for alleged copyright infringement on its website. The need is to verify the claim's legitimacy and handle a potential copyright dispute, fitting squarely under this IP subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "292": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user is facing a DMCA copyright strike from a competitor who claims design infringement on a 3D-printed product, and wants to file a counter-DMCA. This is a direct copyright dispute, not a general business contract issue.",
+      "confidence": "high"
+    }
+  ],
+  "293": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user needs legal guidance on using photographs taken by others in an educational manual, which involves copyright licensing and fair use. This is a classic copyright advisory need.",
+      "confidence": "high"
+    }
+  ],
+  "294": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "A graphic designer needs help with intellectual property, a contract, and copyrights, which are core IP and business protection needs. The emphasis on copyright and IP makes this the primary match.",
+      "confidence": "high"
+    }
+  ],
+  "295": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user has an improvement on an existing product and explicitly wants to assess patentability and obtain a provisional patent, which is the defining service of a registered patent attorney. No other IP category fits.",
+      "confidence": "high"
+    }
+  ],
+  "296": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user is seeking a patent attorney to patent a medical prevention product and needs a patent search and prototype assistance, which are core patent services. The focus is squarely on obtaining a patent.",
+      "confidence": "high"
+    }
+  ],
+  "297": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The core question is whether copying an artistic style (wine bottles in resin) for commercial gain constitutes copyright infringement or requires a license, which is a copyright analysis. The mention of a patented process adds a patent dimension, but the primary concern is artistic copying. Ranked second for patent due to the process patent example.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user refers to a possible process patent (e.g., Sony) and wonders if copying a style/process could be patent infringement. Placed second because the main issue is copying a style, which is more traditionally copyright than patent.",
+      "confidence": "low"
+    }
+  ],
+  "298": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user needs to finish the patent application process and resubmit arguments to the USPTO, which requires a registered patent attorney. The fact that most paperwork is done confirms the need is specifically patent prosecution.",
+      "confidence": "high"
+    }
+  ],
+  "299": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "An inventor needs to patent an invention and believes the courts are interfering, requiring an attorney to address both the patent and the court obstruction. The primary legal goal is securing a patent, even amid litigation obstacles.",
+      "confidence": "high"
+    }
+  ],
+  "300": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Trademark/Copyright",
+      "justification": "The user wants to trademark slogans and patent designs for a brand. Both trademark and patent are mentioned, but trademark for slogans and designs is the primary fit, with patent as a secondary need. Ranked first because trademark is the lead request.",
+      "confidence": "high"
+    }
+  ],
+  "301": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "The user needs a patent written for a specific invention (magnetic fitted sheet) and mentions court monitoring, requiring a patent attorney who can navigate both the patent process and related litigation. The core need is patent drafting and protection.",
+      "confidence": "high"
+    }
+  ],
+  "302": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "User explicitly asks for a patent attorney to conduct a patent search, assess novelty of AI-driven app features, and advise on filing a utility patent for software invention.",
+      "confidence": "high"
+    }
+  ],
+  "303": [
+    {
+      "category": "Intellectual Property",
+      "subcategory": "Patent (Reg Patent Attys Only)",
+      "justification": "User needs to resend paperwork to the PTO and obtain a patent on an invention, which squarely falls under patent prosecution.",
+      "confidence": "high"
+    }
+  ],
+  "304": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User seeks an immigration lawyer for husband to apply for legal status, which is a general immigration/visa matter without mention of deportation or specific visa type.",
+      "confidence": "high"
+    }
+  ],
+  "305": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User needs help recovering US immigration documents to present to Social Security, indicating a need for general immigration document assistance, not benefits law.",
+      "confidence": "high"
+    }
+  ],
+  "306": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User is trying to apply for asylum, a form of immigration benefit/status, and seeks assistance with the application process.",
+      "confidence": "high"
+    }
+  ],
+  "307": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "Family seeks lawyer to navigate immigration to Canada, a general immigration/visas matter involving cross-border relocation.",
+      "confidence": "high"
+    }
+  ],
+  "308": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User has issues with legal status and working visas (H1B, E2), which are typical general immigration/visas matters involving employment-based visas.",
+      "confidence": "high"
+    }
+  ],
+  "309": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User needs to file a waiver of inadmissibility application, a standard step in the immigration/visas process to overcome a bar to entry or adjustment.",
+      "confidence": "high"
+    }
+  ],
+  "310": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User seeks immigration attorney experienced with VAWA (Violence Against Women Act), which allows certain abuse victims to self-petition for legal status, a specialized immigration benefit.",
+      "confidence": "high"
+    }
+  ],
+  "311": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User needs an immigration lawyer to file for status adjustment from student visa, a common general immigration/visas matter regarding change of status.",
+      "confidence": "high"
+    }
+  ],
+  "312": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User has a green card hearing and discovered problems that may affect the application; this involves general immigration/visas proceedings for permanent residency.",
+      "confidence": "high"
+    }
+  ],
+  "313": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User seeks to adjust status from student visa to permanent resident, a classic general immigration/visas issue of change of status.",
+      "confidence": "high"
+    }
+  ],
+  "314": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User wants to adjust status from student visa to permanent resident based on marriage, a straightforward general immigration/visas family-based adjustment.",
+      "confidence": "high"
+    }
+  ],
+  "315": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User seeks bilingual immigration attorney to discuss getting legal documents for undocumented cousin, a general immigration/visas consultation on potential pathways.",
+      "confidence": "high"
+    }
+  ],
+  "316": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User wants to build an EB5 immigration case requiring expertise in immigration and investment law; EB5 is an employment-based visa category under general immigration.",
+      "confidence": "high"
+    }
+  ],
+  "317": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User on F-1 OPT needs advice on adjustment of status through marriage and impact of move/separation on green card application, a general immigration/visas family-based adjustment scenario.",
+      "confidence": "high"
+    }
+  ],
+  "318": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User seeks immigration attorney for aunt and uncle to apply for green card through their US citizen daughter, a family-based general immigration/visas matter.",
+      "confidence": "high"
+    }
+  ],
+  "319": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User seeks immigration attorney for father moving to the US, with both children as US citizens; a family-based general immigration/visas consultation.",
+      "confidence": "high"
+    }
+  ],
+  "320": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User wants to speak with immigration lawyer about employment visa sponsorship via I-140 EB-3 and renewal of an expired visa, a general immigration/visas employment-based matter.",
+      "confidence": "high"
+    }
+  ],
+  "321": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User, a US citizen, seeks immigration advice for partner with children to see if they qualify to help with his status, a general immigration/visas family-based inquiry.",
+      "confidence": "high"
+    }
+  ],
+  "322": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User needs help obtaining a green card for a fiancé who is in the U.S. on a tourist visa. This is a core immigration issue involving adjustment of status and lawful permanent residence.",
+      "confidence": "high"
+    }
+  ],
+  "323": [
+    {
+      "category": "International Law",
+      "subcategory": "Gen. Immigration/Visas",
+      "justification": "User explicitly requests an immigration lawyer with experience in work visas, fitting squarely within the general immigration/visas category for both business and individual needs.",
+      "confidence": "high"
+    }
+  ],
+  "324": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "User reports that hours were deleted from their pay, a wage and hour issue under state law. Termination after complaining strengthens this match.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "Termination after complaining about missing wages may constitute retaliation, an exception to at-will employment. Ranked second because the primary issue is unpaid wages.",
+      "confidence": "medium"
+    }
+  ],
+  "325": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "User states possible wrongful termination and/or discrimination, fitting the wrongful discharge category where termination may be for an illegal reason.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "Mention of discrimination suggests an adverse action based on a protected class. Ranked second due to lack of detail on the type of discrimination.",
+      "confidence": "medium"
+    }
+  ],
+  "326": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Whistleblowers",
+      "justification": "User needs advice on Oregon whistleblower protections after observing ADA violations at work. Whistleblower claims are time-sensitive retaliation cases.",
+      "confidence": "high"
+    }
+  ],
+  "327": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "User, age 53, was demoted in favor of a 35-year-old, which is classic age discrimination. This falls under employment discrimination based on a protected characteristic.",
+      "confidence": "high"
+    }
+  ],
+  "328": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "User describes racist remarks and termination without cause, indicating race/national origin discrimination. This fits the adverse action based on a protected class.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "Termination without cause after harassment and suspension may be an illegal retaliation or wrongful discharge. Ranked second as discrimination is the central allegation.",
+      "confidence": "medium"
+    }
+  ],
+  "329": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "User faces discrimination in hiring and pay and is also a union member with an unresponsive steward, but the core legal issue is discriminatory treatment by the employer.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Union Issues",
+      "justification": "The union's failure to represent the user is a secondary issue. Ranked second because the unresponsive steward raises a possible union duty of fair representation claim.",
+      "confidence": "low"
+    }
+  ],
+  "330": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "General (Contracts, Business, Organization)",
+      "justification": "User is a small business owner seeking legal advice on properly terminating an employee. This is a business operational/HR matter, not an employee-side employment issue.",
+      "confidence": "high"
+    }
+  ],
+  "331": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "User believes termination for getting a second job is wrongful. Additionally, the final paycheck being allocated entirely to taxes raises a wage issue.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "The allegation that the whole final check went to taxes could be an improper deduction or failure to pay wages. Ranked second as the primary complaint is wrongful termination.",
+      "confidence": "medium"
+    }
+  ],
+  "332": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Whistleblowers",
+      "justification": "User was fired after reporting coworker negligence to a boss, which is retaliation for raising a safety concern. Whistleblower protections apply to such internal reports.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "Termination in anger after a report and an insensitive reference to dyslexia suggests a possible wrongful discharge claim. Ranked second as whistleblower is more specific.",
+      "confidence": "medium"
+    }
+  ],
+  "333": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "User worked extensive hours for 11 years without being paid salaries, a clear wage and hour violation under state law for unpaid wages.",
+      "confidence": "high"
+    }
+  ],
+  "334": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "User seeks to recover 3 weeks of PTO after a wrongful termination, and was advised to find a wage claim attorney. The core issue is unpaid wages/PTO under state law.",
+      "confidence": "high"
+    }
+  ],
+  "335": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "FMLA",
+      "justification": "User is on medical leave and experiencing difficulties returning to work, with concerns about rights to return and denial of short-term disability. The return-to-work rights fall under FMLA.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Insurance (Health/Disability)",
+      "justification": "The short-term disability claim was approved then denied, which could be a dispute with the insurance company over coverage. Ranked second as the return-to-work issue is primary.",
+      "confidence": "medium"
+    }
+  ],
+  "336": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "ADA (Disability) Act Issues",
+      "justification": "User believes termination was due to a medical condition, which falls under disability discrimination/ADA. Filing with BOLI supports this as an employment disability dispute.",
+      "confidence": "high"
+    }
+  ],
+  "337": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "ADA (Disability) Act Issues",
+      "justification": "Discrimination due to disabilities and retaliation after reporting to HR are core ADA and retaliation claims. Filing an EEOC charge confirms this.",
+      "confidence": "high"
+    }
+  ],
+  "338": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "User is being laid off due to a staffing change that appears arbitrary and possibly pretextual. A lawyer is needed to determine if the discharge violates employment laws.",
+      "confidence": "high"
+    }
+  ],
+  "339": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "User seeks legal advice on whether their professional license (PA) permits practice without a collaborative agreement. This concerns the right to work under a state-issued license.",
+      "confidence": "high"
+    }
+  ],
+  "340": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "FMLA",
+      "justification": "User was not returned to their original position after FMLA leave, a classic FMLA interference/retaliation claim. BOLI/EEOC involvement confirms this employment law issue.",
+      "confidence": "high"
+    }
+  ],
+  "341": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "ADA (Disability) Act Issues",
+      "justification": "User on medical leave is being terminated because no accommodations are available and FMLA is exhausted. The employer's failure to provide reasonable accommodation for a disability is an ADA issue.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "FMLA",
+      "justification": "FMLA leave has been exhausted and termination follows. Ranked second because the core dispute now centers on disability accommodation rather than FMLA rights.",
+      "confidence": "medium"
+    }
+  ],
+  "342": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Document Review/Severance Packages.",
+      "justification": "The user explicitly asks for an attorney to review a separation agreement and negotiate severance pay, which is the core of this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "FMLA",
+      "justification": "The user also mentions belief that termination may have been due to FMLA status, raising a potential FMLA interference/retaliation claim that may be addressed alongside the severance review.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "Mention of termination possibly due to age suggests potential age discrimination, but the primary request is still severance review and FMLA-related concerns.",
+      "confidence": "low"
+    }
+  ],
+  "343": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "FMLA",
+      "justification": "The user claims being unfairly made to work despite having a signed provider certification under FMLA, indicating a denial or interference with FMLA-protected leave.",
+      "confidence": "high"
+    }
+  ],
+  "344": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Sexual Harrasment",
+      "justification": "The user describes severe harassment including sexual harassment, hostile work environment, and related abuse, which directly fits this subcategory.",
+      "confidence": "high"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Discrimination",
+      "justification": "Mentions discrimination as part of the abusive treatment, but the primary and most extreme complaints are sexual harassment and hostile environment.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "Wage discrepancies and switching salary/hourly to avoid overtime are mentioned, but these appear secondary to the harassment and hostile work environment.",
+      "confidence": "low"
+    }
+  ],
+  "345": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "The core of the complaint is penalty wages for late final paycheck, withheld pay, and lack of access to paystubs, which are state wage and hour violations.",
+      "confidence": "high"
+    },
+    {
+      "category": "Consumer Law",
+      "subcategory": "Small Claims Advice",
+      "justification": "The user expresses interest in suing for penalty wages and implies a smaller claim, potentially suitable for small claims court, but the underlying issue is employment-based.",
+      "confidence": "low"
+    }
+  ],
+  "346": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wage and Hour Claims",
+      "justification": "The user describes refusal to timely pay final wages after termination, seeking penalty wages under state law, and unpaid sick pay, which are classic wage and hour claims.",
+      "confidence": "high"
+    },
+    {
+      "category": "Consumer Law",
+      "subcategory": "Small Claims Advice",
+      "justification": "Mention of filing a small claim for the penalty wages suggests a small claims action, but the root issue is an employment wage claim.",
+      "confidence": "low"
+    }
+  ],
+  "347": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user describes a gradual-onset injury at work that was repeatedly reported to a supervisor, leading to surgeries and permanent limitations, indicating a need for a state workers' compensation claim.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The user might consider a personal injury claim if employer negligence can be shown, but the incident is clearly work-related, making workers' comp the primary avenue.",
+      "confidence": "low"
+    }
+  ],
+  "348": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The brief description 'WORK INJURY / WORKER'S COMP CASE' directly indicates a standard state workers' compensation matter.",
+      "confidence": "high"
+    }
+  ],
+  "349": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "User was injured on the job (slip and fall at a distribution center), received workers' compensation, and now seeks guidance on options, clearly a state workers' comp case.",
+      "confidence": "high"
+    },
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "The user asks about 'personal injury' options, which could involve exploring third-party liability, but the injury occurred at work and is primarily a workers' comp matter.",
+      "confidence": "low"
+    }
+  ],
+  "350": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user developed tendonitis from work duties and needs to file a workers' comp claim; the employer change creates confusion but the claim attaches to the original employer, a typical state system issue.",
+      "confidence": "high"
+    }
+  ],
+  "351": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user has work-related injuries from the same company affecting daily life, describing a workers' compensation injury scenario under state law.",
+      "confidence": "high"
+    }
+  ],
+  "352": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Mentions workers' compensation and workers' rights, indicating a state workers' comp issue, though the description is sparse.",
+      "confidence": "high"
+    }
+  ],
+  "353": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "User describes a severe work injury and seeks help with the workers' comp insurer for surgery and future interests, a standard state workers' comp issue.",
+      "confidence": "high"
+    }
+  ],
+  "354": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Work injury accepted by SAIF (a state workers' comp insurer), but user wasn't compensated for lost time; recommended to seek legal consult, clearly a state workers' comp dispute.",
+      "confidence": "high"
+    }
+  ],
+  "355": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Notice of Closure for a workers' comp claim with permanent partial disability, insurer communication issues, and return-to-work concerns are typical state workers' comp issues.",
+      "confidence": "high"
+    }
+  ],
+  "356": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "Other",
+      "justification": "The user needs an attorney with knowledge of workers' comp laws in California and Oregon, implying a multi-jurisdictional issue that doesn't fit neatly into 'State' or 'Federal' alone.",
+      "confidence": "medium"
+    }
+  ],
+  "357": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Injury at work, denial of second injury/surgery by the workers' comp insurer, and need for representation at an Oregon Workers' Compensation Board Hearing, clearly state workers' comp.",
+      "confidence": "high"
+    }
+  ],
+  "358": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Appealing a closure and disagreeing with release to work without restrictions in a workers' comp case is a state-level dispute.",
+      "confidence": "high"
+    }
+  ],
+  "359": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Involved in a workers' comp claim and seeking advice; no indication of federal or specialized sub-category, so state workers' comp is the appropriate match.",
+      "confidence": "high"
+    }
+  ],
+  "360": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Workers' comp case closure disputed, doctors agree more therapy needed, and compensation shortages, all typical issues within a state workers' comp system.",
+      "confidence": "high"
+    }
+  ],
+  "361": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "Workers' comp claim denied by SAIF, seeking appeal, and referred by Ombudsman for injured workers, clearly a state workers' comp appeal.",
+      "confidence": "high"
+    }
+  ],
+  "362": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user has a pending workers' comp claim for a work-related burn and wants advice on further actions and whether transitioning jobs affects the claim, which falls under the state workers' compensation system for private employees.",
+      "confidence": "high"
+    }
+  ],
+  "363": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user was injured at work, has an open claim with SAIF (Oregon's state workers' comp insurer), and wants to discuss settlement options, indicating a state-level workers' compensation matter.",
+      "confidence": "high"
+    }
+  ],
+  "364": [
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The user has a workers' comp claim against a private employer and needs an attorney who can accommodate a hearing disability, which is a standard state workers' comp representation issue.",
+      "confidence": "high"
+    }
+  ],
+  "365": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a residential tenant disputing the landlord's failure to fix sewer leaks, mold, and rodents, and wrongful allocation of repair costs, which is a core residential tenant issue.",
+      "confidence": "high"
+    }
+  ],
+  "366": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user's daughter leased a residential apartment and is trying to terminate the lease early, involving landlord obligations to mitigate damages under fair housing laws, a residential tenant matter.",
+      "confidence": "high"
+    }
+  ],
+  "367": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is served with an eviction notice for non-payment, needs a lawyer to fight it, and mentions inability to work and family emergency, which is a residential tenant eviction defense matter.",
+      "confidence": "high"
+    }
+  ],
+  "368": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user paid a roofing company $13,000 for a roof replacement that wasn't done and the business closed, seeking recovery of funds, which is a contractor dispute over a residential construction project.",
+      "confidence": "high"
+    }
+  ],
+  "369": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is disabled and facing eviction with nowhere to go, seeking advice on how to proceed, which is a residential tenant eviction matter with potential disability accommodations.",
+      "confidence": "high"
+    }
+  ],
+  "370": [
+    {
+      "category": "Real Property",
+      "subcategory": "General (residential)",
+      "justification": "The user purchased a home and was misled about what was included, and needs help with water rights and easement disclosures, which are residential property purchase disputes.",
+      "confidence": "high"
+    }
+  ],
+  "371": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a residential tenant facing discrimination based on familial status and disability, including threats of eviction, which is a residential tenant discrimination/housing rights issue.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "LLTN – ADA issues/Animals/Accommodations",
+      "justification": "The discrimination claim involves a child with a disability, possibly relating to reasonable accommodations, though the primary complaint is broader discriminatory treatment rather than a specific accommodation denial.",
+      "confidence": "medium"
+    }
+  ],
+  "372": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a residential landlord dealing with a long-term tenant breaking the lease early and has questions about security deposit and rent handling, which is a landlord-side residential tenancy matter.",
+      "confidence": "high"
+    }
+  ],
+  "373": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user hired a contractor for home improvements and is dealing with slow progress, lack of licensing, and misrepresentation, seeking a construction attorney for advice on how to handle the dispute.",
+      "confidence": "high"
+    }
+  ],
+  "374": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user was living in an RV park and was evicted with 24-hour notice after a shooting by another resident, claiming unsafe living conditions and wrongful eviction, which is a residential tenancy dispute involving habitability and eviction.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "General (residential)",
+      "justification": "The shooting incident also raises potential property damage claims, but the eviction and safety issues are the primary legal problem, making Tenant (Residential) the stronger match.",
+      "confidence": "medium"
+    }
+  ],
+  "375": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a residential landlord needing to evict a tenant after a termination of the rental agreement, having already served a notice, which is a typical landlord eviction action.",
+      "confidence": "high"
+    }
+  ],
+  "376": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a landlord in Portland trying to evict a tenant for non-payment over three months, which is a residential landlord eviction for non-payment.",
+      "confidence": "high"
+    }
+  ],
+  "377": [
+    {
+      "category": "Real Property",
+      "subcategory": "Mobile Home (Tenant/Owner)",
+      "justification": "The user owns a mobile home in a 55+ manufactured home park and is in a dispute with the park owner over buyout offers and relocation due to erosion work, which is a mobile home tenant/owner issue specific to park laws.",
+      "confidence": "high"
+    }
+  ],
+  "378": [
+    {
+      "category": "Real Property",
+      "subcategory": "General (residential)",
+      "justification": "The user purchased a home and discovered undisclosed defects and misrepresentations by the agent, seeking legal advice for a residential property purchase dispute.",
+      "confidence": "high"
+    }
+  ],
+  "379": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a residential tenant disputing the landlord's demand for professional AC installation, which is not required by the lease, and the landlord's entry and implied consent issues, a residential tenant-rights matter.",
+      "confidence": "high"
+    }
+  ],
+  "380": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a residential tenant facing eviction for non-payment but raising habitability issues, unlawful rent increases, and landlord harassment, which is a tenant eviction defense with counterclaims.",
+      "confidence": "high"
+    }
+  ],
+  "381": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a homeowner/landlord who has filed an eviction complaint for non-payment and has a court appearance set, which is a residential landlord eviction proceeding.",
+      "confidence": "high"
+    }
+  ],
+  "382": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a landlord who used a tenant's security deposit for cleaning and seeks to confirm they followed the law, which is a residential landlord dispute.",
+      "confidence": "high"
+    }
+  ],
+  "383": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a tenant facing eviction and alleging violations of their renters' rights by the property management, a residential tenant-landlord dispute.",
+      "confidence": "high"
+    }
+  ],
+  "384": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The user is deciding between transferring ownership or using a trust for estate planning purposes, which falls under general wills and trusts.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "General (residential)",
+      "justification": "The situation also involves property transfer and VA construction loan terms, which could be a residential real property matter, though the trust aspect points more to estate planning.",
+      "confidence": "low"
+    }
+  ],
+  "385": [
+    {
+      "category": "Real Property",
+      "subcategory": "Tenant (Residential)",
+      "justification": "The user is a residential tenant wanting to break a lease early and avoid penalties, a classic tenant-landlord issue.",
+      "confidence": "high"
+    }
+  ],
+  "386": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user hired a contractor for a home remodel, work is incomplete and substandard, and they paid a large sum, making this a property owner-contractor dispute.",
+      "confidence": "high"
+    }
+  ],
+  "387": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Neighbor Disputes/Nuisance",
+      "justification": "The user describes ongoing harassment and property damage by a neighbor, including threats to family, which constitutes a nuisance and neighbor dispute.",
+      "confidence": "high"
+    }
+  ],
+  "388": [
+    {
+      "category": "Real Property",
+      "subcategory": "General (Commercial)",
+      "justification": "The dispute involves a commercial property co-ownership buyout, lack of lease, and valuation concerns, which are commercial real estate issues.",
+      "confidence": "high"
+    }
+  ],
+  "389": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a residential landlord seeking to evict a tenant for non-payment and abuse, a classic landlord-tenant dispute despite the dismissed case.",
+      "confidence": "high"
+    }
+  ],
+  "390": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user has a residential contractor who has delayed the project and is seeking payment, raising concerns about contract completion and permit issues.",
+      "confidence": "high"
+    }
+  ],
+  "391": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user hired an unlicensed plumbing contractor who caused property damage, and seeks legal recourse against the contractor's bond, a construction dispute.",
+      "confidence": "high"
+    }
+  ],
+  "392": [
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The user is a residential landlord asking about the legality of refusing a tenant based on occupancy limits for a small studio, a landlord rights question.",
+      "confidence": "high"
+    }
+  ],
+  "393": [
+    {
+      "category": "Real Property",
+      "subcategory": "Construction/Contractors",
+      "justification": "The user paid a contractor for a home renovation, but the work is incomplete and they seek a refund for breach of contract, a construction dispute.",
+      "confidence": "high"
+    }
+  ],
+  "394": [
+    {
+      "category": "Taxation",
+      "subcategory": "Personal Income",
+      "justification": "The user has a large IRS debt from an IRA withdrawal due to fraud and needs help reducing personal income tax liability.",
+      "confidence": "high"
+    }
+  ],
+  "395": [
+    {
+      "category": "Taxation",
+      "subcategory": "Personal Income",
+      "justification": "The user owes back state income taxes from years ago and seeks options for debt forgiveness or resolution, a personal income tax matter.",
+      "confidence": "high"
+    }
+  ],
+  "396": [
+    {
+      "category": "International Law",
+      "subcategory": "Taxation",
+      "justification": "The user owes taxes to Canada from past work abroad and wants to dispute them or remove interest, an international tax dispute.",
+      "confidence": "high"
+    }
+  ],
+  "397": [
+    {
+      "category": "Taxation",
+      "subcategory": "Personal Income",
+      "justification": "The user needs help reviewing past tax documents, correcting potential identity theft on their tax account, and ensuring proper filing for benefits, a personal income tax assistance matter.",
+      "confidence": "high"
+    }
+  ],
+  "398": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The user needs to create a will for their elderly mother, which is a core estate planning service.",
+      "confidence": "high"
+    }
+  ],
+  "399": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Litigation",
+      "justification": "The user alleges a trustee breached fiduciary duty and committed elder financial abuse, potentially leading to trust litigation.",
+      "confidence": "high"
+    }
+  ],
+  "400": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Special Needs/Inc. Cap Trusts",
+      "justification": "The user wants to set up a special needs trust to protect a disabled person's assets while preserving SSI eligibility, exactly matching this subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "401": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The user is a beneficiary of a deceased cousin's retirement account and needs help with the claims process when there is no will, falling under estate administration.",
+      "confidence": "high"
+    }
+  ],
+  "402": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "User wants to set up a trust covering all assets (financial, real estate, other) along with wills and beneficiaries, seeking comprehensive estate planning advice.",
+      "confidence": "high"
+    }
+  ],
+  "403": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "User is considering a transfer on death deed as an estate planning tool and is concerned about the 18-month restriction, indicating a need for advice on transferring property at death.",
+      "confidence": "high"
+    }
+  ],
+  "404": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Medicare/Medicaid Planning",
+      "justification": "The core issue is preventing termination of Medicaid benefits due to asset ownership (the house) and exploring legal strategies like guardianship or asset management to preserve eligibility.",
+      "confidence": "high"
+    },
+    {
+      "category": "Administrative Law",
+      "subcategory": "Medicare/Medicaid",
+      "justification": "User is responding to a notice that Medicaid benefits will end, which is a direct dispute with a government health insurance program over benefit termination.",
+      "confidence": "low"
+    }
+  ],
+  "405": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Power of Attorney",
+      "justification": "User explicitly requests establishment of a durable power of attorney for their parents, fitting squarely within the POA subcategory.",
+      "confidence": "high"
+    }
+  ],
+  "406": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Conservatorship/Guardianship",
+      "justification": "User needs help with a contested guardianship for a 20-year-old daughter, directly matching this subcategory for adult guardianship disputes.",
+      "confidence": "high"
+    }
+  ],
+  "407": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Conservatorship/Guardianship",
+      "justification": "User is acting as POA and seeks guidance on limits and next steps for managing an aging father's finances to prevent homelessness, which often leads to guardianship or conservatorship proceedings.",
+      "confidence": "high"
+    }
+  ],
+  "408": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Litigation",
+      "justification": "User alleges trustee misconduct, self-dealing, and breach of fiduciary duty regarding a living trust, and as a beneficiary and backup trustee, seeks legal recourse—likely trust litigation to compel accounting or remove the trustee.",
+      "confidence": "high"
+    }
+  ],
+  "409": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Litigation",
+      "justification": "Co-trustee deadlock over trust administration, alleged fiduciary negligence, and bias suggest a trust dispute that may require court intervention, fitting trust and estate litigation.",
+      "confidence": "high"
+    }
+  ],
+  "410": [
+    {
+      "category": "Family Law",
+      "subcategory": "Guardianship(minor)",
+      "justification": "User seeks guardianship of a great nephew, a minor with special needs, because the mother is unstable; the child has been living with them, fitting minor guardianship proceedings.",
+      "confidence": "high"
+    }
+  ],
+  "411": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Elder Abuse",
+      "justification": "User describes being accused of elder abuse and theft after acting as POA and moving a mother with dementia; the situation involves financial exploitation claims and potential challenge to a POA replacement.",
+      "confidence": "high"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Conservatorship/Guardianship",
+      "justification": "The mother's dementia and inability to make decisions could necessitate a guardianship proceeding, especially with contested authority over her care and finances.",
+      "confidence": "medium"
+    }
+  ],
+  "412": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Probate",
+      "justification": "After grandparents' deaths, the house went to auction and a surplus may exist; claiming that surplus typically occurs through probate or estate administration proceedings.",
+      "confidence": "high"
+    }
+  ],
+  "413": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Litigation",
+      "justification": "User believes a will was fraudulently created and executed and wants to file an objection, which is a will contest in probate court, a form of estate litigation.",
+      "confidence": "high"
+    }
+  ],
+  "414": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Conservatorship/Guardianship",
+      "justification": "User holds California conservatorship papers and needs to register/notify in Oregon, seeking to transfer a foreign conservatorship order—a purely procedural conservatorship matter.",
+      "confidence": "high"
+    }
+  ],
+  "415": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Probate",
+      "justification": "Mother died without a will, the estate exceeds the small estate limit, and user needs to settle it and distribute to siblings, which requires formal probate administration.",
+      "confidence": "high"
+    }
+  ],
+  "416": [
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "User wants end-of-life documents, a will, and a plan to pass property to children; a comprehensive estate planning need.",
+      "confidence": "high"
+    }
+  ],
+  "417": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "Hiding from law enforcement and an eviction related to criminal charges suggests a criminal case, but without details on charges; a general criminal matter. Confidence is low due to sparse info, but best fit is a misdemeanor-level offense unless more is known.",
+      "confidence": "low"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Lessor Felony",
+      "justification": "If charges are serious enough to prompt hiding, they could be felony-level; however, no specifics are given, so this is a less probable alternative.",
+      "confidence": "low"
+    }
+  ],
+  "418": [
+    {
+      "category": "Criminal Law",
+      "subcategory": "Major Felony",
+      "justification": "Altercation leading to assault (knocking one out, hitting with vehicle) likely constitutes serious felonies such as assault, possibly with a vehicle as a weapon, and fleeing from law enforcement.",
+      "confidence": "high"
+    }
+  ],
+  "419": [
+    {
+      "category": "Family Law",
+      "subcategory": "General (Divorce/Separation)",
+      "justification": "User lists 'Divorce,' indicating a dissolution of marriage, which is the core family law issue.",
+      "confidence": "high"
+    },
+    {
+      "category": "Real Property",
+      "subcategory": "Landlord Residential",
+      "justification": "The eviction suggests a landlord-tenant dispute from the landlord side, but without clarity on whether user is landlord or tenant, this is a plausible area.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Misdemeanor",
+      "justification": "A criminal case is listed, but without details; a misdemeanor is the default assumption for an unspecified charge.",
+      "confidence": "low"
+    }
+  ],
+  "420": [
+    {
+      "category": "Labor & Employment",
+      "subcategory": "Wrongful Discharge",
+      "justification": "User was fired after a workplace injury (broken foot from customer action), which may be retaliation for a workers' comp claim or protected activity, fitting wrongful termination.",
+      "confidence": "high"
+    },
+    {
+      "category": "Workers' Comp",
+      "subcategory": "State",
+      "justification": "The broken foot occurred at work from a customer's act, making it a potential state workers' compensation claim for medical and wage benefits.",
+      "confidence": "high"
+    },
+    {
+      "category": "International Law",
+      "subcategory": "Deportation",
+      "justification": "User asks 'Will I be deported?', indicating immigration concerns possibly triggered by termination or injury, raising deportation questions.",
+      "confidence": "medium"
+    }
+  ],
+  "421": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Personal Injury",
+      "justification": "User wants sister to pay for hitting them with a car, which is a personal injury claim for damages from a car accident.",
+      "confidence": "high"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "Elder Abuse",
+      "justification": "Sister's guardianship/POA over parents and removal of user as beneficiary raises concerns of financial exploitation, potentially elder abuse.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Criminal Law",
+      "subcategory": "Traffic Offenses",
+      "justification": "A disputed parking ticket is a minor traffic offense, fitting the traffic offenses subcategory for non-criminal violations.",
+      "confidence": "high"
+    }
+  ],
+  "422": [
+    {
+      "category": "Family Law",
+      "subcategory": "Restraining Orders",
+      "justification": "The user fears harm from a former intimate partner and mentions repeated unwanted contact, which aligns with seeking protection under a Family Abuse Prevention Act order.",
+      "confidence": "high"
+    },
+    {
+      "category": "Administrative Law",
+      "subcategory": "DMV (Non-Criminal)",
+      "justification": "The denial of a driver's license because a birth certificate was deemed invalid is a bureaucratic dispute with a government agency about identification documents.",
+      "confidence": "medium"
+    }
+  ],
+  "423": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "General (Local/Municipal)",
+      "justification": "The user wants to address a city council decision about funding for a local after-school program, which is a dispute with a municipal government body.",
+      "confidence": "medium"
+    }
+  ],
+  "424": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Military/Veterans",
+      "justification": "The cessation of veteran benefits indicates a dispute with the Department of Veterans Affairs over the user's entitlements.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Administrative Law",
+      "subcategory": "Professional Licensing",
+      "justification": "The revocation of a nursing license is a state-level action affecting the right to work in a licensed profession.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Wills & Trusts",
+      "subcategory": "General (Wills, Trusts, Estates)",
+      "justification": "The user expresses a desire to draft a will in anticipation of death, which requires estate planning assistance.",
+      "confidence": "medium"
+    }
+  ],
+  "425": [
+    {
+      "category": "Family Law",
+      "subcategory": "Child Support/Modification",
+      "justification": "The user wants to adjust an existing child support order due to a change in income, which is a core modification issue.",
+      "confidence": "high"
+    }
+  ],
+  "426": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Medicare/Medicaid",
+      "justification": "CareOregon is a Medicaid managed-care organization, and the termination of a provider contract affects services for Medicaid clients, making this a dispute involving a government health insurance program.",
+      "confidence": "high"
+    }
+  ],
+  "427": [
+    {
+      "category": "Business & Corporate",
+      "subcategory": "Securities",
+      "justification": "The user is concerned about the value of their stock and wants to sell it, which involves financial instruments and is a securities-related matter from the individual investor's perspective.",
+      "confidence": "low"
+    }
+  ],
+  "428": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Malpractice-Legal",
+      "justification": "The user explicitly states they are looking for a malpractice lawyer because their attorney's perceived resemblance to another person allegedly caused a mental health crisis and disrupted their legal case.",
+      "confidence": "high"
+    }
+  ],
+  "429": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "Schools - Special Needs Edu.",
+      "justification": "Past experiences affecting mental health and causing trouble at school may indicate a need for special education services or an IEP, though the description is sparse.",
+      "confidence": "low"
+    }
+  ],
+  "430": [
+    {
+      "category": "General Litigation",
+      "subcategory": "Online Harassment/Doxing/Bullying",
+      "justification": "The user describes being offended by a CNN segment, threatened after complaining, and now followed by a car, which could constitute a pattern of harassment, though the connection to online behavior is unclear.",
+      "confidence": "low"
+    }
+  ],
+  "431": [
+    {
+      "category": "International Law",
+      "subcategory": "Deportation",
+      "justification": "The user's uncle is facing deportation as a result of a criminal offense involving guns, which directly matches removal proceedings due to a criminal conviction.",
+      "confidence": "high"
+    }
+  ],
+  "432": [
+    {
+      "category": "Administrative Law",
+      "subcategory": "General (Local/Municipal)",
+      "justification": "The user wants to address a city council decision about funding for a local after-school program, which is a dispute with a municipal government body.",
+      "confidence": "medium"
+    }
+  ]
+}
