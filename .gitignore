@@ -1,0 +1,44 @@
+# Private and intermediate source data
+/interim_not_to_commit/
+
+# This is a checkout of an existing public repository; keep it out of this repo.
+/privacy-filter/
+
+# Python environments, caches, and generated metadata
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Logs and local application state
+*.log
+*.tmp
+*.bak
+.cache/
+cache/
+.promptfoo/
+.serverless/
+
+# Operating-system and spreadsheet lock/metadata files
+.DS_Store
+Thumbs.db
+~$*.xlsx
+*:Zone.Identifier
+
+# Data files are private by default. Add public data explicitly when needed.
+*.csv
+*.json
+*.jsonl
+*.parquet
+*.pkl
+*.pickle
+*.sqlite
+*.sqlite3
+*.db
+*.xlsx
+!redaction_reviewed_v5_clean.xlsx
