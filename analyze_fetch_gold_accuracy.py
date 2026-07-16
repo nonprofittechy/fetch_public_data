@@ -307,12 +307,28 @@ def cross_run(rows_by_run: dict[str, list[dict]]) -> dict:
     exact_any_stable = sum(len({bool(row["any_exact_sublabel"]) for row in values.values()}) == 1 for values in complete)
     all_exact_every_run = sum(all(row["all_exact_sublabels"] for row in values.values()) for values in complete)
     any_exact_every_run = sum(all(row["any_exact_sublabel"] for row in values.values()) for values in complete)
+    prediction_jaccards = []
+    identical_predictions = 0
+    for values in complete:
+        prediction_sets = [
+            {canonical_label(label) for label in row["predicted_labels"].split(" || ") if label}
+            for row in values.values()
+        ]
+        pair_scores = []
+        for left_index in range(len(prediction_sets)):
+            for right_index in range(left_index + 1, len(prediction_sets)):
+                left, right = prediction_sets[left_index], prediction_sets[right_index]
+                pair_scores.append(len(left & right) / len(left | right) if left | right else 1.0)
+        prediction_jaccards.append(mean(pair_scores))
+        identical_predictions += len({frozenset(labels) for labels in prediction_sets}) == 1
     return {
         "complete_scenarios": len(complete),
         "outcome_tier_stable_pct": pct(safe_div(tier_stable, len(complete))),
         "any_exact_status_stable_pct": pct(safe_div(exact_any_stable, len(complete))),
         "all_exact_in_every_run_pct": pct(safe_div(all_exact_every_run, len(complete))),
         "any_exact_in_every_run_pct": pct(safe_div(any_exact_every_run, len(complete))),
+        "identical_predicted_set_pct": pct(safe_div(identical_predictions, len(complete))),
+        "mean_predicted_set_jaccard_pct": pct(mean(prediction_jaccards)),
     }
 
 
@@ -370,6 +386,7 @@ def main() -> None:
         "gold_scenarios": len(gold),
         "run_metadata": run_metadata,
         "run_summaries": summaries,
+        "pooled_summary": summarize(all_rows),
         "cross_run": cross_run(rows_by_run),
         "taxonomy_compatibility": {
             "one_to_one_aliases": LABEL_ALIASES,
@@ -388,6 +405,10 @@ def main() -> None:
         # A scenario can contribute to multiple categories; this is intentional.
         for item in grouped(rows, lambda row: sorted({display_category(label) for label in row["gold_labels"].split(" || ")})):
             category_rows.append({"run": name, **item})
+    for item in grouped(all_rows, lambda row: [row["gold_label_count"]]):
+        gold_count_rows.append({"run": "pooled", **item})
+    for item in grouped(all_rows, lambda row: sorted({display_category(label) for label in row["gold_labels"].split(" || ")})):
+        category_rows.append({"run": "pooled", **item})
     write_csv(args.output_dir / "metrics_by_gold_label_count.csv", gold_count_rows)
     write_csv(args.output_dir / "metrics_by_top_level_category.csv", category_rows)
     print(json.dumps(report, indent=2))
