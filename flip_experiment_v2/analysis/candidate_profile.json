@@ -1,14 +1,14 @@
 {
-  "total_candidates": 484,
-  "families": 46,
+  "total_candidates": 496,
+  "families": 48,
   "by_boundary": {
     "benefit_agency": 22,
     "business_entity_specifics": 10,
     "capacity_and_protection": 10,
     "charge_severity": 28,
     "consumer_service_route": 8,
-    "creditor_judgment_bankruptcy": 12,
-    "criminal_posture": 12,
+    "creditor_judgment_bankruptcy": 18,
+    "criminal_posture": 18,
     "custody_safety": 24,
     "debt_posture": 23,
     "discharge_reason": 28,
@@ -35,20 +35,20 @@
     "wc_system_identity": 6
   },
   "by_direction": {
-    "AtoB": 383,
-    "BtoA": 101
+    "AtoB": 394,
+    "BtoA": 102
   },
   "by_flip_type": {
-    "routing_disambiguation": 368,
+    "routing_disambiguation": 380,
     "label_change": 116
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 276,
+    "M3_missing_procedural_or_institutional_fact": 288,
     "M2_specific_vs_general_fallback": 92,
     "M4_competing_framings_of_one_dispute": 36,
     "M1_core_vs_secondary_issue": 80
   },
-  "safety_sensitive_rows": 57,
+  "safety_sensitive_rows": 58,
   "opening_query_words": {
     "min": 10,
     "max": 24,
