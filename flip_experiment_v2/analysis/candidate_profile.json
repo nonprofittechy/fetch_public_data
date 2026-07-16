@@ -1,6 +1,6 @@
 {
-  "total_candidates": 508,
-  "families": 50,
+  "total_candidates": 528,
+  "families": 53,
   "by_boundary": {
     "benefit_agency": 22,
     "business_entity_specifics": 10,
@@ -12,14 +12,14 @@
     "custody_safety": 24,
     "debt_posture": 23,
     "discharge_reason": 28,
-    "divorce_context": 12,
+    "divorce_context": 20,
     "employment_paper_and_pay": 6,
     "estate_posture": 20,
     "government_defendant": 18,
     "home_loan_posture": 8,
-    "immigration_posture": 8,
+    "immigration_posture": 14,
     "insurance_route": 16,
-    "ip_protection_type": 10,
+    "ip_protection_type": 16,
     "license_action_source": 16,
     "neighbor_dispute_nature": 16,
     "professional_negligence": 18,
@@ -35,24 +35,24 @@
     "wc_system_identity": 6
   },
   "by_direction": {
-    "AtoB": 404,
-    "BtoA": 104
+    "AtoB": 421,
+    "BtoA": 107
   },
   "by_flip_type": {
-    "routing_disambiguation": 392,
+    "routing_disambiguation": 412,
     "label_change": 116
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 294,
+    "M3_missing_procedural_or_institutional_fact": 314,
     "M2_specific_vs_general_fallback": 98,
     "M4_competing_framings_of_one_dispute": 36,
     "M1_core_vs_secondary_issue": 80
   },
-  "safety_sensitive_rows": 58,
+  "safety_sensitive_rows": 64,
   "opening_query_words": {
     "min": 10,
     "max": 24,
-    "mean": 17.21
+    "mean": 17.2
   },
   "generator_model": "claude-fable-5 (Claude Fable 5, Anthropic, via Claude Code)"
 }
