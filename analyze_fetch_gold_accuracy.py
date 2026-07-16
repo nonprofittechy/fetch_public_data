@@ -34,6 +34,7 @@ LABEL_ALIASES = {
     "Business & Corporate > Securities": "Business and Corporate > Securities",
     "Criminal Law > Lessor Felony": "Criminal Law > Lesser Felony",
     "Criminal Law > Post Conviction/ Appeals": "Criminal Law > Post Conviction/Appeals",
+    "Consumer Law > Automobiles/RVs/Mobile Homes": "Consumer Law > Automobiles/RV's/Mobile Homes",
     "Debtor/Creditor > Judgement Collection": "Debtor/Creditor > Judgment Collection",
     "Family Law > Birth Certificate/Name Changes": "Family Law > Birth Certificate/Name Change",
     "Family Law > General (Divorce/Separation)": "Family Law > General (Divorce/Separation etc.)",
@@ -44,6 +45,7 @@ LABEL_ALIASES = {
     "General Litigation > Malpractice-Medical": "General Litigation > Malpractice (Medical)",
     "General Litigation > Online Harassment/Doxing/Bullying": "General Litigation > Online Harrassment/Doxing/Bullying",
     "International Law > Business and Corporate": "International Law > Business And Corporate",
+    "International Law > Gen. Immigration/Visas": "International Law > General Immigration/Visas",
     "Real Property > Government Loans (VA,FHA,Etc.)": "Real Property > Government Loans (VA, FHA, etc.)",
     "Workers' Comp > Third Party litigation": "Workers' Comp > Third Party Litigation",
     "Wills & Trusts > General (Wills, Trusts, Estates)": "Wills & Trusts > General (Wills/Trusts/Estates)",
@@ -53,6 +55,10 @@ LABEL_ALIASES = {
 # represented. A current side-specific child is compatible with the old gold
 # concept; this is reported as a compatibility match, not a literal string match.
 LABEL_EXPANSIONS = {
+    "Labor & Employment > ADA (Disability) Act Issues": {
+        "Labor & Employment > ADA (Disability) Act Issues - Employee",
+        "Labor & Employment > ADA (Disability) Act Issues - Employer",
+    },
     "Labor & Employment > Discrimination": {
         "Labor & Employment > Discrimination - Employee",
         "Labor & Employment > Discrimination - Employer",
@@ -64,6 +70,10 @@ LABEL_EXPANSIONS = {
     "Labor & Employment > FMLA": {
         "Labor & Employment > FMLA - Employee",
         "Labor & Employment > FMLA - Employer",
+    },
+    "Labor & Employment > General": {
+        "Labor & Employment > General - Employee",
+        "Labor & Employment > General - Employer",
     },
     "Labor & Employment > Sexual Harrasment": {
         "Labor & Employment > Sexual Harassment - Employee",
