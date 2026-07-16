@@ -1,7 +1,9 @@
 {
-  "total_candidates": 250,
-  "families": 17,
+  "total_candidates": 284,
+  "families": 20,
   "by_boundary": {
+    "benefit_agency": 14,
+    "capacity_and_protection": 10,
     "charge_severity": 20,
     "creditor_judgment_bankruptcy": 12,
     "criminal_posture": 12,
@@ -12,6 +14,7 @@
     "estate_posture": 12,
     "government_defendant": 12,
     "insurance_route": 10,
+    "ip_protection_type": 10,
     "professional_negligence": 12,
     "protective_order_relationship": 12,
     "small_claims_vs_construction": 20,
@@ -21,16 +24,16 @@
     "wc_state_vs_third_party": 20
   },
   "by_direction": {
-    "AtoB": 192,
-    "BtoA": 58
+    "AtoB": 219,
+    "BtoA": 65
   },
   "by_flip_type": {
-    "routing_disambiguation": 170,
+    "routing_disambiguation": 204,
     "label_change": 80
   },
   "by_mechanism": {
+    "M3_missing_procedural_or_institutional_fact": 164,
     "M4_competing_framings_of_one_dispute": 20,
-    "M3_missing_procedural_or_institutional_fact": 130,
     "M1_core_vs_secondary_issue": 56,
     "M2_specific_vs_general_fallback": 44
   },
@@ -38,7 +41,7 @@
   "opening_query_words": {
     "min": 11,
     "max": 24,
-    "mean": 17.75
+    "mean": 17.6
   },
   "generator_model": "claude-fable-5 (Claude Fable 5, Anthropic, via Claude Code)"
 }

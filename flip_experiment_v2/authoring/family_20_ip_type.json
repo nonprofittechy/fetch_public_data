@@ -101,14 +101,15 @@
       "direction": "AtoB",
       "opening_query": "My small business name is being used by a bigger company and they told ME to stop using it.",
       "initial": "Intellectual Property > Trademark/Copyright",
-      "final": "Intellectual Property > Trademark/Copyright_KEEP",
-      "hidden_fact": "PLACEHOLDER",
-      "fact_as_answer": "PLACEHOLDER",
-      "relevant_question_topic": "PLACEHOLDER",
+      "final": "Intellectual Property > Computer Law & Internet Law",
+      "plausible_initial_labels": "Intellectual Property > Trademark/Copyright || Intellectual Property > Computer Law & Internet Law",
+      "hidden_fact": "Their demand is specifically about my domain name — they filed a UDRP proceeding to take the domain away from me.",
+      "fact_as_answer": "It's my domain they're after — they filed a UDRP proceeding to take the domain itself.",
+      "relevant_question_topic": "whether the fight is over the business name generally or a domain-name proceeding",
       "counterfactual_final": "Intellectual Property > Trademark/Copyright",
-      "counterfactual_hidden_fact": "PLACEHOLDER",
-      "counterfactual_fact_as_answer": "PLACEHOLDER",
-      "vetting_note": "PLACEHOLDER"
+      "counterfactual_hidden_fact": "It's about my storefront sign and product labels — they claim their registered mark covers my name.",
+      "counterfactual_fact_as_answer": "It's my sign and product labels — they say their registered trademark covers my name.",
+      "vetting_note": "UDRP domain proceedings have a dedicated internet-law route; same cease-and-desist framing either way."
     },
     {
       "suffix": "08",
