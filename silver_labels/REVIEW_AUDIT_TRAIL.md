@@ -16,6 +16,8 @@ This is the canonical index of every classification, review, audit, and prioriti
 - The persistent review app is live at <https://fetch-silver-label-review.fly.dev/> in the Lemma Fly organization. It uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored as Fly secrets.
 - Human adjudication is not yet complete. Audit and priority fields are recommendations; they have not overwritten the Stage 04 primary labels.
 - The original `redaction_reviewed_v5_clean.xlsx` remains unchanged.
+- Stage 11 now provides consensus labels for all 431 source-row identities plus a strictly deduplicated 374-description version. It collapses repeated human review by description, uses both human decisions and independent-model corroboration, permits up to four labels, and records per-row provenance. See [`../gold_labels_consensus_20260716/`](../gold_labels_consensus_20260716/).
+- Five-rater analysis on 114 unique human-reviewed scenarios found human exact-set agreement of 61/114 (53.5%), mean human Jaccard 0.749, label-count ICC(A,1) 0.328 across all five raters, and conditional exact-pair incidence ICC(A,1) 0.279. Broad-category agreement was higher at 0.390. Full findings: [`../gold_labels_consensus_20260716/FINDINGS.md`](../gold_labels_consensus_20260716/FINDINGS.md).
 
 ## Shared classification rules
 
@@ -37,6 +39,15 @@ Keyword and SPOT classification were not used. Credentials were loaded from the 
 | 08 | Focused two-label audit | Fresh Azure `gpt-5.2`; current primary supplied for audit; max 2 labels | 90 two-label rows; order-insensitive assessment and 132-row review queue | [`08_gpt52_two_label_audit/`](08_gpt52_two_label_audit/) |
 | 09 | Human-review prioritization | Current Codex/GPT-5 internal context review; no external API | Queue divided into 52 P1, 14 P2, and 66 P3 rows | [`09_internal_priority_review/`](09_internal_priority_review/) |
 | 10 | Cap-free focused adjudication and human interface | Current Codex/GPT-5 context; no external API; deterministic artifact builder | Seven 3–4 issue rows expanded; four human slots; persistent review app | [`10_four_label_human_review/`](10_four_label_human_review/), [`../human_review_app/`](../human_review_app/) |
+| 11 | Full consensus gold reconstruction and reliability analysis | Two human raters, three independent LLM passes, deterministic conservative consensus | 431 row-compatible results; 374 unique descriptions; 114 unique human-reviewed scenarios; ICC and qualitative disagreement analysis | [`../gold_labels_consensus_20260716/`](../gold_labels_consensus_20260716/) |
+
+## Stage 11: consensus gold labels and five-rater analysis
+
+The raw export contains 267 review records and no duplicate `(source row, reviewer)` keys. The apparent repetition came from the source: 57 pairs share an exact problem description, and 18 descriptions were actually reviewed under both aliases. Consensus is computed once per description, using the latest eligible decision from each human, and then mapped consistently to all aliases. This produces both a 431-row compatibility file and a no-duplicate 374-description file.
+
+For human-reviewed disagreements, shared human labels are retained; a label selected by one human requires corroboration from at least two of GPT-5.2, Gemini 3.1 Pro, and DeepSeek V4. Unreviewed rows retain the Stage 04 primary plus exact pairs independently supported by at least two models. The result contains 239 one-label, 124 two-label, 9 three-label, and 2 four-label unique scenarios; no set required truncation beyond four.
+
+Agreement was materially better at broad category than exact subcategory. Across five raters, label-count ICC(A,1) was 0.328 (bootstrap 95% CI 0.216–0.421), conditional exact-pair incidence ICC(A,1) was 0.279, and conditional top-level incidence ICC(A,1) was 0.390. The two humans had 61/114 exact unordered-set matches, mean Jaccard 0.749, and mean label F1 0.818. Disagreements primarily reflected core issue versus secondary issue, narrow versus fallback taxonomy routes, missing party/procedural facts, and competing labels for one dispute. See the [full findings and examples](../gold_labels_consensus_20260716/FINDINGS.md), [machine-readable statistics](../gold_labels_consensus_20260716/rater_agreement_analysis.json), and [53-row disagreement extract](../gold_labels_consensus_20260716/human_disagreements.csv).
 
 ## Stages 01–03: independent model passes
 

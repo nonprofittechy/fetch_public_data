@@ -1,0 +1,28 @@
+{
+  "source_rows": 431,
+  "unique_problem_descriptions": 374,
+  "duplicate_description_groups": 57,
+  "duplicate_description_excess_rows": 57,
+  "raw_human_review_records": 267,
+  "raw_duplicate_row_reviewer_keys": 0,
+  "unique_human_reviewed_scenarios": 114,
+  "human_reviewed_scenarios_with_two_eligible_reviewers": 114,
+  "source_duplicate_groups_touched_by_human_review": 28,
+  "duplicate_descriptions_actually_reviewed_more_than_once": 18,
+  "consensus_sets_truncated_to_four": 0,
+  "label_count_distribution_unique": {
+    "1": 239,
+    "2": 124,
+    "3": 9,
+    "4": 2
+  },
+  "provenance_distribution_unique": {
+    "three_model_plus_internal_consensus": 260,
+    "two_human_exact_consensus": 61,
+    "two_human_model_corroborated_consensus": 53
+  },
+  "outputs": {
+    "row_compatible": "gold_labels_consensus_20260716/gold_labels_consensus_full_431.csv",
+    "deduplicated": "gold_labels_consensus_20260716/gold_labels_consensus_unique.csv"
+  }
+}
