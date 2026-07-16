@@ -1,29 +1,29 @@
 {
-  "total_candidates": 438,
-  "families": 39,
+  "total_candidates": 484,
+  "families": 46,
   "by_boundary": {
-    "benefit_agency": 14,
+    "benefit_agency": 22,
     "business_entity_specifics": 10,
     "capacity_and_protection": 10,
     "charge_severity": 28,
     "consumer_service_route": 8,
     "creditor_judgment_bankruptcy": 12,
     "criminal_posture": 12,
-    "custody_safety": 16,
+    "custody_safety": 24,
     "debt_posture": 23,
     "discharge_reason": 28,
     "divorce_context": 12,
     "employment_paper_and_pay": 6,
     "estate_posture": 20,
-    "government_defendant": 12,
+    "government_defendant": 18,
     "home_loan_posture": 8,
     "immigration_posture": 8,
-    "insurance_route": 10,
+    "insurance_route": 16,
     "ip_protection_type": 10,
-    "license_action_source": 10,
+    "license_action_source": 16,
     "neighbor_dispute_nature": 10,
-    "professional_negligence": 12,
-    "protective_order_relationship": 12,
+    "professional_negligence": 18,
+    "protective_order_relationship": 18,
     "relationship_legal_status": 6,
     "reputation_harm_type": 8,
     "small_claims_vs_construction": 28,
@@ -35,24 +35,24 @@
     "wc_system_identity": 6
   },
   "by_direction": {
-    "AtoB": 345,
-    "BtoA": 93
+    "AtoB": 383,
+    "BtoA": 101
   },
   "by_flip_type": {
-    "routing_disambiguation": 342,
-    "label_change": 96
+    "routing_disambiguation": 368,
+    "label_change": 116
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 250,
-    "M2_specific_vs_general_fallback": 80,
+    "M3_missing_procedural_or_institutional_fact": 276,
+    "M2_specific_vs_general_fallback": 92,
     "M4_competing_framings_of_one_dispute": 36,
-    "M1_core_vs_secondary_issue": 72
+    "M1_core_vs_secondary_issue": 80
   },
-  "safety_sensitive_rows": 42,
+  "safety_sensitive_rows": 57,
   "opening_query_words": {
-    "min": 11,
+    "min": 10,
     "max": 24,
-    "mean": 17.31
+    "mean": 17.2
   },
   "generator_model": "claude-fable-5 (Claude Fable 5, Anthropic, via Claude Code)"
 }
