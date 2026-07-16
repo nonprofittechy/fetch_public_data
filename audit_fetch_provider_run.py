@@ -72,29 +72,32 @@ def main() -> int:
         if match:
             outcomes[(match.group(1), match.group(2).rstrip(":"))] += 1
 
-    # Logging may duplicate exception messages, but each final Results summary
-    # contains exactly one provider-status line. Match final GPT timeouts to the
-    # closest unclaimed GPT start at the configured timeout horizon.
-    timeout_events = []
+    # Each final Results summary contains exactly one provider-status line.
+    # Outer service timeouts are matched at the configured horizon. SDK-level
+    # API exceptions are matched to the most recent unclaimed GPT start; with
+    # bounded Promptfoo concurrency, that is the request whose SDK call ended.
+    exception_events = []
     for line in lines:
-        if " - gpt-5.2: Exception" in line and "timed out after" in line:
-            event = timestamp(line)
-            if not timeout_events or abs((event - timeout_events[-1]).total_seconds()) > 0.1:
-                timeout_events.append(event)
+        if " - gpt-5.2: Exception" in line:
+            exception_events.append((timestamp(line), "timed out after" in line, line.split("Exception -> ", 1)[-1]))
     repair_indexes = []
     repair_details = []
     used = set()
     if order_validated:
-        for event in timeout_events:
-            candidates = sorted(
-                (abs((event - start).total_seconds() - args.timeout_seconds), index, (event - start).total_seconds())
+        for event, is_outer_timeout, message in exception_events:
+            elapsed_candidates = [
+                ((event - start).total_seconds(), index)
                 for index, start in enumerate(starts)
-                if index not in used and args.timeout_seconds - 8 <= (event - start).total_seconds() <= args.timeout_seconds + 12
-            )
+                if index not in used and 0 <= (event - start).total_seconds() <= args.timeout_seconds + 30
+            ]
+            if is_outer_timeout:
+                candidates = sorted((abs(elapsed - args.timeout_seconds), index, elapsed) for elapsed, index in elapsed_candidates)
+            else:
+                candidates = sorted((elapsed, index, elapsed) for elapsed, index in elapsed_candidates)
             if not candidates:
                 continue
             distance, index, elapsed = candidates[0]
-            if distance > 8:
+            if is_outer_timeout and distance > 8:
                 continue
             used.add(index)
             repair_indexes.append(index)
@@ -104,6 +107,8 @@ def main() -> int:
                 "source_row": tests[index].get("source_row", ""),
                 "description_length": expected_lengths[index],
                 "observed_elapsed_seconds": round(elapsed, 3),
+                "match_rule": "configured_timeout_horizon" if is_outer_timeout else "most_recent_unclaimed_start",
+                "exception": message,
                 "problem_description": tests[index]["problem_description"],
             })
 
@@ -121,9 +126,9 @@ def main() -> int:
         "gpt_start_rows": len(starts),
         "gpt_start_order_validated_against_csv": order_validated,
         "provider_final_outcomes": provider_outcomes,
-        "gpt_timeout_events": len(timeout_events),
-        "gpt_timeout_rows_matched": len(repair_details),
-        "gpt_timeout_repair_cases": repair_details,
+        "gpt_exception_events": len(exception_events),
+        "gpt_exception_rows_matched": len(repair_details),
+        "gpt_exception_repair_cases": repair_details,
         "semantic_merge_timeout_log_lines": sum("semantic_merge timed out" in line for line in lines),
         "note": "Transient tracebacks that later succeeded are excluded; counts use final Results summary lines.",
     }
