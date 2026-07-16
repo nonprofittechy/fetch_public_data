@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Build row-compatible and deduplicated consensus labels from Stage 10 review.
 
-The source workbook contains exact duplicate problem descriptions. Consensus is
-therefore computed once per unique description and then mapped back to every
-source row so duplicate aliases cannot receive inconsistent gold labels.
+The source workbook contains exact and whitespace-only duplicate problem
+descriptions. Consensus is therefore computed once per normalized description
+and then mapped back to every source row so aliases cannot receive inconsistent
+gold labels.
 """
 
 from __future__ import annotations
@@ -11,6 +12,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime
@@ -42,6 +44,11 @@ class HumanDecision:
     labels: frozenset[Pair]
     status: str
     updated_at: str
+
+
+def normalize_description(value: str) -> str:
+    """Collapse formatting-only whitespace differences without changing words."""
+    return re.sub(r"\s+", " ", value.strip())
 
 
 def parse_args() -> argparse.Namespace:
@@ -76,7 +83,7 @@ def load_human_decisions(valid_pairs: set[Pair]) -> tuple[list[dict[str, str]], 
         if unknown:
             raise ValueError(f"review row {source_row} contains invalid pairs: {sorted(unknown)}")
         if reviewer in HUMAN_REVIEWERS and row["status"] in ELIGIBLE_STATUSES and labels:
-            candidates[(row["problem_description"], reviewer)].append(
+            candidates[(normalize_description(row["problem_description"]), reviewer)].append(
                 HumanDecision(reviewer, source_row, labels, row["status"], row["updated_at"])
             )
 
@@ -235,7 +242,7 @@ def main() -> int:
 
     source_by_text: dict[str, list[int]] = defaultdict(list)
     for source_row in range(2, len(source_rows) + 1):
-        source_by_text[source_rows[source_row - 1]["A"]].append(source_row)
+        source_by_text[normalize_description(source_rows[source_row - 1]["A"])].append(source_row)
 
     records: list[dict[str, object]] = []
     truncated = 0
@@ -266,7 +273,7 @@ def main() -> int:
             "scenario_id": f"gold-{index:04d}",
             "canonical_source_row": canonical,
             "source_rows": aliases,
-            "problem_description": text,
+            "problem_description": normalize_description(source_rows[canonical - 1]["A"]),
             "labels": labels,
             "provenance": provenance,
             "human_reviewers": sorted(human_decisions),
@@ -302,7 +309,7 @@ def main() -> int:
         ),
         "duplicate_descriptions_actually_reviewed_more_than_once": sum(
             len({int(row["row_number"]) for row in raw_reviews
-                 if row["problem_description"] == text and row["reviewer_key"].lower() in HUMAN_REVIEWERS}) > 1
+                 if normalize_description(row["problem_description"]) == text and row["reviewer_key"].lower() in HUMAN_REVIEWERS}) > 1
             for text in human_by_text
         ),
         "consensus_sets_truncated_to_four": truncated,

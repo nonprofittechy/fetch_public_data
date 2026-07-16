@@ -2,7 +2,7 @@
 
 ## Evaluation population
 
-The primary evaluation population is the 374-row strictly deduplicated consensus file, `gold_labels_consensus_unique.csv`. Each unique problem description is evaluated once. The 431-row row-compatible file is retained for source-row traceability but is not used as though repeated descriptions were independent observations.
+The primary evaluation population is the 373-row strictly deduplicated consensus file, `gold_labels_consensus_unique.csv`. Each description is normalized by collapsing formatting-only whitespace and evaluated once. The 431-row row-compatible file is retained for source-row traceability but is not used as though repeated descriptions were independent observations.
 
 The earlier full Promptfoo run used the inherited `followup_questions_only.csv` suite (416 rows). Only 240 descriptions overlap the consensus gold population. It is therefore retained as a legacy follow-up-question-quality baseline, not treated as the primary gold-label accuracy run.
 
@@ -16,7 +16,7 @@ Each primary replicate runs the existing FETCH Promptfoo provider in vote mode w
 - keyword classifier (`keyword`)
 - SPOT classifier (`spot`)
 
-Both Promptfoo's cache and the provider's internal cache are disabled. Classifier and semantic-merge timeouts are 60 seconds. The two replicates are independent API executions over the same 374 gold scenarios.
+Both Promptfoo's cache and the provider's internal cache are disabled. Classifier and semantic-merge timeouts are 60 seconds. The two replicates are independent API executions over the same 373 gold scenarios.
 
 ## Taxonomy compatibility
 
@@ -51,4 +51,4 @@ python analyze_fetch_gold_accuracy.py \
   --output-dir gold_labels_consensus_20260716/fetch_gold_accuracy
 ```
 
-The scorer rejects duplicate gold descriptions and duplicate Promptfoo results for a scenario. It emits row-level results, by-label-count and by-category tables, a machine-readable summary, and cross-run stability statistics.
+The scorer rejects duplicate normalized gold descriptions. If a run was launched from the superseded 374-row exact-string-deduplicated file, it deterministically retains the first occurrence of the one whitespace-only alias and discloses the collapsed run record in metadata. It emits row-level results, by-label-count and by-category tables, a machine-readable summary, and cross-run stability statistics.

@@ -2,10 +2,16 @@ from __future__ import annotations
 
 import unittest
 
-from build_gold_consensus import HumanDecision, select_consensus
+from build_gold_consensus import HumanDecision, normalize_description, select_consensus
 
 
 class ConsensusRuleTest(unittest.TestCase):
+    def test_description_normalization_collapses_formatting_whitespace(self) -> None:
+        self.assertEqual(
+            normalize_description("  the same\n scenario\ttext  "),
+            "the same scenario text",
+        )
+
     def test_exact_human_consensus_controls_reviewed_scenario(self) -> None:
         a = ("A", "one")
         b = ("B", "two")

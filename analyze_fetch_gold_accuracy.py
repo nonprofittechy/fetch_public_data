@@ -335,6 +335,7 @@ def main() -> None:
         eval_id, records = load_promptfoo(Path(raw_path))
         scored = []
         unmatched = []
+        duplicate_records = []
         seen = set()
         for record in records:
             description = norm_text((record.get("vars") or {}).get("problem_description", ""))
@@ -343,7 +344,11 @@ def main() -> None:
                 continue
             scenario_id = gold[description].get("scenario_id", description)
             if scenario_id in seen:
-                raise ValueError(f"Duplicate Promptfoo result for {name}: {scenario_id}")
+                # A run launched from an older exact-string-deduplicated CSV can
+                # contain the one whitespace-only alias. Keep the canonical
+                # first occurrence and disclose the collapsed result.
+                duplicate_records.append(scenario_id)
+                continue
             seen.add(scenario_id)
             scored.append(score_record(name, record, gold[description]))
         rows_by_run[name] = scored
@@ -353,6 +358,8 @@ def main() -> None:
             "raw_records": len(records),
             "matched_gold_records": len(scored),
             "unmatched_run_records": len(unmatched),
+            "collapsed_duplicate_run_records": len(duplicate_records),
+            "collapsed_duplicate_scenario_ids": duplicate_records,
             "missing_gold_records": len(gold) - len(scored),
         }
         unmatched_by_run[name] = unmatched
