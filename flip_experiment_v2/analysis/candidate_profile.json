@@ -1,6 +1,6 @@
 {
-  "total_candidates": 680,
-  "families": 75,
+  "total_candidates": 692,
+  "families": 77,
   "by_boundary": {
     "benefit_agency": 30,
     "business_entity_specifics": 16,
@@ -24,8 +24,8 @@
     "land_taking_posture": 6,
     "license_action_source": 16,
     "neighbor_dispute_nature": 16,
-    "professional_negligence": 18,
-    "protective_order_relationship": 18,
+    "professional_negligence": 24,
+    "protective_order_relationship": 24,
     "relationship_legal_status": 12,
     "reputation_harm_type": 14,
     "small_claims_vs_construction": 38,
@@ -37,20 +37,20 @@
     "wc_system_identity": 10
   },
   "by_direction": {
-    "AtoB": 551,
-    "BtoA": 129
+    "AtoB": 560,
+    "BtoA": 132
   },
   "by_flip_type": {
-    "routing_disambiguation": 534,
-    "label_change": 146
+    "routing_disambiguation": 540,
+    "label_change": 152
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 392,
-    "M2_specific_vs_general_fallback": 134,
+    "M3_missing_procedural_or_institutional_fact": 398,
+    "M2_specific_vs_general_fallback": 140,
     "M4_competing_framings_of_one_dispute": 50,
     "M1_core_vs_secondary_issue": 104
   },
-  "safety_sensitive_rows": 75,
+  "safety_sensitive_rows": 82,
   "opening_query_words": {
     "min": 10,
     "max": 24,
