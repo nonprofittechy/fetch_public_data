@@ -78,8 +78,12 @@ def main() -> int:
     # bounded Promptfoo concurrency, that is the request whose SDK call ended.
     exception_events = []
     for line in lines:
-        if " - gpt-5.2: Exception" in line:
-            exception_events.append((timestamp(line), "timed out after" in line, line.split("Exception -> ", 1)[-1]))
+        if " - gpt-5.2: Exception" in line or " - gpt-5.2: error:" in line:
+            if "Exception -> " in line:
+                message = line.split("Exception -> ", 1)[-1]
+            else:
+                message = line.split(" - gpt-5.2: ", 1)[-1]
+            exception_events.append((timestamp(line), "timed out after" in line, message))
     repair_indexes = []
     repair_details = []
     used = set()

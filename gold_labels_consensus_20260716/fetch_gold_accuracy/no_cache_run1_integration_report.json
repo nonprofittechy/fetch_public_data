@@ -1,0 +1,21 @@
+{
+  "baseline_eval_id": "eval-Fzo-2026-07-16T19:59:44",
+  "repair_eval_id": "eval-dT9-2026-07-17T01:00:49",
+  "records": 374,
+  "replaced_records": 28,
+  "repaired_rows_pass_before": 11,
+  "repaired_rows_pass_after": 8,
+  "pass_flips": {
+    "fail_to_pass": 3,
+    "pass_to_fail": 6
+  },
+  "integrated_pass_count": 96,
+  "integrated_fail_count": 278,
+  "integrated_pass_rate": 0.25668449197860965,
+  "sha256": {
+    "baseline_raw": "cbc96c21ffcd301b6bb72cee1921479ed15c2307d263c123210d3a0bf09b366b",
+    "repair": "bc55783155d8de013965f67ff6759bc33c0ba08ce4cbf342e6b0bfb2db304af0",
+    "integrated": "4489fe454bdfb830d88315c53bf6f8aa8d5633345eb0a615fe908209bc15099f"
+  },
+  "output": "gold_labels_consensus_20260716/fetch_gold_accuracy/no_cache_run1_integrated.json"
+}
