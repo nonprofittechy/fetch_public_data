@@ -222,3 +222,7 @@ Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fl
 | `1433ba9` | Validated app-to-repository human gold merge workflow and production E2E record |
 
 Future review or label-changing commits should be appended here and linked to their stage documentation.
+
+## 2026-07-16 completion addendum
+
+The final normalized duplicate audit found 373 unique scenarios among 431 source rows (57 exact-text duplicate pairs and one additional whitespace-only pair). Two repaired, cache-disabled FETCH runs over the complete unique gold population retrieved at least one exact sublabel in 95.3% of 746 pooled scenario-run observations, all gold sublabels in 81.4%, and at least one correct top-level category in 99.2%. The paper-ready top tables, qualitative misses, row-level results, provider audits, and reproduction details are in [`../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md) and its companion [`README.md`](../gold_labels_consensus_20260716/fetch_gold_accuracy/README.md). The requested supplemental ICC results are preserved separately in [`../gold_labels_consensus_20260716/ICC_ANALYSIS.md`](../gold_labels_consensus_20260716/ICC_ANALYSIS.md).
