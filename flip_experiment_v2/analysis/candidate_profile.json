@@ -1,15 +1,15 @@
 {
-  "total_candidates": 821,
-  "families": 99,
+  "total_candidates": 833,
+  "families": 101,
   "by_boundary": {
-    "benefit_agency": 30,
+    "benefit_agency": 36,
     "business_entity_specifics": 22,
     "capacity_and_protection": 22,
     "charge_severity": 36,
     "consumer_service_route": 20,
     "creditor_judgment_bankruptcy": 24,
     "criminal_posture": 24,
-    "custody_safety": 32,
+    "custody_safety": 38,
     "debt_posture": 37,
     "discharge_reason": 44,
     "divorce_context": 26,
@@ -37,24 +37,24 @@
     "wc_system_identity": 10
   },
   "by_direction": {
-    "AtoB": 674,
-    "BtoA": 147
+    "AtoB": 685,
+    "BtoA": 148
   },
   "by_flip_type": {
-    "routing_disambiguation": 657,
-    "label_change": 164
+    "routing_disambiguation": 663,
+    "label_change": 170
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 488,
+    "M3_missing_procedural_or_institutional_fact": 494,
     "M2_specific_vs_general_fallback": 161,
     "M4_competing_framings_of_one_dispute": 56,
-    "M1_core_vs_secondary_issue": 116
+    "M1_core_vs_secondary_issue": 122
   },
-  "safety_sensitive_rows": 90,
+  "safety_sensitive_rows": 96,
   "opening_query_words": {
     "min": 10,
     "max": 24,
-    "mean": 17.06
+    "mean": 17.04
   },
   "generator_model": "claude-fable-5 (Claude Fable 5, Anthropic, via Claude Code)"
 }
