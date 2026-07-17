@@ -1,0 +1,221 @@
+{
+  "schema": "fetch_gold_accuracy_v1",
+  "gold_scenarios": 373,
+  "run_metadata": {
+    "run1": {
+      "eval_id": "eval-Fzo-2026-07-16T19:59:44",
+      "raw_records": 374,
+      "matched_gold_records": 373,
+      "unmatched_run_records": 0,
+      "collapsed_duplicate_run_records": 1,
+      "collapsed_duplicate_scenario_ids": [
+        "gold-0047"
+      ],
+      "missing_gold_records": 0
+    },
+    "run2": {
+      "eval_id": "eval-lB2-2026-07-17T01:07:40",
+      "raw_records": 373,
+      "matched_gold_records": 373,
+      "unmatched_run_records": 0,
+      "collapsed_duplicate_run_records": 0,
+      "collapsed_duplicate_scenario_ids": [],
+      "missing_gold_records": 0
+    }
+  },
+  "run_summaries": {
+    "run1": {
+      "scenarios": 373,
+      "provider_error_scenarios": 0,
+      "outcome_tiers": {
+        "all_exact_sublabels": {
+          "n": 300,
+          "pct": 80.43
+        },
+        "some_exact_sublabels": {
+          "n": 54,
+          "pct": 14.48
+        },
+        "top_level_only": {
+          "n": 15,
+          "pct": 4.02
+        },
+        "no_correct_category": {
+          "n": 4,
+          "pct": 1.07
+        }
+      },
+      "any_exact_sublabel_pct": 94.91,
+      "all_exact_sublabels_pct": 80.43,
+      "strict_exact_set_pct": 10.72,
+      "any_correct_top_level_pct": 98.93,
+      "all_correct_top_levels_pct": 95.71,
+      "mean_exact_gold_coverage_pct": 87.67,
+      "mean_graded_retrieval_score_pct": 92.56,
+      "micro_exact_precision_pct": 45.76,
+      "micro_exact_recall_pct": 84.07,
+      "micro_exact_f1_pct": 59.26,
+      "gold_label_instances": 521,
+      "exact_gold_label_hits": 438,
+      "category_only_gold_label_hits": 67
+    },
+    "run2": {
+      "scenarios": 373,
+      "provider_error_scenarios": 0,
+      "outcome_tiers": {
+        "all_exact_sublabels": {
+          "n": 307,
+          "pct": 82.31
+        },
+        "some_exact_sublabels": {
+          "n": 50,
+          "pct": 13.4
+        },
+        "top_level_only": {
+          "n": 14,
+          "pct": 3.75
+        },
+        "no_correct_category": {
+          "n": 2,
+          "pct": 0.54
+        }
+      },
+      "any_exact_sublabel_pct": 95.71,
+      "all_exact_sublabels_pct": 82.31,
+      "strict_exact_set_pct": 10.19,
+      "any_correct_top_level_pct": 99.46,
+      "all_correct_top_levels_pct": 95.98,
+      "mean_exact_gold_coverage_pct": 89.05,
+      "mean_graded_retrieval_score_pct": 93.49,
+      "micro_exact_precision_pct": 46.26,
+      "micro_exact_recall_pct": 85.03,
+      "micro_exact_f1_pct": 59.92,
+      "gold_label_instances": 521,
+      "exact_gold_label_hits": 443,
+      "category_only_gold_label_hits": 62
+    }
+  },
+  "pooled_summary": {
+    "scenarios": 746,
+    "provider_error_scenarios": 0,
+    "outcome_tiers": {
+      "all_exact_sublabels": {
+        "n": 607,
+        "pct": 81.37
+      },
+      "some_exact_sublabels": {
+        "n": 104,
+        "pct": 13.94
+      },
+      "top_level_only": {
+        "n": 29,
+        "pct": 3.89
+      },
+      "no_correct_category": {
+        "n": 6,
+        "pct": 0.8
+      }
+    },
+    "any_exact_sublabel_pct": 95.31,
+    "all_exact_sublabels_pct": 81.37,
+    "strict_exact_set_pct": 10.46,
+    "any_correct_top_level_pct": 99.2,
+    "all_correct_top_levels_pct": 95.84,
+    "mean_exact_gold_coverage_pct": 88.36,
+    "mean_graded_retrieval_score_pct": 93.02,
+    "micro_exact_precision_pct": 46.01,
+    "micro_exact_recall_pct": 84.55,
+    "micro_exact_f1_pct": 59.59,
+    "gold_label_instances": 1042,
+    "exact_gold_label_hits": 881,
+    "category_only_gold_label_hits": 129
+  },
+  "cross_run": {
+    "complete_scenarios": 373,
+    "outcome_tier_stable_pct": 94.91,
+    "any_exact_status_stable_pct": 96.51,
+    "all_exact_in_every_run_pct": 79.36,
+    "any_exact_in_every_run_pct": 93.57,
+    "identical_predicted_set_pct": 73.73,
+    "mean_predicted_set_jaccard_pct": 86.26
+  },
+  "taxonomy_compatibility": {
+    "one_to_one_aliases": {
+      "Administrative Law > SSD (Social Security Disability)": "Administrative Law > Social Security/SSI",
+      "Administrative Law > Schools - Special Needs Edu.": "Administrative Law > Schools \u2014 Special Needs Education",
+      "Business & Corporate > Agriculture/Farm": "Business and Corporate > Agriculture/Farm",
+      "Business & Corporate > Entertainment": "Business and Corporate > Entertainment",
+      "Business & Corporate > Environment": "Business and Corporate > Environmental",
+      "Business & Corporate > General (Contracts, Business, Organization)": "Business and Corporate > General (contracts, entities)",
+      "Business & Corporate > Litigation": "Business and Corporate > Litigation",
+      "Business & Corporate > Marijuana Business": "Business and Corporate > Marijuana Business",
+      "Business & Corporate > Non-Profit": "Business and Corporate > Non-Profit",
+      "Business & Corporate > Restaurant/OLCC": "Business and Corporate > Restaurants/OLCC",
+      "Business & Corporate > Sale of Business": "Business and Corporate > Sale Of Business",
+      "Business & Corporate > Securities": "Business and Corporate > Securities",
+      "Criminal Law > Lessor Felony": "Criminal Law > Lesser Felony",
+      "Criminal Law > Post Conviction/ Appeals": "Criminal Law > Post Conviction/Appeals",
+      "Consumer Law > Automobiles/RVs/Mobile Homes": "Consumer Law > Automobiles/RV's/Mobile Homes",
+      "Debtor/Creditor > Judgement Collection": "Debtor/Creditor > Judgment Collection",
+      "Family Law > Birth Certificate/Name Changes": "Family Law > Birth Certificate/Name Change",
+      "Family Law > General (Divorce/Separation)": "Family Law > General (Divorce/Separation etc.)",
+      "Family Law > Guardianship(minor)": "Family Law > Guardianship",
+      "Family Law > Juvenile/DHS Issue - SCF (CSD) related": "Family Law > Juvenile/DHS Issues",
+      "General Litigation > Malpractice-Dental": "General Litigation > Malpractice (Dental)",
+      "General Litigation > Malpractice-Legal": "General Litigation > Malpractice (Legal)",
+      "General Litigation > Malpractice-Medical": "General Litigation > Malpractice (Medical)",
+      "General Litigation > Online Harassment/Doxing/Bullying": "General Litigation > Online Harrassment/Doxing/Bullying",
+      "International Law > Business and Corporate": "International Law > Business And Corporate",
+      "International Law > Gen. Immigration/Visas": "International Law > General Immigration/Visas",
+      "Real Property > Government Loans (VA,FHA,Etc.)": "Real Property > Government Loans (VA, FHA, etc.)",
+      "Workers' Comp > Third Party litigation": "Workers' Comp > Third Party Litigation",
+      "Wills & Trusts > General (Wills, Trusts, Estates)": "Wills & Trusts > General (Wills/Trusts/Estates)"
+    },
+    "legacy_to_current_expansions": {
+      "Labor & Employment > ADA (Disability) Act Issues": [
+        "Labor & Employment > ADA (Disability) Act Issues - Employee",
+        "Labor & Employment > ADA (Disability) Act Issues - Employer"
+      ],
+      "Labor & Employment > Discrimination": [
+        "Labor & Employment > Discrimination - Employee",
+        "Labor & Employment > Discrimination - Employer"
+      ],
+      "Labor & Employment > Document Review/Severance Packages.": [
+        "Labor & Employment > Document Review/Severance Packages - Employee",
+        "Labor & Employment > Document Review/Severance Packages - Employer"
+      ],
+      "Labor & Employment > FMLA": [
+        "Labor & Employment > FMLA - Employee",
+        "Labor & Employment > FMLA - Employer"
+      ],
+      "Labor & Employment > General": [
+        "Labor & Employment > General - Employee",
+        "Labor & Employment > General - Employer"
+      ],
+      "Labor & Employment > Sexual Harrasment": [
+        "Labor & Employment > Sexual Harassment - Employee",
+        "Labor & Employment > Sexual Harassment - Employer"
+      ],
+      "Labor & Employment > Union Issues": [
+        "Labor & Employment > Union Issues - Employee",
+        "Labor & Employment > Union Issues - Employer"
+      ],
+      "Labor & Employment > Wage and Hour Claims": [
+        "Labor & Employment > Wage and Hour Claims - Employee",
+        "Labor & Employment > Wage and Hour Claims - Employer"
+      ],
+      "Labor & Employment > Whistleblowers": [
+        "Labor & Employment > Whistleblowers - Employee",
+        "Labor & Employment > Whistleblowers - Employer"
+      ],
+      "Labor & Employment > Wrongful Discharge": [
+        "Labor & Employment > Wrongful Discharge - Employee",
+        "Labor & Employment > Wrongful Discharge - Employer"
+      ]
+    }
+  },
+  "unmatched_run_descriptions": {
+    "run1": [],
+    "run2": []
+  }
+}
