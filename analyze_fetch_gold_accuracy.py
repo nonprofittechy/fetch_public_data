@@ -251,6 +251,24 @@ def summarize(rows: list[dict]) -> dict:
     precision = safe_div(pred_hits, pred_total)
     recall = safe_div(exact_hits, gold_total)
     f1 = safe_div(2 * precision * recall, precision + recall) if precision is not None and recall is not None else None
+    scenario_hits_at_1 = 0
+    scenario_hits_at_2 = 0
+    all_gold_within_top_2 = 0
+    gold_hits_at_1 = 0
+    gold_hits_at_2 = 0
+    for row in rows:
+        expected = row["gold_labels"].split(" || ") if row["gold_labels"] else []
+        predicted = row["predicted_labels"].split(" || ") if row["predicted_labels"] else []
+        expected_options = [accepted_labels(label) for label in expected]
+        top_1 = {canonical_label(label) for label in predicted[:1]}
+        top_2 = {canonical_label(label) for label in predicted[:2]}
+        flags_1 = [bool(options & top_1) for options in expected_options]
+        flags_2 = [bool(options & top_2) for options in expected_options]
+        scenario_hits_at_1 += any(flags_1)
+        scenario_hits_at_2 += any(flags_2)
+        all_gold_within_top_2 += bool(flags_2) and all(flags_2)
+        gold_hits_at_1 += sum(flags_1)
+        gold_hits_at_2 += sum(flags_2)
     return {
         "scenarios": n,
         "provider_error_scenarios": sum(bool(row["provider_error"]) for row in rows),
@@ -267,6 +285,11 @@ def summarize(rows: list[dict]) -> dict:
         "micro_exact_precision_pct": pct(precision),
         "micro_exact_recall_pct": pct(recall),
         "micro_exact_f1_pct": pct(f1),
+        "scenario_hits_at_1_pct": pct(safe_div(scenario_hits_at_1, n)),
+        "scenario_hits_at_2_pct": pct(safe_div(scenario_hits_at_2, n)),
+        "all_gold_within_top_2_pct": pct(safe_div(all_gold_within_top_2, n)),
+        "gold_instance_recall_at_1_pct": pct(safe_div(gold_hits_at_1, gold_total)),
+        "gold_instance_recall_at_2_pct": pct(safe_div(gold_hits_at_2, gold_total)),
         "gold_label_instances": gold_total,
         "exact_gold_label_hits": exact_hits,
         "category_only_gold_label_hits": category_only,

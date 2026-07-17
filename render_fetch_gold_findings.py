@@ -69,6 +69,22 @@ def main() -> None:
         f"(**{fmt(pooled['strict_exact_set_pct'])}**) shows that the ensemble commonly adds plausible labels beyond the conservative gold set; "
         "it should not be confused with failure to retrieve the needed route.",
         "",
+        "## Rank-aware retrieval",
+        "",
+        "| Run | Hits@1: any exact | Hits@2: any exact | All gold within top 2 | Gold-instance recall@1 | Gold-instance recall@2 |",
+        "|---|---:|---:|---:|---:|---:|",
+    ])
+    for name, summary in summaries.items():
+        lines.append(
+            f"| {name} | {fmt(summary['scenario_hits_at_1_pct'])} | {fmt(summary['scenario_hits_at_2_pct'])} "
+            f"| {fmt(summary['all_gold_within_top_2_pct'])} | {fmt(summary['gold_instance_recall_at_1_pct'])} "
+            f"| {fmt(summary['gold_instance_recall_at_2_pct'])} |"
+        )
+    lines.extend([
+        "",
+        "Hits@2 asks whether at least one exact gold sublabel appears among the first two ordered FETCH labels. "
+        "The all-gold-within-top-2 measure is stricter for multi-label scenarios, while gold-instance recall@2 pools every expected label instance.",
+        "",
         f"At the label-instance level, exact micro precision / recall / F1 were "
         f"**{fmt(pooled['micro_exact_precision_pct'])} / {fmt(pooled['micro_exact_recall_pct'])} / {fmt(pooled['micro_exact_f1_pct'])}**. "
         "For referral utility, recall and the outcome tiers are the more direct measures: one correct route may be useful even when extra routes are offered.",

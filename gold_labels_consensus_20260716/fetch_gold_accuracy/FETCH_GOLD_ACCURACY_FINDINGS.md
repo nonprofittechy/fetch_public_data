@@ -12,6 +12,16 @@ The primary benchmark contains **373 unique, whitespace-normalized scenarios**. 
 
 Across the two run-observations per scenario, FETCH retrieved at least one exact sublabel in **95.3%** and at least one correct top-level category in **99.2%**. It retrieved every gold sublabel in **81.4%**. The lower strict-set result (**10.5%**) shows that the ensemble commonly adds plausible labels beyond the conservative gold set; it should not be confused with failure to retrieve the needed route.
 
+## Rank-aware retrieval
+
+| Run | Hits@1: any exact | Hits@2: any exact | All gold within top 2 | Gold-instance recall@1 | Gold-instance recall@2 |
+|---|---:|---:|---:|---:|---:|
+| run1 | 85.0% | 92.5% | 76.4% | 61.0% | 80.0% |
+| run2 | 86.3% | 94.1% | 77.8% | 62.0% | 81.2% |
+| pooled | 85.7% | 93.3% | 77.1% | 61.5% | 80.6% |
+
+Hits@2 asks whether at least one exact gold sublabel appears among the first two ordered FETCH labels. The all-gold-within-top-2 measure is stricter for multi-label scenarios, while gold-instance recall@2 pools every expected label instance.
+
 At the label-instance level, exact micro precision / recall / F1 were **46.0% / 84.5% / 59.6%**. For referral utility, recall and the outcome tiers are the more direct measures: one correct route may be useful even when extra routes are offered.
 
 ## Performance by number of gold issues
