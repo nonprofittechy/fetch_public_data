@@ -1,0 +1,571 @@
+story_index,canonical_source_row,source_row_aliases,rater,rater_type,label_count,label_set
+1,4,4;120,gpt52,llm,3,"Business & Corporate > General (Contracts, Business, Organization) || Debtor/Creditor > General (Creditor) || Real Property > Construction/Contractors"
+1,4,4;120,gemini31_pro,llm,3,"Business & Corporate > General (Contracts, Business, Organization) || Debtor/Creditor > General (Creditor) || Real Property > Construction/Contractors"
+1,4,4;120,deepseek_v4,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Real Property > Construction/Contractors"
+1,4,4;120,jackie,human,2,Debtor/Creditor > General (Creditor) || Real Property > Construction/Contractors
+1,4,4;120,qs,human,2,Debtor/Creditor > General (Creditor) || Real Property > Construction/Contractors
+2,8,8;228,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+2,8,8;228,gemini31_pro,llm,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+2,8,8;228,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+2,8,8;228,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+2,8,8;228,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+3,9,9;254,gpt52,llm,3,General Litigation > Actions Against Police || General Litigation > Crime Victim || General Litigation > Personal Injury
+3,9,9;254,gemini31_pro,llm,2,General Litigation > Actions Against Police || General Litigation > Crime Victim
+3,9,9;254,deepseek_v4,llm,2,General Litigation > Actions Against Police || General Litigation > Personal Injury
+3,9,9;254,jackie,human,2,General Litigation > Actions Against Police || General Litigation > Personal Injury
+3,9,9;254,qs,human,2,General Litigation > Actions Against Police || General Litigation > Personal Injury
+4,10,10,gpt52,llm,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Living Trusts
+4,10,10,gemini31_pro,llm,2,"Intellectual Property > Trademark/Copyright || Wills & Trusts > General (Wills, Trusts, Estates)"
+4,10,10,deepseek_v4,llm,2,"Intellectual Property > Trademark/Copyright || Wills & Trusts > General (Wills, Trusts, Estates)"
+4,10,10,jackie,human,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Living Trusts
+4,10,10,qs,human,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Living Trusts
+5,12,12;324,gpt52,llm,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+5,12,12;324,gemini31_pro,llm,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+5,12,12;324,deepseek_v4,llm,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+5,12,12;324,jackie,human,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+5,12,12;324,qs,human,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+6,14,14;365,gpt52,llm,2,General Litigation > Mold Claims || Real Property > Tenant (Residential)
+6,14,14;365,gemini31_pro,llm,1,Real Property > Tenant (Residential)
+6,14,14;365,deepseek_v4,llm,1,Real Property > Tenant (Residential)
+6,14,14;365,jackie,human,2,General Litigation > Mold Claims || Real Property > Tenant (Residential)
+6,14,14;365,qs,human,2,General Litigation > Mold Claims || Real Property > Tenant (Residential)
+7,17,17;78,gpt52,llm,2,Administrative Law > DMV (Non-Criminal) || Criminal Law > DMV(DUI Relate)
+7,17,17;78,gemini31_pro,llm,1,Administrative Law > DMV (Non-Criminal)
+7,17,17;78,deepseek_v4,llm,1,Administrative Law > DMV (Non-Criminal)
+7,17,17;78,jackie,human,1,Administrative Law > DMV (Non-Criminal)
+7,17,17;78,qs,human,1,Administrative Law > DMV (Non-Criminal)
+8,22,22;201,gpt52,llm,2,Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+8,22,22;201,gemini31_pro,llm,2,Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+8,22,22;201,deepseek_v4,llm,1,Debtor/Creditor > General (Debtor)
+8,22,22;201,jackie,human,1,Debtor/Creditor > General (Debtor)
+8,22,22;201,qs,human,3,Debtor/Creditor > Collection/Harassment || Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+9,23,23,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+9,23,23,gemini31_pro,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+9,23,23,deepseek_v4,llm,1,Family Law > Paternity
+9,23,23,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+9,23,23,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+10,24,24;259,gpt52,llm,2,General Litigation > Malpractice-Medical || General Litigation > Wrongful Death
+10,24,24;259,gemini31_pro,llm,2,General Litigation > Malpractice-Medical || General Litigation > Wrongful Death
+10,24,24;259,deepseek_v4,llm,2,General Litigation > Malpractice-Medical || General Litigation > Wrongful Death
+10,24,24;259,jackie,human,2,General Litigation > Malpractice-Medical || General Litigation > Wrongful Death
+10,24,24;259,qs,human,2,General Litigation > Malpractice-Medical || General Litigation > Wrongful Death
+11,27,27;325,gpt52,llm,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+11,27,27;325,gemini31_pro,llm,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+11,27,27;325,deepseek_v4,llm,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+11,27,27;325,jackie,human,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+11,27,27;325,qs,human,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+12,28,28;349,gpt52,llm,2,Workers' Comp > State || Workers' Comp > Third Party litigation
+12,28,28;349,gemini31_pro,llm,2,General Litigation > Personal Injury || Workers' Comp > Third Party litigation
+12,28,28;349,deepseek_v4,llm,2,General Litigation > Personal Injury || Workers' Comp > State
+12,28,28;349,jackie,human,1,Workers' Comp > State
+12,28,28;349,qs,human,2,Workers' Comp > State || Workers' Comp > Third Party litigation
+13,29,29;368,gpt52,llm,2,Business & Corporate > Litigation || Real Property > Construction/Contractors
+13,29,29;368,gemini31_pro,llm,1,Real Property > Construction/Contractors
+13,29,29;368,deepseek_v4,llm,2,Consumer Law > General || Real Property > Construction/Contractors
+13,29,29;368,jackie,human,2,General Litigation > General Litigation || Real Property > Construction/Contractors
+13,29,29;368,qs,human,1,Real Property > Construction/Contractors
+14,31,31;399,gpt52,llm,2,Wills & Trusts > Elder Abuse || Wills & Trusts > Litigation
+14,31,31;399,gemini31_pro,llm,2,Wills & Trusts > Elder Abuse || Wills & Trusts > Litigation
+14,31,31;399,deepseek_v4,llm,2,Wills & Trusts > Elder Abuse || Wills & Trusts > Litigation
+14,31,31;399,jackie,human,2,Wills & Trusts > Elder Abuse || Wills & Trusts > Litigation
+14,31,31;399,qs,human,2,Wills & Trusts > Elder Abuse || Wills & Trusts > Litigation
+15,33,33;109,gpt52,llm,2,Bankruptcy > Business || Business & Corporate > Sale of Business
+15,33,33;109,gemini31_pro,llm,2,"Bankruptcy > Business || Business & Corporate > General (Contracts, Business, Organization)"
+15,33,33;109,deepseek_v4,llm,2,"Bankruptcy > Business || Business & Corporate > General (Contracts, Business, Organization)"
+15,33,33;109,jackie,human,2,Bankruptcy > Business || Business & Corporate > Sale of Business
+15,33,33;109,qs,human,3,"Bankruptcy > Business || Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Sale of Business"
+16,38,38;236,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+16,38,38;236,gemini31_pro,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+16,38,38;236,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+16,38,38;236,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+16,38,38;236,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+17,40,40;282,gpt52,llm,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+17,40,40;282,gemini31_pro,llm,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+17,40,40;282,deepseek_v4,llm,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+17,40,40;282,jackie,human,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+17,40,40;282,qs,human,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+18,41,41,gpt52,llm,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Whistleblowers
+18,41,41,gemini31_pro,llm,1,Labor & Employment > Whistleblowers
+18,41,41,deepseek_v4,llm,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Whistleblowers
+18,41,41,jackie,human,1,Labor & Employment > ADA (Disability) Act Issues
+18,41,41,qs,human,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Whistleblowers
+19,43,43;370,gpt52,llm,3,Real Property > General (residential) || Real Property > Other || Real Property > Water Law
+19,43,43;370,gemini31_pro,llm,3,Real Property > General (residential) || Real Property > Other || Real Property > Water Law
+19,43,43;370,deepseek_v4,llm,2,Real Property > General (residential) || Real Property > Water Law
+19,43,43;370,jackie,human,2,Real Property > General (residential) || Real Property > Water Law
+19,43,43;370,qs,human,1,Real Property > General (residential)
+20,46,46;116,gpt52,llm,2,Bankruptcy > Other || Debtor/Creditor > General (Debtor)
+20,46,46;116,gemini31_pro,llm,3,Bankruptcy > Creditors || Bankruptcy > Other || Debtor/Creditor > General (Debtor)
+20,46,46;116,deepseek_v4,llm,1,Bankruptcy > Creditors
+20,46,46;116,jackie,human,2,Bankruptcy > Personal || Bankruptcy > Pro Se Coaching
+20,46,46;116,qs,human,2,Bankruptcy > Other || Bankruptcy > Personal
+21,47,47;134,gpt52,llm,3,Business & Corporate > Marijuana Business || Business & Corporate > Restaurant/OLCC || Labor & Employment > Whistleblowers
+21,47,47;134,gemini31_pro,llm,1,Business & Corporate > Marijuana Business
+21,47,47;134,deepseek_v4,llm,2,Business & Corporate > Marijuana Business || Labor & Employment > Whistleblowers
+21,47,47;134,jackie,human,2,Business & Corporate > Marijuana Business || Labor & Employment > Whistleblowers
+21,47,47;134,qs,human,2,Business & Corporate > Marijuana Business || Labor & Employment > Whistleblowers
+22,51,51;238,gpt52,llm,3,Family Law > Child Custody/Visitation || Family Law > Paternity || Family Law > Restraining Orders
+22,51,51;238,gemini31_pro,llm,3,Family Law > Child Custody/Visitation || Family Law > Paternity || Family Law > Restraining Orders
+22,51,51;238,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+22,51,51;238,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+22,51,51;238,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+23,54,54;329,gpt52,llm,2,Labor & Employment > Discrimination || Labor & Employment > Union Issues
+23,54,54;329,gemini31_pro,llm,2,Labor & Employment > Discrimination || Labor & Employment > Union Issues
+23,54,54;329,deepseek_v4,llm,2,Labor & Employment > Discrimination || Labor & Employment > Union Issues
+23,54,54;329,jackie,human,2,Labor & Employment > Discrimination || Labor & Employment > Union Issues
+23,54,54;329,qs,human,2,Labor & Employment > Discrimination || Labor & Employment > Union Issues
+24,56,56;407,gpt52,llm,2,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Power of Attorney
+24,56,56;407,gemini31_pro,llm,2,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Power of Attorney
+24,56,56;407,deepseek_v4,llm,1,Wills & Trusts > Conservatorship/Guardianship
+24,56,56;407,jackie,human,1,Wills & Trusts > Conservatorship/Guardianship
+24,56,56;407,qs,human,2,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Power of Attorney
+25,59,59,gpt52,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+25,59,59,gemini31_pro,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+25,59,59,deepseek_v4,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+25,59,59,jackie,human,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+25,59,59,qs,human,1,Real Property > Construction/Contractors
+26,61,61;239,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+26,61,61;239,gemini31_pro,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+26,61,61;239,deepseek_v4,llm,1,Family Law > Restraining Orders
+26,61,61;239,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+26,61,61;239,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+27,62,62,gpt52,llm,2,General Litigation > Animal Law || General Litigation > Personal Injury
+27,62,62,gemini31_pro,llm,2,General Litigation > Animal Law || General Litigation > Personal Injury
+27,62,62,deepseek_v4,llm,1,General Litigation > Personal Injury
+27,62,62,jackie,human,1,General Litigation > Personal Injury
+27,62,62,qs,human,2,General Litigation > Animal Law || General Litigation > Personal Injury
+28,63,63,gpt52,llm,3,General Litigation > Insurance (Health/Disability) || Labor & Employment > FMLA || Labor & Employment > General
+28,63,63,gemini31_pro,llm,3,General Litigation > Insurance (Health/Disability) || Labor & Employment > FMLA || Labor & Employment > Other
+28,63,63,deepseek_v4,llm,2,General Litigation > Insurance (Health/Disability) || Labor & Employment > FMLA
+28,63,63,jackie,human,2,General Litigation > Insurance (Health/Disability) || Labor & Employment > General
+28,63,63,qs,human,3,General Litigation > Insurance (Health/Disability) || Labor & Employment > FMLA || Labor & Employment > General
+29,66,66;139,gpt52,llm,3,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Restaurant/OLCC || Real Property > General (Commercial)"
+29,66,66;139,gemini31_pro,llm,3,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Restaurant/OLCC || Real Property > General (Commercial)"
+29,66,66;139,deepseek_v4,llm,1,Business & Corporate > Restaurant/OLCC
+29,66,66;139,jackie,human,2,Business & Corporate > Restaurant/OLCC || Real Property > General (residential)
+29,66,66;139,qs,human,3,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Restaurant/OLCC || Real Property > General (Commercial)"
+30,67,67;175,gpt52,llm,1,Criminal Law > Misdemeanor
+30,67,67;175,gemini31_pro,llm,2,Criminal Law > Misdemeanor || Family Law > Restraining Orders
+30,67,67;175,deepseek_v4,llm,1,Criminal Law > Misdemeanor
+30,67,67;175,jackie,human,2,Criminal Law > Misdemeanor || Family Law > General (Divorce/Separation)
+30,67,67;175,qs,human,1,Criminal Law > Misdemeanor
+31,69,69;267,gpt52,llm,2,General Litigation > Actions Against Police || General Litigation > Personal Injury
+31,69,69;267,gemini31_pro,llm,2,General Litigation > Actions Against Police || General Litigation > Crime Victim
+31,69,69;267,deepseek_v4,llm,1,General Litigation > Actions Against Police
+31,69,69;267,jackie,human,2,General Litigation > Actions Against Police || General Litigation > Personal Injury
+31,69,69;267,qs,human,2,General Litigation > Actions Against Police || General Litigation > Personal Injury
+32,70,70;387,gpt52,llm,3,General Litigation > Neighbor Disputes/Nuisance || General Litigation > Property Damage || General Litigation > Stalking Orders
+32,70,70;387,gemini31_pro,llm,3,General Litigation > Neighbor Disputes/Nuisance || General Litigation > Personal Injury || General Litigation > Stalking Orders
+32,70,70;387,deepseek_v4,llm,2,General Litigation > Neighbor Disputes/Nuisance || General Litigation > Stalking Orders
+32,70,70;387,jackie,human,2,General Litigation > Neighbor Disputes/Nuisance || General Litigation > Stalking Orders
+32,70,70;387,qs,human,2,General Litigation > Neighbor Disputes/Nuisance || General Litigation > Stalking Orders
+33,71,71;411,gpt52,llm,3,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Elder Abuse || Wills & Trusts > Power of Attorney
+33,71,71;411,gemini31_pro,llm,3,Wills & Trusts > Elder Abuse || Wills & Trusts > Litigation || Wills & Trusts > Power of Attorney
+33,71,71;411,deepseek_v4,llm,2,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Elder Abuse
+33,71,71;411,jackie,human,2,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Elder Abuse
+33,71,71;411,qs,human,2,Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Elder Abuse
+34,73,73;268,gpt52,llm,3,General Litigation > Libel/Slander/Defamation || General Litigation > Online Harassment/Doxing/Bullying || General Litigation > Stalking Orders
+34,73,73;268,gemini31_pro,llm,3,General Litigation > Libel/Slander/Defamation || General Litigation > Online Harassment/Doxing/Bullying || General Litigation > Stalking Orders
+34,73,73;268,deepseek_v4,llm,1,General Litigation > Stalking Orders
+34,73,73;268,jackie,human,2,General Litigation > Libel/Slander/Defamation || General Litigation > Stalking Orders
+34,73,73;268,qs,human,2,General Litigation > Libel/Slander/Defamation || General Litigation > Stalking Orders
+35,74,74,gpt52,llm,2,General Litigation > Actions Against Police || General Litigation > Tort Claims Act
+35,74,74,gemini31_pro,llm,2,General Litigation > Actions Against Police || General Litigation > Tort Claims Act
+35,74,74,deepseek_v4,llm,1,General Litigation > Actions Against Police
+35,74,74,jackie,human,1,General Litigation > Tort Claims Act
+35,74,74,qs,human,3,General Litigation > Actions Against Police || General Litigation > Civil Rights || General Litigation > Tort Claims Act
+36,83,83,gpt52,llm,2,Administrative Law > Professional Licensing || General Litigation > Civil Rights
+36,83,83,gemini31_pro,llm,2,Administrative Law > Professional Licensing || General Litigation > Civil Rights
+36,83,83,deepseek_v4,llm,2,Administrative Law > Professional Licensing || General Litigation > Civil Rights
+36,83,83,jackie,human,2,Administrative Law > Professional Licensing || General Litigation > Civil Rights
+36,83,83,qs,human,1,Administrative Law > Professional Licensing
+37,94,94,gpt52,llm,2,Administrative Law > SSD (Social Security Disability) || Administrative Law > Social Security/SSI
+37,94,94,gemini31_pro,llm,2,Administrative Law > SSD (Social Security Disability) || Administrative Law > Social Security/SSI
+37,94,94,deepseek_v4,llm,2,Administrative Law > SSD (Social Security Disability) || Administrative Law > Social Security/SSI
+37,94,94,jackie,human,2,Administrative Law > SSD (Social Security Disability) || Administrative Law > Social Security/SSI
+37,94,94,qs,human,2,Administrative Law > SSD (Social Security Disability) || Administrative Law > Social Security/SSI
+38,96,96,gpt52,llm,2,Administrative Law > SSD (Social Security Disability) || Family Law > Child Support/Modification
+38,96,96,gemini31_pro,llm,2,Administrative Law > SSD (Social Security Disability) || Family Law > Child Support/Modification
+38,96,96,deepseek_v4,llm,2,Administrative Law > SSD (Social Security Disability) || Family Law > QDROs
+38,96,96,jackie,human,2,Administrative Law > SSD (Social Security Disability) || Family Law > General (Divorce/Separation)
+38,96,96,qs,human,2,Administrative Law > SSD (Social Security Disability) || Family Law > General (Divorce/Separation)
+39,108,108,gpt52,llm,1,Bankruptcy > Personal
+39,108,108,gemini31_pro,llm,2,Bankruptcy > Personal || Debtor/Creditor > General (Debtor)
+39,108,108,deepseek_v4,llm,1,Bankruptcy > Personal
+39,108,108,jackie,human,2,Bankruptcy > Personal || Debtor/Creditor > General (Debtor)
+39,108,108,qs,human,2,Bankruptcy > Personal || Debtor/Creditor > General (Debtor)
+40,110,110,gpt52,llm,1,Bankruptcy > Personal
+40,110,110,gemini31_pro,llm,2,Bankruptcy > Personal || Debtor/Creditor > General (Debtor)
+40,110,110,deepseek_v4,llm,1,Bankruptcy > Personal
+40,110,110,jackie,human,2,Bankruptcy > Personal || Debtor/Creditor > General (Debtor)
+40,110,110,qs,human,2,Bankruptcy > Personal || Debtor/Creditor > General (Debtor)
+41,125,125,gpt52,llm,2,Business & Corporate > Environment || Business & Corporate > Non-Profit
+41,125,125,gemini31_pro,llm,2,Business & Corporate > Environment || Business & Corporate > Non-Profit
+41,125,125,deepseek_v4,llm,1,Business & Corporate > Environment
+41,125,125,jackie,human,1,Business & Corporate > Non-Profit
+41,125,125,qs,human,3,Business & Corporate > Environment || Business & Corporate > Non-Profit || Real Property > Environmental
+42,126,126,gpt52,llm,2,Business & Corporate > Entertainment || Intellectual Property > Trademark/Copyright
+42,126,126,gemini31_pro,llm,2,Business & Corporate > Non-Profit || Intellectual Property > Entertainment
+42,126,126,deepseek_v4,llm,1,Intellectual Property > Trademark/Copyright
+42,126,126,jackie,human,1,Intellectual Property > Trademark/Copyright
+42,126,126,qs,human,2,Intellectual Property > Entertainment || Intellectual Property > Trademark/Copyright
+43,128,128,gpt52,llm,2,Business & Corporate > Sale of Business || Real Property > Foreclosure
+43,128,128,gemini31_pro,llm,2,Business & Corporate > Litigation || Debtor/Creditor > General (Creditor)
+43,128,128,deepseek_v4,llm,1,Real Property > Foreclosure
+43,128,128,jackie,human,3,"Bankruptcy > Business || Business & Corporate > General (Contracts, Business, Organization) || Debtor/Creditor > General (Creditor)"
+43,128,128,qs,human,1,Business & Corporate > Litigation
+44,129,129,gpt52,llm,3,"Business & Corporate > General (Contracts, Business, Organization) || International Law > Business and Corporate || Taxation > Business & Corporate"
+44,129,129,gemini31_pro,llm,3,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Non-Profit || International Law > Import/Export Regulation"
+44,129,129,deepseek_v4,llm,1,"Business & Corporate > General (Contracts, Business, Organization)"
+44,129,129,jackie,human,2,"Business & Corporate > General (Contracts, Business, Organization) || International Law > Business and Corporate"
+44,129,129,qs,human,2,"Business & Corporate > General (Contracts, Business, Organization) || International Law > Business and Corporate"
+45,136,136,gpt52,llm,2,Business & Corporate > Securities || General Litigation > General Litigation
+45,136,136,gemini31_pro,llm,2,General Litigation > General Litigation || Wills & Trusts > Elder Abuse
+45,136,136,deepseek_v4,llm,1,Business & Corporate > Securities
+45,136,136,jackie,human,1,General Litigation > General Litigation
+45,136,136,qs,human,2,Business & Corporate > Other || General Litigation > General Litigation
+46,138,138,gpt52,llm,2,Business & Corporate > Litigation || Business & Corporate > Sale of Business
+46,138,138,gemini31_pro,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Litigation"
+46,138,138,deepseek_v4,llm,1,Business & Corporate > Litigation
+46,138,138,jackie,human,2,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Litigation"
+46,138,138,qs,human,2,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Litigation"
+47,140,140,gpt52,llm,3,"Real Property > Agriculture/Farm || Taxation > Personal Income || Wills & Trusts > General (Wills, Trusts, Estates)"
+47,140,140,gemini31_pro,llm,3,Business & Corporate > Agriculture/Farm || Real Property > Agriculture/Farm || Taxation > Business & Corporate
+47,140,140,deepseek_v4,llm,1,Business & Corporate > Agriculture/Farm
+47,140,140,jackie,human,2,Real Property > Agriculture/Farm || Taxation > Personal Income
+47,140,140,qs,human,3,Business & Corporate > Agriculture/Farm || Real Property > Agriculture/Farm || Taxation > Personal Income
+48,145,145,gpt52,llm,1,Consumer Law > General
+48,145,145,gemini31_pro,llm,2,Consumer Law > General || Real Property > General (residential)
+48,145,145,deepseek_v4,llm,1,Consumer Law > General
+48,145,145,jackie,human,2,Consumer Law > General || Real Property > Other
+48,145,145,qs,human,1,Consumer Law > General
+49,151,151,gpt52,llm,2,Consumer Law > General || General Litigation > Libel/Slander/Defamation
+49,151,151,gemini31_pro,llm,2,Consumer Law > General || General Litigation > Libel/Slander/Defamation
+49,151,151,deepseek_v4,llm,1,Consumer Law > General
+49,151,151,jackie,human,2,Consumer Law > General || General Litigation > Libel/Slander/Defamation
+49,151,151,qs,human,2,Consumer Law > General || General Litigation > Libel/Slander/Defamation
+50,152,152,gpt52,llm,2,Consumer Law > General || General Litigation > Property Damage
+50,152,152,gemini31_pro,llm,2,Consumer Law > General || General Litigation > Property Damage
+50,152,152,deepseek_v4,llm,1,Consumer Law > General
+50,152,152,jackie,human,1,General Litigation > Property Damage
+50,152,152,qs,human,2,Consumer Law > General || General Litigation > Property Damage
+51,155,155,gpt52,llm,2,Consumer Law > General || Real Property > Construction/Contractors
+51,155,155,gemini31_pro,llm,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > General
+51,155,155,deepseek_v4,llm,1,Consumer Law > General
+51,155,155,jackie,human,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > General
+51,155,155,qs,human,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > General
+52,156,156,gpt52,llm,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Banking
+52,156,156,gemini31_pro,llm,1,Consumer Law > Automobiles/RVs/Mobile Homes
+52,156,156,deepseek_v4,llm,1,Consumer Law > Automobiles/RVs/Mobile Homes
+52,156,156,jackie,human,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Banking
+52,156,156,qs,human,1,Consumer Law > Automobiles/RVs/Mobile Homes
+53,157,157,gpt52,llm,2,Consumer Law > Problems Between Consumers || Debtor/Creditor > General (Creditor)
+53,157,157,gemini31_pro,llm,2,Consumer Law > Problems Between Consumers || Debtor/Creditor > General (Creditor)
+53,157,157,deepseek_v4,llm,1,Consumer Law > Problems Between Consumers
+53,157,157,jackie,human,2,Consumer Law > Problems Between Consumers || Debtor/Creditor > General (Creditor)
+53,157,157,qs,human,1,Consumer Law > Problems Between Consumers
+54,165,165,gpt52,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+54,165,165,gemini31_pro,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+54,165,165,deepseek_v4,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+54,165,165,jackie,human,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+54,165,165,qs,human,1,Real Property > Construction/Contractors
+55,166,166,gpt52,llm,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Small Claims Advice
+55,166,166,gemini31_pro,llm,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Small Claims Advice
+55,166,166,deepseek_v4,llm,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Small Claims Advice
+55,166,166,jackie,human,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Small Claims Advice
+55,166,166,qs,human,2,Consumer Law > Automobiles/RVs/Mobile Homes || Consumer Law > Small Claims Advice
+56,172,172,gpt52,llm,2,Criminal Law > Misdemeanor || Criminal Law > Relief From Sex Offender Registration
+56,172,172,gemini31_pro,llm,1,Criminal Law > Other
+56,172,172,deepseek_v4,llm,1,Criminal Law > Relief From Sex Offender Registration
+56,172,172,jackie,human,1,Criminal Law > Relief From Sex Offender Registration
+56,172,172,qs,human,1,Criminal Law > Relief From Sex Offender Registration
+57,176,176,gpt52,llm,2,Criminal Law > Major Felony || Criminal Law > White Collar Crimes
+57,176,176,gemini31_pro,llm,2,Criminal Law > Lessor Felony || Criminal Law > Major Felony
+57,176,176,deepseek_v4,llm,1,Criminal Law > Major Felony
+57,176,176,jackie,human,1,Criminal Law > Lessor Felony
+57,176,176,qs,human,1,Criminal Law > Lessor Felony
+58,178,178,gpt52,llm,2,Criminal Law > Major Felony || Criminal Law > Parole/Probation
+58,178,178,gemini31_pro,llm,2,Criminal Law > Major Felony || Criminal Law > Parole/Probation
+58,178,178,deepseek_v4,llm,2,Criminal Law > Major Felony || Criminal Law > Parole/Probation
+58,178,178,jackie,human,2,Criminal Law > Major Felony || Criminal Law > Parole/Probation
+58,178,178,qs,human,2,Criminal Law > Major Felony || Criminal Law > Parole/Probation
+59,186,186,gpt52,llm,2,Criminal Law > Expunction || Criminal Law > Misdemeanor
+59,186,186,gemini31_pro,llm,2,Criminal Law > Expunction || Criminal Law > Misdemeanor
+59,186,186,deepseek_v4,llm,2,Criminal Law > Expunction || Criminal Law > Misdemeanor
+59,186,186,jackie,human,2,Criminal Law > Expunction || Criminal Law > Misdemeanor
+59,186,186,qs,human,2,Criminal Law > Expunction || Criminal Law > Misdemeanor
+60,193,193,gpt52,llm,3,Administrative Law > Professional Licensing || Criminal Law > Forfeiture || Criminal Law > Other
+60,193,193,gemini31_pro,llm,3,Criminal Law > Forfeiture || Criminal Law > Gun Rights || Criminal Law > Other
+60,193,193,deepseek_v4,llm,2,Criminal Law > Forfeiture || Criminal Law > Gun Rights
+60,193,193,jackie,human,2,Administrative Law > Professional Licensing || Criminal Law > Forfeiture
+60,193,193,qs,human,1,Criminal Law > Forfeiture
+61,196,196,gpt52,llm,3,Criminal Law > Lessor Felony || Criminal Law > Major Felony || Criminal Law > Misdemeanor
+61,196,196,gemini31_pro,llm,1,Criminal Law > Misdemeanor
+61,196,196,deepseek_v4,llm,2,Criminal Law > Lessor Felony || Criminal Law > Misdemeanor
+61,196,196,jackie,human,1,Criminal Law > Lessor Felony
+61,196,196,qs,human,1,Criminal Law > Misdemeanor
+62,198,198,gpt52,llm,2,Criminal Law > Major Felony || Criminal Law > Post Conviction/ Appeals
+62,198,198,gemini31_pro,llm,2,Criminal Law > Major Felony || Criminal Law > Post Conviction/ Appeals
+62,198,198,deepseek_v4,llm,1,Criminal Law > Post Conviction/ Appeals
+62,198,198,jackie,human,1,Criminal Law > Post Conviction/ Appeals
+62,198,198,qs,human,2,Criminal Law > Major Felony || Criminal Law > Post Conviction/ Appeals
+63,202,202,gpt52,llm,2,Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+63,202,202,gemini31_pro,llm,2,Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+63,202,202,deepseek_v4,llm,1,Debtor/Creditor > General (Debtor)
+63,202,202,jackie,human,1,Debtor/Creditor > General (Debtor)
+63,202,202,qs,human,2,Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+64,206,206,gpt52,llm,2,Debtor/Creditor > Collection/Harassment || Debtor/Creditor > General (Debtor)
+64,206,206,gemini31_pro,llm,2,Debtor/Creditor > Collection/Harassment || Debtor/Creditor > General (Debtor)
+64,206,206,deepseek_v4,llm,1,Debtor/Creditor > General (Debtor)
+64,206,206,jackie,human,1,Debtor/Creditor > Collection/Harassment
+64,206,206,qs,human,1,Debtor/Creditor > Collection/Harassment
+65,212,212,gpt52,llm,3,Debtor/Creditor > Debt Counseling/Workouts || General Litigation > Personal Injury || General Litigation > Property Damage
+65,212,212,gemini31_pro,llm,2,Debtor/Creditor > Debt Counseling/Workouts || General Litigation > Property Damage
+65,212,212,deepseek_v4,llm,1,Debtor/Creditor > General (Debtor)
+65,212,212,jackie,human,2,Debtor/Creditor > General (Debtor) || General Litigation > Property Damage
+65,212,212,qs,human,2,Debtor/Creditor > Debt Counseling/Workouts || Debtor/Creditor > General (Debtor)
+66,213,213,gpt52,llm,3,Debtor/Creditor > Collection/Harassment || Debtor/Creditor > General (Debtor) || Labor & Employment > Pensions/Benefits/Erisa
+66,213,213,gemini31_pro,llm,3,Debtor/Creditor > Collection/Harassment || Debtor/Creditor > General (Debtor) || General Litigation > Insurance (Health/Disability)
+66,213,213,deepseek_v4,llm,2,Consumer Law > Insurance || Debtor/Creditor > General (Debtor)
+66,213,213,jackie,human,2,Debtor/Creditor > General (Debtor) || General Litigation > Insurance (Health/Disability)
+66,213,213,qs,human,3,Consumer Law > Insurance || Debtor/Creditor > General (Debtor) || Labor & Employment > Pensions/Benefits/Erisa
+67,215,215,gpt52,llm,2,Consumer Law > Problems Between Consumers || General Litigation > General Litigation
+67,215,215,gemini31_pro,llm,2,Consumer Law > Problems Between Consumers || General Litigation > General Litigation
+67,215,215,deepseek_v4,llm,1,Debtor/Creditor > General (Debtor)
+67,215,215,jackie,human,2,Debtor/Creditor > General (Debtor) || General Litigation > General Litigation
+67,215,215,qs,human,1,Debtor/Creditor > General (Debtor)
+68,225,225,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+68,225,225,gemini31_pro,llm,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+68,225,225,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+68,225,225,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+68,225,225,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+69,232,232,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+69,232,232,gemini31_pro,llm,1,Family Law > Child Custody/Visitation
+69,232,232,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+69,232,232,jackie,human,2,Family Law > Adoption/DHS || Family Law > Child Custody/Visitation
+69,232,232,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+70,233,233,gpt52,llm,3,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification || Family Law > Juvenile/DHS Issue - SCF (CSD) related
+70,233,233,gemini31_pro,llm,3,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification || Family Law > Juvenile/DHS Issue - SCF (CSD) related
+70,233,233,deepseek_v4,llm,3,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification || Family Law > Juvenile/DHS Issue - SCF (CSD) related
+70,233,233,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+70,233,233,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Child Support/Modification
+71,234,234,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+71,234,234,gemini31_pro,llm,3,Criminal Law > Mental Commitment || Family Law > Child Custody/Visitation || Family Law > Paternity
+71,234,234,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+71,234,234,jackie,human,3,Family Law > Child Custody/Visitation || Family Law > Paternity || Wills & Trusts > Conservatorship/Guardianship
+71,234,234,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Paternity
+72,240,240,gpt52,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+72,240,240,gemini31_pro,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+72,240,240,deepseek_v4,llm,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+72,240,240,jackie,human,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+72,240,240,qs,human,2,Family Law > Child Custody/Visitation || Family Law > Restraining Orders
+73,252,252,gpt52,llm,3,Family Law > General (Divorce/Separation) || Family Law > Military || International Law > Gen. Immigration/Visas
+73,252,252,gemini31_pro,llm,2,Family Law > General (Divorce/Separation) || Family Law > Military
+73,252,252,deepseek_v4,llm,2,Family Law > General (Divorce/Separation) || Family Law > Military
+73,252,252,jackie,human,2,Family Law > General (Divorce/Separation) || Family Law > Military
+73,252,252,qs,human,2,Family Law > General (Divorce/Separation) || Real Property > Tenant (Residential)
+74,255,255,gpt52,llm,2,General Litigation > Civil Rights || General Litigation > Tort Claims Act
+74,255,255,gemini31_pro,llm,1,General Litigation > Tort Claims Act
+74,255,255,deepseek_v4,llm,1,General Litigation > Civil Rights
+74,255,255,jackie,human,1,General Litigation > General Litigation
+74,255,255,qs,human,3,General Litigation > Civil Matter for Inmates || General Litigation > Civil Rights || General Litigation > General Litigation
+75,256,256,gpt52,llm,2,General Litigation > Insurance (Liability) || General Litigation > Property Damage
+75,256,256,gemini31_pro,llm,3,General Litigation > Neighbor Disputes/Nuisance || General Litigation > Other || General Litigation > Property Damage
+75,256,256,deepseek_v4,llm,1,General Litigation > Property Damage
+75,256,256,jackie,human,2,General Litigation > Insurance (Liability) || General Litigation > Property Damage
+75,256,256,qs,human,1,General Litigation > Property Damage
+76,261,261,gpt52,llm,2,General Litigation > Online Harassment/Doxing/Bullying || General Litigation > Stalking Orders
+76,261,261,gemini31_pro,llm,2,General Litigation > Online Harassment/Doxing/Bullying || General Litigation > Stalking Orders
+76,261,261,deepseek_v4,llm,1,General Litigation > Stalking Orders
+76,261,261,jackie,human,1,General Litigation > Stalking Orders
+76,261,261,qs,human,1,General Litigation > Stalking Orders
+77,266,266,gpt52,llm,2,General Litigation > Animal Law || General Litigation > Personal Injury
+77,266,266,gemini31_pro,llm,2,General Litigation > Animal Law || General Litigation > Personal Injury
+77,266,266,deepseek_v4,llm,1,General Litigation > Animal Law
+77,266,266,jackie,human,1,General Litigation > Personal Injury
+77,266,266,qs,human,2,General Litigation > Animal Law || General Litigation > Personal Injury
+78,269,269,gpt52,llm,2,General Litigation > General Torts/Privacy || General Litigation > Malpractice-Medical
+78,269,269,gemini31_pro,llm,1,General Litigation > Malpractice-Medical
+78,269,269,deepseek_v4,llm,1,General Litigation > Malpractice-Medical
+78,269,269,jackie,human,1,General Litigation > General Litigation
+78,269,269,qs,human,2,General Litigation > General Litigation || General Litigation > Malpractice-Medical
+79,279,279,gpt52,llm,2,General Litigation > Actions Against Police || General Litigation > Tort Claims Act
+79,279,279,gemini31_pro,llm,2,General Litigation > Actions Against Police || General Litigation > Tort Claims Act
+79,279,279,deepseek_v4,llm,1,General Litigation > Actions Against Police
+79,279,279,jackie,human,1,General Litigation > Tort Claims Act
+79,279,279,qs,human,3,General Litigation > Actions Against Police || General Litigation > Civil Rights || General Litigation > Tort Claims Act
+80,280,280,gpt52,llm,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Living Trusts
+80,280,280,gemini31_pro,llm,3,"Intellectual Property > Entertainment || Intellectual Property > Trademark/Copyright || Wills & Trusts > General (Wills, Trusts, Estates)"
+80,280,280,deepseek_v4,llm,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Special Needs/Inc. Cap Trusts
+80,280,280,jackie,human,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Living Trusts
+80,280,280,qs,human,2,Intellectual Property > Trademark/Copyright || Wills & Trusts > Living Trusts
+81,290,290,gpt52,llm,3,General Litigation > Libel/Slander/Defamation || General Litigation > Online Harassment/Doxing/Bullying || Intellectual Property > Trademark/Copyright
+81,290,290,gemini31_pro,llm,3,General Litigation > Libel/Slander/Defamation || General Litigation > Online Harassment/Doxing/Bullying || Intellectual Property > Trademark/Copyright
+81,290,290,deepseek_v4,llm,2,General Litigation > Online Harassment/Doxing/Bullying || Intellectual Property > Trademark/Copyright
+81,290,290,jackie,human,3,General Litigation > Libel/Slander/Defamation || General Litigation > Online Harassment/Doxing/Bullying || Intellectual Property > Trademark/Copyright
+81,290,290,qs,human,3,General Litigation > Libel/Slander/Defamation || General Litigation > Online Harassment/Doxing/Bullying || Intellectual Property > Trademark/Copyright
+82,294,294,gpt52,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Intellectual Property > Trademark/Copyright"
+82,294,294,gemini31_pro,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Intellectual Property > Trademark/Copyright"
+82,294,294,deepseek_v4,llm,1,Intellectual Property > Trademark/Copyright
+82,294,294,jackie,human,2,"Business & Corporate > General (Contracts, Business, Organization) || Intellectual Property > Trademark/Copyright"
+82,294,294,qs,human,2,"Business & Corporate > General (Contracts, Business, Organization) || Intellectual Property > Trademark/Copyright"
+83,299,299,gpt52,llm,2,General Litigation > General Litigation || Intellectual Property > Patent (Reg Patent Attys Only)
+83,299,299,gemini31_pro,llm,1,Intellectual Property > Patent (Reg Patent Attys Only)
+83,299,299,deepseek_v4,llm,1,Intellectual Property > Patent (Reg Patent Attys Only)
+83,299,299,jackie,human,2,General Litigation > General Litigation || Intellectual Property > Patent (Reg Patent Attys Only)
+83,299,299,qs,human,1,Intellectual Property > Patent (Reg Patent Attys Only)
+84,300,300,gpt52,llm,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+84,300,300,gemini31_pro,llm,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+84,300,300,deepseek_v4,llm,1,Intellectual Property > Trademark/Copyright
+84,300,300,jackie,human,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+84,300,300,qs,human,2,Intellectual Property > Patent (Reg Patent Attys Only) || Intellectual Property > Trademark/Copyright
+85,307,307,gpt52,llm,2,International Law > Gen. Immigration/Visas || International Law > Other
+85,307,307,gemini31_pro,llm,2,International Law > Gen. Immigration/Visas || International Law > Other
+85,307,307,deepseek_v4,llm,1,International Law > Gen. Immigration/Visas
+85,307,307,jackie,human,1,International Law > Other
+85,307,307,qs,human,1,International Law > Other
+86,316,316,gpt52,llm,2,Business & Corporate > Securities || International Law > Gen. Immigration/Visas
+86,316,316,gemini31_pro,llm,2,International Law > Business and Corporate || International Law > Gen. Immigration/Visas
+86,316,316,deepseek_v4,llm,1,International Law > Gen. Immigration/Visas
+86,316,316,jackie,human,2,Business & Corporate > Securities || International Law > Gen. Immigration/Visas
+86,316,316,qs,human,2,Business & Corporate > Securities || International Law > Gen. Immigration/Visas
+87,328,328,gpt52,llm,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+87,328,328,gemini31_pro,llm,3,Labor & Employment > Discrimination || Labor & Employment > General || Labor & Employment > Wrongful Discharge
+87,328,328,deepseek_v4,llm,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+87,328,328,jackie,human,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+87,328,328,qs,human,2,Labor & Employment > Discrimination || Labor & Employment > Wrongful Discharge
+88,330,330,gpt52,llm,1,Labor & Employment > General
+88,330,330,gemini31_pro,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Labor & Employment > General"
+88,330,330,deepseek_v4,llm,1,"Business & Corporate > General (Contracts, Business, Organization)"
+88,330,330,jackie,human,1,Labor & Employment > General
+88,330,330,qs,human,1,Labor & Employment > General
+89,331,331,gpt52,llm,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+89,331,331,gemini31_pro,llm,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+89,331,331,deepseek_v4,llm,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+89,331,331,jackie,human,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+89,331,331,qs,human,2,Labor & Employment > Wage and Hour Claims || Labor & Employment > Wrongful Discharge
+90,332,332,gpt52,llm,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Whistleblowers
+90,332,332,gemini31_pro,llm,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Whistleblowers
+90,332,332,deepseek_v4,llm,2,Labor & Employment > Whistleblowers || Labor & Employment > Wrongful Discharge
+90,332,332,jackie,human,1,Labor & Employment > Wrongful Discharge
+90,332,332,qs,human,3,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Discrimination || Labor & Employment > Whistleblowers
+91,335,335,gpt52,llm,3,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > FMLA || Labor & Employment > Pensions/Benefits/Erisa
+91,335,335,gemini31_pro,llm,2,Labor & Employment > FMLA || Labor & Employment > Other
+91,335,335,deepseek_v4,llm,2,General Litigation > Insurance (Health/Disability) || Labor & Employment > FMLA
+91,335,335,jackie,human,2,Labor & Employment > FMLA || Labor & Employment > Other
+91,335,335,qs,human,3,General Litigation > Insurance (Health/Disability) || Labor & Employment > FMLA || Labor & Employment > Other
+92,341,341,gpt52,llm,3,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > FMLA || Labor & Employment > Wrongful Discharge
+92,341,341,gemini31_pro,llm,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > FMLA
+92,341,341,deepseek_v4,llm,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > FMLA
+92,341,341,jackie,human,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > Other
+92,341,341,qs,human,2,Labor & Employment > ADA (Disability) Act Issues || Labor & Employment > FMLA
+93,342,342,gpt52,llm,3,Labor & Employment > Discrimination || Labor & Employment > Document Review/Severance Packages. || Labor & Employment > FMLA
+93,342,342,gemini31_pro,llm,3,Labor & Employment > Discrimination || Labor & Employment > Document Review/Severance Packages. || Labor & Employment > FMLA
+93,342,342,deepseek_v4,llm,3,Labor & Employment > Discrimination || Labor & Employment > Document Review/Severance Packages. || Labor & Employment > FMLA
+93,342,342,jackie,human,2,Labor & Employment > Document Review/Severance Packages. || Labor & Employment > FMLA
+93,342,342,qs,human,2,Labor & Employment > Document Review/Severance Packages. || Labor & Employment > FMLA
+94,344,344,gpt52,llm,3,Labor & Employment > Discrimination || Labor & Employment > Sexual Harrasment || Labor & Employment > Wage and Hour Claims
+94,344,344,gemini31_pro,llm,3,Labor & Employment > Discrimination || Labor & Employment > Sexual Harrasment || Labor & Employment > Wage and Hour Claims
+94,344,344,deepseek_v4,llm,3,Labor & Employment > Discrimination || Labor & Employment > Sexual Harrasment || Labor & Employment > Wage and Hour Claims
+94,344,344,jackie,human,2,Labor & Employment > Sexual Harrasment || Labor & Employment > Wage and Hour Claims
+94,344,344,qs,human,3,General Litigation > Libel/Slander/Defamation || Labor & Employment > Sexual Harrasment || Labor & Employment > Wage and Hour Claims
+95,352,352,gpt52,llm,2,Labor & Employment > General || Workers' Comp > State
+95,352,352,gemini31_pro,llm,2,Labor & Employment > General || Workers' Comp > State
+95,352,352,deepseek_v4,llm,1,Workers' Comp > State
+95,352,352,jackie,human,1,Labor & Employment > General
+95,352,352,qs,human,2,Labor & Employment > General || Workers' Comp > State
+96,371,371,gpt52,llm,3,General Litigation > Civil Rights || Real Property > LLTN – ADA issues/Animals/Accommodations || Real Property > Tenant (Residential)
+96,371,371,gemini31_pro,llm,2,General Litigation > Civil Rights || Real Property > Tenant (Residential)
+96,371,371,deepseek_v4,llm,2,Real Property > LLTN – ADA issues/Animals/Accommodations || Real Property > Tenant (Residential)
+96,371,371,jackie,human,2,General Litigation > Civil Rights || Real Property > Tenant (Residential)
+96,371,371,qs,human,2,General Litigation > Civil Rights || Real Property > Tenant (Residential)
+97,374,374,gpt52,llm,2,General Litigation > Personal Injury || Real Property > Mobile Home (Tenant/Owner)
+97,374,374,gemini31_pro,llm,2,Real Property > Mobile Home (Tenant/Owner) || Real Property > Tenant (Residential)
+97,374,374,deepseek_v4,llm,2,Real Property > General (residential) || Real Property > Tenant (Residential)
+97,374,374,jackie,human,2,General Litigation > Property Damage || Real Property > Mobile Home (Tenant/Owner)
+97,374,374,qs,human,1,Real Property > Mobile Home (Tenant/Owner)
+98,378,378,gpt52,llm,1,Real Property > General (residential)
+98,378,378,gemini31_pro,llm,2,General Litigation > Civil Rights || Real Property > General (residential)
+98,378,378,deepseek_v4,llm,1,Real Property > General (residential)
+98,378,378,jackie,human,1,Real Property > General (residential)
+98,378,378,qs,human,1,Real Property > General (residential)
+99,384,384,gpt52,llm,3,"Real Property > Government Loans (VA,FHA,Etc.) || Real Property > Property Tax || Wills & Trusts > Living Trusts"
+99,384,384,gemini31_pro,llm,2,"Real Property > Government Loans (VA,FHA,Etc.) || Wills & Trusts > Living Trusts"
+99,384,384,deepseek_v4,llm,2,"Real Property > General (residential) || Wills & Trusts > General (Wills, Trusts, Estates)"
+99,384,384,jackie,human,2,"Real Property > Government Loans (VA,FHA,Etc.) || Wills & Trusts > General (Wills, Trusts, Estates)"
+99,384,384,qs,human,3,"Real Property > General (residential) || Real Property > Government Loans (VA,FHA,Etc.) || Wills & Trusts > General (Wills, Trusts, Estates)"
+100,391,391,gpt52,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+100,391,391,gemini31_pro,llm,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+100,391,391,deepseek_v4,llm,1,Real Property > Construction/Contractors
+100,391,391,jackie,human,3,Consumer Law > Small Claims Advice || General Litigation > Property Damage || Real Property > Construction/Contractors
+100,391,391,qs,human,2,Consumer Law > Small Claims Advice || Real Property > Construction/Contractors
+101,397,397,gpt52,llm,2,Consumer Law > Identity Theft || Taxation > Personal Income
+101,397,397,gemini31_pro,llm,2,Consumer Law > Identity Theft || Taxation > Personal Income
+101,397,397,deepseek_v4,llm,1,Taxation > Personal Income
+101,397,397,jackie,human,2,Consumer Law > Identity Theft || Taxation > Personal Income
+101,397,397,qs,human,2,Consumer Law > Identity Theft || Taxation > Personal Income
+102,401,401,gpt52,llm,2,"Wills & Trusts > General (Wills, Trusts, Estates) || Wills & Trusts > Probate"
+102,401,401,gemini31_pro,llm,2,"Wills & Trusts > General (Wills, Trusts, Estates) || Wills & Trusts > Probate"
+102,401,401,deepseek_v4,llm,1,"Wills & Trusts > General (Wills, Trusts, Estates)"
+102,401,401,jackie,human,1,Wills & Trusts > Probate
+102,401,401,qs,human,1,Wills & Trusts > Probate
+103,404,404,gpt52,llm,2,Administrative Law > Medicare/Medicaid || Wills & Trusts > Conservatorship/Guardianship
+103,404,404,gemini31_pro,llm,3,Administrative Law > Medicare/Medicaid || Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Medicare/Medicaid Planning
+103,404,404,deepseek_v4,llm,2,Administrative Law > Medicare/Medicaid || Wills & Trusts > Medicare/Medicaid Planning
+103,404,404,jackie,human,2,Administrative Law > Medicare/Medicaid || Wills & Trusts > Conservatorship/Guardianship
+103,404,404,qs,human,2,Administrative Law > Medicare/Medicaid || Wills & Trusts > Conservatorship/Guardianship
+104,412,412,gpt52,llm,2,Real Property > Foreclosure || Wills & Trusts > Probate
+104,412,412,gemini31_pro,llm,1,Wills & Trusts > Probate
+104,412,412,deepseek_v4,llm,1,Wills & Trusts > Probate
+104,412,412,jackie,human,2,Real Property > Foreclosure || Wills & Trusts > Probate
+104,412,412,qs,human,3,Real Property > Foreclosure || Wills & Trusts > Litigation || Wills & Trusts > Probate
+105,418,418,gpt52,llm,2,Criminal Law > Major Felony || General Litigation > Tort Claims Act
+105,418,418,gemini31_pro,llm,2,Criminal Law > Major Felony || General Litigation > Tort Claims Act
+105,418,418,deepseek_v4,llm,1,Criminal Law > Major Felony
+105,418,418,jackie,human,2,Criminal Law > Lessor Felony || General Litigation > Tort Claims Act
+105,418,418,qs,human,2,Criminal Law > Lessor Felony || General Litigation > Tort Claims Act
+106,419,419,gpt52,llm,3,Criminal Law > Other || Family Law > General (Divorce/Separation) || Real Property > Tenant (Residential)
+106,419,419,gemini31_pro,llm,3,Criminal Law > Other || Family Law > General (Divorce/Separation) || Real Property > Tenant (Residential)
+106,419,419,deepseek_v4,llm,3,Criminal Law > Misdemeanor || Family Law > General (Divorce/Separation) || Real Property > Landlord Residential
+106,419,419,jackie,human,3,Criminal Law > Other || Family Law > General (Divorce/Separation) || Real Property > Tenant (Residential)
+106,419,419,qs,human,3,Criminal Law > Other || Family Law > General (Divorce/Separation) || Real Property > Tenant (Residential)
+107,420,420,gpt52,llm,3,International Law > Deportation || Labor & Employment > Wrongful Discharge || Workers' Comp > State
+107,420,420,gemini31_pro,llm,3,International Law > Deportation || Labor & Employment > Wrongful Discharge || Workers' Comp > State
+107,420,420,deepseek_v4,llm,3,International Law > Deportation || Labor & Employment > Wrongful Discharge || Workers' Comp > State
+107,420,420,jackie,human,3,International Law > Deportation || Labor & Employment > Wrongful Discharge || Workers' Comp > State
+107,420,420,qs,human,3,International Law > Deportation || Labor & Employment > Wrongful Discharge || Workers' Comp > State
+108,421,421,gpt52,llm,3,Criminal Law > Traffic Offenses || General Litigation > Personal Injury || Wills & Trusts > Elder Abuse
+108,421,421,gemini31_pro,llm,3,Criminal Law > Local Ordinances || General Litigation > Personal Injury || Wills & Trusts > Litigation
+108,421,421,deepseek_v4,llm,3,Criminal Law > Traffic Offenses || General Litigation > Personal Injury || Wills & Trusts > Elder Abuse
+108,421,421,jackie,human,4,Criminal Law > Local Ordinances || General Litigation > Personal Injury || Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Litigation
+108,421,421,qs,human,4,Criminal Law > Local Ordinances || General Litigation > Personal Injury || Wills & Trusts > Conservatorship/Guardianship || Wills & Trusts > Litigation
+109,422,422,gpt52,llm,3,Administrative Law > General (State) || Family Law > Restraining Orders || General Litigation > Stalking Orders
+109,422,422,gemini31_pro,llm,3,Administrative Law > DMV (Non-Criminal) || Family Law > Restraining Orders || General Litigation > Stalking Orders
+109,422,422,deepseek_v4,llm,2,Administrative Law > DMV (Non-Criminal) || Family Law > Restraining Orders
+109,422,422,jackie,human,2,Administrative Law > General (State) || Family Law > Restraining Orders
+109,422,422,qs,human,2,Administrative Law > General (State) || Family Law > Restraining Orders
+110,424,424,gpt52,llm,3,"Administrative Law > Military/Veterans || Administrative Law > Professional Licensing || Wills & Trusts > General (Wills, Trusts, Estates)"
+110,424,424,gemini31_pro,llm,3,"Administrative Law > Military/Veterans || Administrative Law > Professional Licensing || Wills & Trusts > General (Wills, Trusts, Estates)"
+110,424,424,deepseek_v4,llm,3,"Administrative Law > Military/Veterans || Administrative Law > Professional Licensing || Wills & Trusts > General (Wills, Trusts, Estates)"
+110,424,424,jackie,human,4,"Administrative Law > Military/Veterans || Administrative Law > Professional Licensing || General Litigation > Neighbor Disputes/Nuisance || Wills & Trusts > General (Wills, Trusts, Estates)"
+110,424,424,qs,human,4,"Administrative Law > Military/Veterans || Administrative Law > Professional Licensing || General Litigation > Neighbor Disputes/Nuisance || Wills & Trusts > General (Wills, Trusts, Estates)"
+111,426,426,gpt52,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Litigation"
+111,426,426,gemini31_pro,llm,2,"Business & Corporate > General (Contracts, Business, Organization) || Business & Corporate > Litigation"
+111,426,426,deepseek_v4,llm,1,Administrative Law > Medicare/Medicaid
+111,426,426,jackie,human,2,"Administrative Law > Medicare/Medicaid || Business & Corporate > General (Contracts, Business, Organization)"
+111,426,426,qs,human,3,"Administrative Law > Medicare/Medicaid || Administrative Law > Professional Licensing || Business & Corporate > General (Contracts, Business, Organization)"
+112,428,428,gpt52,llm,3,General Litigation > Child Abuse Victims || General Litigation > Libel/Slander/Defamation || General Litigation > Malpractice-Legal
+112,428,428,gemini31_pro,llm,2,General Litigation > Child Abuse Victims || General Litigation > Malpractice-Legal
+112,428,428,deepseek_v4,llm,1,General Litigation > Malpractice-Legal
+112,428,428,jackie,human,2,General Litigation > Child Abuse Victims || General Litigation > General Litigation
+112,428,428,qs,human,2,General Litigation > Child Abuse Victims || General Litigation > Malpractice-Legal
+113,429,429,gpt52,llm,2,Administrative Law > Schools - Special Needs Edu. || Administrative Law > Student Rights
+113,429,429,gemini31_pro,llm,2,Administrative Law > Schools - Special Needs Edu. || Administrative Law > Student Rights
+113,429,429,deepseek_v4,llm,1,Administrative Law > Schools - Special Needs Edu.
+113,429,429,jackie,human,1,Administrative Law > Student Rights
+113,429,429,qs,human,2,Administrative Law > Schools - Special Needs Edu. || Administrative Law > Student Rights
+114,430,430,gpt52,llm,2,General Litigation > Online Harassment/Doxing/Bullying || General Litigation > Stalking Orders
+114,430,430,gemini31_pro,llm,1,General Litigation > Stalking Orders
+114,430,430,deepseek_v4,llm,1,General Litigation > Online Harassment/Doxing/Bullying
+114,430,430,jackie,human,1,General Litigation > Stalking Orders
+114,430,430,qs,human,1,General Litigation > Stalking Orders

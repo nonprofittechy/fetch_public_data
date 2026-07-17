@@ -16,8 +16,10 @@ This is the canonical index of every classification, review, audit, and prioriti
 - The persistent review app is live at <https://fetch-silver-label-review.fly.dev/> in the Lemma Fly organization. It uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored as Fly secrets.
 - Human adjudication is not yet complete. Audit and priority fields are recommendations; they have not overwritten the Stage 04 primary labels.
 - The original `redaction_reviewed_v5_clean.xlsx` remains unchanged.
-- Stage 11 now provides consensus labels for all 431 source-row identities plus a strictly deduplicated 374-description version. It collapses repeated human review by description, uses both human decisions and independent-model corroboration, permits up to four labels, and records per-row provenance. See [`../gold_labels_consensus_20260716/`](../gold_labels_consensus_20260716/).
-- Five-rater analysis on 114 unique human-reviewed scenarios found human exact-set agreement of 61/114 (53.5%), mean human Jaccard 0.749, label-count ICC(A,1) 0.328 across all five raters, and conditional exact-pair incidence ICC(A,1) 0.279. Broad-category agreement was higher at 0.390. Full findings: [`../gold_labels_consensus_20260716/FINDINGS.md`](../gold_labels_consensus_20260716/FINDINGS.md).
+- Stage 11 now provides consensus labels for all 431 source-row identities plus a strictly deduplicated 373-description version. It collapses repeated human review by normalized description, uses both human decisions and independent-model corroboration, permits up to four labels, and records per-row provenance. See [`../gold_labels_consensus_20260716/`](../gold_labels_consensus_20260716/).
+- Set-based five-rater analysis on 114 unique human-reviewed stories found mean Jaccard distance / α-Jaccard of 0.251 / 0.744 for humans, 0.362 / 0.632 for LLMs, 0.370 / 0.623 for human–LLM pairs, and 0.355 / 0.638 across all five raters. Human exact-set agreement was 61/114 (53.5%). Full findings: [`../gold_labels_consensus_20260716/FINDINGS.md`](../gold_labels_consensus_20260716/FINDINGS.md).
+- Supplemental ICC analysis found label-count ICC(A,1) 0.328 across all five raters (95% CI 0.216–0.421), conditional exact-pair incidence ICC(A,1) 0.279, and conditional top-level incidence ICC(A,1) 0.390. Because labels are nominal sets, ICC is interpreted alongside—not instead of—Jaccard/α-Jaccard. See [`../gold_labels_consensus_20260716/ICC_ANALYSIS.md`](../gold_labels_consensus_20260716/ICC_ANALYSIS.md).
+- Two repaired, fully cache-disabled FETCH replicates now cover all 373 unique gold scenarios. Pooled across 746 scenario-run observations, FETCH retrieved at least one exact sublabel in 95.3%, every gold sublabel in 81.4%, and at least one correct top-level category in 99.2%; 3.9% were top-level-only and 0.8% missed every correct category. Paper-ready findings: [`../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md).
 
 ## Shared classification rules
 
@@ -39,15 +41,32 @@ Keyword and SPOT classification were not used. Credentials were loaded from the 
 | 08 | Focused two-label audit | Fresh Azure `gpt-5.2`; current primary supplied for audit; max 2 labels | 90 two-label rows; order-insensitive assessment and 132-row review queue | [`08_gpt52_two_label_audit/`](08_gpt52_two_label_audit/) |
 | 09 | Human-review prioritization | Current Codex/GPT-5 internal context review; no external API | Queue divided into 52 P1, 14 P2, and 66 P3 rows | [`09_internal_priority_review/`](09_internal_priority_review/) |
 | 10 | Cap-free focused adjudication and human interface | Current Codex/GPT-5 context; no external API; deterministic artifact builder | Seven 3–4 issue rows expanded; four human slots; persistent review app | [`10_four_label_human_review/`](10_four_label_human_review/), [`../human_review_app/`](../human_review_app/) |
-| 11 | Full consensus gold reconstruction and reliability analysis | Two human raters, three independent LLM passes, deterministic conservative consensus | 431 row-compatible results; 374 unique descriptions; 114 unique human-reviewed scenarios; ICC and qualitative disagreement analysis | [`../gold_labels_consensus_20260716/`](../gold_labels_consensus_20260716/) |
+| 11 | Full consensus gold reconstruction and reliability analysis | Two human raters, three independent LLM passes, deterministic conservative consensus | 431 row-compatible results; 373 unique descriptions; 114 unique human-reviewed stories; Jaccard distance, α-Jaccard, and label-level analysis | [`../gold_labels_consensus_20260716/`](../gold_labels_consensus_20260716/) |
+| 12 | Full FETCH multi-label gold evaluation | Two independent uncached five-classifier ensemble runs; targeted GPT-5.2 repair; exact and top-level retrieval analysis | 373 scenarios/run; 95.3% pooled any-exact retrieval; 99.2% any correct top-level; paper tables and row-level results | [`../gold_labels_consensus_20260716/fetch_gold_accuracy/`](../gold_labels_consensus_20260716/fetch_gold_accuracy/) |
 
 ## Stage 11: consensus gold labels and five-rater analysis
 
-The raw export contains 267 review records and no duplicate `(source row, reviewer)` keys. The apparent repetition came from the source: 57 pairs share an exact problem description, and 18 descriptions were actually reviewed under both aliases. Consensus is computed once per description, using the latest eligible decision from each human, and then mapped consistently to all aliases. This produces both a 431-row compatibility file and a no-duplicate 374-description file.
+The raw export contains 267 review records and no duplicate `(source row, reviewer)` keys. The apparent repetition came from the source: 57 pairs share an exact problem description, one additional pair differs only in whitespace, and 18 descriptions were actually reviewed under both aliases. Consensus is computed once per normalized description, using the latest eligible decision from each human, and then mapped consistently to all aliases. This produces both a 431-row compatibility file and a no-duplicate 373-description file.
 
-For human-reviewed disagreements, shared human labels are retained; a label selected by one human requires corroboration from at least two of GPT-5.2, Gemini 3.1 Pro, and DeepSeek V4. Unreviewed rows retain the Stage 04 primary plus exact pairs independently supported by at least two models. The result contains 239 one-label, 124 two-label, 9 three-label, and 2 four-label unique scenarios; no set required truncation beyond four.
+For human-reviewed disagreements, shared human labels are retained; a label selected by one human requires corroboration from at least two of GPT-5.2, Gemini 3.1 Pro, and DeepSeek V4. Unreviewed rows retain the Stage 04 primary plus exact pairs independently supported by at least two models. The result contains 238 one-label, 124 two-label, 9 three-label, and 2 four-label unique scenarios; no set required truncation beyond four.
 
-Agreement was materially better at broad category than exact subcategory. Across five raters, label-count ICC(A,1) was 0.328 (bootstrap 95% CI 0.216–0.421), conditional exact-pair incidence ICC(A,1) was 0.279, and conditional top-level incidence ICC(A,1) was 0.390. The two humans had 61/114 exact unordered-set matches, mean Jaccard 0.749, and mean label F1 0.818. Disagreements primarily reflected core issue versus secondary issue, narrow versus fallback taxonomy routes, missing party/procedural facts, and competing labels for one dispute. See the [full findings and examples](../gold_labels_consensus_20260716/FINDINGS.md), [machine-readable statistics](../gold_labels_consensus_20260716/rater_agreement_analysis.json), and [53-row disagreement extract](../gold_labels_consensus_20260716/human_disagreements.csv).
+The two humans had 61/114 exact unordered-set matches and mean Jaccard distance 0.251 (95% story-bootstrap CI 0.198–0.305); their α-Jaccard was 0.744 (0.687–0.796). Mean distances were higher among LLM pairs (0.362) and human–LLM pairs (0.370). Across all five raters, mean distance was 0.355 and α-Jaccard was 0.638. Disagreements primarily reflected core issue versus secondary issue, narrow versus fallback taxonomy routes, missing party/procedural facts, and competing labels for one dispute. See the [full findings and examples](../gold_labels_consensus_20260716/FINDINGS.md), [methods and reproduction guide](../gold_labels_consensus_20260716/AGREEMENT_METHODS.md), [machine-readable statistics](../gold_labels_consensus_20260716/rater_agreement_analysis.json), and [53-row disagreement extract](../gold_labels_consensus_20260716/human_disagreements.csv).
+
+## Stage 12: FETCH retrieval against multi-label gold
+
+The primary evaluation uses the 373-row whitespace-normalized, strictly deduplicated consensus file. Both independent Promptfoo replicates disabled Promptfoo's cache and FETCH's provider cache and used the same vote ensemble: full `gpt-5.2`, Gemini, Mistral, keyword, and SPOT. The Azure Mistral deployment was increased from capacity 1 to 100 (100 RPM / 100,000 TPM) before the runs. All GPT-5.2 non-success rows were rerun uncached at concurrency 1 and integrated: 28/28 succeeded for run 1 and 4/4 for run 2. Raw, repair, integrated, provider-audit, and hash-lineage artifacts are retained.
+
+| Run | All exact sublabels | Some exact sublabels | Top-level only | No correct category | Any exact sublabel | Any correct top-level | Graded score |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Run 1 | 80.4% | 14.5% | 4.0% | 1.1% | 94.9% | 98.9% | 92.6% |
+| Run 2 | 82.3% | 13.4% | 3.8% | 0.5% | 95.7% | 99.5% | 93.5% |
+| Pooled | 81.4% | 13.9% | 3.9% | 0.8% | 95.3% | 99.2% | 93.0% |
+
+The mutually exclusive outcome tiers give partial credit in the way most relevant to referral: all gold sublabels, some but not all exact sublabels, no exact sublabel but the correct top-level domain, and no correct domain. At the label-instance level, pooled exact precision / recall / F1 were 46.0% / 84.5% / 59.6%. The low strict-set match (10.5%) primarily reflects broad overprediction: the ensemble often retrieved the gold route while also returning additional plausible labels.
+
+Multi-label difficulty was pronounced. Pooled all-exact retrieval was 95.2% for one-label scenarios, 59.7% for two-label scenarios, 33.3% for three-label scenarios, and 0/4 run-observations for the two four-label scenarios; nevertheless, at least one exact sublabel was retrieved in 100% of the four-label observations. Across runs, any-exact success status was stable for 96.5% of scenarios, the full four-tier outcome was stable for 94.9%, and predicted-set mean Jaccard similarity was 86.3%.
+
+The most difficult recurring distinctions were dominant versus secondary legal issues, a correct broad domain paired with a neighboring procedural/specialist route, and narratives spanning institutional boundaries (for example workers' compensation versus personal injury, international immigration versus domestic-violence context, or business-security foreclosure versus real-property foreclosure). See the [full analysis and illustrative cases](../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md), [methods](../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_METHODS.md), [machine-readable summary](../gold_labels_consensus_20260716/fetch_gold_accuracy/accuracy_summary.json), and [row-level results](../gold_labels_consensus_20260716/fetch_gold_accuracy/scenario_results.csv).
 
 ## Stages 01–03: independent model passes
 
@@ -179,6 +198,8 @@ Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fl
 | Focused seven-row adjudication | [`10_four_label_human_review/focused_multilabel_adjudication.csv`](10_four_label_human_review/focused_multilabel_adjudication.csv) |
 | P1-only review extract | [`09_internal_priority_review/highest_priority_rows.csv`](09_internal_priority_review/highest_priority_rows.csv) |
 | Full prioritized queue | [`09_internal_priority_review/prioritized_review_queue.csv`](09_internal_priority_review/prioritized_review_queue.csv) |
+| Deduplicated consensus gold | [`../gold_labels_consensus_20260716/gold_labels_consensus_unique.csv`](../gold_labels_consensus_20260716/gold_labels_consensus_unique.csv) |
+| FETCH multi-label paper findings | [`../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md) |
 
 ## What remains
 
@@ -202,6 +223,9 @@ Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fl
 | [`../prioritize_human_review.py`](../prioritize_human_review.py) | Stage 09 priority queue and workbook |
 | [`../build_four_label_review.py`](../build_four_label_review.py) | Stage 10 expanded sets, four-slot workbook, app seed, and taxonomy snapshot |
 | [`../build_human_validated_gold.py`](../build_human_validated_gold.py) | Validate an app gold export and merge it with the 431-row public source |
+| [`../analyze_fetch_gold_accuracy.py`](../analyze_fetch_gold_accuracy.py) | Score exact sublabels, top-level categories, graded partial retrieval, strata, and cross-run stability |
+| [`../render_fetch_gold_findings.py`](../render_fetch_gold_findings.py) | Render paper-facing FETCH tables and qualitative examples |
+| [`../audit_fetch_provider_run.py`](../audit_fetch_provider_run.py) | Audit run-scoped provider outcomes and construct GPT exception repair subsets |
 
 ## Commit trail
 

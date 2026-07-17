@@ -1,24 +1,31 @@
-# Five-rater agreement and disagreement findings
+# Five-rater multi-label agreement findings
 
 ## Scope and interpretation
 
-The reliability analysis uses the 114 unique problem descriptions with eligible labels from both human reviewers. Exact duplicate descriptions are one target, not repeated targets. The five raters are GPT-5.2, Gemini 3.1 Pro, DeepSeek V4, Jackie, and QS. Every rating is treated as an unordered set.
+The analysis uses the 114 unique problem descriptions with eligible annotations from both human reviewers. Exact duplicate descriptions count once. The five raters are GPT-5.2, Gemini 3.1 Pro, DeepSeek V4, Jackie, and QS. Each annotation is treated as an unordered set of exact `(category, subcategory)` pairs.
 
-ICC is naturally defined for numerical ratings, while these labels are nominal multi-label sets. The main ICC therefore measures **how many labels** each rater selected. Two supplemental ICCs turn each plausible scenario/label choice into a binary selected/not-selected rating: one at the exact taxonomy-pair level and one at the top-level category. Pairwise Jaccard, label F1, and exact-set agreement are more directly interpretable for the nominal label contents.
+The primary descriptive statistic is **Jaccard distance**, where 0 means identical sets and 1 means disjoint sets. The chance-corrected statistic is **Krippendorff's alpha using Jaccard distance**, written here as **α-Jaccard**. Intraclass correlation is not reported: it is a numerical-rating statistic and does not directly measure agreement between nominal multi-label sets. See [`AGREEMENT_METHODS.md`](AGREEMENT_METHODS.md) for formulas, bootstrap details, and artifact-level reproduction.
 
 ## Quantitative results
 
-| Measure | ICC(A,1), single rater | ICC(A,k), mean of raters | Interpretation |
-|---|---:|---:|---|
-| Label count, all five raters (114 scenarios) | 0.328 (bootstrap 95% CI 0.216–0.421) | 0.709 (0.579–0.784) | Individual raters differed substantially in how many issues they retained; aggregation was materially more stable. |
-| Label count, two humans | 0.304 | 0.466 | The humans' scope threshold differed even when they often shared the core label. |
-| Label count, three LLMs | 0.321 | 0.587 | DeepSeek was notably more conservative than GPT-5.2 and Gemini. |
-| Exact-pair incidence, conditional on a pair being proposed (340 targets) | 0.279 | 0.660 | Exact subcategory agreement was the weakest reliability dimension. |
-| Top-level incidence, conditional on a category being proposed (193 targets) | 0.390 | 0.761 | Raters agreed more readily on broad legal domain than exact routing label. |
+| Comparison | Pairs/story | Mean Jaccard distance (95% CI) | α-Jaccard (95% CI) | Exact set match | Mean absolute label-count difference | Mean labels/rating |
+|---|---:|---:|---:|---:|---:|---:|
+| Humans | 1 | 0.251 (0.198–0.305) | 0.744 (0.687–0.796) | 61/114 (53.5%) | 0.465 | 1.899 |
+| LLMs | 3 | 0.362 (0.320–0.404) | 0.632 (0.586–0.672) | 125/342 (36.5%) | 0.544 | 1.962 |
+| Human–LLM | 6 | 0.370 (0.330–0.411) | 0.623 (0.579–0.660) | 250/684 (36.5%) | 0.499 | 1.899 human; 1.962 LLM |
+| All five | 10 | 0.355 (0.318–0.393) | 0.638 (0.598–0.673) | 436/1,140 (38.2%) | 0.509 | 1.937 |
 
-The apparently high all-taxonomy incidence sensitivity result—ICC(A,1) 0.743 across 23,826 scenario/pair cells—is misleading because the five raters jointly reject almost all of the 209 possible labels for each scenario. Shared zeros dominate it. It is reported for completeness, not as the headline reliability estimate.
+All confidence intervals are percentile intervals from 2,000 bootstrap samples of the 114 stories. Rater pairs within a resampled story stay together. The human–LLM coefficient uses the same `1 - Do/De` construction but draws expected disagreement from separate pooled human and LLM marginals; it is therefore a cross-group analogue of α-Jaccard, not a standard interchangeable-rater alpha.
 
-The humans selected the exact same unordered set on 61/114 scenarios (53.5%). Their mean Jaccard similarity was 0.749 and mean label F1 was 0.818, showing that many non-exact disagreements were one-label additions or omissions rather than wholly different readings. GPT-5.2 and Gemini were the closest LLM pair (mean Jaccard 0.730; 59/114 exact sets). Mean label counts were 2.22 for GPT-5.2, 2.11 for Gemini, 1.55 for DeepSeek, 1.82 for Jackie, and 1.97 for QS.
+The human annotations disagreed less than the LLM annotations or the cross-type pairs. The all-five mean is not a neutral midpoint: 6 of its 10 rater pairs per story are human–LLM, so cross-type disagreement has the largest weight. Label volume also differed by rater: GPT-5.2 selected 2.22 labels/story, Gemini 2.11, DeepSeek 1.55, Jackie 1.82, and QS 1.97.
+
+The expected Jaccard disagreements used by alpha are close to one (0.982 humans, 0.982 LLMs, and 0.981 all five) because independently pooled full label sets are almost always disjoint in a 209-label taxonomy. That explains why α-Jaccard is numerically much higher than `1 - mean Jaccard distance`; both values should be reported together.
+
+## Label-level analysis
+
+The exhaustive label table covers all 209 taxonomy pairs. At least one rater selected 129 labels in this 114-story subset; the remaining 80 labels were never selected, so their nominal per-label alpha is undefined rather than zero. For every label, the artifacts report each rater's selection count and prevalence, nominal five-rater alpha where estimable, and all ten rater-pair positive Jaccard and Dice/F1 scores.
+
+These label-level statistics are diagnostic, especially for rare labels. A perfect alpha for a label selected on only one story does not establish broadly reliable performance. The analysis does not use flattened story-by-label binary accuracy as a headline measure, because the large number of shared non-selections would dominate it.
 
 Repeated review was itself informative. Of 36 reviewer/description repeat pairs created by duplicate source descriptions, 30 (83.3%) produced the same set. The six changes were concentrated in multi-issue boundary cases such as contractor payment/liens, workplace injury versus third-party injury, domestic violence as context versus requested relief, and commercial versus residential property routing.
 

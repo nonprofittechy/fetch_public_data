@@ -1,7 +1,20 @@
 {
+  "method": {
+    "annotation_unit": "unordered set of exact category/subcategory pairs",
+    "independent_sampling_unit": "unique problem description",
+    "jaccard_distance": "1 - |intersection| / |union|; distance(empty, empty) = 0",
+    "alpha_jaccard": "1 - observed mean Jaccard distance / expected pooled Jaccard distance",
+    "human_llm_alpha": "cross-group analogue with expected distance from separate pooled human and LLM marginals",
+    "bootstrap": {
+      "unit": "story",
+      "iterations": 2000,
+      "seed": 20260716,
+      "interval": "2.5th and 97.5th percentiles with linear interpolation"
+    }
+  },
   "scope": {
     "raw_review_records": 267,
-    "unique_reviewed_scenarios": 114,
+    "unique_reviewed_stories": 114,
     "raters": [
       "gpt52",
       "gemini31_pro",
@@ -9,70 +22,104 @@
       "jackie",
       "qs"
     ],
-    "duplicate_source_descriptions_excluded_from_target_count": 28
+    "taxonomy_labels": 209,
+    "duplicate_source_descriptions_excluded_from_story_count": 28
   },
-  "icc": {
-    "label_count_all_five_raters": {
-      "targets": 114,
-      "raters": 5,
-      "icc_a_1": 0.327804036446633,
-      "icc_a_k": 0.7091591953531411,
-      "ms_targets": 0.9320912901723335,
-      "ms_raters": 7.773684210526318,
-      "ms_error": 0.22412668840242198,
-      "icc_a_1_bootstrap_95_ci": [
-        0.2160467212793477,
-        0.42128340131898145
+  "comparison_summary": {
+    "humans": {
+      "stories": 114,
+      "rater_pairs_per_story": 1,
+      "pair_observations": 114,
+      "mean_jaccard_distance": 0.25146198830409355,
+      "alpha_jaccard": 0.7438718230797439,
+      "observed_disagreement": 0.25146198830409355,
+      "expected_disagreement": 0.9817818223974032,
+      "exact_set_agreements": 61,
+      "exact_set_agreement_rate": 0.5350877192982456,
+      "mean_absolute_label_count_difference": 0.4649122807017544,
+      "mean_labels_per_rating": 1.8991228070175439,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.19809941520467836,
+        0.3048245614035088
       ],
-      "icc_a_k_bootstrap_95_ci": [
-        0.5794663695044258,
-        0.7844738162958005
+      "alpha_jaccard_95_ci": [
+        0.6873915317890298,
+        0.7959600016035864
       ]
     },
-    "label_count_humans_only": {
-      "targets": 114,
-      "raters": 2,
-      "icc_a_1": 0.3035599300892283,
-      "icc_a_k": 0.4657398913273588,
-      "ms_targets": 0.5414143766495886,
-      "ms_raters": 1.267543859649123,
-      "ms_error": 0.2852429746933705
+    "llms": {
+      "stories": 114,
+      "rater_pairs_per_story": 3,
+      "pair_observations": 342,
+      "mean_jaccard_distance": 0.36150097465886943,
+      "alpha_jaccard": 0.6317544993115609,
+      "observed_disagreement": 0.36150097465886943,
+      "expected_disagreement": 0.9816847021431063,
+      "exact_set_agreements": 125,
+      "exact_set_agreement_rate": 0.3654970760233918,
+      "mean_absolute_label_count_difference": 0.543859649122807,
+      "mean_labels_per_rating": 1.9619883040935673,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.31978557504873295,
+        0.4038535575048733
+      ],
+      "alpha_jaccard_95_ci": [
+        0.5860462648455579,
+        0.6715045258904025
+      ]
     },
-    "label_count_llms_only": {
-      "targets": 114,
-      "raters": 3,
-      "icc_a_1": 0.32103548966756507,
-      "icc_a_k": 0.5865193899186102,
-      "ms_targets": 0.6298452621228587,
-      "ms_raters": 14.643274853801174,
-      "ms_error": 0.18604771515810176
+    "human_llm": {
+      "stories": 114,
+      "rater_pairs_per_story": 6,
+      "pair_observations": 684,
+      "mean_jaccard_distance": 0.36976120857699807,
+      "alpha_jaccard": 0.6227268088046332,
+      "observed_disagreement": 0.36976120857699807,
+      "expected_disagreement": 0.9800887452549502,
+      "exact_set_agreements": 250,
+      "exact_set_agreement_rate": 0.3654970760233918,
+      "mean_absolute_label_count_difference": 0.49853801169590645,
+      "mean_labels_per_rating": 1.936842105263158,
+      "alpha_interpretation": "cross-group alpha analogue; separate human and LLM marginals",
+      "mean_labels_per_human_rating": 1.8991228070175439,
+      "mean_labels_per_llm_rating": 1.9619883040935673,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.3301851851851852,
+        0.4108467348927875
+      ],
+      "alpha_jaccard_95_ci": [
+        0.5789268909314721,
+        0.6601543366673512
+      ]
     },
-    "conditional_exact_pair_incidence_all_five": {
-      "targets": 340,
-      "raters": 5,
-      "icc_a_1": 0.27944357876582804,
-      "icc_a_k": 0.6597576917856658,
-      "ms_targets": 0.4786118341141766,
-      "ms_raters": 2.6064705882352937,
-      "ms_error": 0.15809300711435018
-    },
-    "conditional_top_level_incidence_all_five": {
-      "targets": 193,
-      "raters": 5,
-      "icc_a_1": 0.38950154389060426,
-      "icc_a_k": 0.7613381617520262,
-      "ms_targets": 0.37238773747841103,
-      "ms_raters": 0.7031088082901554,
-      "ms_error": 0.08644214162348879
-    },
-    "all_209_pair_incidence_sensitivity": {
-      "targets": 23826,
-      "raters": 5,
-      "icc_a_1": 0.743106931781615,
-      "icc_a_k": 0.9353309648746677,
-      "ms_targets": 0.036472991623689374,
-      "ms_raters": 0.03719466129438429,
-      "ms_error": 0.0023573055756014967
+    "all_five": {
+      "stories": 114,
+      "rater_pairs_per_story": 10,
+      "pair_observations": 1140,
+      "mean_jaccard_distance": 0.355453216374269,
+      "alpha_jaccard": 0.6376375443219034,
+      "observed_disagreement": 0.355453216374269,
+      "expected_disagreement": 0.9809327947872024,
+      "exact_set_agreements": 436,
+      "exact_set_agreement_rate": 0.3824561403508772,
+      "mean_absolute_label_count_difference": 0.5087719298245614,
+      "mean_labels_per_rating": 1.936842105263158,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.318062865497076,
+        0.39292726608187134
+      ],
+      "alpha_jaccard_95_ci": [
+        0.5975529759482874,
+        0.6730342841909268
+      ]
     }
   },
   "rater_summary": {
@@ -119,75 +166,30 @@
       }
     }
   },
-  "pairwise_set_agreement": {
-    "gpt52__gemini31_pro": {
-      "mean_jaccard": 0.7296783625730994,
-      "mean_label_f1": 0.8011695906432749,
-      "exact_set_agreements": 59,
-      "exact_set_agreement_rate": 0.5175438596491229
-    },
-    "gpt52__deepseek_v4": {
-      "mean_jaccard": 0.5997076023391813,
-      "mean_label_f1": 0.7017543859649122,
-      "exact_set_agreements": 33,
-      "exact_set_agreement_rate": 0.2894736842105263
-    },
-    "gpt52__jackie": {
-      "mean_jaccard": 0.6564327485380117,
-      "mean_label_f1": 0.7451127819548872,
-      "exact_set_agreements": 42,
-      "exact_set_agreement_rate": 0.3684210526315789
-    },
-    "gpt52__qs": {
-      "mean_jaccard": 0.7059941520467836,
-      "mean_label_f1": 0.7869256474519633,
-      "exact_set_agreements": 50,
-      "exact_set_agreement_rate": 0.43859649122807015
-    },
-    "gemini31_pro__deepseek_v4": {
-      "mean_jaccard": 0.5861111111111111,
-      "mean_label_f1": 0.685672514619883,
-      "exact_set_agreements": 33,
-      "exact_set_agreement_rate": 0.2894736842105263
-    },
-    "gemini31_pro__jackie": {
-      "mean_jaccard": 0.5994152046783625,
-      "mean_label_f1": 0.6928153717627402,
-      "exact_set_agreements": 37,
-      "exact_set_agreement_rate": 0.32456140350877194
-    },
-    "gemini31_pro__qs": {
-      "mean_jaccard": 0.6808479532163743,
-      "mean_label_f1": 0.7673767752715122,
-      "exact_set_agreements": 47,
-      "exact_set_agreement_rate": 0.41228070175438597
-    },
-    "deepseek_v4__jackie": {
-      "mean_jaccard": 0.5448830409356725,
-      "mean_label_f1": 0.6225981620718463,
-      "exact_set_agreements": 37,
-      "exact_set_agreement_rate": 0.32456140350877194
-    },
-    "deepseek_v4__qs": {
-      "mean_jaccard": 0.593859649122807,
-      "mean_label_f1": 0.6866332497911445,
-      "exact_set_agreements": 37,
-      "exact_set_agreement_rate": 0.32456140350877194
-    },
-    "jackie__qs": {
-      "mean_jaccard": 0.7485380116959064,
-      "mean_label_f1": 0.8184210526315789,
-      "exact_set_agreements": 61,
-      "exact_set_agreement_rate": 0.5350877192982456
-    }
-  },
-  "human_exact_set_agreements": 61,
-  "human_exact_set_agreement_rate": 0.5350877192982456,
-  "human_disagreement_scenarios": 53,
   "duplicate_review_stability": {
-    "repeated_scenario_reviewer_pairs": 36,
+    "repeated_story_reviewer_pairs": 36,
     "exactly_repeated_label_sets": 30,
-    "exact_repeat_rate": 0.8333333333333334,
-    "resolution": "latest eligible saved decision per reviewer used for each unique scenario"
+    "resolution": "latest eligible saved decision per reviewer used for each unique story"
+  },
+  "reproducibility": {
+    "script": "analyze_gold_rater_agreement.py",
+    "python": "3.12.3",
+    "input_sha256": {
+      "redaction_reviewed_v5_clean.xlsx": "6dc3c9e2ad686355d1c70cb0865e1046a61353d714e3f7f3c23c07b07156d430",
+      "../app/data/taxonomy_detailed_descriptions.csv": "d24bbde77c1fea70b10f8fb547bf2794e1ddd1afca84514b7c6469d42c1f059d",
+      "silver_labels/10_four_label_human_review/human_label_reviews (4).csv": "6da9873ff04a35ed772c804bb99f1f688d2434ad8fcfab086b5bca86408ae53d",
+      "silver_labels/01_gpt52/checkpoint.json": "7fc3ebcbf702f2fcedcf24140daf41639d8ec6ea43c05f69e601afe9a57dcd72",
+      "silver_labels/02_gemini31_pro/checkpoint.json": "3465172357cb56b398a55f9ff56a1551a0c583c38fc9b36c5202f98c25a49190",
+      "silver_labels/03_deepseek_v4/checkpoint.json": "d4d46846345cab2865223350641212d048faaf0bff0e35cc418a2c3b8d7c5c50"
+    },
+    "intermediate_files": [
+      "rater_sets.csv",
+      "story_pairwise_set_distances.csv",
+      "comparison_summary.csv",
+      "comparison_bootstrap.csv",
+      "label_level_summary.csv",
+      "label_level_pairwise_positive_agreement.csv",
+      "human_disagreements.csv"
+    ]
   }
 }
