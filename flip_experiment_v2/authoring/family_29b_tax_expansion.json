@@ -1,0 +1,71 @@
+{
+  "boundary_id": "tax_dispute_route",
+  "mechanism": "M3_missing_procedural_or_institutional_fact",
+  "flip_type": "routing_disambiguation",
+  "grounding_source_rows": "taxonomy Taxation descriptions",
+  "grounding_note": "Expansion batch: more stage/taxpayer/tax-type disclosures.",
+  "safety_sensitive": false,
+  "scenarios": [
+    {
+      "suffix": "21",
+      "direction": "AtoB",
+      "opening_query": "The IRS put a lien on our house over back taxes and my wife found out from a mortgage refinance denial.",
+      "initial": "Taxation > Personal Income",
+      "final": "Taxation > Litigation",
+      "plausible_initial_labels": "Taxation > Personal Income || Taxation > Litigation",
+      "hidden_fact": "We already went through appeals and lost — the collection due process determination is final, and I'm told the next stop is Tax Court on a strict deadline.",
+      "fact_as_answer": "Appeals is over and we lost — the CDP determination is final, and Tax Court on a strict deadline is what's left.",
+      "relevant_question_topic": "whether administrative remedies are exhausted forcing Tax Court",
+      "counterfactual_final": "Taxation > Personal Income",
+      "counterfactual_hidden_fact": "We never responded to anything — no hearing was ever requested, so the work is reopening collection alternatives with the IRS directly.",
+      "counterfactual_fact_as_answer": "We never responded to any notices — so it's about reopening things with the IRS directly.",
+      "vetting_note": "Exhaustion posture separates IRS negotiation from Tax Court litigation."
+    },
+    {
+      "suffix": "22",
+      "direction": "AtoB",
+      "opening_query": "My food cart got a huge tax bill I don't understand and the state says pay first, argue later.",
+      "initial": "Taxation > Personal Income",
+      "final": "Taxation > Business & Corporate",
+      "plausible_initial_labels": "Taxation > Personal Income || Taxation > Business & Corporate",
+      "hidden_fact": "It's a business assessment — the state reconstructed my cart's sales from card data and assessed transit and business taxes against the LLC.",
+      "fact_as_answer": "It's against the business — they reconstructed the cart's sales from card data and assessed the LLC.",
+      "relevant_question_topic": "whether the assessment targets the business entity",
+      "counterfactual_final": "Taxation > Personal Income",
+      "counterfactual_hidden_fact": "It's my personal return — they disallowed my home-office and vehicle deductions from the cart years.",
+      "counterfactual_fact_as_answer": "It's my personal return — disallowed home-office and vehicle deductions.",
+      "vetting_note": "Entity-vs-personal assessment behind one 'tax bill' framing."
+    },
+    {
+      "suffix": "23",
+      "direction": "AtoB",
+      "opening_query": "I just discovered my late husband hadn't filed our taxes for six years. I'm terrified of what happens next.",
+      "initial": "Taxation > Personal Income",
+      "final": "Wills & Trusts > Probate",
+      "plausible_initial_labels": "Taxation > Personal Income || Wills & Trusts > Probate",
+      "hidden_fact": "His estate is open with me as representative — the six years of returns are the estate's obligation to file, and the probate can't close until they're resolved.",
+      "fact_as_answer": "His estate is open and I'm the representative — the missing returns are the estate's to file before probate can close.",
+      "relevant_question_topic": "whether estate administration frames the tax cleanup",
+      "counterfactual_final": "Taxation > Personal Income",
+      "counterfactual_hidden_fact": "There's no estate — everything passed to me automatically; the exposure is MY innocent-spouse position on those joint years.",
+      "counterfactual_fact_as_answer": "No estate to open — everything passed to me. It's my innocent-spouse exposure on the joint years.",
+      "safety_sensitive": true,
+      "vetting_note": "Estate-open fact routes the same discovery to probate practice."
+    },
+    {
+      "suffix": "24",
+      "direction": "AtoB",
+      "opening_query": "I do gig work on three apps and the tax people say I owe self-employment money I never knew about.",
+      "initial": "Taxation > Personal Income",
+      "final": "Labor & Employment > FLSA - Employee",
+      "plausible_initial_labels": "Taxation > Personal Income || Labor & Employment > FLSA - Employee",
+      "hidden_fact": "One 'app' is really a delivery company that controls my shifts, routes, and uniform — a lawyer told me I'm likely a misclassified employee, which changes both the taxes and my rights.",
+      "fact_as_answer": "One company controls my shifts, routes, and uniform — I'm told I'm likely a misclassified employee, which changes the taxes and my rights.",
+      "relevant_question_topic": "whether worker misclassification underlies the tax bill",
+      "counterfactual_final": "Taxation > Personal Income",
+      "counterfactual_hidden_fact": "The gigs are genuinely independent — the issue is I never made quarterly payments and the penalties snowballed.",
+      "counterfactual_fact_as_answer": "The gigs are genuinely independent — I just never paid quarterlies and penalties snowballed.",
+      "vetting_note": "Misclassification fact converts a tax-debt case into an employment-rights case."
+    }
+  ]
+}
