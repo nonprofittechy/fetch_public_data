@@ -1,6 +1,6 @@
 {
-  "total_candidates": 875,
-  "families": 108,
+  "total_candidates": 887,
+  "families": 110,
   "by_boundary": {
     "benefit_agency": 36,
     "business_entity_specifics": 22,
@@ -23,7 +23,7 @@
     "ip_protection_type": 22,
     "land_taking_posture": 6,
     "license_action_source": 28,
-    "neighbor_dispute_nature": 22,
+    "neighbor_dispute_nature": 28,
     "professional_negligence": 30,
     "protective_order_relationship": 30,
     "relationship_legal_status": 18,
@@ -32,25 +32,25 @@
     "ssi_vs_ssd": 44,
     "tax_dispute_route": 10,
     "tenancy_property_type": 39,
-    "vehicle_purchase_source": 22,
+    "vehicle_purchase_source": 28,
     "wc_state_vs_third_party": 40,
     "wc_system_identity": 10
   },
   "by_direction": {
-    "AtoB": 720,
-    "BtoA": 155
+    "AtoB": 730,
+    "BtoA": 157
   },
   "by_flip_type": {
-    "routing_disambiguation": 693,
+    "routing_disambiguation": 705,
     "label_change": 182
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 512,
-    "M2_specific_vs_general_fallback": 179,
+    "M3_missing_procedural_or_institutional_fact": 518,
+    "M2_specific_vs_general_fallback": 185,
     "M4_competing_framings_of_one_dispute": 62,
     "M1_core_vs_secondary_issue": 122
   },
-  "safety_sensitive_rows": 106,
+  "safety_sensitive_rows": 107,
   "opening_query_words": {
     "min": 10,
     "max": 24,
