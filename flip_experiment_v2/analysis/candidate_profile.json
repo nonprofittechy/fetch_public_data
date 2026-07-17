@@ -1,6 +1,6 @@
 {
-  "total_candidates": 572,
-  "families": 61,
+  "total_candidates": 586,
+  "families": 63,
   "by_boundary": {
     "benefit_agency": 22,
     "business_entity_specifics": 16,
@@ -18,8 +18,10 @@
     "government_defendant": 18,
     "home_loan_posture": 14,
     "immigration_posture": 14,
+    "injury_mechanism": 8,
     "insurance_route": 16,
     "ip_protection_type": 16,
+    "land_taking_posture": 6,
     "license_action_source": 16,
     "neighbor_dispute_nature": 16,
     "professional_negligence": 18,
@@ -35,16 +37,16 @@
     "wc_system_identity": 10
   },
   "by_direction": {
-    "AtoB": 459,
-    "BtoA": 113
+    "AtoB": 471,
+    "BtoA": 115
   },
   "by_flip_type": {
-    "routing_disambiguation": 456,
+    "routing_disambiguation": 470,
     "label_change": 116
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 340,
-    "M2_specific_vs_general_fallback": 110,
+    "M3_missing_procedural_or_institutional_fact": 346,
+    "M2_specific_vs_general_fallback": 118,
     "M4_competing_framings_of_one_dispute": 42,
     "M1_core_vs_secondary_issue": 80
   },
