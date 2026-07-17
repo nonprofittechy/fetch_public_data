@@ -1,9 +1,9 @@
 {
-  "total_candidates": 540,
-  "families": 55,
+  "total_candidates": 552,
+  "families": 57,
   "by_boundary": {
     "benefit_agency": 22,
-    "business_entity_specifics": 10,
+    "business_entity_specifics": 16,
     "capacity_and_protection": 16,
     "charge_severity": 28,
     "consumer_service_route": 8,
@@ -16,7 +16,7 @@
     "employment_paper_and_pay": 6,
     "estate_posture": 20,
     "government_defendant": 18,
-    "home_loan_posture": 8,
+    "home_loan_posture": 14,
     "immigration_posture": 14,
     "insurance_route": 16,
     "ip_protection_type": 16,
@@ -35,16 +35,16 @@
     "wc_system_identity": 6
   },
   "by_direction": {
-    "AtoB": 430,
-    "BtoA": 110
+    "AtoB": 441,
+    "BtoA": 111
   },
   "by_flip_type": {
-    "routing_disambiguation": 424,
+    "routing_disambiguation": 436,
     "label_change": 116
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 320,
-    "M2_specific_vs_general_fallback": 98,
+    "M3_missing_procedural_or_institutional_fact": 326,
+    "M2_specific_vs_general_fallback": 104,
     "M4_competing_framings_of_one_dispute": 42,
     "M1_core_vs_secondary_issue": 80
   },
