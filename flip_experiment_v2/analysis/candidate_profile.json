@@ -1,6 +1,6 @@
 {
-  "total_candidates": 704,
-  "families": 79,
+  "total_candidates": 716,
+  "families": 81,
   "by_boundary": {
     "benefit_agency": 30,
     "business_entity_specifics": 16,
@@ -23,7 +23,7 @@
     "ip_protection_type": 16,
     "land_taking_posture": 6,
     "license_action_source": 22,
-    "neighbor_dispute_nature": 16,
+    "neighbor_dispute_nature": 22,
     "professional_negligence": 24,
     "protective_order_relationship": 24,
     "relationship_legal_status": 12,
@@ -32,21 +32,21 @@
     "ssi_vs_ssd": 38,
     "tax_dispute_route": 10,
     "tenancy_property_type": 33,
-    "vehicle_purchase_source": 16,
+    "vehicle_purchase_source": 22,
     "wc_state_vs_third_party": 34,
     "wc_system_identity": 10
   },
   "by_direction": {
-    "AtoB": 571,
-    "BtoA": 133
+    "AtoB": 581,
+    "BtoA": 135
   },
   "by_flip_type": {
-    "routing_disambiguation": 552,
+    "routing_disambiguation": 564,
     "label_change": 152
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 410,
-    "M2_specific_vs_general_fallback": 140,
+    "M3_missing_procedural_or_institutional_fact": 416,
+    "M2_specific_vs_general_fallback": 146,
     "M4_competing_framings_of_one_dispute": 50,
     "M1_core_vs_secondary_issue": 104
   },
@@ -54,7 +54,7 @@
   "opening_query_words": {
     "min": 10,
     "max": 24,
-    "mean": 17.1
+    "mean": 17.09
   },
   "generator_model": "claude-fable-5 (Claude Fable 5, Anthropic, via Claude Code)"
 }
