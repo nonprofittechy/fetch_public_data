@@ -2,6 +2,8 @@
 
 This repository contains the public, cleaned redaction-review workbook and the Python utilities used during its preparation.
 
+For the consolidated, paper-oriented account of findings across the silver-label, consensus-gold, FETCH accuracy, and hidden-fact benchmark folders, see [`AUTHORITATIVE_FINDINGS_SUMMARY.md`](AUTHORITATIVE_FINDINGS_SUMMARY.md).
+
 ## Public dataset
 
 [`redaction_reviewed_v5_clean.xlsx`](redaction_reviewed_v5_clean.xlsx) contains the columns:
