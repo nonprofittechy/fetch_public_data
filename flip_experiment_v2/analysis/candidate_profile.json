@@ -1,6 +1,6 @@
 {
-  "total_candidates": 785,
-  "families": 93,
+  "total_candidates": 797,
+  "families": 95,
   "by_boundary": {
     "benefit_agency": 30,
     "business_entity_specifics": 22,
@@ -29,26 +29,26 @@
     "relationship_legal_status": 18,
     "reputation_harm_type": 20,
     "small_claims_vs_construction": 38,
-    "ssi_vs_ssd": 38,
+    "ssi_vs_ssd": 44,
     "tax_dispute_route": 10,
     "tenancy_property_type": 33,
     "vehicle_purchase_source": 22,
-    "wc_state_vs_third_party": 34,
+    "wc_state_vs_third_party": 40,
     "wc_system_identity": 10
   },
   "by_direction": {
-    "AtoB": 643,
-    "BtoA": 142
+    "AtoB": 651,
+    "BtoA": 146
   },
   "by_flip_type": {
-    "routing_disambiguation": 633,
-    "label_change": 152
+    "routing_disambiguation": 639,
+    "label_change": 158
   },
   "by_mechanism": {
-    "M3_missing_procedural_or_institutional_fact": 464,
+    "M3_missing_procedural_or_institutional_fact": 470,
     "M2_specific_vs_general_fallback": 161,
     "M4_competing_framings_of_one_dispute": 56,
-    "M1_core_vs_secondary_issue": 104
+    "M1_core_vs_secondary_issue": 110
   },
   "safety_sensitive_rows": 89,
   "opening_query_words": {
