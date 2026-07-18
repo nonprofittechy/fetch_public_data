@@ -93,7 +93,14 @@ async def main_async() -> int:
 
     provider_config = {
         "condition": "intended",
-        "enabled_providers": ["gpt-5", "keyword"],
+        # All 5 providers vote on the initial classification call. The
+        # follow-up (post-disclosure) call automatically narrows to the LLM
+        # providers only (gpt-5, gemini, mistral) via the corrected
+        # provider_type filter in ClassificationService.classify() -- keyword
+        # and spot cannot use the disclosed answer and are excluded there,
+        # not here. See app/services/classification_service.py's
+        # FOLLOWUP_EXCLUDED_PROVIDER_TYPES.
+        "enabled_providers": ["gpt-5", "gemini", "mistral", "keyword", "spot"],
         "decision_mode": "vote",
         "taxonomy_name": "default",
         "cache_enabled": False,

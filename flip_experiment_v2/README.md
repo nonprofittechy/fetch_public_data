@@ -90,8 +90,9 @@ Claude-vetted candidates, not human gold labels.
 
 Same two-step design as v1 and the paper:
 
-1. FETCH (GPT-5 + keyword, vote mode, cache disabled) classifies the opening
-   query and generates follow-up questions.
+1. FETCH classifies the opening query and generates follow-up questions.
+   Vote mode across all 5 enabled providers (`gpt-5`, `gemini`, `mistral`,
+   `keyword`, `spot`), cache disabled.
 2. **GPT-5** (not GPT-4.1 as in v1) judges whether any generated question
    would be directly answered by the hidden fact. The v2 bridge
    (`two_step_provider_bridge.py`) replaces the provider's matcher with a
@@ -100,7 +101,23 @@ Same two-step design as v1 and the paper:
    `matcher_log.jsonl`, and reports matcher errors loudly instead of silently
    returning "no match".
 3. On a match, FETCH re-classifies with the conversational answer
-   (`fact_as_answer`) and both label sets are recorded.
+   (`fact_as_answer`), voting across the 3 LLM-backed providers (`gpt-5`,
+   `gemini`, `mistral` — keyword and SPOT cannot use the extra context and
+   are excluded), and both label sets are recorded.
+
+**Pipeline fix (2026-07-18):** the initial official run (`final_run_1`,
+2026-07-18 00:26 UTC) uncovered two structural bugs in FETCH itself that
+made step 3 not actually use the disclosed answer for GPT-5-family
+classifiers. Both were fixed in the FETCH repo
+(`fix/followup-context-and-provider-mix` branch, commit `41585d0`) with
+regression tests; every run from `final_run_1` (2026-07-18 20:xx UTC)
+onward uses the fixed pipeline. Root-cause details, before/after evidence,
+and the narrow reproducibility excerpts of the fixed FETCH code are in
+[`analysis/RESULTS.md`](analysis/RESULTS.md),
+[`analysis/EXECUTION_LOG.md`](analysis/EXECUTION_LOG.md), and
+[`fetch_pipeline_snapshot/`](fetch_pipeline_snapshot/) (FETCH is not open
+source; that folder captures only the narrow slice needed to reproduce this
+study's results, not FETCH's application code).
 
 ## Reproduction
 

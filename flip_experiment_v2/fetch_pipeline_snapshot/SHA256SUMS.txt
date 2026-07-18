@@ -1,0 +1,10 @@
+fbe0b64ffef61325908ae12d4f46c6304b602dec8884fd7b41fafa76e3b6b4a5  two_step_followup_provider.snapshot.py
+56fd4eb42cce68aca40dee82da97d68cc96e50585ab6504b17f5ba7dfccdedae  README.md
+6820b2a92342d4d9f605d6f7649b8bba1a8fef03437552d98d3b03d40caa037e  PIPELINE_EXCERPTS.md
+# Source files this snapshot was copied/excerpted from (private FETCH repo)
+fbe0b64ffef61325908ae12d4f46c6304b602dec8884fd7b41fafa76e3b6b4a5  /home/quinten/fetch/promptfoo/two_step_followup_provider.py
+d3146b8379c25fdc02d6d2f0944ecb1fb8c3ad2a5ee9f7ad1e4f1225a4a602f5  /home/quinten/fetch/app/providers/openai.py
+8c1219f5cfdd7b2a34368648fcb28190f6431115a1fcfbe018dd2e54c9663652  /home/quinten/fetch/app/services/classification_service.py
+6b609ae559de78edc47a235ce1726520d6353766832bcf3977f9c948a645220d  /home/quinten/fetch/app/providers/utils.py
+6eb23c6280ae4457c8723bec5586109c5d708782f2a41c8887066e64d83cfeb5  /home/quinten/fetch/app/prompts/default.txt
+eea0dc04ca4de40110be2aa512bce2f186286d13903330ab2aeeeecd5a50b202  /home/quinten/fetch/app/core/config.py
