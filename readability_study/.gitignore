@@ -1,0 +1,22 @@
+# The repo-root .gitignore treats all data files (*.csv/*.json/*.jsonl/...) as
+# private by default. Re-include the study artifacts needed to reproduce and
+# write up this study. (See memory: repo-gitignore-data-private.)
+
+# Input scenario sets
+!scenarios/*.csv
+
+# Raw generated screens + run provenance
+!results/**/*.jsonl
+!results/**/*.json
+
+# Computed metrics and analysis outputs
+!metrics/**/*.jsonl
+!metrics/**/*.json
+!metrics/**/*.csv
+!analysis/**/*.csv
+!analysis/**/*.json
+
+# Never commit these regardless
+*.log
+app.log
+__pycache__/

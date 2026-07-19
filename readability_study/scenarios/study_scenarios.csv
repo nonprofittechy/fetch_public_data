@@ -1,0 +1,89 @@
+scenario_id,boundary_id,opening_query,initial_category,initial_subcategory,safety_sensitive
+v2_benefit_agency_01,benefit_agency,My benefits got cut off last month and nobody at the office will explain anything.,Administrative Law,Welfare,false
+v2_benefit_agency_10,benefit_agency,Our small counseling practice got a letter terminating our biggest contract without cause and it will sink us.,Business and Corporate,"General (contracts, entities)",false
+v2_benefit_agency_13,benefit_agency,I was let go unfairly and now I have no income coming in at all. I need legal help this week.,Labor & Employment,Wrongful Discharge - Employee,false
+v2_business_entity_specifics_01,business_entity_specifics,I'm starting an organization with two friends and we need help setting it up properly.,Business and Corporate,"General (contracts, entities)",false
+v2_business_entity_specifics_10,business_entity_specifics,A guy is making money off videos of my performances without any agreement with me.,Intellectual Property,Entertainment,false
+v2_business_entity_specifics_44,business_entity_specifics,The city is making it impossible to run our food-truck commissary and we suspect favoritism.,Administrative Law,General (Local/Municipal),false
+v2_capacity_and_protection_01,capacity_and_protection,I need to take over my father's finances before he loses everything. Where do I start?,Wills & Trusts,Power of Attorney,false
+v2_capacity_and_protection_05,capacity_and_protection,The court gave my aunt control over my grandmother years ago and the family thinks it's time to revisit that.,Wills & Trusts,Conservatorship/Guardianship,false
+v2_capacity_and_protection_61,capacity_and_protection,"Dad keeps 'winning' sweepstakes that require processing fees, and this month it was $6,000.",Wills & Trusts,Elder Abuse,false
+v2_capacity_and_protection_65,capacity_and_protection,Our aunt's new 'financial planner' has her convinced her family is stealing from her.,Wills & Trusts,Elder Abuse,true
+v2_charge_severity_02,charge_severity,The police charged me with assault after an argument with my brother-in-law got physical. I'm terrified.,Criminal Law,Lesser Felony,false
+v2_charge_severity_05,charge_severity,I was arrested for domestic violence charges I dispute and I can't go home right now.,Criminal Law,Lesser Felony,true
+v2_consumer_service_route_08,consumer_service_route,An online seller took my money for equipment that never arrived and now the website is gone.,Consumer Law,General,false
+v2_consumer_service_route_21,consumer_service_route,A gym I quit two years ago is still charging my card and support just loops me in circles.,Consumer Law,General,false
+v2_consumer_service_route_22,consumer_service_route,The cremation company handled my mother's remains so carelessly that our family is traumatized.,Consumer Law,General,true
+v2_creditor_judgment_bankruptcy_02,creditor_judgment_bankruptcy,I have a judgment from small claims court but still haven't seen a dime. What's next?,Debtor/Creditor,Judgment Collection,false
+v2_creditor_judgment_bankruptcy_41,creditor_judgment_bankruptcy,My ex-tenant owes me for a year of damage and unpaid rent and laughed when I said I'd sue.,Real Property,Landlord Residential,false
+v2_creditor_judgment_bankruptcy_44,creditor_judgment_bankruptcy,Our nonprofit is owed a large grant reimbursement from a partner agency that keeps stalling.,Debtor/Creditor,General (Creditor),false
+v2_criminal_posture_01,criminal_posture,I need a lawyer for my criminal case. The public defender isn't fighting for me at all.,Criminal Law,Misdemeanor,false
+v2_criminal_posture_66,criminal_posture,My brother called 911 during his crisis and somehow ended up the one facing consequences.,Criminal Law,Misdemeanor,true
+v2_custody_safety_13,custody_safety,The father of my baby refuses to help with anything and denies she's even his.,Family Law,Child Support/Modification,true
+v2_custody_safety_63,custody_safety,My son came home from his dad's with bruises and a story that keeps changing.,Family Law,Child Custody/Visitation,true
+v2_custody_safety_66,custody_safety,I'm terrified my ex will hurt the kids and me if I push for the support he owes.,Family Law,Restraining Orders,true
+v2_debt_posture_10,debt_posture,The hospital sent my bill to collections even though I was making small payments every month.,Debtor/Creditor,General (Debtor),false
+v2_debt_posture_24,debt_posture,"The same debt collector calls me twenty times a day, even after I sent them a letter.",Debtor/Creditor,Collection/Harassment,false
+v2_discharge_reason_19,discharge_reason,Terminated from my trucking job and I'm certain the reason they wrote up is a cover story.,Labor & Employment,Wrongful Discharge - Employee,false
+v2_discharge_reason_50,discharge_reason,I got terminated while deployed with the National Guard and came home to no job.,Labor & Employment,Wrongful Discharge - Employee,false
+v2_divorce_context_01,divorce_context,I need to file for divorce. We've been married four years and there's no fixing this.,Family Law,General (Divorce/Separation etc.),false
+v2_divorce_context_10,divorce_context,I'm leaving my marriage and I have no income of my own right now. What am I entitled to?,Family Law,General (Divorce/Separation etc.),false
+v2_employment_paper_and_pay_01,employment_paper_and_pay,I'm being pushed out of my job and they gave me until Friday to make a decision.,Labor & Employment,Wrongful Discharge - Employee,false
+v2_employment_paper_and_pay_04,employment_paper_and_pay,I was disciplined at my job unfairly and I want to fight it through every channel I have.,Labor & Employment,General - Employee,false
+v2_employment_paper_and_pay_06,employment_paper_and_pay,I have a wage claim against my old employer but there's a complication I didn't expect.,Labor & Employment,Wage and Hour Claims - Employee,false
+v2_estate_posture_46,estate_posture,The funeral is Friday and the family is already fighting about who's in charge of everything.,Wills & Trusts,Probate,false
+v2_estate_posture_63,estate_posture,My husband's pension check still arrives every month even though he passed in the spring. I'm afraid to touch it.,Wills & Trusts,Probate,true
+v2_estate_posture_64,estate_posture,The house Mom left us has a tenant with a lease Mom signed that runs three more years at half market rent.,Wills & Trusts,Probate,false
+v2_government_defendant_21,government_defendant,An ambulance crew dropped my father during a transfer and he broke his shoulder.,General Litigation,Malpractice (Medical),false
+v2_government_defendant_66,government_defendant,Someone at the courthouse leaked my sealed address to the man I have a protective order against.,General Litigation,General Torts/Privacy,true
+v2_home_loan_posture_03,home_loan_posture,We can't afford the house since my husband died and I don't know what my options even are.,Real Property,Foreclosure,true
+v2_home_loan_posture_25,home_loan_posture,A man came to our door offering to 'save' the house and now the deed isn't in our name anymore.,Real Property,Foreclosure,false
+v2_home_loan_posture_41,home_loan_posture,Our lender keeps 'losing' our hardship packet while the late fees pile up month after month.,Consumer Law,Mortgage Issues (non-foreclosure),false
+v2_immigration_posture_03,immigration_posture,They're trying to deport my brother and our whole family is falling apart over it.,International Law,Deportation,true
+v2_immigration_posture_22,immigration_posture,My husband was detained at his regular immigration check-in this morning and I don't know where he is.,International Law,Deportation,true
+v2_immigration_posture_25,immigration_posture,We want to hire a brilliant engineer from abroad but the process defeats me every time I read about it.,International Law,General Immigration/Visas,true
+v2_injury_mechanism_08,injury_mechanism,A city bus jolted so hard that I was thrown into the fare box and knocked out cold.,General Litigation,Tort Claims Act,false
+v2_injury_mechanism_23,injury_mechanism,"My daughter's cheer team practices on mats the gym knows are worn out, and she finally got hurt.",General Litigation,Premises Liability,false
+v2_insurance_route_26,insurance_route,Insurance is refusing to pay for the treatment that literally kept my daughter alive.,General Litigation,Insurance (Health/Disability),false
+v2_insurance_route_45,insurance_route,The insurance company says my disability isn't 'total' anymore even though nothing about my condition changed.,Labor & Employment,Pensions/Benefits/ERISA - Employee,false
+v2_insurance_route_62,insurance_route,The nursing home's insurance offered us a settlement for Dad's fall before we even hired anyone.,General Litigation,Personal Injury,true
+v2_ip_protection_type_02,ip_protection_type,Someone is stealing my work and selling it as their own. I want to stop them now.,Intellectual Property,Patent (Reg Patent Attys Only),false
+v2_ip_protection_type_41,ip_protection_type,My grandmother's recipes became my bakery's signature line and a chain is now selling knockoffs.,Intellectual Property,Trademark/Copyright,false
+v2_ip_protection_type_45,ip_protection_type,A national brand sent my Etsy shop a letter demanding I destroy all my inventory.,Intellectual Property,Trademark/Copyright,false
+v2_ip_protection_type_65,ip_protection_type,The app I commissioned from a dev shop turned up rebranded in another country's app store.,Intellectual Property,Computer Law & Internet Law,false
+v2_land_taking_posture_01,land_taking_posture,The state wants a strip of our front acreage for the highway widening and their offer is insulting.,Real Property,Eminent Domain,false
+v2_land_taking_posture_05,land_taking_posture,Our church property is under threat from the city's redevelopment plans and the congregation is frightened.,Real Property,Eminent Domain,false
+v2_license_action_source_03,license_action_source,I need help with my DUI case. This whole thing has been a nightmare for my family.,Criminal Law,DUII/DWS,false
+v2_license_action_source_06,license_action_source,I was cited for driving while suspended but I truly didn't know my license was suspended.,Criminal Law,DUII/DWS,false
+v2_license_action_source_21,license_action_source,My CDL is my livelihood and something happened this weekend that could take it away.,Criminal Law,Traffic Offenses - CDL Drivers,false
+v2_license_action_source_23,license_action_source,I finished everything for my DUI years ago but it's still wrecking my insurance and job applications.,Criminal Law,DUII/DWS,false
+v2_license_action_source_26,license_action_source,I'm terrified because there was an accident and the other driver is talking about pressing charges.,Criminal Law,Traffic Offenses,false
+v2_neighbor_dispute_nature_22,neighbor_dispute_nature,Our uphill neighbor regraded his yard and now every storm sends a river through our property.,General Litigation,Neighbor Disputes/Nuisance,false
+v2_neighbor_dispute_nature_24,neighbor_dispute_nature,The neighbor's dog has terrorized our street for a year and animal control does nothing.,General Litigation,Animal Law,false
+v2_neighbor_dispute_nature_66,neighbor_dispute_nature,The man behind us screams threats over the fence at my wife whenever I leave for work.,General Litigation,Neighbor Disputes/Nuisance,true
+v2_professional_negligence_41,professional_negligence,The birth injury changed our lives forever and the hospital's own review admitted 'process failures.',General Litigation,Malpractice (Medical),true
+v2_professional_negligence_45,professional_negligence,My realtor 'forgot' to submit our counteroffer and we lost the house we'd been chasing for a year.,General Litigation,General Litigation,false
+v2_professional_negligence_61,professional_negligence,The estate lawyer Mom hired put her house into the wrong kind of trust and now Medicaid says she's disqualified.,General Litigation,Malpractice (Legal),false
+v2_protective_order_relationship_12,protective_order_relationship,Someone I had to fire keeps contacting me at home and my family is getting scared.,General Litigation,Stalking Orders,true
+v2_protective_order_relationship_41,protective_order_relationship,Someone slashed my tires twice this month and I have a good idea who it is.,General Litigation,Stalking Orders,true
+v2_relationship_legal_status_02,relationship_legal_status,My ex is keeping the house we bought together and says I have no rights to it.,Family Law,Informal Living Arrangements,false
+v2_relationship_legal_status_04,relationship_legal_status,"My girlfriend moved out and took things that we bought together, including the dog.",Family Law,Informal Living Arrangements,false
+v2_reputation_harm_type_22,reputation_harm_type,"My ex-business partner is telling suppliers I stole from the company, and it's killing my new venture.",General Litigation,Libel/Slander/Defamation,false
+v2_reputation_harm_type_26,reputation_harm_type,My teenager's reputation was destroyed by rumors classmates spread about her online.,General Litigation,Online Harrassment/Doxing/Bullying,true
+v2_small_claims_vs_construction_11,small_claims_vs_construction,I need a construction attorney to go after the contractor who did our siding wrong.,Real Property,Construction/Contractors,false
+v2_small_claims_vs_construction_15,small_claims_vs_construction,I want to sue my contractor. He installed the wrong windows and won't make it right.,Real Property,Construction/Contractors,false
+v2_small_claims_vs_construction_44,small_claims_vs_construction,We hired a 'friend of a friend' to finish our basement and he vanished mid-job with our money.,Consumer Law,Small Claims Advice,false
+v2_ssi_vs_ssd_03,ssi_vs_ssd,My monthly disability check was cut off after a review and I need help getting it back.,Administrative Law,Social Security/SSI,false
+v2_ssi_vs_ssd_04,ssi_vs_ssd,I applied for disability twice and got denied both times. My hearing with the judge is in two months.,Administrative Law,Social Security/SSI,false
+v2_ssi_vs_ssd_47,ssi_vs_ssd,The office keeps sending my elderly aunt forms she can't understand and threatening to stop her checks.,Administrative Law,Social Security/SSI,false
+v2_tax_dispute_route_02,tax_dispute_route,"I'm being audited and my accountant suddenly says I need a lawyer, not just him.",Taxation,Personal Income,false
+v2_tax_dispute_route_23,tax_dispute_route,I just discovered my late husband hadn't filed our taxes for six years. I'm terrified of what happens next.,Taxation,Personal Income,true
+v2_tenancy_property_type_15,tenancy_property_type,"My landlord is trying to make me pay for repairs to the building's roof, which can't be my job.",Real Property,Tenant (Residential),false
+v2_tenancy_property_type_30,tenancy_property_type,The place I rent was sold and the new owner says all the old agreements mean nothing now.,Real Property,Tenant (Residential),false
+v2_vehicle_purchase_source_03,vehicle_purchase_source,I'm trapped in a terrible car loan where the payments eat a third of my income and the car is worth half the loan.,Consumer Law,Automobiles/RV's/Mobile Homes,false
+v2_vehicle_purchase_source_22,vehicle_purchase_source,"The dealership added $4,000 in 'protection products' I explicitly declined, and it's buried in the contract.",Consumer Law,Automobiles/RV's/Mobile Homes,false
+v2_vehicle_purchase_source_46,vehicle_purchase_source,A mobile mechanic 'fixed' my brakes in my driveway and I crashed into my own garage the next morning.,Consumer Law,General,false
+v2_wc_state_vs_third_party_17,wc_state_vs_third_party,A shelf display collapsed on me at a big-box store and I have a herniated disc now. What should I do?,General Litigation,Premises Liability,false
+v2_wc_state_vs_third_party_20,wc_state_vs_third_party,My son was killed in an equipment accident and our family needs answers about what we can do.,General Litigation,Wrongful Death,true
+v2_wc_system_identity_22,wc_system_identity,"Since the robbery at my store I can't sleep, can't focus, and now I can't work either.",Workers' Comp,Stress Related,false
+v2_wc_system_identity_23,wc_system_identity,My husband works the docks and got crushed between a container and the bull rail last month.,Workers' Comp,LHWA,false
