@@ -1,0 +1,293 @@
+<title>nano vs full — FETCH question-screen study</title>
+<style>
+  :root {
+    --ground: #F5F6F8; --surface: #FFFFFF; --surface-2: #EFF1F4;
+    --ink: #171B21; --muted: #5C6672; --faint: #838D99;
+    --hairline: #E2E5EA;
+    --accent: #274690; --accent-soft: #E7ECF7;
+    --nano: #BE7415; --full: #0E7C86; --crit: #B23A48; --good: #3F7D5A;
+    --serif: Georgia, "Iowan Old Style", Charter, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    --measure: 68ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0F1216; --surface: #161A20; --surface-2: #1C222A;
+      --ink: #E8EBEF; --muted: #9AA4B0; --faint: #6C7784;
+      --hairline: #262C34;
+      --accent: #8098DB; --accent-soft: #1B2233;
+      --nano: #E0A24A; --full: #3FB0BA; --crit: #E4818A; --good: #6FB68C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0F1216; --surface: #161A20; --surface-2: #1C222A;
+    --ink: #E8EBEF; --muted: #9AA4B0; --faint: #6C7784; --hairline: #262C34;
+    --accent: #8098DB; --accent-soft: #1B2233;
+    --nano: #E0A24A; --full: #3FB0BA; --crit: #E4818A; --good: #6FB68C;
+  }
+  :root[data-theme="light"] {
+    --ground: #F5F6F8; --surface: #FFFFFF; --surface-2: #EFF1F4;
+    --ink: #171B21; --muted: #5C6672; --faint: #838D99; --hairline: #E2E5EA;
+    --accent: #274690; --accent-soft: #E7ECF7;
+    --nano: #BE7415; --full: #0E7C86; --crit: #B23A48; --good: #3F7D5A;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--sans); line-height: 1.6;
+    font-size: 17px; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 0 24px 96px; }
+  .col { max-width: var(--measure); }
+  a { color: var(--accent); }
+
+  /* Header */
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--hairline); }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--faint); margin: 0 0 20px;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600; letter-spacing: -.01em;
+    font-size: clamp(30px, 5vw, 46px); line-height: 1.1; margin: 0;
+    text-wrap: balance; max-width: 20ch;
+  }
+  h1 .em { font-style: italic; color: var(--accent); }
+  .dek { font-size: 20px; color: var(--muted); margin: 20px 0 0; max-width: 54ch; text-wrap: balance; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px;
+    font-family: var(--mono); font-size: 12.5px; color: var(--muted);
+  }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  section { padding: 52px 0 0; }
+  h2 {
+    font-family: var(--serif); font-weight: 600; font-size: 26px;
+    letter-spacing: -.01em; margin: 0 0 6px; text-wrap: balance;
+  }
+  .kicker {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: .13em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 22px; font-weight: 600;
+  }
+  h3 { font-family: var(--sans); font-weight: 650; font-size: 17px; margin: 30px 0 8px; }
+  p { margin: 0 0 16px; }
+  strong { font-weight: 650; }
+
+  /* TL;DR */
+  .tldr {
+    background: var(--surface); border: 1px solid var(--hairline);
+    border-left: 3px solid var(--accent); border-radius: 4px;
+    padding: 24px 26px; margin-top: 36px;
+  }
+  .tldr p { margin: 0; font-size: 18px; }
+  .tldr .lead { font-family: var(--serif); font-size: 21px; line-height: 1.4; color: var(--ink); }
+
+  /* Stat band */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1px;
+           background: var(--hairline); border: 1px solid var(--hairline); border-radius: 6px; overflow: hidden; margin: 8px 0 4px; }
+  .stat { background: var(--surface); padding: 22px 22px; }
+  .stat .n { font-family: var(--serif); font-weight: 600; font-size: 40px; letter-spacing: -.02em;
+             font-variant-numeric: tabular-nums; line-height: 1; }
+  .stat .l { color: var(--muted); font-size: 13.5px; margin-top: 8px; }
+  .n.nano { color: var(--nano); } .n.full { color: var(--full); } .n.crit { color: var(--crit); }
+
+  /* Bar chart */
+  .chart { background: var(--surface); border: 1px solid var(--hairline); border-radius: 6px; padding: 24px 24px 20px; margin: 22px 0; }
+  .chart .cap { font-size: 13.5px; color: var(--muted); margin: 0 0 20px; }
+  .row { display: grid; grid-template-columns: 116px 1fr 62px; align-items: center; gap: 14px; margin: 0 0 14px; }
+  .row:last-child { margin-bottom: 0; }
+  .row .k { font-family: var(--mono); font-size: 12.5px; color: var(--ink); text-align: right; }
+  .track { background: var(--surface-2); border-radius: 3px; height: 22px; overflow: hidden; }
+  .bar { height: 100%; border-radius: 3px; }
+  .bar.nano { background: var(--nano); } .bar.full { background: var(--full); }
+  .bar.crit { background: var(--crit); } .bar.accent { background: var(--accent); }
+  .row .v { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--muted); }
+  .legend { display: flex; gap: 18px; margin-top: 18px; font-family: var(--mono); font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+  .swatch { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: baseline; }
+
+  /* Tables */
+  .tbl-wrap { overflow-x: auto; margin: 18px 0; border: 1px solid var(--hairline); border-radius: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; background: var(--surface); }
+  th, td { text-align: left; padding: 11px 16px; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+  th { font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase;
+       color: var(--muted); font-weight: 600; background: var(--surface-2); }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .pill { font-family: var(--mono); font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 600; }
+  .pill.full { background: color-mix(in srgb, var(--full) 16%, transparent); color: var(--full); }
+  .pill.nano { background: color-mix(in srgb, var(--nano) 18%, transparent); color: var(--nano); }
+  .pill.none { color: var(--faint); }
+  .yes { color: var(--good); font-weight: 600; } .no { color: var(--faint); }
+
+  .callout { border: 1px solid var(--hairline); background: var(--surface); border-radius: 6px; padding: 20px 22px; margin: 22px 0; }
+  .callout.warn { border-left: 3px solid var(--crit); }
+  .callout .h { font-weight: 650; margin: 0 0 6px; }
+  .foot { margin-top: 60px; padding-top: 22px; border-top: 1px solid var(--hairline); color: var(--faint); font-size: 13px; font-family: var(--mono); }
+  .foot code { color: var(--muted); }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">FETCH · follow-up screen study · 2026-07-19</p>
+    <h1>The nano→full switch was worth it — for <span class="em">coverage</span>, not readability.</h1>
+    <p class="dek">A paired, judge-blind measurement of the follow-up-question screen FETCH shows after an
+      opening query, with gpt-5-nano vs gpt-5.2 as the ensemble's OpenAI member and merge model.</p>
+    <div class="meta">
+      <span><b>373</b> scenarios</span>
+      <span><b>746</b> screens</span>
+      <span>paired · blind</span>
+      <span>judges: <b>DeepSeek-V4</b> + <b>Claude</b></span>
+      <span>gemini + mistral held constant</span>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <p class="lead">gpt-5.2 reliably asks ~3 questions; gpt-5-nano asks <em>nothing</em> on roughly 1 in 4
+      screens. That coverage gap — not question readability or grounding — is what justifies the switch.</p>
+    <p style="margin-top:14px; color:var(--muted); font-size:16px;">A claim that one tier writes better-grounded
+      questions did <strong>not</strong> survive a second judge. When both arms do ask, their question quality is
+      about the same.</p>
+  </div>
+
+  <section>
+    <p class="kicker">01 · The decisive finding</p>
+    <h2>nano stays silent a quarter of the time</h2>
+    <div class="col">
+      <p>For an intake tool whose whole job is to disambiguate a vague request, the worst outcome isn't an
+        awkward question — it's <em>no question at all</em>. That is nano's dominant, judge-independent weakness.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="n crit">24.6%</div><div class="l">of <b>nano</b> screens ask zero questions</div></div>
+      <div class="stat"><div class="n full">0.5%</div><div class="l">of <b>full</b> screens ask zero questions</div></div>
+      <div class="stat"><div class="n">88 → 0</div><div class="l">scenarios nano-empty / full-empty (paired)</div></div>
+      <div class="stat"><div class="n">p ≈ 6e-27</div><div class="l">McNemar, paired emptiness</div></div>
+    </div>
+
+    <div class="chart">
+      <p class="cap">Mean follow-up questions per screen (0–3 shown)</p>
+      <div class="row"><div class="k">nano</div><div class="track"><div class="bar nano" style="width:60%"></div></div><div class="v">1.8</div></div>
+      <div class="row"><div class="k">full</div><div class="track"><div class="bar full" style="width:97%"></div></div><div class="v">2.9</div></div>
+    </div>
+
+    <h3>Why is nano empty so often? (the surprising part)</h3>
+    <div class="col">
+      <p>It's a genuine <em>generation</em> effect, not a merge bug — the union of proposed questions is zero
+        <em>before</em> any merge runs. Instrumenting each provider shows nano almost always returns a confident
+        "no questions" verdict, and the other ensemble members don't reliably pick up the slack.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Ensemble member</th><th class="num">Mean questions / call</th><th class="num">Calls with 0 questions</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill full">gpt-5.2</span> full arm</td><td class="num">2.9</td><td class="num">3%</td></tr>
+          <tr><td><span class="pill nano">gpt-5-nano</span> nano arm</td><td class="num">0.27</td><td class="num">87%</td></tr>
+          <tr><td>gemini <span class="pill none">shared</span></td><td class="num">0.60</td><td class="num">53%</td></tr>
+          <tr><td>mistral <span class="pill none">shared</span></td><td class="num">0.97</td><td class="num">50%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <p style="color:var(--muted); font-size:15px;">When nano is silent (usual) and gemini + mistral both
+        happen to be silent too, the screen comes back empty. The follow-up screen is effectively the OpenAI
+        member's output — which makes this a clean read on the swapped variable.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">02 · The twist — and why two judges mattered</p>
+    <h2>"Full writes worse questions" was a judge artifact</h2>
+    <div class="col">
+      <p>On the pairs where <em>both</em> arms asked something, the automated <strong>DeepSeek</strong> judge
+        reported full as slightly worse — more presupposition, higher "unclear" rate. Read alone, that's a
+        finding. It didn't replicate.</p>
+      <p>A blind <strong>Claude</strong> re-judge of a 30-scenario subset found the two arms
+        <strong>statistically indistinguishable</strong> per question — and revealed that DeepSeek massively
+        over-flags menu-style questions.</p>
+    </div>
+
+    <div class="chart">
+      <p class="cap">Double-barrel flag rate on the same screens — the two judges barely agree</p>
+      <div class="row"><div class="k">DeepSeek-V4</div><div class="track"><div class="bar accent" style="width:83%"></div></div><div class="v">83%</div></div>
+      <div class="row"><div class="k">Claude</div><div class="track"><div class="bar accent" style="width:5%"></div></div><div class="v">5%</div></div>
+      <div class="legend"><span>Screen-level agreement between judges: <b style="color:var(--ink)">22%</b></span>
+        <span>Presupposition rate: DeepSeek 0.70 vs Claude 0.02 per screen</span></div>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Per-question metric (blind subset)</th><th class="num">nano</th><th class="num">full</th><th>verdict</th></tr></thead>
+        <tbody>
+          <tr><td>Unverified presupposition (Claude)</td><td class="num">0.03</td><td class="num">0.00</td><td class="no">no real gap</td></tr>
+          <tr><td>Double-barrel rate (Claude)</td><td class="num">0.03</td><td class="num">0.07</td><td class="no">no real gap</td></tr>
+          <tr><td>Answerable rate (Claude)</td><td class="num">1.00</td><td class="num">0.99</td><td class="no">no real gap</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <p class="h">The two-judge design earned its keep.</p>
+      <p style="margin:0; color:var(--muted); font-size:15.5px;">A single automated judge would have shipped a
+        wrong "full is worse on grounding" conclusion. The screens that FETCH does produce are mostly clean,
+        single-topic, and heavily glossed — e.g. <span style="font-family:var(--mono); font-size:13px;">"medically
+        stationary (not expected to get much better)"</span>.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">03 · What is objectively different</p>
+    <h2>full asks longer, denser screens</h2>
+    <div class="col">
+      <p>These metrics are deterministic — no judge involved — and all point the same way. Whether "denser" is
+        better or worse is a design call: it's more thorough disambiguation at some cost in reading load.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Metric (screen median)</th><th class="num">nano</th><th class="num">full</th><th class="num">p</th><th>FDR</th></tr></thead>
+        <tbody>
+          <tr><td>Content tokens per screen</td><td class="num">29</td><td class="num">43</td><td class="num">7e-23</td><td class="yes">✓</td></tr>
+          <tr><td>Newly-introduced entities</td><td class="num">0</td><td class="num">1</td><td class="num">5e-9</td><td class="yes">✓</td></tr>
+          <tr><td>Unintroduced hard vocab</td><td class="num">0</td><td class="num">0</td><td class="num">5e-5</td><td class="yes">✓</td></tr>
+          <tr><td>Max dependency length</td><td class="num">16</td><td class="num">18</td><td class="num">1e-4</td><td class="yes">✓</td></tr>
+          <tr><td>Max GPT-2 surprisal (bits)</td><td class="num">15.2</td><td class="num">16.5</td><td class="num">6e-10</td><td class="yes">✓</td></tr>
+          <tr><td>Agentless passive</td><td class="num">0</td><td class="num">0</td><td class="num">0.23</td><td class="no">✗</td></tr>
+          <tr><td>Negation × conditional</td><td class="num">0.01</td><td class="num">0.01</td><td class="num">1.0</td><td class="no">✗</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">04 · Bottom line</p>
+    <h2>Keep gpt-5.2 — for the right reason</h2>
+    <div class="col">
+      <p><strong>Keep the switch.</strong> It's justified because nano abstains from asking anything ~24% of the
+        time and the rest of the ensemble doesn't backfill — not because gpt-5.2 writes more readable or
+        better-grounded questions.</p>
+      <p><strong>Don't claim nano writes worse questions.</strong> When it does ask, its questions are about as
+        clean as full's; the apparent grounding gap was a single-judge artifact.</p>
+      <p><strong>The lever worth tuning next is full's density</strong> — it asks longer, more information-heavy
+        screens. If reading load matters, that's the axis to prompt-tune, not grounding.</p>
+    </div>
+
+    <div class="tbl-wrap" style="margin-top:26px;">
+      <table>
+        <thead><tr><th>Validity check (metric moves on its own dimension)</th><th class="num">result</th></tr></thead>
+        <tbody>
+          <tr><td>Presupposition sensitivity</td><td class="num">1.00</td></tr>
+          <tr><td>Double-barrel sensitivity</td><td class="num">0.86</td></tr>
+          <tr><td>Vocabulary sensitivity</td><td class="num">0.86</td></tr>
+          <tr><td>Known-bad screens flagged</td><td class="num">2 / 2</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="foot">
+    Paired McNemar / Wilcoxon with rank-biserial effect sizes, BH-FDR on exploratory metrics, bootstrap
+    equivalence vs a 5pp SESOI. Real FETCH <code>ClassificationService.classify()</code>, caching off, failures
+    repaired not dropped. Full method &amp; data: <code>readability_study/</code> — <code>docs/STUDY_PLAN.md</code>,
+    <code>analysis/RESULTS.md</code>, <code>metrics/</code>, <code>results/</code>.
+  </p>
+</div>

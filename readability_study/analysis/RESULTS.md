@@ -8,8 +8,11 @@ production switch the team shipped but never measured.
 - **373** human-vetted problem descriptions → **746 screens** (one per arm).
 - Arms differ *only* in the OpenAI member + merge model; gemini + mistral held
   constant; keyword/spot omitted (they emit no questions).
-- Real FETCH `ClassificationService.classify()`, caching off. Failed screens
-  **repaired**, not dropped (arm-member failures were arm-balanced: full 6 / nano 7).
+- Real FETCH `ClassificationService.classify()`, caching off. Provider failures
+  were **repaired**, not dropped (103 → 11). The 11 unrepairable remainders are
+  Azure **content-filter 400s on the input text itself** — mostly the *same ~7
+  scenarios failing in both arms*, so their exclusion is arm-symmetric and
+  unbiased (they cannot be classified by either tier).
 - Judges, blind to arm: **DeepSeek-V4-Pro** (Azure, automated, full set) +
   **Claude** (in-context, blind 30-scenario subset, cross-family check).
 
