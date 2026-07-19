@@ -67,6 +67,30 @@ python analysis/analyze.py --run-id main_20260719 --judge deepseek-v4
 Credentials come from `/home/quinten/fetch/.env` (Azure). Caching is disabled
 end-to-end; every run records its config in `meta.json`.
 
+## Environment & settings (reproducibility)
+
+- **Python deps:** `requirements.txt` (+ `python -m spacy download en_core_web_sm`).
+  GPT-2 and `roberta-large-mnli` weights auto-download on first use. Run inside the
+  FETCH venv (`/home/quinten/fetch/.venv`) so `app.*` imports resolve.
+- **Models / deployments** (Azure AI Services account `quint-mln02sj6-eastus2`,
+  reached via the OpenAI-compatible route in `/home/quinten/fetch/.env`):
+  - generators: `gpt-5.2`, `gpt-5-nano` (OpenAI), `mistral-small-2503` (Mistral),
+    `gemini` (Google, via `GEMINI_API_KEY`)
+  - judge: `deepseek-v4` (DeepSeek-V4-Pro) — independent of the generators;
+    Claude judging was done in-context (Anthropic is in the Azure catalog as
+    `claude-sonnet-5` but its deployment requires `ModelProviderData`).
+- **Deployment capacities bumped** to clear 429 throttling during the run (large
+  quota headroom existed; these were low default allocations):
+  `mistral-small-2503` 100→500, `gpt-5.2` 150→1000.
+- **Harness-set env** (see `harness/fetch_screen.py`): `TELEMETRY_ENABLED=false`,
+  `CLASSIFIER_TIMEOUT_SECONDS=90`, `SEMANTIC_MERGE_TIMEOUT_SECONDS=60`,
+  `OPENAI_SEMANTIC_MERGE_MODEL` set per arm; `gpt-5-nano` is registered into the
+  Responses-API family at runtime. `GPT_5_REASONING_EFFORT=low`.
+- **Known exclusions:** ~7 scenarios (gold-0008/0067/0068/0069/0158/0205/0370)
+  trigger Azure content-filter 400s in both arms → unrepairable, arm-symmetric.
+- **Run provenance** is captured per run in
+  `results/generation/<run_id>/meta.json`.
+
 ## Status
 
 Validity check passed (presupposition sensitivity 1.0, double-barrel 6/7,
