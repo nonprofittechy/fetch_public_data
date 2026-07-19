@@ -132,6 +132,17 @@ contribution can be isolated from ordinary run-to-run LLM variance. Results,
 methodology, and the paired within-run isolation analysis are in
 [`analysis/RESULTS.md`](analysis/RESULTS.md#condition-b-vs-c-does-the-screening-protocol-add-anything).
 
+**Variability check (2026-07-19):** to confirm the post-fix and B-vs-C
+results are stable signals and not single-run sampling noise, both
+conditions were rerun 3 times each (6 runs total) on a fixed, reproducible,
+family-stratified 200-case subsample (`build_variability_sample.py`, seed
+42 — `candidates/flip_candidates_v2_variability_sample.csv`), same pipeline,
+cache disabled. Results in
+[`analysis/RESULTS.md`](analysis/RESULTS.md#variability-is-this-llm-sampling-noise):
+every run in both conditions is strongly net-positive on gained-minus-lost
+labels, and the B-vs-C ordering holds in all 9 cross-run pairings on that
+metric.
+
 ## Reproduction
 
 ```bash
@@ -155,6 +166,23 @@ python analyze_runs.py --runs results/final_run_1_<timestamp> \
     --out analysis/runs_v2_postfix_condition_c
 python analyze_screening_contribution.py --run results/final_run_1_<timestamp> \
     --out analysis/runs_v2_postfix_condition_c/screening_marginal_contribution.json
+
+# Variability check: 3 runs per condition on the fixed 200-case subsample.
+python build_variability_sample.py --n 200 --seed 42   # already committed; rerun only to regenerate
+SAMPLE=candidates/flip_candidates_v2_variability_sample.csv
+for i in 1 2 3; do
+  python run_direct.py --label "variability_b${i}" --candidates "$SAMPLE" \
+      --concurrency 4 --provider-timeout-seconds 120
+done
+for i in 1 2 3; do
+  FETCH_REPO_ROOT=/path/to/merged/worktree python run_direct_screening.py \
+      --label "variability_c${i}" --candidates "$SAMPLE" \
+      --concurrency 4 --provider-timeout-seconds 120
+done
+python analyze_runs.py --candidates "$SAMPLE" --runs results/variability_b1_<ts> results/variability_b2_<ts> results/variability_b3_<ts> \
+    --out analysis/variability_condition_b
+python analyze_runs.py --candidates "$SAMPLE" --runs results/variability_c1_<ts> results/variability_c2_<ts> results/variability_c3_<ts> \
+    --out analysis/variability_condition_c
 ```
 
 If FETCH is not the grandparent of this folder, set `FETCH_REPO_ROOT`.
@@ -206,9 +234,13 @@ per-row `vetting_note` column and the authoring files give the audit context.
 | `run_direct_screening.py` | condition-C runner, points `FETCH_REPO_ROOT` at the screening-protocol worktree by default |
 | `analyze_runs.py` | join-by-scenario_id analysis (audit-editable) |
 | `analyze_screening_contribution.py` | paired within-run isolation of the screening protocol's own marginal contribution |
+| `build_variability_sample.py` | fixed-seed family-stratified subsample generator for variability reruns |
+| `candidates/flip_candidates_v2_variability_sample.csv` | frozen 200-case subsample (seed 42) reused across all variability runs |
 | `test_candidates.py` | structural checks |
 | `analysis/candidate_profile.json` | dataset composition profile |
 | `analysis/runs_v2/` | committed analysis outputs, pre-fix baseline (historical) |
 | `analysis/runs_v2_postfix_condition_b/` | committed analysis outputs, post-fix condition B |
 | `analysis/runs_v2_postfix_condition_c/` | committed analysis outputs, post-fix condition C |
+| `analysis/variability_condition_b/` | committed analysis outputs, 3 condition-B reruns on the fixed subsample |
+| `analysis/variability_condition_c/` | committed analysis outputs, 3 condition-C reruns on the fixed subsample |
 | `analysis/RESULTS.md` | headline findings (written after official runs) |
