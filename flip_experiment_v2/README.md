@@ -119,6 +119,19 @@ and the narrow reproducibility excerpts of the fixed FETCH code are in
 source; that folder captures only the narrow slice needed to reproduce this
 study's results, not FETCH's application code).
 
+**Screening-protocol comparison (2026-07-18):** a second post-fix condition
+(**condition C**) runs the identical benchmark against a worktree merging
+FETCH PR #34 (deterministic screening protocols) onto the fix branch, to
+answer "does the screening layer add anything beyond the fixed follow-up
+mechanism?" alongside the base fixed-pipeline condition (**condition B**).
+The condition-C harness (`two_step_provider_bridge_screening.py`,
+`run_direct_screening.py`) scores `effective_categories` — FETCH's
+screening-aware union of model labels and mandatory categories — while
+separately recording raw model-only labels so the protocol's own marginal
+contribution can be isolated from ordinary run-to-run LLM variance. Results,
+methodology, and the paired within-run isolation analysis are in
+[`analysis/RESULTS.md`](analysis/RESULTS.md#condition-b-vs-c-does-the-screening-protocol-add-anything).
+
 ## Reproduction
 
 ```bash
@@ -127,14 +140,32 @@ cd flip_experiment_v2
 python build_candidates.py                          # validate + rebuild candidates
 python -m pytest -q test_candidates.py              # structural checks
 python run_direct.py --label smoke --first-n 4 --concurrency 2   # cheap smoke
-python run_direct.py --label final_run_1 --concurrency 6 --provider-timeout-seconds 90
-python analyze_runs.py                              # per-run + pooled analysis
+python run_direct.py --label final_run_1 --concurrency 4 --provider-timeout-seconds 120
+python analyze_runs.py --runs results/final_run_1_<timestamp> \
+    --out analysis/runs_v2_postfix_condition_b        # condition B: fixes only
+
+# Condition C: fixes + PR #34 screening protocols. Requires a FETCH worktree
+# merging the fix branch with PR #34's origin/main and FETCH_REPO_ROOT set to
+# it (see fetch_pipeline_snapshot/README.md); also needs the untracked
+# promptfoo/two_step_followup_provider.py copied into that worktree, since
+# git worktree add does not carry over untracked files.
+FETCH_REPO_ROOT=/path/to/merged/worktree python run_direct_screening.py \
+    --label final_run_1 --concurrency 4 --provider-timeout-seconds 120
+python analyze_runs.py --runs results/final_run_1_<timestamp> \
+    --out analysis/runs_v2_postfix_condition_c
+python analyze_screening_contribution.py --run results/final_run_1_<timestamp> \
+    --out analysis/runs_v2_postfix_condition_c/screening_marginal_contribution.json
 ```
 
 If FETCH is not the grandparent of this folder, set `FETCH_REPO_ROOT`.
 Raw run artifacts (hash-stamped snapshots, fsynced JSONL journal, matcher log,
 console) are written under the gitignored `results/`; the analysis outputs in
-`analysis/runs_v2/` are committed.
+`analysis/runs_v2/` (pre-fix baseline, historical),
+`analysis/runs_v2_postfix_condition_b/`, and
+`analysis/runs_v2_postfix_condition_c/` are committed. Each condition's runs
+are analyzed in isolation (`--runs` pointed at just that condition's run
+directory) rather than pooled together, since B and C are different pipeline
+configurations, not repeated samples of the same one.
 
 ## Re-running after the human audit
 
@@ -169,10 +200,15 @@ per-row `vetting_note` column and the authoring files give the audit context.
 | `authoring/family_*.json` | Claude-authored scenarios with grounding + vetting notes |
 | `build_candidates.py` | deterministic validator/assembler (no model calls) |
 | `candidates/flip_candidates_v2.csv/.jsonl` | frozen candidate set |
-| `two_step_provider_bridge.py` | FETCH bridge + GPT-5 matcher shim + matcher logging |
-| `run_direct.py` | archived, journaled, uncached official runner |
+| `two_step_provider_bridge.py` | FETCH bridge + GPT-5 matcher shim + matcher logging (condition B) |
+| `two_step_provider_bridge_screening.py` | condition-C bridge: scores `effective_categories` against the screening-protocol worktree |
+| `run_direct.py` | archived, journaled, uncached official runner (condition B) |
+| `run_direct_screening.py` | condition-C runner, points `FETCH_REPO_ROOT` at the screening-protocol worktree by default |
 | `analyze_runs.py` | join-by-scenario_id analysis (audit-editable) |
+| `analyze_screening_contribution.py` | paired within-run isolation of the screening protocol's own marginal contribution |
 | `test_candidates.py` | structural checks |
 | `analysis/candidate_profile.json` | dataset composition profile |
-| `analysis/runs_v2/` | committed analysis outputs |
+| `analysis/runs_v2/` | committed analysis outputs, pre-fix baseline (historical) |
+| `analysis/runs_v2_postfix_condition_b/` | committed analysis outputs, post-fix condition B |
+| `analysis/runs_v2_postfix_condition_c/` | committed analysis outputs, post-fix condition C |
 | `analysis/RESULTS.md` | headline findings (written after official runs) |

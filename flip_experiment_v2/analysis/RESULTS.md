@@ -1,19 +1,142 @@
 # v2 disclosure-grounded flip benchmark: results
 
-**Status: `final_run_1` is the definitive official run for this pipeline
-configuration.** A second run (`final_run_2`) was launched for a stability
-cross-check, then **intentionally stopped at 348/959 cases** once root-cause
-analysis (below) showed the pipeline has a structural defect that makes the
-follow-up-answer condition uninformative for GPT-5-family classifiers: the
-disclosed fact is silently dropped from the second classification call on
-the normal code path. This is a deterministic property of every call, not
-run-to-run sampling variance, so a second full run would reproduce the same
-defect rather than add information. See "Root cause" below before reading
-the gained/lost numbers as evidence of anything about the disclosed facts
-themselves.
+**Status (2026-07-18): the pipeline bugs described below under "Root cause"
+are fixed, and the current, definitive answer to "do follow-up questions
+help?" is in [Post-fix results](#post-fix-results-do-follow-up-questions-help)
+and [Condition B vs C](#condition-b-vs-c-does-the-screening-protocol-add-anything)
+below — read those two sections first.** Everything from "Root cause"
+through "Family-level extremes" documents the **pre-fix baseline**
+(`final_run_1_20260718T002609Z`, GPT-5 + keyword only, 2-provider vote) and
+is retained for the audit trail: it's what motivated the fix, not a
+current-state measurement. Its gained/lost numbers reflect a classifier
+call that never actually received the disclosed answer — see "Root cause."
 
 Full method, provenance, and reproduction commands: [`../README.md`](../README.md).
 Run-by-run mechanics: [`EXECUTION_LOG.md`](EXECUTION_LOG.md).
+
+## Post-fix results: do follow-up questions help?
+
+Two fully independent 959-case runs, both on the fixed pipeline (FETCH
+commit `41585d0`, 5-provider vote — `gpt-5`, `gemini`, `mistral`, `keyword`,
+`spot` — on the opening call; `gpt-5`, `gemini`, `mistral` on the
+follow-up-answer call), one run per condition (per study-owner decision,
+2026-07-18):
+
+- **Condition B** — fixes only, no screening protocols.
+  `results/final_run_1_20260718T203325Z`, analysis in
+  [`runs_v2_postfix_condition_b/`](runs_v2_postfix_condition_b/). 959/959
+  cases, 0 orchestrator errors, 2 matcher errors, 137.0 minutes.
+- **Condition C** — fixes plus PR #34's deterministic screening protocols
+  (see [Condition B vs C](#condition-b-vs-c-does-the-screening-protocol-add-anything)
+  below). `results/final_run_1_20260718T225512Z`, analysis in
+  [`runs_v2_postfix_condition_c/`](runs_v2_postfix_condition_c/). 959/959
+  cases, 0 orchestrator errors, 4 matcher errors, 142.6 minutes.
+
+| Metric | Pre-fix baseline | Condition B (post-fix) | Condition C (post-fix + screening) |
+|---|---:|---:|---:|
+| Expected initial exact label present anywhere | 60.90% | 83.21% | 83.73% |
+| GPT-5 matcher: question judged answerable by hidden fact | 48.70% | 72.26% | 72.68% |
+| Expected final exact label present, among matched | 49.43% | 88.56% | 91.44% |
+| Expected final exact label already present **initially**, among matched | 29.93% | 47.24% | 48.49% |
+| Expected final exact label **gained** after re-classification, among matched | 24 (6.90%) | 194 (36.40%) | 228 (38.26%) |
+| Expected final exact label **lost** after re-classification, among matched | 31 | 13 | 8 |
+| Net gained − lost | **−7** | **+181** | **+220** |
+
+**This is the direct answer to "are follow-up questions helpful": yes,
+clearly, once the pipeline actually uses the disclosed answer.** Pre-fix,
+losses outnumbered gains (net −7) — the pattern that originally looked like
+"questions don't help, or actively hurt." That was an artifact of the two
+bugs under "Root cause," not a property of the disclosed facts or of FETCH's
+reasoning: the second call was silently re-sampling the first call's prompt,
+so any change in the label set was sampling noise, and losses were exactly
+as likely as gains. Post-fix, gains outnumber losses by roughly 15:1
+(condition B) to 28:1 (condition C), and matched-case final accuracy nearly
+doubles (49% → 89–91%). The gain/loss asymmetry, not just the accuracy
+level, is the evidence that the model is now incorporating the disclosed
+fact rather than resampling.
+
+Safety-sensitive rows (n=115) are, if anything, the strongest part of this
+result: **zero losses in either post-fix condition** (37 gained / 0 lost in
+B, 41 gained / 0 lost in C), with final exact accuracy among matched cases
+at 89.7% (B) and 93.8% (C) — see
+[`runs_v2_postfix_condition_b/pooled_by_safety_sensitive.csv`](runs_v2_postfix_condition_b/pooled_by_safety_sensitive.csv)
+and the condition-C equivalent.
+
+One methodological note for anyone trying to attribute the pre-fix-to-B
+jump specifically to the code fixes: the pre-fix baseline run also used a
+narrower 2-provider vote (`gpt-5`, `keyword` only), while condition B uses
+the full 5-provider mix adopted alongside the fix (task-tracked
+alongside it, not a separate experiment). The pre-fix vs. post-fix
+comparison therefore conflates the bug fixes with the provider-mix change
+and should not be read as isolating the fixes' own effect size — only as
+"the pipeline as it exists now, vs. as it existed before this work,"
+which is the comparison that matters for the "are questions helpful"
+question this section answers.
+
+## Condition B vs C: does the screening protocol add anything?
+
+PR #34 added deterministic screening protocols to FETCH: six
+checkbox/keyword-driven rules (`family_safety`, `employment_retaliation`,
+`third_party_work_injury`, `elder_exploitation`, `immigration_consequences`,
+police/government) that can add a **mandatory category** to
+`effective_categories` — the field FETCH's own docs say clients should treat
+as authoritative — independent of what the LLM vote alone concluded.
+Condition C runs the identical benchmark against a worktree merging PR #34
+onto the fix branch, and the harness
+([`two_step_provider_bridge_screening.py`](../two_step_provider_bridge_screening.py))
+scores `effective_categories` (falling back to raw `labels` only if
+`effective_categories` is ever empty) while separately recording the raw
+model-only labels, so the screening protocol's own contribution can be
+isolated from ordinary run-to-run LLM variance.
+
+**Between-run comparison (B vs C, one run each):** C is better on every
+headline metric in the table above — final exact accuracy among matched
+cases (91.44% vs 88.56%), gains (228 vs 194), losses (8 vs 13). But B and C
+are each a single run of a stochastic pipeline, so part of that gap is
+ordinary sampling noise, not necessarily the screening protocol; with one
+run per condition (study-owner decision, see above) this comparison alone
+can't cleanly separate the two.
+
+**Within-run, paired comparison (the clean test):** for every condition-C
+case, [`analyze_screening_contribution.py`](../analyze_screening_contribution.py)
+compares `effective_categories` against the raw model vote (`labels`) *on
+the same case, same underlying model outputs* — isolating just the
+deterministic-union step and holding the LLM sampling constant. Full output:
+[`runs_v2_postfix_condition_c/screening_marginal_contribution.json`](runs_v2_postfix_condition_c/screening_marginal_contribution.json).
+
+| | Count |
+|---|---:|
+| Matched cases with a final answer | 596 |
+| Correct via `effective_categories` (screening-aware) | 545 |
+| Correct via raw model vote alone | 539 |
+| **Rescued** by screening protocol (effective correct, model vote alone wrong) | **6** |
+| **Regressed** by screening protocol (sanity check — should be 0) | **0** |
+
+The screening layer rescues a small but real slice — about 1% of matched
+cases — with **zero downside** (0 regressions is expected by construction,
+since `effective_categories` is a union, but it's a useful sanity check that
+the union logic behaves as documented). The 6 rescues are concentrated
+exactly where the protocols are designed to fire:
+
+| Scenario | Expected label | Triggering protocol |
+|---|---|---|
+| `v2_custody_safety_02` | Family Law > Restraining Orders | `family_safety.v1` (controlling/threatening) |
+| `v2_immigration_posture_44` | International Law > General Immigration/Visas | `immigration_consequences.v1` |
+| `v2_tenancy_property_type_46` | Wills & Trusts > Elder Abuse | `elder_exploitation.v1` (pressure/control) |
+| `v2_wc_state_vs_third_party_21` | Workers' Comp > Third Party Litigation | `work_injury_third_party.v1` |
+| `v2_wc_state_vs_third_party_43` | Workers' Comp > Third Party Litigation | `work_injury_third_party.v1` |
+| `v2_wc_state_vs_third_party_46` | Workers' Comp > Third Party Litigation | `work_injury_third_party.v1` |
+
+**Bottom line:** the LLM vote (now that it correctly receives the disclosed
+answer) already does most of the work — 90%+ of the screening layer's
+"correct" cases would have been correct anyway. But the deterministic
+protocols add a small, clean, one-directional safety net on top, concentrated
+in exactly the safety/routing-sensitive categories they were built for
+(restraining orders, elder abuse, immigration consequences, third-party
+work-injury litigation), at no cost in the cases where the model was already
+right. That's consistent with the protocols' design intent — a backstop for
+categories where a missed disclosure has outsized real-world consequences —
+rather than a general accuracy improvement.
 
 ## Configuration
 
@@ -111,7 +234,11 @@ part of this study):
 
 Full file/line citations are in `EXECUTION_LOG.md`.
 
-## Headline metrics (`final_run_1`, 959 observations)
+## Headline metrics (pre-fix baseline, historical — `final_run_1_20260718T002609Z`, 959 observations)
+
+**Superseded by [Post-fix results](#post-fix-results-do-follow-up-questions-help)
+above.** Kept for the audit trail; the gained/lost numbers below reflect the
+call-2-never-sees-the-answer bug, not the disclosed facts themselves.
 
 | Metric | Result |
 |---|---:|
