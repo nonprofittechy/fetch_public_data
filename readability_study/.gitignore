@@ -15,6 +15,7 @@
 !metrics/**/*.csv
 !analysis/**/*.csv
 !analysis/**/*.json
+!validation/**/*.json
 
 # Never commit these regardless
 *.log
