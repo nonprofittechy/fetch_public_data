@@ -1,0 +1,3 @@
+group,observations,scenarios,initial_expected_category_present_pct,initial_expected_exact_present_pct,initial_any_plausible_exact_present_pct,question_match_coverage_pct,final_expected_category_present_among_matched_pct,final_expected_exact_present_among_matched_pct,expected_final_category_present_initially_pct,expected_final_exact_present_initially_pct,expected_final_category_newly_added_pct_of_matched,expected_final_exact_newly_added_pct_of_matched,expected_final_exact_added_count,expected_final_exact_lost_count,provider_error_count
+AtoB,486,162,91.15,80.45,90.95,66.87,95.0,87.08,73.25,44.86,15.83,41.67,100,10,0
+BtoA,114,38,97.37,83.33,94.74,62.28,100.0,94.55,72.81,61.4,16.36,23.64,13,2,0

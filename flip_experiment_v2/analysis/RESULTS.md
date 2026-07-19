@@ -1,10 +1,12 @@
 # v2 disclosure-grounded flip benchmark: results
 
-**Status (2026-07-18): the pipeline bugs described below under "Root cause"
+**Status (2026-07-19): the pipeline bugs described below under "Root cause"
 are fixed, and the current, definitive answer to "do follow-up questions
-help?" is in [Post-fix results](#post-fix-results-do-follow-up-questions-help)
-and [Condition B vs C](#condition-b-vs-c-does-the-screening-protocol-add-anything)
-below — read those two sections first.** Everything from "Root cause"
+help?" is in [Post-fix results](#post-fix-results-do-follow-up-questions-help),
+[Condition B vs C](#condition-b-vs-c-does-the-screening-protocol-add-anything),
+and [Variability](#variability-is-this-llm-sampling-noise) (6 reruns confirm
+the post-fix results are not a sampling-noise artifact) below — read those
+three sections first.** Everything from "Root cause"
 through "Family-level extremes" documents the **pre-fix baseline**
 (`final_run_1_20260718T002609Z`, GPT-5 + keyword only, 2-provider vote) and
 is retained for the audit trail: it's what motivated the fix, not a
@@ -137,6 +139,72 @@ work-injury litigation), at no cost in the cases where the model was already
 right. That's consistent with the protocols' design intent — a backstop for
 categories where a missed disclosure has outsized real-world consequences —
 rather than a general accuracy improvement.
+
+## Variability: is this LLM sampling noise?
+
+Both headline comparisons above (pre-fix vs. post-fix, and B vs. C) are each
+based on a single run per condition, so the natural follow-up question is
+whether the reported gaps are stable signals or could just as easily flip
+under ordinary LLM sampling noise. To check without re-running the full
+959-case set six more times (~2.3h/run), a fixed, reproducible,
+family-stratified 200-case subsample was built
+([`build_variability_sample.py`](../build_variability_sample.py), seed 42 —
+[`candidates/flip_candidates_v2_variability_sample.csv`](../candidates/flip_candidates_v2_variability_sample.csv),
+33/33 boundary families represented) and run **three independent times per
+condition**, same pipeline and provider mix as the official runs, cache
+disabled throughout (`cache_enabled: False` is a full bypass in FETCH's
+`ClassificationService` — verified directly against
+`app/services/classification_service.py`, not inferred from config alone).
+
+| Run | Final exact accuracy, among matched | Gained | Lost | Net |
+|---|---:|---:|---:|---:|
+| B1 | 87.88% | 37 | 4 | +33 |
+| B2 | 87.13% | 39 | 6 | +33 |
+| B3 | 90.53% | 37 | 2 | +35 |
+| **B mean (sd)** | **88.51% (±1.79)** | 37.7 | 4.0 | **+33.7** |
+| C1 | 93.28% | 45 | 2 | +43 |
+| C2 | 92.80% | 48 | 2 | +46 |
+| C3 | 90.35% | 49 | 3 | +46 |
+| **C mean (sd)** | **92.14% (±1.57)** | 47.3 | 2.3 | **+45.0** |
+
+Full per-run and pooled breakdowns:
+[`variability_condition_b/`](variability_condition_b/),
+[`variability_condition_c/`](variability_condition_c/).
+
+**The "questions help" result is not noise.** Every one of the 6 variability
+runs lands strongly net-positive (+33 to +46), matching the official 959-case
+runs' direction (B +181, C +220) and nowhere close to the pre-fix baseline's
+net −7. On the net-gained-minus-lost metric specifically, the separation
+between conditions is complete: the *lowest* condition-C run (+43) still
+beats the *highest* condition-B run (+35) — all 9 possible B-vs-C run
+pairings agree on the direction. Pooling each condition's 3×200 observations
+(600 each) gives the same picture with more power: 88.47% final-exact-among-matched
+for B vs. 92.18% for C, gained 113/lost 12 (B) vs. gained 142/lost 7 (C).
+
+**The B-vs-C accuracy gap is directionally consistent but not airtight on a
+single-run basis.** Condition C's mean (92.14%) is ~3.6 points above
+condition B's (88.51%), and 2 of 3 C runs clear the entire B range, but C3
+(90.35%) and B3 (90.53%) overlap by design-of-experiment chance — with only
+3 runs per condition, the accuracy metric alone (as opposed to the
+gained/lost/net metric above) isn't strong enough to rule out sampling noise
+run-by-run. The paired within-run comparison in the previous section (596
+matched cases, same model outputs, only the deterministic screening step
+varies) remains the more decisive evidence that screening protocols add a
+small positive rescue effect — the variability runs corroborate the
+direction without needing to carry that argument alone.
+
+Both official 959-case single runs (B: 88.56%, C: 91.44%) fall inside their
+respective 200-case variability ranges (B: 87.13–90.53%, C: 90.35–93.28%),
+which is a useful sanity check that the smaller subsample isn't itself
+biased relative to the full candidate set.
+
+One honest caveat at the individual-case level: which follow-up question the
+matcher selects (and therefore which cases even get a chance to change
+label) is itself stochastic — only 93/200 (B) and 103/200 (C) scenarios were
+matched to a question in *all three* runs of their condition, and 192/200
+(B) / 194/200 (C) scenarios saw their matched question set vary across runs
+at all (see `stability` in each condition's `summary.json`). Aggregate
+accuracy is stable; which specific cases flip on any given run is not.
 
 ## Configuration
 

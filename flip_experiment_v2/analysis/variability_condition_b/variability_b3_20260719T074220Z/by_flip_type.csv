@@ -1,0 +1,3 @@
+group,observations,scenarios,initial_expected_category_present_pct,initial_expected_exact_present_pct,initial_any_plausible_exact_present_pct,question_match_coverage_pct,final_expected_category_present_among_matched_pct,final_expected_exact_present_among_matched_pct,expected_final_category_present_initially_pct,expected_final_exact_present_initially_pct,expected_final_category_newly_added_pct_of_matched,expected_final_exact_newly_added_pct_of_matched,expected_final_exact_added_count,expected_final_exact_lost_count,provider_error_count
+label_change,37,37,81.08,72.97,81.08,51.35,92.31,84.62,70.27,35.14,7.69,38.46,5,1,0
+routing_disambiguation,163,163,92.64,79.75,92.02,65.64,95.12,91.46,71.78,50.31,18.29,39.02,32,1,0
