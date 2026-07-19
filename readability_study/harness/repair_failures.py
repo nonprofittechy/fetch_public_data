@@ -34,7 +34,15 @@ import fetch_screen  # noqa: E402
 REPAIR_ATTEMPTS = 6
 
 
+MEMBER_ONLY = os.environ.get("REPAIR_MEMBER_ONLY") == "1"
+
+
 def needs_repair(rec: dict) -> bool:
+    if MEMBER_ONLY:
+        # Only the arm-defining OpenAI member matters; mistral/gemini are shared,
+        # symmetric, minor question contributors and their timeouts are not an
+        # arm confound (and are not an analysis exclusion criterion).
+        return bool(rec.get("member_failed") or rec.get("error"))
     return bool(rec.get("member_failed") or rec.get("error") or rec.get("provider_failures"))
 
 
@@ -55,9 +63,10 @@ async def regen(sid: str, arm: str, query: str, sem: asyncio.Semaphore, meta: di
             res["attempts"] = attempt
             res["repaired"] = True
             # success = member contributed, no error, and either has questions or a
-            # clean empty (no provider failures at all)
-            clean = (not res.get("member_failed") and not res.get("error")
-                     and not res.get("provider_failures"))
+            # clean empty (no provider failures at all). In member-only mode we
+            # accept mistral/gemini absence.
+            clean = not res.get("member_failed") and not res.get("error") and (
+                MEMBER_ONLY or not res.get("provider_failures"))
             if clean:
                 return res
             best = res
