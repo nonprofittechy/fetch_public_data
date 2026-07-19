@@ -1,0 +1,89 @@
+{
+  "run": "results/final_run_1_20260718T225512Z",
+  "matched_cases_with_final_answer": 596,
+  "effective_categories_exact_correct": 545,
+  "model_only_exact_correct": 539,
+  "screening_rescues": 6,
+  "screening_regressions_sanity_check": 0,
+  "rescue_detail": [
+    {
+      "scenario_id": "v2_custody_safety_02",
+      "expected": "Family Law > Restraining Orders",
+      "mandatory_categories_final": [
+        {
+          "id": "family.restraining_orders",
+          "label": "Family Law > Restraining Orders",
+          "source": "protocol",
+          "protocol_id": "family_safety.v1",
+          "rule_id": "family_safety.controlling_or_threatening"
+        }
+      ]
+    },
+    {
+      "scenario_id": "v2_immigration_posture_44",
+      "expected": "International Law > General Immigration/Visas",
+      "mandatory_categories_final": [
+        {
+          "id": "international.general_immigration_visas",
+          "label": "International Law > General Immigration/Visas",
+          "source": "protocol",
+          "protocol_id": "immigration_consequences.v1",
+          "rule_id": "immigration_consequences.application_or_status"
+        }
+      ]
+    },
+    {
+      "scenario_id": "v2_tenancy_property_type_46",
+      "expected": "Wills & Trusts > Elder Abuse",
+      "mandatory_categories_final": [
+        {
+          "id": "wills_trusts.elder_abuse",
+          "label": "Wills & Trusts > Elder Abuse",
+          "source": "protocol",
+          "protocol_id": "elder_exploitation.v1",
+          "rule_id": "elder_exploitation.pressure_or_control"
+        }
+      ]
+    },
+    {
+      "scenario_id": "v2_wc_state_vs_third_party_21",
+      "expected": "Workers' Comp > Third Party Litigation",
+      "mandatory_categories_final": [
+        {
+          "id": "workers_comp.third_party_litigation",
+          "label": "Workers' Comp > Third Party Litigation",
+          "source": "protocol",
+          "protocol_id": "work_injury_third_party.v1",
+          "rule_id": "work_injury_third_party.yes"
+        }
+      ]
+    },
+    {
+      "scenario_id": "v2_wc_state_vs_third_party_43",
+      "expected": "Workers' Comp > Third Party Litigation",
+      "mandatory_categories_final": [
+        {
+          "id": "workers_comp.third_party_litigation",
+          "label": "Workers' Comp > Third Party Litigation",
+          "source": "protocol",
+          "protocol_id": "work_injury_third_party.v1",
+          "rule_id": "work_injury_third_party.yes"
+        }
+      ]
+    },
+    {
+      "scenario_id": "v2_wc_state_vs_third_party_46",
+      "expected": "Workers' Comp > Third Party Litigation",
+      "mandatory_categories_final": [
+        {
+          "id": "workers_comp.third_party_litigation",
+          "label": "Workers' Comp > Third Party Litigation",
+          "source": "protocol",
+          "protocol_id": "work_injury_third_party.v1",
+          "rule_id": "work_injury_third_party.yes"
+        }
+      ]
+    }
+  ],
+  "regression_detail_should_be_empty": []
+}

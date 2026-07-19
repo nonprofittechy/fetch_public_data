@@ -1,0 +1,54 @@
+{
+  "boundary_id": "injury_mechanism",
+  "mechanism": "M2_specific_vs_general_fallback",
+  "flip_type": "routing_disambiguation",
+  "grounding_source_rows": "taxonomy Premises/Products descriptions",
+  "grounding_note": "Second batch.",
+  "safety_sensitive": false,
+  "scenarios": [
+    {
+      "suffix": "21",
+      "direction": "AtoB",
+      "opening_query": "My e-bike's brakes gave out on a hill and I went over the bars into a parked car.",
+      "initial": "General Litigation > Personal Injury",
+      "final": "General Litigation > Products Liability",
+      "hidden_fact": "The brake model was recalled two months before my crash for exactly this failure — the shop never notified me.",
+      "fact_as_answer": "That brake model was recalled two months before my crash — the shop never told me.",
+      "relevant_question_topic": "whether a recalled component caused the crash",
+      "counterfactual_final": "General Litigation > Personal Injury",
+      "counterfactual_hidden_fact": "The brakes were fine — a driver flung his door open into the bike lane and I had nowhere to go.",
+      "counterfactual_fact_as_answer": "Brakes were fine — a driver doored me in the bike lane.",
+      "vetting_note": "Recall-vs-dooring mechanism."
+    },
+    {
+      "suffix": "22",
+      "direction": "AtoB",
+      "opening_query": "The haunted house attraction hurt my back when a floor panel dropped further than it should have.",
+      "initial": "General Litigation > Premises Liability",
+      "final": "General Litigation > Tort Claims Act",
+      "plausible_initial_labels": "General Litigation > Premises Liability || General Litigation > Tort Claims Act",
+      "hidden_fact": "It's the county fairgrounds' own Halloween event, run by parks staff — public entity, notice deadline running.",
+      "fact_as_answer": "It's the county fairgrounds' own event with parks staff — a public entity, and the notice clock is running.",
+      "relevant_question_topic": "whether the attraction operator is a public entity",
+      "counterfactual_final": "General Litigation > Premises Liability",
+      "counterfactual_hidden_fact": "It's a private company that rents the warehouse every October — their waiver and insurance are the fight.",
+      "counterfactual_fact_as_answer": "A private company renting the warehouse — their waiver and insurer are the fight.",
+      "vetting_note": "Operator identity in a seasonal-attraction setting."
+    },
+    {
+      "suffix": "23",
+      "direction": "AtoB",
+      "opening_query": "My daughter's cheer team practices on mats the gym knows are worn out, and she finally got hurt.",
+      "initial": "General Litigation > Premises Liability",
+      "final": "Administrative Law > Schools — Special Needs Education",
+      "plausible_initial_labels": "General Litigation > Premises Liability || Administrative Law > Schools — Special Needs Education",
+      "hidden_fact": "It's her school's team and she has a 504 plan the coach ignored — cleared only for limited impact after her concussion, yet he ran her on full tumbling passes; the school's plan violation is the case.",
+      "fact_as_answer": "It's her school team — she has a 504 plan limiting impact after her concussion, and the coach ran full tumbling anyway. The plan violation is the case.",
+      "relevant_question_topic": "whether a disability-plan violation at a school underlies the injury",
+      "counterfactual_final": "General Litigation > Premises Liability",
+      "counterfactual_hidden_fact": "It's a private club gym, no school or plan involved — the worn equipment they'd been warned about is the case.",
+      "counterfactual_fact_as_answer": "It's a private club gym — the worn mats they were warned about are the case.",
+      "vetting_note": "504-plan violation reroutes to education law; club-gym version stays premises."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "run_count": 2,
+  "runs": [
+    "final_run_1_20260714T170440Z",
+    "final_run_2_20260714T181957Z"
+  ],
+  "metrics": {
+    "initial_category_accuracy_pct": {
+      "values": [
+        88.8,
+        88.0
+      ],
+      "mean": 88.4,
+      "population_sd": 0.4,
+      "min": 88.0,
+      "max": 88.8
+    },
+    "initial_exact_accuracy_pct": {
+      "values": [
+        58.6,
+        57.5
+      ],
+      "mean": 58.05,
+      "population_sd": 0.55,
+      "min": 57.5,
+      "max": 58.6
+    },
+    "question_coverage_pct": {
+      "values": [
+        70.5,
+        72.1
+      ],
+      "mean": 71.3,
+      "population_sd": 0.8,
+      "min": 70.5,
+      "max": 72.1
+    },
+    "final_category_accuracy_when_matched_pct": {
+      "values": [
+        82.98,
+        82.25
+      ],
+      "mean": 82.62,
+      "population_sd": 0.37,
+      "min": 82.25,
+      "max": 82.98
+    },
+    "final_exact_accuracy_when_matched_pct": {
+      "values": [
+        43.4,
+        43.0
+      ],
+      "mean": 43.2,
+      "population_sd": 0.2,
+      "min": 43.0,
+      "max": 43.4
+    },
+    "initial_expected_category_is_top_pct": {
+      "values": [
+        76.6,
+        75.8
+      ],
+      "mean": 76.2,
+      "population_sd": 0.4,
+      "min": 75.8,
+      "max": 76.6
+    },
+    "final_expected_category_is_top_when_matched_pct": {
+      "values": [
+        69.79,
+        70.6
+      ],
+      "mean": 70.19,
+      "population_sd": 0.4,
+      "min": 69.79,
+      "max": 70.6
+    },
+    "initial_expected_exact_is_top_pct": {
+      "values": [
+        39.4,
+        38.5
+      ],
+      "mean": 38.95,
+      "population_sd": 0.45,
+      "min": 38.5,
+      "max": 39.4
+    },
+    "final_expected_exact_is_top_when_matched_pct": {
+      "values": [
+        21.56,
+        21.64
+      ],
+      "mean": 21.6,
+      "population_sd": 0.04,
+      "min": 21.56,
+      "max": 21.64
+    },
+    "classification_changed_when_matched_pct": {
+      "values": [
+        12.77,
+        15.95
+      ],
+      "mean": 14.36,
+      "population_sd": 1.59,
+      "min": 12.77,
+      "max": 15.95
+    }
+  }
+}

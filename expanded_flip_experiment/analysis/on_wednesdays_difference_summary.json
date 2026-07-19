@@ -1,0 +1,189 @@
+{
+  "paper_overall": {
+    "cases": 200,
+    "initial_category_present_pct": 77.0,
+    "question_coverage_pct": 69.0,
+    "matched_cases": 138,
+    "final_category_present_when_matched_pct": 65.2,
+    "rescued": 18,
+    "harmed": 4,
+    "rescue_to_harm_ratio": 4.5
+  },
+  "current_by_source": {
+    "legacy_200_snapshot": {
+      "cases": 600,
+      "initial_category_present_pct": 74.67,
+      "question_coverage_pct": 66.33,
+      "matched_cases": 398,
+      "final_category_present_when_matched_pct": 77.39,
+      "paper_style_rescued": 77,
+      "paper_style_harmed": 2,
+      "paper_style_neutral_failure_to_flip": 70,
+      "paper_style_rescue_to_harm_ratio": 38.5,
+      "expected_final_category_added": 16,
+      "expected_final_category_lost": 13,
+      "expected_final_exact_added": 27,
+      "expected_final_exact_lost": 19
+    },
+    "expanded_workbook_grounded": {
+      "cases": 2400,
+      "initial_category_present_pct": 94.04,
+      "question_coverage_pct": 72.96,
+      "matched_cases": 1751,
+      "final_category_present_when_matched_pct": 86.29,
+      "paper_style_rescued": 99,
+      "paper_style_harmed": 4,
+      "paper_style_neutral_failure_to_flip": 231,
+      "paper_style_rescue_to_harm_ratio": 24.75,
+      "expected_final_category_added": 31,
+      "expected_final_category_lost": 35,
+      "expected_final_exact_added": 95,
+      "expected_final_exact_lost": 83
+    }
+  },
+  "current_legacy_by_run": {
+    "final_run_1_20260714T170440Z": {
+      "cases": 200,
+      "initial_category_present_pct": 76.0,
+      "question_coverage_pct": 65.5,
+      "matched_cases": 131,
+      "final_category_present_when_matched_pct": 78.63,
+      "paper_style_rescued": 25,
+      "paper_style_harmed": 1,
+      "paper_style_neutral_failure_to_flip": 21,
+      "paper_style_rescue_to_harm_ratio": 25.0,
+      "expected_final_category_added": 8,
+      "expected_final_category_lost": 6,
+      "expected_final_exact_added": 11,
+      "expected_final_exact_lost": 7
+    },
+    "final_run_2_20260714T181957Z": {
+      "cases": 200,
+      "initial_category_present_pct": 74.0,
+      "question_coverage_pct": 68.0,
+      "matched_cases": 136,
+      "final_category_present_when_matched_pct": 75.0,
+      "paper_style_rescued": 27,
+      "paper_style_harmed": 1,
+      "paper_style_neutral_failure_to_flip": 27,
+      "paper_style_rescue_to_harm_ratio": 27.0,
+      "expected_final_category_added": 2,
+      "expected_final_category_lost": 4,
+      "expected_final_exact_added": 3,
+      "expected_final_exact_lost": 7
+    },
+    "final_run_3_20260714T193500Z": {
+      "cases": 200,
+      "initial_category_present_pct": 74.0,
+      "question_coverage_pct": 65.5,
+      "matched_cases": 131,
+      "final_category_present_when_matched_pct": 78.63,
+      "paper_style_rescued": 25,
+      "paper_style_harmed": 0,
+      "paper_style_neutral_failure_to_flip": 22,
+      "paper_style_rescue_to_harm_ratio": null,
+      "expected_final_category_added": 6,
+      "expected_final_category_lost": 3,
+      "expected_final_exact_added": 13,
+      "expected_final_exact_lost": 5
+    }
+  },
+  "composition": {
+    "legacy_200_snapshot": {
+      "same_top_category_pct": 30.0,
+      "same_category_question_coverage_pct": 72.78,
+      "cross_category_question_coverage_pct": 63.57,
+      "opening_query_mean_words": 18.39,
+      "hidden_fact_mean_words": 13.65
+    },
+    "expanded_workbook_grounded": {
+      "same_top_category_pct": 48.5,
+      "same_category_question_coverage_pct": 86.08,
+      "cross_category_question_coverage_pct": 60.6,
+      "opening_query_mean_words": 16.6,
+      "hidden_fact_mean_words": 12.65
+    }
+  },
+  "legacy_text_copy_check": {
+    "performed": true,
+    "original_rows": 200,
+    "copied_rows": 200,
+    "text_mismatches": {
+      "opening_query": 0,
+      "hidden_fact": 0,
+      "fact_as_answer": 0,
+      "relevant_question_topic": 0
+    }
+  },
+  "paired_same_scenario_check": {
+    "performed": true,
+    "paper_result_rows": 200,
+    "by_current_run": {
+      "final_run_1_20260714T170440Z": {
+        "question_match_transition": {
+          "paper_True_current_True": 113,
+          "paper_True_current_False": 25,
+          "paper_False_current_True": 18,
+          "paper_False_current_False": 44
+        },
+        "initial_category_transition": {
+          "paper_True_current_True": 145,
+          "paper_True_current_False": 9,
+          "paper_False_current_True": 7,
+          "paper_False_current_False": 39
+        },
+        "final_category_transition_among_cases_matched_in_both": {
+          "paper_True_current_True": 77,
+          "paper_False_current_True": 13,
+          "paper_True_current_False": 4,
+          "paper_False_current_False": 19
+        }
+      },
+      "final_run_2_20260714T181957Z": {
+        "question_match_transition": {
+          "paper_True_current_True": 117,
+          "paper_True_current_False": 21,
+          "paper_False_current_True": 19,
+          "paper_False_current_False": 43
+        },
+        "initial_category_transition": {
+          "paper_True_current_True": 141,
+          "paper_True_current_False": 13,
+          "paper_False_current_True": 7,
+          "paper_False_current_False": 39
+        },
+        "final_category_transition_among_cases_matched_in_both": {
+          "paper_True_current_True": 76,
+          "paper_False_current_False": 23,
+          "paper_True_current_False": 7,
+          "paper_False_current_True": 11
+        }
+      },
+      "final_run_3_20260714T193500Z": {
+        "question_match_transition": {
+          "paper_True_current_True": 114,
+          "paper_True_current_False": 24,
+          "paper_False_current_True": 17,
+          "paper_False_current_False": 45
+        },
+        "initial_category_transition": {
+          "paper_True_current_True": 141,
+          "paper_True_current_False": 13,
+          "paper_False_current_True": 7,
+          "paper_False_current_False": 39
+        },
+        "final_category_transition_among_cases_matched_in_both": {
+          "paper_True_current_False": 4,
+          "paper_False_current_False": 20,
+          "paper_True_current_True": 78,
+          "paper_False_current_True": 12
+        }
+      }
+    }
+  },
+  "notes": [
+    "Current legacy metrics pool the same 200 scenarios across three uncached runs (600 observations).",
+    "The historical harm metric depends on a changed serialized first category; it is not an order-independent criterion.",
+    "Expected-final additions/losses are the symmetric order-independent diagnostic."
+  ]
+}

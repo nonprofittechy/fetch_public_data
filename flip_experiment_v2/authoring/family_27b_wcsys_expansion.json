@@ -1,0 +1,70 @@
+{
+  "boundary_id": "wc_system_identity",
+  "mechanism": "M3_missing_procedural_or_institutional_fact",
+  "flip_type": "routing_disambiguation",
+  "grounding_source_rows": "human_disagreements rows 28, 352",
+  "grounding_note": "Expansion batch: more employer-identity and injury-nature disclosures.",
+  "safety_sensitive": false,
+  "scenarios": [
+    {
+      "suffix": "21",
+      "direction": "AtoB",
+      "opening_query": "I got hurt loading freight and the claims process has been a runaround from day one.",
+      "initial": "Workers' Comp > State",
+      "final": "Workers' Comp > Federal",
+      "plausible_initial_labels": "Workers' Comp > State || Workers' Comp > Federal",
+      "hidden_fact": "I'm a civilian materials handler at the Army depot — federal employee, so it's the federal comp system.",
+      "fact_as_answer": "I'm a civilian handler at the Army depot — federal employee, federal comp system.",
+      "relevant_question_topic": "whether the employer is the federal government",
+      "counterfactual_final": "Workers' Comp > State",
+      "counterfactual_hidden_fact": "I load for a regional grocery distributor — ordinary state comp.",
+      "counterfactual_fact_as_answer": "Regional grocery distributor — ordinary state comp.",
+      "vetting_note": "Civilian-military-employer variant of the federal split."
+    },
+    {
+      "suffix": "22",
+      "direction": "AtoB",
+      "opening_query": "Since the robbery at my store I can't sleep, can't focus, and now I can't work either.",
+      "initial": "Workers' Comp > Stress Related",
+      "final": "General Litigation > Crime Victims",
+      "plausible_initial_labels": "Workers' Comp > Stress Related || General Litigation > Crime Victims",
+      "hidden_fact": "They caught the robber and he's being sentenced — the victim advocate says I can pursue restitution and a civil claim against him, which is what I want alongside anything work-related.",
+      "fact_as_answer": "They caught him — he's being sentenced, and I want the victim restitution and civil claim against him.",
+      "relevant_question_topic": "whether a civil claim against a caught perpetrator is the goal",
+      "counterfactual_final": "Workers' Comp > Stress Related",
+      "counterfactual_hidden_fact": "He was never caught — my fight is the comp carrier denying my PTSD claim as 'not a physical injury.'",
+      "counterfactual_fact_as_answer": "He was never caught — my fight is the comp denial of my PTSD claim.",
+      "vetting_note": "Perpetrator-caught fact opens the crime-victim route; otherwise the stress-claim fight."
+    },
+    {
+      "suffix": "23",
+      "direction": "AtoB",
+      "opening_query": "My husband works the docks and got crushed between a container and the bull rail last month.",
+      "initial": "Workers' Comp > LHWA",
+      "final": "General Litigation > Maritime",
+      "plausible_initial_labels": "Workers' Comp > LHWA || General Litigation > Maritime",
+      "hidden_fact": "He's actually a crewman assigned to the ship, not shore labor — he sails with it, which everyone says makes him a seaman under maritime law.",
+      "fact_as_answer": "He's crew assigned to the ship — he sails with it, which makes him a seaman under maritime law.",
+      "relevant_question_topic": "whether the worker is a vessel crewman or shore-based longshoreman",
+      "counterfactual_final": "Workers' Comp > LHWA",
+      "counterfactual_hidden_fact": "He's shore-based — a longshoreman on the pier, never part of any crew, which is the LHWA system.",
+      "counterfactual_fact_as_answer": "He's shore-based longshore labor — never crew. That's the LHWA system.",
+      "vetting_note": "Seaman-status is the classic maritime jurisdictional fact."
+    },
+    {
+      "suffix": "24",
+      "direction": "AtoB",
+      "opening_query": "My employer never had insurance for my injury and now acts like that's my problem.",
+      "initial": "Workers' Comp > State",
+      "final": "Workers' Comp > Employers",
+      "plausible_initial_labels": "Workers' Comp > State || Workers' Comp > Employers",
+      "hidden_fact": "I should explain — I'M the employer in trouble here too: I'm the injured working owner, we never carried comp on ourselves, and the state is citing MY company for the coverage gap while my own claim floats.",
+      "fact_as_answer": "It's complicated — I'm the injured working owner. We never carried comp on ourselves, and the state is citing my company for the gap while my own claim floats.",
+      "relevant_question_topic": "whether the user is an injured worker or a cited uninsured employer (or both)",
+      "counterfactual_final": "Workers' Comp > State",
+      "counterfactual_hidden_fact": "I'm just an employee — the state's injured-worker fund is handling my claim while they chase my uninsured boss.",
+      "counterfactual_fact_as_answer": "I'm just an employee — the state fund has my claim while they chase my uninsured boss.",
+      "vetting_note": "Owner-operator dual posture is stated openly by the user; the disclosure resolves which side needs counsel first."
+    }
+  ]
+}

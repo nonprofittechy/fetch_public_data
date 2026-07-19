@@ -1,0 +1,80 @@
+{
+  "run_start_local": "2026-07-16 21:07:40",
+  "run_end_local_exclusive": "2026-07-16 22:10:00",
+  "test_rows": 373,
+  "gpt_start_rows": 373,
+  "gpt_start_order_validated_against_csv": true,
+  "provider_final_outcomes": {
+    "gpt-5.2": {
+      "ok": 369,
+      "exception": 4,
+      "error_result": 0
+    },
+    "gemini": {
+      "ok": 371,
+      "exception": 0,
+      "error_result": 2
+    },
+    "mistral": {
+      "ok": 360,
+      "exception": 3,
+      "error_result": 10
+    },
+    "keyword": {
+      "ok": 373,
+      "exception": 0,
+      "error_result": 0
+    },
+    "spot": {
+      "ok": 373,
+      "exception": 0,
+      "error_result": 0
+    }
+  },
+  "gpt_exception_events": 4,
+  "gpt_exception_rows_matched": 4,
+  "gpt_exception_repair_cases": [
+    {
+      "test_index_zero_based": 255,
+      "scenario_id": "gold-0256",
+      "source_row": "294",
+      "description_length": 93,
+      "observed_elapsed_seconds": 10.695,
+      "match_rule": "most_recent_unclaimed_start",
+      "exception": "APITimeoutError('Request timed out.')",
+      "problem_description": "I am a graphic designer and need help with intellectual property, a contract, and copyrights."
+    },
+    {
+      "test_index_zero_based": 330,
+      "scenario_id": "gold-0331",
+      "source_row": "383",
+      "description_length": 342,
+      "observed_elapsed_seconds": 6.725,
+      "match_rule": "most_recent_unclaimed_start",
+      "exception": "APIConnectionError('Connection error.')",
+      "problem_description": "I received a letter of eviction, they refused mediation, 3 of other ORS codes are not valid, they will not talk to me, I work for the Owner of the property. Now they are stating that I am not in violation, BUT The letter is still in my file, and I am still not able to talk to the property management team who have violated my renters rights."
+    },
+    {
+      "test_index_zero_based": 339,
+      "scenario_id": "gold-0340",
+      "source_row": "393",
+      "description_length": 930,
+      "observed_elapsed_seconds": 8.371,
+      "match_rule": "most_recent_unclaimed_start",
+      "exception": "APITimeoutError('Request timed out.')",
+      "problem_description": "Suing for a refund of $124,000 due to a breach of contract of a contractor who promised to provide \"gut to studs\"-type renovation services for a 1,730 sq. ft., 2-story home. The contracts we signed, and have paid for, total $179,000, but the work is only 20% finished after 13 months of continual delays. Contractor refused to attend mediation; his attorney promised another \"work schedule\" on 9-17-24, due by 9-27-24, but no information has been received as of this writing. We do not want this contractor to proceed because he is a crook, and we need our money refunded so we can continue with the project. The contractor has refused to do so and insists on going forward with yet another \"work schedule\". The Oregon Construction Contractors Board letter dated 9-18-24 states that we must file a court action within 30 days of their letter, or their file of our complaint will be closed. Please advise our next steps. Thanks you"
+    },
+    {
+      "test_index_zero_based": 369,
+      "scenario_id": "gold-0370",
+      "source_row": "428",
+      "description_length": 425,
+      "observed_elapsed_seconds": 65.901,
+      "match_rule": "configured_timeout_horizon",
+      "exception": "TimeoutError(\"Provider 'gpt-5.2' timed out after 60.0s\")",
+      "problem_description": "My lawyer Galen Vossick looks identical to accused pederast biology teacher milo quenderson of veneta high school. I was raped at age three and covered up. I don't find the joke funny. I have a flyer that compares the two men. many of my friends agree the resemblance is uncanny. I stopped going to court because of this and ended up in the mental hospital. I am looking for a malpractice lawyer. please ask to see my flyer.."
+    }
+  ],
+  "semantic_merge_timeout_log_lines": 0,
+  "note": "Transient tracebacks that later succeeded are excluded; counts use final Results summary lines."
+}

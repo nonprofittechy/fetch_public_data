@@ -1,0 +1,46 @@
+{
+  "candidates_file": "/home/quinten/fetch/publishable-repo/flip_experiment_v2/candidates/flip_candidates_v2.csv",
+  "active_candidates": 959,
+  "runs": {
+    "final_run_1_20260718T203325Z": {
+      "observations": 959,
+      "scenarios": 959,
+      "initial_expected_category_present_pct": 92.18,
+      "initial_expected_exact_present_pct": 83.21,
+      "initial_any_plausible_exact_present_pct": 91.66,
+      "question_match_coverage_pct": 72.26,
+      "final_expected_category_present_among_matched_pct": 96.44,
+      "final_expected_exact_present_among_matched_pct": 88.56,
+      "expected_final_category_present_initially_pct": 76.23,
+      "expected_final_exact_present_initially_pct": 47.24,
+      "expected_final_category_newly_added_pct_of_matched": 15.76,
+      "expected_final_exact_newly_added_pct_of_matched": 36.4,
+      "expected_final_exact_added_count": 194,
+      "expected_final_exact_lost_count": 13,
+      "provider_error_count": 0,
+      "matcher_calls": 907,
+      "matcher_errors": 2,
+      "matcher_matched": 693,
+      "matcher_match_rate_pct": 76.41,
+      "matcher_mean_completion_tokens": 543.5
+    }
+  },
+  "pooled": {
+    "observations": 959,
+    "scenarios": 959,
+    "initial_expected_category_present_pct": 92.18,
+    "initial_expected_exact_present_pct": 83.21,
+    "initial_any_plausible_exact_present_pct": 91.66,
+    "question_match_coverage_pct": 72.26,
+    "final_expected_category_present_among_matched_pct": 96.44,
+    "final_expected_exact_present_among_matched_pct": 88.56,
+    "expected_final_category_present_initially_pct": 76.23,
+    "expected_final_exact_present_initially_pct": 47.24,
+    "expected_final_category_newly_added_pct_of_matched": 15.76,
+    "expected_final_exact_newly_added_pct_of_matched": 36.4,
+    "expected_final_exact_added_count": 194,
+    "expected_final_exact_lost_count": 13,
+    "provider_error_count": 0
+  },
+  "stability": {}
+}

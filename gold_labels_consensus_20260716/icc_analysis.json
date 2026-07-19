@@ -1,0 +1,53 @@
+{
+  "method": "two_way_absolute_agreement",
+  "coefficient_names": {
+    "single_rater": "ICC(A,1)",
+    "mean_raters": "ICC(A,k)"
+  },
+  "scope": {
+    "scenarios": 114,
+    "raters": ["gpt52", "gemini31_pro", "deepseek_v4", "jackie", "qs"],
+    "bootstrap_samples": 2000
+  },
+  "results": {
+    "label_count_all_five_raters": {
+      "targets": 114,
+      "raters": 5,
+      "icc_a_1": 0.327804036446633,
+      "icc_a_1_bootstrap_95_ci": [0.2160467212793477, 0.42128340131898145],
+      "icc_a_k": 0.7091591953531411,
+      "icc_a_k_bootstrap_95_ci": [0.5794663695044258, 0.7844738162958005]
+    },
+    "label_count_humans_only": {
+      "targets": 114,
+      "raters": 2,
+      "icc_a_1": 0.3035599300892283,
+      "icc_a_k": 0.4657398913273588
+    },
+    "label_count_llms_only": {
+      "targets": 114,
+      "raters": 3,
+      "icc_a_1": 0.32103548966756507,
+      "icc_a_k": 0.5865193899186102
+    },
+    "conditional_exact_pair_incidence_all_five": {
+      "targets": 340,
+      "raters": 5,
+      "icc_a_1": 0.27944357876582804,
+      "icc_a_k": 0.6597576917856658
+    },
+    "conditional_top_level_incidence_all_five": {
+      "targets": 193,
+      "raters": 5,
+      "icc_a_1": 0.38950154389060426,
+      "icc_a_k": 0.7613381617520262
+    },
+    "all_209_pair_incidence_sensitivity": {
+      "targets": 23826,
+      "raters": 5,
+      "icc_a_1": 0.743106931781615,
+      "icc_a_k": 0.9353309648746677,
+      "warning": "Shared zero cells dominate this sensitivity analysis; do not use as the headline agreement estimate."
+    }
+  }
+}

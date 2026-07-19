@@ -1,0 +1,39 @@
+{
+  "run_start_local": "2026-07-16 21:00:49",
+  "run_end_local_exclusive": "2026-07-16 21:08:00",
+  "test_rows": 28,
+  "gpt_start_rows": 28,
+  "gpt_start_order_validated_against_csv": true,
+  "provider_final_outcomes": {
+    "gpt-5.2": {
+      "ok": 28,
+      "exception": 0,
+      "error_result": 0
+    },
+    "gemini": {
+      "ok": 28,
+      "exception": 0,
+      "error_result": 0
+    },
+    "mistral": {
+      "ok": 26,
+      "exception": 1,
+      "error_result": 1
+    },
+    "keyword": {
+      "ok": 28,
+      "exception": 0,
+      "error_result": 0
+    },
+    "spot": {
+      "ok": 28,
+      "exception": 0,
+      "error_result": 0
+    }
+  },
+  "gpt_exception_events": 0,
+  "gpt_exception_rows_matched": 0,
+  "gpt_exception_repair_cases": [],
+  "semantic_merge_timeout_log_lines": 0,
+  "note": "Transient tracebacks that later succeeded are excluded; counts use final Results summary lines."
+}

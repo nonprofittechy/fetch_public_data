@@ -1,0 +1,1244 @@
+{
+  "evalId": "eval-Ot9-2026-07-17T02:09:38",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-07-17T02:09:38.816Z",
+    "prompts": [
+      {
+        "raw": "{{problem_description}}",
+        "label": "{{problem_description}}",
+        "id": "bdbf82a6eeaacbbed8979de41bc684c01662b9f1fc6b2699e68fd7ee6deec23b",
+        "provider": "cheap-providers-ensemble",
+        "metrics": {
+          "score": 3.5,
+          "testPassCount": 1,
+          "testFailCount": 3,
+          "testErrorCount": 0,
+          "assertPassCount": 20,
+          "assertFailCount": 4,
+          "totalLatencyMs": 45624,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 4,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 5675,
+              "prompt": 4860,
+              "completion": 815,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {
+            "followup_sentence_length_ok": 4,
+            "followup_dale_chall_grade": 2.5,
+            "followup_fkgl_grade_level": 82.725291005291,
+            "followup_jargon_appropriate": 4,
+            "followup_relevant": 3
+          },
+          "namedScoresCount": {
+            "followup_sentence_length_ok": 4,
+            "followup_dale_chall_grade": 4,
+            "followup_fkgl_grade_level": 4,
+            "followup_jargon_appropriate": 4,
+            "followup_relevant": 4
+          },
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "error": "Readability violations in 7/12 texts: T3 (grade 8.87 > 7.9); T5 (grade 7.98 > 7.9); T6 (grade 10.20 > 7.9); T7 (grade 11.57 > 7.9); T8 (grade 14.31 > 7.9); T9 (grade 16.00 > 7.9); T10 (grade 9.05 > 7.9). All grades: T1: DC=4.08, FKGL=-0.28; T2: DC=7.04, FKGL=4.45; T3: DC=8.87, FKGL=6.94; T4: DC=6.57, FKGL=15.47; T5: DC=7.98, FKGL=6.01; T6: DC=10.20, FKGL=12.32; T7: DC=11.57, FKGL=10.73; T8: DC=14.31, FKGL=8.79; T9: DC=16.00, FKGL=43.80; T10: DC=9.05, FKGL=8.79; T11: DC=3.69, FKGL=8.40; T12: DC=7.05, FKGL=6.79",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.9,
+          "reason": "Readability violations in 7/12 texts: T3 (grade 8.87 > 7.9); T5 (grade 7.98 > 7.9); T6 (grade 10.20 > 7.9); T7 (grade 11.57 > 7.9); T8 (grade 14.31 > 7.9); T9 (grade 16.00 > 7.9); T10 (grade 9.05 > 7.9). All grades: T1: DC=4.08, FKGL=-0.28; T2: DC=7.04, FKGL=4.45; T3: DC=8.87, FKGL=6.94; T4: DC=6.57, FKGL=15.47; T5: DC=7.98, FKGL=6.01; T6: DC=10.20, FKGL=12.32; T7: DC=11.57, FKGL=10.73; T8: DC=14.31, FKGL=8.79; T9: DC=16.00, FKGL=43.80; T10: DC=9.05, FKGL=8.79; T11: DC=3.69, FKGL=8.40; T12: DC=7.05, FKGL=6.79",
+          "namedScores": {
+            "followup_sentence_length_ok": 1,
+            "followup_dale_chall_grade": 0.5,
+            "followup_fkgl_grade_level": 43.8,
+            "followup_jargon_appropriate": 1,
+            "followup_relevant": 1
+          },
+          "tokensUsed": {
+            "total": 1188,
+            "prompt": 971,
+            "completion": 217,
+            "cached": 0,
+            "numRequests": 2
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Valid JSON output"
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "All 3 questions meet sentence length criteria (avg ≤ 32.0, max ≤ 45.0)",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_sentence_length_ok",
+                "threshold": 1,
+                "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+                "config": {
+                  "max_avg_sentence_words": 32,
+                  "max_max_sentence_words": 45
+                }
+              }
+            },
+            {
+              "pass": false,
+              "score": 0.5,
+              "reason": "Readability violations in 7/12 texts: T3 (grade 8.87 > 7.9); T5 (grade 7.98 > 7.9); T6 (grade 10.20 > 7.9); T7 (grade 11.57 > 7.9); T8 (grade 14.31 > 7.9); T9 (grade 16.00 > 7.9); T10 (grade 9.05 > 7.9). All grades: T1: DC=4.08, FKGL=-0.28; T2: DC=7.04, FKGL=4.45; T3: DC=8.87, FKGL=6.94; T4: DC=6.57, FKGL=15.47; T5: DC=7.98, FKGL=6.01; T6: DC=10.20, FKGL=12.32; T7: DC=11.57, FKGL=10.73; T8: DC=14.31, FKGL=8.79; T9: DC=16.00, FKGL=43.80; T10: DC=9.05, FKGL=8.79; T11: DC=3.69, FKGL=8.40; T12: DC=7.05, FKGL=6.79",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_dale_chall_grade",
+                "threshold": 0,
+                "value": "file://assertions/followup_textstat_grade.py",
+                "config": {
+                  "max_dale_chall_grade": 7.9
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 43.8,
+              "reason": "Worst FKGL grade: 43.80 (max: 14.0) across 12 texts. Individual grades: -0.28, 4.45, 6.94, 15.47, 6.01, 12.32, 10.73, 8.79, 43.80, 8.79, 8.40, 6.79",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_fkgl_grade_level",
+                "threshold": 0,
+                "weight": 0,
+                "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+                "config": {
+                  "max_fkgl_grade": 14
+                }
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_relevant",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All three questions are directly relevant to classifying a graphic designer’s IP/contract/copyright issue. Q1 helps triage the primary legal category (contract drafting/review, nonpayment/unauthorized use, infringement, defense/takedown, registration). Q2 narrows the IP type involved (logo/brand vs artwork vs web/app), which affects whether copyright/trademark issues dominate. Q3 establishes whether there is an agreement (including emails), a key fact for contract/ownership/licensing classification. No question asks the user to repeat provided info, none are about relief/venue, and options are distinct and on-point.",
+              "tokensUsed": {
+                "total": 613,
+                "prompt": 472,
+                "completion": 141,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `I am a graphic designer and need help with intellectual property, a contract, and copyrights.`\\n\\nOutput to evaluate:\\n\\nQ1: What do you need help with most right now?\\n  Options: A) Review or write a client contract, B) A client didn’t pay or is using my work without permission, C) Someone copied my design/logo/art, D) I got a takedown notice or got accused of copying, E) Registering my copyright or trademark\\n\\nQ2: Is the work mainly: logos/brand names, artwork/illustrations, or website/app design?\\n  Options: A) Logos/brand names, B) Artwork/illustrations, C) Website/app design, D) Other\\n\\nQ3: Do you have a written agreement (email or contract) with the client?\\n\\nRubric:\\n\\nEvaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\\n* No question asks the user to repeat information that the user has already provided.\\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP: No follow-up questions generated\\\", return {\\\"pass\\\": true, \\\"score\\\": 1} because no questions were needed (valid outcome).\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL questions are relevant, {\\\"pass\\\": false, \\\"score\\\": 0} if ANY question is generic or unrelated.\\n\"}]"
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_jargon_appropriate",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All questions are in plain language. Any legal terms used are either echoed from the user (intellectual property, contract, copyrights) or commonly understood in this context (copyright/trademark), and Q3 clarifies “written agreement” with examples (“email or contract”). Options and syntax are clear and accessible.",
+              "tokensUsed": {
+                "total": 575,
+                "prompt": 499,
+                "completion": 76,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `I am a graphic designer and need help with intellectual property, a contract, and copyrights.`\\n\\nOutput to evaluate:\\n\\nQ1: What do you need help with most right now?\\n  Options: A) Review or write a client contract, B) A client didn’t pay or is using my work without permission, C) Someone copied my design/logo/art, D) I got a takedown notice or got accused of copying, E) Registering my copyright or trademark\\n\\nQ2: Is the work mainly: logos/brand names, artwork/illustrations, or website/app design?\\n  Options: A) Logos/brand names, B) Artwork/illustrations, C) Website/app design, D) Other\\n\\nQ3: Do you have a written agreement (email or contract) with the client?\\n\\nRubric:\\n\\nCheck if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\\n\\nA legal/technical term is ALLOWED only if:\\n1. The user used the SAME term in their original query (echo), OR\\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\\n   Example: \\\"executor (the person responsible for handling the estate)\\\"\\n\\nConsider for EACH question:\\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\\n* Syntax: Is the sentence reasonably clear with simple structure?\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP:\\\", return {\\\"pass\\\": true, \\\"score\\\": 1}.\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL terms are echoed or glossed, {\\\"pass\\\": true, \\\"score\\\": 0.5} if minor issues (note in reason), {\\\"pass\\\": false, \\\"score\\\": 0} if unexplained jargon that a typical user wouldn't understand.\\n\"}]"
+              }
+            }
+          ]
+        },
+        "id": "34ab601d-ba5c-4ce7-bf79-05235e862c3b",
+        "latencyMs": 4773,
+        "namedScores": {
+          "followup_sentence_length_ok": 1,
+          "followup_dale_chall_grade": 0.5,
+          "followup_fkgl_grade_level": 43.8,
+          "followup_jargon_appropriate": 1,
+          "followup_relevant": 1
+        },
+        "prompt": {
+          "raw": "I am a graphic designer and need help with intellectual property, a contract, and copyrights.",
+          "label": "{{problem_description}}"
+        },
+        "promptId": "bdbf82a6eeaacbbed8979de41bc684c01662b9f1fc6b2699e68fd7ee6deec23b",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://promptfoo_classifier_provider.py",
+          "label": "cheap-providers-ensemble"
+        },
+        "response": {
+          "output": "Classification:\n  - Intellectual Property > Trademark/Copyright (2.50)\n  - Business and Corporate > General (contracts, entities) (2.50)\n  - Intellectual Property > Other (1.30)\n\nFollow-up Questions:\nQ1: What do you need help with most right now?\n  • Review or write a client contract\n  • A client didn’t pay or is using my work without permission\n  • Someone copied my design/logo/art\n  • I got a takedown notice or got accused of copying\n  • Registering my copyright or trademark\nQ2: Is the work mainly: logos/brand names, artwork/illustrations, or website/app design?\n  • Logos/brand names\n  • Artwork/illustrations\n  • Website/app design\n  • Other\nQ3: Do you have a written agreement (email or contract) with the client?\n  (open-ended)\n\n<!-- RAW_JSON:{\"labels\": [{\"label\": \"Intellectual Property > Trademark/Copyright\", \"confidence\": 2.5, \"id\": null}, {\"label\": \"Business and Corporate > General (contracts, entities)\", \"confidence\": 2.5, \"id\": null}, {\"label\": \"Intellectual Property > Other\", \"confidence\": 1.3, \"id\": null}], \"follow_up_questions\": [{\"question\": \"What do you need help with most right now?\", \"format\": \"checkbox\", \"options\": [\"Review or write a client contract\", \"A client didn\\u2019t pay or is using my work without permission\", \"Someone copied my design/logo/art\", \"I got a takedown notice or got accused of copying\", \"Registering my copyright or trademark\"]}, {\"question\": \"Is the work mainly: logos/brand names, artwork/illustrations, or website/app design?\", \"format\": \"radio\", \"options\": [\"Logos/brand names\", \"Artwork/illustrations\", \"Website/app design\", \"Other\"]}, {\"question\": \"Do you have a written agreement (email or contract) with the client?\", \"format\": \"yesno\", \"options\": null}], \"label\": \"Intellectual Property > Trademark/Copyright\", \"confidence\": 2.5, \"question\": \"What do you need help with most right now?\", \"format\": \"checkbox\", \"options\": [\"Review or write a client contract\", \"A client didn\\u2019t pay or is using my work without permission\", \"Someone copied my design/logo/art\", \"I got a takedown notice or got accused of copying\", \"Registering my copyright or trademark\"]} -->",
+          "metadata": {
+            "raw_json": "{\"labels\": [{\"label\": \"Intellectual Property > Trademark/Copyright\", \"confidence\": 2.5, \"id\": null}, {\"label\": \"Business and Corporate > General (contracts, entities)\", \"confidence\": 2.5, \"id\": null}, {\"label\": \"Intellectual Property > Other\", \"confidence\": 1.3, \"id\": null}], \"follow_up_questions\": [{\"question\": \"What do you need help with most right now?\", \"format\": \"checkbox\", \"options\": [\"Review or write a client contract\", \"A client didn\\u2019t pay or is using my work without permission\", \"Someone copied my design/logo/art\", \"I got a takedown notice or got accused of copying\", \"Registering my copyright or trademark\"]}, {\"question\": \"Is the work mainly: logos/brand names, artwork/illustrations, or website/app design?\", \"format\": \"radio\", \"options\": [\"Logos/brand names\", \"Artwork/illustrations\", \"Website/app design\", \"Other\"]}, {\"question\": \"Do you have a written agreement (email or contract) with the client?\", \"format\": \"yesno\", \"options\": null}], \"label\": \"Intellectual Property > Trademark/Copyright\", \"confidence\": 2.5, \"question\": \"What do you need help with most right now?\", \"format\": \"checkbox\", \"options\": [\"Review or write a client contract\", \"A client didn\\u2019t pay or is using my work without permission\", \"Someone copied my design/logo/art\", \"I got a takedown notice or got accused of copying\", \"Registering my copyright or trademark\"]}"
+          },
+          "cached": false
+        },
+        "score": 0.9,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "source_row": "294",
+            "scenario_id": "gold-0256",
+            "canonical_source_row": "294",
+            "source_row_aliases": "294",
+            "problem_description": "I am a graphic designer and need help with intellectual property, a contract, and copyrights.",
+            "gold_label_count": "2",
+            "gold_category_1": "Intellectual Property",
+            "gold_subcategory_1": "Trademark/Copyright",
+            "gold_category_2": "Business & Corporate",
+            "gold_subcategory_2": "General (Contracts, Business, Organization)",
+            "gold_category_3": "",
+            "gold_subcategory_3": "",
+            "gold_category_4": "",
+            "gold_subcategory_4": "",
+            "consensus_provenance": "two_human_exact_consensus",
+            "human_reviewers_used": "jackie;qs",
+            "duplicate_source_description": "no",
+            "support_summary_json": "{\"Business & Corporate > General (Contracts, Business, Organization)\": {\"human_votes\": 2, \"internal_primary\": false, \"mean_model_rank\": 2.0, \"model_votes\": 2}, \"Intellectual Property > Trademark/Copyright\": {\"human_votes\": 2, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "try {\n  let raw = context?.providerResponse?.metadata?.raw_json ?? output;\n  // Try to extract from <!-- RAW_JSON:...--> wrapper if present\n  const wrapperMatch = raw.match(/<!-- RAW_JSON:(.+?)-->/s);\n  if (wrapperMatch) { raw = wrapperMatch[1]; }\n  // Strip markdown fences if present\n  raw = raw.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/i, '').trim();\n  const parsed = typeof raw === \"string\" ? JSON.parse(raw) : raw;\n  return { pass: !!parsed, score: 1, reason: \"Valid JSON output\" };\n} catch (e) {\n  return { pass: false, score: 0, reason: \"Output is not valid JSON: \" + e.message };\n}\n"
+            },
+            {
+              "type": "python",
+              "metric": "followup_sentence_length_ok",
+              "threshold": 1,
+              "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+              "config": {
+                "max_avg_sentence_words": 32,
+                "max_max_sentence_words": 45
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_dale_chall_grade",
+              "threshold": 0,
+              "value": "file://assertions/followup_textstat_grade.py",
+              "config": {
+                "max_dale_chall_grade": 7.9
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_fkgl_grade_level",
+              "threshold": 0,
+              "weight": 0,
+              "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+              "config": {
+                "max_fkgl_grade": 14
+              }
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_relevant",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_jargon_appropriate",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+            }
+          ],
+          "options": {
+            "provider": {
+              "id": "openai:gpt-5.2"
+            },
+            "rubricPrompt": "[\n  {\n    \"role\": \"system\",\n    \"content\": \"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"\n  },\n  {\n    \"role\": \"user\",\n    \"content\": \"User's question: `{{problem_description}}`\\n\\nOutput to evaluate:\\n\\n{{ output }}\\n\\nRubric:\\n\\n{{ rubric }}\"\n  }\n]\n"
+          },
+          "description": "Row #1",
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "source_row": "294",
+          "scenario_id": "gold-0256",
+          "canonical_source_row": "294",
+          "source_row_aliases": "294",
+          "problem_description": "I am a graphic designer and need help with intellectual property, a contract, and copyrights.",
+          "gold_label_count": "2",
+          "gold_category_1": "Intellectual Property",
+          "gold_subcategory_1": "Trademark/Copyright",
+          "gold_category_2": "Business & Corporate",
+          "gold_subcategory_2": "General (Contracts, Business, Organization)",
+          "gold_category_3": "",
+          "gold_subcategory_3": "",
+          "gold_category_4": "",
+          "gold_subcategory_4": "",
+          "consensus_provenance": "two_human_exact_consensus",
+          "human_reviewers_used": "jackie;qs",
+          "duplicate_source_description": "no",
+          "support_summary_json": "{\"Business & Corporate > General (Contracts, Business, Organization)\": {\"human_votes\": 2, \"internal_primary\": false, \"mean_model_rank\": 2.0, \"model_votes\": 2}, \"Intellectual Property > Trademark/Copyright\": {\"human_votes\": 2, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+        },
+        "metadata": {
+          "raw_json": "{\"labels\": [{\"label\": \"Intellectual Property > Trademark/Copyright\", \"confidence\": 2.5, \"id\": null}, {\"label\": \"Business and Corporate > General (contracts, entities)\", \"confidence\": 2.5, \"id\": null}, {\"label\": \"Intellectual Property > Other\", \"confidence\": 1.3, \"id\": null}], \"follow_up_questions\": [{\"question\": \"What do you need help with most right now?\", \"format\": \"checkbox\", \"options\": [\"Review or write a client contract\", \"A client didn\\u2019t pay or is using my work without permission\", \"Someone copied my design/logo/art\", \"I got a takedown notice or got accused of copying\", \"Registering my copyright or trademark\"]}, {\"question\": \"Is the work mainly: logos/brand names, artwork/illustrations, or website/app design?\", \"format\": \"radio\", \"options\": [\"Logos/brand names\", \"Artwork/illustrations\", \"Website/app design\", \"Other\"]}, {\"question\": \"Do you have a written agreement (email or contract) with the client?\", \"format\": \"yesno\", \"options\": null}], \"label\": \"Intellectual Property > Trademark/Copyright\", \"confidence\": 2.5, \"question\": \"What do you need help with most right now?\", \"format\": \"checkbox\", \"options\": [\"Review or write a client contract\", \"A client didn\\u2019t pay or is using my work without permission\", \"Someone copied my design/logo/art\", \"I got a takedown notice or got accused of copying\", \"Registering my copyright or trademark\"]}",
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Readability violations in 1/13 texts: T10 (grade 11.63 > 7.9). All grades: T1: DC=5.43, FKGL=3.19; T2: DC=3.83, FKGL=-1.84; T3: DC=7.78, FKGL=9.18; T4: DC=3.69, FKGL=-3.40; T5: DC=5.56, FKGL=12.42; T6: DC=3.98, FKGL=1.03; T7: DC=3.93, FKGL=7.37; T8: DC=3.74, FKGL=-3.01; T9: DC=3.98, FKGL=5.68; T10: DC=11.63, FKGL=2.89; T11: DC=6.57, FKGL=2.48; T12: DC=6.57, FKGL=8.38; T13: DC=3.83, FKGL=0.72",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.9,
+          "reason": "Readability violations in 1/13 texts: T10 (grade 11.63 > 7.9). All grades: T1: DC=5.43, FKGL=3.19; T2: DC=3.83, FKGL=-1.84; T3: DC=7.78, FKGL=9.18; T4: DC=3.69, FKGL=-3.40; T5: DC=5.56, FKGL=12.42; T6: DC=3.98, FKGL=1.03; T7: DC=3.93, FKGL=7.37; T8: DC=3.74, FKGL=-3.01; T9: DC=3.98, FKGL=5.68; T10: DC=11.63, FKGL=2.89; T11: DC=6.57, FKGL=2.48; T12: DC=6.57, FKGL=8.38; T13: DC=3.83, FKGL=0.72",
+          "namedScores": {
+            "followup_sentence_length_ok": 1,
+            "followup_fkgl_grade_level": 12.421481481481482,
+            "followup_dale_chall_grade": 0.5,
+            "followup_relevant": 1,
+            "followup_jargon_appropriate": 1
+          },
+          "tokensUsed": {
+            "total": 1293,
+            "prompt": 1119,
+            "completion": 174,
+            "cached": 0,
+            "numRequests": 2
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Valid JSON output"
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "All 3 questions meet sentence length criteria (avg ≤ 32.0, max ≤ 45.0)",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_sentence_length_ok",
+                "threshold": 1,
+                "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+                "config": {
+                  "max_avg_sentence_words": 32,
+                  "max_max_sentence_words": 45
+                }
+              }
+            },
+            {
+              "pass": false,
+              "score": 0.5,
+              "reason": "Readability violations in 1/13 texts: T10 (grade 11.63 > 7.9). All grades: T1: DC=5.43, FKGL=3.19; T2: DC=3.83, FKGL=-1.84; T3: DC=7.78, FKGL=9.18; T4: DC=3.69, FKGL=-3.40; T5: DC=5.56, FKGL=12.42; T6: DC=3.98, FKGL=1.03; T7: DC=3.93, FKGL=7.37; T8: DC=3.74, FKGL=-3.01; T9: DC=3.98, FKGL=5.68; T10: DC=11.63, FKGL=2.89; T11: DC=6.57, FKGL=2.48; T12: DC=6.57, FKGL=8.38; T13: DC=3.83, FKGL=0.72",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_dale_chall_grade",
+                "threshold": 0,
+                "value": "file://assertions/followup_textstat_grade.py",
+                "config": {
+                  "max_dale_chall_grade": 7.9
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 12.421481481481482,
+              "reason": "Worst FKGL grade: 12.42 (max: 14.0) across 13 texts. Individual grades: 3.19, -1.84, 9.18, -3.40, 12.42, 1.03, 7.37, -3.01, 5.68, 2.89, 2.48, 8.38, 0.72",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_fkgl_grade_level",
+                "threshold": 0,
+                "weight": 0,
+                "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+                "config": {
+                  "max_fkgl_grade": 14
+                }
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_relevant",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All three questions are relevant to classifying the user’s issue (tenant vs employee/occupancy status; whether this is a notice vs an actual eviction case; and the stated basis for the eviction). None require repeating facts already provided, and the answer options are distinct and cover common scenarios, with an appropriate “not sure/other” included.",
+              "tokensUsed": {
+                "total": 630,
+                "prompt": 546,
+                "completion": 84,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `I received a letter of eviction, they refused mediation, 3 of other ORS codes are not valid, they will not talk to me, I work for the Owner of the property. Now they are stating that I am not in violation, BUT The letter is still in my file, and I am still not able to talk to the property management team who have violated my renters rights.`\\n\\nOutput to evaluate:\\n\\nQ1: Is this place your home (where you live), or a place you mainly use for work?\\n  Options: A) My home (I live there), B) Mainly for work/business, C) Both\\n\\nQ2: Did the landlord or property manager file an eviction case in court yet (so you got court papers), or did you only get an eviction notice letter?\\n  Options: A) A court case was filed / I got court papers, B) I only got an eviction notice letter, C) Not sure\\n\\nQ3: What reason did the eviction notice give?\\n  Options: A) Unpaid rent, B) Breaking the lease or building rules, C) No reason given / ending the tenancy, D) Other or not clear\\n\\nRubric:\\n\\nEvaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\\n* No question asks the user to repeat information that the user has already provided.\\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP: No follow-up questions generated\\\", return {\\\"pass\\\": true, \\\"score\\\": 1} because no questions were needed (valid outcome).\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL questions are relevant, {\\\"pass\\\": false, \\\"score\\\": 0} if ANY question is generic or unrelated.\\n\"}]"
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_jargon_appropriate",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All questions are in plain language. Potentially technical phrases like \"eviction case in court\" are immediately explained with \"(so you got court papers)\" and contrasted with \"only got an eviction notice letter.\" Terms like landlord, property manager, lease, and eviction notice are common and/or echoed by the user (eviction letter). No unexplained legal jargon present.",
+              "tokensUsed": {
+                "total": 663,
+                "prompt": 573,
+                "completion": 90,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `I received a letter of eviction, they refused mediation, 3 of other ORS codes are not valid, they will not talk to me, I work for the Owner of the property. Now they are stating that I am not in violation, BUT The letter is still in my file, and I am still not able to talk to the property management team who have violated my renters rights.`\\n\\nOutput to evaluate:\\n\\nQ1: Is this place your home (where you live), or a place you mainly use for work?\\n  Options: A) My home (I live there), B) Mainly for work/business, C) Both\\n\\nQ2: Did the landlord or property manager file an eviction case in court yet (so you got court papers), or did you only get an eviction notice letter?\\n  Options: A) A court case was filed / I got court papers, B) I only got an eviction notice letter, C) Not sure\\n\\nQ3: What reason did the eviction notice give?\\n  Options: A) Unpaid rent, B) Breaking the lease or building rules, C) No reason given / ending the tenancy, D) Other or not clear\\n\\nRubric:\\n\\nCheck if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\\n\\nA legal/technical term is ALLOWED only if:\\n1. The user used the SAME term in their original query (echo), OR\\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\\n   Example: \\\"executor (the person responsible for handling the estate)\\\"\\n\\nConsider for EACH question:\\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\\n* Syntax: Is the sentence reasonably clear with simple structure?\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP:\\\", return {\\\"pass\\\": true, \\\"score\\\": 1}.\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL terms are echoed or glossed, {\\\"pass\\\": true, \\\"score\\\": 0.5} if minor issues (note in reason), {\\\"pass\\\": false, \\\"score\\\": 0} if unexplained jargon that a typical user wouldn't understand.\\n\"}]"
+              }
+            }
+          ]
+        },
+        "id": "ba7f68bb-9e82-46d1-af4b-67e7ac375f03",
+        "latencyMs": 9179,
+        "namedScores": {
+          "followup_sentence_length_ok": 1,
+          "followup_fkgl_grade_level": 12.421481481481482,
+          "followup_dale_chall_grade": 0.5,
+          "followup_relevant": 1,
+          "followup_jargon_appropriate": 1
+        },
+        "prompt": {
+          "raw": "I received a letter of eviction, they refused mediation, 3 of other ORS codes are not valid, they will not talk to me, I work for the Owner of the property. Now they are stating that I am not in violation, BUT The letter is still in my file, and I am still not able to talk to the property management team who have violated my renters rights.",
+          "label": "{{problem_description}}"
+        },
+        "promptId": "bdbf82a6eeaacbbed8979de41bc684c01662b9f1fc6b2699e68fd7ee6deec23b",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://promptfoo_classifier_provider.py",
+          "label": "cheap-providers-ensemble"
+        },
+        "response": {
+          "output": "Classification:\n  - Real Property > Tenant (Residential) (3.10)\n  - Real Property > Landlord Residential (1.60)\n  - Real Property > Litigation (0.90)\n\nFollow-up Questions:\nQ1: Is this place your home (where you live), or a place you mainly use for work?\n  • My home (I live there)\n  • Mainly for work/business\n  • Both\nQ2: Did the landlord or property manager file an eviction case in court yet (so you got court papers), or did you only get an eviction notice letter?\n  • A court case was filed / I got court papers\n  • I only got an eviction notice letter\n  • Not sure\nQ3: What reason did the eviction notice give?\n  • Unpaid rent\n  • Breaking the lease or building rules\n  • No reason given / ending the tenancy\n  • Other or not clear\n\n<!-- RAW_JSON:{\"labels\": [{\"label\": \"Real Property > Tenant (Residential)\", \"confidence\": 3.1, \"id\": null}, {\"label\": \"Real Property > Landlord Residential\", \"confidence\": 1.6, \"id\": null}, {\"label\": \"Real Property > Litigation\", \"confidence\": 0.9, \"id\": null}], \"follow_up_questions\": [{\"question\": \"Is this place your home (where you live), or a place you mainly use for work?\", \"format\": \"radio\", \"options\": [\"My home (I live there)\", \"Mainly for work/business\", \"Both\"]}, {\"question\": \"Did the landlord or property manager file an eviction case in court yet (so you got court papers), or did you only get an eviction notice letter?\", \"format\": \"radio\", \"options\": [\"A court case was filed / I got court papers\", \"I only got an eviction notice letter\", \"Not sure\"]}, {\"question\": \"What reason did the eviction notice give?\", \"format\": \"radio\", \"options\": [\"Unpaid rent\", \"Breaking the lease or building rules\", \"No reason given / ending the tenancy\", \"Other or not clear\"]}], \"label\": \"Real Property > Tenant (Residential)\", \"confidence\": 3.1, \"question\": \"Is this place your home (where you live), or a place you mainly use for work?\", \"format\": \"radio\", \"options\": [\"My home (I live there)\", \"Mainly for work/business\", \"Both\"]} -->",
+          "metadata": {
+            "raw_json": "{\"labels\": [{\"label\": \"Real Property > Tenant (Residential)\", \"confidence\": 3.1, \"id\": null}, {\"label\": \"Real Property > Landlord Residential\", \"confidence\": 1.6, \"id\": null}, {\"label\": \"Real Property > Litigation\", \"confidence\": 0.9, \"id\": null}], \"follow_up_questions\": [{\"question\": \"Is this place your home (where you live), or a place you mainly use for work?\", \"format\": \"radio\", \"options\": [\"My home (I live there)\", \"Mainly for work/business\", \"Both\"]}, {\"question\": \"Did the landlord or property manager file an eviction case in court yet (so you got court papers), or did you only get an eviction notice letter?\", \"format\": \"radio\", \"options\": [\"A court case was filed / I got court papers\", \"I only got an eviction notice letter\", \"Not sure\"]}, {\"question\": \"What reason did the eviction notice give?\", \"format\": \"radio\", \"options\": [\"Unpaid rent\", \"Breaking the lease or building rules\", \"No reason given / ending the tenancy\", \"Other or not clear\"]}], \"label\": \"Real Property > Tenant (Residential)\", \"confidence\": 3.1, \"question\": \"Is this place your home (where you live), or a place you mainly use for work?\", \"format\": \"radio\", \"options\": [\"My home (I live there)\", \"Mainly for work/business\", \"Both\"]}"
+          },
+          "cached": false
+        },
+        "score": 0.9,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "source_row": "383",
+            "scenario_id": "gold-0331",
+            "canonical_source_row": "383",
+            "source_row_aliases": "383",
+            "problem_description": "I received a letter of eviction, they refused mediation, 3 of other ORS codes are not valid, they will not talk to me, I work for the Owner of the property. Now they are stating that I am not in violation, BUT The letter is still in my file, and I am still not able to talk to the property management team who have violated my renters rights.",
+            "gold_label_count": "1",
+            "gold_category_1": "Real Property",
+            "gold_subcategory_1": "Tenant (Residential)",
+            "gold_category_2": "",
+            "gold_subcategory_2": "",
+            "gold_category_3": "",
+            "gold_subcategory_3": "",
+            "gold_category_4": "",
+            "gold_subcategory_4": "",
+            "consensus_provenance": "three_model_plus_internal_consensus",
+            "human_reviewers_used": "",
+            "duplicate_source_description": "no",
+            "support_summary_json": "{\"Real Property > Tenant (Residential)\": {\"human_votes\": 0, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "try {\n  let raw = context?.providerResponse?.metadata?.raw_json ?? output;\n  // Try to extract from <!-- RAW_JSON:...--> wrapper if present\n  const wrapperMatch = raw.match(/<!-- RAW_JSON:(.+?)-->/s);\n  if (wrapperMatch) { raw = wrapperMatch[1]; }\n  // Strip markdown fences if present\n  raw = raw.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/i, '').trim();\n  const parsed = typeof raw === \"string\" ? JSON.parse(raw) : raw;\n  return { pass: !!parsed, score: 1, reason: \"Valid JSON output\" };\n} catch (e) {\n  return { pass: false, score: 0, reason: \"Output is not valid JSON: \" + e.message };\n}\n"
+            },
+            {
+              "type": "python",
+              "metric": "followup_sentence_length_ok",
+              "threshold": 1,
+              "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+              "config": {
+                "max_avg_sentence_words": 32,
+                "max_max_sentence_words": 45
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_dale_chall_grade",
+              "threshold": 0,
+              "value": "file://assertions/followup_textstat_grade.py",
+              "config": {
+                "max_dale_chall_grade": 7.9
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_fkgl_grade_level",
+              "threshold": 0,
+              "weight": 0,
+              "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+              "config": {
+                "max_fkgl_grade": 14
+              }
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_relevant",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_jargon_appropriate",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+            }
+          ],
+          "options": {
+            "provider": {
+              "id": "openai:gpt-5.2"
+            },
+            "rubricPrompt": "[\n  {\n    \"role\": \"system\",\n    \"content\": \"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"\n  },\n  {\n    \"role\": \"user\",\n    \"content\": \"User's question: `{{problem_description}}`\\n\\nOutput to evaluate:\\n\\n{{ output }}\\n\\nRubric:\\n\\n{{ rubric }}\"\n  }\n]\n"
+          },
+          "description": "Row #2",
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "source_row": "383",
+          "scenario_id": "gold-0331",
+          "canonical_source_row": "383",
+          "source_row_aliases": "383",
+          "problem_description": "I received a letter of eviction, they refused mediation, 3 of other ORS codes are not valid, they will not talk to me, I work for the Owner of the property. Now they are stating that I am not in violation, BUT The letter is still in my file, and I am still not able to talk to the property management team who have violated my renters rights.",
+          "gold_label_count": "1",
+          "gold_category_1": "Real Property",
+          "gold_subcategory_1": "Tenant (Residential)",
+          "gold_category_2": "",
+          "gold_subcategory_2": "",
+          "gold_category_3": "",
+          "gold_subcategory_3": "",
+          "gold_category_4": "",
+          "gold_subcategory_4": "",
+          "consensus_provenance": "three_model_plus_internal_consensus",
+          "human_reviewers_used": "",
+          "duplicate_source_description": "no",
+          "support_summary_json": "{\"Real Property > Tenant (Residential)\": {\"human_votes\": 0, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+        },
+        "metadata": {
+          "raw_json": "{\"labels\": [{\"label\": \"Real Property > Tenant (Residential)\", \"confidence\": 3.1, \"id\": null}, {\"label\": \"Real Property > Landlord Residential\", \"confidence\": 1.6, \"id\": null}, {\"label\": \"Real Property > Litigation\", \"confidence\": 0.9, \"id\": null}], \"follow_up_questions\": [{\"question\": \"Is this place your home (where you live), or a place you mainly use for work?\", \"format\": \"radio\", \"options\": [\"My home (I live there)\", \"Mainly for work/business\", \"Both\"]}, {\"question\": \"Did the landlord or property manager file an eviction case in court yet (so you got court papers), or did you only get an eviction notice letter?\", \"format\": \"radio\", \"options\": [\"A court case was filed / I got court papers\", \"I only got an eviction notice letter\", \"Not sure\"]}, {\"question\": \"What reason did the eviction notice give?\", \"format\": \"radio\", \"options\": [\"Unpaid rent\", \"Breaking the lease or building rules\", \"No reason given / ending the tenancy\", \"Other or not clear\"]}], \"label\": \"Real Property > Tenant (Residential)\", \"confidence\": 3.1, \"question\": \"Is this place your home (where you live), or a place you mainly use for work?\", \"format\": \"radio\", \"options\": [\"My home (I live there)\", \"Mainly for work/business\", \"Both\"]}",
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Q1 and Q2 are relevant for classifying a construction dispute (residential vs commercial context; lien risk). Q3 is primarily about desired relief (refund vs damages vs both), which the rubric flags as unnecessary to classification and the user already indicated they want a refund. Because at least one question is unnecessary/relief-focused, this set fails.",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.7,
+          "reason": "Q1 and Q2 are relevant for classifying a construction dispute (residential vs commercial context; lien risk). Q3 is primarily about desired relief (refund vs damages vs both), which the rubric flags as unnecessary to classification and the user already indicated they want a refund. Because at least one question is unnecessary/relief-focused, this set fails.",
+          "namedScores": {
+            "followup_sentence_length_ok": 1,
+            "followup_fkgl_grade_level": 17.04666666666667,
+            "followup_dale_chall_grade": 0.5,
+            "followup_relevant": 0,
+            "followup_jargon_appropriate": 1
+          },
+          "tokensUsed": {
+            "total": 1528,
+            "prompt": 1369,
+            "completion": 159,
+            "cached": 0,
+            "numRequests": 2
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Valid JSON output"
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "All 3 questions meet sentence length criteria (avg ≤ 32.0, max ≤ 45.0)",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_sentence_length_ok",
+                "threshold": 1,
+                "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+                "config": {
+                  "max_avg_sentence_words": 32,
+                  "max_max_sentence_words": 45
+                }
+              }
+            },
+            {
+              "pass": false,
+              "score": 0.5,
+              "reason": "Readability violations in 3/9 texts: T3 (grade 11.73 > 7.9); T4 (grade 9.05 > 7.9); T5 (grade 9.03 > 7.9). All grades: T1: DC=6.28, FKGL=8.59; T2: DC=3.83, FKGL=-1.84; T3: DC=11.73, FKGL=9.96; T4: DC=9.05, FKGL=17.05; T5: DC=9.03, FKGL=12.45; T6: DC=5.84, FKGL=2.34; T7: DC=3.98, FKGL=2.34; T8: DC=4.43, FKGL=7.00; T9: DC=3.69, FKGL=-3.40",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_dale_chall_grade",
+                "threshold": 0,
+                "value": "file://assertions/followup_textstat_grade.py",
+                "config": {
+                  "max_dale_chall_grade": 7.9
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 17.04666666666667,
+              "reason": "Worst FKGL grade: 17.05 (max: 14.0) across 9 texts. Individual grades: 8.59, -1.84, 9.96, 17.05, 12.45, 2.34, 2.34, 7.00, -3.40",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_fkgl_grade_level",
+                "threshold": 0,
+                "weight": 0,
+                "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+                "config": {
+                  "max_fkgl_grade": 14
+                }
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_relevant",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+              },
+              "pass": false,
+              "score": 0,
+              "reason": "Q1 and Q2 are relevant for classifying a construction dispute (residential vs commercial context; lien risk). Q3 is primarily about desired relief (refund vs damages vs both), which the rubric flags as unnecessary to classification and the user already indicated they want a refund. Because at least one question is unnecessary/relief-focused, this set fails.",
+              "tokensUsed": {
+                "total": 758,
+                "prompt": 671,
+                "completion": 87,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `Suing for a refund of $124,000 due to a breach of contract of a contractor who promised to provide \\\"gut to studs\\\"-type renovation services for a 1,730 sq. ft., 2-story home. The contracts we signed, and have paid for, total $179,000, but the work is only 20% finished after 13 months of continual delays. Contractor refused to attend mediation; his attorney promised another \\\"work schedule\\\" on 9-17-24, due by 9-27-24, but no information has been received as of this writing. We do not want this contractor to proceed because he is a crook, and we need our money refunded so we can continue with the project. The contractor has refused to do so and insists on going forward with yet another \\\"work schedule\\\". The Oregon Construction Contractors Board letter dated 9-18-24 states that we must file a court action within 30 days of their letter, or their file of our complaint will be closed. Please advise our next steps. Thanks you`\\n\\nOutput to evaluate:\\n\\nQ1: Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\\n  Options: A) The home I live in, B) A rental or investment property, C) A business/commercial building\\n\\nQ2: Has the contractor (or any subcontractor) filed a construction lien (a legal claim against your property for unpaid work) or threatened to file one?\\n\\nQ3: What do you want the court to order, mainly?\\n  Options: A) Give me back the money I paid (a refund), B) Make the contractor pay money so I can hire someone else to finish or fix the work, C) Both\\n\\nRubric:\\n\\nEvaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\\n* No question asks the user to repeat information that the user has already provided.\\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP: No follow-up questions generated\\\", return {\\\"pass\\\": true, \\\"score\\\": 1} because no questions were needed (valid outcome).\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL questions are relevant, {\\\"pass\\\": false, \\\"score\\\": 0} if ANY question is generic or unrelated.\\n\"}]"
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_jargon_appropriate",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All questions are in plain language. Any legal/technical term is either common or explained: Q2 uses “construction lien” and immediately defines it in parentheses. Other terms like “subcontractor” and “court” are generally understandable in this context, and the options are clear.",
+              "tokensUsed": {
+                "total": 770,
+                "prompt": 698,
+                "completion": 72,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `Suing for a refund of $124,000 due to a breach of contract of a contractor who promised to provide \\\"gut to studs\\\"-type renovation services for a 1,730 sq. ft., 2-story home. The contracts we signed, and have paid for, total $179,000, but the work is only 20% finished after 13 months of continual delays. Contractor refused to attend mediation; his attorney promised another \\\"work schedule\\\" on 9-17-24, due by 9-27-24, but no information has been received as of this writing. We do not want this contractor to proceed because he is a crook, and we need our money refunded so we can continue with the project. The contractor has refused to do so and insists on going forward with yet another \\\"work schedule\\\". The Oregon Construction Contractors Board letter dated 9-18-24 states that we must file a court action within 30 days of their letter, or their file of our complaint will be closed. Please advise our next steps. Thanks you`\\n\\nOutput to evaluate:\\n\\nQ1: Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\\n  Options: A) The home I live in, B) A rental or investment property, C) A business/commercial building\\n\\nQ2: Has the contractor (or any subcontractor) filed a construction lien (a legal claim against your property for unpaid work) or threatened to file one?\\n\\nQ3: What do you want the court to order, mainly?\\n  Options: A) Give me back the money I paid (a refund), B) Make the contractor pay money so I can hire someone else to finish or fix the work, C) Both\\n\\nRubric:\\n\\nCheck if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\\n\\nA legal/technical term is ALLOWED only if:\\n1. The user used the SAME term in their original query (echo), OR\\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\\n   Example: \\\"executor (the person responsible for handling the estate)\\\"\\n\\nConsider for EACH question:\\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\\n* Syntax: Is the sentence reasonably clear with simple structure?\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP:\\\", return {\\\"pass\\\": true, \\\"score\\\": 1}.\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL terms are echoed or glossed, {\\\"pass\\\": true, \\\"score\\\": 0.5} if minor issues (note in reason), {\\\"pass\\\": false, \\\"score\\\": 0} if unexplained jargon that a typical user wouldn't understand.\\n\"}]"
+              }
+            }
+          ]
+        },
+        "id": "09f13650-3aff-4612-8742-c6a28e62ca0e",
+        "latencyMs": 16768,
+        "namedScores": {
+          "followup_sentence_length_ok": 1,
+          "followup_fkgl_grade_level": 17.04666666666667,
+          "followup_dale_chall_grade": 0.5,
+          "followup_relevant": 0,
+          "followup_jargon_appropriate": 1
+        },
+        "prompt": {
+          "raw": "Suing for a refund of $124,000 due to a breach of contract of a contractor who promised to provide \"gut to studs\"-type renovation services for a 1,730 sq. ft., 2-story home. The contracts we signed, and have paid for, total $179,000, but the work is only 20% finished after 13 months of continual delays. Contractor refused to attend mediation; his attorney promised another \"work schedule\" on 9-17-24, due by 9-27-24, but no information has been received as of this writing. We do not want this contractor to proceed because he is a crook, and we need our money refunded so we can continue with the project. The contractor has refused to do so and insists on going forward with yet another \"work schedule\". The Oregon Construction Contractors Board letter dated 9-18-24 states that we must file a court action within 30 days of their letter, or their file of our complaint will be closed. Please advise our next steps. Thanks you",
+          "label": "{{problem_description}}"
+        },
+        "promptId": "bdbf82a6eeaacbbed8979de41bc684c01662b9f1fc6b2699e68fd7ee6deec23b",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://promptfoo_classifier_provider.py",
+          "label": "cheap-providers-ensemble"
+        },
+        "response": {
+          "output": "Classification:\n  - Real Property > Construction/Contractors (1.70)\n  - General Litigation > General Litigation (1.70)\n  - Business and Corporate > General (contracts, entities) (1.30)\n\nFollow-up Questions:\nQ1: Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\n  • The home I live in\n  • A rental or investment property\n  • A business/commercial building\nQ2: Has the contractor (or any subcontractor) filed a construction lien (a legal claim against your property for unpaid work) or threatened to file one?\n  (open-ended)\nQ3: What do you want the court to order, mainly?\n  • Give me back the money I paid (a refund)\n  • Make the contractor pay money so I can hire someone else to finish or fix the work\n  • Both\n\n<!-- RAW_JSON:{\"labels\": [{\"label\": \"Real Property > Construction/Contractors\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"General Litigation > General Litigation\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"Business and Corporate > General (contracts, entities)\", \"confidence\": 1.3, \"id\": null}], \"follow_up_questions\": [{\"question\": \"Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\", \"format\": \"radio\", \"options\": [\"The home I live in\", \"A rental or investment property\", \"A business/commercial building\"]}, {\"question\": \"Has the contractor (or any subcontractor) filed a construction lien (a legal claim against your property for unpaid work) or threatened to file one?\", \"format\": \"yesno\", \"options\": null}, {\"question\": \"What do you want the court to order, mainly?\", \"format\": \"radio\", \"options\": [\"Give me back the money I paid (a refund)\", \"Make the contractor pay money so I can hire someone else to finish or fix the work\", \"Both\"]}], \"label\": \"Real Property > Construction/Contractors\", \"confidence\": 1.7000000000000002, \"question\": \"Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\", \"format\": \"radio\", \"options\": [\"The home I live in\", \"A rental or investment property\", \"A business/commercial building\"]} -->",
+          "metadata": {
+            "raw_json": "{\"labels\": [{\"label\": \"Real Property > Construction/Contractors\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"General Litigation > General Litigation\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"Business and Corporate > General (contracts, entities)\", \"confidence\": 1.3, \"id\": null}], \"follow_up_questions\": [{\"question\": \"Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\", \"format\": \"radio\", \"options\": [\"The home I live in\", \"A rental or investment property\", \"A business/commercial building\"]}, {\"question\": \"Has the contractor (or any subcontractor) filed a construction lien (a legal claim against your property for unpaid work) or threatened to file one?\", \"format\": \"yesno\", \"options\": null}, {\"question\": \"What do you want the court to order, mainly?\", \"format\": \"radio\", \"options\": [\"Give me back the money I paid (a refund)\", \"Make the contractor pay money so I can hire someone else to finish or fix the work\", \"Both\"]}], \"label\": \"Real Property > Construction/Contractors\", \"confidence\": 1.7000000000000002, \"question\": \"Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\", \"format\": \"radio\", \"options\": [\"The home I live in\", \"A rental or investment property\", \"A business/commercial building\"]}"
+          },
+          "cached": false
+        },
+        "score": 0.7,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "source_row": "393",
+            "scenario_id": "gold-0340",
+            "canonical_source_row": "393",
+            "source_row_aliases": "393",
+            "problem_description": "Suing for a refund of $124,000 due to a breach of contract of a contractor who promised to provide \"gut to studs\"-type renovation services for a 1,730 sq. ft., 2-story home. The contracts we signed, and have paid for, total $179,000, but the work is only 20% finished after 13 months of continual delays. Contractor refused to attend mediation; his attorney promised another \"work schedule\" on 9-17-24, due by 9-27-24, but no information has been received as of this writing. We do not want this contractor to proceed because he is a crook, and we need our money refunded so we can continue with the project. The contractor has refused to do so and insists on going forward with yet another \"work schedule\". The Oregon Construction Contractors Board letter dated 9-18-24 states that we must file a court action within 30 days of their letter, or their file of our complaint will be closed. Please advise our next steps. Thanks you",
+            "gold_label_count": "1",
+            "gold_category_1": "Real Property",
+            "gold_subcategory_1": "Construction/Contractors",
+            "gold_category_2": "",
+            "gold_subcategory_2": "",
+            "gold_category_3": "",
+            "gold_subcategory_3": "",
+            "gold_category_4": "",
+            "gold_subcategory_4": "",
+            "consensus_provenance": "three_model_plus_internal_consensus",
+            "human_reviewers_used": "",
+            "duplicate_source_description": "no",
+            "support_summary_json": "{\"Real Property > Construction/Contractors\": {\"human_votes\": 0, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "try {\n  let raw = context?.providerResponse?.metadata?.raw_json ?? output;\n  // Try to extract from <!-- RAW_JSON:...--> wrapper if present\n  const wrapperMatch = raw.match(/<!-- RAW_JSON:(.+?)-->/s);\n  if (wrapperMatch) { raw = wrapperMatch[1]; }\n  // Strip markdown fences if present\n  raw = raw.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/i, '').trim();\n  const parsed = typeof raw === \"string\" ? JSON.parse(raw) : raw;\n  return { pass: !!parsed, score: 1, reason: \"Valid JSON output\" };\n} catch (e) {\n  return { pass: false, score: 0, reason: \"Output is not valid JSON: \" + e.message };\n}\n"
+            },
+            {
+              "type": "python",
+              "metric": "followup_sentence_length_ok",
+              "threshold": 1,
+              "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+              "config": {
+                "max_avg_sentence_words": 32,
+                "max_max_sentence_words": 45
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_dale_chall_grade",
+              "threshold": 0,
+              "value": "file://assertions/followup_textstat_grade.py",
+              "config": {
+                "max_dale_chall_grade": 7.9
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_fkgl_grade_level",
+              "threshold": 0,
+              "weight": 0,
+              "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+              "config": {
+                "max_fkgl_grade": 14
+              }
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_relevant",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_jargon_appropriate",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+            }
+          ],
+          "options": {
+            "provider": {
+              "id": "openai:gpt-5.2"
+            },
+            "rubricPrompt": "[\n  {\n    \"role\": \"system\",\n    \"content\": \"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"\n  },\n  {\n    \"role\": \"user\",\n    \"content\": \"User's question: `{{problem_description}}`\\n\\nOutput to evaluate:\\n\\n{{ output }}\\n\\nRubric:\\n\\n{{ rubric }}\"\n  }\n]\n"
+          },
+          "description": "Row #3",
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "source_row": "393",
+          "scenario_id": "gold-0340",
+          "canonical_source_row": "393",
+          "source_row_aliases": "393",
+          "problem_description": "Suing for a refund of $124,000 due to a breach of contract of a contractor who promised to provide \"gut to studs\"-type renovation services for a 1,730 sq. ft., 2-story home. The contracts we signed, and have paid for, total $179,000, but the work is only 20% finished after 13 months of continual delays. Contractor refused to attend mediation; his attorney promised another \"work schedule\" on 9-17-24, due by 9-27-24, but no information has been received as of this writing. We do not want this contractor to proceed because he is a crook, and we need our money refunded so we can continue with the project. The contractor has refused to do so and insists on going forward with yet another \"work schedule\". The Oregon Construction Contractors Board letter dated 9-18-24 states that we must file a court action within 30 days of their letter, or their file of our complaint will be closed. Please advise our next steps. Thanks you",
+          "gold_label_count": "1",
+          "gold_category_1": "Real Property",
+          "gold_subcategory_1": "Construction/Contractors",
+          "gold_category_2": "",
+          "gold_subcategory_2": "",
+          "gold_category_3": "",
+          "gold_subcategory_3": "",
+          "gold_category_4": "",
+          "gold_subcategory_4": "",
+          "consensus_provenance": "three_model_plus_internal_consensus",
+          "human_reviewers_used": "",
+          "duplicate_source_description": "no",
+          "support_summary_json": "{\"Real Property > Construction/Contractors\": {\"human_votes\": 0, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+        },
+        "metadata": {
+          "raw_json": "{\"labels\": [{\"label\": \"Real Property > Construction/Contractors\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"General Litigation > General Litigation\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"Business and Corporate > General (contracts, entities)\", \"confidence\": 1.3, \"id\": null}], \"follow_up_questions\": [{\"question\": \"Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\", \"format\": \"radio\", \"options\": [\"The home I live in\", \"A rental or investment property\", \"A business/commercial building\"]}, {\"question\": \"Has the contractor (or any subcontractor) filed a construction lien (a legal claim against your property for unpaid work) or threatened to file one?\", \"format\": \"yesno\", \"options\": null}, {\"question\": \"What do you want the court to order, mainly?\", \"format\": \"radio\", \"options\": [\"Give me back the money I paid (a refund)\", \"Make the contractor pay money so I can hire someone else to finish or fix the work\", \"Both\"]}], \"label\": \"Real Property > Construction/Contractors\", \"confidence\": 1.7000000000000002, \"question\": \"Is this renovation for the home you live in, or for a rental/investment place, or for a business building?\", \"format\": \"radio\", \"options\": [\"The home I live in\", \"A rental or investment property\", \"A business/commercial building\"]}",
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "followup_sentence_length_ok": 1,
+            "followup_fkgl_grade_level": 9.457142857142859,
+            "followup_dale_chall_grade": 1,
+            "followup_relevant": 1,
+            "followup_jargon_appropriate": 1
+          },
+          "tokensUsed": {
+            "total": 1666,
+            "prompt": 1401,
+            "completion": 265,
+            "cached": 0,
+            "numRequests": 2
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Valid JSON output"
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "All 3 questions meet sentence length criteria (avg ≤ 32.0, max ≤ 45.0)",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_sentence_length_ok",
+                "threshold": 1,
+                "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+                "config": {
+                  "max_avg_sentence_words": 32,
+                  "max_max_sentence_words": 45
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "All 13 texts meet readability criteria (DC ≤ 7.9). Grades: T1: DC=4.08, FKGL=-0.28; T2: DC=5.71, FKGL=4.83; T3: DC=6.28, FKGL=9.13; T4: DC=6.49, FKGL=6.51; T5: DC=4.53, FKGL=6.51; T6: DC=4.33, FKGL=5.99; T7: DC=6.24, FKGL=7.55; T8: DC=5.84, FKGL=3.65; T9: DC=5.43, FKGL=8.14; T10: DC=6.86, FKGL=5.99; T11: DC=5.41, FKGL=9.46; T12: DC=6.71, FKGL=6.14; T13: DC=4.18, FKGL=1.87",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_dale_chall_grade",
+                "threshold": 0,
+                "value": "file://assertions/followup_textstat_grade.py",
+                "config": {
+                  "max_dale_chall_grade": 7.9
+                }
+              }
+            },
+            {
+              "pass": true,
+              "score": 9.457142857142859,
+              "reason": "Worst FKGL grade: 9.46 (max: 14.0) across 13 texts. Individual grades: -0.28, 4.83, 9.13, 6.51, 6.51, 5.99, 7.55, 3.65, 8.14, 5.99, 9.46, 6.14, 1.87",
+              "assertion": {
+                "type": "python",
+                "metric": "followup_fkgl_grade_level",
+                "threshold": 0,
+                "weight": 0,
+                "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+                "config": {
+                  "max_fkgl_grade": 14
+                }
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_relevant",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All three questions are directly relevant to classifying the user’s legal issue(s): Q1 triages between malpractice vs harm from the flyer vs historical sexual abuse/cover-up (multiple plausible legal paths). Q2 clarifies attorney status and whether the objective is switching counsel vs pursuing malpractice—key for malpractice screening. Q3 identifies the underlying court matter and consequences of nonappearance, which affects whether there was harm/causation tied to the lawyer or circumstances. No question asks for already-provided info, and options are distinct and reasonably comprehensive for intake classification.",
+              "tokensUsed": {
+                "total": 814,
+                "prompt": 687,
+                "completion": 127,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `My lawyer Galen Vossick looks identical to accused pederast biology teacher milo quenderson of veneta high school. I was raped at age three and covered up. I don't find the joke funny. I have a flyer that compares the two men. many of my friends agree the resemblance is uncanny. I stopped going to court because of this and ended up in the mental hospital. I am looking for a malpractice lawyer. please ask to see my flyer..`\\n\\nOutput to evaluate:\\n\\nQ1: What do you want help with most right now?\\n  Options: A) My lawyer may have messed up my case (legal malpractice), B) Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy), C) The sexual abuse when I was a child was covered up, and I want to take action now\\n\\nQ2: About Galen Vossick, is he your current lawyer or a past lawyer—and what do you want to do?\\n  Options: A) He is my current lawyer, and I want help switching lawyers or fixing my case, B) He is my past lawyer, and I want to sue him for legal malpractice (lawyer mistakes that harmed my case), C) Both (fix the case and also sue for malpractice)\\n\\nQ3: What kind of court case was it when you stopped going—and did you miss anything important because you didn’t go?\\n  Options: A) Criminal case, and I missed court or got a court order because I didn’t go, B) Family case (like custody, child support, or divorce), and I missed court or got a court order because I didn’t go, C) Other civil case, and I missed court or got a court order because I didn’t go, D) I’m not sure what kind of case it was or what happened\\n\\nRubric:\\n\\nEvaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\\n* No question asks the user to repeat information that the user has already provided.\\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP: No follow-up questions generated\\\", return {\\\"pass\\\": true, \\\"score\\\": 1} because no questions were needed (valid outcome).\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL questions are relevant, {\\\"pass\\\": false, \\\"score\\\": 0} if ANY question is generic or unrelated.\\n\"}]"
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "metric": "followup_jargon_appropriate",
+                "threshold": 0.5,
+                "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+                "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "All questions are in plain language. Any legal terms are either echoed from the user (“malpractice”) or immediately explained: Q2 glosses “legal malpractice (lawyer mistakes that harmed my case)” and Q1 briefly references defamation/privacy but frames them in plain English (“made or shared the flyer… and it harmed me”). “Criminal/family/civil case” are common, understandable categories and Q3 offers an “I’m not sure” option. Minor note: “defamation” could be slightly jargon-y, but it’s paired with a plain-English description, so it meets the gloss requirement.",
+              "tokensUsed": {
+                "total": 852,
+                "prompt": 714,
+                "completion": 138,
+                "cached": 0,
+                "numRequests": 1,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"},{\"role\":\"user\",\"content\":\"User's question: `My lawyer Galen Vossick looks identical to accused pederast biology teacher milo quenderson of veneta high school. I was raped at age three and covered up. I don't find the joke funny. I have a flyer that compares the two men. many of my friends agree the resemblance is uncanny. I stopped going to court because of this and ended up in the mental hospital. I am looking for a malpractice lawyer. please ask to see my flyer..`\\n\\nOutput to evaluate:\\n\\nQ1: What do you want help with most right now?\\n  Options: A) My lawyer may have messed up my case (legal malpractice), B) Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy), C) The sexual abuse when I was a child was covered up, and I want to take action now\\n\\nQ2: About Galen Vossick, is he your current lawyer or a past lawyer—and what do you want to do?\\n  Options: A) He is my current lawyer, and I want help switching lawyers or fixing my case, B) He is my past lawyer, and I want to sue him for legal malpractice (lawyer mistakes that harmed my case), C) Both (fix the case and also sue for malpractice)\\n\\nQ3: What kind of court case was it when you stopped going—and did you miss anything important because you didn’t go?\\n  Options: A) Criminal case, and I missed court or got a court order because I didn’t go, B) Family case (like custody, child support, or divorce), and I missed court or got a court order because I didn’t go, C) Other civil case, and I missed court or got a court order because I didn’t go, D) I’m not sure what kind of case it was or what happened\\n\\nRubric:\\n\\nCheck if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\\n\\nA legal/technical term is ALLOWED only if:\\n1. The user used the SAME term in their original query (echo), OR\\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\\n   Example: \\\"executor (the person responsible for handling the estate)\\\"\\n\\nConsider for EACH question:\\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\\n* Syntax: Is the sentence reasonably clear with simple structure?\\n\\nSPECIAL CASE: If the input starts with \\\"SKIP:\\\", return {\\\"pass\\\": true, \\\"score\\\": 1}.\\n\\nReturn {\\\"pass\\\": true, \\\"score\\\": 1} if ALL terms are echoed or glossed, {\\\"pass\\\": true, \\\"score\\\": 0.5} if minor issues (note in reason), {\\\"pass\\\": false, \\\"score\\\": 0} if unexplained jargon that a typical user wouldn't understand.\\n\"}]"
+              }
+            }
+          ]
+        },
+        "id": "e092e361-305b-415c-a8b4-c9e525249be8",
+        "latencyMs": 14904,
+        "namedScores": {
+          "followup_sentence_length_ok": 1,
+          "followup_fkgl_grade_level": 9.457142857142859,
+          "followup_dale_chall_grade": 1,
+          "followup_relevant": 1,
+          "followup_jargon_appropriate": 1
+        },
+        "prompt": {
+          "raw": "My lawyer Galen Vossick looks identical to accused pederast biology teacher milo quenderson of veneta high school. I was raped at age three and covered up. I don't find the joke funny. I have a flyer that compares the two men. many of my friends agree the resemblance is uncanny. I stopped going to court because of this and ended up in the mental hospital. I am looking for a malpractice lawyer. please ask to see my flyer..",
+          "label": "{{problem_description}}"
+        },
+        "promptId": "bdbf82a6eeaacbbed8979de41bc684c01662b9f1fc6b2699e68fd7ee6deec23b",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://promptfoo_classifier_provider.py",
+          "label": "cheap-providers-ensemble"
+        },
+        "response": {
+          "output": "Classification:\n  - General Litigation > Malpractice (Legal) (1.70)\n  - General Litigation > Child Abuse Victims (0.90)\n  - General Litigation > General Torts/Privacy (0.51)\n\nFollow-up Questions:\nQ1: What do you want help with most right now?\n  • My lawyer may have messed up my case (legal malpractice)\n  • Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\n  • The sexual abuse when I was a child was covered up, and I want to take action now\nQ2: About Galen Vossick, is he your current lawyer or a past lawyer—and what do you want to do?\n  • He is my current lawyer, and I want help switching lawyers or fixing my case\n  • He is my past lawyer, and I want to sue him for legal malpractice (lawyer mistakes that harmed my case)\n  • Both (fix the case and also sue for malpractice)\nQ3: What kind of court case was it when you stopped going—and did you miss anything important because you didn’t go?\n  • Criminal case, and I missed court or got a court order because I didn’t go\n  • Family case (like custody, child support, or divorce), and I missed court or got a court order because I didn’t go\n  • Other civil case, and I missed court or got a court order because I didn’t go\n  • I’m not sure what kind of case it was or what happened\n\n<!-- RAW_JSON:{\"labels\": [{\"label\": \"General Litigation > Malpractice (Legal)\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"General Litigation > Child Abuse Victims\", \"confidence\": 0.9, \"id\": null}, {\"label\": \"General Litigation > General Torts/Privacy\", \"confidence\": 0.5123725185499497, \"id\": null}], \"follow_up_questions\": [{\"question\": \"What do you want help with most right now?\", \"format\": \"radio\", \"options\": [\"My lawyer may have messed up my case (legal malpractice)\", \"Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\", \"The sexual abuse when I was a child was covered up, and I want to take action now\"]}, {\"question\": \"About Galen Vossick, is he your current lawyer or a past lawyer\\u2014and what do you want to do?\", \"format\": \"radio\", \"options\": [\"He is my current lawyer, and I want help switching lawyers or fixing my case\", \"He is my past lawyer, and I want to sue him for legal malpractice (lawyer mistakes that harmed my case)\", \"Both (fix the case and also sue for malpractice)\"]}, {\"question\": \"What kind of court case was it when you stopped going\\u2014and did you miss anything important because you didn\\u2019t go?\", \"format\": \"radio\", \"options\": [\"Criminal case, and I missed court or got a court order because I didn\\u2019t go\", \"Family case (like custody, child support, or divorce), and I missed court or got a court order because I didn\\u2019t go\", \"Other civil case, and I missed court or got a court order because I didn\\u2019t go\", \"I\\u2019m not sure what kind of case it was or what happened\"]}], \"label\": \"General Litigation > Malpractice (Legal)\", \"confidence\": 1.7000000000000002, \"question\": \"What do you want help with most right now?\", \"format\": \"radio\", \"options\": [\"My lawyer may have messed up my case (legal malpractice)\", \"Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\", \"The sexual abuse when I was a child was covered up, and I want to take action now\"]} -->",
+          "metadata": {
+            "raw_json": "{\"labels\": [{\"label\": \"General Litigation > Malpractice (Legal)\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"General Litigation > Child Abuse Victims\", \"confidence\": 0.9, \"id\": null}, {\"label\": \"General Litigation > General Torts/Privacy\", \"confidence\": 0.5123725185499497, \"id\": null}], \"follow_up_questions\": [{\"question\": \"What do you want help with most right now?\", \"format\": \"radio\", \"options\": [\"My lawyer may have messed up my case (legal malpractice)\", \"Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\", \"The sexual abuse when I was a child was covered up, and I want to take action now\"]}, {\"question\": \"About Galen Vossick, is he your current lawyer or a past lawyer\\u2014and what do you want to do?\", \"format\": \"radio\", \"options\": [\"He is my current lawyer, and I want help switching lawyers or fixing my case\", \"He is my past lawyer, and I want to sue him for legal malpractice (lawyer mistakes that harmed my case)\", \"Both (fix the case and also sue for malpractice)\"]}, {\"question\": \"What kind of court case was it when you stopped going\\u2014and did you miss anything important because you didn\\u2019t go?\", \"format\": \"radio\", \"options\": [\"Criminal case, and I missed court or got a court order because I didn\\u2019t go\", \"Family case (like custody, child support, or divorce), and I missed court or got a court order because I didn\\u2019t go\", \"Other civil case, and I missed court or got a court order because I didn\\u2019t go\", \"I\\u2019m not sure what kind of case it was or what happened\"]}], \"label\": \"General Litigation > Malpractice (Legal)\", \"confidence\": 1.7000000000000002, \"question\": \"What do you want help with most right now?\", \"format\": \"radio\", \"options\": [\"My lawyer may have messed up my case (legal malpractice)\", \"Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\", \"The sexual abuse when I was a child was covered up, and I want to take action now\"]}"
+          },
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "source_row": "428",
+            "scenario_id": "gold-0370",
+            "canonical_source_row": "428",
+            "source_row_aliases": "428",
+            "problem_description": "My lawyer Galen Vossick looks identical to accused pederast biology teacher milo quenderson of veneta high school. I was raped at age three and covered up. I don't find the joke funny. I have a flyer that compares the two men. many of my friends agree the resemblance is uncanny. I stopped going to court because of this and ended up in the mental hospital. I am looking for a malpractice lawyer. please ask to see my flyer..",
+            "gold_label_count": "2",
+            "gold_category_1": "General Litigation",
+            "gold_subcategory_1": "Child Abuse Victims",
+            "gold_category_2": "General Litigation",
+            "gold_subcategory_2": "Malpractice-Legal",
+            "gold_category_3": "",
+            "gold_subcategory_3": "",
+            "gold_category_4": "",
+            "gold_subcategory_4": "",
+            "consensus_provenance": "two_human_model_corroborated_consensus",
+            "human_reviewers_used": "jackie;qs",
+            "duplicate_source_description": "no",
+            "support_summary_json": "{\"General Litigation > Child Abuse Victims\": {\"human_votes\": 2, \"internal_primary\": false, \"mean_model_rank\": 2.0, \"model_votes\": 2}, \"General Litigation > Malpractice-Legal\": {\"human_votes\": 1, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "try {\n  let raw = context?.providerResponse?.metadata?.raw_json ?? output;\n  // Try to extract from <!-- RAW_JSON:...--> wrapper if present\n  const wrapperMatch = raw.match(/<!-- RAW_JSON:(.+?)-->/s);\n  if (wrapperMatch) { raw = wrapperMatch[1]; }\n  // Strip markdown fences if present\n  raw = raw.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/i, '').trim();\n  const parsed = typeof raw === \"string\" ? JSON.parse(raw) : raw;\n  return { pass: !!parsed, score: 1, reason: \"Valid JSON output\" };\n} catch (e) {\n  return { pass: false, score: 0, reason: \"Output is not valid JSON: \" + e.message };\n}\n"
+            },
+            {
+              "type": "python",
+              "metric": "followup_sentence_length_ok",
+              "threshold": 1,
+              "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+              "config": {
+                "max_avg_sentence_words": 32,
+                "max_max_sentence_words": 45
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_dale_chall_grade",
+              "threshold": 0,
+              "value": "file://assertions/followup_textstat_grade.py",
+              "config": {
+                "max_dale_chall_grade": 7.9
+              }
+            },
+            {
+              "type": "python",
+              "metric": "followup_fkgl_grade_level",
+              "threshold": 0,
+              "weight": 0,
+              "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+              "config": {
+                "max_fkgl_grade": 14
+              }
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_relevant",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+            },
+            {
+              "type": "llm-rubric",
+              "metric": "followup_jargon_appropriate",
+              "threshold": 0.5,
+              "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+              "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+            }
+          ],
+          "options": {
+            "provider": {
+              "id": "openai:gpt-5.2"
+            },
+            "rubricPrompt": "[\n  {\n    \"role\": \"system\",\n    \"content\": \"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"\n  },\n  {\n    \"role\": \"user\",\n    \"content\": \"User's question: `{{problem_description}}`\\n\\nOutput to evaluate:\\n\\n{{ output }}\\n\\nRubric:\\n\\n{{ rubric }}\"\n  }\n]\n"
+          },
+          "description": "Row #4",
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "source_row": "428",
+          "scenario_id": "gold-0370",
+          "canonical_source_row": "428",
+          "source_row_aliases": "428",
+          "problem_description": "My lawyer Galen Vossick looks identical to accused pederast biology teacher milo quenderson of veneta high school. I was raped at age three and covered up. I don't find the joke funny. I have a flyer that compares the two men. many of my friends agree the resemblance is uncanny. I stopped going to court because of this and ended up in the mental hospital. I am looking for a malpractice lawyer. please ask to see my flyer..",
+          "gold_label_count": "2",
+          "gold_category_1": "General Litigation",
+          "gold_subcategory_1": "Child Abuse Victims",
+          "gold_category_2": "General Litigation",
+          "gold_subcategory_2": "Malpractice-Legal",
+          "gold_category_3": "",
+          "gold_subcategory_3": "",
+          "gold_category_4": "",
+          "gold_subcategory_4": "",
+          "consensus_provenance": "two_human_model_corroborated_consensus",
+          "human_reviewers_used": "jackie;qs",
+          "duplicate_source_description": "no",
+          "support_summary_json": "{\"General Litigation > Child Abuse Victims\": {\"human_votes\": 2, \"internal_primary\": false, \"mean_model_rank\": 2.0, \"model_votes\": 2}, \"General Litigation > Malpractice-Legal\": {\"human_votes\": 1, \"internal_primary\": true, \"mean_model_rank\": 1.0, \"model_votes\": 3}}"
+        },
+        "metadata": {
+          "raw_json": "{\"labels\": [{\"label\": \"General Litigation > Malpractice (Legal)\", \"confidence\": 1.7000000000000002, \"id\": null}, {\"label\": \"General Litigation > Child Abuse Victims\", \"confidence\": 0.9, \"id\": null}, {\"label\": \"General Litigation > General Torts/Privacy\", \"confidence\": 0.5123725185499497, \"id\": null}], \"follow_up_questions\": [{\"question\": \"What do you want help with most right now?\", \"format\": \"radio\", \"options\": [\"My lawyer may have messed up my case (legal malpractice)\", \"Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\", \"The sexual abuse when I was a child was covered up, and I want to take action now\"]}, {\"question\": \"About Galen Vossick, is he your current lawyer or a past lawyer\\u2014and what do you want to do?\", \"format\": \"radio\", \"options\": [\"He is my current lawyer, and I want help switching lawyers or fixing my case\", \"He is my past lawyer, and I want to sue him for legal malpractice (lawyer mistakes that harmed my case)\", \"Both (fix the case and also sue for malpractice)\"]}, {\"question\": \"What kind of court case was it when you stopped going\\u2014and did you miss anything important because you didn\\u2019t go?\", \"format\": \"radio\", \"options\": [\"Criminal case, and I missed court or got a court order because I didn\\u2019t go\", \"Family case (like custody, child support, or divorce), and I missed court or got a court order because I didn\\u2019t go\", \"Other civil case, and I missed court or got a court order because I didn\\u2019t go\", \"I\\u2019m not sure what kind of case it was or what happened\"]}], \"label\": \"General Litigation > Malpractice (Legal)\", \"confidence\": 1.7000000000000002, \"question\": \"What do you want help with most right now?\", \"format\": \"radio\", \"options\": [\"My lawyer may have messed up my case (legal malpractice)\", \"Someone made or shared the flyer comparing the two men, and it harmed me (like defamation or privacy)\", \"The sexual abuse when I was a child was covered up, and I want to take action now\"]}",
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 1,
+      "failures": 3,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 4,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 5675,
+          "prompt": 4860,
+          "completion": 815,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      },
+      "durationMs": 62226
+    }
+  },
+  "config": {
+    "tags": {
+      "suite": "followups"
+    },
+    "description": "FETCH gold replicate 2 GPT-5.2 exception repair uncached",
+    "prompts": [
+      "{{problem_description}}"
+    ],
+    "providers": [
+      {
+        "id": "file://promptfoo_classifier_provider.py",
+        "label": "cheap-providers-ensemble",
+        "config": {
+          "enabled_providers": [
+            "gpt-5.2",
+            "gemini",
+            "mistral",
+            "keyword",
+            "spot"
+          ],
+          "decision_mode": "vote",
+          "taxonomy_name": "default",
+          "include_debug_details": false,
+          "cache_enabled": false,
+          "display_format": true
+        }
+      }
+    ],
+    "tests": "promptfoo/no_cache_run2_gpt_repair_cases.csv",
+    "scenarios": [],
+    "env": {},
+    "defaultTest": {
+      "options": {
+        "provider": {
+          "id": "openai:gpt-5.2"
+        },
+        "rubricPrompt": "[\n  {\n    \"role\": \"system\",\n    \"content\": \"You are an evaluator of follow-up questions for a legal-intake assistant. Return JSON only: {\\\"reason\\\": string, \\\"pass\\\": boolean, \\\"score\\\": number}.\\n\\nScoring: 1 = meets the rubric, 0.5 = borderline/minor issues, 0 = clear failure. If borderline, pass but note concerns in reason.\\n\\nIMPORTANT: If the output starts with 'SKIP:', immediately return {\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"No follow-up questions needed (valid outcome)\\\"}.\"\n  },\n  {\n    \"role\": \"user\",\n    \"content\": \"User's question: `{{problem_description}}`\\n\\nOutput to evaluate:\\n\\n{{ output }}\\n\\nRubric:\\n\\n{{ rubric }}\"\n  }\n]\n"
+      },
+      "assert": [
+        {
+          "type": "javascript",
+          "value": "try {\n  let raw = context?.providerResponse?.metadata?.raw_json ?? output;\n  // Try to extract from <!-- RAW_JSON:...--> wrapper if present\n  const wrapperMatch = raw.match(/<!-- RAW_JSON:(.+?)-->/s);\n  if (wrapperMatch) { raw = wrapperMatch[1]; }\n  // Strip markdown fences if present\n  raw = raw.replace(/^```(?:json)?\\s*/i, '').replace(/\\s*```$/i, '').trim();\n  const parsed = typeof raw === \"string\" ? JSON.parse(raw) : raw;\n  return { pass: !!parsed, score: 1, reason: \"Valid JSON output\" };\n} catch (e) {\n  return { pass: false, score: 0, reason: \"Output is not valid JSON: \" + e.message };\n}\n"
+        },
+        {
+          "type": "python",
+          "metric": "followup_sentence_length_ok",
+          "threshold": 1,
+          "value": "file://assertions/followup_heuristics.py:sentence_length_ok",
+          "config": {
+            "max_avg_sentence_words": 32,
+            "max_max_sentence_words": 45
+          }
+        },
+        {
+          "type": "python",
+          "metric": "followup_dale_chall_grade",
+          "threshold": 0,
+          "value": "file://assertions/followup_textstat_grade.py",
+          "config": {
+            "max_dale_chall_grade": 7.9
+          }
+        },
+        {
+          "type": "python",
+          "metric": "followup_fkgl_grade_level",
+          "threshold": 0,
+          "weight": 0,
+          "value": "file://assertions/followup_textstat_grade.py:get_fkgl_assert",
+          "config": {
+            "max_fkgl_grade": 14
+          }
+        },
+        {
+          "type": "llm-rubric",
+          "metric": "followup_relevant",
+          "threshold": 0.5,
+          "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); if (!data) { return 'ERROR: Could not parse JSON'; } const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome: issue was clear enough)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+          "value": "Evaluate if ALL the questions are relevant to the original query and goal of classifying the user's problem:\n* Each question, if answered, would add information that would lead to a more accurate classification of the user's legal problem.\n* No question asks the user to repeat information that the user has already provided.\n* No question asks about something unnecessary to the classification, such as which venue or kind of relief the user is looking for.\n* The options, if any, are clearly related to their respective questions and cover distinct possible answers.\n\nSPECIAL CASE: If the input starts with \"SKIP: No follow-up questions generated\", return {\"pass\": true, \"score\": 1} because no questions were needed (valid outcome).\n\nReturn {\"pass\": true, \"score\": 1} if ALL questions are relevant, {\"pass\": false, \"score\": 0} if ANY question is generic or unrelated.\n"
+        },
+        {
+          "type": "llm-rubric",
+          "metric": "followup_jargon_appropriate",
+          "threshold": 0.5,
+          "transform": "(() => { if (output.trim().startsWith('SKIP:')) { return output; } try { const match = output.match(/<!-- RAW_JSON:(.+?)-->/s); const raw = match ? match[1] : output; const data = JSON.parse(raw); const questions = []; if (data.follow_up_questions && data.follow_up_questions.length > 0) { data.follow_up_questions.forEach((q, i) => { let qText = `Q${i+1}: ${q.question}`; if (q.options && Array.isArray(q.options) && q.options.length > 0) { qText += '\\n  Options: ' + q.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); }); } else if (data.question) { let qText = `Q1: ${data.question}`; if (data.options && Array.isArray(data.options) && data.options.length > 0) { qText += '\\n  Options: ' + data.options.map((o, j) => String.fromCharCode(65+j) + ') ' + o).join(', '); } questions.push(qText); } if (questions.length === 0) { return 'SKIP: No follow-up questions generated (valid outcome)'; } return questions.join('\\n\\n'); } catch (e) { return 'ERROR: ' + e.message; } })()",
+          "value": "Check if ALL the questions use plain language accessible to a typical user, without unexplained legal jargon.\n\nA legal/technical term is ALLOWED only if:\n1. The user used the SAME term in their original query (echo), OR\n2. The question includes an immediate plain-English explanation in parentheses, dashes, or appositive (gloss)\n   Example: \"executor (the person responsible for handling the estate)\"\n\nConsider for EACH question:\n* Vocabulary: Does each legal term meet the echo-or-gloss rule above?\n* Syntax: Is the sentence reasonably clear with simple structure?\n\nSPECIAL CASE: If the input starts with \"SKIP:\", return {\"pass\": true, \"score\": 1}.\n\nReturn {\"pass\": true, \"score\": 1} if ALL terms are echoed or glossed, {\"pass\": true, \"score\": 0.5} if minor issues (note in reason), {\"pass\": false, \"score\": 0} if unexplained jargon that a typical user wouldn't understand.\n"
+        }
+      ],
+      "vars": {},
+      "metadata": {}
+    },
+    "outputPath": [
+      "promptfoo/EXPERIMENT_LOGS/fetch_gold_consensus_2026-07-16_no_cache_run2_gpt_repair.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.120.14",
+    "nodeVersion": "v22.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "exportedAt": "2026-07-17T02:10:41.248Z",
+    "evaluationCreatedAt": "2026-07-17T02:09:38.816Z"
+  }
+}

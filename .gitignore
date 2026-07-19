@@ -42,3 +42,11 @@ Thumbs.db
 *.db
 *.xlsx
 !redaction_reviewed_v5_clean.xlsx
+
+# Public, de-identified agreement-analysis artifacts.
+!gold_labels_consensus_20260716/rater_sets.csv
+!gold_labels_consensus_20260716/story_pairwise_set_distances.csv
+!gold_labels_consensus_20260716/comparison_summary.csv
+!gold_labels_consensus_20260716/comparison_bootstrap.csv
+!gold_labels_consensus_20260716/label_level_summary.csv
+!gold_labels_consensus_20260716/label_level_pairwise_positive_agreement.csv

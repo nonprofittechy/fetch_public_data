@@ -1,0 +1,195 @@
+{
+  "method": {
+    "annotation_unit": "unordered set of exact category/subcategory pairs",
+    "independent_sampling_unit": "unique problem description",
+    "jaccard_distance": "1 - |intersection| / |union|; distance(empty, empty) = 0",
+    "alpha_jaccard": "1 - observed mean Jaccard distance / expected pooled Jaccard distance",
+    "human_llm_alpha": "cross-group analogue with expected distance from separate pooled human and LLM marginals",
+    "bootstrap": {
+      "unit": "story",
+      "iterations": 2000,
+      "seed": 20260716,
+      "interval": "2.5th and 97.5th percentiles with linear interpolation"
+    }
+  },
+  "scope": {
+    "raw_review_records": 267,
+    "unique_reviewed_stories": 114,
+    "raters": [
+      "gpt52",
+      "gemini31_pro",
+      "deepseek_v4",
+      "jackie",
+      "qs"
+    ],
+    "taxonomy_labels": 209,
+    "duplicate_source_descriptions_excluded_from_story_count": 28
+  },
+  "comparison_summary": {
+    "humans": {
+      "stories": 114,
+      "rater_pairs_per_story": 1,
+      "pair_observations": 114,
+      "mean_jaccard_distance": 0.25146198830409355,
+      "alpha_jaccard": 0.7438718230797439,
+      "observed_disagreement": 0.25146198830409355,
+      "expected_disagreement": 0.9817818223974032,
+      "exact_set_agreements": 61,
+      "exact_set_agreement_rate": 0.5350877192982456,
+      "mean_absolute_label_count_difference": 0.4649122807017544,
+      "mean_labels_per_rating": 1.8991228070175439,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.19809941520467836,
+        0.3048245614035088
+      ],
+      "alpha_jaccard_95_ci": [
+        0.6873915317890298,
+        0.7959600016035864
+      ]
+    },
+    "llms": {
+      "stories": 114,
+      "rater_pairs_per_story": 3,
+      "pair_observations": 342,
+      "mean_jaccard_distance": 0.36150097465886943,
+      "alpha_jaccard": 0.6317544993115609,
+      "observed_disagreement": 0.36150097465886943,
+      "expected_disagreement": 0.9816847021431063,
+      "exact_set_agreements": 125,
+      "exact_set_agreement_rate": 0.3654970760233918,
+      "mean_absolute_label_count_difference": 0.543859649122807,
+      "mean_labels_per_rating": 1.9619883040935673,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.31978557504873295,
+        0.4038535575048733
+      ],
+      "alpha_jaccard_95_ci": [
+        0.5860462648455579,
+        0.6715045258904025
+      ]
+    },
+    "human_llm": {
+      "stories": 114,
+      "rater_pairs_per_story": 6,
+      "pair_observations": 684,
+      "mean_jaccard_distance": 0.36976120857699807,
+      "alpha_jaccard": 0.6227268088046332,
+      "observed_disagreement": 0.36976120857699807,
+      "expected_disagreement": 0.9800887452549502,
+      "exact_set_agreements": 250,
+      "exact_set_agreement_rate": 0.3654970760233918,
+      "mean_absolute_label_count_difference": 0.49853801169590645,
+      "mean_labels_per_rating": 1.936842105263158,
+      "alpha_interpretation": "cross-group alpha analogue; separate human and LLM marginals",
+      "mean_labels_per_human_rating": 1.8991228070175439,
+      "mean_labels_per_llm_rating": 1.9619883040935673,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.3301851851851852,
+        0.4108467348927875
+      ],
+      "alpha_jaccard_95_ci": [
+        0.5789268909314721,
+        0.6601543366673512
+      ]
+    },
+    "all_five": {
+      "stories": 114,
+      "rater_pairs_per_story": 10,
+      "pair_observations": 1140,
+      "mean_jaccard_distance": 0.355453216374269,
+      "alpha_jaccard": 0.6376375443219034,
+      "observed_disagreement": 0.355453216374269,
+      "expected_disagreement": 0.9809327947872024,
+      "exact_set_agreements": 436,
+      "exact_set_agreement_rate": 0.3824561403508772,
+      "mean_absolute_label_count_difference": 0.5087719298245614,
+      "mean_labels_per_rating": 1.936842105263158,
+      "iterations": 2000,
+      "finite_alpha_iterations": 2000,
+      "mean_jaccard_distance_95_ci": [
+        0.318062865497076,
+        0.39292726608187134
+      ],
+      "alpha_jaccard_95_ci": [
+        0.5975529759482874,
+        0.6730342841909268
+      ]
+    }
+  },
+  "rater_summary": {
+    "gpt52": {
+      "mean_label_count": 2.219298245614035,
+      "label_count_distribution": {
+        "1": 6,
+        "2": 77,
+        "3": 31
+      }
+    },
+    "gemini31_pro": {
+      "mean_label_count": 2.1140350877192984,
+      "label_count_distribution": {
+        "1": 14,
+        "2": 73,
+        "3": 27
+      }
+    },
+    "deepseek_v4": {
+      "mean_label_count": 1.5526315789473684,
+      "label_count_distribution": {
+        "1": 58,
+        "2": 49,
+        "3": 7
+      }
+    },
+    "jackie": {
+      "mean_label_count": 1.8245614035087718,
+      "label_count_distribution": {
+        "1": 30,
+        "2": 76,
+        "3": 6,
+        "4": 2
+      }
+    },
+    "qs": {
+      "mean_label_count": 1.9736842105263157,
+      "label_count_distribution": {
+        "1": 26,
+        "2": 67,
+        "3": 19,
+        "4": 2
+      }
+    }
+  },
+  "duplicate_review_stability": {
+    "repeated_story_reviewer_pairs": 36,
+    "exactly_repeated_label_sets": 30,
+    "resolution": "latest eligible saved decision per reviewer used for each unique story"
+  },
+  "reproducibility": {
+    "script": "analyze_gold_rater_agreement.py",
+    "python": "3.12.3",
+    "input_sha256": {
+      "redaction_reviewed_v5_clean.xlsx": "6dc3c9e2ad686355d1c70cb0865e1046a61353d714e3f7f3c23c07b07156d430",
+      "../app/data/taxonomy_detailed_descriptions.csv": "d24bbde77c1fea70b10f8fb547bf2794e1ddd1afca84514b7c6469d42c1f059d",
+      "silver_labels/10_four_label_human_review/human_label_reviews (4).csv": "6da9873ff04a35ed772c804bb99f1f688d2434ad8fcfab086b5bca86408ae53d",
+      "silver_labels/01_gpt52/checkpoint.json": "7fc3ebcbf702f2fcedcf24140daf41639d8ec6ea43c05f69e601afe9a57dcd72",
+      "silver_labels/02_gemini31_pro/checkpoint.json": "3465172357cb56b398a55f9ff56a1551a0c583c38fc9b36c5202f98c25a49190",
+      "silver_labels/03_deepseek_v4/checkpoint.json": "d4d46846345cab2865223350641212d048faaf0bff0e35cc418a2c3b8d7c5c50"
+    },
+    "intermediate_files": [
+      "rater_sets.csv",
+      "story_pairwise_set_distances.csv",
+      "comparison_summary.csv",
+      "comparison_bootstrap.csv",
+      "label_level_summary.csv",
+      "label_level_pairwise_positive_agreement.csv",
+      "human_disagreements.csv"
+    ]
+  }
+}

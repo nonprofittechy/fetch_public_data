@@ -1,0 +1,10 @@
+# The repository-level .gitignore treats all JSON/CSV/JSONL as private data by
+# default. Everything in this benchmark is synthetic and Claude-authored (no
+# client or survey data), so it is explicitly re-included for reproducibility.
+!*.json
+!*.jsonl
+!*.csv
+
+# Raw run outputs stay out of git (large); analysis summaries and hashes are
+# committed under analysis/ instead.
+results/

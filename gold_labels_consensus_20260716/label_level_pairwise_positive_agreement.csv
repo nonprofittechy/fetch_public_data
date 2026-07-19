@@ -1,0 +1,2091 @@
+category,subcategory,left_rater,right_rater,left_selected,right_selected,both_selected,positive_jaccard,positive_dice_f1
+Administrative Law,DMV (Non-Criminal),gpt52,gemini31_pro,1,2,1,0.5,0.6666666666666666
+Administrative Law,DMV (Non-Criminal),gpt52,deepseek_v4,1,2,1,0.5,0.6666666666666666
+Administrative Law,DMV (Non-Criminal),gpt52,jackie,1,1,1,1.0,1.0
+Administrative Law,DMV (Non-Criminal),gpt52,qs,1,1,1,1.0,1.0
+Administrative Law,DMV (Non-Criminal),gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+Administrative Law,DMV (Non-Criminal),gemini31_pro,jackie,2,1,1,0.5,0.6666666666666666
+Administrative Law,DMV (Non-Criminal),gemini31_pro,qs,2,1,1,0.5,0.6666666666666666
+Administrative Law,DMV (Non-Criminal),deepseek_v4,jackie,2,1,1,0.5,0.6666666666666666
+Administrative Law,DMV (Non-Criminal),deepseek_v4,qs,2,1,1,0.5,0.6666666666666666
+Administrative Law,DMV (Non-Criminal),jackie,qs,1,1,1,1.0,1.0
+Administrative Law,General (Federal),gpt52,gemini31_pro,0,0,0,,
+Administrative Law,General (Federal),gpt52,deepseek_v4,0,0,0,,
+Administrative Law,General (Federal),gpt52,jackie,0,0,0,,
+Administrative Law,General (Federal),gpt52,qs,0,0,0,,
+Administrative Law,General (Federal),gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,General (Federal),gemini31_pro,jackie,0,0,0,,
+Administrative Law,General (Federal),gemini31_pro,qs,0,0,0,,
+Administrative Law,General (Federal),deepseek_v4,jackie,0,0,0,,
+Administrative Law,General (Federal),deepseek_v4,qs,0,0,0,,
+Administrative Law,General (Federal),jackie,qs,0,0,0,,
+Administrative Law,General (Local/Municipal),gpt52,gemini31_pro,0,0,0,,
+Administrative Law,General (Local/Municipal),gpt52,deepseek_v4,0,0,0,,
+Administrative Law,General (Local/Municipal),gpt52,jackie,0,0,0,,
+Administrative Law,General (Local/Municipal),gpt52,qs,0,0,0,,
+Administrative Law,General (Local/Municipal),gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,General (Local/Municipal),gemini31_pro,jackie,0,0,0,,
+Administrative Law,General (Local/Municipal),gemini31_pro,qs,0,0,0,,
+Administrative Law,General (Local/Municipal),deepseek_v4,jackie,0,0,0,,
+Administrative Law,General (Local/Municipal),deepseek_v4,qs,0,0,0,,
+Administrative Law,General (Local/Municipal),jackie,qs,0,0,0,,
+Administrative Law,General (State),gpt52,gemini31_pro,1,0,0,0.0,0.0
+Administrative Law,General (State),gpt52,deepseek_v4,1,0,0,0.0,0.0
+Administrative Law,General (State),gpt52,jackie,1,1,1,1.0,1.0
+Administrative Law,General (State),gpt52,qs,1,1,1,1.0,1.0
+Administrative Law,General (State),gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,General (State),gemini31_pro,jackie,0,1,0,0.0,0.0
+Administrative Law,General (State),gemini31_pro,qs,0,1,0,0.0,0.0
+Administrative Law,General (State),deepseek_v4,jackie,0,1,0,0.0,0.0
+Administrative Law,General (State),deepseek_v4,qs,0,1,0,0.0,0.0
+Administrative Law,General (State),jackie,qs,1,1,1,1.0,1.0
+Administrative Law,Medicare/Medicaid,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Administrative Law,Medicare/Medicaid,gpt52,deepseek_v4,1,2,1,0.5,0.6666666666666666
+Administrative Law,Medicare/Medicaid,gpt52,jackie,1,2,1,0.5,0.6666666666666666
+Administrative Law,Medicare/Medicaid,gpt52,qs,1,2,1,0.5,0.6666666666666666
+Administrative Law,Medicare/Medicaid,gemini31_pro,deepseek_v4,1,2,1,0.5,0.6666666666666666
+Administrative Law,Medicare/Medicaid,gemini31_pro,jackie,1,2,1,0.5,0.6666666666666666
+Administrative Law,Medicare/Medicaid,gemini31_pro,qs,1,2,1,0.5,0.6666666666666666
+Administrative Law,Medicare/Medicaid,deepseek_v4,jackie,2,2,2,1.0,1.0
+Administrative Law,Medicare/Medicaid,deepseek_v4,qs,2,2,2,1.0,1.0
+Administrative Law,Medicare/Medicaid,jackie,qs,2,2,2,1.0,1.0
+Administrative Law,Military/Veterans,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,gpt52,jackie,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,gpt52,qs,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,gemini31_pro,jackie,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,gemini31_pro,qs,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,deepseek_v4,jackie,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,deepseek_v4,qs,1,1,1,1.0,1.0
+Administrative Law,Military/Veterans,jackie,qs,1,1,1,1.0,1.0
+Administrative Law,PERS,gpt52,gemini31_pro,0,0,0,,
+Administrative Law,PERS,gpt52,deepseek_v4,0,0,0,,
+Administrative Law,PERS,gpt52,jackie,0,0,0,,
+Administrative Law,PERS,gpt52,qs,0,0,0,,
+Administrative Law,PERS,gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,PERS,gemini31_pro,jackie,0,0,0,,
+Administrative Law,PERS,gemini31_pro,qs,0,0,0,,
+Administrative Law,PERS,deepseek_v4,jackie,0,0,0,,
+Administrative Law,PERS,deepseek_v4,qs,0,0,0,,
+Administrative Law,PERS,jackie,qs,0,0,0,,
+Administrative Law,Professional Licensing,gpt52,gemini31_pro,3,2,2,0.6666666666666666,0.8
+Administrative Law,Professional Licensing,gpt52,deepseek_v4,3,2,2,0.6666666666666666,0.8
+Administrative Law,Professional Licensing,gpt52,jackie,3,3,3,1.0,1.0
+Administrative Law,Professional Licensing,gpt52,qs,3,3,2,0.5,0.6666666666666666
+Administrative Law,Professional Licensing,gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+Administrative Law,Professional Licensing,gemini31_pro,jackie,2,3,2,0.6666666666666666,0.8
+Administrative Law,Professional Licensing,gemini31_pro,qs,2,3,2,0.6666666666666666,0.8
+Administrative Law,Professional Licensing,deepseek_v4,jackie,2,3,2,0.6666666666666666,0.8
+Administrative Law,Professional Licensing,deepseek_v4,qs,2,3,2,0.6666666666666666,0.8
+Administrative Law,Professional Licensing,jackie,qs,3,3,2,0.5,0.6666666666666666
+Administrative Law,Schools - Special Needs Edu.,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Administrative Law,Schools - Special Needs Edu.,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Administrative Law,Schools - Special Needs Edu.,gpt52,jackie,1,0,0,0.0,0.0
+Administrative Law,Schools - Special Needs Edu.,gpt52,qs,1,1,1,1.0,1.0
+Administrative Law,Schools - Special Needs Edu.,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Administrative Law,Schools - Special Needs Edu.,gemini31_pro,jackie,1,0,0,0.0,0.0
+Administrative Law,Schools - Special Needs Edu.,gemini31_pro,qs,1,1,1,1.0,1.0
+Administrative Law,Schools - Special Needs Edu.,deepseek_v4,jackie,1,0,0,0.0,0.0
+Administrative Law,Schools - Special Needs Edu.,deepseek_v4,qs,1,1,1,1.0,1.0
+Administrative Law,Schools - Special Needs Edu.,jackie,qs,0,1,0,0.0,0.0
+Administrative Law,Social Security/SSI,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,gpt52,jackie,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,gpt52,qs,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,gemini31_pro,jackie,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,gemini31_pro,qs,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,deepseek_v4,jackie,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,deepseek_v4,qs,1,1,1,1.0,1.0
+Administrative Law,Social Security/SSI,jackie,qs,1,1,1,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gpt52,gemini31_pro,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gpt52,deepseek_v4,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gpt52,jackie,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gpt52,qs,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gemini31_pro,jackie,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),gemini31_pro,qs,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),deepseek_v4,jackie,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),deepseek_v4,qs,2,2,2,1.0,1.0
+Administrative Law,SSD (Social Security Disability),jackie,qs,2,2,2,1.0,1.0
+Administrative Law,Student Rights,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Administrative Law,Student Rights,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Administrative Law,Student Rights,gpt52,jackie,1,1,1,1.0,1.0
+Administrative Law,Student Rights,gpt52,qs,1,1,1,1.0,1.0
+Administrative Law,Student Rights,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Administrative Law,Student Rights,gemini31_pro,jackie,1,1,1,1.0,1.0
+Administrative Law,Student Rights,gemini31_pro,qs,1,1,1,1.0,1.0
+Administrative Law,Student Rights,deepseek_v4,jackie,0,1,0,0.0,0.0
+Administrative Law,Student Rights,deepseek_v4,qs,0,1,0,0.0,0.0
+Administrative Law,Student Rights,jackie,qs,1,1,1,1.0,1.0
+Administrative Law,Transportation,gpt52,gemini31_pro,0,0,0,,
+Administrative Law,Transportation,gpt52,deepseek_v4,0,0,0,,
+Administrative Law,Transportation,gpt52,jackie,0,0,0,,
+Administrative Law,Transportation,gpt52,qs,0,0,0,,
+Administrative Law,Transportation,gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,Transportation,gemini31_pro,jackie,0,0,0,,
+Administrative Law,Transportation,gemini31_pro,qs,0,0,0,,
+Administrative Law,Transportation,deepseek_v4,jackie,0,0,0,,
+Administrative Law,Transportation,deepseek_v4,qs,0,0,0,,
+Administrative Law,Transportation,jackie,qs,0,0,0,,
+Administrative Law,Unemployment,gpt52,gemini31_pro,0,0,0,,
+Administrative Law,Unemployment,gpt52,deepseek_v4,0,0,0,,
+Administrative Law,Unemployment,gpt52,jackie,0,0,0,,
+Administrative Law,Unemployment,gpt52,qs,0,0,0,,
+Administrative Law,Unemployment,gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,Unemployment,gemini31_pro,jackie,0,0,0,,
+Administrative Law,Unemployment,gemini31_pro,qs,0,0,0,,
+Administrative Law,Unemployment,deepseek_v4,jackie,0,0,0,,
+Administrative Law,Unemployment,deepseek_v4,qs,0,0,0,,
+Administrative Law,Unemployment,jackie,qs,0,0,0,,
+Administrative Law,Utilities,gpt52,gemini31_pro,0,0,0,,
+Administrative Law,Utilities,gpt52,deepseek_v4,0,0,0,,
+Administrative Law,Utilities,gpt52,jackie,0,0,0,,
+Administrative Law,Utilities,gpt52,qs,0,0,0,,
+Administrative Law,Utilities,gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,Utilities,gemini31_pro,jackie,0,0,0,,
+Administrative Law,Utilities,gemini31_pro,qs,0,0,0,,
+Administrative Law,Utilities,deepseek_v4,jackie,0,0,0,,
+Administrative Law,Utilities,deepseek_v4,qs,0,0,0,,
+Administrative Law,Utilities,jackie,qs,0,0,0,,
+Administrative Law,Welfare,gpt52,gemini31_pro,0,0,0,,
+Administrative Law,Welfare,gpt52,deepseek_v4,0,0,0,,
+Administrative Law,Welfare,gpt52,jackie,0,0,0,,
+Administrative Law,Welfare,gpt52,qs,0,0,0,,
+Administrative Law,Welfare,gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,Welfare,gemini31_pro,jackie,0,0,0,,
+Administrative Law,Welfare,gemini31_pro,qs,0,0,0,,
+Administrative Law,Welfare,deepseek_v4,jackie,0,0,0,,
+Administrative Law,Welfare,deepseek_v4,qs,0,0,0,,
+Administrative Law,Welfare,jackie,qs,0,0,0,,
+Administrative Law,Other,gpt52,gemini31_pro,0,0,0,,
+Administrative Law,Other,gpt52,deepseek_v4,0,0,0,,
+Administrative Law,Other,gpt52,jackie,0,0,0,,
+Administrative Law,Other,gpt52,qs,0,0,0,,
+Administrative Law,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Administrative Law,Other,gemini31_pro,jackie,0,0,0,,
+Administrative Law,Other,gemini31_pro,qs,0,0,0,,
+Administrative Law,Other,deepseek_v4,jackie,0,0,0,,
+Administrative Law,Other,deepseek_v4,qs,0,0,0,,
+Administrative Law,Other,jackie,qs,0,0,0,,
+Bankruptcy,Business,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Bankruptcy,Business,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Bankruptcy,Business,gpt52,jackie,1,2,1,0.5,0.6666666666666666
+Bankruptcy,Business,gpt52,qs,1,1,1,1.0,1.0
+Bankruptcy,Business,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Bankruptcy,Business,gemini31_pro,jackie,1,2,1,0.5,0.6666666666666666
+Bankruptcy,Business,gemini31_pro,qs,1,1,1,1.0,1.0
+Bankruptcy,Business,deepseek_v4,jackie,1,2,1,0.5,0.6666666666666666
+Bankruptcy,Business,deepseek_v4,qs,1,1,1,1.0,1.0
+Bankruptcy,Business,jackie,qs,2,1,1,0.5,0.6666666666666666
+Bankruptcy,Creditors,gpt52,gemini31_pro,0,1,0,0.0,0.0
+Bankruptcy,Creditors,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Bankruptcy,Creditors,gpt52,jackie,0,0,0,,
+Bankruptcy,Creditors,gpt52,qs,0,0,0,,
+Bankruptcy,Creditors,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Bankruptcy,Creditors,gemini31_pro,jackie,1,0,0,0.0,0.0
+Bankruptcy,Creditors,gemini31_pro,qs,1,0,0,0.0,0.0
+Bankruptcy,Creditors,deepseek_v4,jackie,1,0,0,0.0,0.0
+Bankruptcy,Creditors,deepseek_v4,qs,1,0,0,0.0,0.0
+Bankruptcy,Creditors,jackie,qs,0,0,0,,
+Bankruptcy,Document Review,gpt52,gemini31_pro,0,0,0,,
+Bankruptcy,Document Review,gpt52,deepseek_v4,0,0,0,,
+Bankruptcy,Document Review,gpt52,jackie,0,0,0,,
+Bankruptcy,Document Review,gpt52,qs,0,0,0,,
+Bankruptcy,Document Review,gemini31_pro,deepseek_v4,0,0,0,,
+Bankruptcy,Document Review,gemini31_pro,jackie,0,0,0,,
+Bankruptcy,Document Review,gemini31_pro,qs,0,0,0,,
+Bankruptcy,Document Review,deepseek_v4,jackie,0,0,0,,
+Bankruptcy,Document Review,deepseek_v4,qs,0,0,0,,
+Bankruptcy,Document Review,jackie,qs,0,0,0,,
+Bankruptcy,Farms,gpt52,gemini31_pro,0,0,0,,
+Bankruptcy,Farms,gpt52,deepseek_v4,0,0,0,,
+Bankruptcy,Farms,gpt52,jackie,0,0,0,,
+Bankruptcy,Farms,gpt52,qs,0,0,0,,
+Bankruptcy,Farms,gemini31_pro,deepseek_v4,0,0,0,,
+Bankruptcy,Farms,gemini31_pro,jackie,0,0,0,,
+Bankruptcy,Farms,gemini31_pro,qs,0,0,0,,
+Bankruptcy,Farms,deepseek_v4,jackie,0,0,0,,
+Bankruptcy,Farms,deepseek_v4,qs,0,0,0,,
+Bankruptcy,Farms,jackie,qs,0,0,0,,
+Bankruptcy,Personal,gpt52,gemini31_pro,2,2,2,1.0,1.0
+Bankruptcy,Personal,gpt52,deepseek_v4,2,2,2,1.0,1.0
+Bankruptcy,Personal,gpt52,jackie,2,3,2,0.6666666666666666,0.8
+Bankruptcy,Personal,gpt52,qs,2,3,2,0.6666666666666666,0.8
+Bankruptcy,Personal,gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+Bankruptcy,Personal,gemini31_pro,jackie,2,3,2,0.6666666666666666,0.8
+Bankruptcy,Personal,gemini31_pro,qs,2,3,2,0.6666666666666666,0.8
+Bankruptcy,Personal,deepseek_v4,jackie,2,3,2,0.6666666666666666,0.8
+Bankruptcy,Personal,deepseek_v4,qs,2,3,2,0.6666666666666666,0.8
+Bankruptcy,Personal,jackie,qs,3,3,3,1.0,1.0
+Bankruptcy,Pro Se Coaching,gpt52,gemini31_pro,0,0,0,,
+Bankruptcy,Pro Se Coaching,gpt52,deepseek_v4,0,0,0,,
+Bankruptcy,Pro Se Coaching,gpt52,jackie,0,1,0,0.0,0.0
+Bankruptcy,Pro Se Coaching,gpt52,qs,0,0,0,,
+Bankruptcy,Pro Se Coaching,gemini31_pro,deepseek_v4,0,0,0,,
+Bankruptcy,Pro Se Coaching,gemini31_pro,jackie,0,1,0,0.0,0.0
+Bankruptcy,Pro Se Coaching,gemini31_pro,qs,0,0,0,,
+Bankruptcy,Pro Se Coaching,deepseek_v4,jackie,0,1,0,0.0,0.0
+Bankruptcy,Pro Se Coaching,deepseek_v4,qs,0,0,0,,
+Bankruptcy,Pro Se Coaching,jackie,qs,1,0,0,0.0,0.0
+Bankruptcy,Other,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Bankruptcy,Other,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Bankruptcy,Other,gpt52,jackie,1,0,0,0.0,0.0
+Bankruptcy,Other,gpt52,qs,1,1,1,1.0,1.0
+Bankruptcy,Other,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Bankruptcy,Other,gemini31_pro,jackie,1,0,0,0.0,0.0
+Bankruptcy,Other,gemini31_pro,qs,1,1,1,1.0,1.0
+Bankruptcy,Other,deepseek_v4,jackie,0,0,0,,
+Bankruptcy,Other,deepseek_v4,qs,0,1,0,0.0,0.0
+Bankruptcy,Other,jackie,qs,0,1,0,0.0,0.0
+Business & Corporate,Agriculture/Farm,gpt52,gemini31_pro,0,1,0,0.0,0.0
+Business & Corporate,Agriculture/Farm,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Business & Corporate,Agriculture/Farm,gpt52,jackie,0,0,0,,
+Business & Corporate,Agriculture/Farm,gpt52,qs,0,1,0,0.0,0.0
+Business & Corporate,Agriculture/Farm,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Business & Corporate,Agriculture/Farm,gemini31_pro,jackie,1,0,0,0.0,0.0
+Business & Corporate,Agriculture/Farm,gemini31_pro,qs,1,1,1,1.0,1.0
+Business & Corporate,Agriculture/Farm,deepseek_v4,jackie,1,0,0,0.0,0.0
+Business & Corporate,Agriculture/Farm,deepseek_v4,qs,1,1,1,1.0,1.0
+Business & Corporate,Agriculture/Farm,jackie,qs,0,1,0,0.0,0.0
+Business & Corporate,Construction,gpt52,gemini31_pro,0,0,0,,
+Business & Corporate,Construction,gpt52,deepseek_v4,0,0,0,,
+Business & Corporate,Construction,gpt52,jackie,0,0,0,,
+Business & Corporate,Construction,gpt52,qs,0,0,0,,
+Business & Corporate,Construction,gemini31_pro,deepseek_v4,0,0,0,,
+Business & Corporate,Construction,gemini31_pro,jackie,0,0,0,,
+Business & Corporate,Construction,gemini31_pro,qs,0,0,0,,
+Business & Corporate,Construction,deepseek_v4,jackie,0,0,0,,
+Business & Corporate,Construction,deepseek_v4,qs,0,0,0,,
+Business & Corporate,Construction,jackie,qs,0,0,0,,
+Business & Corporate,Entertainment,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Business & Corporate,Entertainment,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Business & Corporate,Entertainment,gpt52,jackie,1,0,0,0.0,0.0
+Business & Corporate,Entertainment,gpt52,qs,1,0,0,0.0,0.0
+Business & Corporate,Entertainment,gemini31_pro,deepseek_v4,0,0,0,,
+Business & Corporate,Entertainment,gemini31_pro,jackie,0,0,0,,
+Business & Corporate,Entertainment,gemini31_pro,qs,0,0,0,,
+Business & Corporate,Entertainment,deepseek_v4,jackie,0,0,0,,
+Business & Corporate,Entertainment,deepseek_v4,qs,0,0,0,,
+Business & Corporate,Entertainment,jackie,qs,0,0,0,,
+Business & Corporate,Environment,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Business & Corporate,Environment,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Business & Corporate,Environment,gpt52,jackie,1,0,0,0.0,0.0
+Business & Corporate,Environment,gpt52,qs,1,1,1,1.0,1.0
+Business & Corporate,Environment,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Business & Corporate,Environment,gemini31_pro,jackie,1,0,0,0.0,0.0
+Business & Corporate,Environment,gemini31_pro,qs,1,1,1,1.0,1.0
+Business & Corporate,Environment,deepseek_v4,jackie,1,0,0,0.0,0.0
+Business & Corporate,Environment,deepseek_v4,qs,1,1,1,1.0,1.0
+Business & Corporate,Environment,jackie,qs,0,1,0,0.0,0.0
+Business & Corporate,Franchise,gpt52,gemini31_pro,0,0,0,,
+Business & Corporate,Franchise,gpt52,deepseek_v4,0,0,0,,
+Business & Corporate,Franchise,gpt52,jackie,0,0,0,,
+Business & Corporate,Franchise,gpt52,qs,0,0,0,,
+Business & Corporate,Franchise,gemini31_pro,deepseek_v4,0,0,0,,
+Business & Corporate,Franchise,gemini31_pro,jackie,0,0,0,,
+Business & Corporate,Franchise,gemini31_pro,qs,0,0,0,,
+Business & Corporate,Franchise,deepseek_v4,jackie,0,0,0,,
+Business & Corporate,Franchise,deepseek_v4,qs,0,0,0,,
+Business & Corporate,Franchise,jackie,qs,0,0,0,,
+Business & Corporate,"General (Contracts, Business, Organization)",gpt52,gemini31_pro,5,8,5,0.625,0.7692307692307693
+Business & Corporate,"General (Contracts, Business, Organization)",gpt52,deepseek_v4,5,4,2,0.2857142857142857,0.4444444444444444
+Business & Corporate,"General (Contracts, Business, Organization)",gpt52,jackie,5,5,3,0.42857142857142855,0.6
+Business & Corporate,"General (Contracts, Business, Organization)",gpt52,qs,5,6,4,0.5714285714285714,0.7272727272727273
+Business & Corporate,"General (Contracts, Business, Organization)",gemini31_pro,deepseek_v4,8,4,4,0.5,0.6666666666666666
+Business & Corporate,"General (Contracts, Business, Organization)",gemini31_pro,jackie,8,5,4,0.4444444444444444,0.6153846153846154
+Business & Corporate,"General (Contracts, Business, Organization)",gemini31_pro,qs,8,6,6,0.75,0.8571428571428571
+Business & Corporate,"General (Contracts, Business, Organization)",deepseek_v4,jackie,4,5,1,0.125,0.2222222222222222
+Business & Corporate,"General (Contracts, Business, Organization)",deepseek_v4,qs,4,6,2,0.25,0.4
+Business & Corporate,"General (Contracts, Business, Organization)",jackie,qs,5,6,4,0.5714285714285714,0.7272727272727273
+Business & Corporate,Litigation,gpt52,gemini31_pro,3,3,2,0.5,0.6666666666666666
+Business & Corporate,Litigation,gpt52,deepseek_v4,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Litigation,gpt52,jackie,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Litigation,gpt52,qs,3,2,1,0.25,0.4
+Business & Corporate,Litigation,gemini31_pro,deepseek_v4,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Litigation,gemini31_pro,jackie,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Litigation,gemini31_pro,qs,3,2,2,0.6666666666666666,0.8
+Business & Corporate,Litigation,deepseek_v4,jackie,1,1,1,1.0,1.0
+Business & Corporate,Litigation,deepseek_v4,qs,1,2,1,0.5,0.6666666666666666
+Business & Corporate,Litigation,jackie,qs,1,2,1,0.5,0.6666666666666666
+Business & Corporate,Marijuana Business,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,gpt52,jackie,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,gpt52,qs,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,gemini31_pro,jackie,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,gemini31_pro,qs,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,deepseek_v4,jackie,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,deepseek_v4,qs,1,1,1,1.0,1.0
+Business & Corporate,Marijuana Business,jackie,qs,1,1,1,1.0,1.0
+Business & Corporate,Non-Profit,gpt52,gemini31_pro,1,3,1,0.3333333333333333,0.5
+Business & Corporate,Non-Profit,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Business & Corporate,Non-Profit,gpt52,jackie,1,1,1,1.0,1.0
+Business & Corporate,Non-Profit,gpt52,qs,1,1,1,1.0,1.0
+Business & Corporate,Non-Profit,gemini31_pro,deepseek_v4,3,0,0,0.0,0.0
+Business & Corporate,Non-Profit,gemini31_pro,jackie,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Non-Profit,gemini31_pro,qs,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Non-Profit,deepseek_v4,jackie,0,1,0,0.0,0.0
+Business & Corporate,Non-Profit,deepseek_v4,qs,0,1,0,0.0,0.0
+Business & Corporate,Non-Profit,jackie,qs,1,1,1,1.0,1.0
+Business & Corporate,Publishing,gpt52,gemini31_pro,0,0,0,,
+Business & Corporate,Publishing,gpt52,deepseek_v4,0,0,0,,
+Business & Corporate,Publishing,gpt52,jackie,0,0,0,,
+Business & Corporate,Publishing,gpt52,qs,0,0,0,,
+Business & Corporate,Publishing,gemini31_pro,deepseek_v4,0,0,0,,
+Business & Corporate,Publishing,gemini31_pro,jackie,0,0,0,,
+Business & Corporate,Publishing,gemini31_pro,qs,0,0,0,,
+Business & Corporate,Publishing,deepseek_v4,jackie,0,0,0,,
+Business & Corporate,Publishing,deepseek_v4,qs,0,0,0,,
+Business & Corporate,Publishing,jackie,qs,0,0,0,,
+Business & Corporate,Restaurant/OLCC,gpt52,gemini31_pro,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Restaurant/OLCC,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Restaurant/OLCC,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Restaurant/OLCC,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Restaurant/OLCC,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Business & Corporate,Restaurant/OLCC,gemini31_pro,jackie,1,1,1,1.0,1.0
+Business & Corporate,Restaurant/OLCC,gemini31_pro,qs,1,1,1,1.0,1.0
+Business & Corporate,Restaurant/OLCC,deepseek_v4,jackie,1,1,1,1.0,1.0
+Business & Corporate,Restaurant/OLCC,deepseek_v4,qs,1,1,1,1.0,1.0
+Business & Corporate,Restaurant/OLCC,jackie,qs,1,1,1,1.0,1.0
+Business & Corporate,Sale of Business,gpt52,gemini31_pro,3,0,0,0.0,0.0
+Business & Corporate,Sale of Business,gpt52,deepseek_v4,3,0,0,0.0,0.0
+Business & Corporate,Sale of Business,gpt52,jackie,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Sale of Business,gpt52,qs,3,1,1,0.3333333333333333,0.5
+Business & Corporate,Sale of Business,gemini31_pro,deepseek_v4,0,0,0,,
+Business & Corporate,Sale of Business,gemini31_pro,jackie,0,1,0,0.0,0.0
+Business & Corporate,Sale of Business,gemini31_pro,qs,0,1,0,0.0,0.0
+Business & Corporate,Sale of Business,deepseek_v4,jackie,0,1,0,0.0,0.0
+Business & Corporate,Sale of Business,deepseek_v4,qs,0,1,0,0.0,0.0
+Business & Corporate,Sale of Business,jackie,qs,1,1,1,1.0,1.0
+Business & Corporate,Securities,gpt52,gemini31_pro,2,0,0,0.0,0.0
+Business & Corporate,Securities,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Securities,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Securities,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Business & Corporate,Securities,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Business & Corporate,Securities,gemini31_pro,jackie,0,1,0,0.0,0.0
+Business & Corporate,Securities,gemini31_pro,qs,0,1,0,0.0,0.0
+Business & Corporate,Securities,deepseek_v4,jackie,1,1,0,0.0,0.0
+Business & Corporate,Securities,deepseek_v4,qs,1,1,0,0.0,0.0
+Business & Corporate,Securities,jackie,qs,1,1,1,1.0,1.0
+Business & Corporate,Other,gpt52,gemini31_pro,0,0,0,,
+Business & Corporate,Other,gpt52,deepseek_v4,0,0,0,,
+Business & Corporate,Other,gpt52,jackie,0,0,0,,
+Business & Corporate,Other,gpt52,qs,0,1,0,0.0,0.0
+Business & Corporate,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Business & Corporate,Other,gemini31_pro,jackie,0,0,0,,
+Business & Corporate,Other,gemini31_pro,qs,0,1,0,0.0,0.0
+Business & Corporate,Other,deepseek_v4,jackie,0,0,0,,
+Business & Corporate,Other,deepseek_v4,qs,0,1,0,0.0,0.0
+Business & Corporate,Other,jackie,qs,0,1,0,0.0,0.0
+Consumer Law,Automobiles/RVs/Mobile Homes,gpt52,gemini31_pro,2,3,2,0.6666666666666666,0.8
+Consumer Law,Automobiles/RVs/Mobile Homes,gpt52,deepseek_v4,2,2,2,1.0,1.0
+Consumer Law,Automobiles/RVs/Mobile Homes,gpt52,jackie,2,3,2,0.6666666666666666,0.8
+Consumer Law,Automobiles/RVs/Mobile Homes,gpt52,qs,2,3,2,0.6666666666666666,0.8
+Consumer Law,Automobiles/RVs/Mobile Homes,gemini31_pro,deepseek_v4,3,2,2,0.6666666666666666,0.8
+Consumer Law,Automobiles/RVs/Mobile Homes,gemini31_pro,jackie,3,3,3,1.0,1.0
+Consumer Law,Automobiles/RVs/Mobile Homes,gemini31_pro,qs,3,3,3,1.0,1.0
+Consumer Law,Automobiles/RVs/Mobile Homes,deepseek_v4,jackie,2,3,2,0.6666666666666666,0.8
+Consumer Law,Automobiles/RVs/Mobile Homes,deepseek_v4,qs,2,3,2,0.6666666666666666,0.8
+Consumer Law,Automobiles/RVs/Mobile Homes,jackie,qs,3,3,3,1.0,1.0
+Consumer Law,Banking,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Consumer Law,Banking,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Consumer Law,Banking,gpt52,jackie,1,1,1,1.0,1.0
+Consumer Law,Banking,gpt52,qs,1,0,0,0.0,0.0
+Consumer Law,Banking,gemini31_pro,deepseek_v4,0,0,0,,
+Consumer Law,Banking,gemini31_pro,jackie,0,1,0,0.0,0.0
+Consumer Law,Banking,gemini31_pro,qs,0,0,0,,
+Consumer Law,Banking,deepseek_v4,jackie,0,1,0,0.0,0.0
+Consumer Law,Banking,deepseek_v4,qs,0,0,0,,
+Consumer Law,Banking,jackie,qs,1,0,0,0.0,0.0
+Consumer Law,General,gpt52,gemini31_pro,4,4,4,1.0,1.0
+Consumer Law,General,gpt52,deepseek_v4,4,5,4,0.8,0.8888888888888888
+Consumer Law,General,gpt52,jackie,4,3,3,0.75,0.8571428571428571
+Consumer Law,General,gpt52,qs,4,4,4,1.0,1.0
+Consumer Law,General,gemini31_pro,deepseek_v4,4,5,4,0.8,0.8888888888888888
+Consumer Law,General,gemini31_pro,jackie,4,3,3,0.75,0.8571428571428571
+Consumer Law,General,gemini31_pro,qs,4,4,4,1.0,1.0
+Consumer Law,General,deepseek_v4,jackie,5,3,3,0.6,0.75
+Consumer Law,General,deepseek_v4,qs,5,4,4,0.8,0.8888888888888888
+Consumer Law,General,jackie,qs,3,4,3,0.75,0.8571428571428571
+Consumer Law,Identity Theft,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Consumer Law,Identity Theft,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Consumer Law,Identity Theft,gpt52,jackie,1,1,1,1.0,1.0
+Consumer Law,Identity Theft,gpt52,qs,1,1,1,1.0,1.0
+Consumer Law,Identity Theft,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Consumer Law,Identity Theft,gemini31_pro,jackie,1,1,1,1.0,1.0
+Consumer Law,Identity Theft,gemini31_pro,qs,1,1,1,1.0,1.0
+Consumer Law,Identity Theft,deepseek_v4,jackie,0,1,0,0.0,0.0
+Consumer Law,Identity Theft,deepseek_v4,qs,0,1,0,0.0,0.0
+Consumer Law,Identity Theft,jackie,qs,1,1,1,1.0,1.0
+Consumer Law,Insurance,gpt52,gemini31_pro,0,0,0,,
+Consumer Law,Insurance,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Consumer Law,Insurance,gpt52,jackie,0,0,0,,
+Consumer Law,Insurance,gpt52,qs,0,1,0,0.0,0.0
+Consumer Law,Insurance,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Consumer Law,Insurance,gemini31_pro,jackie,0,0,0,,
+Consumer Law,Insurance,gemini31_pro,qs,0,1,0,0.0,0.0
+Consumer Law,Insurance,deepseek_v4,jackie,1,0,0,0.0,0.0
+Consumer Law,Insurance,deepseek_v4,qs,1,1,1,1.0,1.0
+Consumer Law,Insurance,jackie,qs,0,1,0,0.0,0.0
+Consumer Law,Mortgage Issues (non-foreclosure),gpt52,gemini31_pro,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),gpt52,deepseek_v4,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),gpt52,jackie,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),gpt52,qs,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),gemini31_pro,deepseek_v4,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),gemini31_pro,jackie,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),gemini31_pro,qs,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),deepseek_v4,jackie,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),deepseek_v4,qs,0,0,0,,
+Consumer Law,Mortgage Issues (non-foreclosure),jackie,qs,0,0,0,,
+Consumer Law,Problems Between Consumers,gpt52,gemini31_pro,2,2,2,1.0,1.0
+Consumer Law,Problems Between Consumers,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Consumer Law,Problems Between Consumers,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+Consumer Law,Problems Between Consumers,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Consumer Law,Problems Between Consumers,gemini31_pro,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Consumer Law,Problems Between Consumers,gemini31_pro,jackie,2,1,1,0.5,0.6666666666666666
+Consumer Law,Problems Between Consumers,gemini31_pro,qs,2,1,1,0.5,0.6666666666666666
+Consumer Law,Problems Between Consumers,deepseek_v4,jackie,1,1,1,1.0,1.0
+Consumer Law,Problems Between Consumers,deepseek_v4,qs,1,1,1,1.0,1.0
+Consumer Law,Problems Between Consumers,jackie,qs,1,1,1,1.0,1.0
+Consumer Law,Small Claims Advice,gpt52,gemini31_pro,4,4,4,1.0,1.0
+Consumer Law,Small Claims Advice,gpt52,deepseek_v4,4,3,3,0.75,0.8571428571428571
+Consumer Law,Small Claims Advice,gpt52,jackie,4,4,4,1.0,1.0
+Consumer Law,Small Claims Advice,gpt52,qs,4,2,2,0.5,0.6666666666666666
+Consumer Law,Small Claims Advice,gemini31_pro,deepseek_v4,4,3,3,0.75,0.8571428571428571
+Consumer Law,Small Claims Advice,gemini31_pro,jackie,4,4,4,1.0,1.0
+Consumer Law,Small Claims Advice,gemini31_pro,qs,4,2,2,0.5,0.6666666666666666
+Consumer Law,Small Claims Advice,deepseek_v4,jackie,3,4,3,0.75,0.8571428571428571
+Consumer Law,Small Claims Advice,deepseek_v4,qs,3,2,1,0.25,0.4
+Consumer Law,Small Claims Advice,jackie,qs,4,2,2,0.5,0.6666666666666666
+Consumer Law,Storage Units,gpt52,gemini31_pro,0,0,0,,
+Consumer Law,Storage Units,gpt52,deepseek_v4,0,0,0,,
+Consumer Law,Storage Units,gpt52,jackie,0,0,0,,
+Consumer Law,Storage Units,gpt52,qs,0,0,0,,
+Consumer Law,Storage Units,gemini31_pro,deepseek_v4,0,0,0,,
+Consumer Law,Storage Units,gemini31_pro,jackie,0,0,0,,
+Consumer Law,Storage Units,gemini31_pro,qs,0,0,0,,
+Consumer Law,Storage Units,deepseek_v4,jackie,0,0,0,,
+Consumer Law,Storage Units,deepseek_v4,qs,0,0,0,,
+Consumer Law,Storage Units,jackie,qs,0,0,0,,
+Consumer Law,Vehicle Towing,gpt52,gemini31_pro,0,0,0,,
+Consumer Law,Vehicle Towing,gpt52,deepseek_v4,0,0,0,,
+Consumer Law,Vehicle Towing,gpt52,jackie,0,0,0,,
+Consumer Law,Vehicle Towing,gpt52,qs,0,0,0,,
+Consumer Law,Vehicle Towing,gemini31_pro,deepseek_v4,0,0,0,,
+Consumer Law,Vehicle Towing,gemini31_pro,jackie,0,0,0,,
+Consumer Law,Vehicle Towing,gemini31_pro,qs,0,0,0,,
+Consumer Law,Vehicle Towing,deepseek_v4,jackie,0,0,0,,
+Consumer Law,Vehicle Towing,deepseek_v4,qs,0,0,0,,
+Consumer Law,Vehicle Towing,jackie,qs,0,0,0,,
+Consumer Law,Other,gpt52,gemini31_pro,0,0,0,,
+Consumer Law,Other,gpt52,deepseek_v4,0,0,0,,
+Consumer Law,Other,gpt52,jackie,0,0,0,,
+Consumer Law,Other,gpt52,qs,0,0,0,,
+Consumer Law,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Consumer Law,Other,gemini31_pro,jackie,0,0,0,,
+Consumer Law,Other,gemini31_pro,qs,0,0,0,,
+Consumer Law,Other,deepseek_v4,jackie,0,0,0,,
+Consumer Law,Other,deepseek_v4,qs,0,0,0,,
+Consumer Law,Other,jackie,qs,0,0,0,,
+Criminal Law,Capital Murder,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,Capital Murder,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Capital Murder,gpt52,jackie,0,0,0,,
+Criminal Law,Capital Murder,gpt52,qs,0,0,0,,
+Criminal Law,Capital Murder,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,Capital Murder,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Capital Murder,gemini31_pro,qs,0,0,0,,
+Criminal Law,Capital Murder,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Capital Murder,deepseek_v4,qs,0,0,0,,
+Criminal Law,Capital Murder,jackie,qs,0,0,0,,
+Criminal Law,Clemency,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,Clemency,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Clemency,gpt52,jackie,0,0,0,,
+Criminal Law,Clemency,gpt52,qs,0,0,0,,
+Criminal Law,Clemency,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,Clemency,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Clemency,gemini31_pro,qs,0,0,0,,
+Criminal Law,Clemency,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Clemency,deepseek_v4,qs,0,0,0,,
+Criminal Law,Clemency,jackie,qs,0,0,0,,
+Criminal Law,DMV(DUI Relate),gpt52,gemini31_pro,1,0,0,0.0,0.0
+Criminal Law,DMV(DUI Relate),gpt52,deepseek_v4,1,0,0,0.0,0.0
+Criminal Law,DMV(DUI Relate),gpt52,jackie,1,0,0,0.0,0.0
+Criminal Law,DMV(DUI Relate),gpt52,qs,1,0,0,0.0,0.0
+Criminal Law,DMV(DUI Relate),gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,DMV(DUI Relate),gemini31_pro,jackie,0,0,0,,
+Criminal Law,DMV(DUI Relate),gemini31_pro,qs,0,0,0,,
+Criminal Law,DMV(DUI Relate),deepseek_v4,jackie,0,0,0,,
+Criminal Law,DMV(DUI Relate),deepseek_v4,qs,0,0,0,,
+Criminal Law,DMV(DUI Relate),jackie,qs,0,0,0,,
+Criminal Law,DUII/DWS,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,DUII/DWS,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,DUII/DWS,gpt52,jackie,0,0,0,,
+Criminal Law,DUII/DWS,gpt52,qs,0,0,0,,
+Criminal Law,DUII/DWS,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,DUII/DWS,gemini31_pro,jackie,0,0,0,,
+Criminal Law,DUII/DWS,gemini31_pro,qs,0,0,0,,
+Criminal Law,DUII/DWS,deepseek_v4,jackie,0,0,0,,
+Criminal Law,DUII/DWS,deepseek_v4,qs,0,0,0,,
+Criminal Law,DUII/DWS,jackie,qs,0,0,0,,
+Criminal Law,Expunction,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Criminal Law,Expunction,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Expunction,gpt52,jackie,1,1,1,1.0,1.0
+Criminal Law,Expunction,gpt52,qs,1,1,1,1.0,1.0
+Criminal Law,Expunction,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Expunction,gemini31_pro,jackie,1,1,1,1.0,1.0
+Criminal Law,Expunction,gemini31_pro,qs,1,1,1,1.0,1.0
+Criminal Law,Expunction,deepseek_v4,jackie,1,1,1,1.0,1.0
+Criminal Law,Expunction,deepseek_v4,qs,1,1,1,1.0,1.0
+Criminal Law,Expunction,jackie,qs,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gpt52,jackie,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gpt52,qs,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gemini31_pro,jackie,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,gemini31_pro,qs,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,deepseek_v4,jackie,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,deepseek_v4,qs,1,1,1,1.0,1.0
+Criminal Law,Forfeiture,jackie,qs,1,1,1,1.0,1.0
+Criminal Law,Game Violations,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,Game Violations,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Game Violations,gpt52,jackie,0,0,0,,
+Criminal Law,Game Violations,gpt52,qs,0,0,0,,
+Criminal Law,Game Violations,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,Game Violations,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Game Violations,gemini31_pro,qs,0,0,0,,
+Criminal Law,Game Violations,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Game Violations,deepseek_v4,qs,0,0,0,,
+Criminal Law,Game Violations,jackie,qs,0,0,0,,
+Criminal Law,Gun Rights,gpt52,gemini31_pro,0,1,0,0.0,0.0
+Criminal Law,Gun Rights,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Criminal Law,Gun Rights,gpt52,jackie,0,0,0,,
+Criminal Law,Gun Rights,gpt52,qs,0,0,0,,
+Criminal Law,Gun Rights,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Gun Rights,gemini31_pro,jackie,1,0,0,0.0,0.0
+Criminal Law,Gun Rights,gemini31_pro,qs,1,0,0,0.0,0.0
+Criminal Law,Gun Rights,deepseek_v4,jackie,1,0,0,0.0,0.0
+Criminal Law,Gun Rights,deepseek_v4,qs,1,0,0,0.0,0.0
+Criminal Law,Gun Rights,jackie,qs,0,0,0,,
+Criminal Law,Juvenile Offender,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,Juvenile Offender,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Juvenile Offender,gpt52,jackie,0,0,0,,
+Criminal Law,Juvenile Offender,gpt52,qs,0,0,0,,
+Criminal Law,Juvenile Offender,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,Juvenile Offender,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Juvenile Offender,gemini31_pro,qs,0,0,0,,
+Criminal Law,Juvenile Offender,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Juvenile Offender,deepseek_v4,qs,0,0,0,,
+Criminal Law,Juvenile Offender,jackie,qs,0,0,0,,
+Criminal Law,Lessor Felony,gpt52,gemini31_pro,1,1,0,0.0,0.0
+Criminal Law,Lessor Felony,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Lessor Felony,gpt52,jackie,1,3,1,0.3333333333333333,0.5
+Criminal Law,Lessor Felony,gpt52,qs,1,2,0,0.0,0.0
+Criminal Law,Lessor Felony,gemini31_pro,deepseek_v4,1,1,0,0.0,0.0
+Criminal Law,Lessor Felony,gemini31_pro,jackie,1,3,1,0.3333333333333333,0.5
+Criminal Law,Lessor Felony,gemini31_pro,qs,1,2,1,0.5,0.6666666666666666
+Criminal Law,Lessor Felony,deepseek_v4,jackie,1,3,1,0.3333333333333333,0.5
+Criminal Law,Lessor Felony,deepseek_v4,qs,1,2,0,0.0,0.0
+Criminal Law,Lessor Felony,jackie,qs,3,2,2,0.6666666666666666,0.8
+Criminal Law,Local Ordinances,gpt52,gemini31_pro,0,1,0,0.0,0.0
+Criminal Law,Local Ordinances,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Local Ordinances,gpt52,jackie,0,1,0,0.0,0.0
+Criminal Law,Local Ordinances,gpt52,qs,0,1,0,0.0,0.0
+Criminal Law,Local Ordinances,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Criminal Law,Local Ordinances,gemini31_pro,jackie,1,1,1,1.0,1.0
+Criminal Law,Local Ordinances,gemini31_pro,qs,1,1,1,1.0,1.0
+Criminal Law,Local Ordinances,deepseek_v4,jackie,0,1,0,0.0,0.0
+Criminal Law,Local Ordinances,deepseek_v4,qs,0,1,0,0.0,0.0
+Criminal Law,Local Ordinances,jackie,qs,1,1,1,1.0,1.0
+Criminal Law,Major Felony,gpt52,gemini31_pro,5,4,4,0.8,0.8888888888888888
+Criminal Law,Major Felony,gpt52,deepseek_v4,5,3,3,0.6,0.75
+Criminal Law,Major Felony,gpt52,jackie,5,1,1,0.2,0.3333333333333333
+Criminal Law,Major Felony,gpt52,qs,5,2,2,0.4,0.5714285714285714
+Criminal Law,Major Felony,gemini31_pro,deepseek_v4,4,3,3,0.75,0.8571428571428571
+Criminal Law,Major Felony,gemini31_pro,jackie,4,1,1,0.25,0.4
+Criminal Law,Major Felony,gemini31_pro,qs,4,2,2,0.5,0.6666666666666666
+Criminal Law,Major Felony,deepseek_v4,jackie,3,1,1,0.3333333333333333,0.5
+Criminal Law,Major Felony,deepseek_v4,qs,3,2,1,0.25,0.4
+Criminal Law,Major Felony,jackie,qs,1,2,1,0.5,0.6666666666666666
+Criminal Law,Mental Commitment,gpt52,gemini31_pro,0,1,0,0.0,0.0
+Criminal Law,Mental Commitment,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Mental Commitment,gpt52,jackie,0,0,0,,
+Criminal Law,Mental Commitment,gpt52,qs,0,0,0,,
+Criminal Law,Mental Commitment,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Criminal Law,Mental Commitment,gemini31_pro,jackie,1,0,0,0.0,0.0
+Criminal Law,Mental Commitment,gemini31_pro,qs,1,0,0,0.0,0.0
+Criminal Law,Mental Commitment,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Mental Commitment,deepseek_v4,qs,0,0,0,,
+Criminal Law,Mental Commitment,jackie,qs,0,0,0,,
+Criminal Law,Misdemeanor,gpt52,gemini31_pro,4,3,3,0.75,0.8571428571428571
+Criminal Law,Misdemeanor,gpt52,deepseek_v4,4,4,3,0.6,0.75
+Criminal Law,Misdemeanor,gpt52,jackie,4,2,2,0.5,0.6666666666666666
+Criminal Law,Misdemeanor,gpt52,qs,4,3,3,0.75,0.8571428571428571
+Criminal Law,Misdemeanor,gemini31_pro,deepseek_v4,3,4,3,0.75,0.8571428571428571
+Criminal Law,Misdemeanor,gemini31_pro,jackie,3,2,2,0.6666666666666666,0.8
+Criminal Law,Misdemeanor,gemini31_pro,qs,3,3,3,1.0,1.0
+Criminal Law,Misdemeanor,deepseek_v4,jackie,4,2,2,0.5,0.6666666666666666
+Criminal Law,Misdemeanor,deepseek_v4,qs,4,3,3,0.75,0.8571428571428571
+Criminal Law,Misdemeanor,jackie,qs,2,3,2,0.6666666666666666,0.8
+Criminal Law,Non-Capital Murder,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,Non-Capital Murder,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Non-Capital Murder,gpt52,jackie,0,0,0,,
+Criminal Law,Non-Capital Murder,gpt52,qs,0,0,0,,
+Criminal Law,Non-Capital Murder,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,Non-Capital Murder,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Non-Capital Murder,gemini31_pro,qs,0,0,0,,
+Criminal Law,Non-Capital Murder,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Non-Capital Murder,deepseek_v4,qs,0,0,0,,
+Criminal Law,Non-Capital Murder,jackie,qs,0,0,0,,
+Criminal Law,Parole/Probation,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,gpt52,jackie,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,gpt52,qs,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,gemini31_pro,jackie,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,gemini31_pro,qs,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,deepseek_v4,jackie,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,deepseek_v4,qs,1,1,1,1.0,1.0
+Criminal Law,Parole/Probation,jackie,qs,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gpt52,jackie,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gpt52,qs,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gemini31_pro,jackie,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,gemini31_pro,qs,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,deepseek_v4,jackie,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,deepseek_v4,qs,1,1,1,1.0,1.0
+Criminal Law,Post Conviction/ Appeals,jackie,qs,1,1,1,1.0,1.0
+Criminal Law,Relief From Sex Offender Registration,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Criminal Law,Relief From Sex Offender Registration,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Relief From Sex Offender Registration,gpt52,jackie,1,1,1,1.0,1.0
+Criminal Law,Relief From Sex Offender Registration,gpt52,qs,1,1,1,1.0,1.0
+Criminal Law,Relief From Sex Offender Registration,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Criminal Law,Relief From Sex Offender Registration,gemini31_pro,jackie,0,1,0,0.0,0.0
+Criminal Law,Relief From Sex Offender Registration,gemini31_pro,qs,0,1,0,0.0,0.0
+Criminal Law,Relief From Sex Offender Registration,deepseek_v4,jackie,1,1,1,1.0,1.0
+Criminal Law,Relief From Sex Offender Registration,deepseek_v4,qs,1,1,1,1.0,1.0
+Criminal Law,Relief From Sex Offender Registration,jackie,qs,1,1,1,1.0,1.0
+Criminal Law,Traffic Offenses,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Criminal Law,Traffic Offenses,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Criminal Law,Traffic Offenses,gpt52,jackie,1,0,0,0.0,0.0
+Criminal Law,Traffic Offenses,gpt52,qs,1,0,0,0.0,0.0
+Criminal Law,Traffic Offenses,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Criminal Law,Traffic Offenses,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Traffic Offenses,gemini31_pro,qs,0,0,0,,
+Criminal Law,Traffic Offenses,deepseek_v4,jackie,1,0,0,0.0,0.0
+Criminal Law,Traffic Offenses,deepseek_v4,qs,1,0,0,0.0,0.0
+Criminal Law,Traffic Offenses,jackie,qs,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gpt52,gemini31_pro,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gpt52,deepseek_v4,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gpt52,jackie,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gpt52,qs,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gemini31_pro,jackie,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,gemini31_pro,qs,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,deepseek_v4,jackie,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,deepseek_v4,qs,0,0,0,,
+Criminal Law,Traffic Offenses - CDL drivers.,jackie,qs,0,0,0,,
+Criminal Law,White Collar Crimes,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Criminal Law,White Collar Crimes,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Criminal Law,White Collar Crimes,gpt52,jackie,1,0,0,0.0,0.0
+Criminal Law,White Collar Crimes,gpt52,qs,1,0,0,0.0,0.0
+Criminal Law,White Collar Crimes,gemini31_pro,deepseek_v4,0,0,0,,
+Criminal Law,White Collar Crimes,gemini31_pro,jackie,0,0,0,,
+Criminal Law,White Collar Crimes,gemini31_pro,qs,0,0,0,,
+Criminal Law,White Collar Crimes,deepseek_v4,jackie,0,0,0,,
+Criminal Law,White Collar Crimes,deepseek_v4,qs,0,0,0,,
+Criminal Law,White Collar Crimes,jackie,qs,0,0,0,,
+Criminal Law,Other,gpt52,gemini31_pro,2,3,2,0.6666666666666666,0.8
+Criminal Law,Other,gpt52,deepseek_v4,2,0,0,0.0,0.0
+Criminal Law,Other,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+Criminal Law,Other,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Criminal Law,Other,gemini31_pro,deepseek_v4,3,0,0,0.0,0.0
+Criminal Law,Other,gemini31_pro,jackie,3,1,1,0.3333333333333333,0.5
+Criminal Law,Other,gemini31_pro,qs,3,1,1,0.3333333333333333,0.5
+Criminal Law,Other,deepseek_v4,jackie,0,1,0,0.0,0.0
+Criminal Law,Other,deepseek_v4,qs,0,1,0,0.0,0.0
+Criminal Law,Other,jackie,qs,1,1,1,1.0,1.0
+Debtor/Creditor,Collection/Harassment,gpt52,gemini31_pro,2,2,2,1.0,1.0
+Debtor/Creditor,Collection/Harassment,gpt52,deepseek_v4,2,0,0,0.0,0.0
+Debtor/Creditor,Collection/Harassment,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+Debtor/Creditor,Collection/Harassment,gpt52,qs,2,2,1,0.3333333333333333,0.5
+Debtor/Creditor,Collection/Harassment,gemini31_pro,deepseek_v4,2,0,0,0.0,0.0
+Debtor/Creditor,Collection/Harassment,gemini31_pro,jackie,2,1,1,0.5,0.6666666666666666
+Debtor/Creditor,Collection/Harassment,gemini31_pro,qs,2,2,1,0.3333333333333333,0.5
+Debtor/Creditor,Collection/Harassment,deepseek_v4,jackie,0,1,0,0.0,0.0
+Debtor/Creditor,Collection/Harassment,deepseek_v4,qs,0,2,0,0.0,0.0
+Debtor/Creditor,Collection/Harassment,jackie,qs,1,2,1,0.5,0.6666666666666666
+Debtor/Creditor,Debt Counseling/Workouts,gpt52,gemini31_pro,3,3,3,1.0,1.0
+Debtor/Creditor,Debt Counseling/Workouts,gpt52,deepseek_v4,3,0,0,0.0,0.0
+Debtor/Creditor,Debt Counseling/Workouts,gpt52,jackie,3,0,0,0.0,0.0
+Debtor/Creditor,Debt Counseling/Workouts,gpt52,qs,3,3,3,1.0,1.0
+Debtor/Creditor,Debt Counseling/Workouts,gemini31_pro,deepseek_v4,3,0,0,0.0,0.0
+Debtor/Creditor,Debt Counseling/Workouts,gemini31_pro,jackie,3,0,0,0.0,0.0
+Debtor/Creditor,Debt Counseling/Workouts,gemini31_pro,qs,3,3,3,1.0,1.0
+Debtor/Creditor,Debt Counseling/Workouts,deepseek_v4,jackie,0,0,0,,
+Debtor/Creditor,Debt Counseling/Workouts,deepseek_v4,qs,0,3,0,0.0,0.0
+Debtor/Creditor,Debt Counseling/Workouts,jackie,qs,0,3,0,0.0,0.0
+Debtor/Creditor,General (Creditor),gpt52,gemini31_pro,2,3,2,0.6666666666666666,0.8
+Debtor/Creditor,General (Creditor),gpt52,deepseek_v4,2,0,0,0.0,0.0
+Debtor/Creditor,General (Creditor),gpt52,jackie,2,3,2,0.6666666666666666,0.8
+Debtor/Creditor,General (Creditor),gpt52,qs,2,1,1,0.5,0.6666666666666666
+Debtor/Creditor,General (Creditor),gemini31_pro,deepseek_v4,3,0,0,0.0,0.0
+Debtor/Creditor,General (Creditor),gemini31_pro,jackie,3,3,3,1.0,1.0
+Debtor/Creditor,General (Creditor),gemini31_pro,qs,3,1,1,0.3333333333333333,0.5
+Debtor/Creditor,General (Creditor),deepseek_v4,jackie,0,3,0,0.0,0.0
+Debtor/Creditor,General (Creditor),deepseek_v4,qs,0,1,0,0.0,0.0
+Debtor/Creditor,General (Creditor),jackie,qs,3,1,1,0.3333333333333333,0.5
+Debtor/Creditor,General (Debtor),gpt52,gemini31_pro,5,7,5,0.7142857142857143,0.8333333333333334
+Debtor/Creditor,General (Debtor),gpt52,deepseek_v4,5,6,4,0.5714285714285714,0.7272727272727273
+Debtor/Creditor,General (Debtor),gpt52,jackie,5,7,3,0.3333333333333333,0.5
+Debtor/Creditor,General (Debtor),gpt52,qs,5,7,3,0.3333333333333333,0.5
+Debtor/Creditor,General (Debtor),gemini31_pro,deepseek_v4,7,6,4,0.4444444444444444,0.6153846153846154
+Debtor/Creditor,General (Debtor),gemini31_pro,jackie,7,7,5,0.5555555555555556,0.7142857142857143
+Debtor/Creditor,General (Debtor),gemini31_pro,qs,7,7,5,0.5555555555555556,0.7142857142857143
+Debtor/Creditor,General (Debtor),deepseek_v4,jackie,6,7,5,0.625,0.7692307692307693
+Debtor/Creditor,General (Debtor),deepseek_v4,qs,6,7,5,0.625,0.7692307692307693
+Debtor/Creditor,General (Debtor),jackie,qs,7,7,7,1.0,1.0
+Debtor/Creditor,Judgement Collection,gpt52,gemini31_pro,0,0,0,,
+Debtor/Creditor,Judgement Collection,gpt52,deepseek_v4,0,0,0,,
+Debtor/Creditor,Judgement Collection,gpt52,jackie,0,0,0,,
+Debtor/Creditor,Judgement Collection,gpt52,qs,0,0,0,,
+Debtor/Creditor,Judgement Collection,gemini31_pro,deepseek_v4,0,0,0,,
+Debtor/Creditor,Judgement Collection,gemini31_pro,jackie,0,0,0,,
+Debtor/Creditor,Judgement Collection,gemini31_pro,qs,0,0,0,,
+Debtor/Creditor,Judgement Collection,deepseek_v4,jackie,0,0,0,,
+Debtor/Creditor,Judgement Collection,deepseek_v4,qs,0,0,0,,
+Debtor/Creditor,Judgement Collection,jackie,qs,0,0,0,,
+Debtor/Creditor,Student Loans,gpt52,gemini31_pro,0,0,0,,
+Debtor/Creditor,Student Loans,gpt52,deepseek_v4,0,0,0,,
+Debtor/Creditor,Student Loans,gpt52,jackie,0,0,0,,
+Debtor/Creditor,Student Loans,gpt52,qs,0,0,0,,
+Debtor/Creditor,Student Loans,gemini31_pro,deepseek_v4,0,0,0,,
+Debtor/Creditor,Student Loans,gemini31_pro,jackie,0,0,0,,
+Debtor/Creditor,Student Loans,gemini31_pro,qs,0,0,0,,
+Debtor/Creditor,Student Loans,deepseek_v4,jackie,0,0,0,,
+Debtor/Creditor,Student Loans,deepseek_v4,qs,0,0,0,,
+Debtor/Creditor,Student Loans,jackie,qs,0,0,0,,
+Debtor/Creditor,Other,gpt52,gemini31_pro,0,0,0,,
+Debtor/Creditor,Other,gpt52,deepseek_v4,0,0,0,,
+Debtor/Creditor,Other,gpt52,jackie,0,0,0,,
+Debtor/Creditor,Other,gpt52,qs,0,0,0,,
+Debtor/Creditor,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Debtor/Creditor,Other,gemini31_pro,jackie,0,0,0,,
+Debtor/Creditor,Other,gemini31_pro,qs,0,0,0,,
+Debtor/Creditor,Other,deepseek_v4,jackie,0,0,0,,
+Debtor/Creditor,Other,deepseek_v4,qs,0,0,0,,
+Debtor/Creditor,Other,jackie,qs,0,0,0,,
+Family Law,Adoption/DHS,gpt52,gemini31_pro,0,0,0,,
+Family Law,Adoption/DHS,gpt52,deepseek_v4,0,0,0,,
+Family Law,Adoption/DHS,gpt52,jackie,0,1,0,0.0,0.0
+Family Law,Adoption/DHS,gpt52,qs,0,0,0,,
+Family Law,Adoption/DHS,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Adoption/DHS,gemini31_pro,jackie,0,1,0,0.0,0.0
+Family Law,Adoption/DHS,gemini31_pro,qs,0,0,0,,
+Family Law,Adoption/DHS,deepseek_v4,jackie,0,1,0,0.0,0.0
+Family Law,Adoption/DHS,deepseek_v4,qs,0,0,0,,
+Family Law,Adoption/DHS,jackie,qs,1,0,0,0.0,0.0
+Family Law,Birth Certificate/Name Changes,gpt52,gemini31_pro,0,0,0,,
+Family Law,Birth Certificate/Name Changes,gpt52,deepseek_v4,0,0,0,,
+Family Law,Birth Certificate/Name Changes,gpt52,jackie,0,0,0,,
+Family Law,Birth Certificate/Name Changes,gpt52,qs,0,0,0,,
+Family Law,Birth Certificate/Name Changes,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Birth Certificate/Name Changes,gemini31_pro,jackie,0,0,0,,
+Family Law,Birth Certificate/Name Changes,gemini31_pro,qs,0,0,0,,
+Family Law,Birth Certificate/Name Changes,deepseek_v4,jackie,0,0,0,,
+Family Law,Birth Certificate/Name Changes,deepseek_v4,qs,0,0,0,,
+Family Law,Birth Certificate/Name Changes,jackie,qs,0,0,0,,
+Family Law,Child Custody/Visitation,gpt52,gemini31_pro,10,10,10,1.0,1.0
+Family Law,Child Custody/Visitation,gpt52,deepseek_v4,10,8,8,0.8,0.8888888888888888
+Family Law,Child Custody/Visitation,gpt52,jackie,10,10,10,1.0,1.0
+Family Law,Child Custody/Visitation,gpt52,qs,10,10,10,1.0,1.0
+Family Law,Child Custody/Visitation,gemini31_pro,deepseek_v4,10,8,8,0.8,0.8888888888888888
+Family Law,Child Custody/Visitation,gemini31_pro,jackie,10,10,10,1.0,1.0
+Family Law,Child Custody/Visitation,gemini31_pro,qs,10,10,10,1.0,1.0
+Family Law,Child Custody/Visitation,deepseek_v4,jackie,8,10,8,0.8,0.8888888888888888
+Family Law,Child Custody/Visitation,deepseek_v4,qs,8,10,8,0.8,0.8888888888888888
+Family Law,Child Custody/Visitation,jackie,qs,10,10,10,1.0,1.0
+Family Law,Child Support/Modification,gpt52,gemini31_pro,4,4,4,1.0,1.0
+Family Law,Child Support/Modification,gpt52,deepseek_v4,4,3,3,0.75,0.8571428571428571
+Family Law,Child Support/Modification,gpt52,jackie,4,3,3,0.75,0.8571428571428571
+Family Law,Child Support/Modification,gpt52,qs,4,3,3,0.75,0.8571428571428571
+Family Law,Child Support/Modification,gemini31_pro,deepseek_v4,4,3,3,0.75,0.8571428571428571
+Family Law,Child Support/Modification,gemini31_pro,jackie,4,3,3,0.75,0.8571428571428571
+Family Law,Child Support/Modification,gemini31_pro,qs,4,3,3,0.75,0.8571428571428571
+Family Law,Child Support/Modification,deepseek_v4,jackie,3,3,3,1.0,1.0
+Family Law,Child Support/Modification,deepseek_v4,qs,3,3,3,1.0,1.0
+Family Law,Child Support/Modification,jackie,qs,3,3,3,1.0,1.0
+Family Law,Collaborative Family Law,gpt52,gemini31_pro,0,0,0,,
+Family Law,Collaborative Family Law,gpt52,deepseek_v4,0,0,0,,
+Family Law,Collaborative Family Law,gpt52,jackie,0,0,0,,
+Family Law,Collaborative Family Law,gpt52,qs,0,0,0,,
+Family Law,Collaborative Family Law,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Collaborative Family Law,gemini31_pro,jackie,0,0,0,,
+Family Law,Collaborative Family Law,gemini31_pro,qs,0,0,0,,
+Family Law,Collaborative Family Law,deepseek_v4,jackie,0,0,0,,
+Family Law,Collaborative Family Law,deepseek_v4,qs,0,0,0,,
+Family Law,Collaborative Family Law,jackie,qs,0,0,0,,
+Family Law,Document Review,gpt52,gemini31_pro,0,0,0,,
+Family Law,Document Review,gpt52,deepseek_v4,0,0,0,,
+Family Law,Document Review,gpt52,jackie,0,0,0,,
+Family Law,Document Review,gpt52,qs,0,0,0,,
+Family Law,Document Review,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Document Review,gemini31_pro,jackie,0,0,0,,
+Family Law,Document Review,gemini31_pro,qs,0,0,0,,
+Family Law,Document Review,deepseek_v4,jackie,0,0,0,,
+Family Law,Document Review,deepseek_v4,qs,0,0,0,,
+Family Law,Document Review,jackie,qs,0,0,0,,
+Family Law,Emancipation,gpt52,gemini31_pro,0,0,0,,
+Family Law,Emancipation,gpt52,deepseek_v4,0,0,0,,
+Family Law,Emancipation,gpt52,jackie,0,0,0,,
+Family Law,Emancipation,gpt52,qs,0,0,0,,
+Family Law,Emancipation,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Emancipation,gemini31_pro,jackie,0,0,0,,
+Family Law,Emancipation,gemini31_pro,qs,0,0,0,,
+Family Law,Emancipation,deepseek_v4,jackie,0,0,0,,
+Family Law,Emancipation,deepseek_v4,qs,0,0,0,,
+Family Law,Emancipation,jackie,qs,0,0,0,,
+Family Law,General (Divorce/Separation),gpt52,gemini31_pro,2,2,2,1.0,1.0
+Family Law,General (Divorce/Separation),gpt52,deepseek_v4,2,2,2,1.0,1.0
+Family Law,General (Divorce/Separation),gpt52,jackie,2,4,2,0.5,0.6666666666666666
+Family Law,General (Divorce/Separation),gpt52,qs,2,3,2,0.6666666666666666,0.8
+Family Law,General (Divorce/Separation),gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+Family Law,General (Divorce/Separation),gemini31_pro,jackie,2,4,2,0.5,0.6666666666666666
+Family Law,General (Divorce/Separation),gemini31_pro,qs,2,3,2,0.6666666666666666,0.8
+Family Law,General (Divorce/Separation),deepseek_v4,jackie,2,4,2,0.5,0.6666666666666666
+Family Law,General (Divorce/Separation),deepseek_v4,qs,2,3,2,0.6666666666666666,0.8
+Family Law,General (Divorce/Separation),jackie,qs,4,3,3,0.75,0.8571428571428571
+Family Law,Grandparent Rights,gpt52,gemini31_pro,0,0,0,,
+Family Law,Grandparent Rights,gpt52,deepseek_v4,0,0,0,,
+Family Law,Grandparent Rights,gpt52,jackie,0,0,0,,
+Family Law,Grandparent Rights,gpt52,qs,0,0,0,,
+Family Law,Grandparent Rights,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Grandparent Rights,gemini31_pro,jackie,0,0,0,,
+Family Law,Grandparent Rights,gemini31_pro,qs,0,0,0,,
+Family Law,Grandparent Rights,deepseek_v4,jackie,0,0,0,,
+Family Law,Grandparent Rights,deepseek_v4,qs,0,0,0,,
+Family Law,Grandparent Rights,jackie,qs,0,0,0,,
+Family Law,Guardianship(minor),gpt52,gemini31_pro,0,0,0,,
+Family Law,Guardianship(minor),gpt52,deepseek_v4,0,0,0,,
+Family Law,Guardianship(minor),gpt52,jackie,0,0,0,,
+Family Law,Guardianship(minor),gpt52,qs,0,0,0,,
+Family Law,Guardianship(minor),gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Guardianship(minor),gemini31_pro,jackie,0,0,0,,
+Family Law,Guardianship(minor),gemini31_pro,qs,0,0,0,,
+Family Law,Guardianship(minor),deepseek_v4,jackie,0,0,0,,
+Family Law,Guardianship(minor),deepseek_v4,qs,0,0,0,,
+Family Law,Guardianship(minor),jackie,qs,0,0,0,,
+Family Law,Informal Living Arrangements,gpt52,gemini31_pro,0,0,0,,
+Family Law,Informal Living Arrangements,gpt52,deepseek_v4,0,0,0,,
+Family Law,Informal Living Arrangements,gpt52,jackie,0,0,0,,
+Family Law,Informal Living Arrangements,gpt52,qs,0,0,0,,
+Family Law,Informal Living Arrangements,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Informal Living Arrangements,gemini31_pro,jackie,0,0,0,,
+Family Law,Informal Living Arrangements,gemini31_pro,qs,0,0,0,,
+Family Law,Informal Living Arrangements,deepseek_v4,jackie,0,0,0,,
+Family Law,Informal Living Arrangements,deepseek_v4,qs,0,0,0,,
+Family Law,Informal Living Arrangements,jackie,qs,0,0,0,,
+Family Law,Interstate/Independent Adoption,gpt52,gemini31_pro,0,0,0,,
+Family Law,Interstate/Independent Adoption,gpt52,deepseek_v4,0,0,0,,
+Family Law,Interstate/Independent Adoption,gpt52,jackie,0,0,0,,
+Family Law,Interstate/Independent Adoption,gpt52,qs,0,0,0,,
+Family Law,Interstate/Independent Adoption,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Interstate/Independent Adoption,gemini31_pro,jackie,0,0,0,,
+Family Law,Interstate/Independent Adoption,gemini31_pro,qs,0,0,0,,
+Family Law,Interstate/Independent Adoption,deepseek_v4,jackie,0,0,0,,
+Family Law,Interstate/Independent Adoption,deepseek_v4,qs,0,0,0,,
+Family Law,Interstate/Independent Adoption,jackie,qs,0,0,0,,
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gpt52,jackie,1,0,0,0.0,0.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gpt52,qs,1,0,0,0.0,0.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gemini31_pro,jackie,1,0,0,0.0,0.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,gemini31_pro,qs,1,0,0,0.0,0.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,deepseek_v4,jackie,1,0,0,0.0,0.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,deepseek_v4,qs,1,0,0,0.0,0.0
+Family Law,Juvenile/DHS Issue - SCF (CSD) related,jackie,qs,0,0,0,,
+Family Law,Military,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Family Law,Military,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Family Law,Military,gpt52,jackie,1,1,1,1.0,1.0
+Family Law,Military,gpt52,qs,1,0,0,0.0,0.0
+Family Law,Military,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Family Law,Military,gemini31_pro,jackie,1,1,1,1.0,1.0
+Family Law,Military,gemini31_pro,qs,1,0,0,0.0,0.0
+Family Law,Military,deepseek_v4,jackie,1,1,1,1.0,1.0
+Family Law,Military,deepseek_v4,qs,1,0,0,0.0,0.0
+Family Law,Military,jackie,qs,1,0,0,0.0,0.0
+Family Law,Parental Responsibility,gpt52,gemini31_pro,0,0,0,,
+Family Law,Parental Responsibility,gpt52,deepseek_v4,0,0,0,,
+Family Law,Parental Responsibility,gpt52,jackie,0,0,0,,
+Family Law,Parental Responsibility,gpt52,qs,0,0,0,,
+Family Law,Parental Responsibility,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Parental Responsibility,gemini31_pro,jackie,0,0,0,,
+Family Law,Parental Responsibility,gemini31_pro,qs,0,0,0,,
+Family Law,Parental Responsibility,deepseek_v4,jackie,0,0,0,,
+Family Law,Parental Responsibility,deepseek_v4,qs,0,0,0,,
+Family Law,Parental Responsibility,jackie,qs,0,0,0,,
+Family Law,Paternity,gpt52,gemini31_pro,4,4,4,1.0,1.0
+Family Law,Paternity,gpt52,deepseek_v4,4,4,4,1.0,1.0
+Family Law,Paternity,gpt52,jackie,4,4,4,1.0,1.0
+Family Law,Paternity,gpt52,qs,4,4,4,1.0,1.0
+Family Law,Paternity,gemini31_pro,deepseek_v4,4,4,4,1.0,1.0
+Family Law,Paternity,gemini31_pro,jackie,4,4,4,1.0,1.0
+Family Law,Paternity,gemini31_pro,qs,4,4,4,1.0,1.0
+Family Law,Paternity,deepseek_v4,jackie,4,4,4,1.0,1.0
+Family Law,Paternity,deepseek_v4,qs,4,4,4,1.0,1.0
+Family Law,Paternity,jackie,qs,4,4,4,1.0,1.0
+Family Law,Prenuptial Agreements,gpt52,gemini31_pro,0,0,0,,
+Family Law,Prenuptial Agreements,gpt52,deepseek_v4,0,0,0,,
+Family Law,Prenuptial Agreements,gpt52,jackie,0,0,0,,
+Family Law,Prenuptial Agreements,gpt52,qs,0,0,0,,
+Family Law,Prenuptial Agreements,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Prenuptial Agreements,gemini31_pro,jackie,0,0,0,,
+Family Law,Prenuptial Agreements,gemini31_pro,qs,0,0,0,,
+Family Law,Prenuptial Agreements,deepseek_v4,jackie,0,0,0,,
+Family Law,Prenuptial Agreements,deepseek_v4,qs,0,0,0,,
+Family Law,Prenuptial Agreements,jackie,qs,0,0,0,,
+Family Law,Pro Se Coaching,gpt52,gemini31_pro,0,0,0,,
+Family Law,Pro Se Coaching,gpt52,deepseek_v4,0,0,0,,
+Family Law,Pro Se Coaching,gpt52,jackie,0,0,0,,
+Family Law,Pro Se Coaching,gpt52,qs,0,0,0,,
+Family Law,Pro Se Coaching,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Pro Se Coaching,gemini31_pro,jackie,0,0,0,,
+Family Law,Pro Se Coaching,gemini31_pro,qs,0,0,0,,
+Family Law,Pro Se Coaching,deepseek_v4,jackie,0,0,0,,
+Family Law,Pro Se Coaching,deepseek_v4,qs,0,0,0,,
+Family Law,Pro Se Coaching,jackie,qs,0,0,0,,
+Family Law,QDROs,gpt52,gemini31_pro,0,0,0,,
+Family Law,QDROs,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Family Law,QDROs,gpt52,jackie,0,0,0,,
+Family Law,QDROs,gpt52,qs,0,0,0,,
+Family Law,QDROs,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Family Law,QDROs,gemini31_pro,jackie,0,0,0,,
+Family Law,QDROs,gemini31_pro,qs,0,0,0,,
+Family Law,QDROs,deepseek_v4,jackie,1,0,0,0.0,0.0
+Family Law,QDROs,deepseek_v4,qs,1,0,0,0.0,0.0
+Family Law,QDROs,jackie,qs,0,0,0,,
+Family Law,Restraining Orders,gpt52,gemini31_pro,5,5,4,0.6666666666666666,0.8
+Family Law,Restraining Orders,gpt52,deepseek_v4,5,4,4,0.8,0.8888888888888888
+Family Law,Restraining Orders,gpt52,jackie,5,3,3,0.6,0.75
+Family Law,Restraining Orders,gpt52,qs,5,4,4,0.8,0.8888888888888888
+Family Law,Restraining Orders,gemini31_pro,deepseek_v4,5,4,3,0.5,0.6666666666666666
+Family Law,Restraining Orders,gemini31_pro,jackie,5,3,3,0.6,0.75
+Family Law,Restraining Orders,gemini31_pro,qs,5,4,3,0.5,0.6666666666666666
+Family Law,Restraining Orders,deepseek_v4,jackie,4,3,3,0.75,0.8571428571428571
+Family Law,Restraining Orders,deepseek_v4,qs,4,4,4,1.0,1.0
+Family Law,Restraining Orders,jackie,qs,3,4,3,0.75,0.8571428571428571
+Family Law,Same Sex Couples & Parents,gpt52,gemini31_pro,0,0,0,,
+Family Law,Same Sex Couples & Parents,gpt52,deepseek_v4,0,0,0,,
+Family Law,Same Sex Couples & Parents,gpt52,jackie,0,0,0,,
+Family Law,Same Sex Couples & Parents,gpt52,qs,0,0,0,,
+Family Law,Same Sex Couples & Parents,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Same Sex Couples & Parents,gemini31_pro,jackie,0,0,0,,
+Family Law,Same Sex Couples & Parents,gemini31_pro,qs,0,0,0,,
+Family Law,Same Sex Couples & Parents,deepseek_v4,jackie,0,0,0,,
+Family Law,Same Sex Couples & Parents,deepseek_v4,qs,0,0,0,,
+Family Law,Same Sex Couples & Parents,jackie,qs,0,0,0,,
+Family Law,Spousal Support,gpt52,gemini31_pro,0,0,0,,
+Family Law,Spousal Support,gpt52,deepseek_v4,0,0,0,,
+Family Law,Spousal Support,gpt52,jackie,0,0,0,,
+Family Law,Spousal Support,gpt52,qs,0,0,0,,
+Family Law,Spousal Support,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Spousal Support,gemini31_pro,jackie,0,0,0,,
+Family Law,Spousal Support,gemini31_pro,qs,0,0,0,,
+Family Law,Spousal Support,deepseek_v4,jackie,0,0,0,,
+Family Law,Spousal Support,deepseek_v4,qs,0,0,0,,
+Family Law,Spousal Support,jackie,qs,0,0,0,,
+Family Law,Terminate Parent Rights,gpt52,gemini31_pro,0,0,0,,
+Family Law,Terminate Parent Rights,gpt52,deepseek_v4,0,0,0,,
+Family Law,Terminate Parent Rights,gpt52,jackie,0,0,0,,
+Family Law,Terminate Parent Rights,gpt52,qs,0,0,0,,
+Family Law,Terminate Parent Rights,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Terminate Parent Rights,gemini31_pro,jackie,0,0,0,,
+Family Law,Terminate Parent Rights,gemini31_pro,qs,0,0,0,,
+Family Law,Terminate Parent Rights,deepseek_v4,jackie,0,0,0,,
+Family Law,Terminate Parent Rights,deepseek_v4,qs,0,0,0,,
+Family Law,Terminate Parent Rights,jackie,qs,0,0,0,,
+Family Law,Other,gpt52,gemini31_pro,0,0,0,,
+Family Law,Other,gpt52,deepseek_v4,0,0,0,,
+Family Law,Other,gpt52,jackie,0,0,0,,
+Family Law,Other,gpt52,qs,0,0,0,,
+Family Law,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Family Law,Other,gemini31_pro,jackie,0,0,0,,
+Family Law,Other,gemini31_pro,qs,0,0,0,,
+Family Law,Other,deepseek_v4,jackie,0,0,0,,
+Family Law,Other,deepseek_v4,qs,0,0,0,,
+Family Law,Other,jackie,qs,0,0,0,,
+General Litigation,Actions Against Police,gpt52,gemini31_pro,4,4,4,1.0,1.0
+General Litigation,Actions Against Police,gpt52,deepseek_v4,4,4,4,1.0,1.0
+General Litigation,Actions Against Police,gpt52,jackie,4,2,2,0.5,0.6666666666666666
+General Litigation,Actions Against Police,gpt52,qs,4,4,4,1.0,1.0
+General Litigation,Actions Against Police,gemini31_pro,deepseek_v4,4,4,4,1.0,1.0
+General Litigation,Actions Against Police,gemini31_pro,jackie,4,2,2,0.5,0.6666666666666666
+General Litigation,Actions Against Police,gemini31_pro,qs,4,4,4,1.0,1.0
+General Litigation,Actions Against Police,deepseek_v4,jackie,4,2,2,0.5,0.6666666666666666
+General Litigation,Actions Against Police,deepseek_v4,qs,4,4,4,1.0,1.0
+General Litigation,Actions Against Police,jackie,qs,2,4,2,0.5,0.6666666666666666
+General Litigation,ADA,gpt52,gemini31_pro,0,0,0,,
+General Litigation,ADA,gpt52,deepseek_v4,0,0,0,,
+General Litigation,ADA,gpt52,jackie,0,0,0,,
+General Litigation,ADA,gpt52,qs,0,0,0,,
+General Litigation,ADA,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,ADA,gemini31_pro,jackie,0,0,0,,
+General Litigation,ADA,gemini31_pro,qs,0,0,0,,
+General Litigation,ADA,deepseek_v4,jackie,0,0,0,,
+General Litigation,ADA,deepseek_v4,qs,0,0,0,,
+General Litigation,ADA,jackie,qs,0,0,0,,
+General Litigation,Animal Law,gpt52,gemini31_pro,2,2,2,1.0,1.0
+General Litigation,Animal Law,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+General Litigation,Animal Law,gpt52,jackie,2,0,0,0.0,0.0
+General Litigation,Animal Law,gpt52,qs,2,2,2,1.0,1.0
+General Litigation,Animal Law,gemini31_pro,deepseek_v4,2,1,1,0.5,0.6666666666666666
+General Litigation,Animal Law,gemini31_pro,jackie,2,0,0,0.0,0.0
+General Litigation,Animal Law,gemini31_pro,qs,2,2,2,1.0,1.0
+General Litigation,Animal Law,deepseek_v4,jackie,1,0,0,0.0,0.0
+General Litigation,Animal Law,deepseek_v4,qs,1,2,1,0.5,0.6666666666666666
+General Litigation,Animal Law,jackie,qs,0,2,0,0.0,0.0
+General Litigation,Aviation,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Aviation,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Aviation,gpt52,jackie,0,0,0,,
+General Litigation,Aviation,gpt52,qs,0,0,0,,
+General Litigation,Aviation,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Aviation,gemini31_pro,jackie,0,0,0,,
+General Litigation,Aviation,gemini31_pro,qs,0,0,0,,
+General Litigation,Aviation,deepseek_v4,jackie,0,0,0,,
+General Litigation,Aviation,deepseek_v4,qs,0,0,0,,
+General Litigation,Aviation,jackie,qs,0,0,0,,
+General Litigation,Child Abuse Victims,gpt52,gemini31_pro,1,1,1,1.0,1.0
+General Litigation,Child Abuse Victims,gpt52,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,Child Abuse Victims,gpt52,jackie,1,1,1,1.0,1.0
+General Litigation,Child Abuse Victims,gpt52,qs,1,1,1,1.0,1.0
+General Litigation,Child Abuse Victims,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,Child Abuse Victims,gemini31_pro,jackie,1,1,1,1.0,1.0
+General Litigation,Child Abuse Victims,gemini31_pro,qs,1,1,1,1.0,1.0
+General Litigation,Child Abuse Victims,deepseek_v4,jackie,0,1,0,0.0,0.0
+General Litigation,Child Abuse Victims,deepseek_v4,qs,0,1,0,0.0,0.0
+General Litigation,Child Abuse Victims,jackie,qs,1,1,1,1.0,1.0
+General Litigation,Civil Matter for Inmates,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Civil Matter for Inmates,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Civil Matter for Inmates,gpt52,jackie,0,0,0,,
+General Litigation,Civil Matter for Inmates,gpt52,qs,0,1,0,0.0,0.0
+General Litigation,Civil Matter for Inmates,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Civil Matter for Inmates,gemini31_pro,jackie,0,0,0,,
+General Litigation,Civil Matter for Inmates,gemini31_pro,qs,0,1,0,0.0,0.0
+General Litigation,Civil Matter for Inmates,deepseek_v4,jackie,0,0,0,,
+General Litigation,Civil Matter for Inmates,deepseek_v4,qs,0,1,0,0.0,0.0
+General Litigation,Civil Matter for Inmates,jackie,qs,0,1,0,0.0,0.0
+General Litigation,Civil Rights,gpt52,gemini31_pro,3,3,2,0.5,0.6666666666666666
+General Litigation,Civil Rights,gpt52,deepseek_v4,3,2,2,0.6666666666666666,0.8
+General Litigation,Civil Rights,gpt52,jackie,3,2,2,0.6666666666666666,0.8
+General Litigation,Civil Rights,gpt52,qs,3,4,2,0.4,0.5714285714285714
+General Litigation,Civil Rights,gemini31_pro,deepseek_v4,3,2,1,0.25,0.4
+General Litigation,Civil Rights,gemini31_pro,jackie,3,2,2,0.6666666666666666,0.8
+General Litigation,Civil Rights,gemini31_pro,qs,3,4,1,0.16666666666666666,0.2857142857142857
+General Litigation,Civil Rights,deepseek_v4,jackie,2,2,1,0.3333333333333333,0.5
+General Litigation,Civil Rights,deepseek_v4,qs,2,4,1,0.2,0.3333333333333333
+General Litigation,Civil Rights,jackie,qs,2,4,1,0.2,0.3333333333333333
+General Litigation,Crime Victim,gpt52,gemini31_pro,1,2,1,0.5,0.6666666666666666
+General Litigation,Crime Victim,gpt52,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,Crime Victim,gpt52,jackie,1,0,0,0.0,0.0
+General Litigation,Crime Victim,gpt52,qs,1,0,0,0.0,0.0
+General Litigation,Crime Victim,gemini31_pro,deepseek_v4,2,0,0,0.0,0.0
+General Litigation,Crime Victim,gemini31_pro,jackie,2,0,0,0.0,0.0
+General Litigation,Crime Victim,gemini31_pro,qs,2,0,0,0.0,0.0
+General Litigation,Crime Victim,deepseek_v4,jackie,0,0,0,,
+General Litigation,Crime Victim,deepseek_v4,qs,0,0,0,,
+General Litigation,Crime Victim,jackie,qs,0,0,0,,
+General Litigation,General Litigation,gpt52,gemini31_pro,3,2,2,0.6666666666666666,0.8
+General Litigation,General Litigation,gpt52,deepseek_v4,3,0,0,0.0,0.0
+General Litigation,General Litigation,gpt52,jackie,3,7,3,0.42857142857142855,0.6
+General Litigation,General Litigation,gpt52,qs,3,3,1,0.2,0.3333333333333333
+General Litigation,General Litigation,gemini31_pro,deepseek_v4,2,0,0,0.0,0.0
+General Litigation,General Litigation,gemini31_pro,jackie,2,7,2,0.2857142857142857,0.4444444444444444
+General Litigation,General Litigation,gemini31_pro,qs,2,3,1,0.25,0.4
+General Litigation,General Litigation,deepseek_v4,jackie,0,7,0,0.0,0.0
+General Litigation,General Litigation,deepseek_v4,qs,0,3,0,0.0,0.0
+General Litigation,General Litigation,jackie,qs,7,3,3,0.42857142857142855,0.6
+General Litigation,General Torts/Privacy,gpt52,gemini31_pro,1,0,0,0.0,0.0
+General Litigation,General Torts/Privacy,gpt52,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,General Torts/Privacy,gpt52,jackie,1,0,0,0.0,0.0
+General Litigation,General Torts/Privacy,gpt52,qs,1,0,0,0.0,0.0
+General Litigation,General Torts/Privacy,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,General Torts/Privacy,gemini31_pro,jackie,0,0,0,,
+General Litigation,General Torts/Privacy,gemini31_pro,qs,0,0,0,,
+General Litigation,General Torts/Privacy,deepseek_v4,jackie,0,0,0,,
+General Litigation,General Torts/Privacy,deepseek_v4,qs,0,0,0,,
+General Litigation,General Torts/Privacy,jackie,qs,0,0,0,,
+General Litigation,Health Law/HIPAA,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Health Law/HIPAA,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Health Law/HIPAA,gpt52,jackie,0,0,0,,
+General Litigation,Health Law/HIPAA,gpt52,qs,0,0,0,,
+General Litigation,Health Law/HIPAA,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Health Law/HIPAA,gemini31_pro,jackie,0,0,0,,
+General Litigation,Health Law/HIPAA,gemini31_pro,qs,0,0,0,,
+General Litigation,Health Law/HIPAA,deepseek_v4,jackie,0,0,0,,
+General Litigation,Health Law/HIPAA,deepseek_v4,qs,0,0,0,,
+General Litigation,Health Law/HIPAA,jackie,qs,0,0,0,,
+General Litigation,Insurance (Health/Disability),gpt52,gemini31_pro,1,2,1,0.5,0.6666666666666666
+General Litigation,Insurance (Health/Disability),gpt52,deepseek_v4,1,2,1,0.5,0.6666666666666666
+General Litigation,Insurance (Health/Disability),gpt52,jackie,1,2,1,0.5,0.6666666666666666
+General Litigation,Insurance (Health/Disability),gpt52,qs,1,2,1,0.5,0.6666666666666666
+General Litigation,Insurance (Health/Disability),gemini31_pro,deepseek_v4,2,2,1,0.3333333333333333,0.5
+General Litigation,Insurance (Health/Disability),gemini31_pro,jackie,2,2,2,1.0,1.0
+General Litigation,Insurance (Health/Disability),gemini31_pro,qs,2,2,1,0.3333333333333333,0.5
+General Litigation,Insurance (Health/Disability),deepseek_v4,jackie,2,2,1,0.3333333333333333,0.5
+General Litigation,Insurance (Health/Disability),deepseek_v4,qs,2,2,2,1.0,1.0
+General Litigation,Insurance (Health/Disability),jackie,qs,2,2,1,0.3333333333333333,0.5
+General Litigation,Insurance (Liability),gpt52,gemini31_pro,1,0,0,0.0,0.0
+General Litigation,Insurance (Liability),gpt52,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,Insurance (Liability),gpt52,jackie,1,1,1,1.0,1.0
+General Litigation,Insurance (Liability),gpt52,qs,1,0,0,0.0,0.0
+General Litigation,Insurance (Liability),gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Insurance (Liability),gemini31_pro,jackie,0,1,0,0.0,0.0
+General Litigation,Insurance (Liability),gemini31_pro,qs,0,0,0,,
+General Litigation,Insurance (Liability),deepseek_v4,jackie,0,1,0,0.0,0.0
+General Litigation,Insurance (Liability),deepseek_v4,qs,0,0,0,,
+General Litigation,Insurance (Liability),jackie,qs,1,0,0,0.0,0.0
+General Litigation,Libel/Slander/Defamation,gpt52,gemini31_pro,4,3,3,0.75,0.8571428571428571
+General Litigation,Libel/Slander/Defamation,gpt52,deepseek_v4,4,0,0,0.0,0.0
+General Litigation,Libel/Slander/Defamation,gpt52,jackie,4,3,3,0.75,0.8571428571428571
+General Litigation,Libel/Slander/Defamation,gpt52,qs,4,4,3,0.6,0.75
+General Litigation,Libel/Slander/Defamation,gemini31_pro,deepseek_v4,3,0,0,0.0,0.0
+General Litigation,Libel/Slander/Defamation,gemini31_pro,jackie,3,3,3,1.0,1.0
+General Litigation,Libel/Slander/Defamation,gemini31_pro,qs,3,4,3,0.75,0.8571428571428571
+General Litigation,Libel/Slander/Defamation,deepseek_v4,jackie,0,3,0,0.0,0.0
+General Litigation,Libel/Slander/Defamation,deepseek_v4,qs,0,4,0,0.0,0.0
+General Litigation,Libel/Slander/Defamation,jackie,qs,3,4,3,0.75,0.8571428571428571
+General Litigation,Malpractice-Dental,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Malpractice-Dental,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Malpractice-Dental,gpt52,jackie,0,0,0,,
+General Litigation,Malpractice-Dental,gpt52,qs,0,0,0,,
+General Litigation,Malpractice-Dental,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Malpractice-Dental,gemini31_pro,jackie,0,0,0,,
+General Litigation,Malpractice-Dental,gemini31_pro,qs,0,0,0,,
+General Litigation,Malpractice-Dental,deepseek_v4,jackie,0,0,0,,
+General Litigation,Malpractice-Dental,deepseek_v4,qs,0,0,0,,
+General Litigation,Malpractice-Dental,jackie,qs,0,0,0,,
+General Litigation,Malpractice-Legal,gpt52,gemini31_pro,1,1,1,1.0,1.0
+General Litigation,Malpractice-Legal,gpt52,deepseek_v4,1,1,1,1.0,1.0
+General Litigation,Malpractice-Legal,gpt52,jackie,1,0,0,0.0,0.0
+General Litigation,Malpractice-Legal,gpt52,qs,1,1,1,1.0,1.0
+General Litigation,Malpractice-Legal,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+General Litigation,Malpractice-Legal,gemini31_pro,jackie,1,0,0,0.0,0.0
+General Litigation,Malpractice-Legal,gemini31_pro,qs,1,1,1,1.0,1.0
+General Litigation,Malpractice-Legal,deepseek_v4,jackie,1,0,0,0.0,0.0
+General Litigation,Malpractice-Legal,deepseek_v4,qs,1,1,1,1.0,1.0
+General Litigation,Malpractice-Legal,jackie,qs,0,1,0,0.0,0.0
+General Litigation,Malpractice-Medical,gpt52,gemini31_pro,2,2,2,1.0,1.0
+General Litigation,Malpractice-Medical,gpt52,deepseek_v4,2,2,2,1.0,1.0
+General Litigation,Malpractice-Medical,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+General Litigation,Malpractice-Medical,gpt52,qs,2,2,2,1.0,1.0
+General Litigation,Malpractice-Medical,gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+General Litigation,Malpractice-Medical,gemini31_pro,jackie,2,1,1,0.5,0.6666666666666666
+General Litigation,Malpractice-Medical,gemini31_pro,qs,2,2,2,1.0,1.0
+General Litigation,Malpractice-Medical,deepseek_v4,jackie,2,1,1,0.5,0.6666666666666666
+General Litigation,Malpractice-Medical,deepseek_v4,qs,2,2,2,1.0,1.0
+General Litigation,Malpractice-Medical,jackie,qs,1,2,1,0.5,0.6666666666666666
+General Litigation,Maritime,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Maritime,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Maritime,gpt52,jackie,0,0,0,,
+General Litigation,Maritime,gpt52,qs,0,0,0,,
+General Litigation,Maritime,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Maritime,gemini31_pro,jackie,0,0,0,,
+General Litigation,Maritime,gemini31_pro,qs,0,0,0,,
+General Litigation,Maritime,deepseek_v4,jackie,0,0,0,,
+General Litigation,Maritime,deepseek_v4,qs,0,0,0,,
+General Litigation,Maritime,jackie,qs,0,0,0,,
+General Litigation,Mold Claims,gpt52,gemini31_pro,1,0,0,0.0,0.0
+General Litigation,Mold Claims,gpt52,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,Mold Claims,gpt52,jackie,1,1,1,1.0,1.0
+General Litigation,Mold Claims,gpt52,qs,1,1,1,1.0,1.0
+General Litigation,Mold Claims,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Mold Claims,gemini31_pro,jackie,0,1,0,0.0,0.0
+General Litigation,Mold Claims,gemini31_pro,qs,0,1,0,0.0,0.0
+General Litigation,Mold Claims,deepseek_v4,jackie,0,1,0,0.0,0.0
+General Litigation,Mold Claims,deepseek_v4,qs,0,1,0,0.0,0.0
+General Litigation,Mold Claims,jackie,qs,1,1,1,1.0,1.0
+General Litigation,Neighbor Disputes/Nuisance,gpt52,gemini31_pro,1,2,1,0.5,0.6666666666666666
+General Litigation,Neighbor Disputes/Nuisance,gpt52,deepseek_v4,1,1,1,1.0,1.0
+General Litigation,Neighbor Disputes/Nuisance,gpt52,jackie,1,2,1,0.5,0.6666666666666666
+General Litigation,Neighbor Disputes/Nuisance,gpt52,qs,1,2,1,0.5,0.6666666666666666
+General Litigation,Neighbor Disputes/Nuisance,gemini31_pro,deepseek_v4,2,1,1,0.5,0.6666666666666666
+General Litigation,Neighbor Disputes/Nuisance,gemini31_pro,jackie,2,2,1,0.3333333333333333,0.5
+General Litigation,Neighbor Disputes/Nuisance,gemini31_pro,qs,2,2,1,0.3333333333333333,0.5
+General Litigation,Neighbor Disputes/Nuisance,deepseek_v4,jackie,1,2,1,0.5,0.6666666666666666
+General Litigation,Neighbor Disputes/Nuisance,deepseek_v4,qs,1,2,1,0.5,0.6666666666666666
+General Litigation,Neighbor Disputes/Nuisance,jackie,qs,2,2,2,1.0,1.0
+General Litigation,Online Harassment/Doxing/Bullying,gpt52,gemini31_pro,4,3,3,0.75,0.8571428571428571
+General Litigation,Online Harassment/Doxing/Bullying,gpt52,deepseek_v4,4,2,2,0.5,0.6666666666666666
+General Litigation,Online Harassment/Doxing/Bullying,gpt52,jackie,4,1,1,0.25,0.4
+General Litigation,Online Harassment/Doxing/Bullying,gpt52,qs,4,1,1,0.25,0.4
+General Litigation,Online Harassment/Doxing/Bullying,gemini31_pro,deepseek_v4,3,2,1,0.25,0.4
+General Litigation,Online Harassment/Doxing/Bullying,gemini31_pro,jackie,3,1,1,0.3333333333333333,0.5
+General Litigation,Online Harassment/Doxing/Bullying,gemini31_pro,qs,3,1,1,0.3333333333333333,0.5
+General Litigation,Online Harassment/Doxing/Bullying,deepseek_v4,jackie,2,1,1,0.5,0.6666666666666666
+General Litigation,Online Harassment/Doxing/Bullying,deepseek_v4,qs,2,1,1,0.5,0.6666666666666666
+General Litigation,Online Harassment/Doxing/Bullying,jackie,qs,1,1,1,1.0,1.0
+General Litigation,Personal Injury,gpt52,gemini31_pro,7,5,3,0.3333333333333333,0.5
+General Litigation,Personal Injury,gpt52,deepseek_v4,7,4,3,0.375,0.5454545454545454
+General Litigation,Personal Injury,gpt52,jackie,7,5,5,0.7142857142857143,0.8333333333333334
+General Litigation,Personal Injury,gpt52,qs,7,5,5,0.7142857142857143,0.8333333333333334
+General Litigation,Personal Injury,gemini31_pro,deepseek_v4,5,4,3,0.5,0.6666666666666666
+General Litigation,Personal Injury,gemini31_pro,jackie,5,5,3,0.42857142857142855,0.6
+General Litigation,Personal Injury,gemini31_pro,qs,5,5,3,0.42857142857142855,0.6
+General Litigation,Personal Injury,deepseek_v4,jackie,4,5,3,0.5,0.6666666666666666
+General Litigation,Personal Injury,deepseek_v4,qs,4,5,3,0.5,0.6666666666666666
+General Litigation,Personal Injury,jackie,qs,5,5,5,1.0,1.0
+General Litigation,Premises Liability,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Premises Liability,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Premises Liability,gpt52,jackie,0,0,0,,
+General Litigation,Premises Liability,gpt52,qs,0,0,0,,
+General Litigation,Premises Liability,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Premises Liability,gemini31_pro,jackie,0,0,0,,
+General Litigation,Premises Liability,gemini31_pro,qs,0,0,0,,
+General Litigation,Premises Liability,deepseek_v4,jackie,0,0,0,,
+General Litigation,Premises Liability,deepseek_v4,qs,0,0,0,,
+General Litigation,Premises Liability,jackie,qs,0,0,0,,
+General Litigation,Products Liability,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Products Liability,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Products Liability,gpt52,jackie,0,0,0,,
+General Litigation,Products Liability,gpt52,qs,0,0,0,,
+General Litigation,Products Liability,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Products Liability,gemini31_pro,jackie,0,0,0,,
+General Litigation,Products Liability,gemini31_pro,qs,0,0,0,,
+General Litigation,Products Liability,deepseek_v4,jackie,0,0,0,,
+General Litigation,Products Liability,deepseek_v4,qs,0,0,0,,
+General Litigation,Products Liability,jackie,qs,0,0,0,,
+General Litigation,Property Damage,gpt52,gemini31_pro,4,3,3,0.75,0.8571428571428571
+General Litigation,Property Damage,gpt52,deepseek_v4,4,1,1,0.25,0.4
+General Litigation,Property Damage,gpt52,jackie,4,5,3,0.5,0.6666666666666666
+General Litigation,Property Damage,gpt52,qs,4,2,2,0.5,0.6666666666666666
+General Litigation,Property Damage,gemini31_pro,deepseek_v4,3,1,1,0.3333333333333333,0.5
+General Litigation,Property Damage,gemini31_pro,jackie,3,5,3,0.6,0.75
+General Litigation,Property Damage,gemini31_pro,qs,3,2,2,0.6666666666666666,0.8
+General Litigation,Property Damage,deepseek_v4,jackie,1,5,1,0.2,0.3333333333333333
+General Litigation,Property Damage,deepseek_v4,qs,1,2,1,0.5,0.6666666666666666
+General Litigation,Property Damage,jackie,qs,5,2,2,0.4,0.5714285714285714
+General Litigation,Services for Plaintiffs and Defendants,gpt52,gemini31_pro,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,gpt52,jackie,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,gpt52,qs,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,gemini31_pro,deepseek_v4,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,gemini31_pro,jackie,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,gemini31_pro,qs,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,deepseek_v4,jackie,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,deepseek_v4,qs,0,0,0,,
+General Litigation,Services for Plaintiffs and Defendants,jackie,qs,0,0,0,,
+General Litigation,Stalking Orders,gpt52,gemini31_pro,5,5,5,1.0,1.0
+General Litigation,Stalking Orders,gpt52,deepseek_v4,5,3,3,0.6,0.75
+General Litigation,Stalking Orders,gpt52,jackie,5,4,4,0.8,0.8888888888888888
+General Litigation,Stalking Orders,gpt52,qs,5,4,4,0.8,0.8888888888888888
+General Litigation,Stalking Orders,gemini31_pro,deepseek_v4,5,3,3,0.6,0.75
+General Litigation,Stalking Orders,gemini31_pro,jackie,5,4,4,0.8,0.8888888888888888
+General Litigation,Stalking Orders,gemini31_pro,qs,5,4,4,0.8,0.8888888888888888
+General Litigation,Stalking Orders,deepseek_v4,jackie,3,4,3,0.75,0.8571428571428571
+General Litigation,Stalking Orders,deepseek_v4,qs,3,4,3,0.75,0.8571428571428571
+General Litigation,Stalking Orders,jackie,qs,4,4,4,1.0,1.0
+General Litigation,Tort Claims Act,gpt52,gemini31_pro,4,4,4,1.0,1.0
+General Litigation,Tort Claims Act,gpt52,deepseek_v4,4,0,0,0.0,0.0
+General Litigation,Tort Claims Act,gpt52,jackie,4,3,3,0.75,0.8571428571428571
+General Litigation,Tort Claims Act,gpt52,qs,4,3,3,0.75,0.8571428571428571
+General Litigation,Tort Claims Act,gemini31_pro,deepseek_v4,4,0,0,0.0,0.0
+General Litigation,Tort Claims Act,gemini31_pro,jackie,4,3,3,0.75,0.8571428571428571
+General Litigation,Tort Claims Act,gemini31_pro,qs,4,3,3,0.75,0.8571428571428571
+General Litigation,Tort Claims Act,deepseek_v4,jackie,0,3,0,0.0,0.0
+General Litigation,Tort Claims Act,deepseek_v4,qs,0,3,0,0.0,0.0
+General Litigation,Tort Claims Act,jackie,qs,3,3,3,1.0,1.0
+General Litigation,Wrongful Death,gpt52,gemini31_pro,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,gpt52,deepseek_v4,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,gpt52,jackie,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,gpt52,qs,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,gemini31_pro,jackie,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,gemini31_pro,qs,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,deepseek_v4,jackie,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,deepseek_v4,qs,1,1,1,1.0,1.0
+General Litigation,Wrongful Death,jackie,qs,1,1,1,1.0,1.0
+General Litigation,Other,gpt52,gemini31_pro,0,1,0,0.0,0.0
+General Litigation,Other,gpt52,deepseek_v4,0,0,0,,
+General Litigation,Other,gpt52,jackie,0,0,0,,
+General Litigation,Other,gpt52,qs,0,0,0,,
+General Litigation,Other,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+General Litigation,Other,gemini31_pro,jackie,1,0,0,0.0,0.0
+General Litigation,Other,gemini31_pro,qs,1,0,0,0.0,0.0
+General Litigation,Other,deepseek_v4,jackie,0,0,0,,
+General Litigation,Other,deepseek_v4,qs,0,0,0,,
+General Litigation,Other,jackie,qs,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gpt52,gemini31_pro,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gpt52,deepseek_v4,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gpt52,jackie,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gpt52,qs,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gemini31_pro,deepseek_v4,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gemini31_pro,jackie,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,gemini31_pro,qs,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,deepseek_v4,jackie,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,deepseek_v4,qs,0,0,0,,
+Intellectual Property,Computer Law & Internet Law,jackie,qs,0,0,0,,
+Intellectual Property,Entertainment,gpt52,gemini31_pro,0,2,0,0.0,0.0
+Intellectual Property,Entertainment,gpt52,deepseek_v4,0,0,0,,
+Intellectual Property,Entertainment,gpt52,jackie,0,0,0,,
+Intellectual Property,Entertainment,gpt52,qs,0,1,0,0.0,0.0
+Intellectual Property,Entertainment,gemini31_pro,deepseek_v4,2,0,0,0.0,0.0
+Intellectual Property,Entertainment,gemini31_pro,jackie,2,0,0,0.0,0.0
+Intellectual Property,Entertainment,gemini31_pro,qs,2,1,1,0.5,0.6666666666666666
+Intellectual Property,Entertainment,deepseek_v4,jackie,0,0,0,,
+Intellectual Property,Entertainment,deepseek_v4,qs,0,1,0,0.0,0.0
+Intellectual Property,Entertainment,jackie,qs,0,1,0,0.0,0.0
+Intellectual Property,Patent (Reg Patent Attys Only),gpt52,gemini31_pro,3,3,3,1.0,1.0
+Intellectual Property,Patent (Reg Patent Attys Only),gpt52,deepseek_v4,3,2,2,0.6666666666666666,0.8
+Intellectual Property,Patent (Reg Patent Attys Only),gpt52,jackie,3,3,3,1.0,1.0
+Intellectual Property,Patent (Reg Patent Attys Only),gpt52,qs,3,3,3,1.0,1.0
+Intellectual Property,Patent (Reg Patent Attys Only),gemini31_pro,deepseek_v4,3,2,2,0.6666666666666666,0.8
+Intellectual Property,Patent (Reg Patent Attys Only),gemini31_pro,jackie,3,3,3,1.0,1.0
+Intellectual Property,Patent (Reg Patent Attys Only),gemini31_pro,qs,3,3,3,1.0,1.0
+Intellectual Property,Patent (Reg Patent Attys Only),deepseek_v4,jackie,2,3,2,0.6666666666666666,0.8
+Intellectual Property,Patent (Reg Patent Attys Only),deepseek_v4,qs,2,3,2,0.6666666666666666,0.8
+Intellectual Property,Patent (Reg Patent Attys Only),jackie,qs,3,3,3,1.0,1.0
+Intellectual Property,Trademark/Copyright,gpt52,gemini31_pro,7,6,6,0.8571428571428571,0.9230769230769231
+Intellectual Property,Trademark/Copyright,gpt52,deepseek_v4,7,7,7,1.0,1.0
+Intellectual Property,Trademark/Copyright,gpt52,jackie,7,7,7,1.0,1.0
+Intellectual Property,Trademark/Copyright,gpt52,qs,7,7,7,1.0,1.0
+Intellectual Property,Trademark/Copyright,gemini31_pro,deepseek_v4,6,7,6,0.8571428571428571,0.9230769230769231
+Intellectual Property,Trademark/Copyright,gemini31_pro,jackie,6,7,6,0.8571428571428571,0.9230769230769231
+Intellectual Property,Trademark/Copyright,gemini31_pro,qs,6,7,6,0.8571428571428571,0.9230769230769231
+Intellectual Property,Trademark/Copyright,deepseek_v4,jackie,7,7,7,1.0,1.0
+Intellectual Property,Trademark/Copyright,deepseek_v4,qs,7,7,7,1.0,1.0
+Intellectual Property,Trademark/Copyright,jackie,qs,7,7,7,1.0,1.0
+Intellectual Property,Other,gpt52,gemini31_pro,0,0,0,,
+Intellectual Property,Other,gpt52,deepseek_v4,0,0,0,,
+Intellectual Property,Other,gpt52,jackie,0,0,0,,
+Intellectual Property,Other,gpt52,qs,0,0,0,,
+Intellectual Property,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Intellectual Property,Other,gemini31_pro,jackie,0,0,0,,
+Intellectual Property,Other,gemini31_pro,qs,0,0,0,,
+Intellectual Property,Other,deepseek_v4,jackie,0,0,0,,
+Intellectual Property,Other,deepseek_v4,qs,0,0,0,,
+Intellectual Property,Other,jackie,qs,0,0,0,,
+International Law,Business and Corporate,gpt52,gemini31_pro,1,1,0,0.0,0.0
+International Law,Business and Corporate,gpt52,deepseek_v4,1,0,0,0.0,0.0
+International Law,Business and Corporate,gpt52,jackie,1,1,1,1.0,1.0
+International Law,Business and Corporate,gpt52,qs,1,1,1,1.0,1.0
+International Law,Business and Corporate,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+International Law,Business and Corporate,gemini31_pro,jackie,1,1,0,0.0,0.0
+International Law,Business and Corporate,gemini31_pro,qs,1,1,0,0.0,0.0
+International Law,Business and Corporate,deepseek_v4,jackie,0,1,0,0.0,0.0
+International Law,Business and Corporate,deepseek_v4,qs,0,1,0,0.0,0.0
+International Law,Business and Corporate,jackie,qs,1,1,1,1.0,1.0
+International Law,"Customs, Quotas & Duties",gpt52,gemini31_pro,0,0,0,,
+International Law,"Customs, Quotas & Duties",gpt52,deepseek_v4,0,0,0,,
+International Law,"Customs, Quotas & Duties",gpt52,jackie,0,0,0,,
+International Law,"Customs, Quotas & Duties",gpt52,qs,0,0,0,,
+International Law,"Customs, Quotas & Duties",gemini31_pro,deepseek_v4,0,0,0,,
+International Law,"Customs, Quotas & Duties",gemini31_pro,jackie,0,0,0,,
+International Law,"Customs, Quotas & Duties",gemini31_pro,qs,0,0,0,,
+International Law,"Customs, Quotas & Duties",deepseek_v4,jackie,0,0,0,,
+International Law,"Customs, Quotas & Duties",deepseek_v4,qs,0,0,0,,
+International Law,"Customs, Quotas & Duties",jackie,qs,0,0,0,,
+International Law,Deportation,gpt52,gemini31_pro,1,1,1,1.0,1.0
+International Law,Deportation,gpt52,deepseek_v4,1,1,1,1.0,1.0
+International Law,Deportation,gpt52,jackie,1,1,1,1.0,1.0
+International Law,Deportation,gpt52,qs,1,1,1,1.0,1.0
+International Law,Deportation,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+International Law,Deportation,gemini31_pro,jackie,1,1,1,1.0,1.0
+International Law,Deportation,gemini31_pro,qs,1,1,1,1.0,1.0
+International Law,Deportation,deepseek_v4,jackie,1,1,1,1.0,1.0
+International Law,Deportation,deepseek_v4,qs,1,1,1,1.0,1.0
+International Law,Deportation,jackie,qs,1,1,1,1.0,1.0
+International Law,Family Law,gpt52,gemini31_pro,0,0,0,,
+International Law,Family Law,gpt52,deepseek_v4,0,0,0,,
+International Law,Family Law,gpt52,jackie,0,0,0,,
+International Law,Family Law,gpt52,qs,0,0,0,,
+International Law,Family Law,gemini31_pro,deepseek_v4,0,0,0,,
+International Law,Family Law,gemini31_pro,jackie,0,0,0,,
+International Law,Family Law,gemini31_pro,qs,0,0,0,,
+International Law,Family Law,deepseek_v4,jackie,0,0,0,,
+International Law,Family Law,deepseek_v4,qs,0,0,0,,
+International Law,Family Law,jackie,qs,0,0,0,,
+International Law,Gen. Immigration/Visas,gpt52,gemini31_pro,3,2,2,0.6666666666666666,0.8
+International Law,Gen. Immigration/Visas,gpt52,deepseek_v4,3,2,2,0.6666666666666666,0.8
+International Law,Gen. Immigration/Visas,gpt52,jackie,3,1,1,0.3333333333333333,0.5
+International Law,Gen. Immigration/Visas,gpt52,qs,3,1,1,0.3333333333333333,0.5
+International Law,Gen. Immigration/Visas,gemini31_pro,deepseek_v4,2,2,2,1.0,1.0
+International Law,Gen. Immigration/Visas,gemini31_pro,jackie,2,1,1,0.5,0.6666666666666666
+International Law,Gen. Immigration/Visas,gemini31_pro,qs,2,1,1,0.5,0.6666666666666666
+International Law,Gen. Immigration/Visas,deepseek_v4,jackie,2,1,1,0.5,0.6666666666666666
+International Law,Gen. Immigration/Visas,deepseek_v4,qs,2,1,1,0.5,0.6666666666666666
+International Law,Gen. Immigration/Visas,jackie,qs,1,1,1,1.0,1.0
+International Law,Import/Export Regulation,gpt52,gemini31_pro,0,1,0,0.0,0.0
+International Law,Import/Export Regulation,gpt52,deepseek_v4,0,0,0,,
+International Law,Import/Export Regulation,gpt52,jackie,0,0,0,,
+International Law,Import/Export Regulation,gpt52,qs,0,0,0,,
+International Law,Import/Export Regulation,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+International Law,Import/Export Regulation,gemini31_pro,jackie,1,0,0,0.0,0.0
+International Law,Import/Export Regulation,gemini31_pro,qs,1,0,0,0.0,0.0
+International Law,Import/Export Regulation,deepseek_v4,jackie,0,0,0,,
+International Law,Import/Export Regulation,deepseek_v4,qs,0,0,0,,
+International Law,Import/Export Regulation,jackie,qs,0,0,0,,
+International Law,Litigation,gpt52,gemini31_pro,0,0,0,,
+International Law,Litigation,gpt52,deepseek_v4,0,0,0,,
+International Law,Litigation,gpt52,jackie,0,0,0,,
+International Law,Litigation,gpt52,qs,0,0,0,,
+International Law,Litigation,gemini31_pro,deepseek_v4,0,0,0,,
+International Law,Litigation,gemini31_pro,jackie,0,0,0,,
+International Law,Litigation,gemini31_pro,qs,0,0,0,,
+International Law,Litigation,deepseek_v4,jackie,0,0,0,,
+International Law,Litigation,deepseek_v4,qs,0,0,0,,
+International Law,Litigation,jackie,qs,0,0,0,,
+International Law,Taxation,gpt52,gemini31_pro,0,0,0,,
+International Law,Taxation,gpt52,deepseek_v4,0,0,0,,
+International Law,Taxation,gpt52,jackie,0,0,0,,
+International Law,Taxation,gpt52,qs,0,0,0,,
+International Law,Taxation,gemini31_pro,deepseek_v4,0,0,0,,
+International Law,Taxation,gemini31_pro,jackie,0,0,0,,
+International Law,Taxation,gemini31_pro,qs,0,0,0,,
+International Law,Taxation,deepseek_v4,jackie,0,0,0,,
+International Law,Taxation,deepseek_v4,qs,0,0,0,,
+International Law,Taxation,jackie,qs,0,0,0,,
+International Law,Other,gpt52,gemini31_pro,1,1,1,1.0,1.0
+International Law,Other,gpt52,deepseek_v4,1,0,0,0.0,0.0
+International Law,Other,gpt52,jackie,1,1,1,1.0,1.0
+International Law,Other,gpt52,qs,1,1,1,1.0,1.0
+International Law,Other,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+International Law,Other,gemini31_pro,jackie,1,1,1,1.0,1.0
+International Law,Other,gemini31_pro,qs,1,1,1,1.0,1.0
+International Law,Other,deepseek_v4,jackie,0,1,0,0.0,0.0
+International Law,Other,deepseek_v4,qs,0,1,0,0.0,0.0
+International Law,Other,jackie,qs,1,1,1,1.0,1.0
+Labor & Employment,ADA (Disability) Act Issues,gpt52,gemini31_pro,4,2,2,0.5,0.6666666666666666
+Labor & Employment,ADA (Disability) Act Issues,gpt52,deepseek_v4,4,2,2,0.5,0.6666666666666666
+Labor & Employment,ADA (Disability) Act Issues,gpt52,jackie,4,2,2,0.5,0.6666666666666666
+Labor & Employment,ADA (Disability) Act Issues,gpt52,qs,4,3,3,0.75,0.8571428571428571
+Labor & Employment,ADA (Disability) Act Issues,gemini31_pro,deepseek_v4,2,2,1,0.3333333333333333,0.5
+Labor & Employment,ADA (Disability) Act Issues,gemini31_pro,jackie,2,2,1,0.3333333333333333,0.5
+Labor & Employment,ADA (Disability) Act Issues,gemini31_pro,qs,2,3,2,0.6666666666666666,0.8
+Labor & Employment,ADA (Disability) Act Issues,deepseek_v4,jackie,2,2,2,1.0,1.0
+Labor & Employment,ADA (Disability) Act Issues,deepseek_v4,qs,2,3,2,0.6666666666666666,0.8
+Labor & Employment,ADA (Disability) Act Issues,jackie,qs,2,3,2,0.6666666666666666,0.8
+Labor & Employment,Discrimination,gpt52,gemini31_pro,5,5,5,1.0,1.0
+Labor & Employment,Discrimination,gpt52,deepseek_v4,5,5,5,1.0,1.0
+Labor & Employment,Discrimination,gpt52,jackie,5,3,3,0.6,0.75
+Labor & Employment,Discrimination,gpt52,qs,5,4,3,0.5,0.6666666666666666
+Labor & Employment,Discrimination,gemini31_pro,deepseek_v4,5,5,5,1.0,1.0
+Labor & Employment,Discrimination,gemini31_pro,jackie,5,3,3,0.6,0.75
+Labor & Employment,Discrimination,gemini31_pro,qs,5,4,3,0.5,0.6666666666666666
+Labor & Employment,Discrimination,deepseek_v4,jackie,5,3,3,0.6,0.75
+Labor & Employment,Discrimination,deepseek_v4,qs,5,4,3,0.5,0.6666666666666666
+Labor & Employment,Discrimination,jackie,qs,3,4,3,0.75,0.8571428571428571
+Labor & Employment,Document Review/Severance Packages.,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,gpt52,jackie,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,gpt52,qs,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,gemini31_pro,jackie,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,gemini31_pro,qs,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,deepseek_v4,jackie,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,deepseek_v4,qs,1,1,1,1.0,1.0
+Labor & Employment,Document Review/Severance Packages.,jackie,qs,1,1,1,1.0,1.0
+Labor & Employment,FLSA,gpt52,gemini31_pro,0,0,0,,
+Labor & Employment,FLSA,gpt52,deepseek_v4,0,0,0,,
+Labor & Employment,FLSA,gpt52,jackie,0,0,0,,
+Labor & Employment,FLSA,gpt52,qs,0,0,0,,
+Labor & Employment,FLSA,gemini31_pro,deepseek_v4,0,0,0,,
+Labor & Employment,FLSA,gemini31_pro,jackie,0,0,0,,
+Labor & Employment,FLSA,gemini31_pro,qs,0,0,0,,
+Labor & Employment,FLSA,deepseek_v4,jackie,0,0,0,,
+Labor & Employment,FLSA,deepseek_v4,qs,0,0,0,,
+Labor & Employment,FLSA,jackie,qs,0,0,0,,
+Labor & Employment,FMLA,gpt52,gemini31_pro,4,4,4,1.0,1.0
+Labor & Employment,FMLA,gpt52,deepseek_v4,4,4,4,1.0,1.0
+Labor & Employment,FMLA,gpt52,jackie,4,2,2,0.5,0.6666666666666666
+Labor & Employment,FMLA,gpt52,qs,4,4,4,1.0,1.0
+Labor & Employment,FMLA,gemini31_pro,deepseek_v4,4,4,4,1.0,1.0
+Labor & Employment,FMLA,gemini31_pro,jackie,4,2,2,0.5,0.6666666666666666
+Labor & Employment,FMLA,gemini31_pro,qs,4,4,4,1.0,1.0
+Labor & Employment,FMLA,deepseek_v4,jackie,4,2,2,0.5,0.6666666666666666
+Labor & Employment,FMLA,deepseek_v4,qs,4,4,4,1.0,1.0
+Labor & Employment,FMLA,jackie,qs,2,4,2,0.5,0.6666666666666666
+Labor & Employment,General,gpt52,gemini31_pro,3,3,2,0.5,0.6666666666666666
+Labor & Employment,General,gpt52,deepseek_v4,3,0,0,0.0,0.0
+Labor & Employment,General,gpt52,jackie,3,3,3,1.0,1.0
+Labor & Employment,General,gpt52,qs,3,3,3,1.0,1.0
+Labor & Employment,General,gemini31_pro,deepseek_v4,3,0,0,0.0,0.0
+Labor & Employment,General,gemini31_pro,jackie,3,3,2,0.5,0.6666666666666666
+Labor & Employment,General,gemini31_pro,qs,3,3,2,0.5,0.6666666666666666
+Labor & Employment,General,deepseek_v4,jackie,0,3,0,0.0,0.0
+Labor & Employment,General,deepseek_v4,qs,0,3,0,0.0,0.0
+Labor & Employment,General,jackie,qs,3,3,3,1.0,1.0
+Labor & Employment,Pensions/Benefits/Erisa,gpt52,gemini31_pro,2,0,0,0.0,0.0
+Labor & Employment,Pensions/Benefits/Erisa,gpt52,deepseek_v4,2,0,0,0.0,0.0
+Labor & Employment,Pensions/Benefits/Erisa,gpt52,jackie,2,0,0,0.0,0.0
+Labor & Employment,Pensions/Benefits/Erisa,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Labor & Employment,Pensions/Benefits/Erisa,gemini31_pro,deepseek_v4,0,0,0,,
+Labor & Employment,Pensions/Benefits/Erisa,gemini31_pro,jackie,0,0,0,,
+Labor & Employment,Pensions/Benefits/Erisa,gemini31_pro,qs,0,1,0,0.0,0.0
+Labor & Employment,Pensions/Benefits/Erisa,deepseek_v4,jackie,0,0,0,,
+Labor & Employment,Pensions/Benefits/Erisa,deepseek_v4,qs,0,1,0,0.0,0.0
+Labor & Employment,Pensions/Benefits/Erisa,jackie,qs,0,1,0,0.0,0.0
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gpt52,gemini31_pro,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gpt52,deepseek_v4,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gpt52,jackie,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gpt52,qs,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gemini31_pro,deepseek_v4,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gemini31_pro,jackie,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,gemini31_pro,qs,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,deepseek_v4,jackie,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,deepseek_v4,qs,0,0,0,,
+Labor & Employment,Public Employees? - Civil Service/Public Employees,jackie,qs,0,0,0,,
+Labor & Employment,Sexual Harrasment,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,gpt52,jackie,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,gpt52,qs,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,gemini31_pro,jackie,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,gemini31_pro,qs,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,deepseek_v4,jackie,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,deepseek_v4,qs,1,1,1,1.0,1.0
+Labor & Employment,Sexual Harrasment,jackie,qs,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gpt52,jackie,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gpt52,qs,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gemini31_pro,jackie,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,gemini31_pro,qs,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,deepseek_v4,jackie,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,deepseek_v4,qs,1,1,1,1.0,1.0
+Labor & Employment,Union Issues,jackie,qs,1,1,1,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gpt52,gemini31_pro,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gpt52,deepseek_v4,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gpt52,jackie,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gpt52,qs,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gemini31_pro,deepseek_v4,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gemini31_pro,jackie,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,gemini31_pro,qs,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,deepseek_v4,jackie,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,deepseek_v4,qs,3,3,3,1.0,1.0
+Labor & Employment,Wage and Hour Claims,jackie,qs,3,3,3,1.0,1.0
+Labor & Employment,Whistleblowers,gpt52,gemini31_pro,3,2,2,0.6666666666666666,0.8
+Labor & Employment,Whistleblowers,gpt52,deepseek_v4,3,3,3,1.0,1.0
+Labor & Employment,Whistleblowers,gpt52,jackie,3,1,1,0.3333333333333333,0.5
+Labor & Employment,Whistleblowers,gpt52,qs,3,3,3,1.0,1.0
+Labor & Employment,Whistleblowers,gemini31_pro,deepseek_v4,2,3,2,0.6666666666666666,0.8
+Labor & Employment,Whistleblowers,gemini31_pro,jackie,2,1,0,0.0,0.0
+Labor & Employment,Whistleblowers,gemini31_pro,qs,2,3,2,0.6666666666666666,0.8
+Labor & Employment,Whistleblowers,deepseek_v4,jackie,3,1,1,0.3333333333333333,0.5
+Labor & Employment,Whistleblowers,deepseek_v4,qs,3,3,3,1.0,1.0
+Labor & Employment,Whistleblowers,jackie,qs,1,3,1,0.3333333333333333,0.5
+Labor & Employment,Wrongful Discharge,gpt52,gemini31_pro,6,5,5,0.8333333333333334,0.9090909090909091
+Labor & Employment,Wrongful Discharge,gpt52,deepseek_v4,6,6,5,0.7142857142857143,0.8333333333333334
+Labor & Employment,Wrongful Discharge,gpt52,jackie,6,6,5,0.7142857142857143,0.8333333333333334
+Labor & Employment,Wrongful Discharge,gpt52,qs,6,5,5,0.8333333333333334,0.9090909090909091
+Labor & Employment,Wrongful Discharge,gemini31_pro,deepseek_v4,5,6,5,0.8333333333333334,0.9090909090909091
+Labor & Employment,Wrongful Discharge,gemini31_pro,jackie,5,6,5,0.8333333333333334,0.9090909090909091
+Labor & Employment,Wrongful Discharge,gemini31_pro,qs,5,5,5,1.0,1.0
+Labor & Employment,Wrongful Discharge,deepseek_v4,jackie,6,6,6,1.0,1.0
+Labor & Employment,Wrongful Discharge,deepseek_v4,qs,6,5,5,0.8333333333333334,0.9090909090909091
+Labor & Employment,Wrongful Discharge,jackie,qs,6,5,5,0.8333333333333334,0.9090909090909091
+Labor & Employment,Other,gpt52,gemini31_pro,0,2,0,0.0,0.0
+Labor & Employment,Other,gpt52,deepseek_v4,0,0,0,,
+Labor & Employment,Other,gpt52,jackie,0,2,0,0.0,0.0
+Labor & Employment,Other,gpt52,qs,0,1,0,0.0,0.0
+Labor & Employment,Other,gemini31_pro,deepseek_v4,2,0,0,0.0,0.0
+Labor & Employment,Other,gemini31_pro,jackie,2,2,1,0.3333333333333333,0.5
+Labor & Employment,Other,gemini31_pro,qs,2,1,1,0.5,0.6666666666666666
+Labor & Employment,Other,deepseek_v4,jackie,0,2,0,0.0,0.0
+Labor & Employment,Other,deepseek_v4,qs,0,1,0,0.0,0.0
+Labor & Employment,Other,jackie,qs,2,1,1,0.5,0.6666666666666666
+Real Property,Agriculture/Farm,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Real Property,Agriculture/Farm,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Agriculture/Farm,gpt52,jackie,1,1,1,1.0,1.0
+Real Property,Agriculture/Farm,gpt52,qs,1,1,1,1.0,1.0
+Real Property,Agriculture/Farm,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Agriculture/Farm,gemini31_pro,jackie,1,1,1,1.0,1.0
+Real Property,Agriculture/Farm,gemini31_pro,qs,1,1,1,1.0,1.0
+Real Property,Agriculture/Farm,deepseek_v4,jackie,0,1,0,0.0,0.0
+Real Property,Agriculture/Farm,deepseek_v4,qs,0,1,0,0.0,0.0
+Real Property,Agriculture/Farm,jackie,qs,1,1,1,1.0,1.0
+Real Property,Condemnation,gpt52,gemini31_pro,0,0,0,,
+Real Property,Condemnation,gpt52,deepseek_v4,0,0,0,,
+Real Property,Condemnation,gpt52,jackie,0,0,0,,
+Real Property,Condemnation,gpt52,qs,0,0,0,,
+Real Property,Condemnation,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Condemnation,gemini31_pro,jackie,0,0,0,,
+Real Property,Condemnation,gemini31_pro,qs,0,0,0,,
+Real Property,Condemnation,deepseek_v4,jackie,0,0,0,,
+Real Property,Condemnation,deepseek_v4,qs,0,0,0,,
+Real Property,Condemnation,jackie,qs,0,0,0,,
+Real Property,Construction/Contractors,gpt52,gemini31_pro,6,5,5,0.8333333333333334,0.9090909090909091
+Real Property,Construction/Contractors,gpt52,deepseek_v4,6,5,5,0.8333333333333334,0.9090909090909091
+Real Property,Construction/Contractors,gpt52,jackie,6,5,5,0.8333333333333334,0.9090909090909091
+Real Property,Construction/Contractors,gpt52,qs,6,5,5,0.8333333333333334,0.9090909090909091
+Real Property,Construction/Contractors,gemini31_pro,deepseek_v4,5,5,5,1.0,1.0
+Real Property,Construction/Contractors,gemini31_pro,jackie,5,5,5,1.0,1.0
+Real Property,Construction/Contractors,gemini31_pro,qs,5,5,5,1.0,1.0
+Real Property,Construction/Contractors,deepseek_v4,jackie,5,5,5,1.0,1.0
+Real Property,Construction/Contractors,deepseek_v4,qs,5,5,5,1.0,1.0
+Real Property,Construction/Contractors,jackie,qs,5,5,5,1.0,1.0
+Real Property,Eminent Domain,gpt52,gemini31_pro,0,0,0,,
+Real Property,Eminent Domain,gpt52,deepseek_v4,0,0,0,,
+Real Property,Eminent Domain,gpt52,jackie,0,0,0,,
+Real Property,Eminent Domain,gpt52,qs,0,0,0,,
+Real Property,Eminent Domain,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Eminent Domain,gemini31_pro,jackie,0,0,0,,
+Real Property,Eminent Domain,gemini31_pro,qs,0,0,0,,
+Real Property,Eminent Domain,deepseek_v4,jackie,0,0,0,,
+Real Property,Eminent Domain,deepseek_v4,qs,0,0,0,,
+Real Property,Eminent Domain,jackie,qs,0,0,0,,
+Real Property,Environmental,gpt52,gemini31_pro,0,0,0,,
+Real Property,Environmental,gpt52,deepseek_v4,0,0,0,,
+Real Property,Environmental,gpt52,jackie,0,0,0,,
+Real Property,Environmental,gpt52,qs,0,1,0,0.0,0.0
+Real Property,Environmental,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Environmental,gemini31_pro,jackie,0,0,0,,
+Real Property,Environmental,gemini31_pro,qs,0,1,0,0.0,0.0
+Real Property,Environmental,deepseek_v4,jackie,0,0,0,,
+Real Property,Environmental,deepseek_v4,qs,0,1,0,0.0,0.0
+Real Property,Environmental,jackie,qs,0,1,0,0.0,0.0
+Real Property,Foreclosure,gpt52,gemini31_pro,2,0,0,0.0,0.0
+Real Property,Foreclosure,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Real Property,Foreclosure,gpt52,jackie,2,1,1,0.5,0.6666666666666666
+Real Property,Foreclosure,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Real Property,Foreclosure,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Real Property,Foreclosure,gemini31_pro,jackie,0,1,0,0.0,0.0
+Real Property,Foreclosure,gemini31_pro,qs,0,1,0,0.0,0.0
+Real Property,Foreclosure,deepseek_v4,jackie,1,1,0,0.0,0.0
+Real Property,Foreclosure,deepseek_v4,qs,1,1,0,0.0,0.0
+Real Property,Foreclosure,jackie,qs,1,1,1,1.0,1.0
+Real Property,General (Commercial),gpt52,gemini31_pro,1,1,1,1.0,1.0
+Real Property,General (Commercial),gpt52,deepseek_v4,1,0,0,0.0,0.0
+Real Property,General (Commercial),gpt52,jackie,1,0,0,0.0,0.0
+Real Property,General (Commercial),gpt52,qs,1,1,1,1.0,1.0
+Real Property,General (Commercial),gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Real Property,General (Commercial),gemini31_pro,jackie,1,0,0,0.0,0.0
+Real Property,General (Commercial),gemini31_pro,qs,1,1,1,1.0,1.0
+Real Property,General (Commercial),deepseek_v4,jackie,0,0,0,,
+Real Property,General (Commercial),deepseek_v4,qs,0,1,0,0.0,0.0
+Real Property,General (Commercial),jackie,qs,0,1,0,0.0,0.0
+Real Property,General (residential),gpt52,gemini31_pro,2,3,2,0.6666666666666666,0.8
+Real Property,General (residential),gpt52,deepseek_v4,2,4,2,0.5,0.6666666666666666
+Real Property,General (residential),gpt52,jackie,2,3,2,0.6666666666666666,0.8
+Real Property,General (residential),gpt52,qs,2,3,2,0.6666666666666666,0.8
+Real Property,General (residential),gemini31_pro,deepseek_v4,3,4,2,0.4,0.5714285714285714
+Real Property,General (residential),gemini31_pro,jackie,3,3,2,0.5,0.6666666666666666
+Real Property,General (residential),gemini31_pro,qs,3,3,2,0.5,0.6666666666666666
+Real Property,General (residential),deepseek_v4,jackie,4,3,2,0.4,0.5714285714285714
+Real Property,General (residential),deepseek_v4,qs,4,3,3,0.75,0.8571428571428571
+Real Property,General (residential),jackie,qs,3,3,2,0.5,0.6666666666666666
+Real Property,"Government Loans (VA,FHA,Etc.)",gpt52,gemini31_pro,1,1,1,1.0,1.0
+Real Property,"Government Loans (VA,FHA,Etc.)",gpt52,deepseek_v4,1,0,0,0.0,0.0
+Real Property,"Government Loans (VA,FHA,Etc.)",gpt52,jackie,1,1,1,1.0,1.0
+Real Property,"Government Loans (VA,FHA,Etc.)",gpt52,qs,1,1,1,1.0,1.0
+Real Property,"Government Loans (VA,FHA,Etc.)",gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Real Property,"Government Loans (VA,FHA,Etc.)",gemini31_pro,jackie,1,1,1,1.0,1.0
+Real Property,"Government Loans (VA,FHA,Etc.)",gemini31_pro,qs,1,1,1,1.0,1.0
+Real Property,"Government Loans (VA,FHA,Etc.)",deepseek_v4,jackie,0,1,0,0.0,0.0
+Real Property,"Government Loans (VA,FHA,Etc.)",deepseek_v4,qs,0,1,0,0.0,0.0
+Real Property,"Government Loans (VA,FHA,Etc.)",jackie,qs,1,1,1,1.0,1.0
+Real Property,Homeowners Association,gpt52,gemini31_pro,0,0,0,,
+Real Property,Homeowners Association,gpt52,deepseek_v4,0,0,0,,
+Real Property,Homeowners Association,gpt52,jackie,0,0,0,,
+Real Property,Homeowners Association,gpt52,qs,0,0,0,,
+Real Property,Homeowners Association,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Homeowners Association,gemini31_pro,jackie,0,0,0,,
+Real Property,Homeowners Association,gemini31_pro,qs,0,0,0,,
+Real Property,Homeowners Association,deepseek_v4,jackie,0,0,0,,
+Real Property,Homeowners Association,deepseek_v4,qs,0,0,0,,
+Real Property,Homeowners Association,jackie,qs,0,0,0,,
+Real Property,Land Use/Zoning,gpt52,gemini31_pro,0,0,0,,
+Real Property,Land Use/Zoning,gpt52,deepseek_v4,0,0,0,,
+Real Property,Land Use/Zoning,gpt52,jackie,0,0,0,,
+Real Property,Land Use/Zoning,gpt52,qs,0,0,0,,
+Real Property,Land Use/Zoning,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Land Use/Zoning,gemini31_pro,jackie,0,0,0,,
+Real Property,Land Use/Zoning,gemini31_pro,qs,0,0,0,,
+Real Property,Land Use/Zoning,deepseek_v4,jackie,0,0,0,,
+Real Property,Land Use/Zoning,deepseek_v4,qs,0,0,0,,
+Real Property,Land Use/Zoning,jackie,qs,0,0,0,,
+Real Property,Landlord Commercial,gpt52,gemini31_pro,0,0,0,,
+Real Property,Landlord Commercial,gpt52,deepseek_v4,0,0,0,,
+Real Property,Landlord Commercial,gpt52,jackie,0,0,0,,
+Real Property,Landlord Commercial,gpt52,qs,0,0,0,,
+Real Property,Landlord Commercial,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Landlord Commercial,gemini31_pro,jackie,0,0,0,,
+Real Property,Landlord Commercial,gemini31_pro,qs,0,0,0,,
+Real Property,Landlord Commercial,deepseek_v4,jackie,0,0,0,,
+Real Property,Landlord Commercial,deepseek_v4,qs,0,0,0,,
+Real Property,Landlord Commercial,jackie,qs,0,0,0,,
+Real Property,Landlord Residential,gpt52,gemini31_pro,0,0,0,,
+Real Property,Landlord Residential,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Real Property,Landlord Residential,gpt52,jackie,0,0,0,,
+Real Property,Landlord Residential,gpt52,qs,0,0,0,,
+Real Property,Landlord Residential,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Real Property,Landlord Residential,gemini31_pro,jackie,0,0,0,,
+Real Property,Landlord Residential,gemini31_pro,qs,0,0,0,,
+Real Property,Landlord Residential,deepseek_v4,jackie,1,0,0,0.0,0.0
+Real Property,Landlord Residential,deepseek_v4,qs,1,0,0,0.0,0.0
+Real Property,Landlord Residential,jackie,qs,0,0,0,,
+Real Property,Litigation,gpt52,gemini31_pro,0,0,0,,
+Real Property,Litigation,gpt52,deepseek_v4,0,0,0,,
+Real Property,Litigation,gpt52,jackie,0,0,0,,
+Real Property,Litigation,gpt52,qs,0,0,0,,
+Real Property,Litigation,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Litigation,gemini31_pro,jackie,0,0,0,,
+Real Property,Litigation,gemini31_pro,qs,0,0,0,,
+Real Property,Litigation,deepseek_v4,jackie,0,0,0,,
+Real Property,Litigation,deepseek_v4,qs,0,0,0,,
+Real Property,Litigation,jackie,qs,0,0,0,,
+Real Property,LLTN – ADA issues/Animals/Accommodations,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,gpt52,jackie,1,0,0,0.0,0.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,gpt52,qs,1,0,0,0.0,0.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,gemini31_pro,jackie,0,0,0,,
+Real Property,LLTN – ADA issues/Animals/Accommodations,gemini31_pro,qs,0,0,0,,
+Real Property,LLTN – ADA issues/Animals/Accommodations,deepseek_v4,jackie,1,0,0,0.0,0.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,deepseek_v4,qs,1,0,0,0.0,0.0
+Real Property,LLTN – ADA issues/Animals/Accommodations,jackie,qs,0,0,0,,
+Real Property,"Mining, Oil",gpt52,gemini31_pro,0,0,0,,
+Real Property,"Mining, Oil",gpt52,deepseek_v4,0,0,0,,
+Real Property,"Mining, Oil",gpt52,jackie,0,0,0,,
+Real Property,"Mining, Oil",gpt52,qs,0,0,0,,
+Real Property,"Mining, Oil",gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,"Mining, Oil",gemini31_pro,jackie,0,0,0,,
+Real Property,"Mining, Oil",gemini31_pro,qs,0,0,0,,
+Real Property,"Mining, Oil",deepseek_v4,jackie,0,0,0,,
+Real Property,"Mining, Oil",deepseek_v4,qs,0,0,0,,
+Real Property,"Mining, Oil",jackie,qs,0,0,0,,
+Real Property,Mobile Home (Landlord),gpt52,gemini31_pro,0,0,0,,
+Real Property,Mobile Home (Landlord),gpt52,deepseek_v4,0,0,0,,
+Real Property,Mobile Home (Landlord),gpt52,jackie,0,0,0,,
+Real Property,Mobile Home (Landlord),gpt52,qs,0,0,0,,
+Real Property,Mobile Home (Landlord),gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Mobile Home (Landlord),gemini31_pro,jackie,0,0,0,,
+Real Property,Mobile Home (Landlord),gemini31_pro,qs,0,0,0,,
+Real Property,Mobile Home (Landlord),deepseek_v4,jackie,0,0,0,,
+Real Property,Mobile Home (Landlord),deepseek_v4,qs,0,0,0,,
+Real Property,Mobile Home (Landlord),jackie,qs,0,0,0,,
+Real Property,Mobile Home (Tenant/Owner),gpt52,gemini31_pro,1,1,1,1.0,1.0
+Real Property,Mobile Home (Tenant/Owner),gpt52,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Mobile Home (Tenant/Owner),gpt52,jackie,1,1,1,1.0,1.0
+Real Property,Mobile Home (Tenant/Owner),gpt52,qs,1,1,1,1.0,1.0
+Real Property,Mobile Home (Tenant/Owner),gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Mobile Home (Tenant/Owner),gemini31_pro,jackie,1,1,1,1.0,1.0
+Real Property,Mobile Home (Tenant/Owner),gemini31_pro,qs,1,1,1,1.0,1.0
+Real Property,Mobile Home (Tenant/Owner),deepseek_v4,jackie,0,1,0,0.0,0.0
+Real Property,Mobile Home (Tenant/Owner),deepseek_v4,qs,0,1,0,0.0,0.0
+Real Property,Mobile Home (Tenant/Owner),jackie,qs,1,1,1,1.0,1.0
+Real Property,Property Tax,gpt52,gemini31_pro,1,0,0,0.0,0.0
+Real Property,Property Tax,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Property Tax,gpt52,jackie,1,0,0,0.0,0.0
+Real Property,Property Tax,gpt52,qs,1,0,0,0.0,0.0
+Real Property,Property Tax,gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Property Tax,gemini31_pro,jackie,0,0,0,,
+Real Property,Property Tax,gemini31_pro,qs,0,0,0,,
+Real Property,Property Tax,deepseek_v4,jackie,0,0,0,,
+Real Property,Property Tax,deepseek_v4,qs,0,0,0,,
+Real Property,Property Tax,jackie,qs,0,0,0,,
+Real Property,Tenant (Commercial),gpt52,gemini31_pro,0,0,0,,
+Real Property,Tenant (Commercial),gpt52,deepseek_v4,0,0,0,,
+Real Property,Tenant (Commercial),gpt52,jackie,0,0,0,,
+Real Property,Tenant (Commercial),gpt52,qs,0,0,0,,
+Real Property,Tenant (Commercial),gemini31_pro,deepseek_v4,0,0,0,,
+Real Property,Tenant (Commercial),gemini31_pro,jackie,0,0,0,,
+Real Property,Tenant (Commercial),gemini31_pro,qs,0,0,0,,
+Real Property,Tenant (Commercial),deepseek_v4,jackie,0,0,0,,
+Real Property,Tenant (Commercial),deepseek_v4,qs,0,0,0,,
+Real Property,Tenant (Commercial),jackie,qs,0,0,0,,
+Real Property,Tenant (Residential),gpt52,gemini31_pro,3,4,3,0.75,0.8571428571428571
+Real Property,Tenant (Residential),gpt52,deepseek_v4,3,3,2,0.5,0.6666666666666666
+Real Property,Tenant (Residential),gpt52,jackie,3,3,3,1.0,1.0
+Real Property,Tenant (Residential),gpt52,qs,3,4,3,0.75,0.8571428571428571
+Real Property,Tenant (Residential),gemini31_pro,deepseek_v4,4,3,3,0.75,0.8571428571428571
+Real Property,Tenant (Residential),gemini31_pro,jackie,4,3,3,0.75,0.8571428571428571
+Real Property,Tenant (Residential),gemini31_pro,qs,4,4,3,0.6,0.75
+Real Property,Tenant (Residential),deepseek_v4,jackie,3,3,2,0.5,0.6666666666666666
+Real Property,Tenant (Residential),deepseek_v4,qs,3,4,2,0.4,0.5714285714285714
+Real Property,Tenant (Residential),jackie,qs,3,4,3,0.75,0.8571428571428571
+Real Property,Water Law,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Real Property,Water Law,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Real Property,Water Law,gpt52,jackie,1,1,1,1.0,1.0
+Real Property,Water Law,gpt52,qs,1,0,0,0.0,0.0
+Real Property,Water Law,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Real Property,Water Law,gemini31_pro,jackie,1,1,1,1.0,1.0
+Real Property,Water Law,gemini31_pro,qs,1,0,0,0.0,0.0
+Real Property,Water Law,deepseek_v4,jackie,1,1,1,1.0,1.0
+Real Property,Water Law,deepseek_v4,qs,1,0,0,0.0,0.0
+Real Property,Water Law,jackie,qs,1,0,0,0.0,0.0
+Real Property,Other,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Real Property,Other,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Other,gpt52,jackie,1,1,0,0.0,0.0
+Real Property,Other,gpt52,qs,1,0,0,0.0,0.0
+Real Property,Other,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Real Property,Other,gemini31_pro,jackie,1,1,0,0.0,0.0
+Real Property,Other,gemini31_pro,qs,1,0,0,0.0,0.0
+Real Property,Other,deepseek_v4,jackie,0,1,0,0.0,0.0
+Real Property,Other,deepseek_v4,qs,0,0,0,,
+Real Property,Other,jackie,qs,1,0,0,0.0,0.0
+Taxation,Business & Corporate,gpt52,gemini31_pro,1,1,0,0.0,0.0
+Taxation,Business & Corporate,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Taxation,Business & Corporate,gpt52,jackie,1,0,0,0.0,0.0
+Taxation,Business & Corporate,gpt52,qs,1,0,0,0.0,0.0
+Taxation,Business & Corporate,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Taxation,Business & Corporate,gemini31_pro,jackie,1,0,0,0.0,0.0
+Taxation,Business & Corporate,gemini31_pro,qs,1,0,0,0.0,0.0
+Taxation,Business & Corporate,deepseek_v4,jackie,0,0,0,,
+Taxation,Business & Corporate,deepseek_v4,qs,0,0,0,,
+Taxation,Business & Corporate,jackie,qs,0,0,0,,
+Taxation,Criminal,gpt52,gemini31_pro,0,0,0,,
+Taxation,Criminal,gpt52,deepseek_v4,0,0,0,,
+Taxation,Criminal,gpt52,jackie,0,0,0,,
+Taxation,Criminal,gpt52,qs,0,0,0,,
+Taxation,Criminal,gemini31_pro,deepseek_v4,0,0,0,,
+Taxation,Criminal,gemini31_pro,jackie,0,0,0,,
+Taxation,Criminal,gemini31_pro,qs,0,0,0,,
+Taxation,Criminal,deepseek_v4,jackie,0,0,0,,
+Taxation,Criminal,deepseek_v4,qs,0,0,0,,
+Taxation,Criminal,jackie,qs,0,0,0,,
+Taxation,Estate & Gift,gpt52,gemini31_pro,0,0,0,,
+Taxation,Estate & Gift,gpt52,deepseek_v4,0,0,0,,
+Taxation,Estate & Gift,gpt52,jackie,0,0,0,,
+Taxation,Estate & Gift,gpt52,qs,0,0,0,,
+Taxation,Estate & Gift,gemini31_pro,deepseek_v4,0,0,0,,
+Taxation,Estate & Gift,gemini31_pro,jackie,0,0,0,,
+Taxation,Estate & Gift,gemini31_pro,qs,0,0,0,,
+Taxation,Estate & Gift,deepseek_v4,jackie,0,0,0,,
+Taxation,Estate & Gift,deepseek_v4,qs,0,0,0,,
+Taxation,Estate & Gift,jackie,qs,0,0,0,,
+Taxation,Litigation,gpt52,gemini31_pro,0,0,0,,
+Taxation,Litigation,gpt52,deepseek_v4,0,0,0,,
+Taxation,Litigation,gpt52,jackie,0,0,0,,
+Taxation,Litigation,gpt52,qs,0,0,0,,
+Taxation,Litigation,gemini31_pro,deepseek_v4,0,0,0,,
+Taxation,Litigation,gemini31_pro,jackie,0,0,0,,
+Taxation,Litigation,gemini31_pro,qs,0,0,0,,
+Taxation,Litigation,deepseek_v4,jackie,0,0,0,,
+Taxation,Litigation,deepseek_v4,qs,0,0,0,,
+Taxation,Litigation,jackie,qs,0,0,0,,
+Taxation,Personal Income,gpt52,gemini31_pro,2,1,1,0.5,0.6666666666666666
+Taxation,Personal Income,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Taxation,Personal Income,gpt52,jackie,2,2,2,1.0,1.0
+Taxation,Personal Income,gpt52,qs,2,2,2,1.0,1.0
+Taxation,Personal Income,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Taxation,Personal Income,gemini31_pro,jackie,1,2,1,0.5,0.6666666666666666
+Taxation,Personal Income,gemini31_pro,qs,1,2,1,0.5,0.6666666666666666
+Taxation,Personal Income,deepseek_v4,jackie,1,2,1,0.5,0.6666666666666666
+Taxation,Personal Income,deepseek_v4,qs,1,2,1,0.5,0.6666666666666666
+Taxation,Personal Income,jackie,qs,2,2,2,1.0,1.0
+Taxation,Other,gpt52,gemini31_pro,0,0,0,,
+Taxation,Other,gpt52,deepseek_v4,0,0,0,,
+Taxation,Other,gpt52,jackie,0,0,0,,
+Taxation,Other,gpt52,qs,0,0,0,,
+Taxation,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Taxation,Other,gemini31_pro,jackie,0,0,0,,
+Taxation,Other,gemini31_pro,qs,0,0,0,,
+Taxation,Other,deepseek_v4,jackie,0,0,0,,
+Taxation,Other,deepseek_v4,qs,0,0,0,,
+Taxation,Other,jackie,qs,0,0,0,,
+Wills & Trusts,Conservatorship/Guardianship,gpt52,gemini31_pro,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Conservatorship/Guardianship,gpt52,deepseek_v4,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Conservatorship/Guardianship,gpt52,jackie,3,5,3,0.6,0.75
+Wills & Trusts,Conservatorship/Guardianship,gpt52,qs,3,4,3,0.75,0.8571428571428571
+Wills & Trusts,Conservatorship/Guardianship,gemini31_pro,deepseek_v4,2,2,1,0.3333333333333333,0.5
+Wills & Trusts,Conservatorship/Guardianship,gemini31_pro,jackie,2,5,2,0.4,0.5714285714285714
+Wills & Trusts,Conservatorship/Guardianship,gemini31_pro,qs,2,4,2,0.5,0.6666666666666666
+Wills & Trusts,Conservatorship/Guardianship,deepseek_v4,jackie,2,5,2,0.4,0.5714285714285714
+Wills & Trusts,Conservatorship/Guardianship,deepseek_v4,qs,2,4,2,0.5,0.6666666666666666
+Wills & Trusts,Conservatorship/Guardianship,jackie,qs,5,4,4,0.8,0.8888888888888888
+Wills & Trusts,Document Review,gpt52,gemini31_pro,0,0,0,,
+Wills & Trusts,Document Review,gpt52,deepseek_v4,0,0,0,,
+Wills & Trusts,Document Review,gpt52,jackie,0,0,0,,
+Wills & Trusts,Document Review,gpt52,qs,0,0,0,,
+Wills & Trusts,Document Review,gemini31_pro,deepseek_v4,0,0,0,,
+Wills & Trusts,Document Review,gemini31_pro,jackie,0,0,0,,
+Wills & Trusts,Document Review,gemini31_pro,qs,0,0,0,,
+Wills & Trusts,Document Review,deepseek_v4,jackie,0,0,0,,
+Wills & Trusts,Document Review,deepseek_v4,qs,0,0,0,,
+Wills & Trusts,Document Review,jackie,qs,0,0,0,,
+Wills & Trusts,Elder Abuse,gpt52,gemini31_pro,3,3,2,0.5,0.6666666666666666
+Wills & Trusts,Elder Abuse,gpt52,deepseek_v4,3,3,3,1.0,1.0
+Wills & Trusts,Elder Abuse,gpt52,jackie,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Elder Abuse,gpt52,qs,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Elder Abuse,gemini31_pro,deepseek_v4,3,3,2,0.5,0.6666666666666666
+Wills & Trusts,Elder Abuse,gemini31_pro,jackie,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Elder Abuse,gemini31_pro,qs,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Elder Abuse,deepseek_v4,jackie,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Elder Abuse,deepseek_v4,qs,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Elder Abuse,jackie,qs,2,2,2,1.0,1.0
+Wills & Trusts,"General (Wills, Trusts, Estates)",gpt52,gemini31_pro,3,4,2,0.4,0.5714285714285714
+Wills & Trusts,"General (Wills, Trusts, Estates)",gpt52,deepseek_v4,3,4,2,0.4,0.5714285714285714
+Wills & Trusts,"General (Wills, Trusts, Estates)",gpt52,jackie,3,2,1,0.25,0.4
+Wills & Trusts,"General (Wills, Trusts, Estates)",gpt52,qs,3,2,1,0.25,0.4
+Wills & Trusts,"General (Wills, Trusts, Estates)",gemini31_pro,deepseek_v4,4,4,3,0.6,0.75
+Wills & Trusts,"General (Wills, Trusts, Estates)",gemini31_pro,jackie,4,2,1,0.2,0.3333333333333333
+Wills & Trusts,"General (Wills, Trusts, Estates)",gemini31_pro,qs,4,2,1,0.2,0.3333333333333333
+Wills & Trusts,"General (Wills, Trusts, Estates)",deepseek_v4,jackie,4,2,2,0.5,0.6666666666666666
+Wills & Trusts,"General (Wills, Trusts, Estates)",deepseek_v4,qs,4,2,2,0.5,0.6666666666666666
+Wills & Trusts,"General (Wills, Trusts, Estates)",jackie,qs,2,2,2,1.0,1.0
+Wills & Trusts,Litigation,gpt52,gemini31_pro,1,3,1,0.3333333333333333,0.5
+Wills & Trusts,Litigation,gpt52,deepseek_v4,1,1,1,1.0,1.0
+Wills & Trusts,Litigation,gpt52,jackie,1,2,1,0.5,0.6666666666666666
+Wills & Trusts,Litigation,gpt52,qs,1,3,1,0.3333333333333333,0.5
+Wills & Trusts,Litigation,gemini31_pro,deepseek_v4,3,1,1,0.3333333333333333,0.5
+Wills & Trusts,Litigation,gemini31_pro,jackie,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Litigation,gemini31_pro,qs,3,3,2,0.5,0.6666666666666666
+Wills & Trusts,Litigation,deepseek_v4,jackie,1,2,1,0.5,0.6666666666666666
+Wills & Trusts,Litigation,deepseek_v4,qs,1,3,1,0.3333333333333333,0.5
+Wills & Trusts,Litigation,jackie,qs,2,3,2,0.6666666666666666,0.8
+Wills & Trusts,Living Trusts,gpt52,gemini31_pro,3,1,1,0.3333333333333333,0.5
+Wills & Trusts,Living Trusts,gpt52,deepseek_v4,3,0,0,0.0,0.0
+Wills & Trusts,Living Trusts,gpt52,jackie,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Living Trusts,gpt52,qs,3,2,2,0.6666666666666666,0.8
+Wills & Trusts,Living Trusts,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Wills & Trusts,Living Trusts,gemini31_pro,jackie,1,2,0,0.0,0.0
+Wills & Trusts,Living Trusts,gemini31_pro,qs,1,2,0,0.0,0.0
+Wills & Trusts,Living Trusts,deepseek_v4,jackie,0,2,0,0.0,0.0
+Wills & Trusts,Living Trusts,deepseek_v4,qs,0,2,0,0.0,0.0
+Wills & Trusts,Living Trusts,jackie,qs,2,2,2,1.0,1.0
+Wills & Trusts,Long-Term Care Issues,gpt52,gemini31_pro,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,gpt52,deepseek_v4,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,gpt52,jackie,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,gpt52,qs,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,gemini31_pro,deepseek_v4,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,gemini31_pro,jackie,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,gemini31_pro,qs,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,deepseek_v4,jackie,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,deepseek_v4,qs,0,0,0,,
+Wills & Trusts,Long-Term Care Issues,jackie,qs,0,0,0,,
+Wills & Trusts,Medicare/Medicaid Planning,gpt52,gemini31_pro,0,1,0,0.0,0.0
+Wills & Trusts,Medicare/Medicaid Planning,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Wills & Trusts,Medicare/Medicaid Planning,gpt52,jackie,0,0,0,,
+Wills & Trusts,Medicare/Medicaid Planning,gpt52,qs,0,0,0,,
+Wills & Trusts,Medicare/Medicaid Planning,gemini31_pro,deepseek_v4,1,1,1,1.0,1.0
+Wills & Trusts,Medicare/Medicaid Planning,gemini31_pro,jackie,1,0,0,0.0,0.0
+Wills & Trusts,Medicare/Medicaid Planning,gemini31_pro,qs,1,0,0,0.0,0.0
+Wills & Trusts,Medicare/Medicaid Planning,deepseek_v4,jackie,1,0,0,0.0,0.0
+Wills & Trusts,Medicare/Medicaid Planning,deepseek_v4,qs,1,0,0,0.0,0.0
+Wills & Trusts,Medicare/Medicaid Planning,jackie,qs,0,0,0,,
+Wills & Trusts,Power of Attorney,gpt52,gemini31_pro,2,2,2,1.0,1.0
+Wills & Trusts,Power of Attorney,gpt52,deepseek_v4,2,0,0,0.0,0.0
+Wills & Trusts,Power of Attorney,gpt52,jackie,2,0,0,0.0,0.0
+Wills & Trusts,Power of Attorney,gpt52,qs,2,1,1,0.5,0.6666666666666666
+Wills & Trusts,Power of Attorney,gemini31_pro,deepseek_v4,2,0,0,0.0,0.0
+Wills & Trusts,Power of Attorney,gemini31_pro,jackie,2,0,0,0.0,0.0
+Wills & Trusts,Power of Attorney,gemini31_pro,qs,2,1,1,0.5,0.6666666666666666
+Wills & Trusts,Power of Attorney,deepseek_v4,jackie,0,0,0,,
+Wills & Trusts,Power of Attorney,deepseek_v4,qs,0,1,0,0.0,0.0
+Wills & Trusts,Power of Attorney,jackie,qs,0,1,0,0.0,0.0
+Wills & Trusts,Probate,gpt52,gemini31_pro,2,2,2,1.0,1.0
+Wills & Trusts,Probate,gpt52,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Wills & Trusts,Probate,gpt52,jackie,2,2,2,1.0,1.0
+Wills & Trusts,Probate,gpt52,qs,2,2,2,1.0,1.0
+Wills & Trusts,Probate,gemini31_pro,deepseek_v4,2,1,1,0.5,0.6666666666666666
+Wills & Trusts,Probate,gemini31_pro,jackie,2,2,2,1.0,1.0
+Wills & Trusts,Probate,gemini31_pro,qs,2,2,2,1.0,1.0
+Wills & Trusts,Probate,deepseek_v4,jackie,1,2,1,0.5,0.6666666666666666
+Wills & Trusts,Probate,deepseek_v4,qs,1,2,1,0.5,0.6666666666666666
+Wills & Trusts,Probate,jackie,qs,2,2,2,1.0,1.0
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gpt52,gemini31_pro,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gpt52,deepseek_v4,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gpt52,jackie,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gpt52,qs,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gemini31_pro,deepseek_v4,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gemini31_pro,jackie,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,gemini31_pro,qs,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,deepseek_v4,jackie,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,deepseek_v4,qs,0,0,0,,
+Wills & Trusts,Reversing Guardianship or Payee Assignments,jackie,qs,0,0,0,,
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gpt52,gemini31_pro,0,0,0,,
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gpt52,deepseek_v4,0,1,0,0.0,0.0
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gpt52,jackie,0,0,0,,
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gpt52,qs,0,0,0,,
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gemini31_pro,deepseek_v4,0,1,0,0.0,0.0
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gemini31_pro,jackie,0,0,0,,
+Wills & Trusts,Special Needs/Inc. Cap Trusts,gemini31_pro,qs,0,0,0,,
+Wills & Trusts,Special Needs/Inc. Cap Trusts,deepseek_v4,jackie,1,0,0,0.0,0.0
+Wills & Trusts,Special Needs/Inc. Cap Trusts,deepseek_v4,qs,1,0,0,0.0,0.0
+Wills & Trusts,Special Needs/Inc. Cap Trusts,jackie,qs,0,0,0,,
+Wills & Trusts,Other,gpt52,gemini31_pro,0,0,0,,
+Wills & Trusts,Other,gpt52,deepseek_v4,0,0,0,,
+Wills & Trusts,Other,gpt52,jackie,0,0,0,,
+Wills & Trusts,Other,gpt52,qs,0,0,0,,
+Wills & Trusts,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Wills & Trusts,Other,gemini31_pro,jackie,0,0,0,,
+Wills & Trusts,Other,gemini31_pro,qs,0,0,0,,
+Wills & Trusts,Other,deepseek_v4,jackie,0,0,0,,
+Wills & Trusts,Other,deepseek_v4,qs,0,0,0,,
+Wills & Trusts,Other,jackie,qs,0,0,0,,
+Workers' Comp,Employers,gpt52,gemini31_pro,0,0,0,,
+Workers' Comp,Employers,gpt52,deepseek_v4,0,0,0,,
+Workers' Comp,Employers,gpt52,jackie,0,0,0,,
+Workers' Comp,Employers,gpt52,qs,0,0,0,,
+Workers' Comp,Employers,gemini31_pro,deepseek_v4,0,0,0,,
+Workers' Comp,Employers,gemini31_pro,jackie,0,0,0,,
+Workers' Comp,Employers,gemini31_pro,qs,0,0,0,,
+Workers' Comp,Employers,deepseek_v4,jackie,0,0,0,,
+Workers' Comp,Employers,deepseek_v4,qs,0,0,0,,
+Workers' Comp,Employers,jackie,qs,0,0,0,,
+Workers' Comp,Federal,gpt52,gemini31_pro,0,0,0,,
+Workers' Comp,Federal,gpt52,deepseek_v4,0,0,0,,
+Workers' Comp,Federal,gpt52,jackie,0,0,0,,
+Workers' Comp,Federal,gpt52,qs,0,0,0,,
+Workers' Comp,Federal,gemini31_pro,deepseek_v4,0,0,0,,
+Workers' Comp,Federal,gemini31_pro,jackie,0,0,0,,
+Workers' Comp,Federal,gemini31_pro,qs,0,0,0,,
+Workers' Comp,Federal,deepseek_v4,jackie,0,0,0,,
+Workers' Comp,Federal,deepseek_v4,qs,0,0,0,,
+Workers' Comp,Federal,jackie,qs,0,0,0,,
+Workers' Comp,LHWA,gpt52,gemini31_pro,0,0,0,,
+Workers' Comp,LHWA,gpt52,deepseek_v4,0,0,0,,
+Workers' Comp,LHWA,gpt52,jackie,0,0,0,,
+Workers' Comp,LHWA,gpt52,qs,0,0,0,,
+Workers' Comp,LHWA,gemini31_pro,deepseek_v4,0,0,0,,
+Workers' Comp,LHWA,gemini31_pro,jackie,0,0,0,,
+Workers' Comp,LHWA,gemini31_pro,qs,0,0,0,,
+Workers' Comp,LHWA,deepseek_v4,jackie,0,0,0,,
+Workers' Comp,LHWA,deepseek_v4,qs,0,0,0,,
+Workers' Comp,LHWA,jackie,qs,0,0,0,,
+Workers' Comp,State,gpt52,gemini31_pro,3,2,2,0.6666666666666666,0.8
+Workers' Comp,State,gpt52,deepseek_v4,3,3,3,1.0,1.0
+Workers' Comp,State,gpt52,jackie,3,2,2,0.6666666666666666,0.8
+Workers' Comp,State,gpt52,qs,3,3,3,1.0,1.0
+Workers' Comp,State,gemini31_pro,deepseek_v4,2,3,2,0.6666666666666666,0.8
+Workers' Comp,State,gemini31_pro,jackie,2,2,1,0.3333333333333333,0.5
+Workers' Comp,State,gemini31_pro,qs,2,3,2,0.6666666666666666,0.8
+Workers' Comp,State,deepseek_v4,jackie,3,2,2,0.6666666666666666,0.8
+Workers' Comp,State,deepseek_v4,qs,3,3,3,1.0,1.0
+Workers' Comp,State,jackie,qs,2,3,2,0.6666666666666666,0.8
+Workers' Comp,Stress Related,gpt52,gemini31_pro,0,0,0,,
+Workers' Comp,Stress Related,gpt52,deepseek_v4,0,0,0,,
+Workers' Comp,Stress Related,gpt52,jackie,0,0,0,,
+Workers' Comp,Stress Related,gpt52,qs,0,0,0,,
+Workers' Comp,Stress Related,gemini31_pro,deepseek_v4,0,0,0,,
+Workers' Comp,Stress Related,gemini31_pro,jackie,0,0,0,,
+Workers' Comp,Stress Related,gemini31_pro,qs,0,0,0,,
+Workers' Comp,Stress Related,deepseek_v4,jackie,0,0,0,,
+Workers' Comp,Stress Related,deepseek_v4,qs,0,0,0,,
+Workers' Comp,Stress Related,jackie,qs,0,0,0,,
+Workers' Comp,Third Party litigation,gpt52,gemini31_pro,1,1,1,1.0,1.0
+Workers' Comp,Third Party litigation,gpt52,deepseek_v4,1,0,0,0.0,0.0
+Workers' Comp,Third Party litigation,gpt52,jackie,1,0,0,0.0,0.0
+Workers' Comp,Third Party litigation,gpt52,qs,1,1,1,1.0,1.0
+Workers' Comp,Third Party litigation,gemini31_pro,deepseek_v4,1,0,0,0.0,0.0
+Workers' Comp,Third Party litigation,gemini31_pro,jackie,1,0,0,0.0,0.0
+Workers' Comp,Third Party litigation,gemini31_pro,qs,1,1,1,1.0,1.0
+Workers' Comp,Third Party litigation,deepseek_v4,jackie,0,0,0,,
+Workers' Comp,Third Party litigation,deepseek_v4,qs,0,1,0,0.0,0.0
+Workers' Comp,Third Party litigation,jackie,qs,0,1,0,0.0,0.0
+Workers' Comp,Other,gpt52,gemini31_pro,0,0,0,,
+Workers' Comp,Other,gpt52,deepseek_v4,0,0,0,,
+Workers' Comp,Other,gpt52,jackie,0,0,0,,
+Workers' Comp,Other,gpt52,qs,0,0,0,,
+Workers' Comp,Other,gemini31_pro,deepseek_v4,0,0,0,,
+Workers' Comp,Other,gemini31_pro,jackie,0,0,0,,
+Workers' Comp,Other,gemini31_pro,qs,0,0,0,,
+Workers' Comp,Other,deepseek_v4,jackie,0,0,0,,
+Workers' Comp,Other,deepseek_v4,qs,0,0,0,,
+Workers' Comp,Other,jackie,qs,0,0,0,,

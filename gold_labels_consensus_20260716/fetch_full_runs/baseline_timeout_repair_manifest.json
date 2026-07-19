@@ -1,0 +1,165 @@
+{
+  "run_start": "2026-07-16 10:59:27",
+  "tests": 416,
+  "gpt52_starts": 416,
+  "duplicated_timeout_log_lines": 34,
+  "unique_gpt52_timeout_events": 17,
+  "semantic_merge_timeout_log_lines": 26,
+  "matching_validation": "all GPT start description lengths exactly matched CSV order",
+  "repair_cases": [
+    {
+      "test_index_zero_based": 1,
+      "test_number_one_based": 2,
+      "description_length": 339,
+      "start": "2026-07-16T10:59:50.124000",
+      "timeout_log_time": "2026-07-16T11:00:10.078000",
+      "observed_elapsed_seconds": 19.954,
+      "problem_description": "Hi . We need to do end of life stuff, make a will, and figure out how to pass on property to the kids (appx value 650,000). We do not have IRA's or investments. I turn 70 this yr, Sean my husband of 41 yrs, turns 69. I have put this off for years, now its to figure it out. I am best reached by text on phone, tnks for reading this. Jeanne"
+    },
+    {
+      "test_index_zero_based": 13,
+      "test_number_one_based": 14,
+      "description_length": 541,
+      "start": "2026-07-16T11:01:24.513000",
+      "timeout_log_time": "2026-07-16T11:01:41.531000",
+      "observed_elapsed_seconds": 17.018,
+      "problem_description": "I am trying to divorce my husband, after he committed infidelity online, I took screenshots, and they are saved to my phone. He doesn't support me as a husband, always stressing me out. There is no more love, trust and we have a daughter she is 3 years old. We also have property together as a home. But when I was pregnant with my daughter he was never there, until the day she was born. And now that I live still in the house, he been so cold taking screenshots from my conversations I have with friends. This is just a toxic relationship."
+    },
+    {
+      "test_index_zero_based": 17,
+      "test_number_one_based": 18,
+      "description_length": 404,
+      "start": "2026-07-16T11:02:51.322000",
+      "timeout_log_time": "2026-07-16T11:03:11.262000",
+      "observed_elapsed_seconds": 19.94,
+      "problem_description": "Denied SSD, FILED FOR SSI BY MYSELF, DENIED BUT A PLETHORA OF OF MEDICAL RECORDS, IMAGING AND AN M.D. DETERMINATION OF \"\"Disabled, cannot perform gainful employment\"\" with 5 very detailed pages was completely overlooked & was included with my return paperwork. Now I am looking at major back surgery, etc...... and a well known ssi/ssd lawyer refused my case for past drug abuse over 2 years ago!!!! Help"
+    },
+    {
+      "test_index_zero_based": 23,
+      "test_number_one_based": 24,
+      "description_length": 599,
+      "start": "2026-07-16T11:04:33.759000",
+      "timeout_log_time": "2026-07-16T11:04:53.706000",
+      "observed_elapsed_seconds": 19.947,
+      "problem_description": "I need legal advice and I need to establish paternity with my 8 month old baby boy he was born into the marrige my wife and i got married 3 months before he was born but she never put me on the birth certificate she left home but came back after 3 months issac was brought back home thankfully. I have custody of him now due to her untreated mental condition she was diagnosed with diffrent physiciatric disorders. Also I need help filling out full custody forms and getting on the birth certificate. I did file for a restraining order on her again due to her being violent with me ad my son Isaac ."
+    },
+    {
+      "test_index_zero_based": 25,
+      "test_number_one_based": 26,
+      "description_length": 53,
+      "start": "2026-07-16T11:05:18.932000",
+      "timeout_log_time": "2026-07-16T11:05:38.881000",
+      "observed_elapsed_seconds": 19.949,
+      "problem_description": "I am getting divorced and wan sole custody of my kids"
+    },
+    {
+      "test_index_zero_based": 90,
+      "test_number_one_based": 91,
+      "description_length": 334,
+      "start": "2026-07-16T11:15:07.531000",
+      "timeout_log_time": "2026-07-16T11:15:24.547000",
+      "observed_elapsed_seconds": 17.016,
+      "problem_description": "I am needing an attorney familiar with the clinical mental health licensure board (OBPLCT) to help guide me through the application and character fitness process. I have surrendered my Oregon license in the past; however, was encouraged to reapply. I am now reapplying but must clear up some of the Question surrounding my background."
+    },
+    {
+      "test_index_zero_based": 116,
+      "test_number_one_based": 117,
+      "description_length": 204,
+      "start": "2026-07-16T11:19:02.331000",
+      "timeout_log_time": "2026-07-16T11:19:22.304000",
+      "observed_elapsed_seconds": 19.973,
+      "problem_description": "I owe taxes to Canada from my time working there over 10 years ago and need assistance in seeing if I can dispute them or remove the interest requirements. Also curious about their statute of limitations."
+    },
+    {
+      "test_index_zero_based": 119,
+      "test_number_one_based": 120,
+      "description_length": 989,
+      "start": "2026-07-16T11:20:02.619000",
+      "timeout_log_time": "2026-07-16T11:20:22.568000",
+      "observed_elapsed_seconds": 19.949,
+      "problem_description": "I am curious if a lawyer can offer some guidance on dissolving an LLC partnership business and filing bankruptcy. Essentially, my former business partner and I signed an agreement over the summer that I was to leave the partnership, transfer full ownership and responsibilities to her, and be paid out over 5 years for the $10,000 loan that I provided. She was planning to remain operating but then decided to close the business about 3 months later after realizing it was too much for her to take on. My name was never officially removed from the business in that time, so now we want to go about doing so, and dissolving the business properly, along with likely filing bankruptcy. The business has about $10k in debt from other loans (SBA and Shopify), not including the $10k from myself. All assets have been sold. At this point I understand that I will very likely not be receiving my portion of the money loaned, but I do need to ensure the dissolution goes smoothly from here on out."
+    },
+    {
+      "test_index_zero_based": 128,
+      "test_number_one_based": 129,
+      "description_length": 476,
+      "start": "2026-07-16T11:22:18.603000",
+      "timeout_log_time": "2026-07-16T11:22:35.620000",
+      "observed_elapsed_seconds": 17.017,
+      "problem_description": "I need information on setting up a special needs trust that will meet SSI rules. I currently have POA for a 24 yr old female with developmental disabilities whose mother recently passed. She does have one IRA that has approximately $170K that she is receiving a monthly distribution of approx $1200 gross. When the estate finishes through probate, there will be more funds. I am trying to protect her future from her older siblings who have abused her financially in the past."
+    },
+    {
+      "test_index_zero_based": 144,
+      "test_number_one_based": 145,
+      "description_length": 974,
+      "start": "2026-07-16T11:24:49.637000",
+      "timeout_log_time": "2026-07-16T11:25:09.591000",
+      "observed_elapsed_seconds": 19.954,
+      "problem_description": "I live in a Manufactured Home Park for ages 55 and over. There are issues with a creek and embankment erosion behind where 28 homes are located (including mine). Company owning the park has purchased more than 20 of the homes and indicated buyouts of Fair Market Value. The work on the creek side will requires homes to be removed/demolished. Work will be done in three Phases. Mine is newer home and in Phase 2. I wanted them to purchase it now so I could purchase a new home that the company owns and is located on the other side of community. They purchased a home in Phase 3 in April so owner could move. After 2+ months of corresponding with them on an offer, they told me they wouldn't purchase mine as \"It's not needed yet\". Home cannot be sold to outside buyer because of the creek erosion issues already being permitted through Clackamas County to begin next year. What is my recourse? Would need info from lawyer familiar with Manufactured Home Laws, Seniors, etc."
+    },
+    {
+      "test_index_zero_based": 175,
+      "test_number_one_based": 176,
+      "description_length": 176,
+      "start": "2026-07-16T11:30:42.916000",
+      "timeout_log_time": "2026-07-16T11:31:02.863000",
+      "observed_elapsed_seconds": 19.947,
+      "problem_description": "I am looking for help to file for bankruptcy, I have shared assets and the co-borrower is not my spouse & I am worried about how a bankruptcy would affect them in this process."
+    },
+    {
+      "test_index_zero_based": 181,
+      "test_number_one_based": 182,
+      "description_length": 356,
+      "start": "2026-07-16T11:32:14.423000",
+      "timeout_log_time": "2026-07-16T11:32:31.430000",
+      "observed_elapsed_seconds": 17.007,
+      "problem_description": "I am being sued for an unpaid dental bill from 2016 and I currently receive unemployment and have housing assistance. I have other debts that concern me too. I would like to file bankruptcy to relieve myself of the stress of not being able to pay the debts. I am also concerned about being served for the dentist bill which is $530. Please help. Thank you."
+    },
+    {
+      "test_index_zero_based": 184,
+      "test_number_one_based": 185,
+      "description_length": 496,
+      "start": "2026-07-16T11:33:02.409000",
+      "timeout_log_time": "2026-07-16T11:33:22.354000",
+      "observed_elapsed_seconds": 19.945,
+      "problem_description": "Bankruptcy potential, I have about 500k in debt. All my debt is current and not in default. I have about 300k on a rental property, 120k in federal SBA debt, 12k in credit card det, and 55k on a car loan. Rental property and auto Loan pay for its self as a rental. I would like to see what bankruptcy looks like in my situation, I would like to keep my rental and car if possible. My rental house is worth about 55k, I have 30k in a 401k and we have 3 car with the loan on it is worth around 60k."
+    },
+    {
+      "test_index_zero_based": 188,
+      "test_number_one_based": 189,
+      "description_length": 301,
+      "start": "2026-07-16T11:34:08.764000",
+      "timeout_log_time": "2026-07-16T11:34:28.706000",
+      "observed_elapsed_seconds": 19.942,
+      "problem_description": "I financed a truck for someone and we since have split up. He refuses to get it out of my name or return to me so I can return to the finance company. He over drew my bank account and maxed out my 3 credit cards. I'm looking for an attorney to file chapter 7 bankruptcy but they are all too expensive."
+    },
+    {
+      "test_index_zero_based": 217,
+      "test_number_one_based": 218,
+      "description_length": 784,
+      "start": "2026-07-16T11:39:30.631000",
+      "timeout_log_time": "2026-07-16T11:39:47.648000",
+      "observed_elapsed_seconds": 17.017,
+      "problem_description": "I have a contract that a car dealer.. Bought a new car (2019 Ford Edge ST) from Damerow Ford Feb 2020. Car cost me $805 per month. 1 1/2 years payment caused financil problems. Went to same dealer,asked what can they.do. loan was 7.99%. Damerow said buy the same car (2019 Ford Edge ST). They could trade same car (had 2x the mileage, later i found it had bad tires). Over 4 hours at dealer finally completed the deal. Contract was predatory. Gave me $36,000 for my car I owned that much.. They set precedent in Nov 2021 2019 Ford Edge ST ws worth $36,000. Then turned around and sold me a 2019 Frod Edge ST for $46,000 plus $4,000 of fees (Total was $49,000+). Now I am unable to pay the $660 per month. It has also trashed my credit. I can't sell car as owe $37K ans car worth $24K."
+    },
+    {
+      "test_index_zero_based": 329,
+      "test_number_one_based": 330,
+      "description_length": 350,
+      "start": "2026-07-16T11:59:14.515000",
+      "timeout_log_time": "2026-07-16T11:59:34.462000",
+      "observed_elapsed_seconds": 19.947,
+      "problem_description": "I need to finish getting my invention patented.I have paid 15,000.00 so far with attorneys and am almost done. I just need help resubmitting my info with the correct arguments to get it passed and patented. Most of the paperwork is done and all the drawings are done.Tks for your help...I am applying for the modest means program.Sincerely,MC Wiegand"
+    },
+    {
+      "test_index_zero_based": 396,
+      "test_number_one_based": 397,
+      "description_length": 482,
+      "start": "2026-07-16T12:11:23.382000",
+      "timeout_log_time": "2026-07-16T12:11:40.398000",
+      "observed_elapsed_seconds": 17.016,
+      "problem_description": "We hired a contractor to replace 3 showers in our home. We paid him 1/2 down as requested. Upon installing the tub and tile in the main bath, we paid him another 1/4 as requested. The job looks like an amateur did it. When we pointed out the issues, he said he'd take care of it and went on to gut the master shower. Discovering dry rot in the floor, shower work stopped to address the floor. He was last here to work on 4/16/24. Nothing is finished and he has $19,050 of our money."
+    }
+  ],
+  "repair_csv": "gold_labels_consensus_20260716/fetch_full_runs/baseline_gpt52_timeout_repair_cases.csv"
+}
