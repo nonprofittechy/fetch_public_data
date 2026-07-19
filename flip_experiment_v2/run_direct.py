@@ -65,7 +65,15 @@ async def main_async() -> int:
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--first-n", type=int)
     parser.add_argument("--provider-timeout-seconds", type=float, default=90.0)
+    parser.add_argument(
+        "--candidates",
+        default=None,
+        help="Override the candidate CSV path (default: candidates/flip_candidates_v2.csv). "
+        "Use candidates/flip_candidates_v2_variability_sample.csv for the fixed "
+        "200-case variability-study subsample.",
+    )
     args = parser.parse_args()
+    dataset = Path(args.candidates).resolve() if args.candidates else DATASET
 
     fetch_root = Path(os.environ.get("FETCH_REPO_ROOT", HERE.parents[1])).resolve()
     env_file = Path(os.environ.get("FETCH_ENV_FILE", fetch_root / ".env")).resolve()
@@ -86,7 +94,7 @@ async def main_async() -> int:
     partial_path = out / "results.partial.jsonl"
     final_path = out / "results.json"
 
-    with DATASET.open(newline="", encoding="utf-8") as handle:
+    with dataset.open(newline="", encoding="utf-8") as handle:
         cases = list(csv.DictReader(handle))
     if args.first_n is not None:
         cases = cases[: args.first_n]
@@ -115,6 +123,8 @@ async def main_async() -> int:
     ]
     if args.first_n is not None:
         command.extend(["--first-n", str(args.first_n)])
+    if args.candidates:
+        command.extend(["--candidates", args.candidates])
     metadata = {
         "run_label": args.label,
         "benchmark": "flip_experiment_v2_disclosure_grounded",
@@ -134,7 +144,7 @@ async def main_async() -> int:
             "promptfoo_cache": "not_applicable_direct_orchestration",
         },
         "inputs": {
-            "dataset": {"path": str(DATASET), "sha256": sha256(DATASET)},
+            "dataset": {"path": str(dataset), "sha256": sha256(dataset)},
             "provider_bridge": {"path": str(BRIDGE), "sha256": sha256(BRIDGE)},
             "fetch_two_step_provider": {
                 "path": str(fetch_root / "promptfoo/two_step_followup_provider.py"),
@@ -155,7 +165,7 @@ async def main_async() -> int:
     }
     (out / "run_metadata.json").write_text(json.dumps(metadata, indent=2) + "\n")
     (out / "command.txt").write_text(" ".join(command) + "\n")
-    shutil.copy2(DATASET, out / "flip_candidates_v2.snapshot.csv")
+    shutil.copy2(dataset, out / "flip_candidates_v2.snapshot.csv")
     shutil.copy2(BRIDGE, out / "two_step_provider_bridge.snapshot.py")
     console_path = out / "console.log"
     console_handle = console_path.open("a", encoding="utf-8")
