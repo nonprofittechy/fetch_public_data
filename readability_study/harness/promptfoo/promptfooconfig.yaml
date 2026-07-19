@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+#
+# Readability study — promptfoo harness of record for paired screen generation.
+#
+# Two providers = the two arms (nano vs full ensemble). Each runs FETCH's real
+# ClassificationService.classify() via the study bridge and emits the merged
+# screen. The cheap descriptive readability gates run here; the full primary
+# metric battery (presupposition, double-barrel, simulated respondent, ...) is
+# computed in ../../metrics and ../../analysis over the same screens.
+#
+# Run a smoke slice:
+#   promptfoo eval -c promptfooconfig.yaml --filter-first-n 3 -o out.json
+#
+# Scale generation is normally done with ../run_generation.py (resumable,
+# concurrency-controlled); this config documents and reproduces the harness.
+
+description: FETCH follow-up screen readability — nano vs full (paired)
+
+prompts:
+  - "{{problem_description}}"
+
+tests: file://../../scenarios/gold_consensus_373.csv
+
+providers:
+  - id: file://fetch_screen_provider.py
+    label: nano
+    config:
+      arm: nano
+  - id: file://fetch_screen_provider.py
+    label: full
+    config:
+      arm: full
+
+defaultTest:
+  assert:
+    # Provider output must be parseable screen JSON.
+    - type: javascript
+      value: |
+        try { const d = JSON.parse(output); return { pass: !!d, score: 1, reason: "valid screen JSON" }; }
+        catch (e) { return { pass: false, score: 0, reason: "not JSON: " + e.message }; }
+    # Descriptive readability (Dale-Chall <= 7.9 target) on the merged screen.
+    - type: python
+      metric: dale_chall_grade
+      value: file://readability_asserts.py:dale_chall
+    # FKGL display-only.
+    - type: python
+      metric: fkgl
+      weight: 0
+      value: file://readability_asserts.py:fkgl
