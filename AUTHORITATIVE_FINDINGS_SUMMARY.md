@@ -1,6 +1,6 @@
 # Authoritative findings summary
 
-**Status:** consolidated on 2026-07-19. This revision supersedes the 2026-07-17 version: it folds in the post-fix `flip_experiment_v2` results (a pipeline-bug discovery and fix that flips the paper's central "do follow-up questions help" answer), adds a section mapping every finding to the current paper outline's research questions, and adds a companion prior-work section describing methodology precursors that live in the private FETCH repo rather than here. The linked stage documents remain the detailed methods and evidence records; this file is the cross-study index for paper drafting.
+**Status:** consolidated on 2026-07-20. This revision supersedes the 2026-07-19 version: it integrates the completed public-repo nano-vs.-full readability/question-screen study, alongside the post-fix `flip_experiment_v2` results and the prior-work methodology record. The linked stage documents remain the detailed methods and evidence records; this file is the cross-study index for paper drafting.
 
 **Two-repo provenance note.** This document indexes two things: (1) results produced *in this public repo* (`publishable-repo`), which are reproducible from the committed scripts/data here, and (2) prior-work context from the *private* FETCH application repo (`/home/quinten/fetch`, plus a satellite snapshot `/home/quinten/fetch/followup-study-paper-repo`), cited here only as narrative/methodological lineage — those artifacts are not included in this repo and are not independently reproducible from it. Section headers say which is which.
 
@@ -8,9 +8,9 @@
 
 | Outline question | Status | Headline evidence | Where |
 |---|---|---|---|
-| What makes a question good or bad? | **Partially answered** | A hard Dale–Chall gate (≤7.9 grade) vs. an LLM-judge rubric diverge sharply: 40.6% pass with the mechanical gate vs. 83–84% with the LLM judge only, on the same 416 cases — the two instruments disagree about what "good" means. No formal rubric (vocabulary list, glossing rule, PassivePy, sentence structure) has been run yet; the outline's rubric is a design proposal, not yet executed. | [Prior work §1](#prior-work-private-repo-methodology-precursors-not-in-this-public-repo); outline's own "Readability test" section is future work |
+| What makes a question good or bad? | **Partially answered, with a multi-metric study now completed** | The new 373-scenario paired study measures presupposition, double-barreling, respondent clarity/answerability, hard vocabulary, syntax, passive voice, surprisal, screen load, and conditional complexity. It reinforces that no single instrument is authoritative: DeepSeek and Claude agreed on only 22% of screens, and DeepSeek's apparent full-model grounding penalty disappeared under Claude. Older results likewise show a hard Dale–Chall gate and an LLM rubric diverging sharply. Human validation beyond the 30-scenario Claude cross-check remains open. | [Finding 6](#finding-6--nano-vs-full-question-screens-full-wins-on-coverage-not-per-question-readability); [Prior work §1](#1-readability--prompt-quality-experiments-private-repo-january-2026) |
 | Can you get an AI to ask better questions? | **Yes, demonstrated** | Targeted prompt edits (explicit glossing, word-substitution list, anti-redundancy check, few-shot examples) raised the same 416-case eval's strict pass rate from 40.62% to 57.45% (+16.83pp) in one iteration; an earlier, less-targeted edit only moved it to 44.23%. | [Prior work §1b–1g](#1-readability--prompt-quality-experiments-private-repo-january-2026) |
-| Do different AI models ask better questions? (nano vs. full) | **Infrastructure exists, result not yet extracted** | A blind human A/B labeling workflow comparing gpt-5-nano/gpt-5/gpt-5.2 follow-up-question quality was built and run (`eval-cpr-2026-05-01T20:01:43`, 416/416 cases), but the decoded preference percentages were not read out during this pass (they sit in unopened `.xlsx` workbooks in the private paper-repo snapshot). | [Prior work §3c](#3-classification-flip-precursor-and-model-comparison-private-repo-aprilmay-2026) |
+| Do different AI models ask better questions? (nano vs. full) | **Yes for coverage; no robust per-question quality difference** | In a paired 373-scenario comparison, nano produced an empty screen in 92/373 cases (24.6%) versus 2/373 (0.5%) for full; 88 pairs were nano-empty/full-nonempty and none showed the reverse (McNemar p≈6×10⁻²⁷). When both arms asked, the second, cross-family judge found per-question quality essentially indistinguishable. Full screens were longer and denser. | [Finding 6](#finding-6--nano-vs-full-question-screens-full-wins-on-coverage-not-per-question-readability) |
 | Can follow-up questions help improve classification vs. no follow-up? | **Yes, and the answer changed once a pipeline bug was fixed** | Pre-fix: net −7 exact-label change (looked like "no help/harm"). Two structural FETCH bugs meant GPT-5-family classifiers never actually received the disclosed answer on the second call. Post-fix, net **+181** (condition B) to **+220** (condition C) exact-label gains across 959 scenarios, confirmed stable across 6 reruns on a 200-case subsample (every run net +33 to +46). | [Finding 5](#finding-5--the-v2-disclosure-grounded-benchmark-the-decisive-post-fix-result) |
 | Can we use a digital twin in this? | **Not addressed** | No digital-twin artifact, design note, or experiment exists anywhere in either repo. | — |
 | Can follow-up questions help non-legal classification? | **Not addressed** | Every study in both repos is legal-intake-specific (FETCH's taxonomy). No out-of-domain/non-legal replication exists. | — |
@@ -19,15 +19,16 @@ The rest of this document is the detailed evidence supporting the "answered"/"pa
 
 ## Executive synthesis
 
-The repository (both public data here and private-repo methodology history) supports five connected conclusions:
+The repository (both public data here and private-repo methodology history) supports six connected conclusions:
 
 1. **The routing task is materially multi-label.** The source contains many descriptions with multiple independently meaningful legal issues. A single primary label is useful for routing, but it is not a complete representation of the problem.
 2. **Annotation disagreement is concentrated at taxonomy boundaries.** Humans agree more than the model raters, and broad legal-domain agreement is stronger than exact specialist-route agreement.
 3. **FETCH usually reaches the correct legal domain and often retrieves at least one exact route, but it is incomplete on multi-label scenarios and overpredicts.** Pooled retrieval was 99.2% for at least one correct top-level category and 95.3% for at least one exact sublabel; micro exact precision was 46.0%.
 4. **Follow-up questions materially help classification — but only once a real pipeline bug is fixed, and this supersedes an earlier, now-suspect result.** The 2026-07-17 version of this document reported a near-neutral flip result (47 gained / 48 lost category membership) from the 1,000-candidate `expanded_flip_experiment`. That study used the same `GPT-5 + keyword` configuration later shown, in `flip_experiment_v2`, to suffer from a bug where GPT-5-family classifiers never receive the disclosed follow-up answer on the reclassification call. Because the bug and the 1,000-candidate study's classifier configuration match exactly, and the 1,000-candidate runs predate the 2026-07-18 fix by four days, its near-neutral result should now be read the same way as `flip_experiment_v2`'s own pre-fix baseline: as resampling noise, not a measurement of whether disclosed facts help. The **post-fix** `flip_experiment_v2` result — net +181 to +220 exact-label gains, confirmed across 6 variability reruns — is the current, trustworthy answer, and it is unambiguously positive.
 5. **A deterministic safety-net layer (screening protocols) adds a small, real, zero-downside rescue on top of the fixed LLM pipeline**, concentrated exactly in the safety/routing categories it targets (restraining orders, elder abuse, immigration consequences, third-party work injury) — about 1% of matched cases, isolated via a paired within-run comparison that holds LLM sampling constant.
+6. **Switching the question-generation ensemble's OpenAI member and merge model from gpt-5-nano to gpt-5.2 fixes a large coverage failure, not a demonstrated readability failure.** Nano showed no questions on 24.6% of screens versus 0.5% for full. When both arms asked, their per-question quality was essentially tied under the independent Claude cross-check; full instead produced longer, denser, more information-rich screens.
 
-The most defensible paper framing: **multi-label legal-intake routing is feasible at the broad-domain level; follow-up questions clearly help once the pipeline actually uses the answer; a deterministic backstop adds a small additional safety margin; and exact specialist routing remains limited by taxonomy overlap and incomplete elicitation.**
+The most defensible paper framing: **multi-label legal-intake routing is feasible at the broad-domain level; follow-up questions clearly help once the pipeline actually uses the answer; the full model reliably supplies questions that nano often omits; a deterministic backstop adds a small additional safety margin; and exact specialist routing remains limited by taxonomy overlap and incomplete elicitation.**
 
 ## Evidence hierarchy and scope
 
@@ -48,6 +49,13 @@ Diagnostic benchmark v2 (current, authoritative for "do questions help"):
   ├─ condition C: post-fix + PR #34 deterministic screening protocols (2026-07-18)
   └─ variability check: 3 reruns × 2 conditions on a fixed 200-case subsample (2026-07-19)
 
+Paired question-screen study (current, authoritative for nano vs. full):
+373 human-vetted opening descriptions × 2 arms = 746 generated screens
+  ├─ gpt-5-nano vs. gpt-5.2 as OpenAI ensemble member + semantic-merge model
+  ├─ Gemini + Mistral held constant; provider failures repaired rather than dropped
+  ├─ deterministic readability/question-load metrics + blind DeepSeek judge
+  └─ blind Claude cross-family check on 30 scenarios
+
 Prior-work lineage (private repo only, not reproducible from this repo):
 416-case follow-up-question readability/quality eval (Jan 2026, 2 experiments)
 430-case label-selection/multi-issue eval (Apr 2026, 4 configurations)
@@ -59,6 +67,7 @@ The canonical chronology and current status are maintained in [`silver_labels/RE
 
 - **Consensus-gold evaluation:** a retrieval/coverage benchmark against a conservative derived reference set.
 - **Flip benchmarks (v1, v2):** stress tests of follow-up-question elicitation and post-answer classification.
+- **Paired question-screen study:** a model-tier comparison of whether questions are produced and, conditional on nonempty screens, their readability and question quality; it does not measure downstream classification accuracy.
 - **Reliability analysis:** agreement among the available raters, not agreement with an external legal ground truth.
 
 ## Finding 1 — The labeling pipeline exposes a real multi-label problem
@@ -113,7 +122,7 @@ Across 746 run-observations: **95.3%** ≥1 exact gold sublabel; **99.2%** ≥1 
 
 All-exact retrieval fell sharply with gold-set size: 95.2% (one label) → 59.7% (two) → 33.3% (three) → 0/4 (four, though ≥1 exact route was still retrieved in every four-label case). Cross-run stability: any-exact status stable 96.5%, full four-tier outcome stable 94.9%, predicted-set Jaccard 86.3%.
 
-Reproduction and caveats: [`gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md). The classifier used the full GPT-5.2 deployment; no mini/nano model was substituted in this evaluation (see the open "nano vs. full" question in the RQ table above — that comparison exists only for follow-up-question generation quality, in the private-repo prior work, not for this classification-accuracy benchmark).
+Reproduction and caveats: [`gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](gold_labels_consensus_20260716/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md). The classifier used the full GPT-5.2 deployment; no mini/nano model was substituted in this evaluation. The nano-vs.-full comparison in Finding 6 concerns follow-up-question generation and semantic merging, **not classification accuracy**.
 
 The inherited 416-case PromptFoo suite (a separate, older follow-up-question quality baseline — see also [Prior work §1](#1-readability--prompt-quality-experiments-private-repo-january-2026)) remained **81/416 passed (19.47%)** after repair; only 240 descriptions overlap the consensus-gold population, so it is not part of the primary accuracy estimate.
 
@@ -200,6 +209,27 @@ Full detail, quoted evidence, family-level breakdowns, and the safety-sensitive-
 
 Candidates are Claude-authored and marked `claude_authored_awaiting_human_salience_audit` — the planned human spot-check (the outline's "do human spot checking of the dataset... ~1000 examples") has not yet been performed. `analyze_runs.py` is designed to re-derive every table above after rows are pruned, with no model calls repeated.
 
+## Finding 6 — Nano vs. full question screens: full wins on coverage, not per-question readability
+
+The completed `readability_study/` is a paired, disclosure-blind comparison on the same **373 human-vetted opening descriptions** (746 generated screens). The two arms differ only in whether the OpenAI ensemble member and semantic-merge model use **gpt-5-nano** or **gpt-5.2**; Gemini and Mistral are held constant, while keyword and SPOT are omitted because they do not emit questions. The study uses the real `ClassificationService.classify()` path with caching disabled. Provider failures were repaired rather than dropped (103 reduced to 11); the remaining Azure content-filter failures arose from the input text itself and were concentrated in the same small set of scenarios across arms.
+
+### Coverage is the decisive model difference
+
+| Outcome | Nano | Full |
+|---|---:|---:|
+| Screens with zero questions | **92/373 (24.6%)** | **2/373 (0.5%)** |
+| Mean questions per screen | **≈1.8** | **≈2.9** |
+
+The paired asymmetry is extreme: **88 scenarios were nano-empty/full-nonempty, with 0 in the reverse direction** (McNemar p≈6×10⁻²⁷). Instrumented diagnostic reruns explain the mechanism: the OpenAI provider returned zero questions on **87%** of nano calls versus **3%** of full calls; shared Gemini and Mistral providers were also silent on roughly half their calls and therefore did not reliably backfill nano. For a system whose follow-up screen exists to elicit missing facts, the important gpt-5.2 advantage is reliably asking something at all.
+
+### When both arms ask, there is no robust per-question quality winner
+
+On the 273 pairs where both arms produced questions, the automated DeepSeek judge rated full slightly worse on presupposition and respondent clarity/answerability, with no difference in double-barreling. That apparent disadvantage **did not replicate** in the blind 30-scenario Claude cross-check: Claude found nano and full statistically indistinguishable on per-question quality. Judge agreement was only **22% of screens**, with especially large differences in double-barrel flag rates (about 83% for DeepSeek versus 5% for Claude), because DeepSeek systematically treated menu/option questions as double-barreled. The defensible conclusion is **per-question parity**, not that either tier writes better-grounded questions.
+
+Judge-free exploratory metrics show a real tradeoff: full screens contained more tokens (median 43 vs. 29), introduced more entities (median 1 vs. 0), had slightly longer maximum dependency spans (18 vs. 16), and had higher maximum GPT-2 surprisal (16.5 vs. 15.2 bits), all FDR-significant. Agentless passive voice and negation-by-conditional complexity did not differ. Full therefore asks **more and denser** questions: greater elicitation coverage and information content at some cost in reading load.
+
+**Bottom line:** keep the switch to gpt-5.2, but justify it by question coverage. Do not claim that full produces more readable or better-grounded individual questions. This study also strengthens the broader methodological warning from the older Dale–Chall work: readability and question quality require multiple instruments and cross-family validation; a single formula or LLM judge can produce a misleading conclusion. Full methods and results: [`readability_study/analysis/RESULTS.md`](readability_study/analysis/RESULTS.md), [`readability_study/docs/STUDY_PLAN.md`](readability_study/docs/STUDY_PLAN.md), and [`readability_study/README.md`](readability_study/README.md).
+
 ## Prior work (private repo, methodology precursors not in this public repo)
 
 The following predates and motivated the `publishable-repo` work above. It lives in `/home/quinten/fetch/promptfoo/EXPERIMENT_LOGS/` and a satellite snapshot `/home/quinten/fetch/followup-study-paper-repo/` — **neither is included in or reproducible from this repo**; it is cited here only because it directly answers or informs several outline research questions and establishes the methodological lineage of the flip-benchmark work.
@@ -214,7 +244,7 @@ A fixed 416-case eval combined a hard mechanical **Dale–Chall readability gate
 | Experiment 1 | Generic plain-language / 6th-grade guidance added to prompts | 184/416 (44.23%) | 349/416 (83.89%) | 165 |
 | Experiment 2 | Explicit glossing rule, word-substitution list, anti-redundancy check, few-shot good/bad examples | **239/416 (57.45%)** | — | 135 |
 
-**This is the direct precedent for the outline's "readability rubric" question**, and its central finding is exactly the tension the outline anticipates: cases failing *only* Dale–Chall consistently pass both LLM rubrics ("all questions use plain, accessible language" at a Dale–Chall grade of 9–16, well above the 7.9 cutoff) — i.e., the mechanical metric is stricter than, and sometimes disagrees with, an LLM judge. Non-Dale failures were dominated by unglossed jargon/acronyms (≈89% of non-Dale failures in Experiment 1) and redundant questions (asking things the user already stated). Experiment 1's edits, notably, *increased* non-Dale failures slightly (55→67) even while improving Dale–Chall — a useful null result showing generic "be plain" instructions aren't sufficient; Experiment 2's much more specific interventions (explicit gloss/substitution/anti-redundancy/few-shot) produced the larger, cleaner gain. A parallel, later thread (April–May 2026) added genuine **human** A/B preference labeling comparing gpt-5-nano/gpt-5/gpt-5.2 follow-up-question quality (`eval-cpr-2026-05-01T20:01:43`, 416/416 cases) — the labeled outcome data was not extracted during this indexing pass (it sits in unopened `.xlsx` workbooks) and is a natural next step for answering the outline's "do different models ask better questions" question with human ground truth rather than an LLM judge.
+**This is the direct precedent for the outline's "readability rubric" question**, and its central finding is exactly the tension the outline anticipates: cases failing *only* Dale–Chall consistently pass both LLM rubrics ("all questions use plain, accessible language" at a Dale–Chall grade of 9–16, well above the 7.9 cutoff) — i.e., the mechanical metric is stricter than, and sometimes disagrees with, an LLM judge. Non-Dale failures were dominated by unglossed jargon/acronyms (≈89% of non-Dale failures in Experiment 1) and redundant questions (asking things the user already stated). Experiment 1's edits, notably, *increased* non-Dale failures slightly (55→67) even while improving Dale–Chall — a useful null result showing generic "be plain" instructions aren't sufficient; Experiment 2's much more specific interventions (explicit gloss/substitution/anti-redundancy/few-shot) produced the larger, cleaner gain. A parallel, later thread (April–May 2026) added genuine **human** A/B preference labeling comparing gpt-5-nano/gpt-5/gpt-5.2 follow-up-question quality (`eval-cpr-2026-05-01T20:01:43`, 416/416 cases); those workbook outcomes remain unextracted. Finding 6 now answers the nano-vs.-full question independently with a new paired public-repo study, although additional human preference labeling would still strengthen its per-question-quality conclusion.
 
 ### 2. Label-selection / multi-issue experiments (private repo, April 2026)
 
@@ -242,14 +272,16 @@ The direct, confirmed ancestor of `expanded_flip_experiment` (v1) is a 200-scena
 - "Against the conservative consensus set, FETCH retrieved at least one exact route in 95.3% of run-observations and at least one correct top-level domain in 99.2%, but complete retrieval declined sharply as the number of gold issues increased."
 - "Follow-up questions materially improve exact-label classification accuracy once the pipeline correctly incorporates the disclosed answer: net exact-label gains of +181 to +220 across 959 disclosure-grounded scenarios, confirmed stable across 6 independent reruns, versus a near-neutral net −7 when a confirmed answer-consumption bug is present."
 - "A deterministic screening backstop rescues a further ~1% of matched cases with zero regressions, concentrated in safety- and routing-sensitive categories, on top of the fixed LLM pipeline."
+- "In a paired 373-scenario comparison, switching the question-generation ensemble's OpenAI member and merge model from gpt-5-nano to gpt-5.2 reduced empty follow-up screens from 24.6% (92/373) to 0.5% (2/373); when both arms asked questions, an independent cross-family judge found no robust per-question quality difference."
+- "Full-model screens are longer and denser than nano screens (including median 43 vs. 29 content tokens), so the switch trades higher elicitation coverage and information content for greater reading load; it should not be characterized as a demonstrated readability improvement."
 - "Targeted, evidence-driven prompt engineering (explicit jargon-glossing rules, word-substitution lists, anti-redundancy checks, few-shot examples) nearly doubled question-quality pass rates on a fixed eval (40.62%→57.45%), while generic 'use plain language' instructions alone produced a much smaller gain and did not reduce jargon-specific failures."
-- "A hard mechanical readability metric (Dale–Chall) and an LLM-judge rubric disagree substantially on the same outputs — most Dale–Chall-only failures are judged fully clear and jargon-free by the LLM rubric — motivating a more deliberate, multi-instrument readability rubric (vocabulary frequency, glossing, passive voice, sentence structure) with human validation, rather than relying on either instrument alone."
+- "Readability and question-quality instruments disagree substantially: older Dale–Chall-only failures were judged clear by an LLM rubric, while the new paired study's two LLM judges agreed on only 22% of screens. Conclusions should therefore use multiple metrics and cross-family or human validation rather than a single formula or judge."
 
 The evidence does **not** yet support:
 
 - Any claim about digital twins (no work exists).
 - Any claim about non-legal-domain follow-up-question benefit (no work exists; every study here is legal-intake-specific).
-- Any claim comparing "nano" vs. "full" model quality with numbers (the human-labeling infrastructure exists but results were not extracted in this pass).
+- Any claim that full produces more readable, clearer, or better-grounded individual questions than nano. The robust advantage is coverage; per-question quality was essentially tied in the Claude cross-check, and full screens were objectively denser.
 - Treating the v1 1,000-candidate flip study's 47-added/48-lost result as a valid neutral finding — it very likely shares v2's pre-fix bug and should be described as superseded, not corroborating.
 - A completed human spot-check of the 959-scenario v2 candidate set (planned, not yet done).
 - A rules-vs-AI-prompt comparison for domestic-violence screening specifically (the outline's Massachusetts-informed DV question panel is not yet operationalized as a study; the closest existing evidence is v1's 44.31%-explicit-safety-probe finding and v2's safety-sensitive-rows breakdown, both of which test FETCH's existing behavior, not a designed rules-vs-prompt comparison).
@@ -266,6 +298,7 @@ The evidence does **not** yet support:
 | v2 disclosure-grounded flip benchmark (current) | [`flip_experiment_v2/README.md`](flip_experiment_v2/README.md) | `python flip_experiment_v2/run_direct.py --label <name> ...`; `python flip_experiment_v2/analyze_runs.py` |
 | Screening-protocol marginal contribution | [`flip_experiment_v2/analysis/RESULTS.md`](flip_experiment_v2/analysis/RESULTS.md#condition-b-vs-c-does-the-screening-protocol-add-anything) | `python flip_experiment_v2/analyze_screening_contribution.py` |
 | Variability / sampling-noise check | [`flip_experiment_v2/analysis/RESULTS.md`](flip_experiment_v2/analysis/RESULTS.md#variability-is-this-llm-sampling-noise) | `python flip_experiment_v2/build_variability_sample.py`; rerun `run_direct.py`/`analyze_runs.py` on the fixed subsample |
+| Nano-vs.-full question-screen study | [`readability_study/analysis/RESULTS.md`](readability_study/analysis/RESULTS.md) | `python readability_study/harness/run_generation.py ...`; `python readability_study/metrics/deterministic.py ...`; `python readability_study/metrics/run_llm_metrics.py ...`; `python readability_study/analysis/analyze.py ...` (exact commands in [`readability_study/README.md`](readability_study/README.md)) |
 
 The full verification record is [`expanded_flip_experiment/analysis/VERIFICATION.md`](expanded_flip_experiment/analysis/VERIFICATION.md) (v1) and [`flip_experiment_v2/analysis/EXECUTION_LOG.md`](flip_experiment_v2/analysis/EXECUTION_LOG.md) (v2, including the bug's exact file/line citations).
 
@@ -274,8 +307,9 @@ The full verification record is [`expanded_flip_experiment/analysis/VERIFICATION
 1. Consensus-gold evaluation as the main retrieval result (Finding 3).
 2. Agreement analysis as the annotation/reliability result (Finding 2).
 3. The v2 flip benchmark's post-fix result as the primary "do follow-up questions help" experiment (Finding 5) — lead with this, not v1, and disclose the bug/fix as part of the methods narrative since it changed the paper's own conclusion.
-4. The screening-protocol comparison as a secondary, smaller-effect-size result (Finding 5, condition B vs. C).
-5. The private-repo prior work (readability prompt-engineering, label-selection tuning, the 200-scenario flip pilot) as methodology-evolution/prior-work narrative, not as headline results — it motivated and was superseded by the public-repo work above.
-6. Explicitly flag as future work: the formal readability rubric with human validation, the nano-vs-full model comparison with actual numbers, the human salience audit of the 959 v2 candidates, digital twins, and non-legal-domain replication.
+4. The nano-vs.-full question-screen experiment (Finding 6) as the model-comparison result: emphasize the decisive coverage gain, per-question parity, density tradeoff, and two-judge disagreement.
+5. The screening-protocol comparison as a secondary, smaller-effect-size result (Finding 5, condition B vs. C).
+6. The private-repo prior work (readability prompt-engineering, label-selection tuning, the 200-scenario flip pilot) as methodology-evolution/prior-work narrative, not as headline results — it motivated and was superseded by the public-repo work above.
+7. Explicitly flag as future work: broader human validation of the readability/question-quality metrics, extraction of the older human preference workbooks, prompt-tuning full's screen density, the human salience audit of the 959 v2 candidates, digital twins, and non-legal-domain replication.
 
 Keep these distinctions visible throughout: top-level vs. exact-subcategory routing; at-least-one-label vs. complete multi-label retrieval; matcher coverage vs. explicit fact-sensitive questioning; final-label presence vs. a label newly added after disclosure; and — the most important new distinction — a classifier that receives the disclosed answer vs. one that (as in v1 and v2's pre-fix baseline) silently does not.
