@@ -1,0 +1,242 @@
+{
+  "S0051": {
+    "scenario_id": "gold-0102",
+    "arm": "nano"
+  },
+  "S0015": {
+    "scenario_id": "gold-0013",
+    "arm": "nano"
+  },
+  "S0034": {
+    "scenario_id": "gold-0120",
+    "arm": "full"
+  },
+  "S0008": {
+    "scenario_id": "gold-0294",
+    "arm": "full"
+  },
+  "S0059": {
+    "scenario_id": "gold-0142",
+    "arm": "nano"
+  },
+  "S0005": {
+    "scenario_id": "gold-0364",
+    "arm": "nano"
+  },
+  "S0043": {
+    "scenario_id": "gold-0179",
+    "arm": "nano"
+  },
+  "S0007": {
+    "scenario_id": "gold-0294",
+    "arm": "nano"
+  },
+  "S0046": {
+    "scenario_id": "gold-0345",
+    "arm": "full"
+  },
+  "S0012": {
+    "scenario_id": "gold-0315",
+    "arm": "full"
+  },
+  "S0058": {
+    "scenario_id": "gold-0200",
+    "arm": "full"
+  },
+  "S0037": {
+    "scenario_id": "gold-0286",
+    "arm": "nano"
+  },
+  "S0003": {
+    "scenario_id": "gold-0009",
+    "arm": "nano"
+  },
+  "S0020": {
+    "scenario_id": "gold-0168",
+    "arm": "full"
+  },
+  "S0009": {
+    "scenario_id": "gold-0261",
+    "arm": "nano"
+  },
+  "S0022": {
+    "scenario_id": "gold-0125",
+    "arm": "full"
+  },
+  "S0055": {
+    "scenario_id": "gold-0108",
+    "arm": "nano"
+  },
+  "S0021": {
+    "scenario_id": "gold-0125",
+    "arm": "nano"
+  },
+  "S0041": {
+    "scenario_id": "gold-0204",
+    "arm": "nano"
+  },
+  "S0053": {
+    "scenario_id": "gold-0299",
+    "arm": "nano"
+  },
+  "S0029": {
+    "scenario_id": "gold-0152",
+    "arm": "nano"
+  },
+  "S0023": {
+    "scenario_id": "gold-0334",
+    "arm": "nano"
+  },
+  "S0047": {
+    "scenario_id": "gold-0070",
+    "arm": "nano"
+  },
+  "S0045": {
+    "scenario_id": "gold-0345",
+    "arm": "nano"
+  },
+  "S0038": {
+    "scenario_id": "gold-0286",
+    "arm": "full"
+  },
+  "S0040": {
+    "scenario_id": "gold-0182",
+    "arm": "full"
+  },
+  "S0018": {
+    "scenario_id": "gold-0010",
+    "arm": "full"
+  },
+  "S0024": {
+    "scenario_id": "gold-0334",
+    "arm": "full"
+  },
+  "S0033": {
+    "scenario_id": "gold-0120",
+    "arm": "nano"
+  },
+  "S0002": {
+    "scenario_id": "gold-0257",
+    "arm": "full"
+  },
+  "S0057": {
+    "scenario_id": "gold-0200",
+    "arm": "nano"
+  },
+  "S0048": {
+    "scenario_id": "gold-0070",
+    "arm": "full"
+  },
+  "S0039": {
+    "scenario_id": "gold-0182",
+    "arm": "nano"
+  },
+  "S0013": {
+    "scenario_id": "gold-0169",
+    "arm": "nano"
+  },
+  "S0010": {
+    "scenario_id": "gold-0261",
+    "arm": "full"
+  },
+  "S0050": {
+    "scenario_id": "gold-0287",
+    "arm": "full"
+  },
+  "S0036": {
+    "scenario_id": "gold-0072",
+    "arm": "full"
+  },
+  "S0028": {
+    "scenario_id": "gold-0197",
+    "arm": "full"
+  },
+  "S0019": {
+    "scenario_id": "gold-0168",
+    "arm": "nano"
+  },
+  "S0030": {
+    "scenario_id": "gold-0152",
+    "arm": "full"
+  },
+  "S0017": {
+    "scenario_id": "gold-0010",
+    "arm": "nano"
+  },
+  "S0044": {
+    "scenario_id": "gold-0179",
+    "arm": "full"
+  },
+  "S0056": {
+    "scenario_id": "gold-0108",
+    "arm": "full"
+  },
+  "S0025": {
+    "scenario_id": "gold-0327",
+    "arm": "nano"
+  },
+  "S0052": {
+    "scenario_id": "gold-0102",
+    "arm": "full"
+  },
+  "S0060": {
+    "scenario_id": "gold-0142",
+    "arm": "full"
+  },
+  "S0026": {
+    "scenario_id": "gold-0327",
+    "arm": "full"
+  },
+  "S0014": {
+    "scenario_id": "gold-0169",
+    "arm": "full"
+  },
+  "S0031": {
+    "scenario_id": "gold-0144",
+    "arm": "nano"
+  },
+  "S0032": {
+    "scenario_id": "gold-0144",
+    "arm": "full"
+  },
+  "S0027": {
+    "scenario_id": "gold-0197",
+    "arm": "nano"
+  },
+  "S0011": {
+    "scenario_id": "gold-0315",
+    "arm": "nano"
+  },
+  "S0016": {
+    "scenario_id": "gold-0013",
+    "arm": "full"
+  },
+  "S0049": {
+    "scenario_id": "gold-0287",
+    "arm": "nano"
+  },
+  "S0006": {
+    "scenario_id": "gold-0364",
+    "arm": "full"
+  },
+  "S0001": {
+    "scenario_id": "gold-0257",
+    "arm": "nano"
+  },
+  "S0054": {
+    "scenario_id": "gold-0299",
+    "arm": "full"
+  },
+  "S0035": {
+    "scenario_id": "gold-0072",
+    "arm": "nano"
+  },
+  "S0042": {
+    "scenario_id": "gold-0204",
+    "arm": "full"
+  },
+  "S0004": {
+    "scenario_id": "gold-0009",
+    "arm": "full"
+  }
+}

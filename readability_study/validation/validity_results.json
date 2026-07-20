@@ -1,0 +1,146 @@
+{
+  "judge": "deepseek-v4",
+  "summary": {
+    "presupposition": {
+      "n": 7,
+      "sensitivity": 1.0
+    },
+    "double_barrel": {
+      "n": 7,
+      "sensitivity": 0.8571428571428571
+    },
+    "vocabulary": {
+      "n": 7,
+      "sensitivity": 0.8571428571428571
+    },
+    "known_bad": {
+      "n": 2,
+      "flagged": 2
+    }
+  },
+  "detail": {
+    "presupposition": [
+      {
+        "clean": 0,
+        "degraded": 1,
+        "moved_up": true
+      },
+      {
+        "clean": 1,
+        "degraded": 4,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 3,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 1,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 2,
+        "moved_up": true
+      }
+    ],
+    "double_barrel": [
+      {
+        "clean": 1,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 1,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 1,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 2,
+        "degraded": 2,
+        "moved_up": false
+      },
+      {
+        "clean": 1,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 1,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 1,
+        "degraded": 2,
+        "moved_up": true
+      }
+    ],
+    "vocabulary": [
+      {
+        "clean": 0,
+        "degraded": 1,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 1,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 2,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 3,
+        "moved_up": true
+      },
+      {
+        "clean": 0,
+        "degraded": 0,
+        "moved_up": false
+      },
+      {
+        "clean": 0,
+        "degraded": 1,
+        "moved_up": true
+      }
+    ],
+    "known_bad": [
+      {
+        "m1": 4,
+        "m2_flag": 1,
+        "flagged": true
+      },
+      {
+        "m1": 3,
+        "m2_flag": 1,
+        "flagged": true
+      }
+    ]
+  }
+}

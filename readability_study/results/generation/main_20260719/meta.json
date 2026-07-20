@@ -1,0 +1,29 @@
+{
+  "run_id": "main_20260719",
+  "started_utc": "2026-07-19T14:56:18.215173Z",
+  "scenarios_file": "scenarios/gold_consensus_373.csv",
+  "n_scenarios": 373,
+  "arms": {
+    "nano": {
+      "openai_member": "gpt-5-nano",
+      "shared_members": [
+        "gemini",
+        "mistral"
+      ],
+      "merge_model": "gpt-5-nano"
+    },
+    "full": {
+      "openai_member": "gpt-5.2",
+      "shared_members": [
+        "gemini",
+        "mistral"
+      ],
+      "merge_model": "gpt-5.2"
+    }
+  },
+  "classifier_timeout_s": "90",
+  "semantic_merge_timeout_s": "60",
+  "gpt_5_reasoning_effort": "low",
+  "max_attempts": 3,
+  "concurrency": 4
+}
