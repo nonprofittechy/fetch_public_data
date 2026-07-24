@@ -1,0 +1,647 @@
+[
+  {
+    "protocol_id": "family_safety.v1",
+    "version": 1,
+    "priority": 100,
+    "question_id": "family_safety.behavior.v1",
+    "question_en": "Has anyone involved in this family or relationship situation done any of the following?",
+    "question_es": "¿Alguna persona involucrada en esta situación familiar o de pareja ha hecho algo de lo siguiente?",
+    "candidate_terms": [
+      "divorce",
+      "separation",
+      "child custody",
+      "visitation",
+      "parenting time",
+      "paternity",
+      "restraining order"
+    ],
+    "text_patterns": [
+      "\\b(spouse|husband|wife|boyfriend|girlfriend|cónyuge|espos[oa]|expareja|novi[oa])\\b|\\b(my|current|former|ex|romantic|intimate|mi|actual|anterior) (partner|pareja)\\b",
+      "\\b(custody|parenting time|paternity|divorc\\w*|separat\\w*|household conflict|protective order|domestic violence|abuse|custodia|tiempo de crianza|paternidad|conflicto familiar|orden de protección|violencia doméstica|maltrato)\\b"
+    ],
+    "choices": [
+      {
+        "id": "none",
+        "en": "No, none of these",
+        "es": "No, nada de esto",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "controlling_or_threatening",
+        "en": "Controlled, monitored, stalked, threatened, or repeatedly harassed me or someone else",
+        "es": "Me controló, vigiló, acosó, amenazó o molestó repetidamente a mí o a otra persona",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "domestic_violence_safety_resources",
+          "mandatory_category_ids": [
+            "family.restraining_orders"
+          ],
+          "mandatory_category_labels": [
+            "Family Law > Restraining Orders"
+          ]
+        }
+      },
+      {
+        "id": "physical_or_sexual_harm",
+        "en": "Physically hurt, sexually harmed, strangled, or threatened someone with a weapon",
+        "es": "Lastimó físicamente, agredió sexualmente, estranguló o amenazó a alguien con un arma",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "domestic_violence_elevated_risk",
+          "mandatory_category_ids": [
+            "family.restraining_orders"
+          ],
+          "mandatory_category_labels": [
+            "Family Law > Restraining Orders"
+          ]
+        }
+      },
+      {
+        "id": "immediate_danger",
+        "en": "Someone may be in immediate danger now",
+        "es": "Alguien puede estar en peligro inmediato ahora",
+        "outcome": {
+          "risk_level": "urgent",
+          "information_trigger": "domestic_violence_immediate_danger",
+          "mandatory_category_ids": [
+            "family.restraining_orders"
+          ],
+          "mandatory_category_labels": [
+            "Family Law > Restraining Orders"
+          ]
+        }
+      },
+      {
+        "id": "not_sure",
+        "en": "I am not sure",
+        "es": "No estoy seguro/a",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "domestic_violence_general_information",
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "prefer_not",
+        "en": "I prefer not to answer",
+        "es": "Prefiero no responder",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      }
+    ],
+    "choice_suppressions": [
+      {
+        "choice_id": "controlling_or_threatening",
+        "patterns": [
+          "\\b(no|never)\\b.{0,30}\\b(control(?:ling)?|monitor(?:ing)?|stalk(?:ing)?|threats?|harassment)\\b",
+          "\\b(no|nunca)\\b.{0,30}\\b(control|vigilancia|acecho|amenazas?|acoso)\\b"
+        ]
+      },
+      {
+        "choice_id": "physical_or_sexual_harm",
+        "patterns": [
+          "\\b(no|never)\\b.{0,30}\\b(physical|sexual)\\b.{0,20}\\b(harm|violence|assault|abuse)\\b|\\bno weapons?\\b",
+          "\\b(no|nunca)\\b.{0,30}\\b(daño|violencia|agresión|abuso)\\b.{0,20}\\b(físic[oa]|sexual)\\b|\\bsin armas?\\b"
+        ]
+      },
+      {
+        "choice_id": "immediate_danger",
+        "patterns": [
+          "\\b(no immediate danger|not in immediate danger|safe (?:right )?now|currently safe)\\b",
+          "\\b(no hay peligro inmediato|no está en peligro inmediato|a salvo ahora|actualmente a salvo)\\b"
+        ]
+      }
+    ]
+  },
+  {
+    "protocol_id": "elder_exploitation.v1",
+    "version": 1,
+    "priority": 90,
+    "question_id": "elder_exploitation.behavior.v1",
+    "question_en": "Has anyone involved in the older or vulnerable adult’s care or finances done any of the following?",
+    "question_es": "¿Alguna persona involucrada en el cuidado o las finanzas del adulto mayor o vulnerable ha hecho algo de lo siguiente?",
+    "candidate_terms": [
+      "wills & trusts",
+      "elder abuse",
+      "guardianship",
+      "conservatorship",
+      "probate"
+    ],
+    "text_patterns": [
+      "\\b(elder|elderly|older adult|vulnerable adult|adulto mayor|persona mayor|adulto vulnerable)\\b",
+      "\\b(guardianship|conservatorship|power of attorney|representative payee|last will|will and testament|inheritance|caregiver|tutela|curatela|poder notarial|beneficiario representativo|testamento|fideicomiso|herencia|cuidador)\\b|\\b(a|the|family) trust\\b|\\btrust account\\b"
+    ],
+    "choices": [
+      {
+        "id": "none",
+        "en": "No, none of these",
+        "es": "No, nada de esto",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "pressure_or_control",
+        "en": "Pressured or controlled decisions about money, property, accounts, a will, trust, or power of attorney",
+        "es": "Presionó o controló decisiones sobre dinero, bienes, cuentas, un testamento, fideicomiso o poder notarial",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "elder_exploitation_resources",
+          "mandatory_category_ids": [
+            "wills_trusts.elder_abuse"
+          ],
+          "mandatory_category_labels": [
+            "Wills & Trusts > Elder Abuse"
+          ]
+        }
+      },
+      {
+        "id": "taking_assets",
+        "en": "Took, transferred, hid, or used money or property without permission",
+        "es": "Tomó, transfirió, ocultó o usó dinero o bienes sin permiso",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "elder_exploitation_elevated",
+          "mandatory_category_ids": [
+            "wills_trusts.elder_abuse"
+          ],
+          "mandatory_category_labels": [
+            "Wills & Trusts > Elder Abuse"
+          ]
+        }
+      },
+      {
+        "id": "basic_needs_or_safety",
+        "en": "Left the person without access to money, housing, medication, care, or other basic needs",
+        "es": "Dejó a la persona sin acceso a dinero, vivienda, medicamentos, cuidados u otras necesidades básicas",
+        "outcome": {
+          "risk_level": "urgent",
+          "information_trigger": "vulnerable_adult_immediate_assistance",
+          "mandatory_category_ids": [
+            "wills_trusts.elder_abuse"
+          ],
+          "mandatory_category_labels": [
+            "Wills & Trusts > Elder Abuse"
+          ]
+        }
+      },
+      {
+        "id": "not_sure",
+        "en": "I am not sure",
+        "es": "No estoy seguro/a",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "elder_exploitation_general_information",
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "prefer_not",
+        "en": "I prefer not to answer",
+        "es": "Prefiero no responder",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      }
+    ],
+    "choice_suppressions": [
+      {
+        "choice_id": "pressure_or_control",
+        "patterns": [
+          "\\b(no|never)\\b.{0,30}\\b(pressure|coercion|control)\\b.{0,60}\\b(finances|money|property|will|trust|power of attorney)\\b",
+          "\\b(no|nunca)\\b.{0,30}\\b(presión|coacción|control)\\b.{0,60}\\b(finanzas|dinero|bienes|testamento|fideicomiso|poder notarial)\\b"
+        ]
+      },
+      {
+        "choice_id": "taking_assets",
+        "patterns": [
+          "\\b(no|nothing|never)\\b.{0,30}\\b(stolen|taken|transferred|hidden|missing|used without permission)\\b",
+          "\\b(no|nada|nunca)\\b.{0,30}\\b(robado|tomado|transferido|oculto|desaparecido|usado sin permiso)\\b"
+        ]
+      },
+      {
+        "choice_id": "basic_needs_or_safety",
+        "patterns": [
+          "\\b(has|have|still has|still have) access to\\b.{0,60}\\b(money|housing|medication|care|basic needs)\\b",
+          "\\b(tiene|tienen|aún tiene|todavía tiene) acceso a\\b.{0,60}\\b(dinero|vivienda|medicamentos|cuidados|necesidades básicas)\\b"
+        ]
+      }
+    ]
+  },
+  {
+    "protocol_id": "immigration_consequences.v1",
+    "version": 1,
+    "priority": 80,
+    "question_id": "immigration_consequences.effect.v1",
+    "question_en": "Could this situation affect anyone’s ability to stay in the United States, renew immigration status, obtain a visa or green card, become a citizen, or avoid deportation?",
+    "question_es": "¿Podría esta situación afectar la capacidad de alguien para permanecer en Estados Unidos, renovar su estatus migratorio, obtener una visa o tarjeta de residencia, hacerse ciudadano/a o evitar la deportación?",
+    "candidate_terms": [
+      "international law > deportation",
+      "international law > general immigration",
+      "immigration",
+      "visa"
+    ],
+    "text_patterns": [
+      "\\b(immigration status|citizenship|visa|green card|sponsor(?:ship)?|ice|immigration court|deportation|removal proceedings?|estatus migratorio|ciudadanía|tarjeta de residencia|patrocinio|tribunal de inmigración|deportación|proceso de expulsión)\\b"
+    ],
+    "choices": [
+      {
+        "id": "no",
+        "en": "No",
+        "es": "No",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "application_or_status",
+        "en": "Yes, it may affect an application, visa, green card, citizenship, or current status",
+        "es": "Sí, puede afectar una solicitud, visa, tarjeta de residencia, ciudadanía o estatus actual",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "immigration_status_consequences",
+          "mandatory_category_ids": [
+            "international.general_immigration_visas"
+          ],
+          "mandatory_category_labels": [
+            "International Law > General Immigration/Visas"
+          ]
+        }
+      },
+      {
+        "id": "removal_or_deportation",
+        "en": "Yes, someone has received an ICE, immigration-court, removal, or deportation notice",
+        "es": "Sí, alguien recibió un aviso de ICE, del tribunal de inmigración, de expulsión o de deportación",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "immigration_removal_time_sensitive",
+          "mandatory_category_ids": [
+            "international.deportation"
+          ],
+          "mandatory_category_labels": [
+            "International Law > Deportation"
+          ]
+        }
+      },
+      {
+        "id": "not_sure",
+        "en": "I am not sure",
+        "es": "No estoy seguro/a",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "immigration_consequences_general_information",
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "prefer_not",
+        "en": "I prefer not to answer",
+        "es": "Prefiero no responder",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      }
+    ],
+    "choice_suppressions": [
+      {
+        "choice_id": "application_or_status",
+        "patterns": [
+          "\\b(will not|won't|cannot) affect\\b.{0,60}\\b(immigration status|visa|green card|citizenship)\\b",
+          "\\b(no afectará|no puede afectar)\\b.{0,60}\\b(estatus migratorio|visa|tarjeta de residencia|ciudadanía)\\b"
+        ]
+      },
+      {
+        "choice_id": "removal_or_deportation",
+        "patterns": [
+          "\\b(no|never received|have not received|has not received)\\b.{0,40}\\b(ice|immigration court|removal|deportation)\\b.{0,20}\\b(notice|papers|case|proceedings)\\b",
+          "\\b(no|nunca recibió|no ha recibido)\\b.{0,40}\\b(ice|tribunal de inmigración|expulsión|deportación)\\b.{0,20}\\b(aviso|documentos|caso|proceso)\\b"
+        ]
+      }
+    ]
+  },
+  {
+    "protocol_id": "police_government_claim.v1",
+    "version": 1,
+    "priority": 70,
+    "question_id": "police_government_claim.help.v1",
+    "question_en": "Which best describes the help you may need after the police or government encounter?",
+    "question_es": "¿Qué opción describe mejor la ayuda que podría necesitar después del encuentro con la policía o el gobierno?",
+    "candidate_terms": [
+      "actions against police",
+      "tort claims act"
+    ],
+    "text_patterns": [
+      "\\b(police|officer|arrest|detention|detained|search|excessive force|false arrest|government agency|government employee|state agency|policía|agente|arresto|detención|detenido|registro|fuerza excesiva|agencia gubernamental|empleado del gobierno)\\b"
+    ],
+    "choices": [
+      {
+        "id": "criminal_defense_only",
+        "en": "Help defending against a charge, citation, probation issue, or criminal case",
+        "es": "Ayuda para defenderme de un cargo, citación, problema de libertad condicional o caso penal",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "police_misconduct",
+        "en": "Help concerning excessive force, false arrest, an unlawful search, malicious prosecution, or other police misconduct",
+        "es": "Ayuda relacionada con fuerza excesiva, arresto ilegal, registro ilegal, proceso malicioso u otra conducta policial indebida",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "police_misconduct_time_sensitive",
+          "mandatory_category_ids": [
+            "general_litigation.actions_against_police"
+          ],
+          "mandatory_category_labels": [
+            "General Litigation > Actions Against Police"
+          ]
+        }
+      },
+      {
+        "id": "government_injury_or_loss",
+        "en": "Help for an injury or loss caused by a government agency or government employee",
+        "es": "Ayuda por una lesión o pérdida causada por una agencia o empleado del gobierno",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "government_claim_time_sensitive",
+          "mandatory_category_ids": [
+            "general_litigation.tort_claims_act"
+          ],
+          "mandatory_category_labels": [
+            "General Litigation > Tort Claims Act"
+          ]
+        }
+      },
+      {
+        "id": "both_criminal_and_misconduct",
+        "en": "Both defending a criminal case and addressing possible police misconduct",
+        "es": "Tanto defender un caso penal como abordar una posible conducta policial indebida",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "police_misconduct_and_criminal_case",
+          "mandatory_category_ids": [
+            "general_litigation.actions_against_police"
+          ],
+          "mandatory_category_labels": [
+            "General Litigation > Actions Against Police"
+          ]
+        }
+      },
+      {
+        "id": "not_sure",
+        "en": "I am not sure",
+        "es": "No estoy seguro/a",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "police_encounter_general_information",
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "prefer_not",
+        "en": "I prefer not to answer",
+        "es": "Prefiero no responder",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      }
+    ],
+    "choice_suppressions": [
+      {
+        "choice_id": "criminal_defense_only",
+        "patterns": [
+          "\\b(no|not facing|without)\\b.{0,30}\\b(charges?|citation|probation|criminal case)\\b",
+          "\\b(no|sin)\\b.{0,30}\\b(cargos?|citación|libertad condicional|caso penal)\\b"
+        ]
+      },
+      {
+        "choice_id": "both_criminal_and_misconduct",
+        "patterns": [
+          "\\b(no|not facing|without)\\b.{0,30}\\b(charges?|citation|probation|criminal case)\\b|\\b(no|not alleging)\\b.{0,30}\\b(police misconduct|excessive force|false arrest|unlawful search)\\b",
+          "\\b(no|sin)\\b.{0,30}\\b(cargos?|citación|libertad condicional|caso penal)\\b|\\b(no)\\b.{0,30}\\b(conducta policial indebida|fuerza excesiva|arresto ilegal|registro ilegal)\\b"
+        ]
+      },
+      {
+        "choice_id": "police_misconduct",
+        "patterns": [
+          "\\b(no|not alleging)\\b.{0,30}\\b(police misconduct|excessive force|false arrest|unlawful search)\\b",
+          "\\b(no)\\b.{0,30}\\b(conducta policial indebida|fuerza excesiva|arresto ilegal|registro ilegal)\\b"
+        ]
+      },
+      {
+        "choice_id": "government_injury_or_loss",
+        "patterns": [
+          "\\b(no|without)\\b.{0,30}\\b(injury|loss|damage)\\b.{0,50}\\b(government|agency|employee)\\b",
+          "\\b(no|sin)\\b.{0,30}\\b(lesión|pérdida|daño)\\b.{0,50}\\b(gobierno|agencia|empleado)\\b"
+        ]
+      }
+    ]
+  },
+  {
+    "protocol_id": "employment_retaliation.v1",
+    "version": 1,
+    "priority": 60,
+    "question_id": "employment_retaliation.report.v1",
+    "question_en": "Did your employer fire, discipline, threaten, reduce your hours, or otherwise act against you after you reported illegal, unsafe, fraudulent, or dishonest conduct?",
+    "question_es": "¿Su empleador lo/la despidió, disciplinó, amenazó, redujo sus horas o tomó otras represalias después de que usted denunció una conducta ilegal, insegura, fraudulenta o deshonesta?",
+    "candidate_terms": [
+      "labor & employment",
+      "whistleblower",
+      "wrongful discharge"
+    ],
+    "text_patterns": [
+      "\\b(employer|employee|workplace|job|fired|terminated|demoted|reduced hours|forced to quit|forced resignation|empleador|empleado|lugar de trabajo|trabajo|despedido|degradado|redujo mis horas|obligado a renunciar)\\b",
+      "\\b(report(?:ed)?|unsafe|fraud|illegal conduct|dishonest|retaliat|denunci|insegur|fraude|conducta ilegal|deshonest|represalia)\\b"
+    ],
+    "choices": [
+      {
+        "id": "no",
+        "en": "No",
+        "es": "No",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "yes_not_fired",
+        "en": "Yes, but I was not fired or forced to quit",
+        "es": "Sí, pero no fui despedido/a ni obligado/a a renunciar",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "employment_retaliation_time_sensitive",
+          "mandatory_category_ids": [
+            "employment.whistleblowers"
+          ],
+          "mandatory_category_labels": [
+            "Labor & Employment > Whistleblowers - Employee"
+          ]
+        }
+      },
+      {
+        "id": "yes_fired",
+        "en": "Yes, and I was fired or forced to quit",
+        "es": "Sí, y fui despedido/a u obligado/a a renunciar",
+        "outcome": {
+          "risk_level": "elevated",
+          "information_trigger": "employment_retaliation_time_sensitive",
+          "mandatory_category_ids": [
+            "employment.whistleblowers",
+            "employment.wrongful_discharge"
+          ],
+          "mandatory_category_labels": [
+            "Labor & Employment > Whistleblowers - Employee",
+            "Labor & Employment > Wrongful Discharge - Employee"
+          ]
+        }
+      },
+      {
+        "id": "not_sure",
+        "en": "I am not sure whether the employer’s action was connected to my report",
+        "es": "No estoy seguro/a de que la acción del empleador estuviera relacionada con mi denuncia",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "employment_retaliation_general_information",
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "prefer_not",
+        "en": "I prefer not to answer",
+        "es": "Prefiero no responder",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      }
+    ],
+    "choice_suppressions": [
+      {
+        "choice_id": "yes_not_fired",
+        "patterns": [
+          "\\b(was|got|have been) (fired|terminated)|\\b(fired|terminated) me\\b|\\bforced (?:me )?to quit\\b",
+          "\\b(fui|me) despedid[oa]|\\bme obligó a renunciar\\b"
+        ]
+      },
+      {
+        "choice_id": "yes_fired",
+        "patterns": [
+          "\\b(not|was not|wasn't|never) (fired|terminated)|\\bnot forced to quit\\b",
+          "\\b(no fui|nunca fui) despedid[oa]|\\bno me obligó a renunciar\\b"
+        ]
+      }
+    ]
+  },
+  {
+    "protocol_id": "work_injury_third_party.v1",
+    "version": 1,
+    "priority": 50,
+    "question_id": "work_injury_third_party.cause.v1",
+    "question_en": "Was your work injury caused by someone other than your employer or a coworker—for example, a driver, contractor, property owner, or product manufacturer?",
+    "question_es": "¿Su lesión laboral fue causada por alguien que no fuera su empleador o un compañero de trabajo, por ejemplo, un conductor, contratista, propietario o fabricante de un producto?",
+    "candidate_terms": [
+      "workers' comp",
+      "workers comp",
+      "work injury",
+      "occupational accident"
+    ],
+    "text_patterns": [
+      "\\b(work(?:place)? injury|injured at work|workers['’]? comp(?:ensation)?|occupational accident|driving for work|on the job injury|lesión laboral|lesionado en el trabajo|compensación laboral|accidente laboral|conducía por trabajo)\\b"
+    ],
+    "choices": [
+      {
+        "id": "no",
+        "en": "No",
+        "es": "No",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "yes",
+        "en": "Yes",
+        "es": "Sí",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "work_injury_possible_third_party_claim",
+          "mandatory_category_ids": [
+            "workers_comp.third_party_litigation"
+          ],
+          "mandatory_category_labels": [
+            "Workers' Comp > Third Party Litigation"
+          ]
+        }
+      },
+      {
+        "id": "not_sure",
+        "en": "I am not sure",
+        "es": "No estoy seguro/a",
+        "outcome": {
+          "risk_level": "informational",
+          "information_trigger": "work_injury_third_party_general_information",
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      },
+      {
+        "id": "prefer_not",
+        "en": "I prefer not to answer",
+        "es": "Prefiero no responder",
+        "outcome": {
+          "risk_level": "none",
+          "information_trigger": null,
+          "mandatory_category_ids": [],
+          "mandatory_category_labels": []
+        }
+      }
+    ],
+    "choice_suppressions": [
+      {
+        "choice_id": "yes",
+        "patterns": [
+          "\\b(caused by|fault of)\\b.{0,30}\\b(my employer|the employer|a coworker|my coworker)\\b",
+          "\\b(causad[oa] por|culpa de)\\b.{0,30}\\b(mi empleador|el empleador|un compañero|mi compañero)\\b"
+        ]
+      }
+    ]
+  }
+]
