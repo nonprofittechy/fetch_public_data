@@ -1,3 +1,0 @@
-multi_label_grounded,cases,usable,initial_category_accuracy_pct,initial_expected_category_is_top_pct,initial_exact_scorable,initial_expected_exact_is_top_pct,question_coverage_pct,final_category_accuracy_when_matched_pct,expected_final_category_added_when_matched_pct,final_expected_category_is_top_when_matched_pct,final_exact_scorable_matched,final_exact_accuracy_when_matched_pct,expected_final_exact_added_when_matched_pct,final_expected_exact_is_top_when_matched_pct
-False,230,230,76.52,61.3,210,35.71,71.74,76.36,1.21,55.15,153,50.33,1.96,37.25
-True,770,770,93.77,82.21,680,60.44,72.21,85.97,1.26,76.8,479,57.83,6.47,26.72

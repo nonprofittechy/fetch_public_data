@@ -1,3 +1,0 @@
-direction,cases,usable,initial_category_accuracy_pct,initial_expected_category_is_top_pct,initial_exact_scorable,initial_expected_exact_is_top_pct,question_coverage_pct,final_category_accuracy_when_matched_pct,expected_final_category_added_when_matched_pct,final_expected_category_is_top_when_matched_pct,final_exact_scorable_matched,final_exact_accuracy_when_matched_pct,expected_final_exact_added_when_matched_pct,final_expected_exact_is_top_when_matched_pct
-AtoB,1500,1500,90.07,76.8,1260,60.56,77.87,82.79,3.6,65.84,1092,52.29,10.07,21.06
-BtoA,1500,1500,90.27,79.0,1410,50.21,65.4,86.85,0.51,77.68,800,61.75,1.5,39.5

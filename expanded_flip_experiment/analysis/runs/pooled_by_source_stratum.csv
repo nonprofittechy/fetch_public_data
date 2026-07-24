@@ -1,3 +1,0 @@
-source_stratum,cases,usable,initial_category_accuracy_pct,initial_expected_category_is_top_pct,initial_exact_scorable,initial_expected_exact_is_top_pct,question_coverage_pct,final_category_accuracy_when_matched_pct,expected_final_category_added_when_matched_pct,final_expected_category_is_top_when_matched_pct,final_exact_scorable_matched,final_exact_accuracy_when_matched_pct,expected_final_exact_added_when_matched_pct,final_expected_exact_is_top_when_matched_pct
-expanded_workbook_grounded,2400,2400,94.04,81.54,2130,59.67,72.96,86.29,1.77,74.3,1526,57.14,6.23,27.0
-legacy_200_snapshot,600,600,74.67,63.33,540,37.04,66.33,77.39,4.02,57.79,366,52.73,7.38,36.61

@@ -1,3 +1,0 @@
-domestic_violence_hidden_fact,cases,usable,initial_category_accuracy_pct,initial_expected_category_is_top_pct,initial_exact_scorable,initial_expected_exact_is_top_pct,question_coverage_pct,final_category_accuracy_when_matched_pct,expected_final_category_added_when_matched_pct,final_expected_category_is_top_when_matched_pct,final_exact_scorable_matched,final_exact_accuracy_when_matched_pct,expected_final_exact_added_when_matched_pct,final_expected_exact_is_top_when_matched_pct
-False,915,915,89.51,77.27,805,51.68,71.8,84.47,1.98,72.15,573,58.46,5.93,31.06
-True,85,85,96.47,88.24,85,85.88,77.65,89.39,6.06,57.58,66,37.88,15.15,3.03
