@@ -1,0 +1,41 @@
+{
+  "candidates_file": "flip_experiment_v2/candidates/flip_candidates_v2.csv",
+  "active_candidates": 959,
+  "runs": {
+    "five_provider_reclassification_ablation_full_validated_20260726T171603Z": {
+      "observations": 959,
+      "scenarios": 959,
+      "initial_expected_category_present_pct": 92.18,
+      "initial_expected_exact_present_pct": 83.21,
+      "initial_any_plausible_exact_present_pct": 91.66,
+      "question_match_coverage_pct": 72.26,
+      "final_expected_category_present_among_matched_pct": 97.25,
+      "final_expected_exact_present_among_matched_pct": 90.03,
+      "expected_final_category_present_initially_pct": 76.23,
+      "expected_final_exact_present_initially_pct": 47.24,
+      "expected_final_category_newly_added_pct_of_matched": 15.9,
+      "expected_final_exact_newly_added_pct_of_matched": 36.85,
+      "expected_final_exact_added_count": 255,
+      "expected_final_exact_lost_count": 13,
+      "provider_error_count": 1
+    }
+  },
+  "pooled": {
+    "observations": 959,
+    "scenarios": 959,
+    "initial_expected_category_present_pct": 92.18,
+    "initial_expected_exact_present_pct": 83.21,
+    "initial_any_plausible_exact_present_pct": 91.66,
+    "question_match_coverage_pct": 72.26,
+    "final_expected_category_present_among_matched_pct": 97.25,
+    "final_expected_exact_present_among_matched_pct": 90.03,
+    "expected_final_category_present_initially_pct": 76.23,
+    "expected_final_exact_present_initially_pct": 47.24,
+    "expected_final_category_newly_added_pct_of_matched": 15.9,
+    "expected_final_exact_newly_added_pct_of_matched": 36.85,
+    "expected_final_exact_added_count": 255,
+    "expected_final_exact_lost_count": 13,
+    "provider_error_count": 1
+  },
+  "stability": {}
+}

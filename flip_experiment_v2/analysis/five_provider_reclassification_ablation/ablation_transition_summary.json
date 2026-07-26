@@ -1,0 +1,44 @@
+{
+  "source_run": "final_run_1_20260718T203325Z",
+  "ablation_run": "five_provider_reclassification_ablation_full_validated_20260726T171603Z",
+  "opening_cases": 959,
+  "matcher_calls": 907,
+  "matched_cases": 693,
+  "complete_five_provider_reclassifications": 692,
+  "unscorable_provider_errors": 1,
+  "exact_label_transition": {
+    "correct_to_correct": 368,
+    "correct_to_wrong": 13,
+    "wrong_to_correct": 255,
+    "wrong_to_wrong": 56
+  },
+  "exact_label_before": {
+    "count": 381,
+    "denominator": 692,
+    "pct": 55.06
+  },
+  "exact_label_after": {
+    "count": 623,
+    "denominator": 692,
+    "pct": 90.03,
+    "wilson_95_ci_pct": [
+      87.57,
+      92.05
+    ]
+  },
+  "gained": 255,
+  "lost": 13,
+  "net_gained_minus_lost": 242,
+  "gain_to_loss_ratio": 19.62,
+  "discordant_exact_binomial_two_sided_p": 1.9524788870165912e-59,
+  "provider_completeness": {
+    "scored_rows_with_all_five_raw_provider_results": 692,
+    "first_attempt_successes": 656,
+    "second_attempt_successes": 36,
+    "repaired_first_attempt_failures": {
+      "spot": 35,
+      "gemini": 1
+    },
+    "unscored_exhausted_provider": "mistral"
+  }
+}
