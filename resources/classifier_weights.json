@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "description": "Frozen classifier weights extracted from the companion FETCH application repository.",
+  "source": {
+    "repository_relative_path": "../",
+    "commit": "c0c59cac0bd4eb83d797a5c5a9f6d30b9ca181d6",
+    "extracted_on": "2026-07-27",
+    "relevant_files_clean_at_extraction": true,
+    "files": {
+      "weight_configuration": {
+        "path": "app/core/config.py",
+        "symbol": "CLASSIFIER_WEIGHTS",
+        "sha256": "eea0dc04ca4de40110be2aa512bce2f186286d13903330ab2aeeeecd5a50b202"
+      },
+      "vote_aggregation": {
+        "path": "app/services/classification_service.py",
+        "symbol": "ClassificationService._get_voted_results",
+        "sha256": "d4853acca88fb2f92ca1927743560d56257134cfbfed59ccad3614e6ee680d2c"
+      }
+    }
+  },
+  "decision_mode": "vote",
+  "classifiers": [
+    {
+      "id": "gemini",
+      "weight": 0.8,
+      "enabled_by_default": true
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "weight": 0.8,
+      "enabled_by_default": false
+    },
+    {
+      "id": "gpt-4.1-nano",
+      "weight": 0.75,
+      "enabled_by_default": false
+    },
+    {
+      "id": "gpt-5",
+      "weight": 0.9,
+      "enabled_by_default": false
+    },
+    {
+      "id": "gpt-5.2",
+      "weight": 0.9,
+      "enabled_by_default": true
+    },
+    {
+      "id": "spot",
+      "weight": 0.6,
+      "enabled_by_default": true
+    },
+    {
+      "id": "keyword",
+      "weight": 0.5,
+      "enabled_by_default": true
+    },
+    {
+      "id": "mistral",
+      "weight": 0.8,
+      "enabled_by_default": true
+    }
+  ],
+  "default_ensemble": {
+    "members": [
+      "gemini",
+      "mistral",
+      "keyword",
+      "spot",
+      "gpt-5.2"
+    ],
+    "total_configured_weight": 3.6,
+    "normalized_weight_share": {
+      "gemini": 0.2222222222,
+      "mistral": 0.2222222222,
+      "keyword": 0.1388888889,
+      "spot": 0.1666666667,
+      "gpt-5.2": 0.25
+    }
+  },
+  "aggregation_semantics": {
+    "scope": "One global weight map; no taxonomy-specific weight map or runtime weight override was found.",
+    "unlisted_classifier_default_weight": 1.0,
+    "label_score_contribution": "classifier weight multiplied by the classifier-reported label confidence; missing confidence defaults to 1.0",
+    "question_score_contribution": "classifier weight for each proposed question",
+    "question_detail_conflicts": "the version from the higher-weight classifier is retained",
+    "likely_no_legal_problem_vote_contribution": "classifier weight when the classifier votes true",
+    "likely_no_legal_problem_threshold": "30% of total participating classifier weight",
+    "failed_classifier_weight_is_included_in_total": true,
+    "configured_weights_are_not_required_to_sum_to_one": true
+  }
+}

@@ -54,4 +54,5 @@ datasets/d1_consensus_labels/labeling_audit/10_four_label_human_review/human_val
 
 # Other public shared data.
 !studies/screening_protocols/question_panels.json
+!resources/classifier_weights.json
 !resources/taxonomy_detailed_descriptions.csv

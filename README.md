@@ -24,7 +24,7 @@ forms, row-count reconciliation, and the exact role of each file.
 | [`tests/`](tests/) | Offline regression tests for the shared scripts |
 | [`studies/`](studies/) | Readability/model-tier and deterministic-screening studies |
 | [`prompts/`](prompts/) | Frozen runtime prompt snapshots |
-| [`resources/`](resources/) | Shared taxonomy used to validate labels |
+| [`resources/`](resources/) | Shared taxonomy and the frozen [classifier-weight artifact](resources/classifier_weights.json) |
 | [`configs/`](configs/) | Evaluation configuration |
 | [`docs/`](docs/) | Cross-study findings and repository organization notes |
 
