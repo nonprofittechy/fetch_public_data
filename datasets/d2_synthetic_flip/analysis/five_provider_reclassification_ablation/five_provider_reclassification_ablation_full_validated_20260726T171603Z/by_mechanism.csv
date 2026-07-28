@@ -1,0 +1,5 @@
+group,observations,scenarios,initial_expected_category_present_pct,initial_expected_exact_present_pct,initial_any_plausible_exact_present_pct,question_match_coverage_pct,final_expected_category_present_among_matched_pct,final_expected_exact_present_among_matched_pct,expected_final_category_present_initially_pct,expected_final_exact_present_initially_pct,expected_final_category_newly_added_pct_of_matched,expected_final_exact_newly_added_pct_of_matched,expected_final_exact_added_count,expected_final_exact_lost_count,provider_error_count
+M1_core_vs_secondary_issue,122,122,93.44,89.34,91.8,68.85,96.43,85.71,78.69,39.34,11.9,44.05,37,5,0
+M2_specific_vs_general_fallback,197,197,87.31,72.59,88.32,69.04,97.04,92.59,77.16,51.27,14.81,37.78,51,2,1
+M3_missing_procedural_or_institutional_fact,572,572,92.66,85.31,92.48,72.9,97.12,89.69,74.3,47.73,17.51,34.77,145,6,0
+M4_competing_framings_of_one_dispute,68,68,100.0,85.29,94.12,82.35,100.0,92.86,85.29,45.59,12.5,39.29,22,0,0

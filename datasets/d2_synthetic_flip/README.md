@@ -185,7 +185,8 @@ python analyze_runs.py --candidates "$SAMPLE" --runs results/variability_c1_<ts>
     --out analysis/variability_condition_c
 ```
 
-If FETCH is not the grandparent of this folder, set `FETCH_REPO_ROOT`.
+If the adjacent FETCH checkout cannot be inferred from this repository's
+location, set `FETCH_REPO_ROOT`.
 Raw run artifacts (hash-stamped snapshots, fsynced JSONL journal, matcher log,
 console) are written under the gitignored `results/`; the analysis outputs in
 `analysis/runs_v2/` (pre-fix baseline, historical),
@@ -234,6 +235,8 @@ per-row `vetting_note` column and the authoring files give the audit context.
 | `run_direct_screening.py` | condition-C runner, points `FETCH_REPO_ROOT` at the screening-protocol worktree by default |
 | `analyze_runs.py` | join-by-scenario_id analysis (audit-editable) |
 | `analyze_screening_contribution.py` | paired within-run isolation of the screening protocol's own marginal contribution |
+| `run_five_provider_reclassification_ablation.py` | paired answer-bearing rerun that retains keyword and SPOT in the five-provider vote |
+| `finalize_five_provider_ablation.py` | restore frozen matcher data for an ablation provider-exhaustion row without making it scorable |
 | `build_variability_sample.py` | fixed-seed family-stratified subsample generator for variability reruns |
 | `candidates/flip_candidates_v2_variability_sample.csv` | frozen 200-case subsample (seed 42) reused across all variability runs |
 | `test_candidates.py` | structural checks |
@@ -243,4 +246,5 @@ per-row `vetting_note` column and the authoring files give the audit context.
 | `analysis/runs_v2_postfix_condition_c/` | committed analysis outputs, post-fix condition C |
 | `analysis/variability_condition_b/` | committed analysis outputs, 3 condition-B reruns on the fixed subsample |
 | `analysis/variability_condition_c/` | committed analysis outputs, 3 condition-C reruns on the fixed subsample |
+| `analysis/FIVE_PROVIDER_RECLASSIFICATION_ABLATION_RESULTS.md` | paired ablation retaining keyword and SPOT in the answer-bearing vote |
 | `analysis/RESULTS.md` | headline findings (written after official runs) |
