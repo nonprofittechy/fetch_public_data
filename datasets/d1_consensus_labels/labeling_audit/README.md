@@ -4,11 +4,11 @@ This directory contains the reproducible artifacts for the AI-generated labels
 for `redaction_reviewed_v5_clean.xlsx`.
 
 For the complete chronological record of every model pass, review, audit,
-order-insensitive correction, prioritization step, result, and remaining task,
+order-insensitive correction, prioritization step, result, and limitation,
 use [`REVIEW_AUDIT_TRAIL.md`](REVIEW_AUDIT_TRAIL.md). It is the canonical central
 index; stage READMEs provide supporting detail.
 
-## Final artifact
+## Primary silver-label artifact
 
 [`04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx`](04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx)
 contains the original three reviewed columns plus, for every input row:
@@ -102,10 +102,10 @@ ROWS TO CLASSIFY:
 The actual `<...>` sections are preserved in each batch prompt file, so the
 exact text—not just this summary—can be audited or replayed.
 
-## In-context review pass
+## Artifact-based adjudication pass
 
-The review was performed by `build_reviewed_silver.py`, with no model/API call
-and no use of the supplied credentials. The review procedure was:
+`build_reviewed_silver.py` materializes the adjudicated artifact without a
+model/API call or credentials. The recorded adjudication procedure was:
 
 1. Compare each model's rank-1 category/subcategory pair.
 2. Keep unanimous three-model choices as three-model consensus.
@@ -164,13 +164,13 @@ labels were corrected in the derived checked workbook:
 
 The original human columns in `redaction_reviewed_v5_clean.xlsx` are unchanged.
 
-For the next round of manual review, use
+Stage 06's manual-review workspace is preserved in
 [`06_human_review_workspace/`](06_human_review_workspace/). It includes all
 ranked model candidates, the internal label, blank blue human-entry fields, the
 four-pass agreement fields, and the 78-row disagreement extract.
 
-For the multi-label question, use
-[`07_multilabel_audit/`](07_multilabel_audit/). That stage found 156 of 431 rows
+The multi-label evidence audit is in
+[`07_multilabel_audit/`](07_multilabel_audit/). It found 156 of 431 rows
 where at least two distinct exact taxonomy pairs were proposed by at least two
 of the three independent models. This is a deliberately broad evidence queue,
 not a claim that all 156 rows definitely need multiple labels. Its workbook
@@ -188,10 +188,17 @@ assessments, and a 132-row union review queue. The raw ranked-model assessment
 is preserved separately. These are single-model audit signals for human review,
 not automatic corrections.
 
-The internal prioritization of the order-insensitive review queue is in
+The in-context prioritization of the order-insensitive review queue is in
 [`09_internal_priority_review/`](09_internal_priority_review/). It ranks the
 132 queued rows into 52 P1 human-decision rows, 14 P2 confirmation rows, and 66
-P3 quick-confirmation rows. This pass ran in the current Codex/GPT-5 context
-without using external APIs or user credentials, and it does not change labels.
+P3 quick-confirmation rows. This GPT-5 review ran within the repository context
+without an external API call or user credentials, and it did not change labels.
 
-The current human workflow is [`10_four_label_human_review/`](10_four_label_human_review/). It removes the arbitrary two-label ceiling, expands the seven known three/four-issue rows, and provides four unordered human-label slots for the entire 132-row queue. Use its workbook or the persistent browser interface in [`../human_review_app/`](../human_review_app/). The app shows all canonical descriptions in context, retains all model/audit evidence, records append-only review history in SQLite, and includes a validated Fly.io deployment configuration.
+Stage 10 contains the cap-free human-adjudication artifacts:
+[`10_four_label_human_review/`](10_four_label_human_review/). It removes the
+arbitrary two-label ceiling, expands the seven identified three/four-issue rows,
+and provides four unordered human-label slots for the entire 132-row queue. The
+companion browser interface in
+[`../human_review_app/`](../human_review_app/) shows canonical descriptions,
+retains model/audit evidence, records append-only review history in SQLite, and
+includes a validated Fly.io deployment configuration.

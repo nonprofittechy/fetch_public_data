@@ -2,8 +2,8 @@
 
 A paired, disclosure-blind study of the follow-up-question **screen** FETCH shows
 after an opening query, comparing the classification ensemble with its OpenAI
-member (and semantic-merge model) set to **gpt-5-nano** vs **gpt-5.2** — the exact
-production switch the team already shipped but never measured.
+member (and semantic-merge model) set to **gpt-5-nano** vs **gpt-5.2**. The
+comparison evaluates the model-tier change used by the production system.
 
 **Full design & rationale:** [`docs/STUDY_PLAN.md`](docs/STUDY_PLAN.md).
 
@@ -64,16 +64,17 @@ python validation/validity_check.py --judge deepseek-v4
 python analysis/analyze.py --run-id main_20260719 --judge deepseek-v4
 ```
 
-Credentials come from `/home/quinten/fetch/.env` (Azure). Caching is disabled
-end-to-end; every run records its config in `meta.json`.
+Model-backed generation requires the provider credentials expected by the
+FETCH application. Caching is disabled end-to-end; every run records its
+configuration in `meta.json`.
 
 ## Environment & settings (reproducibility)
 
 - **Python deps:** `requirements.txt` (+ `python -m spacy download en_core_web_sm`).
-  GPT-2 and `roberta-large-mnli` weights auto-download on first use. Run inside the
-  FETCH venv (`/home/quinten/fetch/.venv`) so `app.*` imports resolve.
-- **Models / deployments** (Azure AI Services account `quint-mln02sj6-eastus2`,
-  reached via the OpenAI-compatible route in `/home/quinten/fetch/.env`):
+  GPT-2 and `roberta-large-mnli` weights auto-download on first use. Generation
+  must run in an environment where the compatible FETCH `app.*` package is
+  importable.
+- **Models / deployments** (reached through their configured provider routes):
   - generators: `gpt-5.2`, `gpt-5-nano` (OpenAI), `mistral-small-2503` (Mistral),
     `gemini` (Google, via `GEMINI_API_KEY`)
   - judge: `deepseek-v4` (DeepSeek-V4-Pro) — independent of the generators;
@@ -91,7 +92,7 @@ end-to-end; every run records its config in `meta.json`.
 - **Run provenance** is captured per run in
   `results/generation/<run_id>/meta.json`.
 
-## Status
+## Validation record
 
 Validity check passed (presupposition sensitivity 1.0, double-barrel 6/7,
 vocabulary 6/7, known-bad 2/2 flagged). See `analysis/RESULTS.md` for findings.

@@ -1,6 +1,7 @@
-# FETCH consensus gold labels — 2026-07-16
+# FETCH consensus gold labels
 
-This directory contains the reproducible consensus reconstruction requested after the Stage 10 four-label human review.
+This directory contains the reproducible consensus reconstruction derived from
+the Stage 10 four-label human review.
 
 ## Primary datasets
 
@@ -34,7 +35,7 @@ This is a consensus-derived benchmark, not a claim that every one of the 373 uni
 ## Analysis and reproduction
 
 - [`FINDINGS.md`](FINDINGS.md) reports and interprets the set-based agreement results.
-- [`ICC_ANALYSIS.md`](ICC_ANALYSIS.md) preserves the requested numerical ICC(A,1)/ICC(A,k) analyses for label count and conditional binary incidence, with limitations made explicit.
+- [`ICC_ANALYSIS.md`](ICC_ANALYSIS.md) reports supplemental numerical ICC(A,1)/ICC(A,k) analyses for label count and conditional binary incidence, with limitations made explicit.
 - [`fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md) reports two complete uncached FETCH replicates against all 373 gold scenarios, including exact-sublabel, top-level, graded, category, and stability tables.
 - [`fetch_gold_accuracy/README.md`](fetch_gold_accuracy/README.md) records raw/repair/integrated run lineage, provider audits, Azure Mistral capacity, and reproduction commands.
 - [`AGREEMENT_METHODS.md`](AGREEMENT_METHODS.md) defines Jaccard distance and α-Jaccard, the four comparison groups, the story bootstrap, label-level diagnostics, and exact reproduction steps.

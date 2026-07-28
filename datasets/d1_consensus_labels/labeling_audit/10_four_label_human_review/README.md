@@ -1,6 +1,9 @@
 # Stage 10 — four-label human-review workspace
 
-This stage removes the former two-label ceiling from human adjudication. It re-reviews rows 252, 290, 384, 419–421, and 424 in the current Codex/GPT-5 context and gives the human reviewer four unordered label slots for every row in the 132-row priority queue.
+This stage removes the former two-label ceiling from human adjudication. An
+in-context GPT-5 review re-adjudicated rows 252, 290, 384, 419–421, and 424, and
+the resulting workspace gives reviewers four unordered label slots for every
+row in the 132-row priority queue.
 
 No external API or credential was used in this pass. The executable record of the focused decisions is `FOCUSED_ADJUDICATIONS` in [`../../../../scripts/build_four_label_review.py`](../../../../scripts/build_four_label_review.py). The detailed taxonomy remains canonical.
 
@@ -27,13 +30,19 @@ These are review candidates, not final human labels. A human may select from zer
 - `focused_multilabel_adjudication.csv` — compact extract of those seven rows.
 - [`../../../../scripts/build_four_label_review.py`](../../../../scripts/build_four_label_review.py) — deterministic builder and the exact row-level adjudications.
 
-The newly re-adjudicated AI cells are purple in the workbook. Human-entry cells are blue. Existing source and audit columns are preserved.
+The focused-adjudication AI cells are purple in the workbook. Human-entry cells
+are blue. Existing source and audit columns are preserved.
 
 ## Human review interface
 
 [`../../human_review_app/`](../../human_review_app/) is the companion audit interface for all 132 queue rows. It exposes all 209 taxonomy pairs in four dropdowns as `Category > Subcategory`, shows the enriched description under each choice, and preloads but does not auto-save AI suggestions. The default screen is intentionally concise; prior evidence is collapsed. Independent decisions are stored per row and reviewer with append-only history, and deterministic gold/consensus/disagreement exports are available. See [`../../human_review_app/GOLD_DATA_WORKFLOW.md`](../../human_review_app/GOLD_DATA_WORKFLOW.md).
 
-The app includes a tested container and Fly.io configuration with `/data` mounted for the database. It was deployed on 2026-07-14 to the Lemma organization at <https://fetch-silver-label-review.fly.dev/>. The production instance uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored only as Fly secrets. Exact local, deployment, and operational commands are in the app README.
+The app includes a tested container and Fly.io configuration with `/data`
+mounted for the database. The reference deployment at
+<https://fetch-silver-label-review.fly.dev/> uses one auto-stopping 256 MB
+Machine in `iad`, an encrypted 1 GB volume, and password/session credentials
+stored only as Fly secrets. Local, deployment, and operational commands are in
+the app README.
 
 ## Decision rubric
 

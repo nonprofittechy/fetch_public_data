@@ -29,10 +29,10 @@ the numbered stages under `datasets/d1_consensus_labels/labeling_audit/`.
 Some stages call external models and require credentials. Their frozen prompts,
 responses, checkpoints, and outputs are already stored in the audit directory.
 
-## Removed one-off utilities
+## Scope exclusions
 
-The reorganization removed five root-level prototypes: three workbook
-inspection/diff scripts and two superseded automatic-redaction experiments.
-They depended on unavailable private inputs, had no tests or command-line
-contract, were not referenced by the audit trail, and could not reproduce a
-published public artifact.
+Five exploratory prototypes are outside the public reproducibility surface:
+three workbook inspection/diff utilities and two superseded automatic-redaction
+experiments. They depended on unavailable private inputs, had no tests or
+command-line contract, were not referenced by the audit trail, and do not
+reproduce a published artifact.

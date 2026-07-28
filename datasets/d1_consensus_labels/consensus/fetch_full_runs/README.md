@@ -29,4 +29,6 @@ The existing `promptfoo/followup_questions_eval.yaml` suite ran all 416 cases wi
 - `baseline_repaired_integrated.json` — repaired 416-case derivative.
 - `baseline_repair_integration_report.json` — hashes and before/after counts.
 
-The repository's `configs/promptfoo_full_no_cache_20260716.yaml` freezes the next condition with FETCH provider caching disabled. The replicate CLI also passes PromptFoo `--no-cache`, so both cache layers are disabled.
+The repository's `configs/promptfoo_full_no_cache_20260716.yaml` freezes the
+cache-disabled condition. The replicate CLI also passes PromptFoo `--no-cache`,
+so both cache layers are disabled.

@@ -4,7 +4,10 @@
 
 The 114 reviewed scenarios have unordered, nominal multi-label sets from GPT-5.2, Gemini 3.1 Pro, DeepSeek V4, Jackie, and QS. Intraclass correlation is designed for numerical ratings, so it cannot by itself measure whether two raters chose the same legal subcategory. The primary set-content analysis therefore uses Jaccard distance and α-Jaccard in [`FINDINGS.md`](FINDINGS.md).
 
-ICC is still reported here because it was explicitly requested and answers two narrower numerical questions: whether raters selected a similar **number of labels**, and whether they similarly selected/not-selected a proposed exact pair or top-level category after those choices are encoded as binary ratings.
+ICC is reported as a supplemental analysis addressing two narrower numerical
+questions: whether raters selected a similar **number of labels**, and whether
+they similarly selected or did not select a proposed exact pair or top-level
+category after those choices are encoded as binary ratings.
 
 The coefficient is two-way absolute-agreement ICC(A,1) for a single rater and ICC(A,k) for the mean of the included raters. All five-rater label-count confidence intervals use 2,000 scenario bootstrap samples.
 

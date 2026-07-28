@@ -1,10 +1,14 @@
 # FETCH human label review app
 
-This is a deliberately small review interface for the 132-row prioritized silver-label queue. It displays the source text, original human label, internal primary, three independent model passes, the GPT-5.2 audit, the current one-to-four-label suggestion set, and the canonical detailed description beside every selected label.
+This compact review interface supports the 132-row prioritized silver-label
+queue. It displays the source text, original human label, internal primary,
+three independent model passes, the GPT-5.2 audit, the Stage 10 one-to-four-label
+suggestion set, and the canonical detailed description beside every selected
+label.
 
 The human can choose zero through four exact taxonomy pairs. Candidate order has no meaning. Each person selects a reviewer name/ID, so two humans can independently review the same row without overwriting each other. Saved work goes to SQLite, every save is appended to a history table, and results can be exported as review provenance or validated gold data.
 
-## Live instance
+## Reference deployment
 
 - URL: <https://fetch-silver-label-review.fly.dev/>
 - Fly organization: `lemma` (Lemma)
@@ -12,9 +16,10 @@ The human can choose zero through four exact taxonomy pairs. Candidate order has
 - Region: `iad`
 - Compute: one `shared-cpu-1x:256MB` Machine with automatic stop/start and zero minimum running Machines
 - Storage: one encrypted 1 GB `review_data` volume mounted at `/data`
-- Deployed and production-verified: 2026-07-14
+- Production verification record: 2026-07-14
 
-`REVIEW_PASSWORD` and `SECRET_KEY` are deployed as Fly secrets and are not stored in this repository. The generated reviewer password was handed to the project owner at deployment.
+`REVIEW_PASSWORD` and `SECRET_KEY` are deployed as Fly secrets and are not
+stored in this repository.
 
 ## Local use
 

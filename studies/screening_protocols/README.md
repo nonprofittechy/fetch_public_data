@@ -1,6 +1,7 @@
-# Hardcoded Question Panels (Deterministic Screening Protocols)
+# Deterministic screening protocols
 
-This directory contains the **6 hardcoded question panels** (deterministic screening protocols) used by the FETCH legal intake and classification pipeline.
+This directory contains the six deterministic question panels evaluated as part
+of the FETCH legal-intake and classification pipeline.
 
 Unlike LLM-generated follow-up questions—which dynamically probe missing details—these 6 panels are **invariant, rule-based screening instruments**. They serve safety-critical intake functions where non-deterministic AI outputs are unacceptable (e.g., immediate domestic violence threats, elder financial exploitation, deportation risk, police misconduct, whistleblower retaliation, and third-party workplace injuries).
 
@@ -117,16 +118,20 @@ Unlike LLM-generated follow-up questions—which dynamically probe missing detai
 
 ---
 
-## Directory Contents
+## Directory contents
 
-* [`screening_protocols.py`](file:///home/quinten/fetch/publishable-repo/question_panels/screening_protocols.py): Python implementation containing protocol data structures, pattern matchers, choice suppression, and mandatory routing logic.
-* [`question_panels.json`](file:///home/quinten/fetch/publishable-repo/question_panels/question_panels.json): Complete pre-rendered JSON export of all 6 panels for non-Python frontends or schema validation.
-* [`test_screening_protocols.py`](file:///home/quinten/fetch/publishable-repo/question_panels/test_screening_protocols.py): Pytest unit test suite verifying all 46 protocol assertions.
+- [`screening_protocols.py`](screening_protocols.py): Python implementation
+  containing protocol data structures, pattern matchers, choice suppression,
+  and mandatory routing logic.
+- [`question_panels.json`](question_panels.json): Complete pre-rendered JSON
+  export of all six panels for non-Python frontends or schema validation.
+- [`test_screening_protocols.py`](test_screening_protocols.py): Pytest suite
+  covering 46 protocol assertions.
 
 ---
 
 ## Running the Unit Tests
 
 ```bash
-PYTHONPATH=. pytest question_panels/test_screening_protocols.py
+python -m pytest -q studies/screening_protocols/test_screening_protocols.py
 ```

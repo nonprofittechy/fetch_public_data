@@ -1,25 +1,29 @@
 # Central silver-label review and audit trail
 
-This is the canonical index of every classification, review, audit, and prioritization pass completed for `redaction_reviewed_v5_clean.xlsx` during this work. Stage-specific READMEs contain additional detail; this document records the chronology, methods, results, current interpretation, and remaining human work in one place.
+This is the canonical index of the classification, review, audit, and
+prioritization passes associated with `redaction_reviewed_v5_clean.xlsx`.
+Stage-specific READMEs contain additional detail; this document records the
+chronology, methods, results, interpretation, and unresolved validation limits
+in one place.
 
-## Current status
+## Artifact status
 
 - Dataset: 431 problem-description rows plus one header row.
 - Canonical taxonomy: `../app/data/taxonomy_detailed_descriptions.csv`, containing 209 detailed category/subcategory entries.
 - Primary silver labels: complete for all 431 rows in [`04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx`](04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx).
 - Original human-label cross-check: 9 paper examples checked; 4 corrections recorded in the derived Stage 05 workbook.
 - Multi-label conclusion: one exclusive label is inadequate for a material subset of rows.
-- Latest two-label audit: 90 rows support two labels; after ignoring order, 39 rows are primary-change candidates and 12 remain uncertain.
-- Latest human-review queue: 132 rows, prioritized into 52 P1, 14 P2, and 66 P3 rows.
-- The two-label ceiling has been removed from the human workflow. The seven known 3–4 issue rows now have expanded unordered sets: rows 252/421/424 have four candidates and rows 290/384/419/420 have three.
-- The Stage 10 workbook and web app allow the human to assign zero through four exact taxonomy pairs and retain all prior evidence. The app now stores independent decisions per reviewer, displays `Category > Subcategory`, and produces conservative gold and disagreement exports.
+- Stage 08 two-label audit: 90 rows support two labels; after ignoring order, 39 rows are primary-change candidates and 12 remain uncertain.
+- Stage 09 human-review queue: 132 rows, prioritized into 52 P1, 14 P2, and 66 P3 rows.
+- Stage 10 removes the two-label ceiling from the human workflow. The seven identified 3–4 issue rows have expanded unordered sets: rows 252/421/424 have four candidates and rows 290/384/419/420 have three.
+- The Stage 10 workbook and web app allow a reviewer to assign zero through four exact taxonomy pairs and retain all prior evidence. The app stores independent decisions per reviewer, displays `Category > Subcategory`, and produces conservative gold and disagreement exports.
 - The persistent review app is live at <https://fetch-silver-label-review.fly.dev/> in the Lemma Fly organization. It uses one auto-stopping 256 MB Machine in `iad`, an encrypted 1 GB volume, and password/session credentials stored as Fly secrets.
-- Human adjudication is not yet complete. Audit and priority fields are recommendations; they have not overwritten the Stage 04 primary labels.
+- The benchmark does not claim de novo expert adjudication of every row. Audit and priority fields are recommendations; they do not overwrite the Stage 04 primary labels.
 - The original `redaction_reviewed_v5_clean.xlsx` remains unchanged.
-- Stage 11 now provides consensus labels for all 431 source-row identities plus a strictly deduplicated 373-description version. It collapses repeated human review by normalized description, uses both human decisions and independent-model corroboration, permits up to four labels, and records per-row provenance. See [`../consensus/`](../consensus/).
+- Stage 11 provides consensus labels for all 431 source-row identities plus a strictly deduplicated 373-description version. It collapses repeated human review by normalized description, uses both human decisions and independent-model corroboration, permits up to four labels, and records per-row provenance. See [`../consensus/`](../consensus/).
 - Set-based five-rater analysis on 114 unique human-reviewed stories found mean Jaccard distance / α-Jaccard of 0.251 / 0.744 for humans, 0.362 / 0.632 for LLMs, 0.370 / 0.623 for human–LLM pairs, and 0.355 / 0.638 across all five raters. Human exact-set agreement was 61/114 (53.5%). Full findings: [`../consensus/FINDINGS.md`](../consensus/FINDINGS.md).
 - Supplemental ICC analysis found label-count ICC(A,1) 0.328 across all five raters (95% CI 0.216–0.421), conditional exact-pair incidence ICC(A,1) 0.279, and conditional top-level incidence ICC(A,1) 0.390. Because labels are nominal sets, ICC is interpreted alongside—not instead of—Jaccard/α-Jaccard. See [`../consensus/ICC_ANALYSIS.md`](../consensus/ICC_ANALYSIS.md).
-- Two repaired, fully cache-disabled FETCH replicates now cover all 373 unique gold scenarios. Pooled across 746 scenario-run observations, FETCH retrieved at least one exact sublabel in 95.3%, every gold sublabel in 81.4%, and at least one correct top-level category in 99.2%; 3.9% were top-level-only and 0.8% missed every correct category. Paper-ready findings: [`../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md).
+- Two repaired, fully cache-disabled FETCH replicates cover all 373 unique gold scenarios. Pooled across 746 scenario-run observations, FETCH retrieved at least one exact sublabel in 95.3%, every gold sublabel in 81.4%, and at least one correct top-level category in 99.2%; 3.9% were top-level-only and 0.8% missed every correct category. Detailed findings: [`../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md).
 
 ## Shared classification rules
 
@@ -39,8 +43,8 @@ Keyword and SPOT classification were not used. Credentials were loaded from the 
 | 06 | Agreement analysis and human workspace | Deterministic comparison of 3 models plus derived review | 78 exact-pair disagreement rows; blank human fields added | [`06_human_review_workspace/`](06_human_review_workspace/) |
 | 07 | Broad multi-label evidence audit | Post-hoc comparison of all three models' top-3 candidates; no API | 156 rows with ≥2 exact pairs repeated by ≥2 models | [`07_multilabel_audit/`](07_multilabel_audit/) |
 | 08 | Focused two-label audit | Fresh Azure `gpt-5.2`; current primary supplied for audit; max 2 labels | 90 two-label rows; order-insensitive assessment and 132-row review queue | [`08_gpt52_two_label_audit/`](08_gpt52_two_label_audit/) |
-| 09 | Human-review prioritization | Current Codex/GPT-5 internal context review; no external API | Queue divided into 52 P1, 14 P2, and 66 P3 rows | [`09_internal_priority_review/`](09_internal_priority_review/) |
-| 10 | Cap-free focused adjudication and human interface | Current Codex/GPT-5 context; no external API; deterministic artifact builder | Seven 3–4 issue rows expanded; four human slots; persistent review app | [`10_four_label_human_review/`](10_four_label_human_review/), [`../human_review_app/`](../human_review_app/) |
+| 09 | Human-review prioritization | In-context GPT-5 repository review; no external API | Queue divided into 52 P1, 14 P2, and 66 P3 rows | [`09_internal_priority_review/`](09_internal_priority_review/) |
+| 10 | Cap-free focused adjudication and human interface | In-context GPT-5 repository review; no external API; deterministic artifact builder | Seven 3–4 issue rows expanded; four human slots; persistent review app | [`10_four_label_human_review/`](10_four_label_human_review/), [`../human_review_app/`](../human_review_app/) |
 | 11 | Full consensus gold reconstruction and reliability analysis | Two human raters, three independent LLM passes, deterministic conservative consensus | 431 row-compatible results; 373 unique descriptions; 114 unique human-reviewed stories; Jaccard distance, α-Jaccard, and label-level analysis | [`../consensus/`](../consensus/) |
 | 12 | Full FETCH multi-label gold evaluation | Two independent uncached five-classifier ensemble runs; targeted GPT-5.2 repair; exact and top-level retrieval analysis | 373 scenarios/run; 95.3% pooled any-exact retrieval; 99.2% any correct top-level; paper tables and row-level results | [`../consensus/fetch_gold_accuracy/`](../consensus/fetch_gold_accuracy/) |
 
@@ -181,19 +185,27 @@ The seven rows previously flagged as exceeding the two-label ceiling were read a
 
 These are proposed review sets, not final human labels. The focused instructions, reviewer context, exact rationales, and per-pair confidence are recorded in [`10_four_label_human_review/ADJUDICATION_METHOD.md`](10_four_label_human_review/ADJUDICATION_METHOD.md), `focused_multilabel_adjudication.json`, and [`../../../scripts/build_four_label_review.py`](../../../scripts/build_four_label_review.py).
 
-The new workbook preserves all preceding columns, highlights the focused AI candidates in purple, and supplies four blue human-label slots plus status, notes, reviewer, and timestamp. Its companion [`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and descriptions and saves current decisions by `(row, reviewer)` plus append-only history. Labels display as `Category > Subcategory`; status uses no-default radios; `Save review + next` automatically records accepted versus corrected from an unordered-set comparison; supporting evidence is collapsed to reduce distraction.
+The Stage 10 workbook preserves all preceding columns, highlights the focused
+AI candidates in purple, and supplies four blue human-label slots plus status,
+notes, reviewer, and timestamp. Its companion
+[`../human_review_app/`](../human_review_app/) exposes all 209 exact pairs and
+descriptions and saves decisions by `(row, reviewer)` plus append-only history.
+Labels display as `Category > Subcategory`; status uses no-default radios;
+`Save review + next` automatically records accepted versus corrected from an
+unordered-set comparison; supporting evidence is collapsed to reduce
+distraction.
 
 Gold generation is deterministic and conservative: completed agreeing sets enter gold, two agreeing humans are marked `multi_reviewer_consensus`, and disagreements are excluded into a separate export. [`../human_review_app/GOLD_DATA_WORKFLOW.md`](../human_review_app/GOLD_DATA_WORKFLOW.md) documents the rule and [`../../../scripts/build_human_validated_gold.py`](../../../scripts/build_human_validated_gold.py) validates/merges an app export back into the source dataset.
 
 Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fly config validate` passed. The app was deployed on 2026-07-14 at <https://fetch-silver-label-review.fly.dev/> in the `lemma` organization. Production E2E used two isolated reviewer sessions on one row, confirmed strict two-reviewer gold consensus, explicitly stopped the Machine, cold-started it through HTTPS, and verified both records and consensus survived on `/data`. It also confirmed the no-default status guard and automatic corrected status. E2E data was removed afterward; three earlier drafts were preserved as `Legacy reviewer`.
 
-## Recommended files now
+## Artifact guide
 
 | Purpose | File |
 |---|---|
 | Stable one-label silver baseline | [`04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx`](04_review/redaction_reviewed_v5_clean_ai_silver_reviewed.xlsx) |
 | Human-checked paper examples | [`05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx`](05_human_label_review/redaction_reviewed_v5_clean_ai_silver_reviewed_human_checked.xlsx) |
-| Most current human-review workbook | [`10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx`](10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx) |
+| Cap-free human-review workbook | [`10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx`](10_four_label_human_review/redaction_reviewed_v5_clean_four_label_human_review.xlsx) |
 | Browser-based human review | <https://fetch-silver-label-review.fly.dev/>; source and operations in [`../human_review_app/`](../human_review_app/) |
 | Focused seven-row adjudication | [`10_four_label_human_review/focused_multilabel_adjudication.csv`](10_four_label_human_review/focused_multilabel_adjudication.csv) |
 | P1-only review extract | [`09_internal_priority_review/highest_priority_rows.csv`](09_internal_priority_review/highest_priority_rows.csv) |
@@ -201,13 +213,19 @@ Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fl
 | Deduplicated consensus gold | [`../consensus/gold_labels_consensus_unique.csv`](../consensus/gold_labels_consensus_unique.csv) |
 | FETCH multi-label paper findings | [`../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md) |
 
-## What remains
+## Additional expert-validation protocol
 
-1. Have each human choose a distinct reviewer ID and review the 52 P1 rows first.
-2. Confirm the 14 P2 rows and rapidly accept/correct the 66 P3 rows.
-3. Download strict two-reviewer gold and the disagreement export; adjudicate disagreements explicitly.
-4. Run `build_human_validated_gold.py` to validate and merge the app export into a consolidated one-through-four-label gold dataset.
-5. Keep the Stage 04 primary label and all model/audit evidence in the final provenance record rather than silently replacing them.
+The repository supports a stronger expert-validated derivative through the
+following protocol:
+
+1. Each reviewer uses a distinct reviewer ID and reviews the 52 P1 rows first.
+2. Reviewers then confirm the 14 P2 rows and accept or correct the 66 P3 rows.
+3. Strict two-reviewer gold and disagreement exports preserve cases requiring
+   explicit adjudication.
+4. `build_human_validated_gold.py` validates and merges an app export into a
+   consolidated one-through-four-label dataset.
+5. The Stage 04 primary label and all model/audit evidence remain in the
+   provenance record.
 
 ## Reproduction scripts
 
@@ -245,11 +263,23 @@ Unit tests, a Gunicorn smoke test, a Docker bind-mount persistence test, and `fl
 | `7e2daaa` | Independent per-reviewer decisions, concise UI, automatic status, and gold/disagreement exports |
 | `1433ba9` | Validated app-to-repository human gold merge workflow and production E2E record |
 
-Future review or label-changing commits should be appended here and linked to their stage documentation.
+Additional review or label-changing stages belong in this chronology with
+links to their methods and artifacts.
 
-## 2026-07-16 completion addendum
+## Consensus-gold and FETCH evaluation
 
-The final normalized duplicate audit found 373 unique scenarios among 431 source rows (57 exact-text duplicate pairs and one additional whitespace-only pair). Two repaired, cache-disabled FETCH runs over the complete unique gold population retrieved at least one exact sublabel in 95.3% of 746 pooled scenario-run observations, all gold sublabels in 81.4%, and at least one correct top-level category in 99.2%. The paper-ready top tables, qualitative misses, row-level results, provider audits, and reproduction details are in [`../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md) and its companion [`README.md`](../consensus/fetch_gold_accuracy/README.md). The requested supplemental ICC results are preserved separately in [`../consensus/ICC_ANALYSIS.md`](../consensus/ICC_ANALYSIS.md).
+The normalized duplicate audit found 373 unique scenarios among 431 source rows
+(57 exact-text duplicate pairs and one additional whitespace-only pair). Two
+repaired, cache-disabled FETCH runs over the complete unique gold population
+retrieved at least one exact sublabel in 95.3% of 746 pooled scenario-run
+observations, all gold sublabels in 81.4%, and at least one correct top-level
+category in 99.2%. Headline tables, qualitative misses, row-level results,
+provider audits, and reproduction details are in
+[`../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md`](../consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_FINDINGS.md)
+and its companion
+[`README.md`](../consensus/fetch_gold_accuracy/README.md). Supplemental ICC
+results are reported separately in
+[`../consensus/ICC_ANALYSIS.md`](../consensus/ICC_ANALYSIS.md).
 
 ## Stage 12 (2026-07-16/17): disclosure-grounded flip benchmark v2
 

@@ -28,7 +28,9 @@ One-to-one spelling, punctuation, capitalization, and terminology changes count 
 
 Let *G* be a scenario's set of gold sublabels and *P* the set returned by FETCH after compatibility normalization.
 
-- **Any exact sublabel:** at least one member of *G* is present in *P*. This is the minimum successful specialist-routing signal requested for the paper.
+- **Any exact sublabel:** at least one member of *G* is present in *P*. This is
+  the minimum successful specialist-routing signal used in the reported
+  analysis.
 - **All exact sublabels:** every member of *G* is present in *P*. Extra predictions do not erase retrieval, so this is a recall-completeness metric.
 - **Strict exact set:** every gold label is retrieved and every prediction is compatible with a gold label. This penalizes extra labels.
 - **Exact gold coverage:** `|retrieved gold labels| / |G|`, averaged by scenario; micro recall pools all gold label instances.

@@ -1,36 +1,32 @@
-# Does the nano→full switch actually improve FETCH's question screens?
+# Nano-to-full FETCH question-screen study protocol
 
 **A paired, disclosure-blind readability & question-quality study of FETCH follow-up screens**
 
-Status: active · Owner: Quinten Steenhuis · Harness: promptfoo + FETCH `ClassificationService` · Judges: DeepSeek-V4-pro + Claude Sonnet-5
+Harness: promptfoo + FETCH `ClassificationService` · Judges:
+DeepSeek-V4-Pro + Claude Sonnet-5
 
 ---
 
-## 1. Why this study exists
+## 1. Motivation
 
-FETCH switched the OpenAI member of its classification ensemble (and the
-semantic-merge model) from **gpt-5-nano** to **gpt-5.2 ("full")**. The switch was
-made on the belief that the larger model writes better follow-up questions — but
-that was never measured. This study fills that gap with a mechanical,
-reproducible measurement.
+FETCH changed the OpenAI member of its classification ensemble and its
+semantic-merge model from **gpt-5-nano** to **gpt-5.2 ("full")**. This study
+provides a paired, reproducible measurement of the resulting follow-up screens.
 
 **Research question.** Holding the rest of the ensemble constant
 (gemini + mistral), does swapping the OpenAI member and the semantic-merge model
 from nano to full measurably improve the *follow-up question screen* a user sees?
 
-## 2. The reframe (what actually separates model tiers here)
+## 2. Measurement focus
 
-For nano-vs-full, lexical and syntactic readability are probably **not** the
-differentiator — the bigger model may even score *worse* on vocabulary
-sophistication while being better overall. What separates model tiers on an
-intake-question task is **grounding and question structure**:
+Lexical and syntactic readability alone may not distinguish the model tiers.
+The primary measures therefore emphasize **grounding and question structure**:
 
 - Does the question **presuppose facts** the applicant never gave?
 - Does it ask **one thing or three** (double-barrel)?
 - Can a **simulated respondent** actually answer it from what they know?
 
-The metric battery is weighted accordingly: **metrics 1–4 are the study; 5–10 are
-decoration** we run because the pipeline is already there.
+Metrics 1–4 are primary; metrics 5–10 are exploratory.
 
 ## 3. Design
 
@@ -38,9 +34,9 @@ decoration** we run because the pipeline is already there.
   (`scenarios/gold_consensus_373.csv`, the gold-label consensus set). Real intake
   language, deduplicated, each carrying a gold category for grounding checks.
 - **Paired generation.** Each problem description → one screen per arm. Same
-  input, two arms — the single decision that makes a small study viable.
+  input and two arms support within-scenario comparison.
 - **The two arms** (ensemble question generation; only the OpenAI member and the
-  merge model change — "adjust the model selection twice"):
+  merge model change):
 
   | Arm | Ensemble generators | Semantic-merge model |
   |-----|--------------------|----------------------|
@@ -62,7 +58,7 @@ decoration** we run because the pipeline is already there.
 
 ## 4. Metrics
 
-### Tier 1 — the four that decide this (pre-registered primary)
+### Tier 1 — pre-registered primary metrics
 
 | # | Metric | How |
 |---|--------|-----|
@@ -71,7 +67,7 @@ decoration** we run because the pipeline is already there.
 | 3 | **Simulated-respondent accuracy** | A persona with ground-truth facts answers the screen; score vs. truth, and record the `UNCLEAR` rate. |
 | 4 | **Unintroduced hard vocabulary** | Content tokens with SUBTLEX/Zipf < 3, excluding words the applicant already used or that are glossed on-screen. |
 
-### Tier 2 — cheap; run because the pipeline exists (exploratory)
+### Tier 2 — exploratory metrics
 
 | # | Metric | How |
 |---|--------|-----|
@@ -85,9 +81,9 @@ decoration** we run because the pipeline is already there.
 ## 5. Judges & rubric hygiene
 
 - **Two judges from different families, both independent of the generation
-  pipeline** (the generators are GPT + Gemini + Mistral): **DeepSeek-V4-pro** and
-  **Claude Sonnet-5**, both via OpenRouter. This satisfies "don't grade a
-  GPT-family output with only a GPT-family judge."
+  pipeline** (the generators are GPT + Gemini + Mistral): **DeepSeek-V4-Pro** and
+  **Claude Sonnet-5**. This design avoids relying exclusively on a judge from
+  the same model family as one of the generators.
 - **Blind.** Screens are presented to judges without arm labels, in randomized
   order.
 - **Seeds.** 3 seeds for the stochastic LLM metrics (esp. #3, #10).
@@ -95,14 +91,13 @@ decoration** we run because the pipeline is already there.
   rubric batch; if a judge doesn't flag them, that judge/metric is treated as
   broken for that batch.
 
-## 6. Validity check (half a day, before trusting any number)
+## 6. Validity check
 
 Take 20 screens and **degrade each on exactly one dimension** — insert an
 unsupported definite NP (presupposition), coordinate two predicates into one
 question (double-barrel), swap a common word for a rare one (vocabulary) — and
-confirm the corresponding metric moves in the right direction and the others stay
-put. This is the minimum viable validation that keeps a reviewer from asking
-whether the numbers mean anything.
+confirm that the corresponding metric moves in the expected direction while the
+others remain stable.
 
 ## 7. Analysis
 
@@ -112,11 +107,10 @@ whether the numbers mean anything.
 - **Effect sizes** reported alongside every p-value.
 - **Multiplicity:** metrics 1–3 pre-registered as primary; everything else is
   exploratory with **Benjamini–Hochberg FDR** correction.
-- **Plan for the null.** There is a real chance nano is fine on readability and
-  differs only on grounding. We pre-specify a **smallest effect worth caring
-  about (SESOI) = 5 percentage points** on the hard-flag rate and run a **TOST
-  equivalence test**, so "nano is good enough" is a reportable result, not an
-  absence of one.
+- **Null interpretation.** A **smallest effect size of interest (SESOI) of 5
+  percentage points** on the hard-flag rate and a **TOST equivalence test**
+  distinguish evidence of practical equivalence from an inconclusive null
+  result.
 
 ## 8. Reading list (justifies the method choices)
 
@@ -141,7 +135,7 @@ whether the numbers mean anything.
 ## 9. Reproducibility layout
 
 ```
-readability_study/
+studies/readability/
   docs/STUDY_PLAN.md          # this document
   scenarios/                  # the 373-set + sampler
   harness/                    # FETCH generation bridge + runner + promptfoo config

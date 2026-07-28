@@ -1,21 +1,29 @@
 # Authoritative findings summary
 
-**Status:** consolidated on 2026-07-20. This revision supersedes the 2026-07-19 version: it integrates the completed public-repo nano-vs.-full readability/question-screen study, alongside the post-fix `flip_experiment_v2` results and the prior-work methodology record. The linked stage documents remain the detailed methods and evidence records; this file is the cross-study index for paper drafting.
+This document is the cross-study evidence index for the FETCH research
+artifacts. Linked stage documents remain authoritative for detailed methods,
+results, and reproduction.
 
-**Two-repo provenance note.** This document indexes two things: (1) results produced *in this public repo* (`publishable-repo`), which are reproducible from the committed scripts/data here, and (2) prior-work context from the *private* FETCH application repo (`/home/quinten/fetch`, plus a satellite snapshot `/home/quinten/fetch/followup-study-paper-repo`), cited here only as narrative/methodological lineage — those artifacts are not included in this repo and are not independently reproducible from it. Section headers say which is which.
+**Evidence scope.** The index distinguishes (1) results reproducible from the
+committed scripts and data in this public repository and (2) methodological
+precursors from the private FETCH application repository. Private-repository
+artifacts are not included and cannot be independently reproduced from this
+repository; they are identified explicitly as prior-work context.
 
-## Research questions, mapped to evidence (read this first)
+## Research questions mapped to evidence
 
-| Outline question | Status | Headline evidence | Where |
+| Research question | Evidence status | Headline evidence | Where |
 |---|---|---|---|
-| What makes a question good or bad? | **Partially answered, with a multi-metric study now completed** | The new 373-scenario paired study measures presupposition, double-barreling, respondent clarity/answerability, hard vocabulary, syntax, passive voice, surprisal, screen load, and conditional complexity. It reinforces that no single instrument is authoritative: DeepSeek and Claude agreed on only 22% of screens, and DeepSeek's apparent full-model grounding penalty disappeared under Claude. Older results likewise show a hard Dale–Chall gate and an LLM rubric diverging sharply. Human validation beyond the 30-scenario Claude cross-check remains open. | [Finding 6](#finding-6--nano-vs-full-question-screens-full-wins-on-coverage-not-per-question-readability); [Prior work §1](#1-readability--prompt-quality-experiments-private-repo-january-2026) |
-| Can you get an AI to ask better questions? | **Yes, demonstrated** | Targeted prompt edits (explicit glossing, word-substitution list, anti-redundancy check, few-shot examples) raised the same 416-case eval's strict pass rate from 40.62% to 57.45% (+16.83pp) in one iteration; an earlier, less-targeted edit only moved it to 44.23%. | [Prior work §1b–1g](#1-readability--prompt-quality-experiments-private-repo-january-2026) |
+| What makes a question good or bad? | **Partially answered by a multi-metric study** | The 373-scenario paired study measures presupposition, double-barreling, respondent clarity/answerability, hard vocabulary, syntax, passive voice, surprisal, screen load, and conditional complexity. It reinforces that no single instrument is authoritative: DeepSeek and Claude agreed on only 22% of screens, and DeepSeek's apparent full-model grounding penalty disappeared under Claude. Older results likewise show a hard Dale–Chall gate and an LLM rubric diverging sharply. Human validation beyond the 30-scenario Claude cross-check remains a limitation. | [Finding 6](#finding-6--nano-vs-full-question-screens-full-wins-on-coverage-not-per-question-readability); [Prior work §1](#1-readability--prompt-quality-experiments-private-repo-january-2026) |
+| Can targeted prompting improve AI-generated questions? | **Yes, within the evaluated task** | Targeted prompt edits (explicit glossing, word-substitution list, anti-redundancy check, few-shot examples) raised the same 416-case eval's strict pass rate from 40.62% to 57.45% (+16.83pp) in one iteration; an earlier, less-targeted edit only moved it to 44.23%. | [Prior work §1](#1-readability--prompt-quality-experiments-private-repo-january-2026) |
 | Do different AI models ask better questions? (nano vs. full) | **Yes for coverage; no robust per-question quality difference** | In a paired 373-scenario comparison, nano produced an empty screen in 92/373 cases (24.6%) versus 2/373 (0.5%) for full; 88 pairs were nano-empty/full-nonempty and none showed the reverse (McNemar p≈6×10⁻²⁷). When both arms asked, the second, cross-family judge found per-question quality essentially indistinguishable. Full screens were longer and denser. | [Finding 6](#finding-6--nano-vs-full-question-screens-full-wins-on-coverage-not-per-question-readability) |
 | Can follow-up questions help improve classification vs. no follow-up? | **Yes, and the answer changed once a pipeline bug was fixed** | Pre-fix: net −7 exact-label change (looked like "no help/harm"). Two structural FETCH bugs meant GPT-5-family classifiers never actually received the disclosed answer on the second call. Post-fix, net **+181** (condition B) to **+220** (condition C) exact-label gains across 959 scenarios, confirmed stable across 6 reruns on a 200-case subsample (every run net +33 to +46). | [Finding 5](#finding-5--the-v2-disclosure-grounded-benchmark-the-decisive-post-fix-result) |
-| Can we use a digital twin in this? | **Not addressed** | No digital-twin artifact, design note, or experiment exists anywhere in either repo. | — |
+| Are digital twins evaluated? | **Not addressed** | No digital-twin artifact, design note, or experiment is included in the evidence base. | — |
 | Can follow-up questions help non-legal classification? | **Not addressed** | Every study in both repos is legal-intake-specific (FETCH's taxonomy). No out-of-domain/non-legal replication exists. | — |
 
-The rest of this document is the detailed evidence supporting the "answered"/"partially answered" rows above, plus everything the pre-existing (2026-07-17) version already established about the labeling pipeline and FETCH's retrieval accuracy — which the paper outline's "Background," "Data and materials," and part of "Results" sections will draw on independent of the follow-up-question question.
+The sections below provide the evidence supporting each mapped research
+question, including the labeling pipeline, FETCH retrieval accuracy, diagnostic
+flip benchmarks, and question-screen comparison.
 
 ## Executive synthesis
 
@@ -24,7 +32,14 @@ The repository (both public data here and private-repo methodology history) supp
 1. **The routing task is materially multi-label.** The source contains many descriptions with multiple independently meaningful legal issues. A single primary label is useful for routing, but it is not a complete representation of the problem.
 2. **Annotation disagreement is concentrated at taxonomy boundaries.** Humans agree more than the model raters, and broad legal-domain agreement is stronger than exact specialist-route agreement.
 3. **FETCH usually reaches the correct legal domain and often retrieves at least one exact route, but it is incomplete on multi-label scenarios and overpredicts.** Pooled retrieval was 99.2% for at least one correct top-level category and 95.3% for at least one exact sublabel; micro exact precision was 46.0%.
-4. **Follow-up questions materially help classification — but only once a real pipeline bug is fixed, and this supersedes an earlier, now-suspect result.** The 2026-07-17 version of this document reported a near-neutral flip result (47 gained / 48 lost category membership) from the 1,000-candidate `expanded_flip_experiment`. That study used the same `GPT-5 + keyword` configuration later shown, in `flip_experiment_v2`, to suffer from a bug where GPT-5-family classifiers never receive the disclosed follow-up answer on the reclassification call. Because the bug and the 1,000-candidate study's classifier configuration match exactly, and the 1,000-candidate runs predate the 2026-07-18 fix by four days, its near-neutral result should now be read the same way as `flip_experiment_v2`'s own pre-fix baseline: as resampling noise, not a measurement of whether disclosed facts help. The **post-fix** `flip_experiment_v2` result — net +181 to +220 exact-label gains, confirmed across 6 variability reruns — is the current, trustworthy answer, and it is unambiguously positive.
+4. **Follow-up questions materially help classification in the post-fix
+   pipeline.** The superseded 1,000-candidate `expanded_flip_experiment`
+   reported a near-neutral result (47 gained / 48 lost category membership)
+   under the same `GPT-5 + keyword` configuration later shown to omit disclosed
+   answers from GPT-5-family reclassification calls. Its result is therefore
+   treated as bug-affected resampling rather than evidence about disclosure
+   value. The post-fix `flip_experiment_v2` produced net +181 to +220
+   exact-label gains, with direction confirmed across six variability runs.
 5. **A deterministic safety-net layer (screening protocols) adds a small, real, zero-downside rescue on top of the fixed LLM pipeline**, concentrated exactly in the safety/routing categories it targets (restraining orders, elder abuse, immigration consequences, third-party work injury) — about 1% of matched cases, isolated via a paired within-run comparison that holds LLM sampling constant.
 6. **Switching the question-generation ensemble's OpenAI member and merge model from gpt-5-nano to gpt-5.2 fixes a large coverage failure, not a demonstrated readability failure.** Nano showed no questions on 24.6% of screens versus 0.5% for full. When both arms asked, their per-question quality was essentially tied under the independent Claude cross-check; full instead produced longer, denser, more information-rich screens.
 
@@ -42,14 +57,14 @@ Diagnostic benchmark v1 (retired, bug-affected — see Finding 4 caveat):
 200 legacy flip candidates + 800 workbook-grounded candidates
   └─ 1,000 candidates × 3 intended-fact runs = 3,000 observations (2026-07-14, pre-fix)
 
-Diagnostic benchmark v2 (current, authoritative for "do questions help"):
+Diagnostic benchmark v2 (primary evidence for whether questions help):
 959 Claude-authored disclosure-grounded scenarios, 33 boundary families
   ├─ pre-fix baseline (historical, same bug as v1)
   ├─ condition B: post-fix, 5-provider vote (2026-07-18)
   ├─ condition C: post-fix + PR #34 deterministic screening protocols (2026-07-18)
   └─ variability check: 3 reruns × 2 conditions on a fixed 200-case subsample (2026-07-19)
 
-Paired question-screen study (current, authoritative for nano vs. full):
+Paired question-screen study (primary evidence for nano versus full):
 373 human-vetted opening descriptions × 2 arms = 746 generated screens
   ├─ gpt-5-nano vs. gpt-5.2 as OpenAI ensemble member + semantic-merge model
   ├─ Gemini + Mistral held constant; provider failures repaired rather than dropped
@@ -63,7 +78,11 @@ Prior-work lineage (private repo only, not reproducible from this repo):
   (confirmed by matching schema and literal legacy_* scenario IDs carried into v1)
 ```
 
-The canonical chronology and current status are maintained in [`labeling_audit/REVIEW_AUDIT_TRAIL.md`](../datasets/d1_consensus_labels/labeling_audit/REVIEW_AUDIT_TRAIL.md) and, for the v2 flip benchmark, [`analysis/RESULTS.md`](../datasets/d2_synthetic_flip/analysis/RESULTS.md) and the [D2 README](../datasets/d2_synthetic_flip/README.md).
+The canonical chronology is in
+[`labeling_audit/REVIEW_AUDIT_TRAIL.md`](../datasets/d1_consensus_labels/labeling_audit/REVIEW_AUDIT_TRAIL.md).
+The v2 flip benchmark is documented in
+[`analysis/RESULTS.md`](../datasets/d2_synthetic_flip/analysis/RESULTS.md) and
+the [D2 README](../datasets/d2_synthetic_flip/README.md).
 
 - **Consensus-gold evaluation:** a retrieval/coverage benchmark against a conservative derived reference set.
 - **Flip benchmarks (v1, v2):** stress tests of follow-up-question elicitation and post-answer classification.
@@ -144,7 +163,17 @@ Pooled three-run result (as originally reported):
 | Expected final exact label newly **added** after the fact | 122/1,892 = 6.45% |
 | (Category lost: 48; exact label lost: 102 — nearly symmetric with the additions) | |
 
-**Why this is now suspect:** D2's own pre-fix baseline (identical `gpt-5 + keyword` classifier configuration, run 2026-07-18 00:26 UTC — four days after this v1 study) showed the same shape of result (net −7 exact-label change: 24 gained, 31 lost) and was traced to two confirmed structural bugs in FETCH's `ClassificationService` (see [Finding 5](#finding-5--the-v2-disclosure-grounded-benchmark-the-decisive-post-fix-result)): the GPT-5-family Responses API branch never threads `followup_answers` into the reclassification call on the normal code path, and a provider-pool filter meant to exclude only keyword/SPOT providers also incorrectly excludes Gemini/Mistral. Because the v1 study used the exact same bug-affected classifier family and provider mix, and predates the fix, **its 47-added/48-lost near-neutral pattern is very likely the same resampling-noise artifact**, not evidence that disclosed facts are roughly neutral. This was not directly re-verified by rerunning v1's exact 1,000 candidates post-fix (the study owner's post-fix validation effort went into the newer, more realistic v2 candidate set instead — see [why v1 was retired](../datasets/d2_synthetic_flip/README.md#why-v1-was-retired)), so treat this as a strong inference from matching configuration and matching failure shape, not a second confirmed measurement.
+**Why this result is suspect:** D2's pre-fix baseline used the same `gpt-5 +
+keyword` classifier configuration and showed the same near-neutral shape (24
+gained, 31 lost; net −7). That baseline exposed two structural defects in
+FETCH's `ClassificationService`: the GPT-5-family Responses API path omitted
+`followup_answers` from the successful reclassification call, and a provider
+filter also excluded Gemini and Mistral. Because v1 used the same affected
+classifier family and provider mix before the fix, its 47-added/48-lost pattern
+is likely the same resampling artifact rather than evidence that disclosed
+facts are neutral. V1 was not rerun post-fix, so this remains a strong inference
+from matched configuration and failure shape, not a second confirmed
+measurement. See [why v1 was retired](../datasets/d2_synthetic_flip/README.md#why-v1-was-retired).
 
 What remains usable from v1 without this caveat: the **matcher coverage** numbers (question-generation/matching is a separate call, unaffected by the reclassification bug), and the **domestic-violence-specific finding** that only 44.31% of hidden-DV question sets explicitly probed safety/abuse/violence/threats/control despite 78.04% matcher acceptance — a question-generation gap, not a reclassification gap, and structurally distinct from the bug above. The superseded v1 repository is not included in this publication repository.
 
@@ -174,9 +203,17 @@ Two fully independent 959-case runs, one per condition (5-provider vote: gpt-5, 
 | Exact label **lost** after re-classification | 31 | 13 | 8 |
 | **Net gained − lost** | **−7** | **+181** | **+220** |
 
-**This is the paper's central, current answer: follow-up questions clearly help, once the pipeline actually uses the disclosed answer.** Post-fix, gains outnumber losses ~15:1 (B) to ~28:1 (C), and matched-case final accuracy nearly doubles (49%→89–91%). Safety-sensitive rows (n=115) are the strongest part of the result: **zero losses in either post-fix condition** (37 gained/0 lost in B, 41/0 in C), final exact accuracy 89.7% (B) / 93.8% (C) among matched.
+**Primary interpretation:** follow-up questions clearly help once the pipeline
+uses the disclosed answer. Post-fix, gains outnumber losses about 15:1 (B) to
+28:1 (C), and matched-case final accuracy rises from 49% to 89–91%.
+Safety-sensitive rows (n=115) show zero losses in either post-fix condition (37
+gained/0 lost in B, 41/0 in C), with final exact accuracy of 89.7% (B) and 93.8%
+(C) among matched cases.
 
-One caveat: condition B's provider mix (5 providers) also changed alongside the fix (vs. v1/pre-fix's 2-provider config), so the pre-fix→post-fix jump conflates the bug fixes with the provider-mix change; it should be read as "the pipeline as it exists now vs. before this work," not as isolating the code fixes' own effect size.
+One caveat: condition B's five-provider mix also changed alongside the fix
+relative to the two-provider pre-fix configuration. The pre-fix-to-post-fix
+difference therefore compares complete pipeline configurations and does not
+isolate the fixes' effect size.
 
 ### Does the deterministic screening protocol (PR #34) add anything beyond the fix?
 
@@ -205,9 +242,12 @@ Every one of 6 runs lands strongly net-positive, matching the official runs' dir
 
 Full detail, quoted evidence, family-level breakdowns, and the safety-sensitive-rows gap: [D2 results](../datasets/d2_synthetic_flip/analysis/RESULTS.md).
 
-### What's still open for v2
+### Validation limit and extension
 
-Candidates are Claude-authored and marked `claude_authored_awaiting_human_salience_audit` — the planned human spot-check (the outline's "do human spot checking of the dataset... ~1000 examples") has not yet been performed. `analyze_runs.py` is designed to re-derive every table above after rows are pruned, with no model calls repeated.
+Candidates are Claude-authored and marked
+`claude_authored_awaiting_human_salience_audit`; they have not received an
+independent human salience audit. `analyze_runs.py` can re-derive every table
+after audited rows are pruned without repeating model calls.
 
 ## Finding 6 — Nano vs. full question screens: full wins on coverage, not per-question readability
 
@@ -232,7 +272,10 @@ Judge-free exploratory metrics show a real tradeoff: full screens contained more
 
 ## Prior work (private repo, methodology precursors not in this public repo)
 
-The following predates and motivated the `publishable-repo` work above. It lives in `/home/quinten/fetch/promptfoo/EXPERIMENT_LOGS/` and a satellite snapshot `/home/quinten/fetch/followup-study-paper-repo/` — **neither is included in or reproducible from this repo**; it is cited here only because it directly answers or informs several outline research questions and establishes the methodological lineage of the flip-benchmark work.
+The following work predates and motivated the public-repository studies. Its
+artifacts remain in private FETCH research records and are **not included in or
+reproducible from this repository**. It is summarized only as methodological
+lineage for the flip benchmark and question-quality studies.
 
 ### 1. Readability / prompt-quality experiments (private repo, January 2026)
 
@@ -244,7 +287,17 @@ A fixed 416-case eval combined a hard mechanical **Dale–Chall readability gate
 | Experiment 1 | Generic plain-language / 6th-grade guidance added to prompts | 184/416 (44.23%) | 349/416 (83.89%) | 165 |
 | Experiment 2 | Explicit glossing rule, word-substitution list, anti-redundancy check, few-shot good/bad examples | **239/416 (57.45%)** | — | 135 |
 
-**This is the direct precedent for the outline's "readability rubric" question**, and its central finding is exactly the tension the outline anticipates: cases failing *only* Dale–Chall consistently pass both LLM rubrics ("all questions use plain, accessible language" at a Dale–Chall grade of 9–16, well above the 7.9 cutoff) — i.e., the mechanical metric is stricter than, and sometimes disagrees with, an LLM judge. Non-Dale failures were dominated by unglossed jargon/acronyms (≈89% of non-Dale failures in Experiment 1) and redundant questions (asking things the user already stated). Experiment 1's edits, notably, *increased* non-Dale failures slightly (55→67) even while improving Dale–Chall — a useful null result showing generic "be plain" instructions aren't sufficient; Experiment 2's much more specific interventions (explicit gloss/substitution/anti-redundancy/few-shot) produced the larger, cleaner gain. A parallel, later thread (April–May 2026) added genuine **human** A/B preference labeling comparing gpt-5-nano/gpt-5/gpt-5.2 follow-up-question quality (`eval-cpr-2026-05-01T20:01:43`, 416/416 cases); those workbook outcomes remain unextracted. Finding 6 now answers the nano-vs.-full question independently with a new paired public-repo study, although additional human preference labeling would still strengthen its per-question-quality conclusion.
+The central finding is a measurement disagreement: cases failing only
+Dale–Chall consistently passed both LLM rubrics despite Dale–Chall grades of
+9–16, above the 7.9 cutoff. Non-Dale failures were dominated by unglossed
+jargon or acronyms (about 89% in Experiment 1) and redundant questions.
+Generic plain-language edits slightly increased non-Dale failures (55→67)
+while improving Dale–Chall; explicit glossing, substitution, anti-redundancy,
+and few-shot interventions produced the larger gain. A later human A/B
+preference exercise compared gpt-5-nano, gpt-5, and gpt-5.2 across 416 cases,
+but its workbook outcomes have not been extracted. Finding 6 provides the
+independently reproducible nano-versus-full comparison; broader human preference
+labeling would strengthen the per-question-quality inference.
 
 ### 2. Label-selection / multi-issue experiments (private repo, April 2026)
 
@@ -267,7 +320,7 @@ The direct, confirmed ancestor of `expanded_flip_experiment` (v1) is a 200-scena
 - Outcome matrix (matched, n=138): 72 correct→retained, 26 correct→unchanged, **4 correct→degraded**, **18 wrong→rescued**, 18 wrong→still wrong. **Net +14, a 4.5:1 rescue-to-degrade ratio** — this pilot already found the same qualitative direction (questions help more than they hurt) that `flip_experiment_v2` later confirmed at scale, though it predates and is structurally distinct from the GPT-5-family bug found in the 2026-07 work (it used a different provider/harness, `two_step_followup_provider.py` with a `FollowUpAnswer` field — whether it shares the same bug was not independently verified here).
 - Per-pair heterogeneity previewed exactly the failure modes the v2 benchmark was designed around: `domestic_violence` had 100% initial accuracy but only **10% question coverage** (the system rarely asks about abuse history at all); `criminal_vs_restraining` had 0% initial accuracy and 95% coverage but only 15.8% final accuracy; `employment_admin` was worst on both axes.
 
-## What can safely be claimed in a paper
+## Claims supported by the evidence
 
 - "Against the conservative consensus set, FETCH retrieved at least one exact route in 95.3% of run-observations and at least one correct top-level domain in 99.2%, but complete retrieval declined sharply as the number of gold issues increased."
 - "Follow-up questions materially improve exact-label classification accuracy once the pipeline correctly incorporates the disclosed answer: net exact-label gains of +181 to +220 across 959 disclosure-grounded scenarios, confirmed stable across 6 independent reruns, versus a near-neutral net −7 when a confirmed answer-consumption bug is present."
@@ -275,16 +328,23 @@ The direct, confirmed ancestor of `expanded_flip_experiment` (v1) is a 200-scena
 - "In a paired 373-scenario comparison, switching the question-generation ensemble's OpenAI member and merge model from gpt-5-nano to gpt-5.2 reduced empty follow-up screens from 24.6% (92/373) to 0.5% (2/373); when both arms asked questions, an independent cross-family judge found no robust per-question quality difference."
 - "Full-model screens are longer and denser than nano screens (including median 43 vs. 29 content tokens), so the switch trades higher elicitation coverage and information content for greater reading load; it should not be characterized as a demonstrated readability improvement."
 - "Targeted, evidence-driven prompt engineering (explicit jargon-glossing rules, word-substitution lists, anti-redundancy checks, few-shot examples) nearly doubled question-quality pass rates on a fixed eval (40.62%→57.45%), while generic 'use plain language' instructions alone produced a much smaller gain and did not reduce jargon-specific failures."
-- "Readability and question-quality instruments disagree substantially: older Dale–Chall-only failures were judged clear by an LLM rubric, while the new paired study's two LLM judges agreed on only 22% of screens. Conclusions should therefore use multiple metrics and cross-family or human validation rather than a single formula or judge."
+- "Readability and question-quality instruments disagree substantially: older
+  Dale–Chall-only failures were judged clear by an LLM rubric, while the paired
+  question-screen study's two LLM judges agreed on only 22% of screens.
+  Conclusions should therefore use multiple metrics and cross-family or human
+  validation rather than a single formula or judge."
 
-The evidence does **not** yet support:
+The evidence does **not** support:
 
 - Any claim about digital twins (no work exists).
 - Any claim about non-legal-domain follow-up-question benefit (no work exists; every study here is legal-intake-specific).
 - Any claim that full produces more readable, clearer, or better-grounded individual questions than nano. The robust advantage is coverage; per-question quality was essentially tied in the Claude cross-check, and full screens were objectively denser.
 - Treating the v1 1,000-candidate flip study's 47-added/48-lost result as a valid neutral finding — it very likely shares v2's pre-fix bug and should be described as superseded, not corroborating.
-- A completed human spot-check of the 959-scenario v2 candidate set (planned, not yet done).
-- A rules-vs-AI-prompt comparison for domestic-violence screening specifically (the outline's Massachusetts-informed DV question panel is not yet operationalized as a study; the closest existing evidence is v1's 44.31%-explicit-safety-probe finding and v2's safety-sensitive-rows breakdown, both of which test FETCH's existing behavior, not a designed rules-vs-prompt comparison).
+- A completed human salience audit of the 959-scenario v2 candidate set.
+- A rules-versus-AI-prompt comparison for domestic-violence screening
+  specifically. The closest evidence is v1's 44.31% explicit-safety-probe
+  finding and v2's safety-sensitive-rows breakdown; both test FETCH's existing
+  behavior rather than a designed rules-versus-prompt comparison.
 
 ## Reproduction map
 
@@ -295,14 +355,14 @@ The evidence does **not** yet support:
 | Five-rater agreement | [agreement methods](../datasets/d1_consensus_labels/consensus/AGREEMENT_METHODS.md) | `python scripts/analyze_gold_rater_agreement.py` |
 | FETCH consensus-gold evaluation | [accuracy methods](../datasets/d1_consensus_labels/consensus/fetch_gold_accuracy/FETCH_GOLD_ACCURACY_METHODS.md) | `pytest -q tests/test_analyze_fetch_gold_accuracy.py`; `python scripts/analyze_fetch_gold_accuracy.py ...` |
 | v1 expanded flip benchmark (superseded, see Finding 4) | Not included | Historical only |
-| v2 disclosure-grounded flip benchmark (current) | [D2 README](../datasets/d2_synthetic_flip/README.md) | `python datasets/d2_synthetic_flip/run_direct.py --label <name> ...`; `python datasets/d2_synthetic_flip/analyze_runs.py` |
+| v2 disclosure-grounded flip benchmark | [D2 README](../datasets/d2_synthetic_flip/README.md) | `python datasets/d2_synthetic_flip/run_direct.py --label <name> ...`; `python datasets/d2_synthetic_flip/analyze_runs.py` |
 | Screening-protocol marginal contribution | [D2 results](../datasets/d2_synthetic_flip/analysis/RESULTS.md#condition-b-vs-c-does-the-screening-protocol-add-anything) | `python datasets/d2_synthetic_flip/analyze_screening_contribution.py` |
 | Variability / sampling-noise check | [D2 results](../datasets/d2_synthetic_flip/analysis/RESULTS.md#variability-is-this-llm-sampling-noise) | `python datasets/d2_synthetic_flip/build_variability_sample.py`; rerun `run_direct.py`/`analyze_runs.py` on the fixed subsample |
 | Nano-vs.-full question-screen study | [readability results](../studies/readability/analysis/RESULTS.md) | See the [readability README](../studies/readability/README.md) |
 
 The included verification record is the [D2 execution log](../datasets/d2_synthetic_flip/analysis/EXECUTION_LOG.md), including the bug's exact file/line citations. The superseded v1 verification record is not included.
 
-## Recommended paper presentation order
+## Evidence hierarchy for synthesis
 
 1. Consensus-gold evaluation as the main retrieval result (Finding 3).
 2. Agreement analysis as the annotation/reliability result (Finding 2).
@@ -310,6 +370,15 @@ The included verification record is the [D2 execution log](../datasets/d2_synthe
 4. The nano-vs.-full question-screen experiment (Finding 6) as the model-comparison result: emphasize the decisive coverage gain, per-question parity, density tradeoff, and two-judge disagreement.
 5. The screening-protocol comparison as a secondary, smaller-effect-size result (Finding 5, condition B vs. C).
 6. The private-repo prior work (readability prompt-engineering, label-selection tuning, the 200-scenario flip pilot) as methodology-evolution/prior-work narrative, not as headline results — it motivated and was superseded by the public-repo work above.
-7. Explicitly flag as future work: broader human validation of the readability/question-quality metrics, extraction of the older human preference workbooks, prompt-tuning full's screen density, the human salience audit of the 959 v2 candidates, digital twins, and non-legal-domain replication.
+7. Research extensions: broader human validation of the
+   readability/question-quality metrics, extraction of the older human
+   preference workbooks, evaluation of lower-density full-model prompts, a
+   human salience audit of the 959 D2 candidates, digital twins, and
+   non-legal-domain replication.
 
-Keep these distinctions visible throughout: top-level vs. exact-subcategory routing; at-least-one-label vs. complete multi-label retrieval; matcher coverage vs. explicit fact-sensitive questioning; final-label presence vs. a label newly added after disclosure; and — the most important new distinction — a classifier that receives the disclosed answer vs. one that (as in v1 and v2's pre-fix baseline) silently does not.
+Interpretation depends on preserving these distinctions: top-level versus
+exact-subcategory routing; at-least-one-label versus complete multi-label
+retrieval; matcher coverage versus explicit fact-sensitive questioning;
+final-label presence versus a label newly added after disclosure; and a
+classifier that receives the disclosed answer versus one that, as in v1 and
+the v2 pre-fix baseline, silently does not.

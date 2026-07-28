@@ -1,17 +1,13 @@
 # v2 disclosure-grounded flip benchmark: results
 
-**Status (2026-07-19): the pipeline bugs described below under "Root cause"
-are fixed, and the current, definitive answer to "do follow-up questions
-help?" is in [Post-fix results](#post-fix-results-do-follow-up-questions-help),
-[Condition B vs C](#condition-b-vs-c-does-the-screening-protocol-add-anything),
-and [Variability](#variability-is-this-llm-sampling-noise) (6 reruns confirm
-the post-fix results are not a sampling-noise artifact) below — read those
-three sections first.** Everything from "Root cause"
-through "Family-level extremes" documents the **pre-fix baseline**
+The primary interpretation is based on
+[post-fix results](#post-fix-results-do-follow-up-questions-help),
+[the condition B/C comparison](#condition-b-vs-c-does-the-screening-protocol-add-anything),
+and [six variability runs](#variability-is-this-llm-sampling-noise). Sections
+from "Root cause" through "Family-level extremes" document the **pre-fix baseline**
 (`final_run_1_20260718T002609Z`, GPT-5 + keyword only, 2-provider vote) and
-is retained for the audit trail: it's what motivated the fix, not a
-current-state measurement. Its gained/lost numbers reflect a classifier
-call that never actually received the disclosed answer — see "Root cause."
+are retained for the audit trail. They do not measure disclosure effects
+because the classifier call never received the disclosed answer.
 
 Full method, provenance, and reproduction commands: [`../README.md`](../README.md).
 Run-by-run mechanics: [`EXECUTION_LOG.md`](EXECUTION_LOG.md).
@@ -21,8 +17,7 @@ Run-by-run mechanics: [`EXECUTION_LOG.md`](EXECUTION_LOG.md).
 Two fully independent 959-case runs, both on the fixed pipeline (FETCH
 commit `41585d0`, 5-provider vote — `gpt-5`, `gemini`, `mistral`, `keyword`,
 `spot` — on the opening call; `gpt-5`, `gemini`, `mistral` on the
-follow-up-answer call), one run per condition (per study-owner decision,
-2026-07-18):
+follow-up-answer call), with one full-population run per condition:
 
 - **Condition B** — fixes only, no screening protocols.
   `results/final_run_1_20260718T203325Z`, analysis in
@@ -64,16 +59,13 @@ at 89.7% (B) and 93.8% (C) — see
 [`runs_v2_postfix_condition_b/pooled_by_safety_sensitive.csv`](runs_v2_postfix_condition_b/pooled_by_safety_sensitive.csv)
 and the condition-C equivalent.
 
-One methodological note for anyone trying to attribute the pre-fix-to-B
-jump specifically to the code fixes: the pre-fix baseline run also used a
+The pre-fix-to-B difference cannot be attributed specifically to the code
+fixes because the pre-fix baseline run also used a
 narrower 2-provider vote (`gpt-5`, `keyword` only), while condition B uses
-the full 5-provider mix adopted alongside the fix (task-tracked
-alongside it, not a separate experiment). The pre-fix vs. post-fix
+the full 5-provider mix adopted alongside the fix. The pre-fix vs. post-fix
 comparison therefore conflates the bug fixes with the provider-mix change
-and should not be read as isolating the fixes' own effect size — only as
-"the pipeline as it exists now, vs. as it existed before this work,"
-which is the comparison that matters for the "are questions helpful"
-question this section answers.
+and should be interpreted as a comparison of the evaluated pre-fix and
+post-fix pipeline configurations, not as an isolated fix effect size.
 
 ## Condition B vs C: does the screening protocol add anything?
 
@@ -96,8 +88,8 @@ headline metric in the table above — final exact accuracy among matched
 cases (91.44% vs 88.56%), gains (228 vs 194), losses (8 vs 13). But B and C
 are each a single run of a stochastic pipeline, so part of that gap is
 ordinary sampling noise, not necessarily the screening protocol; with one
-run per condition (study-owner decision, see above) this comparison alone
-can't cleanly separate the two.
+full-population run per condition, this comparison alone cannot cleanly
+separate the two.
 
 **Within-run, paired comparison (the clean test):** for every condition-C
 case, [`analyze_screening_contribution.py`](../analyze_screening_contribution.py)
@@ -221,13 +213,13 @@ accuracy is stable; which specific cases flip on any given run is not.
 After `final_run_1` completed, the per-case data showed a pattern worth
 explaining rather than just reporting: among 348 matched-and-scored cases,
 24 gained the expected exact label after the disclosure, 31 lost it, and 145
-matched cases never had it either before or after. That's a small, roughly
-symmetric churn around a large "no effect" bucket — not what you'd expect if
-the model were reliably incorporating a decisive new fact.
+matched cases never had it either before or after. This is small, roughly
+symmetric churn around a large "no effect" bucket, contrary to the pattern
+expected if the model were reliably incorporating a decisive new fact.
 
-Tracing directly through the FETCH source (`/home/quinten/fetch`, not the
-study harness) found two structural bugs in `ClassificationService.classify()`
-that both fire specifically on the second, `followup_answers`-bearing call:
+Tracing directly through the private FETCH source, rather than the study
+harness, found two structural bugs in `ClassificationService.classify()` that
+both affect the second, `followup_answers`-bearing call:
 
 1. **GPT-5-family models never receive the follow-up answer on the normal
    code path.** `app/providers/openai.py:177-179` builds the Responses API
@@ -488,18 +480,15 @@ family in the set, and the cleanest candidate for re-validating the fix),
 ## Reproducing and extending this analysis
 
 ```bash
-source /home/quinten/fetch/.venv/bin/activate
 cd datasets/d2_synthetic_flip
 python analyze_runs.py                 # picks up results/final_run_1_*
 ```
 
-After the planned human salience audit removes rows from
-`candidates/flip_candidates_v2.csv`, re-run the same command (or pass
-`--candidates <edited.csv>`) to regenerate every table above from the
-surviving rows with no model calls repeated. Once the two pipeline bugs
-above are fixed, re-running the classifier is the appropriate next step to
-get a real read on the flip mechanism itself (this run's data cannot answer
-that question).
+The command requires a Python environment containing the repository
+dependencies. An independently human-audited candidate derivative can be
+analyzed with `--candidates <edited.csv>`; every table is regenerated from the
+retained rows without repeating model calls. Post-fix conditions B and C, not
+the historical pre-fix baseline, support inference about the flip mechanism.
 
 ## Detailed artifacts
 

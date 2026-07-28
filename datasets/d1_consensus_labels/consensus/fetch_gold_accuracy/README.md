@@ -4,7 +4,7 @@ This directory contains the two independent, fully cache-disabled FETCH replicat
 
 ## Primary findings
 
-- [`FETCH_GOLD_ACCURACY_FINDINGS.md`](FETCH_GOLD_ACCURACY_FINDINGS.md): detailed interpretation, paper-ready headline/category tables, replicate stability, and illustrative misses.
+- [`FETCH_GOLD_ACCURACY_FINDINGS.md`](FETCH_GOLD_ACCURACY_FINDINGS.md): detailed interpretation, headline/category tables, replicate stability, and illustrative misses.
 - [`FETCH_GOLD_ACCURACY_METHODS.md`](FETCH_GOLD_ACCURACY_METHODS.md): population, taxonomy compatibility, exact/top-level/graded metric definitions, and reproduction command.
 - `accuracy_summary.json`: machine-readable run, pooled, and stability statistics.
 - `scenario_results.csv`: every scenario/run gold set, predicted set, outcome tier, and component score.

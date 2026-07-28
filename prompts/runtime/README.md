@@ -1,10 +1,11 @@
 # FETCH runtime prompts
 
-The prompts the deployed FETCH service uses at runtime, mirrored here so the prompts cited
-in the paper resolve to a versioned, public artifact rather than to a gist.
-
-Copied from the private FETCH application repository at commit `c0c59ca`, from
-`app/prompts/`. If you change a prompt there, re-copy it here.
+This directory is the versioned public record of the FETCH runtime prompts
+evaluated in the companion paper. The file-based prompts correspond to
+`app/prompts/` in FETCH application commit `c0c59ca`; the screening-resolution
+prompt is the verbatim inline prompt from that evaluated implementation. These
+artifacts are intentionally frozen so reported results remain auditable even as
+the deployed service evolves.
 
 ## Files
 
@@ -43,8 +44,8 @@ verbatim for publication. It runs on `OPENAI_SCREENING_MODEL`, which defaults to
 ## Note on the gist
 
 An earlier revision of `default.txt` was published as a GitHub gist
-(`ef36fb8da928f25c60cd0ecb82a80750`). That gist is **out of date** and should not be
-treated as the prompt behind the reported results. It predates, among other changes:
+(`ef36fb8da928f25c60cd0ecb82a80750`). That gist predates the evaluated prompt
+and does not represent the reported system. Differences include:
 
 - the `{{taxonomy_hints}}` template variable
 - the passive-voice / party-role guidance that keeps tenants from being classified as landlords
@@ -55,6 +56,6 @@ treated as the prompt behind the reported results. It predates, among other chan
 - the instruction not to re-ask what the applicant already stated
 - the instruction not to ask what the applicant *wants to do* rather than what happened
 
-Several of those changes are the direct result of the Oregon State Bar focus-group
-feedback described in the paper, so the gist does not reflect the system as evaluated.
-Cite this directory instead.
+Several changes reflect Oregon State Bar focus-group feedback described in the
+paper. Researchers should cite the versioned files in this directory when
+describing the evaluated system.

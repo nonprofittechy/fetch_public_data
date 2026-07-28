@@ -2,11 +2,18 @@
 
 This stage checks whether a row may legitimately have two or three labels. It is a post-hoc audit of the three completed LLM passes; it does not call an API and does not use keyword or SPOT classification.
 
-Use [`redaction_reviewed_v5_clean_multilabel_review_workspace.xlsx`](redaction_reviewed_v5_clean_multilabel_review_workspace.xlsx) for human review. It carries forward the one-label review workspace, highlights the AI candidate evidence, and adds three blank human label slots plus status and notes.
+[`redaction_reviewed_v5_clean_multilabel_review_workspace.xlsx`](redaction_reviewed_v5_clean_multilabel_review_workspace.xlsx)
+is the corresponding human-review artifact. It carries forward the one-label
+review workspace, highlights the AI candidate evidence, and adds three blank
+human label slots plus status and notes.
 
 ## Method
 
-For each row, I collected every exact category/subcategory pair appearing in each model's top-three ranked list. A pair counts as **model-supported** when at least two of the three independent passes included that exact pair. A row enters the candidate extract when at least two distinct pairs meet that threshold.
+For each row, the audit collects every exact category/subcategory pair appearing
+in each model's top-three ranked list. A pair counts as **model-supported** when
+at least two of the three independent passes included that exact pair. A row
+enters the candidate extract when at least two distinct pairs meet that
+threshold.
 
 This is intentionally a generous review queue. Repeated model support is evidence that a second label deserves attention, not a final determination that it is correct. Some alternatives are different descriptions of the same issue; others reflect separate legal problems. The human reviewer should use the problem text and the canonical detailed taxonomy to make that distinction.
 

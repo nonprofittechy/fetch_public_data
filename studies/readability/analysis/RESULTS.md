@@ -2,8 +2,7 @@
 
 Paired, disclosure-blind study of the follow-up-question **screen** FETCH shows
 after an opening query, comparing the classification ensemble with its OpenAI
-member (+ semantic-merge model) set to **gpt-5-nano** vs **gpt-5.2** — the
-production switch the team shipped but never measured.
+member and semantic-merge model set to **gpt-5-nano** versus **gpt-5.2**.
 
 - **373** human-vetted problem descriptions → **746 screens** (one per arm).
 - Arms differ *only* in the OpenAI member + merge model; gemini + mistral held
@@ -16,7 +15,7 @@ production switch the team shipped but never measured.
 - Judges, blind to arm: **DeepSeek-V4-Pro** (Azure, automated, full set) +
   **Claude** (in-context, blind 30-scenario subset, cross-family check).
 
-## TL;DR
+## Summary
 
 **The switch is justified — but by *coverage*, not readability.** gpt-5.2
 reliably asks ~3 questions; **gpt-5-nano asks *nothing* on ~1 in 4 screens.** For
@@ -138,12 +137,12 @@ The metrics move on the dimension they target; the judge catches egregious scree
 - **Do not claim nano writes worse-grounded questions.** When nano *does* ask,
   its questions are about as clean as full's; the apparent grounding gap was a
   single-judge (DeepSeek) artifact that a Claude cross-check dissolved.
-- **The lever worth tuning next** is full's *density*: it asks longer, more
-  information-heavy screens. If reading load is a concern, that is the axis to
-  prompt-tune — not grounding.
-- **Methodological takeaway:** the two-judge, blind design earned its keep here.
-  A single automated judge would have shipped a wrong "full is worse on grounding"
-  conclusion.
+- **A clear extension** is to evaluate lower-density full-model prompts because
+  the full arm asks longer, more information-heavy screens. This targets reading
+  load without assuming a grounding deficit.
+- **Methodological implication:** the blind, two-judge design changed the
+  interpretation. The DeepSeek-only result would have supported an unreplicated
+  claim that the full arm was worse on grounding.
 
 ---
 *Numbers from `analysis/results_deepseek-v4.json`, `metrics/claude_subset/`,

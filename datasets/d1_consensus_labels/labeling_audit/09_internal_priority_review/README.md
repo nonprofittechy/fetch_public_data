@@ -1,6 +1,9 @@
 # Stage 09 — internal human-review prioritization
 
-This stage prioritizes the 132 rows in the order-insensitive Azure GPT-5.2 review queue. It was performed inside the current Codex/GPT-5 context and did not call an external model or use credentials from `../.env`.
+This stage prioritizes the 132 rows in the order-insensitive Azure GPT-5.2
+review queue. The prioritization was produced by an in-context GPT-5 review of
+the repository artifacts; it did not call an external model endpoint or use
+credentials from `../.env`.
 
 ## Result
 

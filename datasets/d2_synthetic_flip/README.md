@@ -2,8 +2,8 @@
 
 This folder replaces the expanded 1,000-candidate flip audit
 (the superseded v1 benchmark, not included here) with a
-benchmark built around a different — and, we believe, far more realistic —
-notion of a "hidden fact."
+benchmark built around disclosure-grounded hidden facts that are more
+plausible in legal-intake narratives.
 
 ## Why v1 was retired
 
@@ -39,9 +39,8 @@ human reviewers disagree in the Stage 11 gold-label study:
   involvement (the paper's hardest failure modes, handled with safety-aware
   wording).
 
-Routing/clarification flips (e.g., SSI↔SSD, where the enriched taxonomy
-description itself instructs intake to ask the disambiguating question) are
-included deliberately at the study owner's request.
+Routing/clarification flips are included when the enriched taxonomy itself
+identifies a disambiguating fact, as in SSI versus SSD.
 
 ## Provenance and generator model
 
@@ -74,13 +73,13 @@ Grounding sources (all in this repository or the FETCH checkout):
   Opening queries are 10–24 words (mean 17.0), matching the legacy length
   distribution.
 - `authoring/family_*.json` — the authored source of every row, including a
-  per-row `vetting_note` explaining why the flip is realistic, for use during
-  the planned **human salience audit**.
+  per-row `vetting_note` explaining why the flip is realistic and supporting
+  an independent human salience audit.
 - Expected labels are validated against **FETCH's runtime taxonomy**
   (`app/data/taxonomy.csv`, 225 pairs), so exact-label scoring needs no alias
   table and has no "unscorable" exclusions (a v1 defect).
-- Every row carries a real, specific **counterfactual disclosure** supporting
-  the opposing label, for a future paired study; the official runs evaluate
+- Every row carries a specific **counterfactual disclosure** supporting the
+  opposing label. This permits paired extensions; the reported runs evaluate
   the intended condition only.
 
 Candidate status is `claude_authored_awaiting_human_salience_audit`: these are
@@ -146,7 +145,7 @@ metric.
 ## Reproduction
 
 ```bash
-source /home/quinten/fetch/.venv/bin/activate      # FETCH env; .env creds in parent
+# Activate a compatible FETCH Python environment with provider credentials.
 cd datasets/d2_synthetic_flip
 python build_candidates.py                          # validate + rebuild candidates
 python -m pytest -q test_candidates.py              # structural checks
@@ -196,10 +195,10 @@ are analyzed in isolation (`--runs` pointed at just that condition's run
 directory) rather than pooled together, since B and C are different pipeline
 configurations, not repeated samples of the same one.
 
-## Re-running after the human audit
+## Human-audit extension
 
-The analysis joins raw results to the candidate CSV **by scenario_id**. To
-regenerate every finding after pruning rows:
+The analysis joins raw results to the candidate CSV **by scenario_id**. An
+independently audited derivative can be analyzed after pruning rejected rows:
 
 1. Delete the rejected rows from `candidates/flip_candidates_v2.csv` (or save
    an edited copy).
