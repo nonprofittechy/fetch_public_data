@@ -41,14 +41,17 @@ Thumbs.db
 *.sqlite3
 *.db
 *.xlsx
-!redaction_reviewed_v5_clean.xlsx
 
-# Public, de-identified agreement-analysis artifacts.
-!gold_labels_consensus_20260716/rater_sets.csv
-!gold_labels_consensus_20260716/story_pairwise_set_distances.csv
-!gold_labels_consensus_20260716/comparison_summary.csv
-!gold_labels_consensus_20260716/comparison_bootstrap.csv
-!gold_labels_consensus_20260716/label_level_summary.csv
-!gold_labels_consensus_20260716/label_level_pairwise_positive_agreement.csv
-!question_panels/question_panels.json
+# Public, de-identified D1 data and frozen audit artifacts.
+!datasets/d1_consensus_labels/source_dataset.xlsx
+!datasets/d1_consensus_labels/d1_paper_dataset_355.csv
+!datasets/d1_consensus_labels/consensus/**
+!datasets/d1_consensus_labels/labeling_audit/**
 
+# Local human-review downloads are private inputs, not public audit artifacts.
+datasets/d1_consensus_labels/labeling_audit/10_four_label_human_review/human_label_reviews*.csv
+datasets/d1_consensus_labels/labeling_audit/10_four_label_human_review/human_validated_gold*.csv
+
+# Other public shared data.
+!studies/screening_protocols/question_panels.json
+!resources/taxonomy_detailed_descriptions.csv

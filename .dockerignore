@@ -1,7 +1,9 @@
 **
-!human_review_app/
-!human_review_app/**
-!silver_labels/
-!silver_labels/10_four_label_human_review/
-!silver_labels/10_four_label_human_review/review_cases.json
-!silver_labels/10_four_label_human_review/taxonomy.json
+!datasets/
+!datasets/d1_consensus_labels/
+!datasets/d1_consensus_labels/human_review_app/
+!datasets/d1_consensus_labels/human_review_app/**
+!datasets/d1_consensus_labels/labeling_audit/
+!datasets/d1_consensus_labels/labeling_audit/10_four_label_human_review/
+!datasets/d1_consensus_labels/labeling_audit/10_four_label_human_review/review_cases.json
+!datasets/d1_consensus_labels/labeling_audit/10_four_label_human_review/taxonomy.json
