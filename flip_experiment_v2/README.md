@@ -243,4 +243,5 @@ per-row `vetting_note` column and the authoring files give the audit context.
 | `analysis/runs_v2_postfix_condition_c/` | committed analysis outputs, post-fix condition C |
 | `analysis/variability_condition_b/` | committed analysis outputs, 3 condition-B reruns on the fixed subsample |
 | `analysis/variability_condition_c/` | committed analysis outputs, 3 condition-C reruns on the fixed subsample |
+| `analysis/FIVE_PROVIDER_RECLASSIFICATION_ABLATION_RESULTS.md` | paired ablation retaining keyword and SPOT in the answer-bearing vote |
 | `analysis/RESULTS.md` | headline findings (written after official runs) |
