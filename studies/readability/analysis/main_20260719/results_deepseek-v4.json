@@ -2,6 +2,9 @@
   "run_id": "main_20260719",
   "judge": "deepseek-v4",
   "n_scenarios": 373,
+  "n_scenarios_in_generation_run": 373,
+  "restrict_ids": null,
+  "n_restrict_ids": null,
   "screen_emptiness": {
     "n_pairs": 366,
     "full_worse_only": 0,

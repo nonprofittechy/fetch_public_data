@@ -1,9 +1,21 @@
 #!/usr/bin/env python3
 """Unblind the Claude judgments and compare (a) nano vs full under Claude, and
 (b) Claude vs DeepSeek on the same subset (do the arm effects and absolute rates
-agree across judge families?)."""
+agree across judge families?).
+
+The blind subset was sampled with --n-scenarios 30 from the generation run,
+which predates the deduplication of the classification dataset to 355 unique
+narratives. One sampled scenario (gold-0125) is a close duplicate that does not
+survive into D1, so pass --restrict-ids to reproduce the 29-pair subset the
+paper reports:
+
+  python compare_judges.py \
+      --restrict-ids ../../../datasets/d1_consensus_labels/d1_paper_dataset_355.csv
+"""
 from __future__ import annotations
 
+import argparse
+import csv
 import json
 import os
 from collections import defaultdict
@@ -16,8 +28,30 @@ def load_jsonl(p):
     return [json.loads(l) for l in open(p)] if os.path.exists(p) else []
 
 
+def load_restrict_ids(path):
+    with open(path, newline="") as f:
+        rows = list(csv.DictReader(f))
+    if not rows or "scenario_id" not in rows[0]:
+        raise SystemExit(f"{path}: expected a CSV with a scenario_id column")
+    return {r["scenario_id"] for r in rows if r["scenario_id"]}
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--restrict-ids", default=None,
+                    help="CSV with a scenario_id column; keep only those scenarios")
+    args = ap.parse_args()
+
     unblind = json.load(open(os.path.join(HERE, "unblind_map.json")))
+    n_sampled = len({v["scenario_id"] for v in unblind.values()})
+    if args.restrict_ids:
+        keep = load_restrict_ids(args.restrict_ids)
+        dropped = sorted({v["scenario_id"] for v in unblind.values()
+                          if v["scenario_id"] not in keep})
+        unblind = {b: v for b, v in unblind.items() if v["scenario_id"] in keep}
+        n_kept = len({v["scenario_id"] for v in unblind.values()})
+        print(f"restricted to {n_kept} of {n_sampled} sampled scenarios "
+              f"({os.path.basename(args.restrict_ids)}); dropped: {', '.join(dropped) or 'none'}")
     claude = {j["blind_id"]: j for j in load_jsonl(os.path.join(HERE, "claude_judgments.jsonl"))}
     ds = {(r["scenario_id"], r["arm"]): r for r in
           load_jsonl(os.path.join(STUDY, "results", "generation", "main_20260719",

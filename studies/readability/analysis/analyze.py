@@ -17,10 +17,20 @@ means full is WORSE. We report per-arm central tendency so direction is explicit
 Usage:
   python analyze.py --run-id main_20260719 --judge deepseek-v4
 Writes analysis/<run_id>/results.json and prints a summary table.
+
+The generation run predates the deduplication of the classification dataset to
+355 unique narratives, so it contains close-duplicate scenarios. Pass
+--restrict-ids to score only the scenarios that survive into D1, which is the
+basis for the figures reported in the paper:
+
+  python analyze.py --run-id main_20260719 --judge deepseek-v4 \
+      --restrict-ids ../../datasets/d1_consensus_labels/d1_paper_dataset_355.csv \
+      --out-id main_20260719_d1_355
 """
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import math
 import os
@@ -42,6 +52,16 @@ def load_jsonl(path: str) -> List[dict]:
 
 def index_by(rows: List[dict]) -> Dict[Tuple[str, str], dict]:
     return {(r.get("scenario_id"), r.get("arm")): r for r in rows}
+
+
+def load_restrict_ids(path: str) -> set:
+    """Read the scenario_id column of a dataset CSV (e.g. the deduplicated D1
+    set) and return it as a set, so the analysis can be limited to those rows."""
+    with open(path, newline="") as f:
+        rows = list(csv.DictReader(f))
+    if not rows or "scenario_id" not in rows[0]:
+        raise SystemExit(f"{path}: expected a CSV with a scenario_id column")
+    return {r["scenario_id"] for r in rows if r["scenario_id"]}
 
 
 # ---- metric extractors: return a per-screen scalar (or None) ----------------
@@ -156,6 +176,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run-id", required=True)
     ap.add_argument("--judge", default="deepseek-v4")
+    ap.add_argument("--restrict-ids", default=None,
+                    help="CSV with a scenario_id column; score only those scenarios")
+    ap.add_argument("--out-id", default=None,
+                    help="output subdirectory name (defaults to --run-id)")
     args = ap.parse_args()
 
     run_dir = os.path.join(STUDY, "results", "generation", args.run_id)
@@ -165,6 +189,13 @@ def main():
     llm = index_by(load_jsonl(os.path.join(run_dir, f"metrics_llm_{judge_tag}.jsonl")))
 
     scen_ids = sorted({sid for (sid, _arm) in screens})
+    n_generated = len(scen_ids)
+    restrict = None
+    if args.restrict_ids:
+        restrict = load_restrict_ids(args.restrict_ids)
+        scen_ids = [sid for sid in scen_ids if sid in restrict]
+        if not scen_ids:
+            raise SystemExit("--restrict-ids matched no scenarios in this run")
 
     # --- screen-emptiness (a structural outcome, all scenarios) --------------
     empty_pairs = []
@@ -253,15 +284,23 @@ def main():
 
     out = {"run_id": args.run_id, "judge": args.judge,
            "n_scenarios": len(scen_ids),
+           "n_scenarios_in_generation_run": n_generated,
+           "restrict_ids": (os.path.relpath(args.restrict_ids, STUDY)
+                            if args.restrict_ids else None),
+           "n_restrict_ids": (len(restrict) if restrict is not None else None),
            "screen_emptiness": emptiness, "metrics": results, "hard_flag_equivalence": equiv}
-    out_dir = os.path.join(HERE, args.run_id)
+    out_dir = os.path.join(HERE, args.out_id or args.run_id)
     os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, f"results_{judge_tag}.json"), "w") as f:
         json.dump(out, f, indent=2)
 
     # --- print summary -------------------------------------------------------
     print(f"\n=== nano vs full readability study | run={args.run_id} | judge={args.judge} ===")
-    print(f"scenarios={len(scen_ids)}")
+    if restrict is not None:
+        print(f"scenarios={len(scen_ids)} (restricted from {n_generated} by "
+              f"{os.path.basename(args.restrict_ids)})")
+    else:
+        print(f"scenarios={len(scen_ids)}")
     if emptiness:
         print(f"\nSCREEN EMPTINESS (rate of 0-question screens):")
         print(f"  nano={emptiness['nano_rate']}  full={emptiness['full_rate']}  "
